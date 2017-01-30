@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {color:#7b7b7b; font-size:1.000em; line-height:1.5; letter-spacing:-0.5px}
 input{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
 select{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
@@ -3609,11 +3610,6 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #frevent_wa .btn .fr_btn{heIGHT:38px; width:98%; margin-bottom:5px; color:#3b589d; cursor:pointer;background:#d8433f; border-radius:5px; border:1px solid #af1a16; color:#fff}
 #frevent_wa .btn .fr_btn .btn-img{width:45px; background:#c4312d; height:38px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
 
-/* 이벤트 메인 팝업*
-#fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
-#fr_event_pop .closebt{position:absolute; top:-5px; right:-45px}
-#fr_event_pop .close{background:#121212; border-bottom-right-radius:23px; border-bottom-left-radius:23px; color:#fff; letter-spacing: -0.5px; padding:3% 5% 3% 7%; font-size:16px; height:25px; line-height: 25px }
-#fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:18px; height:18px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 18px 18px;-webkit-background-size: 18px 18px;}*/
 
 
 /*이벤트 메인 팝업 수정전*/ 
@@ -3630,7 +3626,8 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #fr_event_pop .close{position: relative; background:#fff; color:#4F4F4F; letter-spacing: -0.5px; padding: 6px 0; }
 #fr_event_pop .close #close7 {width: 100%; text-align: center;}
 #fr_event_pop .close .check1{-webkit-border-radius:1px; -webkit-appearance:none;}
-#fr_event_pop .close .btn , #fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:22px; cursor: pointer; float: left; text-align: center; padding: 8px 0; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%;}
+#fr_event_pop .close .btn , #fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:22px; cursor: pointer; float: left; text-align: center; padding: 8px 0; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%;
+font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif;}
 #fr_event_pop .close .txt {position: relative; width: 59%; }
 #fr_event_pop .close .txt span {width: 100%;}
 #fr_event_pop .close .btn {width: 36.5%;}
