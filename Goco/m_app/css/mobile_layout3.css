@@ -3616,14 +3616,26 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:18px; height:18px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 18px 18px;-webkit-background-size: 18px 18px;}*/
 
 
-/* 이벤트 메인 팝업*/ 
-#fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
+/*이벤트 메인 팝업 수정전*/ 
+/* #fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
 #fr_event_pop .closebt{position:absolute; top:-5px; right:-45px}
 #fr_event_pop .close{background:#121212; border-bottom-right-radius:23px; border-bottom-left-radius:23px; color:#fff; letter-spacing: -0.5px; padding:3% 5% 3% 7%; font-size:18px; height:30px; line-height: 25px }
-#fr_event_pop .close .btn{font-size:18px; line-height: 30px; text-align:right }
-#fr_event_pop .close .txt{font-size:18px; line-height: 30px;}
+#fr_event_pop .close .btn{font-size:18px; text-align:right }
+#fr_event_pop .close .txt{font-size:18px;}
 #fr_event_pop .close p{float:left; }
-#fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:20px; height:20px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 20px 20px;-webkit-background-size: 20px 20px;}
+#fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:20px; height:20px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 20px 20px;-webkit-background-size: 20px 20px;} */
+/* 이벤트 메인 팝업 수정후 */
+#fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
+#fr_event_pop .closebt{position:absolute; top:-5px; right:-45px}
+#fr_event_pop .close{position: relative; background:#fff; color:#4F4F4F; letter-spacing: -0.5px; padding: 6px 0; }
+#fr_event_pop .close #close7 {width: 100%; text-align: center;}
+#fr_event_pop .close .check1{-webkit-border-radius:1px; -webkit-appearance:none;}
+#fr_event_pop .close .btn , #fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:22px; cursor: pointer; float: left; text-align: center; padding: 8px 0; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%;}
+#fr_event_pop .close .txt {position: relative; width: 59%; }
+#fr_event_pop .close .txt span {width: 100%;}
+#fr_event_pop .close .btn {width: 36.5%;}
+.clr:after {content: ""; display: block; clear: both;}
+
 
 
 
