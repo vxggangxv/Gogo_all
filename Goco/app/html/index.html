@@ -12,8 +12,9 @@
 <link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170130135557" type="text/css"/>
 <link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170130135557" type="text/css"/>
 <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170130135557" type="text/css"/> -->
-<!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css"/> -->
-<link rel="stylesheet" href="../css/mobile_layout3_tmp.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="../css/mobile_layout3_tmp.css" type="text/css"/> -->
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css"/>
+<!-- <meta http-equiv="Cache-Control" content="no-cache" /> -->
 <meta name="robots" content="NOINDEX, NOFOLLOW, NOARCHIVE" />
 <meta name="author" content="GO.CO.KR"/>
 <meta name="description" content=" 고코 GO.CO.KR"/>
@@ -22,7 +23,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <!-- <script src="http://static.go.co.kr/js/index_app.js"></script> -->
-<script src="../js/index_app.js"></script>
+<!-- <script src="../js/index_app.js"></script> -->
 
 
 <script language='javascript'>document.title = '모바일 고코투어';</script>
@@ -36,17 +37,21 @@
 
 
 <body>
-		
-	<div id="backDrop"></div>
-
-	<div id="fr_box" rold="page">
-
+	
+	<!-- 로그인 전 팝업  -->
+	<!-- 실제 이미지 경로
+	<img src="http://img.go.co.kr/mobile/fr_event_pop01.png" alt="적립금받기배너">
+	 -->
+	<div class="fr_box" rold="page">
+	
 		<div class="event_row">
-			<div id="fr_event_pop">
-				<a href="http://app.go.co.kr/home/member/?dd=RREnSjA="><img src="http://img.go.co.kr/mobile/fr_event_pop.jpg"></a>
+			<div class="fr_event_pop">
+				<a href="http://app.go.co.kr/home/member/?dd=RREnSjA=">
+					<img src="../img/fr_event_pop01.png" alt="적립금받기배너">
+				</a>
 			
 				<div class="close">
-					<p id="close7" class="clr">
+					<p class="close7 clr">
 						<label for="fr_pop" class="clsBtn">닫 기</label>
 						<input name="fr_pop" type="checkbox" id="fr_pop" class="check1"> 
 						<a href="http://app.go.co.kr/home/member/?dd=RREnSjA=" class="txt">자세히 보기</a>
@@ -54,9 +59,37 @@
 				</div>
 			</div>
 		</div>
-
+	
 	</div>
+	
+	<!-- 로그인 후 팝업 -->
+	<!-- 실제 이미지 경로
+	<img src="http://img.go.co.kr/mobile/fr_event_pop02.png" alt="할인쿠폰받기배너">
+	 -->
+	<!-- <div class="fr_box" rold="page">
+	
+		<div class="event_row">
+			<div class="fr_event_pop">
+				<a href="#">
+					<img src="../img/fr_event_pop02.png" alt="할인쿠폰받기배너">
+				</a>
+			
+				<div class="close">
+					<p class="close7 clr">
+						<label for="fr_pop02" class="clsBtn">닫 기</label>
+						<input name="fr_pop02" type="checkbox" id="fr_pop02" class="check1"> 
+						<a href="http://app.go.co.kr/home/member/?dd=RREnSjA=" class="txt">자세히 보기</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	
+	</div> -->
 
+
+
+
+	<!-- 테스트 더미 데이터, 삭제 -->
 	<h2 sytle="height=300px">아아아</h2>
 	<h2 sytle="height=300px">아아아</h2>
 	<h2 sytle="height=300px">아아아</h2>
