@@ -3167,10 +3167,18 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 #pay_info_w .tit .color {color: #f05d29; width:100%; font-size: 1.0em;}
 #pay_info_w .btn_pay a {display:block; margin:auto; width:50%; height:40px; border-radius:5px; background:#f05d29; font-weight:bold; letter-spacing:-1px; font-size:1.0em; color:#fff; line-height:2.4; text-align:center; margin-top:10px; margin-bottom:10px}
 
-/* ³»ÁÖº¯ Áö¿ª°Ë»ö 20160819 Ãß°¡ */
-#search_titles .bnr_recommend {background:#eeeeee; width: 100%; float: left; text-align: center; height:60px; border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2;}
+/* clearfix값 */
+.clr:before, .clr:after{ content: ""; display: block; }
+.clr:after {display: block; clear: both;}
+/* 내주변 지역검색 20160819 추가 */
+#search_titles .list_more_btn, #search_titles .bnr_recommend {width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
+#search_titles #room_recommend {border-top: 1px solid #d2d2d2;}
+#search_titles .bnr_recommend {position: relative; background: #777; height: 60px; box-sizing: border-box; border: 1px solid #D2D2D2; overflow: hidden;}
 #search_titles .bnr_recommend .img_recommend {height:60px; text-align:left;  float: left; padding-left: 8px}
-#search_titles .bnr_recommend .img_Rarrow img {height:20px;  text-align:right; float: right; padding:20px 15px 20px 0px}
+#search_titles .bnr_recommend .img_Rarrow img {position: relative; right: 15px; height:20px;  text-align:right; float: right; padding:20px 0 20px;}
+@media (max-width: 320px){
+	#search_titles .bnr_recommend .img_Rarrow img {display: none;}
+}
 #search_titles .list_more {float:left; display:block; width:100%; text-align: center; margin: auto; }
 #search_titles .list_more_btn{width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
 #search_titles .list_more_btn img {width:auto; height:18px; background:#ccc; width: auto; padding-top:10px; background: #777; text-align:center}

@@ -3259,8 +3259,10 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 #pay_info_w .tit .color {color: #f05d29; width:100%; font-size: 1.0em;}
 #pay_info_w .btn_pay a {display:block; margin:auto; width:50%; height:40px; border-radius:5px; background:#f05d29; font-weight:bold; letter-spacing:-1px; font-size:1.0em; color:#fff; line-height:2.4; text-align:center; margin-top:10px; margin-bottom:10px}
 
+/* clearfix값 */
+.clr:before, .clr:after{ content: ""; display: block; }
+.clr:after {display: block; clear: both;}
 /* 내주변 지역검색 20160819 추가 */
-/* #search_titles .bnr_recommend {background:#eeeeee; width: 100%; float: left; text-align: center; height:60px; border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2;} */
 #search_titles .list_more_btn, #search_titles .bnr_recommend {width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
 #search_titles #room_recommend {border-top: 1px solid #d2d2d2;}
 #search_titles .bnr_recommend {position: relative; background: #777; height: 60px; box-sizing: border-box; border: 1px solid #D2D2D2; overflow: hidden;}
@@ -3870,6 +3872,4 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 	background-color: #F1F1F1;
 }
 
-/* clearfix값 */
-.clr:before, .clr:after{ content: ""; display: block; }
-.clr:after {display: block; clear: both;}
+
