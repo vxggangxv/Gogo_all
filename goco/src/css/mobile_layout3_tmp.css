@@ -3260,11 +3260,16 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 #pay_info_w .btn_pay a {display:block; margin:auto; width:50%; height:40px; border-radius:5px; background:#f05d29; font-weight:bold; letter-spacing:-1px; font-size:1.0em; color:#fff; line-height:2.4; text-align:center; margin-top:10px; margin-bottom:10px}
 
 /* 내주변 지역검색 20160819 추가 */
-#search_titles .bnr_recommend {background:#eeeeee; width: 100%; float: left; text-align: center; height:60px; border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2;}
+/* #search_titles .bnr_recommend {background:#eeeeee; width: 100%; float: left; text-align: center; height:60px; border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2;} */
+#search_titles .list_more_btn, #search_titles .bnr_recommend {width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
+#search_titles #room_recommend {border-top: 1px solid #d2d2d2;}
+#search_titles .bnr_recommend {position: relative; background: #777; height: 60px; box-sizing: border-box; border: 1px solid #D2D2D2; overflow: hidden;}
 #search_titles .bnr_recommend .img_recommend {height:60px; text-align:left;  float: left; padding-left: 8px}
-#search_titles .bnr_recommend .img_Rarrow img {height:20px;  text-align:right; float: right; padding:20px 15px 20px 0px}
+#search_titles .bnr_recommend .img_Rarrow img {position: relative; right: 15px; height:20px;  text-align:right; float: right; padding:20px 0 20px;}
+@media (max-width: 320px){
+	#search_titles .bnr_recommend .img_Rarrow img {display: none;}
+}
 #search_titles .list_more {float:left; display:block; width:100%; text-align: center; margin: auto; }
-#search_titles .list_more_btn{width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
 #search_titles .list_more_btn img {width:auto; height:18px; background:#ccc; width: auto; padding-top:10px; background: #777; text-align:center}
 #search_titles .bnr_recommend1 {background:#eeeeee; width: 100%; float: left; text-align: center; height:32px; padding-top: 5px; }
 #search_titles .text {text-align:left; font-size: 0.875em; text-align: center;}
@@ -3619,10 +3624,9 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 .fr_event_pop .close{position: relative; top: -1px; background:#fff; letter-spacing: -0.5px; padding: 1.5% 0; width: 80%; margin: 0 auto;}
 .fr_event_pop .close .close7 {width: 100%; text-align: center;}
 .fr_event_pop .close .check1{-webkit-border-radius:1px; -webkit-appearance:none; position: absolute;}
-.fr_event_pop .close .clsBtn , .fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:18px; cursor: pointer; float: left; text-align: center; line-height: 2.1em; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%; height: 36px; color:#4F4F4F; 
-font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif;letter-spacing: -1px;  text-decoration: none;}
-.fr_event_pop .close .txt {position: relative; width: 65%;}
-.fr_event_pop .close .clsBtn {width: 30.5%;}
+.fr_event_pop .close .clsBtn , .fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:18px; cursor: pointer; float: left; text-align: center; line-height: 2.1em; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%; height: 36px; color:#4F4F4F; font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif; letter-spacing: -1px;}
+.fr_event_pop .close .txt {position: relative; width: 59%;}
+.fr_event_pop .close .clsBtn {width: 36.5%;}
 .clr:after {content: ""; display: block; clear: both;}
 
 
@@ -3863,4 +3867,9 @@ font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif;letter-spacing: -
 	clear:both;
 	background: url("http://img.go.co.kr/mobile/btnLogo_m.png") no-repeat center;
 	background-size: 100px;
+	background-color: #F1F1F1;
 }
+
+/* clearfix값 */
+.clr:before, .clr:after{ content: ""; display: block; }
+.clr:after {display: block; clear: both;}
