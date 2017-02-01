@@ -90,11 +90,11 @@ background-color:#bc4c0f
 
 /*달력*/
 .calendar{background-color:#eaeaea; text-align:center}
-.calendar .month{margin-top:15px; margin-bottom:10px; font-size:20px; line-height:1.4; }
+.calendar .month{margin-top:15px; margin-bottom:10px; font-size:20px; line-height:1.4; font-weight:bold;}
 .calendar .month img{margin-left:10px; margin-right:10px}
 .calendar table{width:94%; margin-bottom:20px;}
 .calendar table th{height:30px; color:#ffffff; text-align:center;}
-.calendar table td{height:45px; background-color:#ffffff;   font-weight: normal;}
+.calendar table td{height:45px; background-color:#ffffff; }
 .calendar table td a{display:block; padding:7px 0 6px 0; color:#3f3f3f; text-align:center; font-size:20px}
 .calendar table td a.font_red{color:#ee0000}
 .calendar table td a.font_gray3{color:#cbcbcb}
@@ -1293,14 +1293,14 @@ background:url(http://img.go.co.kr/mobile/check_box_normal.png) no-repeat 0 0; b
 #reserve_tab2 li a img{margin-top:11px;}
 
 #product_info .calendar{background-color:#eaeaea; text-align:center}
-#product_info .calendar .month{margin-top:5px; margin-bottom:10px; font-size:20px; line-height:1.2;  color:#363636}
+#product_info .calendar .month{margin-top:5px; margin-bottom:10px; font-size:20px; line-height:1.2; font-weight:bold; color:#363636}
 #product_info .calendar .month img{margin-left:10px; margin-right:10px}
 #product_info .calendar table{width:94%; margin-bottom:20px; background-color:#ffffff}
 #product_info .calendar table th{height:30px; color:#ffffff; text-align:center; padding:0}
-#product_info .calendar table td{height:45px; background-color:#ffffff; border:1px solid #d2d2d2; font-weight: normal; }
-#product_info .calendar table td a{display:block; padding:7px 0 6px 0; color:#3f3f3f; text-align:center; font-size:20px; font-weight: normal; }
-#product_info .calendar table td a.font_red{color:#ee0000; font-weight: normal; }
-#product_info .calendar table td a.font_gray3{color:#cbcbcb; font-weight: normal; }
+#product_info .calendar table td{height:45px; background-color:#ffffff; border:1px solid #d2d2d2}
+#product_info .calendar table td a{display:block; padding:7px 0 6px 0; color:#3f3f3f; text-align:center; font-size:20px}
+#product_info .calendar table td a.font_red{color:#ee0000}
+#product_info .calendar table td a.font_gray3{color:#cbcbcb}
 #product_info .calendar table td.red_bg{background-color:#ee0000}
 #product_info .calendar table td.red_bg .font_white{color:#ffffff}
 
@@ -1646,7 +1646,6 @@ background:url(http://img.go.co.kr/mobile/check_box_normal.png) no-repeat 0 0; b
 #mypage #box .menu li a {padding-left:10px; padding-right:10px; font-size:0.938em; color:#fff}
 #mypage #box .btn_logout a {clear:both; margin:auto; display:block; margin-bottom:30px; ; width:90px; padding:5px 0; border-radius:5px; font-size:0.938em; font-weight:bold; text-align:center; color:#fff; background:#b3b3b3}
 
-
 /*환경설정*/
 #popEdit {width:100%}
 #popEdit li {float:left; padding:10px 0; width:100%; color:#3f3f3f; letter-spacing:-0.6px; border-bottom:1px solid #d2d2d2; font-size:1.063em}
@@ -1682,6 +1681,7 @@ background:url(http://img.go.co.kr/mobile/check_box_normal.png) no-repeat 0 0; b
 #mapView dl dd p.list_price span{font-size:1.000em; color:#ff6600; font-weight:bold}
 #mapView dl dd p.list_gps {position:absolute; bottom:0px; right:10px; font-size:0.938em; color:#f15d28; font-weight:bold}
 
+
 /*내주변 - 20161010 추가 */
 #map_list dl .app_ttl {font-size:1.125em; color:#333333; font-weight: bold;}
 #map_list dl .app_ttl_point {font-size:1.125em; color:#f95c24; font-weight: bold;}
@@ -1691,7 +1691,6 @@ background:url(http://img.go.co.kr/mobile/check_box_normal.png) no-repeat 0 0; b
 .img_nothing img {height: 50px; vertical-align: bottom;}
 .mapF6 {margin:auto; padding-top:10px; width:60%;}
 .mapF6 a {display:block; padding: 5px 5px 5px 45px; border-radius:5px; color:#333; font-size:0.938em; line-height:50px; font-weight:bold; letter-spacing:-0.5px; border: 1px solid #ccc; background: url(http://img.go.co.kr/mobile/app_icon.png) no-repeat 8% 50% #ffffff; background-size:45px 45px; }
-
 
 
 /*검색*/
@@ -2314,8 +2313,7 @@ background:url(http://img.go.co.kr/mobile/btn_agreeBG.png) no-repeat 0 0; backgr
 #intro .wrap .introSearch .calendar2 {position:absolute; z-index:9; right:20px; top:10px}
 
 /*서브메인 검색창*/
-#sub_search{float:left; padding:10px 0; width:100%; letter-spacing:-1.2px; font-size:1.000em; overflow:hidden; background-size:cover; background-color:#83481c; background-size:100% 700px; text-align:center; }
-/* #sub_search{float:left; padding:10px 0; width:100%; letter-spacing:-1.2px; font-size:1.000em; overflow:hidden; background-size:cover; background:url(http://img.go.co.kr/mobile/main_search_bg2.jpg) no-repeat; background-size:100% 700px; text-align:center; } */
+#sub_search{float:left; padding:10px 0; width:100%; letter-spacing:-1.2px; font-size:1.000em; overflow:hidden; background-size:cover; background:url(http://img.go.co.kr/mobile/main_search_bg2.jpg) no-repeat; background-size:100% 700px; text-align:center; }
 #sub_search .ment{float:left; width:100%; margin:2px 0; font-size:1.063em; color:#f9f9f9}
 #sub_search .ment a {color:#f1ece9}
 #sub_search .wrap {clear:both; margin:auto; padding:5px 0; width:100%}
@@ -2943,8 +2941,8 @@ text-indent:8px;
 
 
 /*2017-01-26 리스트수정*/
-#list_price01 {padding-right:5px ; width: 74%; color:#f15a53; font-weight:bold; letter-spacing:-1px; float:right; vertical-align:bottom}
-#list_price01 .type{color:#777; width:48px; font-size: 0.9em; padding-top: 3px}
+#list_price01 {padding-right:5px ; width: 70%; color:#f15a53; font-weight:bold; letter-spacing:-1px; float:right; vertical-align:bottom}
+#list_price01 .type{color:#777; width:48px; font-size:1.000em;padding-top: 3px}
 #list_price01 #dis_icon{ right:90px; height:18px; background:#cb2914; width:45px; text-align:center; line-height:18px;margin-top:2px; margin-right:5px}
 #dis_icon .dis_txt2{ font-size:0.875em; color:#fff; font-weight:700;  letter-spacing:-0.8;  text-align:center;}
 #list_price01 .lowprice_list {float:right; font-size:1.300em; color:#f15a53; font-weight:bold; }
@@ -3137,7 +3135,7 @@ text-indent:8px;
 color:#2a7fe8; border:1px solid #2a7fe8; letter-spacing:-1.2px; margin-top:2px; width:53px; text-align:center}
 .product_line{floaT:left; background:#f8f8f8; width:100%; height:10px}
 .product_info_w ul li .product_info_price .add_sale_icon2{float:left; font-weight:500; display:block; font-size:0.605em; height:11px; line-height:12px; padding:2px 0; width:53px; text-indent:0px; background:#fff;
-color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:5px; text-aligN:center}
+color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:2px; text-aligN:center}
 
 
 #location_w{width:100%; float:left; letter-spacing:-0.7px; margin-bottom:10px}
@@ -3158,18 +3156,14 @@ color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:5px; 
 #room_w .room_ti_tx .room_ti_tx_in p{font-size:0.875em; color:#3f3f3f; margin-top:10px}
 #room_w .room_tx_w{width:100%; margin:auto}
 #room_w .room_tx_w .room_tx_in{float:left; margin-top:30px; width:100%}
-#room_w .room_tx_w .room_tx_in h4{font-size:1.0em; color:#3f3f3f; font-weight:600;}
-#room_w .room_tx_w .room_tx_in p{font-size:0.875em; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8;}
+#room_w .room_tx_w .room_tx_in h4{font-size:1.0em; color:#3f3f3f; font-weight:600; }
+#room_w .room_tx_w .room_tx_in p{font-size:0.875em; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8}
 #room_w .room_tx_w .room_tx_in p .room_tx_icon{float:left; width:4%}
 #room_w .room_tx_w .room_tx_in p .room_tx_tx{float:left; width:95%}
 
-/* #kaka_advice{float:left; width:100%; border-top:1px solid #dddddd; padding:20px 0 80px 0}
-#kaka_advice .txt{float:left; margin-left:15px; font-size:0.875em; color:#3f3f3f;}
-#kaka_advice .btn{float:right; margin-right:15px;} */
-
-#kaka_advice{float:left; width:100%; text-align:center; border-top:1px solid #dddddd; padding:6px 0 70px 0}
-#kaka_advice .txt{font-size:0.875em; color:#3f3f3f;}
-#kaka_advice .btn img{margin-top:5px;}
+#kaka_advice{float:left; width:100%; border-top:1px solid #dddddd; padding:20px 0 80px 0}
+#kaka_advice .txt{float:left; margin-left:4%; font-size:0.875em; color:#3f3f3f;}
+#kaka_advice .btn{float:right; margin-right:4%;}
 
 /* 상세페이지 객실선택창 */
 #info_product_btn_w{position:fixed; bottom:0; left:0; z-index:99999; display:table; width:100%; height:60px; border-top:1px solid #f3f3f3; background:#fff;}
@@ -3225,10 +3219,10 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 #reserve_detail_info1{width:100%; float:left; border-top:1px solid #ddd;  border-bottom:1px solid #ddd; padding:5% 0;}
 #reserve_detail_info1 .reserve_delect_btn{float:left; width:48%; height:45px; background:#999999; color:#e0e0e0; font-size:1.0em; text-align:center; display:block; border-radius:5px; line-height:2.7; font-weight:600}
 #reserve_detail_info1 .reserve_delect_btn1{float:left; width:48%; height:45px; background:#999999; color:#fff; font-size:1.0em; text-align:center; display:block; border-radius:5px; line-height:2.7; font-weight:600}
-
 #reserve_detail_info1 .reserve_receipt_btn{margin:auto; width:48%; height:45px; background:#f95c24; color:#fff; font-size:1.0em; text-align:center; display:block; border-radius:5px; line-height:2.7; font-weight:600}
 #reserve_detail_info1 .reserve_receipt_btn2{margin:auto; width:48%; height:45px; background:#f95c24; color:#fff; font-size:1.0em; text-align:center; display:block; border-radius:5px; line-height:2.7; font-weight:600}
 .reserve_receipt_btn_w{width:100%; float:left}
+
 
 #reserve_detail_info1 .reserve_detail_info_btn .txtno{font-size:0.813em; margin-bottom:10px; float:left; width:100%; letter-spacing:-0.8px}
 #reserve_detail_info1 .reserve_detail_info_btn .txtno .tx_or{ color:#f95c24; font-weight:600; letter-spacing:-0.8px}
@@ -3274,7 +3268,7 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 
 /* 상세페이지 알립니다 20160823 추가 */
 #notice_w{width:100%; float:left; border-top:1px solid #dddddd; letter-spacing:-0.5px; margin-bottom:30px}
-#notice_w .notice_in{width:92%; margin:auto}
+#notice_w .notice_in{width:90%; margin:auto}
 #notice_w .notice_in h4{font-size:1.063em; color:#3f3f3f; font-weight:600; padding-top:20px}
 #notice_w .notice_in .or_txt{font-size:1.0em; color:#ff4e00; font-weight:600}
 #notice_w .notice_in p{font-size:0.875em; color:#3f3f3f; margin-top:10px}
@@ -3543,28 +3537,24 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #my_point .tipwa .tipw .wapa .tiptxt2{color:#555555;  font-size:0.95em; line-height:1.5; letter-spacing:-0.6px;  text-align:center; padding-bottom: 10px}
 #my_point .tipwa .tipw .wapa .tiptxt .txt-g{color:#999999; font-size:0.875em; line-height:1.4; display:block}
 #my_point .tipwa .tipw .wapa .tipbtn{color:#3b2022; border:1px solid #f0dd25; border-radius:5px; background:#fee600; padding: 5px 0px;}
-#my_point .tipwa .tipw .wapa .tipbtn_point{padding: 5px 0px;}
 #my_point .tipwa .tipw .wapa .tipbtn span{font-weight:600;}
 #my_point .fr_event_img02{ width:100%; border:1px solid #a0a0a0; border-radius:5px; padding:5px 0; text-align:center; margin-bottom:10px; margin-top:20px}
-#my_point .fr_event_img02 .code{ margin:auto; text-align:center;}
+#my_point .fr_event_img02 .code{ margin:auto; text-align:center;  }
 #my_point .fr_event_img02 .code .cotx{font-size:14px; font-weight:600; padding:0; letter-spacing: -1.0px; color:#999999; margin-right: 5px;}
 #my_point .fr_event_img02 .code .nutx{font-size:16px; font-weight:600; padding:0; color:#1e1e1e; letter-spacing: 0.1px;}
 #my_point .tipbtn{width:100%; text-aligN:center}
-#my_point .tipbtn_point{width:100%; text-aligN:center}
-#my_point .ka_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fee600;border-radius:5px; border:1px solid #f0dd25}
-#my_point .ka_btn .btn-img{width:100%; background:#fed60c; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .kas_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fccb00; border-radius:5px; border:1px solid #f0dd25}
-#my_point .kas_btn .btn-img{width:100%; background:#fab800; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .fa_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#3b589d; border-radius:5px; border:1px solid #3c5690; color:#fff}
-#my_point .fa_btn .btn-img{width:100%; background:#314187; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .sms_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#368efb; border-radius:5px; border:1px solid #368efb; color:#fff}
-#my_point .sms_btn .btn-img{width:100%; background:#2d5ed0; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .url_btn{float:left; heIGHT:90px; width:99.6%; margin-bottom:5px; color:#3b589d; cursor:pointer; background:#33cdf4; border-radius:5px; border:1px solid #33cdf4; color:#fff}
-#my_point .url_btn .btn-img{width:100%; background:#12add4; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-
+#my_point .tipbtn .ka_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fee600;border-radius:5px; border:1px solid #f0dd25}
+#my_point .tipbtn .ka_btn .btn-img{width:100%; background:#fed60c; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
+#my_point .tipbtn .kas_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fccb00; border-radius:5px; border:1px solid #f0dd25}
+#my_point .tipbtn .kas_btn .btn-img{width:100%; background:#fab800; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
+#my_point .tipbtn .fa_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#3b589d; border-radius:5px; border:1px solid #3c5690; color:#fff}
+#my_point .tipbtn .fa_btn .btn-img{width:100%; background:#314187; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
+#my_point .tipbtn .sms_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#368efb; border-radius:5px; border:1px solid #368efb; color:#fff}
+#my_point .tipbtn .sms_btn .btn-img{width:100%; background:#2d5ed0; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
+#my_point .tipbtn .url_btn{float:left; heIGHT:90px; width:99.6%; margin-bottom:5px; color:#3b589d; cursor:pointer; background:#33cdf4; border-radius:5px; border:1px solid #33cdf4; color:#fff}
+#my_point .tipbtn .url_btn .btn-img{width:100%; background:#12add4; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
 #my_point .tipbtn img{margin-top:7px; margin-left:3px}
-#my_point .tipbtn_point img{margin-top:7px; margin-left:3px}
-#my_point .btn-txt{margin-top:58px; text-aligN:Center; display:block; font-size:0.900em; font-weight:600; line-height:1.2;  letter-spacing:-1px; width:100%}
+#my_point .tipbtn .btn-txt{margin-top:58px; text-aligN:Center; display:block; font-size:0.900em; font-weight:600; line-height:1.2;  letter-spacing:-1px; width:100%}
 #my_point .poin_list{width:100%; float:left}
 #my_point .poin_list .litit{width:100%; height:40px; background:#f5f5f5; border-top:1px solid #999999; float:left }
 #my_point .poin_list .litit h3{font-size:0.98em; font-weight:600; color:#555555; float:left; line-height:2.5; margin-left:10px}
@@ -3611,30 +3601,18 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 
 /* 이벤트 메인 팝업*
 #fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
-#fr_event_pop .closebt{position:absolute; top:-5px; right:-45px}
-#fr_event_pop .close{background:#121212; border-bottom-right-radius:23px; border-bottom-left-radius:23px; color:#fff; letter-spacing: -0.5px; padding:3% 5% 3% 7%; font-size:16px; height:25px; line-height: 25px }
-#fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:18px; height:18px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 18px 18px;-webkit-background-size: 18px 18px;}*/
+#fr_event_pop .closebt{position:absolute; top:-5px; right:-50px}
+#fr_event_pop .close{background:#121212; border-bottom-right-radius:23px; border-bottom-left-radius:23px; color:#fff; letter-spacing: -0.5px; padding:2% 5% 3% 7%; font-size:13px}
+#fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:15px; height:15px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 13px 13px;-webkit-background-size: 13px 13px;}*/
 
-
-/*이벤트 메인 팝업 수정전*/ 
+/* 이벤트 메인 팝업*/
 #fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
 #fr_event_pop .closebt{position:absolute; top:-5px; right:-45px}
 #fr_event_pop .close{background:#121212; border-bottom-right-radius:23px; border-bottom-left-radius:23px; color:#fff; letter-spacing: -0.5px; padding:3% 5% 3% 7%; font-size:18px; height:30px; line-height: 25px }
-#fr_event_pop .close .btn{font-size:18px; text-align:right }
-#fr_event_pop .close .txt{font-size:18px;}
+#fr_event_pop .close .btn{width:20%;font-size:18px; line-height: 30px; text-align:right }
+#fr_event_pop .close .txt{width:70%;font-size:18px; line-height: 30px;}
 #fr_event_pop .close p{float:left; }
 #fr_event_pop .close .check1{margin-top:2.5px; margin-right:5px; float:left; width:20px; height:20px; color:#343434; background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 20px 20px;-webkit-background-size: 20px 20px;}
-/* 이벤트 메인 팝업 수정후 */
-/* #fr_event_pop { position:relative; z-index:99999; margin:auto; width:80%; margin-top:30px}
-#fr_event_pop .closebt{position:absolute; top:-5px; right:-45px}
-#fr_event_pop .close{position: relative; background:#fff; color:#4F4F4F; letter-spacing: -0.5px; padding: 6px 0; }
-#fr_event_pop .close #close7 {width: 100%; text-align: center;}
-#fr_event_pop .close .check1{-webkit-border-radius:1px; -webkit-appearance:none;}
-#fr_event_pop .close .btn , #fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:22px; cursor: pointer; float: left; text-align: center; padding: 8px 0; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%;}
-#fr_event_pop .close .txt {position: relative; width: 67%; }
-#fr_event_pop .close .txt span {width: 100%;}
-#fr_event_pop .close .btn {width: 28.5%;}
-.clr:after {content: ""; display: block; clear: both;} */
 
 
 
@@ -3741,7 +3719,7 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #notice_pop2 {position:absolute; z-index:99999; left:10%; top:10%; margin:auto; width:80%;}
 #notice_pop2 .join_pop_btn{width:100%; padding:3% 0; background:#e2e2e2; display: inline-table;}
 #notice_pop2 .join_pop_btn01{margin-left:5%; float:left; width:30%; background:#e2e2e2; }
-#notice_pop2 .join_pop_btn02{margin-right:5%; float:right; width:58%; background:#e2e2e2; }
+#notice_pop2 .join_pop_btn02{margin-right:5%; float:right; width:58%; background:#e2e2e2;  }
 /* 앱설치 후 알림설정 팝업창 20161025 */
 
 /* 가을여행 이벤트 20161028 */
@@ -3784,14 +3762,6 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #share_pop2 .box .btn .cancel a {display:inline-block; width:105px; line-height:30px; background:#858585; color:#fff}
 #share_pop2 .box .btn .submit a {display:inline-block; width:105px; line-height:30px; background:#f37720; color:#fff}
 /*메일,문자공유하기 팝업 20161104 end */
-
-
-
-/*친구추천이벤트 광고랜딩 20161122 */
-#friendAd_landing{ position:relative; width:100%; margin:0 auto; float:left; text-align:center;  }
-#friendAd_landing .btn{position:absolute; width:90%; top:34.6%; left:calc(50% - 45%);}
-/*친구추천이벤트 광고랜딩 20161122 end */
-
 
 /* 크리스마스 랜딩 20161216 */
 .xmas_landing {position:relative; width:device-width;}
@@ -3836,13 +3806,18 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 
 /* 타이틀별 로고_20170111 */
 #location_w h3 .goco_tit_logo {height:32px}
-#notice_w h4 .goco_tit_logo {height:32px;}
+#notice_w h4 img:nth-of-type(2) {height:32px;}
 #room_w h4 .goco_tit_logo {height:32px;}
 #room_w h3 .goco_tit_logo {height:32pxt;}
 #room_w .room_tx_w .room_tx_in h4 .goco_tit_logo {height:32px;}
 #product_info tr td .goco_tit_logo{height:35px; margin-right:10px; margin-top:11px; margin-bottom:11px;}
 #product_info #bbs td img.bbs_arrow{height:9px;}
 #product_info #bbs tr td.review_body img{height:100%;}
+
+/*친구추천이벤트 광고랜딩 20170118 */
+#friendAd_landing{ position:relative; width:100%; margin:0 auto; float:left; text-align:center;  }
+#friendAd_landing .btn{position:absolute; width:90%; top:35.5%; left:calc(50% - 45%);}
+/*친구추천이벤트 광고랜딩  20170118 end */
 
 /*마이페이지 리뉴얼 2017.01.12 */
 #mypage {float:right; width:100%}
@@ -3870,3 +3845,11 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 #mypage #box .my_bottom ul li a {width: 100%; border-bottom: 1px solid #ececec;box-sizing: border-box; display: block; padding:16px 20px 16px 20px; text-align: left;}
 #mypage #box .my_bottom ul li a span {position:absolute; right:10px; padding: 6px;}
 #mypage #box .my_bottom ul li a img { width:7px;}
+
+/* 하단 고코 로고  추가 */
+.btmLogo {width: 100%; height: 110px; 
+	clear:both;
+	background: url("http://img.go.co.kr/mobile/btnLogo_m.png") no-repeat center;
+	background-size: 100px;
+	background-color: #F1F1F1;
+}

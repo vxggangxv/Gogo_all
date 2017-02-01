@@ -1,0 +1,8 @@
+﻿
+ < gaza82.co.kr , gza82.com , touronnca.co.kr, go.co.kr >
+
+ -> 도메인의 폴더안에 있는  mobile_layout.css  
+
+ -> 나머지 복사사이트는 go.co.kr 폴더안의 mobile_layout_goco.css 를 수정
+
+ -> 복사앱은 mobile_layout.css
