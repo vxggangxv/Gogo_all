@@ -2990,7 +2990,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_info{padding:10px; letter-spacing:-0.2px; border-bottom:0}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_info span{color:#f45a49}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_title a{display:block; height:35px; line-height:3}
-#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option input {float: right; width:26px; height:19px; padding-right:5px; padding-left:0px; border:1px solid #ccc; color:#333; line-height:21px; text-align:right;}
+#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option input {float: right; width:26px; height:19px; padding-right:5px; padding-left:0px; border:1px solid #ccc; color:#333; line-height:21px; text-align:right; font-weight: 600;}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option .btn_num {float: right; width: 16px; height: 21px; background: url(http://img.go.co.kr/onecut_img.png) no-repeat; margin-left: -1px}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option .btn_num a {overflow:hidden; float:left; width:16px;height:11px; font-size:0px; line-height:0; text-indent:-9999px}
 
