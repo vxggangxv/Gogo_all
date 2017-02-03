@@ -3272,6 +3272,7 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 	#search_titles .bnr_recommend .img_Rarrow img {display: none;}
 }
 #search_titles .list_more {float:left; display:block; width:100%; text-align: center; margin: auto; }
+#search_titles .list_more_btn{width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
 #search_titles .list_more_btn img {width:auto; height:18px; background:#ccc; width: auto; padding-top:10px; background: #777; text-align:center}
 #search_titles .bnr_recommend1 {background:#eeeeee; width: 100%; float: left; text-align: center; height:32px; padding-top: 5px; }
 #search_titles .text {text-align:left; font-size: 0.875em; text-align: center;}
@@ -3871,6 +3872,3 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 	background-size: 100px;
 	background-color: #F1F1F1;
 }
-
-/* 마지막 썸네일 로고 추가 */
-.thumLogo {position: absolute; right: 4px; bottom: 15px; background-color: rgba(256,256,256,.5); border-radius: 40px; padding: 8px; width: 120px;}

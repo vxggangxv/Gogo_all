@@ -1002,3 +1002,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 @media (max-width:1304px) {
 	#daySearch2{background-color:f00;}
 }
+
+/* detail_btnLogo - 상세페이지, page_btnLogo - 전체페이지 하단 로고 추가_2017_0201 */
+.page_btnLogo, .detail_btnLogo { position: relative; width: 800px; height: 110px; margin: 0 auto;  background: url("http://img.go.co.kr/logo.png") no-repeat center; background-size: 140px; background-color: #f1f1f1; }
+.page_btnLogo {width: 100%;}

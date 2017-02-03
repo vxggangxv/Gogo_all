@@ -3861,3 +3861,7 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 	background-size: 100px;
 	background-color: #F1F1F1;
 }
+
+/* detail_btnLogo - 상세페이지, page_btnLogo - 전체페이지 하단 로고 추가_2017_0201 */
+.page_btnLogo, .detail_btnLogo { position: relative; width: 800px; height: 110px; margin: 0 auto;  background: url("http://img.go.co.kr/logo.png") no-repeat center; background-size: 140px; background-color: #f1f1f1; }
+.page_btnLogo {width: 100%;}
