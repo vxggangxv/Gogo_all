@@ -3005,6 +3005,7 @@ text-indent:8px;
 .pay_reserInfo_table .number_p li{float:left}
 .pay_reserInfo_table .number_p h4{font-size:0.875em; float:left; line-height: 2.4; margin-right:5px}
 .input_linee{ border: 1px solid #666666;  height:27px;  border-radius:5px; color:#333333; padding: 0px 5px 0px 5px; font-size:1.063em; }
+.input_linee + span {position: relative; top: 6px; margin-left: 2px;}
 .select_boxx{width:100%; padding-left:5px;  background:url(http://img.go.co.kr/mobile/select_box.jpg) 100% 50% no-repeat; background-size:15px 15px; -webkit-background-size:15px 15px;color:#333333;font-weight:600}
 
 /* 동의하고결제 팝업*/
