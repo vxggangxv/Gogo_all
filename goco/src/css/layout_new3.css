@@ -2980,7 +2980,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #room_detail_info .roomInfo_scroll {float:right; padding-left:10px; width:564px; height:100px; overflow-x:hidden; overflow-y:scroll}
 #room_detail_info .roomInfo_scroll span {color:#ff0000}
 
-/*숙박 외 단품 관련*/
+/*숙박 외 단품 관련_20170207변경_강혜준*/
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td{border-bottom:1px solid #c7ccd0}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option{background-color:#fff1e8}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option table{width:280px; margin-top:8px; margin-bottom:8px}

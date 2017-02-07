@@ -2956,13 +2956,13 @@ background:url(http://img.gaza82.co.kr/checkbox_img.gif) no-repeat 0 0;backgroun
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option{background-color:#fff1e8}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option table{width:280px; margin-top:8px; margin-bottom:8px}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option table th{color:#000000; font-weight:bold}
-#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option table td{border-bottom:0; padding:0}
+#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option table td{border-bottom:0; padding-right:20px;}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option table td p{letter-spacing:-1.5px; margin-top:7px}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_info{padding:10px; letter-spacing:-0.2px; border-bottom:0}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_info span{color:#f45a49}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_title a{display:block; height:35px; line-height:3}
-#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option input {float: left; width:26px; height:19px; padding-right:5px; padding-left:0px; border:1px solid #ccc; border-right:0 none; color:#333; line-height:21px; text-align:right}
-#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option .btn_num {float: left; width: 16px; height: 21px; background: url(http://img.gaza82.co.kr/onecut_img.png) no-repeat; margin-left: -1px}
+#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option input {float: right; width:26px; height:19px; padding-right:5px; padding-left:0px; border:1px solid #ccc; color:#333; line-height:21px; text-align:right}
+#cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option .btn_num {float: right; width: 16px; height: 21px; background: url(http://img.gaza82.co.kr/onecut_img.png) no-repeat; margin-left: -1px}
 #cal_wrap2 .cal_day2 .room_info2 .etc_select td.pkg_option .btn_num a {overflow:hidden; float:left; width:16px;height:11px; font-size:0px; line-height:0; text-indent:-9999px}
 
 #main5 .price_txt2 .price2 {font-size:24px; font-weight:600}
