@@ -3056,7 +3056,12 @@ text-indent:8px;
 #info_img_wrpa .swiper-button-prev1{position:absolute; float:left; width:36px; top:50%; margin-top: -22px; z-index: 10; cursor: pointer; }
 #info_img_wrpa .pagination{border-radius:80px; background-color: rgba(75,68,67,0.7); position:absolute; bottom:5%; width:65px; height:27px; right:41%; text-align:center; }
 #info_img_wrpa .pagination .num{font-size:0.813em; color:#fff; letter-spacing:1px; text-align:center; opacity:none; line-height:-30px}
-#info_img_wrpa .top_icon{width:100%; position:absolute; top:15px; }
+#info_img_wrpa .top_icon{width:100%; position:absolute; top:0px; height: 40px; padding: 12px 0 0px; 
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
 #info_img_wrpa .pay_back_icon{float:left; margin-left:15px; width:8%; display:block}
 #info_img_wrpa .de_share_icon{float:right; margin-right:8px; width:12%; display:block}
 #info_img_wrpa .de_ch_icon{float:right;width:7%; margin-right:15px;}
