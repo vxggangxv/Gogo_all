@@ -4538,3 +4538,29 @@ option {font-size:13px}
 #rsv_s_list #borTop {text-align: center;}
 #rsv_s_list #borTop:before {content: ""; display: block; position: absolute; width: 100%; height: 1px; background: #b0b0b0; top: -1px; left: 0;}
 #rsv_s_list #borTop:after {content: ""; display: block; position: absolute; width: 100%; height: 1px; background: #e6e6e6; bottom: -1px; left: 0;}
+/* 실시간문의 배너_20170208_강혜준 */
+#rt_banner {/* position: fixed; top: 150px; left: 50%; margin-left: -634px; */ width: 110px; height: 218px; border: 1px solid #FE620F; text-align: center; letter-spacing: -1px; background: #fff;}
+#rt_banner h2 {color: #fff; height: 29px;	background: #fe620f;font-size: 15px; font-weight: 400; line-height: 1.8em;}
+#rt_banner p {line-height: 1.45em; font-weight: 600; font-size: 14px; color: #383838;}
+#rt_banner h2 + p {margin-top: 6px;}
+#rt_banner .fc {color: #fe620f;}
+#rt_banner .rt_btn {margin-top: 4px;}
+#rt_banner .rt_btn a {position: relative; display: inline-block; width: 90px;	height: 26px; font-size:13px; color:#fff; font-weight: 400; line-height: 2em; background: #fe620f; letter-spacing: 0;}
+#rt_banner .rt_arrow {position: relative; left: 8px;}
+
+#rt_banner .rt_logo{position: relative; top: 4px; width: 100%; height: 20px; overflow-y: hidden; background: url("http://img.go.co.kr/logo.png") no-repeat center 5px; background-size: 50px;}
+/* 실시간문의 모달 */
+#q_modal {position: fixed; z-index: 6; width: 400px; height: 260px; top: 50%; margin-top: -130px; left: 50%; margin-left: -200px; background: #fff;}
+#q_modal h2 {height: 64px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 26px; color: #fff; font-weight: 700; text-align: center; line-height: 2.6em; background: #FB6B0A;}
+#q_modal .q_clsBtn {position: absolute; right: 0;	top: 0;	 display: inline-block; width: 64px; height: 64px; 
+	background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat center -520px; 
+}
+#q_modal ul {width: 68%; margin: 0 auto; }
+#q_modal ul li {position: relative; height: 60px;	line-height: 3.8em; font-size: 17px; border-bottom: 1px solid #ddd; text-align: left;}
+#q_modal ul li:last-child { border: none; }
+#q_modal ul li a {display: block; padding-left: 100px; letter-spacing: -1px; color: #333;}
+#q_modal ul li a:before {content: ""; position: absolute; left: 34px;	top: 0;	 display: inline-block; width: 50px; height: 60px;
+background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat; 
+background-size: 54px; background-position: center -8px;}
+#q_modal ul li:nth-child(2) a:before {background-position: center -85px;}
+#q_modal ul li:nth-child(3) a:before {background-size: 70px; background-position: center -422px;}

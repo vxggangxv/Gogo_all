@@ -3805,3 +3805,60 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 .o_day_s.on
 {color: #e02a03;}
 .product_info_w ul li .product_info_price .add_sale_icon2.on {border: 1px solid #e02a03;}
+/*닫기 버튼*/
+.q_clsBtn {position: absolute; width: 30px;	height: 30px; right: 5%; top: 8px;}
+.q_clsBtn:before, .q_clsBtn:after {content: ""; display: block; position: absolute; top: 15px; right: -3px; width: 28px; height: 1px; background: #222;}
+.q_clsBtn:before {
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+.q_clsBtn:after {
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	transform: rotate(-45deg);
+}
+/*닫기 버튼*/
+.q_clsBtn {position: absolute; width: 30px;	height: 30px; right: 5%; top: 8px;}
+.q_clsBtn:before, .q_clsBtn:after {content: ""; display: block; position: absolute; top: 15px; right: -3px; width: 28px; height: 1px; background: #222;}
+.q_clsBtn:before {
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+.q_clsBtn:after {
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	transform: rotate(-45deg);
+}
+/* 빠른문의_20170208_강혜준 */
+/* 완료후 줄넘버 3175, #kaka_advice 삭제 */
+#q_quest {clear:both; padding: 24px 0; border-top: 2px solid #e6e6e6; border-bottom: 2px solid #e6e6e6; text-align: center;}
+#q_quest p {letter-spacing: -1px; color: #333;}
+#q_quest p:first-child {font-weight: 600; font-size: 22px;}
+#q_quest p:nth-child(2) {color: #555;}
+#q_quest p:last-child {text-align: center; margin-top: 14px;}
+#q_quest p:last-child a {display: inline-block; color: #fff; padding: 8px 0; background: #969696; color: #fff; width: 240px;}
+/* 문의하기 모달 */
+#q_modal {position: fixed; width: 310px; height: 300px; top: 50%; margin-top: -150px;
+left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
+#q_modal h2 {width: 90%; height: 50px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 18px; color: #333; font-weight: 600; text-align: center; border-bottom: 2px solid #ddd; line-height: 3em;}
+#q_modal ul li {position: relative; height: 60px;	line-height: 4em;}
+#q_modal ul li a {display: block; padding-left: 120px;	}
+#q_modal ul li a:before {content: ""; position: absolute; left: 60px;	top: 0;	 display: inline-block; width: 50px; height: 60px;
+background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat; 
+background-size: 50px; background-position: center -6px;}
+#q_modal ul li:nth-child(2) a:before {background-position: center -76px;}
+#q_modal ul li:nth-child(3) a:before {background-position: center -146px;}
+#q_modal ul li:nth-child(4) a:before {background-position: center -216px;}
+/* 알림 모달 */
+#q_notice {position: fixed; width: 310px; height: 194px; top: 50%; margin-top: -100px;
+left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
+#q_notice h2 {width: 90%; height: 54px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 18px; color: #333; font-weight: 600; text-align: center; border-bottom: 2px solid #ddd; line-height: 3.3em;}
+#q_notice > div {margin-top: 15px;}
+#q_notice p {text-align: center; color: #434343; line-height: 1.4em; letter-spacing: -1px;}
+#q_notice > div p:last-child {margin-top: 2px; font-size: 15px; color: #696969; line-height: 1.3em;}
+#q_notice > p:last-child {position: absolute; width: 100%; bottom: 0px;}
+#q_notice > p:last-child a {display: inline-block; width: 50%; color: #fff; line-height: 2.6em;}
+#q_notice > p:last-child a:first-child {background: #A8A8A8; border-bottom-left-radius: 6px;}
+#q_notice > p:last-child a:last-child {background: #FF6600; border-bottom-right-radius: 6px;}
