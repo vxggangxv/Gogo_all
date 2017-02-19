@@ -3938,3 +3938,17 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #q_notice > p:last-child a {display: inline-block; width: 50%; color: #fff; line-height: 2.6em;}
 #q_notice > p:last-child a:first-child {background: #A8A8A8; border-bottom-left-radius: 6px;}
 #q_notice > p:last-child a:last-child {background: #FF6600; border-bottom-right-radius: 6px;}
+/* 팝업-버튼2개 - 20160818 추가 최소연팀장님*/ 
+#popup_btn2 {position:absolute; z-index:99999; left:10%; top:30%; height: 190px; margin:auto; width:80%; background:#fff; border-radius:5px; color:#535252; letter-spacing:-0.5px} 
+#popup_btn2 .closew {position:relative; float:left; width:100%; height:20px;} 
+#popup_btn2 .closew .close {position:absolute; top:7px; right:10px} 
+#popup_btn2 .txt{ position:relative; margin:auto; width:90%; text-align:center; } 
+#popup_btn2 .txt1{ font-size:1.000em; font-weight:bold; line-height:1.2; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #e9e9ea; } 
+#popup_btn2 .txt2_color{ font-size:0.938em; font-weight:bold; line-height:1.2;color: #ff6600; } 
+#popup_btn2 .txt2{text-align:center; font-size:0.938em; line-height: 1.2; padding-top:5px } 
+#popup_btn2 .pobtn {width:100%; position:absolute; bottom:0px; font-size:0.875em;} 
+#popup_btn2 .pobtn .leftbtn{float:left;  font-size:1.125em; width:50%; background:#a8a8a8; text-aligN:center; height:40px; border-bottom-left-radius:5px; color:#fff; line-height:40px; font-weight: bold} 
+#popup_btn2 .pobtn .rightbtn{float:right;  font-size:1.125em; width:50%; background:#ff6600; text-aligN:center; height:40px; border-bottom-right-radius:5px; color:#fff; line-height:40px; font-weight: bold} 
+#popup_btn2 .pobtn .rightbtn_one{float:right; width:100%; background:#ff6600; text-aligN:center; height:40px; border-bottom-right-radius:5px; border-bottom-left-radius:5px; color:#fff; line-height:2.7} 
+#popup_btn2 .ptit_s {font-size: 0.75em; color:#999; text-align:center; line-height: 30px}
+#popup_btn2 .m_t15 {padding-top: 15px}
