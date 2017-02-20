@@ -4659,3 +4659,13 @@ background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat;
 background-size: 54px; background-position: center -8px;}
 #q_modal ul li:nth-child(2) a:before {background-position: center -85px;}
 #q_modal ul li:nth-child(3) a:before {background-size: 70px; background-position: center -422px;}
+/* 로그인버튼 수정_20170220_강혜준 */
+.snsLarge a {position: relative; display: block; width: 268px; height: 55px;}
+.snsLarge a img {position: absolute;}
+.snsLarge a span {position: relative; display: inline-block; width: 78%;
+	float:right; border-left: 1px solid; text-align: center; border-left: 1px solid rgba(0,0,0,.196);}
+.snsLarge .daum a span {width: 79%;}
+.snsLarge a img {position: absolute; top: 19px; left: 19px;}
+.snsLarge .daum a img {top: 16px; left: 8px;}
+.snsLarge .kakao a img {top: 17px; left: 17px;}
+.snsLarge .facebook a img {top: 13px; left: 16px;}

@@ -4578,3 +4578,13 @@ background-size: 54px; background-position: center -8px;}
 #popup_btn2 .pobtn .rightbtn_one{float:right; width:100%; background:#ff6600; text-aligN:center; height:40px; border-bottom-right-radius:5px; border-bottom-left-radius:5px; color:#fff; line-height:2.7} 
 #popup_btn2 .ptit_s {font-size: 0.75em; color:#999; text-align:center; line-height: 30px}
 #popup_btn2 .m_t15 {padding-top: 15px}
+/* 로그인버튼 수정_20170220_강혜준 */
+.snsLarge a {position: relative; display: block; width: 268px; height: 55px;}
+.snsLarge a img {position: absolute;}
+.snsLarge a span {position: relative; display: inline-block; width: 78%;
+	float:right; border-left: 1px solid; text-align: center; border-left: 1px solid rgba(0,0,0,.196);}
+.snsLarge .daum a span {width: 79%;}
+.snsLarge a img {position: absolute; top: 19px; left: 19px;}
+.snsLarge .daum a img {top: 16px; left: 8px;}
+.snsLarge .kakao a img {top: 17px; left: 17px;}
+.snsLarge .facebook a img {top: 13px; left: 16px;}

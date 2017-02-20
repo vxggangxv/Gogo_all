@@ -3855,3 +3855,26 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #popup_btn2 .pobtn .rightbtn_one{float:right; width:100%; background:#ff6600; text-aligN:center; height:40px; border-bottom-right-radius:5px; border-bottom-left-radius:5px; color:#fff; line-height:2.7} 
 #popup_btn2 .ptit_s {font-size: 0.75em; color:#999; text-align:center; line-height: 30px}
 #popup_btn2 .m_t15 {padding-top: 15px}
+/* 버튼 수정_20170220_강혜준 */
+#snsLogin {width: 100%;}
+#snsLogin h3 {width: 90%; margin: 20px auto 10px;}
+#snsLogin .snsLarge li {line-height: 63px;}
+#snsLogin .snsLarge li.daum {line-height: 63px;}
+#snsLogin .snsLarge li:first-child {margin-top: -3px;}
+#snsLogin .snsLarge .google, #snsLogin .snsLarge .facebook, #snsLogin .snsLarge .naver, 
+#snsLogin .snsLarge .kakao, #snsLogin .snsLarge .daum {background: none; height: auto; margin-bottom: 0; font-size: 16px;}
+#snsLogin .snsLarge li a {display: block; height: auto; padding: 5px 0;}
+#snsLogin .snsLarge li a > span {position: relative; display: block; border-radius: 5px; width: 90%; margin: 0 auto; height: 63px;}
+#snsLogin .snsLarge .google a > span {background: #d34836;}
+#snsLogin .snsLarge .naver a > span {background: #1ec800;}
+#snsLogin .snsLarge .kakao a > span {background: #fee600;}
+#snsLogin .snsLarge .facebook a > span {background: #3b5998;}
+#snsLogin .snsLarge .daum {border: none;}
+#snsLogin .snsLarge .daum a > span {border: 3px solid #4681bd;}
+#snsLogin .snsLarge .google a > span img {position: absolute; left: 20px; width: 26px; top: 7px;}
+#snsLogin .snsLarge .naver a > span img {position: absolute; left: 20px; width: 26px; top: 7px;}
+#snsLogin .snsLarge .kakao a > span img {position: absolute; left: 16px; width: 32px; top: 5px;}
+#snsLogin .snsLarge .facebook a > span img {position: absolute; left: 17px; width: 26px; top: 4px;}
+#snsLogin .snsLarge .daum a > span img {position: absolute; left: 10px; width: 48px; top: 12px;}
+#snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 1px solid rgba(0,0,0,.196);}
+#snsLogin p {width: 90%; margin: 0 auto;}
