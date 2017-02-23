@@ -3517,9 +3517,8 @@ option {font-size:13px}
 #gnbWrap { float:left; width:100%; height:50px; background:#f37720; text-align:center}
 #gnbWrap .gnb {margin:auto; width:1002px; letter-spacing:-0.3px}
 #gnbWrap .gnb > li {float:left; height:50px; text-align:center; color:#fff; font-size:16px; font-weight:800; line-height:50px}
-#gnbWrap .gnb > li > a {float:left; display:block; width:229px; height:50px; color:#fff}
-#gnbWrap .gnb > li > a:hover, #gnbWrap .gnb .on {background:#e45713}
-/* #gnbWrap .gnb .on {display:block; width:229px; height:50px; color:#fff; background:#e45713} */
+#gnbWrap .gnb > li > a {float:left; display:block; width: 229px; height:50px; color:#fff}
+#gnbWrap .gnb > li > a:hover {background:#e45713}
 #gnbWrap .gnb .line {float:left; width:1px; background:#ffab72}
 #gnbWrap .gnb .all {width:80px; padding-top:3px; height:47px; font-size:14px; font-weight:600; line-height:25px}
 #gnbWrap .gnb .all > a {float:left; width:80px; height:50px; color:#fff}
