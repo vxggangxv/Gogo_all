@@ -1688,7 +1688,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #rsv_wrapper #title #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
 #rsv_wrapper #title #discount_pop .text span {color:#ec5700; font-weight:600}
 
-#rsv_wrapper #title {position:relative; text-align:left}
+#rsv_wrapper #title {position:relative; text-align:left; z-index: 10;}
 #rsv_wrapper #title span.big {font-size:22px;font-weight:600;letter-spacing:-1.5px;color:#3a3a3a}
 #rsv_wrapper #title span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
 
