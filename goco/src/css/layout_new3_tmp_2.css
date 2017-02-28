@@ -4713,7 +4713,7 @@ background-size: 54px; background-position: center -8px;}
 /* 테이블 */
 .fare_table {position: relative; width: 954px; display: table; /* margin-left: 25px; */}
 .fare_table ul {display: table-row;}
-.fare_table ul li {display: table-cell; vertical-align: middle;}
+.fare_table li {display: table-cell; vertical-align: middle;}
 
 .fare_table .f_th > li{height: 42px; text-align: center; background: #5E5E5E; color: #fff;
 font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
@@ -4729,10 +4729,11 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_td li.c4 {border-right: 1px solid #e5e5e5;}
 .fare_table .f_td.on li {background: #FFF2E9;}
 
-.fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4 {vertical-align: top;}
+.fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4 {/* vertical-align: top; */}
 
+.fare_tabel .f_td ul li {padding: 5px 0;}
 .fare_table .f_td .c1 {padding-left: 20px; font-size: 15px; font-weight: 600;	color: #202020;}
-.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div {height: 40px;}
+.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div {/* height: 40px; */}
 .fare_table .f_td .c2 div, 
 .fare_table .f_td .c3 div, 
 .fare_table .f_td .c4 div
@@ -4741,10 +4742,10 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_td .c3 div:first-child, 
 .fare_table .f_td .c4 div:first-child
 {border-top: none;}
-.fare_table .f_td .c2 p {float: left; position: relative; top: 10px; font-weight: 600; font-size: 14px;}
+.fare_table .f_td .c2 p {float: left; position: relative; font-weight: 600; font-size: 14px;}
 
-.fare_table .f_td .c2 .p1 {width: 60%; padding-left: 15px;}
-.fare_table .f_td .c2 .p2 {top: 7px; border: 1px solid #bbb; background: #fff; font-weight: 800;}
+.fare_table .f_td .c2 .p1 {width: 60%; top: 3px; padding-left: 15px;}
+.fare_table .f_td .c2 .p2 {border: 1px solid #bbb; background: #fff; font-weight: 800;}
 .fare_table .f_td .c2 .in1 {width: 32px; height: 24px; font-size: 13px; text-align: right; padding-right: 8px; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
 .fare_table .f_td.on .c2 .in1 {color: #202020;}
 .fare_table .f_td .c2 .p2 a {position: relative; top: 2px; display: inline-block; width: 16px;height: 24px;font-size: 14px; text-align: center; cursor: pointer;}

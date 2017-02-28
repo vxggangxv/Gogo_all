@@ -3,7 +3,7 @@ $(function() {
 		$(this).closest(".tit_box").find("#cal_wrap2").toggleClass("on");
 		return false;
 	});
-	$("#fare_section #cal_wrap2 .clsBtn").on("click", function() {
+	$("#fare_section #cal_wrap2 .clsBtn, #cal_wrap2 .btn_close").on("click", function() {
 		$(this).closest("#cal_wrap2").removeClass("on");
 		return false;
 	});
