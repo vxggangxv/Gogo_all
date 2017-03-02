@@ -1688,9 +1688,30 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #rsv_wrapper #title #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
 #rsv_wrapper #title #discount_pop .text span {color:#ec5700; font-weight:600}
 
-#rsv_wrapper #title {position:relative; text-align:left; z-index: 10;}
+#rsv_wrapper #title {position:relative; text-align:left}
 #rsv_wrapper #title span.big {font-size:22px;font-weight:600;letter-spacing:-1.5px;color:#3a3a3a}
 #rsv_wrapper #title span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
+
+/* #rsv_wrapper #rsv_sang {margin-top:15px; width:100%; font-size:14px}
+#rsv_sang #rsv_s_gubun {width:100%;}
+#rsv_sang #rsv_s_gubun th {background:#3a3a3a;height:38px;color:#ffffff;font-weight:bold;text-align:center}
+#rsv_sang #rsv_s_gubun td {height:50px;border-bottom:1px solid #dddddd}
+#rsv_sang #rsv_s_gubun tr.select {background:#e3e3e3; color:#3a3a3a; font-weight:bold;text-align:center}
+
+#rsv_sang #rsv_s_tab {margin-top:10px; width:100%; background:#5e5e5e;height:42px;color:#ffffff;font-weight:600;text-align:center}
+#rsv_sang #rsv_s_tab li {float:left;line-height:42px}
+#rsv_sang #rsv_s_tab li.li1 {width:640px}
+#rsv_sang #rsv_s_tab li.li2 {width:135px}
+#rsv_sang #rsv_s_tab li.li3 {width:179px}
+#rsv_sang #rsv_s_list_box {clear:left;width:950px;height:230px;overflow-y:scroll}
+#rsv_sang #rsv_s_list_box #rsv_s_list {width:950px;}
+#rsv_sang #rsv_s_list_box #rsv_s_list td.ss {height:50px;border-bottom:1px solid #dddddd}
+#rsv_sang #rsv_s_list_box #rsv_s_list tr.select {background:#e3e3e3; color:#3a3a3a; font-weight:600}
+
+#rsv_sang #rsv_s_list_box_solo {clear:left;width:100%}
+#rsv_sang #rsv_s_list_box_solo #rsv_s_list {width:100%;}
+#rsv_sang #rsv_s_list_box_solo #rsv_s_list td {height:50px;border-bottom:1px solid #dddddd}
+#rsv_sang #rsv_s_list_box_solo #rsv_s_list tr.select {background:#e3e3e3; color:#3a3a3a; font-weight:bold} */
 
 #cal_wrap2 .btn_close {clear:both; float:right; margin-right:15px}
 #cal_wrap2 {float:left; margin:0px auto; width:954px; background:url(http://img.go.co.kr/box_bg.gif) 0 0 repeat-y; border-bottom:1px solid #afb6bc; border-right:2px solid #afb6bc; border-top:2px solid #afb6bc; border-left:2px solid #afb6bc; text-align:left; color:#3a3a3a}
@@ -3366,7 +3387,6 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #detail_noticeBox .box {float:left; width:934px; margin:10px 0 20px 0; padding:20px 10px; background:#fffaf8; color:#3a3a3a; border-top:3px solid #ff610a; border-bottom:3px solid #ff610a}
 
 #reserveTitle {float:left; width:954px; margin-bottom:-10px; font-size:20px; letter-spacing:-1px; color:#3a3a3a; font-weight:800; text-align:left}
-#reserveTitle img {margin-top: -20px;}
 
 #noRoom {clear:both; float:left; width:954px; padding:60px 0; font-size:25px; letter-spacing:-0.5px; color:#6c6c6c; font-weight:600; text-align:center}
 
@@ -4670,16 +4690,14 @@ background-size: 54px; background-position: center -8px;}
 .snsLarge a img {position: absolute;}
 .snsLarge a span {position: relative; display: inline-block; width: 78%;
 	float:right; border-left: 1px solid; text-align: center; border-left: 1px solid rgba(0,0,0,.196);}
-.snsLarge .daum a span {width: 79%;}
 .snsLarge a img {position: absolute; top: 19px; left: 19px;}
-.snsLarge .daum a img {top: 16px; left: 8px;}
 .snsLarge .kakao a img {top: 17px; left: 17px;}
 .snsLarge .facebook a img {top: 13px; left: 16px;}
 /* 이용금액 수정_20170224)강혜준 */
 .clr:before, .clr:after {content: ""; display: block;}
 .clr:after {clear: both;}
 .fare_sectioin {position: relative; box-sizing: border-box;}
-#rsv_wrapper .slg {float: right; margin-top: -60px;}
+#rsv_wrapper .slg {float: right;}
 .tit_box {position: relative; width: 954px; /* margin: 0 auto; margin-left: 25px; */ height: 42px; padding-top: 8px; background: #ff7a2d;}
 .tit_box > span {position:relative; top: 3px; color: #fff;}
 .tit_box .t1 {font-size: 16px; margin-left: 140px;/* margin-left: 230px; */ font-weight: 800; margin-right: 10px;}
@@ -4737,6 +4755,55 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .c3 .a_r {/* margin: 0 8px 0 5px; */ letter-spacing: 0; display: inline-block; width: 4%; text-align: center;}
 .fare_table .fc1 {color: #ff2122; display: inline-block; width: 44%; text-align: left; margin-left: 3%;}
 .fare_table .f_td.on .fc2 {color: #ff2122;}
+/* 요일권 테이블 */
+.day_table_wrap {position: relative; width: 954px; /* width: 971px; */ max-height: 534px; overflow-y: auto;}
+.day_table {position: relative; width: 937px; /* width: 954px; */ display: table; /* margin-left: 25px; */}
+.day_table ul {display: table-row;}
+.day_table ul li {display: table-cell; vertical-align: middle;}
+
+.day_table .f_th > li{height: 42px; text-align: center; background: #5E5E5E; color: #fff;
+font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
+.day_table .f_th > li:first-child {border-left: none;}
+.day_table .c1 {width: 30%;}
+.day_table .c5 {width: 12%;}
+.day_table .c2 {width: 25%;}
+.day_table .c3 {width: 20%;}
+.day_table .c4 {width: 13%;}
+
+.day_table .f_td {cursor: pointer;}
+.day_table .f_td > li:after {content: ""; display: block; clear:both;}
+.day_table .f_td > li {/* height: 80px; */	border-left: 1px solid #e5e5e5; border-bottom: 1px solid #B5B5B5; letter-spacing: -1px; color: #666;}
+.day_table .f_td li.c4 {border-right: 1px solid #e5e5e5;}
+.day_table .f_td.on li {background: #FFF2E9;}
+
+.day_table .f_td li.c2, .day_table .f_td li.c3, .day_table .f_td li.c4 {vertical-align: top;}
+
+.day_table .f_td .c1 {padding-left: 20px; font-size: 15px; font-weight: 600; text-align: left; color: #202020;}
+.day_table .f_td .c2 div, .day_table .f_td .c3 div, .day_table .f_td .c4 div {height: 40px;}
+.day_table .f_td .c2 div, 
+.day_table .f_td .c3 div, 
+.day_table .f_td .c4 div 
+{border-top: 1px solid #e5e5e5;}
+.day_table .f_td .c2 div:first-child, 
+.day_table .f_td .c3 div:first-child, 
+.day_table .f_td .c4 div:first-child
+{border-top: 1px solid none;}
+.day_table .f_td .c2 p {float: left; position: relative; top: 10px; font-weight: 600; font-size: 14px;}
+
+.day_table .f_td .c2 .p1 {width: 54%; padding-left: 15px;}
+.day_table .f_td .c2 .p2 {top: 7px; border: 1px solid #bbb; background: #fff; font-weight: 800;}
+.day_table .f_td .c2 .in1 {width: 32px; height: 24px; font-size: 13px; text-align: right; padding-right: 8px; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
+.day_table .f_td.on .c2 .in1 {color: #202020;}
+.day_table .f_td .c2 .p2 a {position: relative; top: 2px; display: inline-block; width: 16px;height: 24px;font-size: 14px; text-align: center; cursor: pointer;}
+
+.day_table .c3 p, .day_table .c4 p {font-size: 13px; position: relative; top: 10px; letter-spacing: 0; font-weight: 600;}
+.day_table .c4 p {text-align: right; padding-right: 20px;}
+.day_table .c3 del {display: inline-block; width: 44%; margin-right: 5%; text-align: right;}
+.day_table .c3 .a_r {/* margin: 0 8px 0 5px; */ letter-spacing: 0; display: inline-block; width: 4%; text-align: center;}
+.day_table .fc1 {color: #ff2122; display: inline-block; width: 44%; text-align: left; margin-left: 3%;}
+.day_table .f_td.on .fc2 {color: #ff2122;}
+
+.day_table .f_td .c5 {text-align: center; font-weight: 600; font-size: 13px;}
 /* 선택 상품 */
 .slt_wrap {display: table; position: relative; width: 954px; height: auto; /* margin: 0 auto;  margin-left: 25px; */ margin-top: 15px; border: 1px solid #ccc; background: #F5F5F5;}
 .slt_wrap > div {display: table-cell; vertical-align: top;}
@@ -4772,7 +4839,9 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .ntc_contents {border-left: 1px solid #ccc; padding: 15px 0 15px 17px; font-size: 12px;}
 
 /* 날짜 셀렉트박스 클릭시 */
-.fare_sectioin #cal_wrap2 {position: absolute; width: 385px; border: 1px solid #afb6bc; border-right: none; z-index: 11; width: 384px;}
-.fare_sectioin #cal_wrap2 .cal_section {padding-bottom: 20px; min-height: auto;}
-.fare_sectioin #cal_wrap2 .cal_section .step_01 .btn_close {position: relative; top: -3px;}
+#cal_wrap2 {position: absolute; width: 385px; border: 1px solid #afb6bc; border-right: none; z-index: 11; width: 384px;}
+#cal_wrap2 .cal_section {padding-bottom: 20px; min-height: auto;}
+#cal_wrap2 .cal_section .step_01 .btn_close {position: relative; top: -3px;}
+#rsv_wrapper {margin-top: -42px;}
 .slg {margin-bottom: 12px;}
+
