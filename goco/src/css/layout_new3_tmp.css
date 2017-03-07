@@ -4698,10 +4698,11 @@ background-size: 54px; background-position: center -8px;}
 .fare_table .f_th > li{height: 42px; text-align: center; background: #5E5E5E; color: #fff;
 font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_th > li:first-child {border-left: none;}
-.fare_table .c1 {width: 37%;}
-.fare_table .c2 {width: 30%;}
-.fare_table .c3 {width: 20%;}
-.fare_table .c4 {width: 13%;}
+.fare_table .c1 {width: 331px;}
+.fare_table .c2 {width: 276px;}
+.fare_table .c3 {width: 163px;}
+.fare_table .c5 {width: 97px;}
+.fare_table .c4 {width: 87px;}
 
 .fare_table .f_td {cursor: pointer;}
 .fare_table .f_td > li:after {content: ""; display: block; clear:both;}
@@ -4709,28 +4710,31 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_td li.c4 {border-right: 1px solid #e5e5e5;}
 .fare_table .f_td.on li {background: #FFF2E9;}
 
-.fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4 {vertical-align: top;}
+.fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4, .fare_table .f_td li.c5  {vertical-align: top;}
 
 .fare_table .f_td .c1 {padding-left: 20px; font-size: 15px; font-weight: 600;	color: #202020;}
-.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div {height: 40px;}
+.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {height: 40px; overflow: auto;}
 .fare_table .f_td .c2 div, 
 .fare_table .f_td .c3 div, 
-.fare_table .f_td .c4 div
+.fare_table .f_td .c4 div,
+.fare_table .f_td .c5 div
 {border-top: 1px solid #e5e5e5;}
 .fare_table .f_td .c2 div:first-child, 
 .fare_table .f_td .c3 div:first-child, 
-.fare_table .f_td .c4 div:first-child
+.fare_table .f_td .c4 div:first-child,
+.fare_table .f_td .c5 div:first-child
 {border-top: none;}
 .fare_table .f_td .c2 p {float: left; position: relative; top: 10px; font-weight: 600; font-size: 14px;}
+.fare_table .f_td .c5 p {float: left; position: relative; font-weight: 600; font-size: 14px; left: 10px;}
 
-.fare_table .f_td .c2 .p1 {width: 60%; padding-left: 15px;}
-.fare_table .f_td .c2 .p2 {top: 7px; border: 1px solid #bbb; background: #fff; font-weight: 800;}
-.fare_table .f_td .c2 .in1 {width: 32px; height: 24px; font-size: 13px; text-align: right; padding-right: 8px; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
-.fare_table .f_td.on .c2 .in1 {color: #202020;}
-.fare_table .f_td .c2 .p2 a {position: relative; top: 2px; display: inline-block; width: 16px;height: 24px;font-size: 14px; text-align: center; cursor: pointer;}
+.fare_table .f_td .p1 {padding-left: 10px;}
+.fare_table .f_td .p2 {top: 7px; border: 1px solid #bbb; background: #fff; font-weight: 800;}
+.fare_table .f_td .in1 {width: 32px; height: 24px; font-size: 13px; text-align: right; padding-right: 8px; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
+.fare_table .f_td.on .in1 {color: #202020;}
+.fare_table .f_td .p2 a {position: relative; top: 2px; display: inline-block; width: 16px;height: 24px;font-size: 14px; text-align: center; cursor: pointer;}
 
 .fare_table .c3 p, .fare_table .c4 p {font-size: 13px; position: relative; top: 10px; letter-spacing: 0; font-weight: 600;}
-.fare_table .c4 p {text-align: right; padding-right: 20px;}
+.fare_table .c4 p {text-align: center;}
 .fare_table .c3 del {display: inline-block; width: 44%; margin-right: 5%; text-align: right;}
 .fare_table .c3 .a_r {/* margin: 0 8px 0 5px; */ letter-spacing: 0; display: inline-block; width: 4%; text-align: center;}
 .fare_table .fc1 {color: #ff2122; display: inline-block; width: 44%; text-align: left; margin-left: 3%;}
@@ -4770,7 +4774,7 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .ntc_contents {border-left: 1px solid #ccc; padding: 15px 0 15px 17px; font-size: 12px;}
 
 /* 날짜 셀렉트박스 클릭시 */
-#cal_wrap2 {position: absolute; width: 385px; border: 1px solid #afb6bc; border-right: none; z-index: 11; width: 384px;}
-#cal_wrap2 .cal_section {padding-bottom: 20px; min-height: auto;}
-#cal_wrap2 .cal_section .step_01 .btn_close {position: relative; top: -3px;}
+.fare_sectioin #cal_wrap2 {position: absolute; width: 385px; border: 1px solid #afb6bc; border-right: none; z-index: 11; width: 384px;}
+.fare_sectioin #cal_wrap2 .cal_section {padding-bottom: 20px; min-height: auto;}
+.fare_sectioin #cal_wrap2 .cal_section .step_01 .btn_close {position: relative; top: -3px;}
 .slg {margin-bottom: 12px;}

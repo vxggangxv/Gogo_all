@@ -3964,3 +3964,70 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #snsLogin .snsLarge .daum a > span img {position: absolute; left: 10px; width: 48px; top: 12px;}
 #snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 1px solid rgba(0,0,0,.196);}
 #snsLogin p {width: 90%; margin: 0 auto;}
+/* 앱 이용권 UI변경_20170303_강혜준 */
+#calender_number_w .term {clear: both; text-align: right; font-size: 12px; position: relative; left: -16px;}
+#tickets {clear: both;}
+#tickets .fl {float: left;}
+#tickets .fr {float: right;}
+#tickets > ul > li {position: relative; padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer;}
+#tickets > ul > li.on {background: #F7EBDD;}
+#tickets p {letter-spacing: -1px; color: #202020;}
+#tickets .tit {position: relative; width: 68%;	}
+@media (max-device-width: 320px){
+	#tickets .tit {width: 60%;}
+}
+#tickets .tit p.nth-1 {font-weight: 600; font-size: 14px;}
+#tickets .tit p.nth-1 .ui-radio, #tickets .tit p.nth-1 .ui-checkbox {display: inline-block; position: absolute;}
+#tickets .tit p.nth-1 label {display:block; position:relative; width: 20px; height:20px; top: 3px;
+background:url(http://img.go.co.kr/mobile/app_check_icon.png) no-repeat 0 0; background-size: 79px;}
+#tickets .tit p.nth-1 input {position: absolute; left: -9999px; width: 0; height: 0;}
+#tickets li.on p.nth-1 label {background-position: -40px 0;}
+#tickets .tit p.nth-1 span {display: inline-block; position: relative; left: 20px; width: 90%;}
+#tickets .tit p.nth-2, #tickets .tit p.nth-3 {padding-left: 20px;}
+#tickets .tit p.nth-2 span {letter-spacing: 0;}
+#tickets .tit p.nth-2 {font-size: 13px;}
+#tickets .tit p.nth-3 {color: #999; font-size: 12px; margin-top: 2px;}
+#tickets .prc {} 
+#tickets .prc del {position: relative; top: -2px; font-size: 13px; color: #999;} 
+#tickets .prc .per_sale, #tickets .prc .app_sale {display: inline-block; border: 1px solid #999; background: #fff; font-size: 10px; width: 44px; text-align: center;
+position: relative; top: 3px; margin-right: 2px; line-height: 1.2em; height: 14px;	}
+#tickets .prc .per_sale {border-color: #ff5100; color: #ff5100;}
+#tickets .prc .app_sale {border-color: #3f74b6; color: #3f74b6;}
+#tickets .prc .origin_prc, #tickets .prc .app_prc {font-weight: 600;}
+#tickets .prc .origin_prc {}
+#tickets .prc .app_prc {color: #ff5100;}
+
+#tickets-list-bg {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box;}
+#tickets-list {position: fixed; bottom: 54px; width: 100%;}
+#tickets-list .cls-box {display: block; width: 100%; height: 25px; z-index: 1; position: relative; top: 1px;}
+#tickets-list .cls-box > a {display: block; margin: 0 auto; width: 97px; height: 25px; background: url(http://img.go.co.kr/mobile/app_lc_icon.png) no-repeat center top;}
+#tickets-list .tl-wrap {width: 100%;	min-height: 350px; max-height: 588px;
+background: #f0f0f0; border-top: 1px solid #b3b3b3;}
+#tickets-list h2, #tickets-list h3 {text-align: center; font-size: 17px; font-weight: 600; color: #333; padding: 8px 0; letter-spacing: -1px;}
+#tickets-list h2 {border-bottom: 1px solid #d4d4d4; color: #343434;}
+#tickets-list h3 {}
+.tl-wrap .tl-outer {width: 96%; margin: 0 auto; letter-spacing: -1px;
+background: #fff; margin-bottom: 10px;}
+.tl-wrap .tl-outer:last-child {margin-bottom: 0;}
+.tl-items {padding: 5px; color: #383838;}
+.tl-items .item-number, .tl-items .item-price, .tl-items h4 {font-weight: 600;}
+.tl-items li {font-size: 14px; border-top: 1px solid #ddd; padding: 10px 5px;}
+.tl-items li:first-child {border-top: none;}
+.tl-items .tl-name {padding: 5px 5px 5px;}
+.tl-items .tl-name h4 {font-size: 15px;}
+
+.item-number .h-ctgr {position: relative; top: 5px;}
+.tl-items .number-box {position: relative; display: inline-block; width: 110px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
+
+.number-box a, .number-box input, .number-box > div {float: left; display: inline-block; text-align: center; box-sizing: border-box; height: 30px;}
+.number-box a {width: 25%; font-size: 18px; font-weight: 600; background: #f7f7f7}
+.number-box > div {width: 50%; border-left:1px solid #ddd; border-right:1px solid #ddd;}
+.number-box input {width: 100%; font-size: 13px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px;}
+
+.item-price {text-align: right; font-size: 19px; margin: 3px 0 -6px;}
+/* 결제페이지 리뉴얼 */
+#admission-pay {position: relative; width: 100%; margin-top: 46px;}
+#admission-pay li {font-family: "NanumGothic", sans-serif;}
+#admission-pay .division{padding: 4px 10px; font-size: 14px; background: #f8f8f8;
+border-top: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
+#admission-pay .fc-orange {color: #ff4800;}

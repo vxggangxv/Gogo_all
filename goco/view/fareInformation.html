@@ -22,6 +22,10 @@
 	<style>
 		body {padding: 100px 0;}
     #rsv_wrapper {text-align: center;}
+    /* 아이템 적을 때 높이 늘리기 */
+    .fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {height: 60px;}
+    .fare_table .f_td .c2 p, .fare_table .c3 p, .fare_table .c4 p {top: 20px;}
+    .fare_table .f_td .p2 {top: 17px;}
 		
 	</style>
 
@@ -138,9 +142,74 @@
 
 
     </div>
-    
-    <!-- 단품상품일 경우 -->
+
+    <!-- 5개미만 높이 넓히기 -->
+    <!-- <div class="fare_table" id="fare_table">
+      <ul class="f_th">
+        <li class="c1">상품명</li>
+        <li class="c2">수량선택</li>
+        <li class="c3">할인가</li>
+        <li class="c4">결제금액</li>
+      </ul>
+      <ul class="f_td on">
+        <li class="c1">일반 캐빈(바닥 불투명)왕복권</li>
+        <li class="c2">
+          <div>
+            <p class="p1">대인(만 13세이상)</p>
+            <p class="p2"><a href="#">&#45;</a><input type="text" value="10" class="in1"><a href="#">&#43;</a></p>
+          </div>
+        </li>
+        <li class="c3">
+          <div><p><del>50,000원</del><span class="a_r">></span><span class="fc1">23,900원</span></p></div>
+        </li>
+        <li class="c4">
+          <div><p><span class="fc2">23,900원</span></p></div>
+        </li>
+      </ul>
+        
+    </div> -->
+
+    <!-- 재수정 요청 -->
     <div class="fare_table" id="fare_table">
+      <ul class="f_th">
+        <li class="c1">상품명</li>
+        <li class="c2">구분</li>
+        <li class="c3">할인가</li>
+        <li class="c5">수량선택</li>
+        <li class="c4">결제금액</li>
+      </ul>
+      <ul class="f_td on">
+        <li class="c1">일반 캐빈(바닥 불투명)왕복권</li>
+        <li class="c2">
+          <div>
+            <p class="p1">대인(만 13세이상)</p>
+          </div>
+          <!-- <div>
+            <p class="p1">소인(37개월~만 12세이상)</p>
+          </div> -->
+        </li>
+        <li class="c3">
+          <div><p><del>50,000원</del><span class="a_r">></span><span class="fc1">23,900원</span></p></div>
+          <!-- <div><p><del>50,000원</del><span class="a_r">></span><span class="fc1">21,000원</span></p></div> -->
+        </li>
+        <li class="c5">
+          <div>
+            <p class="p2"><a href="#">&#45;</a><input type="text" value="10" class="in1"><a href="#">&#43;</a></p>
+          </div>
+          <!-- <div>
+            <p class="p2"><a href="#">&#45;</a><input type="text" value="4" class="in1"><a href="#">&#43;</a></p>
+          </div> -->
+        </li>
+        <li class="c4">
+          <div><p><span class="fc2">23,900원</span></p></div>
+          <!-- <div><p><span class="fc2">84,000원</span></p></div> -->
+        </li>
+      </ul>
+        
+    </div>
+
+    <!-- 단품상품일 경우 -->
+    <!-- <div class="fare_table" id="fare_table">
       <ul class="f_th">
         <li class="c1">상품명</li>
         <li class="c2">수량선택</li>
@@ -210,7 +279,7 @@
           <div><p><span class="fc2">0원</span></p></div>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- 요일 상품일 경우 -->
     <!-- <div class="day_table_wrap">
