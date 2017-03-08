@@ -3997,7 +3997,7 @@ position: relative; top: 3px; margin-right: 2px; line-height: 1.2em; height: 14p
 #tickets .prc .origin_prc {}
 #tickets .prc .app_prc {color: #ff5100;}
 
-#tickets-list-bg {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11;}
+#tickets-list-bg {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box;}
 #tickets-list {position: fixed; bottom: 54px; width: 100%;}
 #tickets-list .cls-box {display: block; width: 100%; height: 25px; z-index: 1; position: relative; top: 1px;}
 #tickets-list .cls-box > a {display: block; margin: 0 auto; width: 97px; height: 25px; background: url(http://img.go.co.kr/mobile/app_lc_icon.png) no-repeat center top;}
@@ -4025,9 +4025,9 @@ background: #fff; margin-bottom: 10px;}
 .tl-items .number-box {position: relative; display: inline-block; width: 110px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
 
 .number-box a, .number-box input, .number-box > .ui-input-text {float: left; display: inline-block; text-align: center; box-sizing: border-box; height: 30px;}
-.number-box a {width: 27px; font-size: 18px; font-weight: 600; background: #f7f7f7}
-.number-box > div {width: 52px; border-left:1px solid #ddd; border-right:1px solid #ddd;}
-.number-box input {width: 52px; font-size: 13px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px;}
+.number-box a {width: 25%; font-size: 18px; font-weight: 600; background: #f7f7f7}
+.number-box > div {width: 50%; border-left:1px solid #ddd; border-right:1px solid #ddd;}
+.number-box input {width: 100%; font-size: 13px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px;}
 
 .item-price {clear: both; text-align: right; font-size: 19px; margin: 3px 0 -6px;}
 /* 결제페이지 리뉴얼 */
@@ -4040,7 +4040,7 @@ background: #fff; margin-bottom: 10px;}
 border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 #admission-pay .division .pull-right {font-size: 12px; position: relative;}
 #admission-pay .fc-orange {color: #ff4800; letter-spacing: -1px;}
-#admission-pay .adm-contents {padding: 5px 10px; font-size: 14px;}
+#admission-pay .adm-contents {padding: 10px; font-size: 14px;}
 
 .item-info > div {position: relative; float: left;}
 .item-info .d1 {width: 25%;}
@@ -4051,10 +4051,15 @@ border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 .item-info .d2 .fc-orange {padding-left: 7px;}
 .item-info .d2 .fc-orange span {position: absolute; left: 0;}
 
-.adm-info .adm-info-box {position: relative; border-bottom: 1px solid #D2D2D2; box-sizing: border-box; padding: 5px 0;}
-.adm-info .adm-info-box:last-child {border-bottom: none;}
-.adm-info-box .adm-mt {color: #545454; font-size: 12px;}
-.adm-info-box .adm-mt .adm-l {color: #bfbfbf;}
+.adm-info .adm-info-box {position: relative; border: 1px solid #bfbfbf; box-sizing: border-box;padding: 5px; margin-bottom: 6px;}
+.adm-info .adm-info-box:last-child {margin-bottom: 0;}
+.adm-info-box .adm-mt, .adm-info-box .dropdown .btn {color: #545454;}
+.adm-info-box .adm-mt {display: inline-block; width: 80%;}
+.adm-info-box .dropdown {display: inline-block; width: 54px;}
+.adm-info-box .dropdown .btn {width: 100%; height: 25px; font-size: 14px; background: #fff; border: 1px solid #bfbfbf; line-height: .75em; color: #444;}
+.adm-info-box .dropdown .btn i {color: #999; margin-left: 5px;}
+.adm-info-box .dropdown-menu {display: none; position: absolute; width: 52px; top: 28px; border: 1px solid #bfbfbf; background: #fff; z-index: 1;}
+.adm-info-box .dropdown-menu a {display: block; padding: 1px 8px 1px; font-size: 14px;}
 
 .user-info label, .user-info input {color: #545454;}
 .user-info label {display: inline-block; width: 40%; text-indent: 2px;}
@@ -4073,8 +4078,8 @@ text-indent: 5px; font-size: 13px;}
 .sale-info .use {display: inline-block; padding: 1px 5px 3px 4px; background: #999; color: #fff;
 text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; font-size: 12px;}
 .sale-info .point-use-li .pull-left {top: 5px;}
-.sale-info .point-use-li .ui-input-text {width: 92px; float: right;}
-.sale-info .point-use {width: 92px; height: 30px; border-radius: 6px; border: 1px solid #A5A5A5; text-align: right; padding-right: 5px;}
+.sale-info .point-use-li .ui-input-text {width: 90px; float: right;}
+.sale-info .point-use {width: 94%; height: 30px; border-radius: 6px; border: 1px solid #A5A5A5; text-align: right; padding-right: 5px;}
 
 .adm-total-price {border-top: 1px solid #e5e5e5;}
 .adm-total-price .pull-left, .adm-total-price .pull-right{color: #404040; font-size: 18px; font-weight: 600;}
