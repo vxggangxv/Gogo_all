@@ -3186,7 +3186,8 @@ color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:5px; 
 #kaka_advice .btn img{margin-top:5px;}
 
 /* 상세페이지 객실선택창 */
-#info_product_btn_w{position:fixed; bottom:0; left:0; z-index:99999; display:table; width:100%; height:60px; border-top:1px solid #f3f3f3; background:#fff;}
+#info_product_btn_w{position:fixed; bottom:0; left:0; z-index:99999; display:table; width:100%; height:60px; border-top:1px solid #f3f3f3; background:#fff;				z-index: 11;}
+/* #info_product_btn_w.on {bottom:-60px;} */
 #info_product_btn_w .info_product_btn{ width:96%; height:45px; margin:auto; background:#f95c24; color:#fff; margin-top:7px; text-align:center; line-height:34pt; font-weight:600; font-size:1.063em; border-radius:3px; cursor:pointer;}
 #info_product_w{position:fixed; bottom:60px; left:0; z-index:99999; display:table; width:100%; background:#fff;}
 #info_product_w .info_product_tit{width:100%; border-bottom:1px solid #f3f3f3; height:50px; position:relative; }
@@ -3981,7 +3982,10 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 background:url(http://img.go.co.kr/mobile/app_check_icon.png) no-repeat 0 0; background-size: 79px;}
 #tickets .tit p.nth-1 input {position: absolute; left: -9999px; width: 0; height: 0;}
 #tickets li.on p.nth-1 label {background-position: -40px 0;}
-#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 90%;}
+#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 90%; word-wrap: break-word; vertical-align: top; top: 4px;}
+@media (max-device-width: 320px){
+	#tickets .tit p.nth-1 span {width: 86%;}
+}
 #tickets .tit p.nth-2, #tickets .tit p.nth-3 {padding-left: 20px;}
 #tickets .tit p.nth-2 span {letter-spacing: 0;}
 #tickets .tit p.nth-2 {font-size: 13px;}
@@ -3996,11 +4000,17 @@ position: relative; top: 3px; margin-right: 2px; line-height: 1.2em; height: 14p
 #tickets .prc .origin_prc {}
 #tickets .prc .app_prc {color: #ff5100;}
 
-#tickets-list-bg {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11;}
-#tickets-list {position: fixed; bottom: 54px; width: 100%;}
+#backDrop {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11; display: none;}
+#backDrop.on {display: block;}
+/* #tickets-list-bg{position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11; display: block;} */
+#tickets-list-bg {z-index: 11; display: block;}
+#tickets-list-bg.on {display: block;}
+#tickets-list {position: fixed; /* bottom: 54px; */ width: 100%; z-index: 11;
+bottom: -440px; transition: all 1.2s;}
+#tickets-list.on {bottom: 0px;}
 #tickets-list .cls-box {display: block; width: 100%; height: 25px; z-index: 1; position: relative; top: 1px;}
 #tickets-list .cls-box > a {display: block; margin: 0 auto; width: 97px; height: 25px; background: url(http://img.go.co.kr/mobile/app_lc_icon.png) no-repeat center top;}
-#tickets-list .tl-wrap {width: 100%;	min-height: 280px; max-height: 386px; overflow-y: auto;
+#tickets-list .tl-wrap {width: 100%;	min-height: 334px; max-height: 440px; overflow-y: auto;
 background: #f0f0f0; border-top: 1px solid #b3b3b3;}
 #tickets-list h2, #tickets-list h3 {text-align: center; font-size: 17px; font-weight: 600; color: #333; padding: 8px 0; letter-spacing: -1px;}
 #tickets-list h2 {border-bottom: 1px solid #d4d4d4; color: #343434;}
