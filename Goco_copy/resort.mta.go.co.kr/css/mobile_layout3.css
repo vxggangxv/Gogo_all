@@ -3917,3 +3917,132 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #snsLogin .snsLarge .daum a > span img {position: absolute; left: 10px; width: 48px; top: 12px;}
 #snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 1px solid rgba(0,0,0,.196);}
 #snsLogin p {width: 90%; margin: 0 auto;}
+/* 앱 이용권 UI변경_20170303_강혜준 */
+#calender_number_w .term {clear: both; text-align: right; font-size: 13px; position: relative;}
+#tickets {clear: both;}
+#tickets .fl {float: left;}
+#tickets .fr {float: right;}
+#tickets > ul > li {position: relative; padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer;}
+#tickets > ul > li.on {background: #F7EBDD;}
+#tickets p {letter-spacing: -1px; color: #202020;}
+#tickets .tit {position: relative; width: 68%;	}
+@media (max-device-width: 320px){
+	#tickets .tit {width: 64%;}
+}
+#tickets .tit p.nth-1 {font-weight: 600; font-size: 14px;}
+#tickets .tit p.nth-1 label {display:inline-block; position:absolute; width: 28px; height:22px; cursor: pointer; left: 0;
+background:url(http://img.go.co.kr/mobile/app_check_icon.png) no-repeat 0 0; background-size: 95px;}
+#tickets .tit p.nth-1 input {position: absolute; left: -9999px; width: 0; height: 0;}
+#tickets li.on p.nth-1 label {background-position: -48px 0;}
+#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 100%; word-wrap: break-word; vertical-align: top; /* top: 4px; */}
+/* @media (max-device-width: 320px){
+	#tickets .tit p.nth-1 span {width: 86%;}
+} */
+#tickets .tit p {padding-left: 27px;}
+#tickets .tit p.nth-2 span {letter-spacing: 0;}
+#tickets .tit p.nth-2 {font-size: 13px;}
+#tickets .tit p.nth-3 {color: #999; font-size: 12px; margin-top: 2px;}
+#tickets .prc {} 
+#tickets .prc del {position: relative; font-size: 14px; color: #888; top: 5px;} 
+#tickets .prc .per_sale, #tickets .prc .app_sale {display: inline-block; border: 1px solid #999; background: #fff; font-size: 10px; width: 44px; text-align: center;
+position: relative; top: 3px; margin-right: 2px; line-height: 1.4em; /* height: 14px; */}
+#tickets .prc .per_sale {border-color: #ff5100; color: #ff5100;}
+#tickets .prc .app_sale {border-color: #3f74b6; color: #3f74b6;}
+#tickets .prc .origin_prc, #tickets .prc .app_prc {font-weight: 600;}
+#tickets .prc .origin_prc {}
+#tickets .prc .app_prc {color: #ff5100;}
+
+#backDrop {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 101; display: none;}
+#backDrop.on {display: block;}
+/* #tickets-list-bg{position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11; display: block;} */
+#tickets-list-bg {z-index: 11; display: block;}
+#tickets-list-bg.on {display: block;}
+#tickets-list {position: fixed; width: 100%; z-index: 101; /* overflow: hidden; */
+bottom: -462px; transition: all 0.8s;}
+#tickets-list.on {bottom: 60px;}
+#tickets-list .cls-box {display: block; width: 100%; height: 25px; z-index: 1; position: relative; top: 1px;}
+#tickets-list .cls-box > a {display: block; margin: 0 auto; width: 97px; height: 25px; background: url(http://img.go.co.kr/mobile/app_lc_icon.png) no-repeat center top;}
+#tickets-list .tl-wrap {width: 100%;	min-height: 194px; max-height: 318px; padding-bottom: 60px; overflow: hidden;
+background: #f0f0f0;}
+#tickets-list h2, #tickets-list h3 {text-align: center; font-size: 17px; font-weight: 600; color: #333; padding: 8px 0; letter-spacing: -1px; background: #f0f0f0;}
+#tickets-list h2 {border-bottom: 1px solid #d4d4d4; color: #343434; border-top: 1px solid #b3b3b3;}
+#tickets-list h3 {}
+.tl-wrap .tl-outer {width: 96%; margin: 0 auto; letter-spacing: -1px;
+background: #fff; margin-bottom: 10px;}
+.tl-wrap .tl-outer:last-child {margin-bottom: 0;}
+.tl-items {padding: 5px; color: #383838;}
+.tl-items .item-number, .tl-items .item-price, .tl-items h4 {font-weight: 600;}
+.tl-items li {font-size: 14px; border-top: 1px solid #ddd; padding: 8px 5px;}
+.tl-items li:first-child {border-top: none;}
+.tl-items .tl-name {padding: 5px 5px 5px;}
+.tl-items .tl-name h4 {font-size: 15px;}
+
+.item-number-wrap .item-number {float: left;}
+.item-number-wrap .item-nb-outer {float: right;}
+.item-number {width: 61%;}
+.item-nb-outer {width: 110px;}
+.item-number .h-ctgr {position: relative; top: 5px; display: inline-block; font-weight: 600; padding-left: 8px;}
+.item-number p.nth-2 {font-size: 13px; padding-left: 8px; color: #999; margin-top: 3px;	}
+.item-number .h-ctgr span {position: absolute; left: 0;}
+.tl-items .number-box {position: relative; display: inline-block; width: 108px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
+
+.number-box a, .number-box input, .number-box > .ui-input-text {float: left; display: inline-block; text-align: center; box-sizing: border-box; height: 30px;}
+.number-box a {width: 27px; font-size: 18px; font-weight: 600; background: #f7f7f7}
+.number-box > div {width: 52px; border-left:1px solid #ddd; border-right:1px solid #ddd;}
+.number-box input {width: 52px; font-size: 14px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px;}
+.number-box input.on, .number-box input:active, .number-box input:focus {color: #f95c25;}
+.item-price {clear: both; text-align: right; font-size: 19px; margin: 3px 0 -6px;}
+
+.list_btn_wrap {width: 100%; height: 53px; position: fixed; bottom: 0; background: #fff; padding-top: 7px; border-top: 1px solid #f3f3f3;}
+.list_btn_wrap a {display: block; text-align: center; width: 96%; margin: 0 auto; height: 45px; background: #f95c25; color: #fff; font-size: 17px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;}
+
+/* 결제페이지 리뉴얼 */
+.pull-left {float: left;}
+.pull-right {float: right;}
+#admission-pay {position: relative; width: 100%; margin-top: 46px;}
+#admission-pay .ui-input-text {position: relative; display: inline-block;}
+#admission-pay li {position: relative; font-family: "NanumGothic", sans-serif; letter-spacing: -1px;}
+#admission-pay .division{padding: 5px 10px; font-size: 13px; background: #f8f8f8;
+border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
+#admission-pay .division .pull-right {font-size: 12px; position: relative;}
+#admission-pay .fc-orange {color: #ff4800; letter-spacing: -1px;}
+#admission-pay .adm-contents {padding: 5px 10px; font-size: 14px;}
+
+.item-info > div {position: relative; float: left;}
+.item-info .d1 {width: 25%;}
+.item-info-img {width: 92%;}
+.item-info .d2 {width: 75%; top: -4px;}
+.item-info .d2 > p {letter-spacing: -1px; font-size: 12px;}
+.item-info .d2 .d2_ft {font-size: 14px; color: #303030; font-weight: 600;}
+.item-info .d2 .fc-orange {padding-left: 7px;}
+.item-info .d2 .fc-orange span {position: absolute; left: 0;}
+
+.adm-info .adm-info-box {position: relative; border-bottom: 1px solid #D2D2D2; box-sizing: border-box; padding: 5px 0;}
+.adm-info .adm-info-box:last-child {border-bottom: none;}
+.adm-info-box .adm-mt {color: #545454; font-size: 12px;}
+.adm-info-box .adm-mt .adm-l {color: #bfbfbf;}
+
+.user-info label, .user-info input {color: #545454;}
+.user-info label {display: inline-block; width: 40%; text-indent: 2px;}
+.user-info > div {margin-bottom: 6px;}
+.user-info > div:last-child {margin-bottom: 0;}
+/* .user-info > div > .ui-input-text {position: relative; right: 2px; display: inline-block; width: 60%; } */
+.user-info input {position: relative; display: inline-block; right: -2px;	 width: 59%; height: 30px; border-radius: 6px; border: 1px solid #A5A5A5;
+text-indent: 5px; font-size: 13px;}
+
+.sale-info > div {margin-bottom: 5px;}
+.sale-info > div:last-child {margin-bottom: 0px;}
+.sale-info .pull-left {position: relative; top: 2px; color: #545454; letter-spacing: -1px;}
+.sale-info .sale-ft, .sale-info .fc-blue {font-size: 17px; color: #333; font-weight: 600; font-family: Helvetica, "NanumGothic", sans-serif;}
+.sale-info .point {font-size: 12px;}
+.sale-info .fc-blue {color: #0072bc;}
+.sale-info .use {display: inline-block; padding: 1px 5px 3px 4px; background: #999; color: #fff;
+text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; font-size: 12px;}
+.sale-info .point-use-li .pull-left {top: 5px;}
+.sale-info .point-use-li .ui-input-text {width: 92px; float: right;}
+.sale-info .point-use {width: 92px; height: 30px; border-radius: 6px; border: 1px solid #A5A5A5; text-align: right; padding-right: 5px;}
+
+.adm-total-price {border-top: 1px solid #e5e5e5;}
+.adm-total-price .pull-left, .adm-total-price .pull-right{color: #404040; font-size: 18px; font-weight: 600;}
+.adm-total-price .pull-left span {font-size: 15px;}
+.adm-total-price .pull-right {font-size: 19px; font-family: Helvetica, "NanumGothic", sans-serif;}

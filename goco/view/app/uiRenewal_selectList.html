@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css" type="text/css"/>
 <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170130135557" type="text/css"/> -->
 <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css" type="text/css"/> -->
-<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"/> -->
-<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css"/>
+<link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css"/> -->
 <!-- <meta http-equiv="Cache-Control" content="no-cache" /> -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
@@ -17,22 +17,24 @@
 
 
 <style>
-.list_btn_wrap {position: relative; width: 100%; background: #f4f2f3;}
+/* .list_btn_wrap {position: relative; width: 100%; background: #f4f2f3;}
 .list_btn_wrap a {display: block; text-align: center; width: 96%; margin:0 auto; height: 54px; background: #f95c25; color: #fff; font-size: 19px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;}
-.list_btn_wrap {position: fixed; bottom: 0;}
+.list_btn_wrap {position: fixed; bottom: 0;} */
+
 </style>
 
 </head>
 <body>
+	<!-- 배경 백드랍 -->
+	<div id="backDrop" class="backDrop"></div>
 	
-<div id="tickets-list-bg">
 
-	<section id="tickets-list">
+	<!-- <section id="tickets-list">
 		<div class="cls-box"><a  href=""></a></div>
 		<div class="tl-wrap">
 			<h2>휘닉스 스노우파크 리프트권</h2>
 			<h3>상품 선택하기<span>(1개상품)</span></h3>
-			<!-- 상품아이템 리스트 시작 -->
+	
 			<div class="tl-outer">
 				<ul class="tl-items">
 					<li class="tl-name">
@@ -66,29 +68,30 @@
 					</li>
 				</ul>
 			</div>
-			<!-- 상품아이템 끝 -->
-
+	
 		</div>
-	</section>
-	<!-- <div id="tickets-list-bg">
+	</section> -->
+	<!-- 상품여러개 테스트 -->
 	<section id="tickets-list">
 		<div class="cls-box"><a  href=""></a></div>
+		<h2>휘닉스 스노우파크 리프트권</h2>
+		<h3>상품 선택하기<span>(1개상품)</span></h3>
 		<div class="tl-wrap">
-			<h2>휘닉스 스노우파크 리프트권</h2>
-			<h3>상품 선택하기<span>(1개상품)</span></h3>
+	
 			<div class="tl-outer">
 				<ul class="tl-items">
 					<li class="tl-name">
-						<h4>휘닉스스노우파크 단일권(오전) 08:30~12:30</h4>
+						<h4>단일권(오전) 08:30~12:30</h4>
 					</li>
 					<li class="item-number-wrap clr">
 							<div class="item-number">
 								<p class="h-ctgr"><span>&#8226;</span> 성인(중학생 이상~)</p>
+								<p class="nth-2">최대 5장 구매가능</p>
 							</div>
 							<div class="item-nb-outer clr">
 								<p class="number-box clr">
 									<a href="" class="nb-left">&#45;</a>
-									<input type="text" class="nb-txt" value="성인 1">
+									<input type="text" class="nb-txt" value="1">
 									<a href="" class="nb-right">&#43;</a>
 								</p>
 								<p class="item-price">40,000원</p>
@@ -97,11 +100,12 @@
 					<li class="item-number-wrap clr">
 							<div class="item-number">
 								<p class="h-ctgr"><span>&#8226;</span> 소인(36개월~초등학생)</p>
+								<p class="nth-2">최대 5장 구매가능</p>
 							</div>
 							<div class="item-nb-outer clr">
 								<p class="number-box clr">
 									<a href="" class="nb-left">&#45;</a>
-									<input type="text" class="nb-txt" value="소인 1">
+									<input type="text" class="nb-txt" value="1">
 									<a href="" class="nb-right">&#43;</a>
 								</p>
 								<p class="item-price">20,000원</p>
@@ -109,78 +113,86 @@
 					</li>
 				</ul>
 			</div>
-			<div class="tl-outer">
-				<ul class="tl-items">
-					<li class="tl-name">
-						<h4>단일권(오전) 12:30~16:30</h4>
-					</li>
-					<li class="item-number-wrap clr">
-							<div class="item-number">
-								<p class="h-ctgr"><span>&#8226;</span> 성인(중학생 이상~)</p>
-							</div>
-							<div class="item-nb-outer clr">
-								<p class="number-box clr">
-									<a href="" class="nb-left">&#45;</a>
-									<input type="text" class="nb-txt" value="성인 1">
-									<a href="" class="nb-right">&#43;</a>
-								</p>
-								<p class="item-price">40,000원</p>
-							</div>
-					</li>
-					<li class="item-number-wrap clr">
-							<div class="item-number">
-								<p class="h-ctgr"><span>&#8226;</span> 소인(36개월~초등학생)</p>
-							</div>
-							<div class="item-nb-outer clr">
-								<p class="number-box clr">
-									<a href="" class="nb-left">&#45;</a>
-									<input type="text" class="nb-txt" value="소인 1">
-									<a href="" class="nb-right">&#43;</a>
-								</p>
-								<p class="item-price">20,000원</p>
-							</div>
-					</li>
-				</ul>
-			</div>
-			<div class="tl-outer">
-				<ul class="tl-items">
-					<li class="tl-name">
-						<h4>단일권(야간) 18:30~22:30</h4>
-					</li>
-					<li class="item-number-wrap clr">
-							<div class="item-number">
-								<p class="h-ctgr"><span>&#8226;</span> 성인(중학생 이상~)</p>
-							</div>
-							<div class="item-nb-outer clr">
-								<p class="number-box clr">
-									<a href="" class="nb-left">&#45;</a>
-									<input type="text" class="nb-txt" value="성인 1">
-									<a href="" class="nb-right">&#43;</a>
-								</p>
-								<p class="item-price">40,000원</p>
-							</div>
-					</li>
-					<li class="item-number-wrap clr">
-							<div class="item-number">
-								<p class="h-ctgr"><span>&#8226;</span> 소인(36개월~초등학생)</p>
-							</div>
-							<div class="item-nb-outer clr">
-								<p class="number-box clr">
-									<a href="" class="nb-left">&#45;</a>
-									<input type="text" class="nb-txt" value="소인 1">
-									<a href="" class="nb-right">&#43;</a>
-								</p>
-								<p class="item-price">20,000원</p>
-							</div>
-					</li>
-				</ul>
-			</div> -->
-			<!-- 상품아이템 끝 -->
 
+			<div class="tl-outer">
+				<ul class="tl-items">
+					<li class="tl-name">
+						<h4>단일권(오전) 08:30~12:30</h4>
+					</li>
+					<li class="item-number-wrap clr">
+							<div class="item-number">
+								<p class="h-ctgr"><span>&#8226;</span> 성인(중학생 이상~)</p>
+								<p class="nth-2">최대 5장 구매가능</p>
+							</div>
+							<div class="item-nb-outer clr">
+								<p class="number-box clr">
+									<a href="" class="nb-left">&#45;</a>
+									<input type="text" class="nb-txt" value="1">
+									<a href="" class="nb-right">&#43;</a>
+								</p>
+								<p class="item-price">40,000원</p>
+							</div>
+					</li>
+					<li class="item-number-wrap clr">
+							<div class="item-number">
+								<p class="h-ctgr"><span>&#8226;</span> 소인(36개월~초등학생)</p>
+								<p class="nth-2">최대 5장 구매가능</p>
+							</div>
+							<div class="item-nb-outer clr">
+								<p class="number-box clr">
+									<a href="" class="nb-left">&#45;</a>
+									<input type="text" class="nb-txt" value="1">
+									<a href="" class="nb-right">&#43;</a>
+								</p>
+								<p class="item-price">20,000원</p>
+							</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tl-outer">
+				<ul class="tl-items">
+					<li class="tl-name">
+						<h4>단일권(오전) 08:30~12:30</h4>
+					</li>
+					<li class="item-number-wrap clr">
+							<div class="item-number">
+								<p class="h-ctgr"><span>&#8226;</span> 성인(중학생 이상~)</p>
+								<p class="nth-2">최대 5장 구매가능</p>
+							</div>
+							<div class="item-nb-outer clr">
+								<p class="number-box clr">
+									<a href="" class="nb-left">&#45;</a>
+									<input type="text" class="nb-txt" value="1">
+									<a href="" class="nb-right">&#43;</a>
+								</p>
+								<p class="item-price">40,000원</p>
+							</div>
+					</li>
+					<li class="item-number-wrap clr">
+							<div class="item-number">
+								<p class="h-ctgr"><span>&#8226;</span> 소인(36개월~초등학생)</p>
+								<p class="nth-2">최대 5장 구매가능</p>
+							</div>
+							<div class="item-nb-outer clr">
+								<p class="number-box clr">
+									<a href="" class="nb-left">&#45;</a>
+									<input type="text" class="nb-txt" value="1">
+									<a href="" class="nb-right">&#43;</a>
+								</p>
+								<p class="item-price">20,000원</p>
+							</div>
+					</li>
+				</ul>
+			</div>
+	
 		</div>
 	</section>
-	<div class="list_btn_wrap"><a href="#">총 결제 금액 (140,000원)</a></div>
-</div>
+	
+	<!-- <div class="list_btn_wrap"><a href="#">총 결제 금액 (140,000원)</a></div> -->
+	<div id="info_product_btn_w" class="hide_div" style="display: table;">
+		<div class="info_product_btn" id="single_btn">구매하기</div>
+	</div>
 
 </body>
 </html>
