@@ -4056,6 +4056,7 @@ background: #fff; margin-bottom: 10px;}
 
 .number-box a, .number-box input, .number-box > .ui-input-text {float: left; display: inline-block; text-align: center; box-sizing: border-box; height: 30px;}
 .number-box a {width: 27px; font-size: 18px; font-weight: 600; background: #f7f7f7}
+.number-box a:hover, .number-box a:active {color: #3f3f3f;}
 .number-box > div {width: 52px; border-left:1px solid #ddd; border-right:1px solid #ddd;}
 .number-box input {width: 52px; font-size: 14px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px;}
 .number-box input.on, .number-box input:active, .number-box input:focus {color: #f95c25;}
