@@ -4605,7 +4605,7 @@ option {font-size:13px}
 .pay_reserInfo_table_option .input_linee{margin-right:4px;}
 
 /* detail_btnLogo - 상세페이지, page_btnLogo - 전체페이지 하단 로고 추가_2017_0201 */
-.page_btnLogo, .detail_btnLogo { position: relative; width: 800px; height: 110px; margin: 0 auto;  background: url("http://img.go.co.kr/logo.png") no-repeat center; background-size: 140px; background-color: #f1f1f1; }
+.page_btnLogo, .detail_btnLogo { position: relative; width: 800px; height: 110px; margin: 0 auto;  background: url("http://img.go.co.kr/btnlogo.png") no-repeat center; background-size: 140px; background-color: #f1f1f1; }
 .page_btnLogo {width: 100%;}
 
 /* 저스트핏 borderTop ie에서 안보여지는 문제  */
