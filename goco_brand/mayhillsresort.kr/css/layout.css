@@ -244,11 +244,13 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 
 /*웹사이트 개선 2차*/
 #rsv_wrapper {clear:both; padding-top:0px; margin:0; width:980px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; color:#717171}
-#rsv_wrapper .price {padding-left:10px; color:#ff4445; font-weight:bold}
+#rsv_wrapper .price {padding-left:10px;}
 #rsv_wrapper .pl15 {padding-left:15px}
 #rsv_wrapper .left {text-align:left}
 #rsv_wrapper .center {text-align:center}
 #rsv_wrapper .right {text-align:right}
+#rsv_wrapper .so_txt {color: #ff4445; font-weight: bold;}
+#rsv_wrapper .so_price {color: #ff4445; font-weight: bold;}
 
 #rsv_wrapper #title #discount_pop {position:absolute; top:100px; right:0; width:275px; text-align:left; line-height:2}
 #rsv_wrapper #title #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.gobs.co.kr/discount_bg.png) no-repeat}

@@ -244,11 +244,13 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 
 /*웹사이트 개선 2차*/
 #rsv_wrapper {clear:both; padding-top:0px; margin:0; width:980px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; color:#717171}
-#rsv_wrapper .price {padding-left:10px; color:#ff4445; font-weight:bold}
+#rsv_wrapper .price {padding-left:10px;}
 #rsv_wrapper .pl15 {padding-left:15px}
 #rsv_wrapper .left {text-align:left}
 #rsv_wrapper .center {text-align:center}
 #rsv_wrapper .right {text-align:right}
+#rsv_wrapper .so_txt {color: #ff4445; font-weight: bold;}
+#rsv_wrapper .so_price {color: #ff4445; font-weight: bold;}
 
 #rsv_wrapper #title #discount_pop {position:absolute; top:100px; right:0; width:275px; text-align:left; line-height:2}
 #rsv_wrapper #title #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.gobs.co.kr/discount_bg.png) no-repeat}
@@ -1000,7 +1002,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 .page_btnLogo, .detail_btnLogo { position: relative; width: 800px; height: 110px; margin: 0 auto;  background: url("http://img.go.co.kr/logo.png") no-repeat center; background-size: 140px; background-color: #f1f1f1; }
 .page_btnLogo {width: 100%;}
 /* 실시간문의 배너_20170208_강혜준 */
-#rt_banner {/* position: fixed; top: 150px; left: 50%; margin-left: -634px; */ width: 110px; height: 218px; border: 1px solid #FE620F; text-align: center; letter-spacing: -1px; background: #fff;}
+#rt_banner {/* position: fixed; top: 150px; left: 50%; margin-left: -634px; */ width: 110px; height: 223px; border: 1px solid #FE620F; text-align: center; letter-spacing: -1px; background: #fff;}
 #rt_banner h2 {color: #fff; height: 29px;	background: #fe620f;font-size: 15px; font-weight: 400; line-height: 1.8em;}
 #rt_banner p {line-height: 1.45em; font-weight: 600; font-size: 14px; color: #383838;}
 #rt_banner h2 + p {margin-top: 6px;}
@@ -1009,7 +1011,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 #rt_banner .rt_btn a {position: relative; display: inline-block; width: 90px;	height: 26px; font-size:13px; color:#fff; font-weight: 400; line-height: 2em; background: #fe620f; letter-spacing: 0;}
 #rt_banner .rt_arrow {position: relative; left: 8px;}
 
-#rt_banner .rt_logo{position: relative; top: 4px; width: 100%; height: 20px; overflow-y: hidden; background: url("http://img.go.co.kr/logo.png") no-repeat center 5px; background-size: 50px;}
+#rt_banner .rt_logo{position: relative; top: 4px; width: 100%; height: 30px; overflow-y: hidden; background: url("http://img.go.co.kr/logo.png") no-repeat center 5px; background-size: 50px;}
 /* 실시간문의 모달 */
 #q_modal {position: fixed; z-index: 6; width: 400px; height: 260px; top: 50%; margin-top: -130px; left: 50%; margin-left: -200px; background: #fff;}
 #q_modal h2 {height: 64px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 26px; color: #fff; font-weight: 700; text-align: center; line-height: 2.6em; background: #FB6B0A;}
