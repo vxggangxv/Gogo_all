@@ -3995,24 +3995,21 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #tickets > ul > li {position: relative; padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer;}
 #tickets > ul > li.on {background: #F7EBDD;}
 #tickets p {letter-spacing: -1px; color: #202020;}
-#tickets .tit {position: relative; width: 68%;	}
+#tickets .tit {position: relative; width: 67%;}
 @media (max-device-width: 320px){
-	#tickets .tit {width: 64%;}
+	#tickets .tit {width: 63%;}
 }
 #tickets .tit p.nth-1 {font-weight: 600; font-size: 14px;}
-#tickets .tit p.nth-1 label {display:inline-block; position:absolute; width: 28px; height:22px; cursor: pointer; left: 0;
-background:url(http://img.go.co.kr/mobile/app_check_icon.png) no-repeat 0 0; background-size: 95px;}
+#tickets .tit p.nth-1 label {display:inline-block; position:absolute; width: 28px; height:22px; cursor: pointer; left: 0; top: 5px;
+background:url(http://img.go.co.kr/mobile/app_check_icon2.png) no-repeat 0 0;}
 #tickets .tit p.nth-1 input {position: absolute; left: -9999px; width: 0; height: 0;}
-#tickets li.on p.nth-1 label {background-position: -48px 0;}
+#tickets li.on p.nth-1 label {background-position: -50px 0;}
 #tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 100%; word-wrap: break-word; vertical-align: top; /* top: 4px; */}
-/* @media (max-device-width: 320px){
-	#tickets .tit p.nth-1 span {width: 86%;}
-} */
 #tickets .tit p {padding-left: 27px;}
-#tickets .tit p.nth-2 span {letter-spacing: 0;}
-#tickets .tit p.nth-2 {font-size: 13px;}
+#tickets .tit p.nth-2 span {}
+#tickets .tit p.nth-2 {font-size: 12.4px;}
 #tickets .tit p.nth-3 {color: #999; font-size: 12px; margin-top: 2px;}
-#tickets .prc {} 
+#tickets .prc {position: absolute; right: 10px; bottom: 10px;} 
 #tickets .prc del {position: relative; font-size: 14px; color: #888; top: 5px;} 
 #tickets .prc .per_sale, #tickets .prc .app_sale {display: inline-block; border: 1px solid #999; background: #fff; font-size: 10px; width: 44px; text-align: center;
 position: relative; top: 3px; margin-right: 2px; line-height: 1.4em; /* height: 14px; */}
