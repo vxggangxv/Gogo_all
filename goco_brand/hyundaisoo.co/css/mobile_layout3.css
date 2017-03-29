@@ -2966,6 +2966,7 @@ text-indent:8px;
 .pay_tr_left{floaT:left; margin-left:15px; font-size:1.0em; color:#3f3f3f; font-weight:600}
 .pay_tr_sleft{font-size:0.813em; color:#3f3f3f; font-weight:600}
 .pay_tr_right{floaT:right; margin-right:15px; font-size:1.125em; color:#ff4800; font-weight:600}
+.pay_tr_right_app{clear:both; floaT:right; margin-right:15px; font-size:1em; color:#C00; font-weight:600}
 .pay_check{margin-top:6px; float:left;  width:15px; height:15px;  color: #343434;background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 13px 13px;-webkit-background-size: 13px 13px;}
 .pay_list{width:96%; margin:auto}
 .pay_list li{width:93%; border:1px solid #cccccc; padding:3%; height:30px; floaT:left; border-radius:5px; margin-bottom:7px}
@@ -2980,7 +2981,8 @@ text-indent:8px;
 .pay_list li.on .pay_list_txt{floaT:left; font-size:0.875em;  letter-spacing:-1.5; color:#ff4800; font-weight:600}
 .pay_list li.on .pay_list_txt_h{floaT:left; font-size:0.875em;  letter-spacing:-1.5; color:#ff4800; font-weight:600}
 .pay_btnw{float:left; width:100%; padding:8px 0 15px 0}
-.pay_btnw_bt{width:89%; margin:auto; padding:3%; background:#f95c24; border-radius:5px; color:#fff; text-align:center; font-weight:600; font-size:1.125em}
+.pay_btnw_bt_app{width:89%; margin:auto; padding:3%; background:#C00; border-radius:5px; color:#fff; text-align:center; font-weight:600; font-size:1.125em; margin-top:20px;}
+.pay_btnw_bt{width:89%; margin:auto; padding:3%; background:#f95c24; border-radius:5px; color:#fff; text-align:center; font-weight:600; font-size:1.125em; margin-top:10px;}
 
 .pay_reserInfo_table .number_p{}
 .pay_reserInfo_table .number_p li{float:left}
@@ -2999,8 +3001,12 @@ text-indent:8px;
 #pop_pay_ag .txt1{ font-size:1.000em; font-weight:bold; line-height:1.4; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #e9e9ea;}
 #pop_pay_ag .txt2{text-align:left}
 #pop_pay_ag .btn {clear:both; margin:auto; width:100%;  }
-#pop_pay_ag .btn .bt a{display:inline-block; width:100%; line-height:45px; font-weight:bold; text-align:center; letter-spacing:-0.5px; font-size:0.938em; background:#f15d28; color:#fff; border-radius:0px 0 5px 5px; margin-top:20px}
+#pop_pay_ag .btn .bt a{display:inline-block; width:100%; line-height:45px; font-weight:bold; text-align:center; letter-spacing:-0.5px; font-size:0.938em; background:#f15d28; color:#fff; margin-top:20px}
 #pop_pay_ag .pop_paya_co{color:#f15d28}
+#pop_pay_ag .btn_app {clear:both; margin:auto; width:100%; text-align:center; margin:0;}
+#pop_pay_ag .btn_app .bt {display:inline-block; width:100%; font-weight:bold; text-align:center; letter-spacing:-0.5px; background:#C00; color:#fff;  border-radius:0px 0 5px 5px;  margin-top:5px}
+#pop_pay_ag .btn_app .bt p {font-size:0.7em; line-height:16px; padding-top:12px; }
+#pop_pay_ag .btn_app .bt a{ color:#fff; font-size:0.938em;line-height:45px; }
 
 /* 결제서명팝업 */
 #pop_pay_cas {position:absolute; z-index:99999; left:10%; top:10%; margin:auto; width:80%; background:#fff; border-radius:5px; color:#535252; letter-spacing:-0.5px}
@@ -3944,3 +3950,27 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #snsLogin .snsLarge .daum a > span img {position: absolute; left: 10px; width: 48px; top: 12px;}
 #snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 1px solid rgba(0,0,0,.196);}
 #snsLogin p {width: 90%; margin: 0 auto;}
+/* 로그인창 앱설치배너 추가_20170321_장혜림 */
+#snsLogin .login_app_bn {   margin:0 auto; text-align:center; padding:0;}
+/* 앱설치 링크 문자발송 팝업 20170322 */
+#app_pop_w{width:543px; height:395px; border:3px solid #344570; background:#fff; border-radius:3px; position:absolute;}
+#app_pop_w .app_pop_title{margin:auto; text-align:center; margin-top:20px;}
+#app_pop_w .app_pop_close{position:relative; top:-45px; left:500px}
+#app_pop_w .app_pop_img{position:absolute; margin:25px 35px 25px 12px; }
+#app_pop_w .app_pop_txt{ margin:auto; text-align:left;  color:#000000; letter-spacing:-0.4px; line-height:1.2; margin-top:26px; margin-left:150px; }
+#app_pop_w .app_pop_txt .txt1{font-size:22px}
+#app_pop_w .app_pop_txt .txt1 .txt1_F{font-size:28px;font-weight:bold; color:#f95c24; letter-spacing:-0.8px; text-decoration:underline}
+#app_pop_w .app_pop_txt .txt2{font-size:15px; margin-top:18px; letter-spacing:-0.2px; line-height:1.3; }
+#app_pop_w .app_pop_txt .txt2 .txt2_F{font-size:15px; color:#f95c24;  font-weight:bold}
+#app_pop_w .app_pop_num{margin-top:25px; text-align:center;}
+#app_pop_w .inputp {background: #fff; font-size: 0.938em; font-weight: 600; color:#666666; height:32px; border-radius: 5px; border: 1px solid #c4c4c4; padding:0 10px}
+#app_pop_w .app_pop_btn{display: inline-block; width:84px; height:32px; background:#f95c24; border:1px solid #d53800; border-radius:5px; color:#fff; text-align:center; font-size:15px; font-weight:bold; cursor:pointer; line-height: 2.0;}
+#app_pop_w .app_pop_rtxt{width:100%; background:#344570; color:#fff; height:95px; margin-top:33px}
+#app_pop_w .app_pop_rtxt .app_pop_rtxt_txt{font-size:11px; padding-top:12px; margin-left:25px; font-family:'돋움', Dotum, sans-serif; letter-spacing:-0.4px;}
+/*20170324_리스트변경_강혜준*/
+#search_list .info .title {line-height:1.8em;}
+#search_list .info .wra .icon{width: 47%; display: inline-block; text-indent: 0; position: relative; left: 10px;}
+@media (max-device-width: 359px) {#search_list .info .wra .icon{width: 39%;}}
+#list_price01 {float:left; width: auto; padding-right: 0; width: 130px;}
+#list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;}
+#list_price01 #dis_icon {display: none;}

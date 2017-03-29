@@ -3878,3 +3878,11 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #snsLogin .snsLarge .daum a > span img {position: absolute; left: 10px; width: 48px; top: 12px;}
 #snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 1px solid rgba(0,0,0,.196);}
 #snsLogin p {width: 90%; margin: 0 auto;}
+/*20170324_리스트변경_강혜준*/
+#search_list * {font-family: "Nanum Gothic";}
+#search_list .info .title {line-height:1.8em;}
+#search_list .info .wra .icon{width: 47%; display: inline-block; text-indent: 0; position: relative; left: 10px;}
+@media (max-device-width: 359px) {#search_list .info .wra .icon{width: 39%;}}
+#list_price01 {float:left; width: auto; padding-right: 0; width: 130px;}
+#list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;}
+#list_price01 #dis_icon {display: none;}

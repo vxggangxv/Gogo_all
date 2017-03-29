@@ -3933,6 +3933,7 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 /* 앱 이용권 UI변경_20170303_강혜준 */
 #calender_number_w .term {clear: both; text-align: right; font-size: 13px; position: relative;}
 #tickets {clear: both;}
+#tickets * {font-family: "Nanum Gothic";}
 #tickets .fl {float: left;}
 #tickets .fr {float: right;}
 #tickets > ul > li {position: relative; padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer;}
@@ -4060,3 +4061,11 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 .adm-total-price .pull-left, .adm-total-price .pull-right{color: #404040; font-size: 18px; font-weight: 600;}
 .adm-total-price .pull-left span {font-size: 15px;}
 .adm-total-price .pull-right {font-size: 19px; font-family: Helvetica, "NanumGothic", sans-serif;}
+/*20170324_리스트변경_강혜준*/
+#search_list * {font-family: "Nanum Gothic";}
+#search_list .info .title {line-height:1.8em;}
+#search_list .info .wra .icon{width: 47%; display: inline-block; text-indent: 0; position: relative; left: 10px;}
+@media (max-device-width: 359px) {#search_list .info .wra .icon{width: 39%;}}
+#list_price01 {float:left; width: auto; padding-right: 0; width: 130px;}
+#list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;}
+#list_price01 #dis_icon {display: none;}

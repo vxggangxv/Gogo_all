@@ -14,10 +14,10 @@ $(function() {
   });
 
   /*구매하기버튼 작동, 닫기버튼 작동*/
-  $("#single_btn").on("click", function() {
+  /*$("#single_btn").on("click", function() {
     $("#backDrop").toggleClass("on");
     $("#tickets-list").toggleClass("on");
-  });
+  });*/
   /*$("#tickets-list .cls-box a").on("click", function() {
     $("#backDrop").toggleClass("on");
     $("#tickets-list").toggleClass("on");
