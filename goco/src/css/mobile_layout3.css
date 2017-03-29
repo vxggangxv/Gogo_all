@@ -4119,7 +4119,7 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 .adm-total-price .pull-right {font-size: 19px; font-family: Helvetica, "NanumGothic", sans-serif;}
 /*20170324_리스트변경_강혜준*/
 #search_list * {font-family: "Nanum Gothic";}
-#search_list .info .title {line-height:1.8em; font-size: 14px; width: 212px;}
+#search_list .info .title {line-height:1.8em; font-size: 14px; width: 215px;}
 #search_list .info .wra .icon{width: 47%; display: inline-block; text-indent: 0; position: relative; left: 10px;}
 #search_list .info .wra .price .lowprice {font-size: 1.3em;}
 @media (max-device-width: 359px) {#search_list .info .wra .icon{width: 39%;}}
