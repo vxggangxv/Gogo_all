@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+#Footer {background-color:#323232; padding-bottom:50px;}
+.f-area {width:1000px; margin:0 auto;}
+.f-area .f-top {padding:20px 0;}
+.f-area .f-top:after {content:''; display:block; clear:both;}
+.f-area .f-top .policy {float:left; color:#a3a3a3;}
+.f-area .f-top .policy a {color:#a3a3a3;}
+.f-area .f-top .policy a:hover {color:#fff;}
+.f-area .f-top .policy a.privacy {color:#fff; font-weight:bold;}
+.f-area .f-top .family-site {float:right; position:relative;}
+.f-area .f-top .family-site > span {display:block; width:118px; height:22px; padding-left:15px; border:1px solid #4c4c4c; color:#a3a3a3; line-height:22px; cursor:pointer;}
+.f-area .f-top .family-site .site {position:absolute; left:0; bottom:23px; width:133px; border:1px solid #4c4c4c; background-color:#323232;}
+.f-area .f-top .family-site .site li {padding:2px 0;}
+.f-area .f-top .family-site .site li a {display:block; padding-left:15px; color:#a3a3a3;}
+.f-area .f-top .family-site .site li a:hover {font-weight:bold;}
+.f-area .f-bottom {overflow:hidden; position:relative; padding-top:30px; border-top:1px solid #505050;}
+.f-area .f-bottom .f_logo {float:left;}
+.f-area .f-bottom .address {float:left; margin-left:40px;}
+.f-area .f-bottom .address p {margin-bottom:10px; font-size:13px;}
+.f-area .f-bottom .address p.copy {color:#7f7f7f; letter-spacing:-0.3px;}
+.f-area .f-bottom .address p strong {color:#cdcdcd; font-size:15px;}
+.f-area .f-bottom .address p a {margin-left:5px; vertical-align:middle;}
+.f-area .f-bottom .address p span {color:#a3a3a3; vertical-align:middle;}
+.f-area .f-bottom .customer {float:right;}
+.f-area .f-bottom .customer li {width:190px; height:70px; margin-bottom:10px; padding:10px 0 0 84px;}
+.f-area .f-bottom .customer li.f_call {background:url('http://img.go.co.kr/f_ico_call.gif') no-repeat 20px 15px #414141;}
+.f-area .f-bottom .customer li.f_mail {background:url('http://img.go.co.kr/f_ico_mail.gif') no-repeat 20px 15px #414141;}
+.f-area .f-bottom .customer li p {color:#a4a4a4; font-size:14px;}
+.f-area .f-bottom .customer li strong {color:#a4a4a4;}
+.f-area .f-bottom .customer li.f_call strong {font-size:38px; line-height:35px; letter-spacing:-4px;}
+.f-area .f-bottom .customer li.f_mail strong {font-size:28px; line-height:30px; letter-spacing:-2px;}
+.f-area .f-bottom .four-list {position:absolute; right:0; bottom:0; font-size:0;}
+.f-area .f-bottom .four-list a, .f-area .f-bottom .four-list img {margin-left:10px;}

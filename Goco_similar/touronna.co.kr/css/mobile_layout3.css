@@ -3907,3 +3907,13 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #list_price01 {float:left; width: auto; padding-right: 0; width: 130px;}
 #list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;}
 #list_price01 #dis_icon {display: none;}
+/* 찜상품 추가_170330_강혜준 */
+#mypage #box .my_middle0 {width:100%; height:auto; float:left;background-color:#fff;}
+#mypage #box .my_middle0 .text_1{font-size:20px; color:#000;}
+#mypage #box .my_middle0 .text_2{font-size:16px;}
+#mypage #box .my_middle0 .text_2{font-size:16px;}
+#mypage #box .my_middle0 .my_box_1 a, #mypage #box .my_middle0 .my_box_2 a, #mypage #box .my_middle0 .my_box_3 a, #mypage #box .my_middle0 .my_box_4 a {float: left; width:50%; padding:5% 0 5% 0;}
+#mypage #box .my_middle0 .my_box_1 a{border-right:1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_2 a{border-right:0;border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_3 a{border-right: 1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_4 a{border-right: 0; border-bottom:1px solid #ececec; box-sizing: border-box;}

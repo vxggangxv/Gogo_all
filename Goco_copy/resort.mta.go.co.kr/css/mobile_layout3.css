@@ -3926,24 +3926,21 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #tickets > ul > li {position: relative; padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer;}
 #tickets > ul > li.on {background: #F7EBDD;}
 #tickets p {letter-spacing: -1px; color: #202020;}
-#tickets .tit {position: relative; width: 68%;	}
+#tickets .tit {position: relative; width: 67%; min-height: 50px;}
 @media (max-device-width: 320px){
-	#tickets .tit {width: 64%;}
+	#tickets .tit {width: 63%;}
 }
 #tickets .tit p.nth-1 {font-weight: 600; font-size: 14px;}
-#tickets .tit p.nth-1 label {display:inline-block; position:absolute; width: 28px; height:22px; cursor: pointer; left: 0;
-background:url(http://img.go.co.kr/mobile/app_check_icon.png) no-repeat 0 0; background-size: 95px;}
+#tickets .tit p.nth-1 label {display:inline-block; position:absolute; width: 28px; height:22px; cursor: pointer; left: 0; top: 5px;
+background:url(http://img.go.co.kr/mobile/app_check_icon2.png) no-repeat 0 0;}
 #tickets .tit p.nth-1 input {position: absolute; left: -9999px; width: 0; height: 0;}
-#tickets li.on p.nth-1 label {background-position: -48px 0;}
-#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 100%; word-wrap: break-word; vertical-align: top; /* top: 4px; */}
-/* @media (max-device-width: 320px){
-	#tickets .tit p.nth-1 span {width: 86%;}
-} */
+#tickets li.on p.nth-1 label {background-position: -50px 0;}
+#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 100%; max-height: 63px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; vertical-align: top; /* top: 4px; */}
 #tickets .tit p {padding-left: 27px;}
-#tickets .tit p.nth-2 span {letter-spacing: 0;}
-#tickets .tit p.nth-2 {font-size: 13px;}
+#tickets .tit p.nth-2 span {}
+#tickets .tit p.nth-2 {font-size: 12.4px;}
 #tickets .tit p.nth-3 {color: #999; font-size: 12px; margin-top: 2px;}
-#tickets .prc {} 
+#tickets .prc {position: absolute; right: 10px; bottom: 10px;} 
 #tickets .prc del {position: relative; font-size: 14px; color: #888; top: 5px;} 
 #tickets .prc .per_sale, #tickets .prc .app_sale {display: inline-block; border: 1px solid #999; background: #fff; font-size: 10px; width: 44px; text-align: center;
 position: relative; top: 3px; margin-right: 2px; line-height: 1.4em; /* height: 14px; */}
@@ -3958,8 +3955,8 @@ position: relative; top: 3px; margin-right: 2px; line-height: 1.4em; /* height: 
 /* #tickets-list-bg{position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11; display: block;} */
 #tickets-list-bg {z-index: 11; display: block;}
 #tickets-list-bg.on {display: block;}
-#tickets-list {position: fixed; width: 100%; z-index: 101; /* overflow: hidden; */
-bottom: -462px; transition: all 0.8s;}
+#tickets-list {position: fixed; width: 100%; z-index: 101; /* overflow: hidden; */bottom: -462px; transition: all 0.8s;}
+#tickets-list * {font-family: "Nanum Gothic";}
 #tickets-list.on {bottom: 60px;}
 #tickets-list .cls-box {display: block; width: 100%; height: 25px; z-index: 1; position: relative; top: 1px;}
 #tickets-list .cls-box > a {display: block; margin: 0 auto; width: 97px; height: 25px; background: url(http://img.go.co.kr/mobile/app_lc_icon.png) no-repeat center top;}
@@ -3971,29 +3968,33 @@ background: #f0f0f0;}
 .tl-wrap .tl-outer {width: 96%; margin: 0 auto; letter-spacing: -1px;
 background: #fff; margin-bottom: 10px;}
 .tl-wrap .tl-outer:last-child {margin-bottom: 0;}
-.tl-items {padding: 5px; color: #383838;}
+.tl-items {padding: 5px; padding-bottom: 0; color: #383838;}
 .tl-items .item-number, .tl-items .item-price, .tl-items h4 {font-weight: 600;}
-.tl-items li {font-size: 14px; border-top: 1px solid #ddd; padding: 8px 5px;}
+.tl-items li {font-size: 14px; border-top: 1px solid #ddd; padding: 8px 5px; position: relative;}
 .tl-items li:first-child {border-top: none;}
 .tl-items .tl-name {padding: 5px 5px 5px;}
-.tl-items .tl-name h4 {font-size: 15px;}
+.tl-items .tl-name h4 {font-size: 15px; text-align: center;}
 
-.item-number-wrap .item-number {float: left;}
-.item-number-wrap .item-nb-outer {float: right;}
+.item-number-wrap .item-number {float: left; position: relative; top: -1px;}
+.item-number-wrap .item-nb-outer {float: right; /* position: absolute; right: 8px; top: 50%; margin-top: -27px; */}
 .item-number {width: 61%;}
 .item-nb-outer {width: 110px;}
-.item-number .h-ctgr {position: relative; top: 5px; display: inline-block; font-weight: 600; padding-left: 8px;}
-.item-number p.nth-2 {font-size: 13px; padding-left: 8px; color: #999; margin-top: 6px; line-height: 1.2em;}
+.item-number .h-ctgr {position: relative; /* top: 5px; */ display: inline-block; font-weight: 600; padding-left: 8px;}
+.item-number p.nth-2, .itm-price {font-size: 13px; padding-left: 8px; color: #999; line-height: 1.3em;}
+.itm-price {color: #333; /* margin-top: 4px */; font-weight: 600;}
+.item-number p.nth-2 {letter-spacing: -1px;}
 .item-number .h-ctgr span {position: absolute; left: 0;}
-.tl-items .number-box {position: relative; display: inline-block; width: 108px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
+.tl-items .number-box {position: relative; top: 1px; height: 50px; display: inline-block; width: 108px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
 
 .number-box a, .number-box input, .number-box > .ui-input-text {float: left; display: inline-block; text-align: center; box-sizing: border-box; height: 30px;}
-.number-box a {width: 27px; font-size: 18px; font-weight: 600; background: #f7f7f7}
+.number-box a {width: 27px; height: 100%; font-size: 18px; line-height: 2.85em; font-weight: 600; background: #f7f7f7}
+.number-box a.nb-left {border-right: 1px solid #ddd;}
+.number-box a.nb-right {border-left: 1px solid #ddd;}
 .number-box a:hover, .number-box a:active {color: #3f3f3f;}
 .number-box > div {width: 52px; border-left:1px solid #ddd; border-right:1px solid #ddd;}
-.number-box input {width: 52px; font-size: 14px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px;}
+.number-box input {width: 52px; height: 100%; font-size: 16px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px; /* text-indent: 15px; */}
 .number-box input.on, .number-box input:active, .number-box input:focus {color: #f95c25;}
-.item-price {clear: both; text-align: right; font-size: 19px; margin: 3px 0 -6px;}
+/* .item-price {clear: both; text-align: right; font-size: 19px; margin: 3px 0 -6px;} */
 
 .list_btn_wrap {width: 100%; height: 53px; position: fixed; bottom: 0; background: #fff; padding-top: 7px; border-top: 1px solid #f3f3f3;}
 .list_btn_wrap a {display: block; text-align: center; width: 96%; margin: 0 auto; height: 45px; background: #f95c25; color: #fff; font-size: 17px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;}
@@ -4056,3 +4057,13 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 #list_price01 {float:left; width: auto; padding-right: 0; width: 130px;}
 #list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;}
 #list_price01 #dis_icon {display: none;}
+/* 찜상품 추가_170330_강혜준 */
+#mypage #box .my_middle0 {width:100%; height:auto; float:left;background-color:#fff;}
+#mypage #box .my_middle0 .text_1{font-size:20px; color:#000;}
+#mypage #box .my_middle0 .text_2{font-size:16px;}
+#mypage #box .my_middle0 .text_2{font-size:16px;}
+#mypage #box .my_middle0 .my_box_1 a, #mypage #box .my_middle0 .my_box_2 a, #mypage #box .my_middle0 .my_box_3 a, #mypage #box .my_middle0 .my_box_4 a {float: left; width:50%; padding:5% 0 5% 0;}
+#mypage #box .my_middle0 .my_box_1 a{border-right:1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_2 a{border-right:0;border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_3 a{border-right: 1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_4 a{border-right: 0; border-bottom:1px solid #ececec; box-sizing: border-box;}
