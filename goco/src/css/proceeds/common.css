@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url(http://static.go.co.kr/css/proceeds/reset_custom.css);
+
+body {font-family: "Nanum Gothic", sans-serif; color: #333; letter-spacing: -0.7px;}
+img {display: block;}
+a {color: #333;}
+i {font-style: italic;}
+
+/*테마컬러*/
+.c-orange {color: #fc7931;}
+.bg-orange {background-color: #fc7931;}
+
+#wrap, .header, .container, .footer {position: relative;}
+.ht-box, .hn-box, .f-box {position: relative; width: 1069px; margin: 0 auto;}
+/*헤더 영역*/
+.header {}
+.h-top {position: relative; width: 100%; height: 40px; background: #fc7931;}
+.htb-u1 {position: absolute; top: 7px; right: 10px;}
+.htb-u1 li {position: relative; display: inline-block; color: #fff; margin-left: 50px;}
+.htb-u1 li:first-child {}
+.htb-u1 li:before {content: ""; position: absolute; top: 1px; left: -28px; display: inline-block; width: 1px; height: 18px; background: #fff;}
+.htb-u1 li:first-child:before {display: none;}
+.htb-u1 li a {display: inline-block; vertical-align: middle; font-size: 15px; color: #fff;}
+.htb-u1 li .login-btn { padding: 3px 8px 4px; border: 1px solid #fff;}
+
+.h-nav {position: relative; width: 100%; height: 80px; background: #fff; border-bottom: 1px solid #e7e4e4;}
+.hn-box {}
+.hn-box h2 {position: absolute; top: 19px; left: 73px;}
+.hn-box .gnb {position: absolute; top: 39px; right: 76px;}
+.hn-box .gnb ul li {float: left;}
+.hn-box .gnb ul li a {position: relative; font-size: 18px; font-weight: 600; margin-left: 60px;}
+.hn-box .gnb ul li:first-child a {margin-left: 0;}
+.hn-box .gnb ul li.on a:after {position: absolute; bottom: -21px; left: 0; display: block; content: ""; width: 100%; height: 2px; background: #fc7931;}
+
+/*푸터 영역*/
+.footer {margin-top: 30px; height: 140px; background: #f5f5f5; border-top: 1px solid #ddd;}
+.f-box {top: 30px;}
+.f-box figure, .f-box address {float: left;}
+.f-box figure {margin-left: 25px;}
+.f-box address {margin-left: 80px; font-size: 15px; color: #888;}
+.f-box address p {line-height: 1.3em;}
+.f-box address small {display: block; margin-top: 20px;}

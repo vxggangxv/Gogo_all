@@ -4665,3 +4665,59 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_sectioin #cal_wrap2 .cal_section {padding-bottom: 20px; min-height: auto;}
 .fare_sectioin #cal_wrap2 .cal_section .step_01 .btn_close {position: relative; top: -3px;}
 .slg {margin-bottom: 12px;}
+/* 이벤트_20170406_이동석 */
+#event_tab{clear: both; float: left; margin: 20px 0; width: 740px; height: 30px; border-bottom: 2px solid #ff610a; font-size: 14px;}
+#event_tab li a{display:block; font-size:14px; text-decoration:none}
+#event_tab li a:hover{background-color:#d2d2d2; color:#444444}
+#event_tab li.first{display: block; float: left; cursor: pointer; width: 145px; height: 30px; padding: 0 15px; line-height: 2; text-align: center; color: #ff610a; border: 1px solid #ff610a; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+#event_tab li.last{border-right:1px solid #d2d2d2}
+#event_tab li.on a{ background: #ff610a; color: #fff; display: block; float: left; cursor: pointer; width: 145px; height: 30px; padding: 0 15px; line-height: 2; text-align: center; /* color: #ff610a; */  border: 1px solid #ff610a; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+
+.event_list td{height:130px}
+.event_list td dt{float:left; width:240px; height:100px; background-color:#695b62}
+.event_list td dd{float:left; width:470px; position:relative; margin-left:15px; margin-top:12px;}
+.event_list td dd h4{float:left; width:440px; text-align:left; font-size:15px; color:#444444; font-weight:600;margin-bottom: 5px;}
+.event_list td dd h4 a{width:440px; float:left; text-align:left; font-size:15px; color:#444444; font-weight:600;}
+.event_list td dd p{width:440px; text-align: left;}
+.event_list td dd .event_go{position:absolute; right:0; top:28px}
+#event_bn_right{background-image:url('http://img.go.co.kr/event/20170320_ocean2you-freeticket/ticket-side.png'); position: absolute; top: 0px; left: 51%; margin-left: 504px; width: 268px; height:139px; font-size: 11px; text-align: center;}
+
+/* 선택자 */
+.select_search{position:relative; line-height:normal; display:inline-block; *display:inline; vertical-align:middle; background:#fff; *zoom:1;}
+.select_search *{ margin:0; padding:0; cursor:pointer; font-size:13px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
+.select_search .myValue{position:relative; z-index:2; left:0; top:0; border:1px solid #d2d2d2; color:#666; line-height:19px; _line-height:normal; text-align:left; overflow:visible; background:transparent;}
+.select_search .myValue.selected{ font-weight:normal;}
+.select_search.server_open .myValue,
+.select_search .myValue.outLine{ border:1px solid #999;}
+.select_search button.myValue{ height:32px; width:100%; text-indent:5px; *text-indent:0; *padding-left:5px;}
+.select_search div.myValue{ height:19px; text-indent:8px;}
+.select_search .ctrl{ position:absolute; top:7px; right:5px; width:20px; height:20px; background:#fff;}
+.select_search .arrow{ position:absolute; width:0; height:0; top:9px; right:6px; line-height:0; font-size:0; }
+.select_search ul{ position:absolute; top:32px; left:0; z-index:10; width:100%; list-style:none; border:0; border-top:1px solid #bababa; border-bottom:1px solid #bababa; background:#fff; overflow:hidden;}
+.select_search ul.aList{ display:none; height: 90px; overflow-y: scroll;}
+.select_search ul.aList2 { display:none; height: 90px; height:120px;}
+.select_search.server_open ul.aList{ display:block;}
+.select_search ul.iList{ left:-2000%;}
+.select_search.server_open ul.iList{ left:0;}
+.select_search li{ position:relative; overflow:hidden; white-space:nowrap; height:30px; border-left:1px solid #d2d2d2; border-right:1px solid #bababa;}
+.select_search li input.option{ position:absolute; width:100%; height:20px; line-height:20px;}
+.select_search li label{ position:absolute; left:0; top:0; width:100%; text-indent:8px; *text-indent:6px; height:18px; line-height:18px; color:#767676; background:#fff;}
+.select_search li a{ display:block; text-indent:8px; *text-indent:6px; height:30px; line-height:30px; color:#767676; background:#fff; text-decoration:none;}
+.select_search li.hover *{background:#999; color:#fff;}
+
+/* 당첨자명단 */
+table.prize_list {margin-left:auto; margin-right:auto; border-collapse: collapse; text-align: center; line-height: 1.5;}
+table.prize_list thead th {padding: 10px; font-weight: bold; text-align: center; vertical-align: top; color: #369; border-bottom: 3px solid #265fd5;}
+table.prize_list tbody th {width: 150px; padding: 10px; font-weight: bold; text-align: center; vertical-align: top; border-bottom: 1px solid #ccc; background: #f3f6f7;}
+table.prize_list td {width: 350px; padding: 10px; vertical-align: top; border-bottom: 1px solid #ccc;}
+
+.event-ended{float: right; margin-top: 30px; padding: 25px; width: 740px; min-height: 800px; background: #fff; border: 1px solid #dedede; letter-spacing: -0.1px;}
+.event-proceed{float: right; margin-top: 30px; padding: 25px; width: 740px; min-height: 800px; background: #fff; border: 1px solid #dedede; letter-spacing: -0.1px;}
+.event-proceed_post{float: right; margin-top: 30px; padding: 25px; width: 740px; min-height: 800px; background: #fff; border: 1px solid #dedede; letter-spacing: -0.1px;}
+
+#sub_main .tab{clear:both; float:left; margin:20px 0; width:740px; height:30px; border-bottom:2px solid #ff610a; font-size:14px}
+#sub_main .tab li {display:block; float:left; cursor:pointer; width:145px; height:30px; padding:0 15px; line-height:2; text-align:center; color:#ff610a; border:1px solid #ff610a; border-top-left-radius:10px; border-top-right-radius:10px}
+#sub_main .tab li.on {background:#ff610a; color:#fff}
+#sub_main .tab02 {clear:both; float:left; margin:20px 0; width:740px; height:30px; border-bottom:2px solid #ff610a; font-size:14px}
+#sub_main .tab02 li {display:block; float:left; cursor:pointer; width:103.6px; height:30px; line-height:2; text-align:center; color:#ff610a; border:1px solid #ff610a; border-top-left-radius:10px; border-top-right-radius:10px}
+#sub_main .tab02 li.on {background:#ff610a; color:#fff}

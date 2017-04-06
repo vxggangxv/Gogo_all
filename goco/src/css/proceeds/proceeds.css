@@ -1,0 +1,11 @@
+/*메인영역*/
+section[class*="-sec"] {width: 1069px; margin-left: auto; margin-right: auto;}
+.main-sec {margin-bottom: 25px;}
+.ms-p1 {position: relative; height: 53px; background: #FDDF4D; font-size: 22px;}
+.ms-p1 i, .ms-p1 input, .ms-p1 a {position: relative; top: 6px; vertical-align: middle;}
+.ms-p1 i {font-family: "Noto Sans KR", sans-serif; color: #645b54; margin-left: 20px;}
+.ms-p1 input {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; border: 3px solid #fc7931; height: 32px; margin-left: 20px; text-indent: 8px; font-size: 24px; line-height: 1.4em;}
+.ms-p1 .code {width: 130px;}
+.ms-p1 .money {width: 227px;}
+.ms-p1 .btn {display: inline-block; font-size: 17px; color: #fff; width: 117px; height: 38px; background: #fc7931; border-radius: 5px; line-height: 2.2em; text-align: center; margin-left: 40px;}
+.ms-p1 .btn span {position: relative; top: -1.5px; font-size: 13px;}

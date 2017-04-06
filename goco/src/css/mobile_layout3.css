@@ -4137,3 +4137,6 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 #mypage #box .my_middle0 .my_box_2 a{border-right:0;border-bottom:1px solid #ececec; box-sizing: border-box;}
 #mypage #box .my_middle0 .my_box_3 a{border-right: 1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
 #mypage #box .my_middle0 .my_box_4 a{border-right: 0; border-bottom:1px solid #ececec; box-sizing: border-box;}
+/* 하단 고정배너 추가_170406_강혜준 */
+.bottom_banner {position: fixed; bottom: 0;	width: 100%; z-index: 9999;}
+.bottom_banner img {width: 100%;}
