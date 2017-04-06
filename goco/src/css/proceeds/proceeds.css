@@ -1,6 +1,6 @@
-/*메인영역*/
+/*index페이지*/
 section[class*="-sec"] {width: 1069px; margin-left: auto; margin-right: auto;}
-.main-sec {margin-bottom: 25px;}
+.main-sec {}
 .ms-p1 {position: relative; height: 53px; background: #FDDF4D; font-size: 22px;}
 .ms-p1 i, .ms-p1 input, .ms-p1 a {position: relative; top: 6px; vertical-align: middle;}
 .ms-p1 i {font-family: "Noto Sans KR", sans-serif; color: #645b54; margin-left: 20px;}
@@ -9,3 +9,172 @@ section[class*="-sec"] {width: 1069px; margin-left: auto; margin-right: auto;}
 .ms-p1 .money {width: 227px;}
 .ms-p1 .btn {display: inline-block; font-size: 17px; color: #fff; width: 117px; height: 38px; background: #fc7931; border-radius: 5px; line-height: 2.2em; text-align: center; margin-left: 40px;}
 .ms-p1 .btn span {position: relative; top: -1.5px; font-size: 13px;}
+
+/*수익금신청페이지*/
+.info-sec {border-top: 1px solid #e1e1e1; padding-top: 25px; padding-bottom: 36px; border-bottom: 1px solid #e1e1e1; margin-bottom: 25px;}
+div[class*="is-box"] {float: left;}
+div[class*="is-box"] h2, .history-sec h2 {font-size: 20px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 10px;}
+.is-box-1 {}
+.is-box-2 {margin-left: 61px;}
+div[class*="isb-table"] {position: relative; width: 502px; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1;}
+div[class*="isb-table"] ul {border-bottom: 1px solid #e1e1e1;}
+div[class*="isb-table"] ul:first-child {border-top: none;}
+div[class*="isb-table"] li {display: table-cell; vertical-align: middle; height: 34px; font-weight: 500; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif;}
+div[class*="isb-table"] li.nth-1 {font-size: 18px; width: 208px;  background: #F7F7F7; text-align: center;  border-right: 1px solid #e1e1e1;}
+div[class*="isb-table"] li.nth-2 {font-size: 17px; width: 285px; text-align: right; padding-right: 8px; padding-left: 5px; line-height: 2.2em; letter-spacing: 0;}
+.isb-table-1 {}
+.isb-table-2 {}
+.isb-table-2 select, .isb-table-2 .in-txt {width: 100%; height: 26px; text-indent: 5px; font-size: 16px; line-height: 1.65em; border: 1px solid #e1e1e1;}
+.isb-table-2 select {vertical-align: middle; height: 30px;}
+.isb-table-2 .in-txt {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none;}
+
+.history-sec {}
+.history-sec h2 {}
+.hsb-table {position: relative; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; margin-bottom: 20px;}
+.hsb-table ul {border-bottom: 1px solid #e1e1e1;}
+.hsb-table ul:first-child {border-top: none;}
+.hsb-table li {display: table-cell; vertical-align: middle; height: 34px; font-weight: 500; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif; text-align: center; border-left: 1px solid #e1e1e1;}
+.hsb-table li:first-child {border-left: 0;}
+.hsb-table ul.th li {font-size: 18px; background: #F7F7F7;}
+.hsb-table ul.td li {font-size: 17px; letter-spacing: 0;}
+.hsb-table ul.td.empty li {font-size: 17px; letter-spacing: 0; width: 1069px;}
+.hsb-table ul li.nth-1 {width: 140px;}
+.hsb-table ul li.nth-2 {width: 140px;}
+.hsb-table ul li.nth-3 {width: 200px;}
+.hsb-table ul li.nth-4 {width: 146px;}
+.hsb-table ul li.nth-5 {width: 268px;}
+.hsb-table ul li.nth-6 {width: 169px;}
+.hs-box .btn {display: block; margin: 0 auto; width: 142px; height: 46px; font-size: 19px; border-radius: 5px; line-height: 2.45em; color: #fff; background: #fc7931; text-align: center; margin-bottom: 30px;}
+.hs-box .btn span {font-size: 15px; position: relative; top: -2px; margin-left: 5px;}
+
+.caution-box {border: 1px solid #e1e1e1; padding: 12px 0; font-size: 17px; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif;}
+.caution-box figure, .caution-box p {float: left;}
+.caution-box figure {width: 150px; text-align: center; padding: 10px 0; border-right: 1px solid #e1e1e1;}
+.caution-box figure img {margin: 0 auto; margin-bottom: 10px;}
+.caution-box p {padding-left: 30px; padding-top: 3px; line-height: 1.2em; color: #7f7f7f;}
+
+/*수익금확인*/
+.status-sec {margin-top: 50px; margin-bottom: 50px;}
+/*월별수익금확인*/
+.ssmb-tit {}
+.ssmb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 12px; font-weight: 500;}
+.ssmb-tit p {float: right;}
+.ssmb-tit p input.in-txt {height: 22px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
+.ssmb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
+  height: 28px; margin-left: 10px; line-height: 1.45em; cursor: pointer;
+  border-style: none; border: 1px solid #ccc; border-radius: 4px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f6+0,eeeeee+100 */
+  background: #f7f6f6; /* Old browsers */
+  background: -moz-linear-gradient(top, #f7f6f6 0%, #eeeeee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f7f6f6 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f7f6f6 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f6', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+.ssmb-table {position: relative; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; margin-bottom: 20px;}
+.ssmb-table ul {border-bottom: 1px solid #e1e1e1;}
+.ssmb-table ul:first-child {border-top: none;}
+.ssmb-table li {display: table-cell; vertical-align: middle; height: 34px; font-weight: 500; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif; text-align: center; border-left: 1px solid #e1e1e1;}
+.ssmb-table li:first-child {border-left: 0;}
+.ssmb-table ul.th li {font-size: 18px; background: #F7F7F7; font-weight: 600;}
+.ssmb-table ul.td li {font-size: 17px; letter-spacing: 0;}
+.ssmb-table ul.td.avg li, .ssmb-table ul.td.total li {background: #F7F7F7;}
+.ssmb-table ul.td.avg li:first-child, .ssmb-table ul.td.total li:first-child {font-weight: 600;}
+.ssmb-table li.nth-1 {width: 267px;}
+.ssmb-table li.nth-2 {width: 267px;}
+.ssmb-table li.nth-3 {width: 266px;}
+.ssmb-table li.nth-4 {width: 267px;}
+
+/*일별수익급확인*/
+.ssdb-tit {}
+.ssdb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 12px; font-weight: 500;}
+.ssdb-tit p {float: right;}
+.ssdb-tit p input.in-txt {height: 22px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
+.ssdb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
+  height: 28px; margin-left: 10px; line-height: 1.45em; cursor: pointer;
+  border-style: none; border: 1px solid #ccc; border-radius: 4px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f6+0,eeeeee+100 */
+  background: #f7f6f6; /* Old browsers */
+  background: -moz-linear-gradient(top, #f7f6f6 0%, #eeeeee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f7f6f6 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f7f6f6 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f6', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+.ssdb-table {position: relative; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; margin-bottom: 20px;}
+.ssdb-table ul {border-bottom: 1px solid #e1e1e1;}
+.ssdb-table ul:first-child {border-top: none;}
+.ssdb-table li {display: table-cell; vertical-align: middle; height: 34px; font-weight: 500; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif; text-align: center; border-left: 1px solid #e1e1e1;}
+.ssdb-table li:first-child {border-left: 0;}
+.ssdb-table ul.th li {font-size: 18px; background: #F7F7F7; font-weight: 600;}
+.ssdb-table ul.td li {font-size: 17px; letter-spacing: 0;}
+.ssdb-table ul.td.avg li, .ssdb-table ul.td.total li {background: #F7F7F7;}
+.ssdb-table ul.td.avg li:first-child, .ssdb-table ul.td.total li:first-child {font-weight: 600;}
+.ssdb-table li.nth-1 {width: 267px;}
+.ssdb-table li.nth-2 {width: 267px;}
+.ssdb-table li.nth-3 {width: 266px;}
+.ssdb-table li.nth-4 {width: 267px;}
+
+/*결제통계*/
+.statistics-sec {margin-top: 50px;}
+.stsb-tit {}
+.stsb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 12px; font-weight: 500;}
+.stsb-tit p {float: right;}
+.stsb-tit p input.in-txt {height: 22px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
+.stsb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
+  height: 28px; margin-left: 10px; line-height: 1.45em; cursor: pointer;
+  border-style: none; border: 1px solid #ccc; border-radius: 4px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f6+0,eeeeee+100 */
+  background: #f7f6f6; /* Old browsers */
+  background: -moz-linear-gradient(top, #f7f6f6 0%, #eeeeee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f7f6f6 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f7f6f6 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f6', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+.stsb-table {position: relative; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; margin-bottom: 20px;}
+.stsb-table ul {border-bottom: 1px solid #e1e1e1;}
+.stsb-table ul:first-child {border-top: none;}
+.stsb-table li {display: table-cell; vertical-align: middle; height: 34px; font-weight: 500; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif; text-align: center; border-left: 1px solid #e1e1e1;}
+.stsb-table li:first-child {border-left: 0;}
+.stsb-table ul.th li {font-size: 18px; background: #F7F7F7; font-weight: 600;}
+.stsb-table ul.td li {font-size: 16px; letter-spacing: 0;}
+.stsb-table ul.td.avg li, .stsb-table ul.td.total li {background: #F7F7F7;}
+.stsb-table ul.td.avg li:first-child, .stsb-table ul.td.total li:first-child {font-weight: 600;}
+.stsb-table li.nth-1 {width: 137px;}
+.stsb-table li.nth-2 {width: 397px;}
+.stsb-table li.nth-3 {width: 276px;}
+.stsb-table li.nth-4 {width: 257px;}
+.sts-box .pagenation {text-align: center;}
+.sts-box .pagenation a {display: inline-block; font-size: 13px; width: 26px; height: 26px; vertical-align: middle; line-height: 1.95em; margin-left: 1px; margin-right: 1px;}
+.sts-box .pagenation a[class*="prev"], .sts-box .pagenation a[class*="next"] {background: #ccc; color: #fff; font-size: 12px; line-height: 2em; letter-spacing: -2px;}
+.sts-box .pagenation a.on {border: 1px solid #e51b13; color: #e51b13; font-weight: 600;}
+.sts-box .pagenation a.prev {text-indent: -4px;}
+.sts-box .pagenation a.next {text-indent: 1px;}
+
+/*회원정보변경*/
+.mem-info-sec {border-top: 1px solid #e1e1e1; padding-top: 45px; margin-bottom: 50px;}
+div[class*="mios-box"] h2 {font-size: 20px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 10px; font-weight: 500;}
+.mis-box-1 {}
+.mis-box-2 {margin-left: 61px;}
+div[class*="miosb-table"] {position: relative; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; border-bottom: 1px solid #191919;}
+div[class*="miosb-table"] ul {border-bottom: 1px solid #e1e1e1;}
+div[class*="miosb-table"] ul:first-child {border-top: none;}
+div[class*="miosb-table"] li {display: table-cell; vertical-align: middle; height: 38px; font-weight: 500; font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif; font-size: 16px;}
+div[class*="miosb-table"] li.nth-1 {width: 208px;  background: #F7F7F7; text-align: left; text-indent: 25px;  border-right: 1px solid #e1e1e1; font-weight: 600;}
+div[class*="miosb-table"] li.nth-2 { text-align: right; padding-right: 8px; padding-left: 5px; line-height: 2.2em; letter-spacing: 0;}
+.miosb-table-1 {margin-bottom: 30px;}
+.miosb-table-2 {}
+.miosb-table-2 select, div[class*="miosb-table"] .in-txt {width: 296px; height: 24px; text-indent: 5px; font-size: 16px; line-height: 1.65em; border: 1px solid #e1e1e1;}
+.miosb-table-2 select {vertical-align: middle; height: 28px;}
+div[class*="miosb-table"] .in-txt + span {font-size: 15px; color: #999; margin-left: 20px;}
+.miosb-table-2 .in-txt {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none;}
+.mem-info-sec .btn-wrap {position: relative; margin-top: 30px; text-align: center;}
+.mem-info-sec .btn-wrap .btn {display: inline-block; width: 106px; height: 42px; font-size: 18px; border-radius: 5px; line-height: 2.28em; margin-left: 7px; margin-right: 7px; font-weight: 600;}
+.mem-info-sec .btn-wrap .btn.nth-1 {color: #fff; background: #fc7931; }
+.mem-info-sec .btn-wrap .btn.nth-2 {
+  border: 1px solid #ccc;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f6+0,eeeeee+100 */
+  background: #fff; /* Old browsers */
+  background: -moz-linear-gradient(top, #fff 0%, #eeeeee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}

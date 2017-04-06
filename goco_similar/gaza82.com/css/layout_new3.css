@@ -4665,6 +4665,8 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_sectioin #cal_wrap2 .cal_section {padding-bottom: 20px; min-height: auto;}
 .fare_sectioin #cal_wrap2 .cal_section .step_01 .btn_close {position: relative; top: -3px;}
 .slg {margin-bottom: 12px;}
+
+.bbs_view td.bbs_title{text-indent:5px; font-size:16px; color:#444444; font-weight:600}
 /* 이벤트_20170406_이동석 */
 #event_tab{clear: both; float: left; margin: 20px 0; width: 740px; height: 30px; border-bottom: 2px solid #ff610a; font-size: 14px;}
 #event_tab li a{display:block; font-size:14px; text-decoration:none}

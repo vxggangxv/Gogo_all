@@ -56,5 +56,5 @@ a {text-decoration: none;}
 .center-block {display: block; margin-right: auto; margin-left: auto;}
 .pull-right {float: right;}
 .pull-left {float: left;}
-.clearfix:before, .clearfix:after {display: block; content: "";}
-.clearfix:after {clear: both;}
+section:before, section:after, .clearfix:before, .clearfix:after {display: block; content: "";}
+section:after, .clearfix:after {clear: both;}
