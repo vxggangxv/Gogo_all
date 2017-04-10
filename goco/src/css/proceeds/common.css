@@ -20,7 +20,7 @@ i {font-style: italic;}
 .htb-u1 {position: absolute; top: 7px; right: 10px;}
 .htb-u1 li {position: relative; display: inline-block; vertical-align: middle; color: #fff; margin-left: 50px;}
 .htb-u1 li:first-child {}
-.htb-u1 li:before {content: ""; position: absolute; top: 1px; left: -28px; display: inline-block; width: 1px; height: 18px; background: #fff;}
+.htb-u1 li:before {content: ""; position: absolute; top: 0px; left: -28px; display: inline-block; width: 1px; height: 18px; background: #fff;}
 .htb-u1 li.name:before, .htb-u1 li.login:before {display: none;}
 .htb-u1 li.name {margin-left: 0;}
 .htb-u1 li.login {margin-left: 10px;}

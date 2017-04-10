@@ -8,14 +8,11 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link rel="stylesheet" href="http://static.go.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css">
-    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/common.css">-->
-    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/index.css">-->
-    <link rel="stylesheet" href="../../src/css/proceeds/common.css">
-    <link rel="stylesheet" href="../../src/css/proceeds/proceeds.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/common.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/proceeds.css">
 
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <!--<script src="http://static.go.co.kr/js/proceeds/proceeds.js"></script>-->
-    <script src="../../src/js/proceeds/proceeds.js"></script>
+    <script src="http://static.go.co.kr/js/proceeds/proceeds.js"></script>
 
     <!--[if lt IE 9]>
 <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -31,7 +28,6 @@
             <ul class="htb-u1 clearfix">
               <li class="name"></li>
               <li class="login"><a class="login-btn" href="">로그인</a></li>
-              <li><a href="">회원가입</a></li>
               <li><a href="">고고투어 바로가기</a></li>
             </ul>
           </div>
@@ -43,7 +39,7 @@
               <ul class="clearfix">
                 <li class=""><a href="">HOME</a></li>
                 <li><a href="">월별수익금확인</a></li>
-                <li class="on"><a href="">일별수익금확인</a></li>
+                <li class=""><a href="">일별수익금확인</a></li>
                 <li><a href="">결제통계</a></li>
                 <li><a href="">수익금신청</a></li>
               </ul>
@@ -54,66 +50,31 @@
 
       <div class="container">
 
-        <section class="main-sec">
-          <figure><img src="http://img.go.co.kr/proceeds/main_img.png" alt="홍보하면현금5000원씩지급"></figure>
-          <p class="ms-p1">
-            <i>김지영님의 <span class="c-orange">추천인 코드</span></i><input class="code" type="text">
-            <i>김지영님의 <span class="c-orange">추천인 수익금</span></i><input class="money" type="text">
-            <a href="" class="btn">수익금 신청 <span>&gt;</span></a>
-          </p>
-        </section>
-        <section class="statistics-sec">
-          <div class="sts-box">
-            <div class="stsb-tit clearfix">
-              <h2>결제 상세 현황</h2>
-              <p>
-                <input class="in-txt" type="text">~<input class="in-txt" type="text">
-                <input class="btn" type="button" value="선택검색">
-              </p>
+        <section class="login-sec">
+          <div class="ls-box">
+            <h2><img src="http://img.go.co.kr/proceeds/logo.png" alt="고코투어"></h2>
+            <div class="lsb-d1 clearfix">
+              <input type="text" class="in-txt id" placeholder="아이디">
+              <input type="text" class="in-txt pw" placeholder="비밀번호">
+              <a href="" class="btn bg-orange">로그인</a>
             </div>
-            <div class="stsb-table">
-              <ul class="th clearfix">
-                <li class="nth-1">번호</li>
-                <li class="nth-2">아이디</li>
-                <li class="nth-3">결제일시</li>
-                <li class="nth-4">수익금</li>
-              </ul>
-              <ul class="td clearfix">
-                <li class="nth-1">1708</li>
-                <li class="nth-2">abcd***************</li>
-                <li class="nth-3">2017-04-04 14:24:37</li>
-                <li class="nth-4">5,000원</li>
-              </ul>
-              <ul class="td clearfix">
-                <li class="nth-1">1708</li>
-                <li class="nth-2">abcd***************</li>
-                <li class="nth-3">2017-04-04 14:24:37</li>
-                <li class="nth-4">5,000원</li>
-              </ul>
-              <ul class="td clearfix">
-                <li class="nth-1">1708</li>
-                <li class="nth-2">abcd***************</li>
-                <li class="nth-3">2017-04-04 14:24:37</li>
-                <li class="nth-4">5,000원</li>
-              </ul>
-            </div>
-
-            <div class="pagenation" id="pagenation">
-              <a class="pprev" href="">&lt;&lt;</a>
-              <a class="prev" href="">&lt;</a>
-              <a class="on" href="">1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">4</a>
-              <a href="">5</a>
-              <a href="">6</a>
-              <a href="">7</a>
-              <a href="">8</a>
-              <a href="">9</a>
-              <a href="">10</a>
-              <a class="next" href="">&gt;</a>
-              <a class="nnext" href="">&gt;&gt;</a>
-            </div>
+            <p class="lsb-p1">
+              <input type="checkbox" class="in-check" id="login"><label for="login">로그인상태 유지</label><a href="" class="search">아이디/비밀번호 찾기</a>
+            </p>
+            <div class="lsb-d2">
+              <h3>간단하게 로그인</h3>
+              <a href="" class="nth-1"><span class="sns"></span>페이스북 아이디로 로그인</a>
+              <a href="" class="nth-2"><span class="sns"></span>카카오톡 아이디로 로그인</a>
+              <a href="" class="nth-3"><span class="sns"></span>네이버 아이디로 로그인</a>
+              <a href="" class="nth-4"><span class="sns"></span>다음 아이디로 로그인</a>
+              <a href="" class="nth-5"><span class="sns"></span>구글 아이디로 로그인</a>
+            </div>            
+            <p class="lsb-p2">
+              내 소셜 아이디로 간편하게 고코투어 가입과 로그인이 가능합니다. <br>
+              신규가입시 2,000원 할인쿠폰 증정, 결제금액 1% 적립, 다양한 할인쿠폰 <br>
+              발급 로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 됩니다. <br>
+              회원가입시 SMS/메일링 수신에 동의합니다. 
+            </p>
           </div>
         </section>
 

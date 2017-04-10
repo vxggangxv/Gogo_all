@@ -3,17 +3,18 @@ section[class*="-sec"] {width: 1069px; margin-left: auto; margin-right: auto;}
 .main-sec {}
 .ms-p1 {position: relative; height: 53px; background: #FDDF4D; font-size: 22px;}
 .ms-p1 i, .ms-p1 input, .ms-p1 a {position: relative; top: 6px; vertical-align: middle;}
-.ms-p1 i {font-family: "Noto Sans KR", sans-serif; color: #645b54; margin-left: 20px;}
+.ms-p1 i {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; color: #645b54; margin-left: 20px;}
 .ms-p1 input {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; border: 3px solid #fc7931; height: 32px; margin-left: 20px; text-indent: 8px; font-size: 24px; line-height: 1.4em;}
 .ms-p1 .code {width: 130px;}
-.ms-p1 .money {width: 227px;}
-.ms-p1 .btn {display: inline-block; font-size: 17px; color: #fff; width: 117px; height: 38px; background: #fc7931; border-radius: 5px; line-height: 2.2em; text-align: center; margin-left: 40px;}
+.ms-p1 .money {width: 217px;}
+.ms-p1 .btn {position: relative; display: inline-block; font-size: 17px; color: #fff; width: 117px; height: 38px; background: #fc7931; border-radius: 5px; line-height: 2.2em; text-align: center; margin-left: 30px;}
 .ms-p1 .btn span {position: relative; top: -1.5px; font-size: 13px;}
+.step-sec {margin-top: 25px;}
 
 /*수익금신청페이지*/
 .info-sec {border-top: 1px solid #e1e1e1; padding-top: 25px; padding-bottom: 36px; border-bottom: 1px solid #e1e1e1; margin-bottom: 25px;}
 div[class*="is-box"] {float: left;}
-div[class*="is-box"] h2, .history-sec h2 {font-size: 20px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 10px;}
+div[class*="is-box"] h2, .history-sec h2 {font-size: 20px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-bottom: 10px;}
 .is-box-1 {}
 .is-box-2 {margin-left: 61px;}
 div[class*="isb-table"] {position: relative; width: 502px; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1;}
@@ -57,7 +58,7 @@ div[class*="isb-table"] li.nth-2 {font-size: 17px; width: 285px; text-align: rig
 .status-sec {margin-top: 50px; margin-bottom: 50px;}
 /*월별수익금확인*/
 .ssmb-tit {}
-.ssmb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 12px; font-weight: 500;}
+.ssmb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-bottom: 12px; font-weight: 500;}
 .ssmb-tit p {float: right;}
 .ssmb-tit p input.in-txt {height: 22px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
 .ssmb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
@@ -86,7 +87,7 @@ div[class*="isb-table"] li.nth-2 {font-size: 17px; width: 285px; text-align: rig
 
 /*일별수익급확인*/
 .ssdb-tit {}
-.ssdb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 12px; font-weight: 500;}
+.ssdb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-bottom: 12px; font-weight: 500;}
 .ssdb-tit p {float: right;}
 .ssdb-tit p input.in-txt {height: 22px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
 .ssdb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
@@ -116,7 +117,7 @@ div[class*="isb-table"] li.nth-2 {font-size: 17px; width: 285px; text-align: rig
 /*결제통계*/
 .statistics-sec {margin-top: 50px;}
 .stsb-tit {}
-.stsb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 12px; font-weight: 500;}
+.stsb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-bottom: 12px; font-weight: 500;}
 .stsb-tit p {float: right;}
 .stsb-tit p input.in-txt {height: 22px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
 .stsb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
@@ -151,7 +152,7 @@ div[class*="isb-table"] li.nth-2 {font-size: 17px; width: 285px; text-align: rig
 
 /*회원정보변경*/
 .mem-info-sec {border-top: 1px solid #e1e1e1; padding-top: 45px; margin-bottom: 50px;}
-div[class*="mios-box"] h2 {font-size: 20px; font-family: "Noto Sans KR", sans-serif; margin-bottom: 10px; font-weight: 500;}
+div[class*="mios-box"] h2 {font-size: 20px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-bottom: 10px; font-weight: 500;}
 .mis-box-1 {}
 .mis-box-2 {margin-left: 61px;}
 div[class*="miosb-table"] {position: relative; border-top: 2px solid #fc7931; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; border-bottom: 1px solid #191919;}
@@ -176,5 +177,41 @@ div[class*="miosb-table"] .in-txt + span {font-size: 15px; color: #999; margin-l
   background: -moz-linear-gradient(top, #fff 0%, #eeeeee 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #fff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #fff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
 }
+
+/*로그인페이지*/
+.login-sec {padding-top: 30px;}
+.ls-box {position: relative; margin:0 auto; width: 764px; height: 751px; border: 1px solid #d9d9d9;}
+.ls-box h2 {text-align: center; margin-top: 30px; margin-bottom: 20px;}
+.ls-box h2 img {display: inline-block;}
+.lsb-d1, .lsb-p1 {position: relative; width: 510px; margin: 0 auto;}
+.lsb-d1 {margin-bottom: 10px;}
+.lsb-d1 .in-txt, .lsb-d1 .btn {font-size: 18px;}
+.lsb-d1 .in-txt {width: 390px; height: 45px; text-indent: 12px; line-height: 1.65em; border: 1px solid #d9d9d9; float: left; color: #434343;}
+.lsb-d1 .in-txt::-webkit-input-placeholder {color: #a5a4a4;}
+.lsb-d1 .in-txt::-moz-placeholder {color: #a5a4a4;}
+.lsb-d1 .in-txt:-ms-input-placeholder {color: #a5a4a4;}
+.lsb-d1 .in-txt:-moz-placeholder {color: #a5a4a4;}
+.lsb-d1 .in-txt.id {margin-bottom: 8px;}
+.lsb-d1 .btn {position: absolute; top: 0; right: 0; width:110px; height: 106px; color: #fff; text-align: center; line-height: 5.8em; font-weight: 600; letter-spacing: 0;}
+.lsb-p1 {padding: 0 100px 15px; margin-bottom: 30px; border-bottom: 1px solid #d9d9d9;}
+.lsb-p1 .in-check {width: 18px; height: 18px;}
+.lsb-p1 .in-check, .lsb-p1 label, .lsb-p1 a {vertical-align: middle; font-size: 15px;}
+.lsb-p1 label {cursor: pointer;}
+.lsb-p1 a {position: relative; margin-left: 30px;}
+.lsb-p1 a:before {content: ""; position: absolute; top: 1px; left: -15px; display: inline-block; width: 1px; height: 16px; background: #434343;}
+.lsb-d2 {position: relative; margin: 0 auto; width: 400px; margin-bottom: 25px;}
+.lsb-d2 h3 {text-align: center; font-size: 24px; font-weight: 600; margin-bottom: 18px;}
+.lsb-d2 a {position: relative; display: block; height: 50px; padding-left: 28px; margin-top: 8px; text-align: center; font-size: 16.5px; line-height: 3.1em;}
+.lsb-d2 a.nth-1 {background: #3b5999; color: #fff;}
+.lsb-d2 a.nth-2 {background: #ffeb00; color: #3b1e12;}
+.lsb-d2 a.nth-3 {background: #1ec800; color: #fff;}
+.lsb-d2 a.nth-4 {color: #707070; border: 1px solid #d9d9d9; height: 48px;}
+.lsb-d2 a.nth-5 {background: #d34837; color: #fff;}
+.lsb-d2 a .sns {position: absolute; display: inline-block; width: 60px; height: 30px; top: 15px; left: 80px;}
+.lsb-d2 a.nth-1 .sns{background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px 0px; top: 13px; left: 82px;}
+.lsb-d2 a.nth-2 .sns {background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px -50px; left: 81px;}
+.lsb-d2 a.nth-3 .sns {background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px -100px; top: 17px;}
+.lsb-d2 a.nth-4 .sns {background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px -150px; left: 75px}
+.lsb-d2 a.nth-5 .sns {background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px -200px; top: 16px;}
+.lsb-p2 {width: 440px; margin: 0 auto; font-size: 15px; line-height: 1.35em;}
