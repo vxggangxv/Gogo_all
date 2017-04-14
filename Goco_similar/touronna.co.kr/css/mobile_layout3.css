@@ -185,7 +185,7 @@ background-color:#bc4c0f
 #product_info #pruduct_title{padding:10px;}
 #product_info .pruduct_title_t{float:left; width:100%; color:#3f3f3f; letter-spacing:-1px; text-align:left; font-size:1.188em; font-weight:600; line-height:1.2;}
 #product_info th{text-align:left; color:#3f3f3f; padding-left:10px; border-bottom:1px solid #d2d2d2}
-#product_info td{text-align:left; border-bottom:1px solid #d2d2d2}
+#product_info td{text-align:left; border-bottom:1px solid #d2d2d2; color: #555;}
 #product_info td.link a{color:#ff6600}
 #product_info .info_title{background-color: #606060;text-align:left;color:#ffffff;border-bottom:1px solid #bebebe;line-height:56px;font-weight:bold;padding-left:5%;}
 #product_info .info_title img{margin-top:25px}
@@ -239,8 +239,8 @@ background-color:#bc4c0f
 
 
 /*ÀÌ¿ë¾È³»*/
-#user_guide{clear:both; float:left; width:100%; font-size:0.750em; background-color:#ffffff}
-#user_guide #guide_text{padding:10px; text-align:justify}
+#user_guide{clear:both; float:left; width:100%; background-color:#ffffff}
+#user_guide #guide_text{padding:10px; text-align:justify;}
 #user_guide #guide_text span{color:#3f3f3f; font-weight:bold}
 #user_guide #guide_text .stress{color:#ffffff; background-color:#6d8de0}
 
@@ -326,16 +326,16 @@ border-radius: 10px; -moz-border-radius: 10px; /*¸ðÁú¶ó*/-webkit-border-ra
 /*¶óµð¿À¹öÆ°*/
 .radio_box{float:left; width:100%;}
 .radio_box label{line-height:1; margin:0 10px;
-display:block; position:relative; height:50px; padding-left:23px; text-indent:5px; line-height:1.3; color:#7b7b7b;
+display:block; position:relative; height:50px; padding-left: 34px; text-indent:5px; line-height:1.3; color:#7b7b7b;
 background:url(http://img.gaza82.co.kr/mobile/btn_radio.png) no-repeat 0 0; background-size:24px 100px; -webkit-background-size:24px 100px
 }
 .radio_box .chk{position:absolute; z-index:-1; opacity:0}
 .radio_box .chk:checked+label{background-position:0 -50px}
 .radio_box label .room_info_title{float:left; width:100%; margin-top:5px; }
 .radio_box label p{float:left; clear:both;}
-.radio_box .font_black20{font-size:15px; color:#000000;}
+.radio_box .font_black20{font-size:15px; color:#202020; font-weight: 600; text-indent: 0;}
 .radio_box .font_b_orange20{font-size:18px; color:#ff6600; font-weight:bold}
-
+.radio_box .font_b_black20{font-size:14px; color:#000; font-weight: 600;}
 
 /*¿¹¾àÁ¤º¸ÀÔ·Â*/
 #reserve_tab{clear:both; float:left; width:100%; height:36px; background-color:#e4a65c}
@@ -1935,7 +1935,7 @@ background:url(http://img.go.co.kr/mobile/check_box_normal.png) no-repeat 0 0; b
 
 /*¿¹¾à½Ã À¯ÀÇ»çÇ×*/
 #detail_noticeBox2 {padding:10px; background:#c5c5c5}
-#detail_noticeBox2 .box {margin:auto; width:100%; padding:10px; box-sizing:border-box; border-radius:10px; background:#fff; color:#5f5f5f; letter-spacing:-1px; text-align:left; font-size:0.875em}
+#detail_noticeBox2 .box {margin:auto; width:100%; padding:10px; box-sizing:border-box; border-radius:10px; background:#fff; color:#5f5f5f; letter-spacing:-1px; text-align:left; font-size:14px;}
 #detail_noticeBox2 .box .tit {color:#f72222; font-weight:bold}
 #detail_noticeBox2 .box .link a {color:#157ef4; font-weight:bold; text-decoration:underline}
 #detail_noticeBox2 .box .text {color:#5f5f5f; line-height:1.2}
@@ -2697,10 +2697,10 @@ text-align:left; text-indent:10px; border-bottom:1px solid #eee1c8; font-size:0.
 
 .radio_box .room_info_title .price {float:right; font-weight:bold}
 .radio_box .room_info_title .price del {font-size:0.813em}
-.radio_box .room_info_title .person {float:left; margin-top:5px; font-size:0.688em}
+.radio_box .room_info_title .person {float:left; margin-top:5px; font-size:10px; text-indent: 0;}
 .radio_box .room_info_title .mini {font-size:0.688em}
 .radio_box label .app_discount {float:left; width:100%; margin:10px 0; padding-top:10px; border-top:1px solid #d2d2d2; }
-.radio_box label .app_discount .icon {float:left; display:block; height:15px; line-height:16px; padding:0 2px; text-indent:0px; background:#fff; font-size:0.688em; color:#2a7fe8; border:1px solid #2a7fe8}
+.radio_box label .app_discount .icon {float:left; display:block; height:15px; line-height:16px; padding:0 2px; text-indent:0px; background:#fff; font-size:10px; color:#2a7fe8; border:1px solid #2a7fe8; position: relative;}
 .radio_box label .app_discount .discount {float:right; font-weight:bold; font-size:1.250em; color:#2a7fe8}
 .radio_box label .app_discount .discount .mini {font-size:0.688em}
 
@@ -3100,7 +3100,7 @@ color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:2px; 
 #room_w .room_tx_w{width:100%; margin:auto}
 #room_w .room_tx_w .room_tx_in{float:left; margin-top:30px; width:100%}
 #room_w .room_tx_w .room_tx_in h4{font-size:1.0em; color:#3f3f3f; font-weight:600; }
-#room_w .room_tx_w .room_tx_in p{font-size:0.875em; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8}
+#room_w .room_tx_w .room_tx_in p{font-size:14px; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8}
 #room_w .room_tx_w .room_tx_in p .room_tx_icon{float:left; width:4%}
 #room_w .room_tx_w .room_tx_in p .room_tx_tx{float:left; width:95%}
 
@@ -3401,7 +3401,8 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 /* »ó¼¼ÆäÀÌÁö ·Î°í Ãß°¡ 20161004 end */
 
 /* »ó¼¼ÆäÀÌÁö ·Î°í Ãß°¡ ¼öÁ¤ 20161006 */
-.txt_forms{width:92%; margin:auto}
+.room_tx_tx {font-size: 14px; color: #555;}
+.txt_forms{width:92%; margin:auto; margin-top: 10px; font-size: 14px;}
 .room_title{font-size: 1.0em; color: #3f3f3f; font-weight: 600; width: 100%; border-bottom: 1px solid #ddd; padding-bottom: 10px;}
 .slogan_icon_img2{float:right; text-align:right; margin-right:4%; width:100%; margin-top: 10px;}
 /* »ó¼¼ÆäÀÌÁö ·Î°í Ãß°¡ ¼öÁ¤ 20161006 end */
