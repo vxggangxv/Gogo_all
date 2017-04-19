@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.login {padding:28px 15px 0;}
+.login .foot {margin-top:15px; text-align:center;}
+.login .foot p .line {text-decoration:underline;}
+.login .join {margin-top:20px; text-align:center;}
+.login .join a {font-weight:bold; font-size:14px; text-decoration:underline;}
+
+/* SNS 로그인 */
+.login .login_list {}
+.login .login_list li {margin-top:10px;}
+.login .login_list li:first-child {margin-top:0;}
+.login .login_list li a {display:block; height:36px; text-align:center; line-height:36px; box-sizing:border-box;}
+.login .login_list li.facebook a {background-color:#3b5999; color:#fff;}
+.login .login_list li.kakaotalk a {background-color:#ffeb00; color:#3b1e12;}
+.login .login_list li.daum a {border:1px solid #ccc; color:#707070;}
+.login .login_list li.naver a {background-color:#1ec800; color:#fff;}
+.login .login_list li.email a {border:1px solid #cbcbcb; background-color:#f2f2f2; color:#707070;}
+.login .login_list li a span {position:relative;}
+.login .login_list li a span:before {content:''; display:block; position:absolute; top:50%;}
+.login .login_list li.facebook a span:before {left:-18px; width:9px; height:16px; margin-top:-8px; background:url('http://img.cablecar.go.co.kr/ico_facebook.png') no-repeat 0 0; background-size:100% 100%;}
+.login .login_list li.kakaotalk a span:before {left:-23px; width:18px; height:17px; margin-top:-9px; background:url('http://img.cablecar.go.co.kr/ico_kokoatalk.png') no-repeat 0 0; background-size:100% 100%;}
+.login .login_list li.daum a span:before {left:-45px; width:38px; height:16px; margin-top:-8px; background:url('http://img.cablecar.go.co.kr/ico_daum.png') no-repeat 0 0; background-size:100% 100%;}
+.login .login_list li.naver a span:before {left:-28px; width:14px; height:13px; margin-top:-7px; background:url('http://img.cablecar.go.co.kr/ico_naver.png') no-repeat 0 0; background-size:100% 100%;}
+.login .login_list li.email a span:before {left:-39px; width:21px; height:13px; margin-top:-7px; background:url('http://img.cablecar.go.co.kr/ico_email.png') no-repeat 0 0; background-size:100% 100%;}
+
+/* 입력영역 */
+.login .input_form {margin-top:10px;}
+.login .input_form:nth-of-type(1) {margin-top:0;}
+.login .input_form .col2 {display:table; width:100%;}
+.login .input_form .col2 > div {display:table-cell; width:50%;}
+.login .input_form .col2 > div:first-child {padding-right:10px;}
+.login .input_form label {display:block; margin-bottom:5px; font-weight:bold; font-size:14px;}
+.login .input_form .txt_box {height:33px; font-size:14px;}
+.login .input_form p {margin-top:10px;}

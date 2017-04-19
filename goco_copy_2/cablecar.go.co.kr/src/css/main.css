@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* 메인배너 슬라이드 */
+.main_banner .swiper-button-prev, .main_banner .swiper-button-next {width:50px; height:50px; margin-top:-25px;}
+.main_banner .swiper-button-prev {left:0; background:url('http://img.cablecar.go.co.kr/slide_btn_prev.png') no-repeat 50% 50%; background-size:12px 22px;}
+.main_banner .swiper-button-next {right:0; background:url('http://img.cablecar.go.co.kr/slide_btn_next.png') no-repeat 50% 50%; background-size:12px 22px;}
+
+/* 상품선택영역 */
+.section .accordion {padding:12px 0; text-align:center;}
+.section .accordion span {position:relative; padding-right:20px; color:#313131; font-size:14px;}
+.section .accordion span:before {content:''; display:block; position:absolute; right:0; top:1px; width:8px; height:8px; border-top:2px solid #8f9092; border-left:2px solid #8f9092; font-size:14px; -webkit-transform:rotate(-135deg); transform:rotate(-135deg);}
+.section .accordion span.on:before {top:6px; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.item {}
+.item .tiket {padding:10px; border-bottom:1px solid #dfdfdf;}
+.item .tiket > p {color:#000; font-weight:bold; font-size:14px;}
+.item .option {position:relative; padding:10pX;}
+.item .option .blt_type01 {padding-bottom:10px;}
+.item .option .discount {text-decoration:line-through;}
+.item .option .count {position:absolute; right:10px; top:5px; height:31px; border:1px solid #dcdadb; font-size:0; text-align:center;}
+.item .option .count button {width:26px; height:100%; background-color:#f7f7f7; font-size:16px;}
+.item .option .count span {display:inline-block; width:35px; height:100%; border-left:1px solid #dcdadb; border-right:1px solid #dcdadb; color:#111; font-weight:bold; font-size:13px; line-height:31px; vertical-align:middle;}
+.item .option .price {position:absolute; right:10px; top:42px; color:#888; font-weight:bold;}
+
+/* 소개영역 */
+.intro {padding:15px 10px;}
+.intro .group {margin-top:10px;}
+.intro .group:first-child {margin-top:0;}
+.intro .group P {margin-top:10px; color:#464646; text-align:center;}
+.intro .view_point {position:relative; margin-top:15px; text-align:center;}
+.intro .view_point:before {content:''; display:block; position:absolute; left:0; top:50%; width:100%; height:1px; background-color:#000;}
+.intro .view_point strong {display:inline-block; position:relative; padding:2px 3px; border:1px solid #000; background-color:#fff; font-size:13px;}
+
+/* 편의시설 안내 */
+.guide {padding:8px 0;}
+.guide .guide_txt {text-align:center;}
+.guide .guide_list {overflow:hidden; margin-top:10px;}
+.guide .guide_list li {float:left; width:20%; text-align:center; padding-top:30px;}
+.guide .guide_list li.parking {background:url('http://img.cablecar.go.co.kr/ico_food01.gif') no-repeat 50% 0; background-size:24px 24px;}
+.guide .guide_list li.food {background:url('http://img.cablecar.go.co.kr/ico_food02.gif') no-repeat 50% 0; background-size:23px 23px;}
+.guide .guide_list li.fastfood {background:url('http://img.cablecar.go.co.kr/ico_food03.gif') no-repeat 50% 0; background-size:25px 25px;}
+.guide .guide_list li.cafe {background:url('http://img.cablecar.go.co.kr/ico_food04.gif') no-repeat 50% 0; background-size:25px 25px;}
+.guide .guide_list li.market {background:url('http://img.cablecar.go.co.kr/ico_food05.gif') no-repeat 50% 0; background-size:22px 22px;}
+
+/* 지도 */
+.contact {}
+.contact .map {position:relative; padding-top:56.25%;}
+.contact .map div {position:absolute; left:0; top:0; width:100%; height:100%;}
+.contact .address {position:relative; padding:10px 0;}
+.contact .address p {margin:0 85px 0 10px;}
+.contact .address .copy {position:absolute; right:10px; top:50%; margin-top:-10px; padding:2px 5px; border:1px solid #ddd;}
+
+/* 정보, 사용방법, 안내 */
+.info {background-color:#fff;}
+.info > li {padding:20px 15px 15px; border-top:1px solid #c2c2c2;}
+.info > li:first-child {border-top:0;}
+.info > li .info_tit {margin-bottom:10px; font-weight:bold;}
+.info > li .info_list {}
+.info > li .info_list > li {display:table; width:100%; table-layout:fixed; line-height:1.4;}
+.info > li .info_list > li span, .info > li .info_list > li p {display:table-cell; vertical-align:top;}
+.info > li .info_list > li span {width:55px; color:#6f6f6f;}
+
+/* 하단 구매하기 */
+.btn_buy {position:fixed; left:0; bottom:0; width:100%;}
