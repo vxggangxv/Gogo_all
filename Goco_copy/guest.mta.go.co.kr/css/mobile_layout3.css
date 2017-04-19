@@ -3131,7 +3131,7 @@ color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:2px; 
 #room_w .room_tx_w{width:100%; margin:auto}
 #room_w .room_tx_w .room_tx_in{float:left; margin-top:30px; width:100%}
 #room_w .room_tx_w .room_tx_in h4{font-size:1.0em; color:#3f3f3f; font-weight:600; }
-#room_w .room_tx_w .room_tx_in p{font-size:0.875em; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8}
+#room_w .room_tx_w .room_tx_in p{font-size:14px; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8}
 #room_w .room_tx_w .room_tx_in p .room_tx_icon{float:left; width:4%}
 #room_w .room_tx_w .room_tx_in p .room_tx_tx{float:left; width:95%}
 
@@ -3429,14 +3429,9 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 .slogan_icon_img{position: relative; top: -10px; left:3px}
 .slogan_icon_img1{float:right; text-align:right; margin-right:4%}
 .slogan_icon_img2{float:right; text-align:right; margin-right:4%; width:100%; margin-top: 10px;}
-/* 상세페이지 로고 추가 20161004 end */
-
-.txt_forms{width:92%; margin:auto}
-.room_title{font-size: 1.0em; color: #3f3f3f; font-weight: 600; width: 100%; border-bottom: 1px solid #ddd; padding-bottom: 10px;}
-
 
 /* 상세페이지 로고 추가 수정 20161006 */
-.txt_forms{width:92%; margin:auto}
+.txt_forms{width:92%; margin:auto; font-size: 14px;}
 .room_title{font-size: 1.0em; color: #3f3f3f; font-weight: 600; width: 100%; border-bottom: 1px solid #ddd; padding-bottom: 10px;}
 .slogan_icon_img2{float:right; text-align:right; margin-right:4%; width:100%; margin-top: 10px;}
 /* 상세페이지 로고 추가 수정 20161006 end */

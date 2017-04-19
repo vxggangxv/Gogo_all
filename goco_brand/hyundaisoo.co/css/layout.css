@@ -372,11 +372,14 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 
 /*2015.02. 상세리뉴얼 관련*/
-#rsv_sang #rsv_s_list_box2 {clear:left;width:980px}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list {width:980px;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list td.ss{padding-left:20px; height:60px;border-bottom:1px solid #dddddd; position: relative;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list td.ss2{height:60px;border-bottom:1px solid #dddddd; position: relative;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600}
+#rsv_sang #rsv_s_list_box2 {clear:left;width:954px}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list {width:954px;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_tr"] td.ss{height:60px; border-top:1px solid #dddddd; position:relative;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_detail"] td.ss {height: auto;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac {background: #FBF6E8;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac.select {background: #FFEBB9;}
+
 
 #contents .contents_tit2 {float:left; margin-bottom:15px; padding-bottom:10px; padding-top:10px; padding-left:20px; width:982px; color:#000; font-weight:600; text-align:left; font-size:17px; border-bottom:1px solid #b2b2b2; border-top:1px solid #b2b2b2}
 #main5 {position:relative; width:961px; margin:auto; margin-top:22px}
@@ -1042,18 +1045,18 @@ background-size: 54px; background-position: center -8px;}
 .snsLarge .facebook a img {top: 13px; left: 16px;}
 /* 로그인창 앱설치배너 추가_20170321_장혜림 */
 #snsLogin .login_app_bn {   margin:0 auto; text-align:center; padding:0;}
-/* 앱설치 링크 문자발송 팝업 20170322 */ 
-#app_pop_w{width:543px; height:420px; background:#fff; border-radius:3px; position:absolute; } 
-#app_pop_w .app_pop_title{margin:auto; text-align:center; margin-top:20px;} 
-#app_pop_w .app_pop_close{position:relative; top:-45px; left:500px} 
-#app_pop_w .app_pop_img{position:absolute; margin:25px 35px 25px 12px; } 
-#app_pop_w .app_pop_txt{ margin:auto; text-align:left;  color:#000000; letter-spacing:-0.4px; line-height:1.2; margin-top:26px; margin-left:150px; } 
-#app_pop_w .app_pop_txt .txt1{font-size:22px} 
-#app_pop_w .app_pop_txt .txt1 .txt1_F{font-size:28px;font-weight:bold; color:#f95c24; letter-spacing:-0.8px; text-decoration:underline} 
-#app_pop_w .app_pop_txt .txt2{font-size:15px; margin-top:18px; letter-spacing:-0.2px; line-height:1.3; } 
-#app_pop_w .app_pop_txt .txt2 .txt2_F{font-size:15px; color:#f95c24;  font-weight:bold} 
-#app_pop_w .app_pop_num{margin-top:25px; text-align:center;} 
-#app_pop_w .inputp {background: #fff; font-size: 0.938em; font-weight: 600; color:#666666; height:32px; border-radius: 5px; border: 1px solid #c4c4c4; padding:0 10px} 
-#app_pop_w .app_pop_btn{display: inline-block; width:84px; height:32px; background:#f95c24; border:1px solid #d53800; border-radius:5px; color:#fff; text-align:center; font-size:15px; font-weight:bold; cursor:pointer; line-height: 2.0;} 
-#app_pop_w .app_pop_rtxt{width:100%; background:#344570; color:#fff; height:95px; margin-top:33px} 
+/* 앱설치 링크 문자발송 팝업 20170322 */
+#app_pop_w{width:543px; height:379px;  background:#fff; border-radius:3px; position:absolute; }
+#app_pop_w .app_pop_title{margin:auto; text-align:center; margin-top:20px;}
+#app_pop_w .app_pop_close{position:relative; top:-45px; left:500px}
+#app_pop_w .app_pop_img{position:absolute; margin:20px 35px 25px 12px; }
+#app_pop_w .app_pop_txt{ margin:auto; text-align:left;  color:#000000; letter-spacing:-0.4px; line-height:1.2; margin-top:30px; margin-left:150px; }
+#app_pop_w .app_pop_txt .txt1{font-size:22px}
+#app_pop_w .app_pop_txt .txt1 .txt1_F{font-size:28px;font-weight:bold; color:#f95c24; letter-spacing:-0.8px; text-decoration:underline}
+#app_pop_w .app_pop_txt .txt2{font-size:15px; margin-top:18px; letter-spacing:-0.2px; line-height:1.3; }
+#app_pop_w .app_pop_txt .txt2 .txt2_F{font-size:15px; color:#f95c24;  font-weight:bold}
+#app_pop_w .app_pop_num{margin-top:40px; text-align:center;}
+#app_pop_w .inputp {background: #fff; font-size: 0.938em; font-weight: 600; color:#666666; height:32px; border-radius: 5px; border: 1px solid #c4c4c4; padding:0 10px}
+#app_pop_w .app_pop_btn{display: inline-block; width:84px; height:32px; background:#f95c24; border:1px solid #d53800; border-radius:5px; color:#fff; text-align:center; font-size:15px; font-weight:bold; cursor:pointer; line-height: 2.0;}
+#app_pop_w .app_pop_rtxt{width:100%; background:#344570; color:#fff; height:95px; margin-top:33px}
 #app_pop_w .app_pop_rtxt .app_pop_rtxt_txt{font-size:11px; padding-top:12px; margin-left:25px; font-family:'돋움', Dotum, sans-serif; letter-spacing:-0.4px;}

@@ -6,9 +6,10 @@
 	<title>상세피이지 로고 추가</title>
 
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css?ver=20170201165300" />
-	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" /> -->
 	<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3_tmp.css"/> -->
 	<!-- <link rel="stylesheet" type="text/css" href="../src/css/layout_new3_tmp.css" /> -->
+  <link rel="stylesheet" type="text/css" href="../src/css/layout_new3.css" />
 
 	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
 	<!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
@@ -19,7 +20,19 @@
 	<!-- <script src="http://static.go.co.kr/js/select_product.js"></script> -->
 	<script src="../src/js/select_product.js"></script>
 
-
+  <style>
+    /* #room_result tr:hover {background: #e3e3e3;}
+    #room_result .expand-list:hover {background: #f5f5f5;} */
+  </style>
+  <script>
+    $(function() {
+      $("#room_result tr").hover(function() {
+        $(this).addClass("select");
+      }, function() {
+        $(this).removeClass("select");
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -1110,7 +1123,7 @@
           </tr>
           
           <!-- 객실명, 인원, 금액 나오는 라인 -->
-          <tr id="P2_273114_34032_2299_tr" class="over_tr" style="cursor:pointer;border-top:2px solid #ccc" onclick="booking.sclick('P2_273114_34032_2299', 'y')">
+          <tr id="P2_273114_34032_2299_tr" class="over_tr pac" style="cursor:pointer;border-top:2px solid #ccc" onclick="booking.sclick('P2_273114_34032_2299', 'y')">
             <td class="pl15 left ss"><input type="radio" name="sang" value="P_2299||273114_34032" id="sang_P2_273114_34032_2299"> 
           
             <!-- 패키지 말머리 추가 -->
@@ -1170,8 +1183,7 @@
 
           <!-- 추가사항 -->
           <style>
-            .expand-list {height: 50px; border-bottom: 1px solid #ddd; background: #f5f5f5; font-size: 15px; cursor: pointer; font-weight: 600;}
-            .expand-list .c-red {color: red;}
+            .expand-list {height: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; background: #f5f5f5; font-size: 15px; cursor: pointer; font-weight: 600;}
             .expand-list .arrow {
               position: relative; font-weight: 400;
               -webkit-writing-mode: vertical-rl;
@@ -1205,14 +1217,14 @@
           <!-- 패키지 더보기 -->
           <tr class="expand-list" id="expand-list">
             <td colspan="3">
-              <span class="c-red">패키지</span> 더보기<span class="arrow f-rotate-90">&gt;</span>
+              <span class="c-red">패키지</span> 더보기<span class="arrow">&gt;</span>
             </td>
           </tr>
 
           <!-- 펼쳐지는 부분 -->
           
           <!-- 객실명, 인원, 금액 나오는 라인 -->
-          <tr id="P2_273114_34032_5418_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('P2_273114_34032_5418', 'y')">
+          <tr id="P2_273114_34032_5418_tr" class="over_tr pac" style="cursor:pointer;" onclick="booking.sclick('P2_273114_34032_5418', 'y')">
             <td class="pl15 left ss"><input type="radio" name="sang" value="P_5418||273114_34032" id="sang_P2_273114_34032_5418"> 
           
             <!-- 패키지 말머리 추가 -->
@@ -1269,7 +1281,7 @@
           </tr>
           
           <!-- 객실명, 인원, 금액 나오는 라인 -->
-          <tr id="P2_273114_34032_108220_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('P2_273114_34032_108220', 'y')">
+          <tr id="P2_273114_34032_108220_tr" class="over_tr pac" style="cursor:pointer;" onclick="booking.sclick('P2_273114_34032_108220', 'y')">
             <td class="pl15 left ss"><input type="radio" name="sang" value="P_108220||273114_34032" id="sang_P2_273114_34032_108220"> 
           
             <!-- 패키지 말머리 추가 -->

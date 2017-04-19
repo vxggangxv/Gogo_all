@@ -14,6 +14,7 @@ body, html {margin:0; width:100%; height:100%}
  
 
 #wrapper{width:100%; min-width:320px; height:100%}
+#wrapper:after {content: ""; display: table; clear:both;}
 #loading{clear:both; float:left;  width:100%; height:50px; text-align:center;}
 #loading p{margin-top:10px}
 
@@ -3844,11 +3845,23 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 .pay_reserInfo_table_option .checkbox .chk:checked+label{background-position: 0 -20px;}
 
 /* 타이틀별 로고_20170111 */
-#location_w h3 .goco_tit_logo {height:32px}
-#notice_w h4 .goco_tit_logo {height:32px;}
-#room_w h4 .goco_tit_logo {height:32px;}
-#room_w h3 .goco_tit_logo {height:32pxt;}
-#room_w .room_tx_w .room_tx_in h4 .goco_tit_logo {height:32px;}
+#location_w h3 .goco_tit_logo, 
+#notice_w h4 .goco_tit_logo, 
+#room_w h4 .goco_tit_logo, 
+#room_w h3 .goco_tit_logo, 
+#room_w .room_tx_w .room_tx_in h4 .goco_tit_logo {height:32px; position: absolute; right: 12px;}
+#room_w h4, #room_w h3, #location_w h3, #room_w .room_tx_w .room_tx_in h4 {padding-left: 12px; font-family: "Nanum Gothic";}
+#location_w h3 {margin-left: 0;}
+#notice_w .notice_in {width: 100%;}
+#location_w, #room_w, #room_w .room_tx_w .room_tx_in {overflow-x: hidden;}
+#notice_w .notice_in p {padding-left: 12px; overflow-x: hidden;}
+.room_title {border-bottom: 0;}
+#room_w .room_tx_w {border-top: 10px solid #f1f1f1;}
+#room_w .room_tx_w .room_tx_in {margin-top: 15px; padding: 10px 0; background: #fff;}
+#room_w .room_tx_w .room_tx_in:first-child {margin-top: 5px;}
+#notice_w {border-top: 10px solid #f1f1f1;}
+.txt_forms {word-break: keep-all; width: 95%;}
+
 #product_info tr td .goco_tit_logo{height:35px; margin-right:10px; margin-top:11px; margin-bottom:11px;}
 #product_info #bbs td img.bbs_arrow{height:9px;}
 #product_info #bbs tr td.review_body img{height:100%;}
@@ -3922,7 +3935,7 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 }
 /* 빠른문의_20170208_강혜준 */
 /* 완료후 줄넘버 3175, #kaka_advice 삭제 */
-#q_quest {clear:both; padding: 24px 0; border-top: 2px solid #e6e6e6; border-bottom: 2px solid #e6e6e6; text-align: center;}
+#q_quest {clear:both; padding: 24px 0; border-top: 10px solid #f1f1f1;  text-align: center;}
 #q_quest p {letter-spacing: -1px; color: #333;}
 #q_quest p:first-child {font-weight: 600; font-size: 22px;}
 #q_quest p:nth-child(2) {color: #555;}

@@ -2000,8 +2000,11 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 /*2015.02. 상세리뉴얼 관련*/
 #rsv_sang #rsv_s_list_box2 {clear:left;width:954px}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list {width:954px;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list td.ss{height:60px;border-bottom:1px solid #dddddd; position:relative}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600}
+/*#rsv_sang #rsv_s_list_box2 #rsv_s_list tr td.ss{height:60px;border-bottom:1px solid #dddddd; position:relative} */
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_tr"] td.ss{height:60px; border-top:1px solid #dddddd; position:relative;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_detail"] td.ss {height: auto;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600;}
+.expand-list {border-top: 1px solid #ddd;}
 
 #contents .contents_tit2 {float:left; margin-bottom:15px; padding-bottom:10px; padding-top:10px; padding-left:20px; width:982px; color:#000; font-weight:600; text-align:left; font-size:17px; border-bottom:1px solid #b2b2b2; border-top:4px solid #656565}
 #main5 {position:relative; width:961px; margin:auto; margin-top:22px}
@@ -4882,5 +4885,3 @@ table.prize_list td {width: 350px; padding: 10px; vertical-align: top; border-bo
 #sub_main .tab02 {clear:both; float:left; margin:20px 0; width:740px; height:30px; border-bottom:2px solid #ff610a; font-size:14px}
 #sub_main .tab02 li {display:block; float:left; cursor:pointer; width:103.6px; height:30px; line-height:2; text-align:center; color:#ff610a; border:1px solid #ff610a; border-top-left-radius:10px; border-top-right-radius:10px}
 #sub_main .tab02 li.on {background:#ff610a; color:#fff}
-
-/* 패키지 펼쳐보기추가_170413_강혜준 */
