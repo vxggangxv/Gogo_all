@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang=ko>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>원마운트</title>
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/reset.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/swiper.min.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/common.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/main.css" />
+<link rel="stylesheet" href="../src/css/onemount.css" />
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/swiper.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/common.js"></script>
+</head>
+<body>
+	<div id="Wrapper" class="wrap">
+		<header class="main">
+			<h1 class="logo">덕구온천</h1>
+			<a href="#" class="buy_list">구매내역</a>
+		</header>
+		<div class="main_banner swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+			</ul>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.main_banner', {
+				prevButton : '.swiper-button-prev',
+				nextButton : '.swiper-button-next'
+			});
+		</script>
+		<div class="datepic">
+			<div class="date_area">
+				<strong>이용일자 선택</strong>
+				<p>2017.04.06(목)</p>
+			</div>
+			<div class="calendar" style="display:none;">
+				<span class="top_txt">이용일 선택</span>
+				<div class="month">
+					<span>2017.04</span>
+					 <button class="prev">이전 달</button>
+					 <button class="next">다음 달</button>
+				</div>
+				<table>
+					<caption>달력</caption>
+					<colgroup>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+
+						</address>
+						<col style="width:14.3%;"/>
+						<col style="width:*;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="selected"><span>26</span></td>
+							<td class="selected"><span>27</span></td>
+							<td class="selected"><span>28</span></td>
+							<td class="selected"><span>29</span></td>
+							<td class="selected"><span>30</span></td>
+							<td class="selected"><span>31</span></td>
+							<td class="selected"><span>1</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+							<td class="selected"><span>7</span></td>
+							<td class="selected"><span>8</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>9</span></td>
+							<td><span>10</span></td>
+							<td><span>11</span></td>
+							<td><span>12</span></td>
+							<td><span>13</span></td>
+							<td class="select"><span>14</span></td>
+							<td><span>15</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>16</span></td>
+							<td><span>17</span></td>
+							<td><span>18</span></td>
+							<td><span>19</span></td>
+							<td><span>20</span></td>
+							<td><span>21</span></td>
+							<td><span>22</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>23</span></td>
+							<td><span>24</span></td>
+							<td><span>25</span></td>
+							<td><span>26</span></td>
+							<td><span>27</span></td>
+							<td><span>28</span></td>
+							<td><span>29</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>30</span></td>
+							<td class="selected"><span>1</span></td>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_area">
+					<a href="#" class="btn btn_type01">이용일 선택완료</a>
+				</div>
+				<a href="#" class="btn_close">닫기</a>
+			</div>
+		</div>
+		<div class="section">
+			<p class="accordion">
+				<span>펼쳐보기</span>
+			</p>
+			<div class="area">
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크 종일권 남자</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크 종일권 남자</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크 종일권 남자</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크 종일권 남자</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크 종일권 남자</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크 종일권 남자</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+			</div>
+			<div class="area">
+				<div class="box intro">
+					<div class="group">
+						<img src="../src/img/img_onemount01.jpg" alt="원마운트 사진" />
+						<p>
+							<strong>폭발하는 젋음을 만날수 있는 페스티벌 비치</strong><br>
+							높은 하늘과 호수를 바라보는 탁트인<br>
+							전망의 휴식공간 원마운트 워터파크!
+						</p>
+					</div>
+					<p class="view_point"><strong>Check Point</strong></p>
+					<div class="group">
+						<img src="../src/img/img_onemount02.jpg" alt="원마운트 사진" />
+						<p>실내외를 넘나드는 짜릿한 슬라이드와 파도 풀, 유수 풀, 아쿠아 플레이 등 가족,연인,친구와 함께 즐기는 다양한 놀이가 가득합니다.</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_onemount03.jpg" alt="원마운트 사진" />
+						<p>자이언트 플레이, 판타스틱 플렉스 등의 놀이시설이 아이들과의 시간을 더 행복하게 만들어줍니다.</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_onemount04.jpg" alt="원마운트 사진" />
+						<p>다양한 입욕제와 내몸에 딱 맞는 수온으로 원마운트 만의 포근하고 따뜻한 힐링을 선사합니다.</p>
+					</div>
+				</div>
+				<div class="box guide">
+					<p class="guide_txt"><strong>원마운트 시설 안내</strong></p>
+					<ul class="guide_list">
+						<li class="parking">텐트존</li>
+						<li class="food">수유실</li>
+						<li class="fastfood">의무실</li>
+						<li class="cafe">푸드코트</li>
+						<li class="market">편의시설</li>
+					</ul>
+				</div>
+				<div class="box contact">
+					<div class="map">
+						<div>
+		 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.3627636196475!2d126.75197745106526!3d37.664182926188005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c856f2455569d%3A0xa5fc369e36b386e7!2z6rK96riw64-EIOqzoOyWkeyLnCDsnbzsgrDshJzqtawg7Iah7Y-s64-ZIDI2MDY!5e0!3m2!1sko!2skr!4v1492736741224" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+						</div>
+					</div>
+					<div class="address">
+						<p>경기 고양시 일산서구 대화동 2606</p>
+						<button class="copy">주소복사</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="info">
+			<li>
+				<p class="info_tit">입장권 사용방법</p>
+				<ul class="blt_type02">
+					<li>상품 구매</li>
+					<li>구매내역에서 바코드 보기 확인</li>
+					<li>이용당일 매표소에서 모바일 티켓(바코드) 제시후 입장</li>
+					<li>원마운트 워터파크 이용</li>
+				</ul>
+				<p class="etc">본 상품은 1층 무인발권기에서만 발권 가능하며, 구매 후 30분 ~ 40분 이후 부터 사용 가능합니다</p>
+			</li>
+			<li>
+				<p class="info_tit">기본 정보</p>
+				<ul class="info_list">
+					<li>
+						<span>이용시간</span>
+						<p>
+							평일 10:00 ~ 18:00<br>
+							주말 10:00 ~ 19:00
+						</p>
+					</li>
+					<li>
+						<span>무료입장</span>
+						<p>36개월 미만 유아(의료보험증등 증빙서류 지참시)</p>
+					</li>
+					<li>
+						<span>이용안내</span>
+						<p>운영시간은 시즌 및 이벤트 등 현장사정에 의해 변경될수 있습니다. 방문 전 확인 부탁드립니다.</p>
+					</li>
+					<li>
+						<span>체크사항</span>
+						<p>원마운트 워터파크/스노우파크 구매시, 이용하시고자 하는 옵션명 한번 더 확인 부탁드립니다. 워터파크 이용권 구매 후, 스노우파크 이용은 어렵습니다.</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">원마운트 스노우파크 운영시간</p>
+				<ul class="info_list">
+					<li>
+						<span>실내</span>
+						<p>평일 10:00 ~ 18:00 / 주말 10:00 ~ 19:00</p>
+					</li>
+					<li>
+						<span>스노우힐</span>
+						<p>주중 10:15 ~ 17:00 / 주말 10:15 ~ 18:00</p>
+					</li>
+					<li>
+						<span>루프가든</span>
+						<p>주중 10:30 ~ 17:30 / 주말 10:30 ~ 18:30</p>
+					</li>
+					<li>
+						<span>키즈센터</span>
+						<p>주중 10:00 ~ 18:00 / 주말 10:00 ~ 19:00</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">이용안내</p>
+				<ul class="blt_type01">
+					<li>선착순 입장 운영으로, 파크 입장 정원 초과시 이용이 제한 될 수 있습니다.</li>
+					<li>워터파크 현장에서 최대인원 초과시 대기시간 및 입장제한이 발생 할 수 있으며, 이로 인한 취소및 환불이 되지 않으니 구매및 이용시 참고 부탁드립니다.</li>
+					<li>업장 내 발생하는 각종 이용요금(식음료, 대여요금)은 사용후 후불정산입니다.</li>
+					<li>워터파크 락커키 분실 시 즉시 직원에게 신고하시고 분실시 25,000원의 분실료를 지불하셔야 합니다</li>
+					<li>퇴장 후에는 재입장 하실 수 없습니다.</li>
+					<li>귀중품은 반드시 귀중품 자율보관함에 보관하셔야 합니다. 맡기지 않은 귀중품, 개인 물품의 분실, 파손 및 도난사고는 책임을 지지 않습니다</li>
+					<li>워터파크 이용 시 수영모자는 필수 착용이며, 수영모자 외 야구모자,두건등은 착용 가능합니다(썬캡 불가)</li>
+					<li>구명조끼, 썬베드, 비치체어는 4층에서 대여 가능합니다.</li>
+					<li>영수증 확인 후 무료 주차 가능합니다.</li>
+					<li>케어서비스를 통해 남자탈의실에서 남자아동의 탈의 및 보호자에게 인도까지 가능합니다.(목욕은 불가)</li>
+					<li>케어서비스는 발권시 요청바랍니다.</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">유의사항</p>
+				<ul class="blt_type01">
+					<li>옵션별 이용기간이 상이하오니 구매 시 유의바랍니다. 타 할인쿠폰 및 카드제휴 할인등과 중복사용 불가합니다.</li>
+					<li>각 상품별 명시되지 않은 시설은 이용 불가 합니다.</li>
+					<li>본 쿠폰은 입장시 우선혜택은 없으며, 최대인원 초과시 입장이 제한 될 수 있습니다.</li>
+					<li>구매 후 재판매가 불가하며, 재판매 및 재판매 상품구매로 발생하는 문제는 소비자가 부담합니다.</li>
+					<li>미 사용한 시설에 대해서 환급해 드리지 않습니다.</li>
+					<li>쾌적하고 청결한 수질 환경 유지 및 화재 예방을 위해 돗자리 및 음식물 반입과 버너 등의 사용을 금지합니다.</li>
+					<li>애완동물은 입장이 불가합니다.</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="section">
+			<div class="area">
+				<div class="box notice">
+					<p><strong>입장권 환불안내</strong></p>
+					<div>
+						<ul class="blt_type01">
+							<li>티켓 사용여부 확인 후 취소/환불 처리됩니다.</li>
+							<li>이용기간 이후 취소 및 환불 불가</li>
+							<li>본 상품은 부분 사용 시 환불 불가</li>
+							<li>금요일(공휴일 전일) 15시부터 일요일(공휴일)까지는 취소/환불 처리 불가(위의 기간에 취소 요청시 다음 영업일 근무시간 기준으로 위약금 및 취소/환불 규정이 적용)</li>
+							<li>딜 진행중 고객이 임의로 취소/환불 불가(업체확인 후 처리)</li>
+							<li>취소/환불 요청시 바코드 사용여부 확인후 처리(2~3일 소요)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="tel:1666-1243">고객센터 1666-1243</a>
+			<p>운영시간 : 10시 ~ 18시(점심 12시 ~ 1시)</p>
+		</footer>
+		<div class="btn_buy">
+			<a href="#" class="btn btn_type01">구매하기</a>
+		</div>
+		<ul class="quick">
+			<li class="prev"><a href="#">이전</a></li>
+			<li class="home"><a href="#">홈</a></li>
+			<li class="list"><a href="#">예약내역</a></li>
+			<li class="login"><a href="#">로그인</a></li>
+		</ul>
+		<div class="move_top">
+			<a href="#"><img src="http://img.cablecar.go.co.kr/ico_move_top.png" alt="위로 가기" /></a>
+		</div>
+	</div>
+</body>
+</html>

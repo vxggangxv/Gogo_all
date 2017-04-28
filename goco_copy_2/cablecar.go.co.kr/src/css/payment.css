@@ -1,19 +1,21 @@
 @charset "utf-8";
 
 /* 상품정보 */
-.card {border:1px solid #c2c2c2;}
+.card {position:relative; z-index:1; border:1px solid #c2c2c2;}
 .card .caption {position:relative;}
 .card .caption p {padding:8px 10px; font-weight:bold;}
-.card .caption p.bg_tit {background-color:#e7eaf3; text-align:center;}
+.card .caption p.bg_tit {text-align:center;}
 .card .caption .etc {position:absolute; right:8px; bottom:8px; font-size:11px;}
 .card .cont {border-top:1px solid #c2c2c2;}
 .card .cont .goods {display:table; width:100%; padding:10px; box-sizing:border-box;}
-.card .cont .goods dt, .card .cont .goods dd {display:table-cell; vertical-align:middle;}
+.card .cont .goods dt, .card .cont .goods dd {display:table-cell; vertical-align:top;}
 .card .cont .goods dt {width:52px;}
 .card .cont .goods dd {padding-left:10px;}
 .card .cont .goods dd > em {display:block; padding-bottom:5px; color:#3a3839; font-weight:bold;}
-.card .cont .goods dd ul li {margin-top:5px; color:#494949;}
-.card .cont .goods dd ul li:first-child {margin-top:0;}
+.card .cont .goods dd ul > li {margin-top:5px; color:#494949;}
+.card .cont .goods dd ul > li:first-child {margin-top:0;}
+.card .cont .goods dd ul > li ul > li {position:relative; padding:5px 0 0 10px}
+.card .cont .goods dd ul > li ul > li:before {content:'ㄴ'; display:block; position:absolute; left:0; top:2px;}
 
 /* 결제수단 선택 */
 .card .cont .payment_list {padding:5px 4px;}
@@ -22,20 +24,16 @@
 .card .cont .payment_list li.ico01 {background:url('http://img.cablecar.go.co.kr/ico_payment01.png') no-repeat 9px 50%; background-size:18px 12px;}
 .card .cont .payment_list li.ico02 {background:url('http://img.cablecar.go.co.kr/ico_payment02.png') no-repeat 13px 50%; background-size:11px 19px;}
 .card .cont .payment_list li.ico03 {background:url('http://img.cablecar.go.co.kr/ico_payment03.png') no-repeat 9px 50%; background-size:18px 16px;}
-.card .cont .payment_list li.on {border:1px solid #10318e; background-color:#f6f7fa;}
 .card .cont .payment_list li.on:before {content:''; display:block; position:absolute; right:10px; top:50%; width:12px; height:7px; margin-top:-4px; background:url('http://img.cablecar.go.co.kr/ico_arrow_down.png') no-repeat 0 0; background-size:100% 100%;}
-.card .cont .payment_list li.on strong {color:#10318e;}
 
 /* 결제완료 */
 .finish {padding:25px 10px 15px; border:1px solid #ddd; text-align:center;}
 .finish strong {display:block; padding-top:38px; background:url('http://img.cablecar.go.co.kr/bg_finish.gif') no-repeat 50% 0; background-size:121px 28px; color:#000; font-size:16px;}
 .finish p {margin-top:10px; color:#000; font-size:13px;}
-.finish p em {color:#00207a;}
 
 /* 바코드 */
-.barcode {position:relative; border:1px solid #ccc;}
-.barcode:before {content:''; display:block; position:absolute; left:50%; top:-12px; width:23px; height:23px; margin-left:-12px; border:1px solid #ccc; border-radius:100%; background-color:#ececec;}
-.barcode:after {content:''; display:block; position:absolute; left:50%; top:-24px; width:26px; height:23px; margin-left:-13px; background-color:#ececec;}
+.barcode {position:relative; border:1px solid #ccc; border-bottom:0;}
+.barcode:before {content:''; display:block; position:absolute; left:50%; top:-13px; width:23px; height:23px; margin-left:-12px; border:1px solid #ccc; border-left:1px solid transparent; border-top:1px solid transparent; border-radius:100%; background-color:#ececec; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
 .barcode .top {padding:0 10px;}
 .barcode .top .name {display:block; margin:10px 68px 0 0; color:#2d2d2d; font-size:14px;}
 .barcode .top .view {position:absolute; right:10px; top:5px; padding:6px; border:1px solid #b8b8b8; background-color:#f5f5f3; font-weight:bold;}
@@ -44,7 +42,7 @@
 .barcode .top .txt table tbody tr td {padding:5px 10px 5px 20px; border-left:1px solid #888; vertical-align:middle;}
 .barcode .top .img {width:215px; margin:15px auto 10px; text-align:center;}
 .barcode .top .img span {color:#000;}
-.barcode .note {position:relative; padding:10px; border-top:1px dashed #bebcb1; background-color:#eeebda;}
+.barcode .note {position:relative; z-index:1; padding:10px; border-top:1px dashed #bebcb1; border-bottom:1px solid #ccc; background-color:#eeebda;}
 .barcode .note:before {content:''; display:block; position:absolute; left:-8px; top:-8px; width:14px; height:14px; border-top:1px solid #ccc; border-left:1px solid #ccc; background:#eaeaea; -webkit-transform:rotate(135deg); transform:rotate(135deg);}
 .barcode .note:after {content:''; display:block; position:absolute; right:-8px; top:-8px; width:14px; height:14px; border-top:1px solid #ccc; border-left:1px solid #ccc; background:#eaeaea; -webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
 .barcode .note p {color:#6c6754;}

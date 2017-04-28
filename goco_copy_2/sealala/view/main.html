@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang=ko>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>씨랄라 워터파크 스파</title>
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/reset.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/swiper.min.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/common.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/main.css" />
+<link rel="stylesheet" href="../src/css/sealala.css" />
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/swiper.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/common.js"></script>
+</head>
+<body>
+	<div id="Wrapper" class="wrap">
+		<header class="main">
+			<h1 class="logo">덕구온천</h1>
+			<a href="#" class="buy_list">구매내역</a>
+		</header>
+		<div class="main_banner swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+			</ul>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.main_banner', {
+				prevButton : '.swiper-button-prev',
+				nextButton : '.swiper-button-next'
+			});
+		</script>
+		<div class="datepic">
+			<div class="date_area">
+				<strong>이용일자 선택</strong>
+				<p>2017.04.06(목)</p>
+			</div>
+			<div class="calendar" style="display:none;">
+				<span class="top_txt">이용일 선택</span>
+				<div class="month">
+					<span>2017.04</span>
+					 <button class="prev">이전 달</button>
+					 <button class="next">다음 달</button>
+				</div>
+				<table>
+					<caption>달력</caption>
+					<colgroup>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+
+						</address>
+						<col style="width:14.3%;"/>
+						<col style="width:*;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="selected"><span>26</span></td>
+							<td class="selected"><span>27</span></td>
+							<td class="selected"><span>28</span></td>
+							<td class="selected"><span>29</span></td>
+							<td class="selected"><span>30</span></td>
+							<td class="selected"><span>31</span></td>
+							<td class="selected"><span>1</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+							<td class="selected"><span>7</span></td>
+							<td class="selected"><span>8</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>9</span></td>
+							<td><span>10</span></td>
+							<td><span>11</span></td>
+							<td><span>12</span></td>
+							<td><span>13</span></td>
+							<td class="select"><span>14</span></td>
+							<td><span>15</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>16</span></td>
+							<td><span>17</span></td>
+							<td><span>18</span></td>
+							<td><span>19</span></td>
+							<td><span>20</span></td>
+							<td><span>21</span></td>
+							<td><span>22</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>23</span></td>
+							<td><span>24</span></td>
+							<td><span>25</span></td>
+							<td><span>26</span></td>
+							<td><span>27</span></td>
+							<td><span>28</span></td>
+							<td><span>29</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>30</span></td>
+							<td class="selected"><span>1</span></td>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_area">
+					<a href="#" class="btn btn_type01">이용일 선택완료</a>
+				</div>
+				<a href="#" class="btn_close">닫기</a>
+			</div>
+		</div>
+		<div class="section">
+			<p class="accordion">
+				<span>펼쳐보기</span>
+			</p>
+			<div class="area">
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크&amp;스파 종일권(10:00 ~ 19:00)</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크&amp;스파 종일권(10:00 ~ 19:00)</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크&amp;스파 종일권(10:00 ~ 19:00)</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크&amp;스파 종일권(10:00 ~ 19:00)</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크&amp;스파 종일권(10:00 ~ 19:00)</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>워터파크&amp;스파 종일권(10:00 ~ 19:00)</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">50,000</span> <strong>19,000</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+			</div>
+			<div class="area">
+				<div class="box intro">
+					<div class="group">
+						<img src="../src/img/img_sealala01.jpg" alt="씨랄라 워터파크 스파 사진" />
+						<p>
+							<strong>씨랄라 워터파크&스파는</strong><br>
+							도심 속에 첨단시설을 갖춘 물놀이 시설로<br>
+							그리스 산토리니 컨셉의 워터파크&스파입니다.
+						</p>
+					</div>
+					<p class="view_point"><strong>Check Point</strong></p>
+					<div class="group">
+						<img src="../src/img/img_sealala02.jpg" alt="씨랄라 워터파크 스파 사진" />
+						<p>유수풀,비치풀, 슬라이드,아쿠아 키즈랜드,연인탕 등 신개념 수중 휴식공원에서 신나는 물놀이를 즐기세요</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_sealala03.jpg" alt="씨랄라 워터파크 스파 사진" />
+						<p>고급스러운 인테리어로 호텔 사우나를 연상시키는 대욕장! 건식,습식, 반식욕 시설로 피로를 날리세요</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_sealala04.jpg" alt="씨랄라 워터파크 스파 사진" />
+						<p>황토 불가마, 참숯방, 원적외선 방, 아이스 방 등 다양한 향과 분위기로 피곤을 떨쳐버리세요 </p>
+					</div>
+				</div>
+				<div class="box guide">
+					<p class="guide_txt"><strong>씨랄라 시설 안내</strong></p>
+					<ul class="guide_list">
+						<li class="parking">워터파크/스파</li>
+						<li class="food">찜질방</li>
+						<li class="fastfood">대욕장</li>
+						<li class="cafe">푸드코트</li>
+						<li class="market">편의시설</li>
+					</ul>
+				</div>
+				<div class="box contact">
+					<div class="map">
+						<div>
+		 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.5962292562303!2d126.89759435106204!3d37.517440234596634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ef0a29373c3%3A0xfae8cbedf4db894b!2z7ISc7Jq47Yq567OE7IucIOyYgeuTse2PrOq1rCDrrLjrnpjrj5kz6rCAIDU1LTE2!5e0!3m2!1sko!2skr!4v1492740745680" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+						</div>
+					</div>
+					<div class="address">
+						<p>경기 고양시 일산서구 대화동 2606</p>
+						<button class="copy">주소복사</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="info">
+			<li>
+				<p class="info_tit">입장권 사용방법</p>
+				<ul class="blt_type02">
+					<li>상품 구매</li>
+					<li>구매내역에서 바코드 보기 확인</li>
+					<li>이용당일 매표소에서 모바일 티켓(바코드) 제시후 입장</li>
+					<li>씨랄라 워터파크&amp;스파 이용</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">기본 정보</p>
+				<ul class="info_list">
+					<li>
+						<span>이용시간</span>
+						<p>
+							오전 10시 ~ 오후 19시<br>
+							워터파크 매표는 오픈시간 / 마감시간 한 시간 전 까지만 가능합니다.
+						</p>
+					</li>
+					<li>
+						<span>이용기준</span>
+						<p>증빙서류(등본,의료보험증)지참 시 직계 36개월 미만 유아는 2인까지 무료 입장 가능합니다.</p>
+					</li>
+					<li>
+						<span>이용안내</span>
+						<p>본 상품은 워터파크 운영시간 내에서만 매표, 입장, 사용이 가능합니다.</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">찜질방 이용안내</p>
+				<ul class="blt_type01">
+					<li>이용요금은 찜질복 대여료(2,000원) 미포함 입니다.</li>
+					<li>워터파크 이용시 찜질복만 별도로 대여하시면 찜질방을 이용하실 수 있습니다.</li>
+					<li>찜질방의 이용시간은 12시간이며,초과시 시간당 1,000원의 초과요금이 부과됩니다</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">유의사항</p>
+				<ul class="blt_type01">
+					<li>손님의 편의와 안전을 위하여 적정 입장인원 초과시 입장을 제한할 수 있습니다.</li>
+					<li>워터파크 이용시 수영복, 수영모는 필수 착용하셔야 합니다.</li>
+					<li>유아를 위한 이유식, 유리병과 캔에 들어있지 않은 음료수, 껍질과 씨를 제거한 과일 등을 제외한 음식물은 반입 제한하고 있습니다.</li>
+					<li>반입금지 물품 : 음식물, 스노쿨링, 아쿠아슈즈, 오리발, 유모차, 1M 초과하는 튜브 등</li>
+					<li>안전사고 예방을 위해 36개월 이하 어린이는 보호자의 동반없이 모든 시설의 이용을 제한합니다.</li>
+					<li>수영복 손상 및 안전문제로 인하여 탈수기가 비치되어 있지 않습니다.</li>
+					<li>강습으로 인해 경영풀 일부 사용이 제한 될 수 있습니다</li>
+					<li>내부 시설, 식음등의 요금은 락카키로 결제후 퇴장시 정산소에서 후불정산 하시면 됩니다.</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">기타안내</p>
+				<ul class="blt_type01">
+					<li>워터파크 유수풀, 경영풀의 경우 항상 수온을 31도,이벤트</li>
+					<li>스파의 경우 수온을 37~8도, 내부 실내 온도는 27도를 유지하고 있습니다.</li>
+					<li>
+						음식물 반입 : 환자를 위한 특별식(죽) , 아이를 위한 이유식(죽),물 ,플라스틱 병에든 음료, 씨와 껍질을 제거해 락앤락같은 용기에 담아오는 과일만 반입이 허가 됩니다.<br>
+						(환자식, 이유식이라고 말하며 가져오는 김밥, 과자, 옥수수, 빵, 밥, 달걀 등 죽이 아닌 먹거리 일체 반입 금지) 허가된 음식물도 워터 파크내에서는 드실 수 없으며, 푸드코트 내에서만 드시기 바랍니다.
+					</li>
+					<li>반입 금지된 음식물들은 입장시 보관소에 맡기시기 바랍니다.</li>
+					<li>냉장이 필요한 음식물들을 위한 냉장 보관소도 마련되어 있습니다.</li>
+					<li>
+						유아 남탕/ 여탕 구분 : 나이로는 저희가 구별이 힘들어 키로 구별 하고 있습니다. 고객여러분의 많은 양해 부탁 드립니다.<br>
+						(키 구분 은 100 cm 를 기준으로 합니다. 100 cm 이상되는 아이는 성별에 맞게 입장 해야 되며, 성별이 다르게 입장이 가능한 키는 100 cm 미만 아동 입니다.)<br>
+						예) 남자아이를 엄마가 데려온 경우에 남자 아이키가 100cm가 넘을때 남탕으로 입장
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">주차안내</p>
+				<ul class="blt_type01">
+					<li>주차장 무료이용시간 : 워터파크 이용고객 7시간 (퇴장시 정산소에 주차권 요청/ 20분내 출차)</li>
+					<li>무료이용시간외 추가 30분당 1,000원의 요금이 발생됩니다.</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="section">
+			<div class="area">
+				<div class="box notice">
+					<p><strong>입장권 환불안내</strong></p>
+					<div>
+						<ul class="blt_type01">
+							<li>티켓 사용여부 확인 후 취소/환불 처리됩니다.</li>
+							<li>이용기간 이후 취소 및 환불 불가</li>
+							<li>본 상품은 부분 사용 시 환불 불가</li>
+							<li>금요일(공휴일 전일) 15시부터 일요일(공휴일)까지는 취소/환불 처리 불가(위의 기간에 취소 요청시 다음 영업일 근무시간 기준으로 위약금 및 취소/환불 규정이 적용)</li>
+							<li>딜 진행중 고객이 임의로 취소/환불 불가(업체확인 후 처리)</li>
+							<li>취소/환불 요청시 바코드 사용여부 확인후 처리(2~3일 소요)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="tel:1666-1243">고객센터 1666-1243</a>
+			<p>운영시간 : 10시 ~ 18시(점심 12시 ~ 1시)</p>
+		</footer>
+		<div class="btn_buy">
+			<a href="#" class="btn btn_type01">구매하기</a>
+		</div>
+		<ul class="quick">
+			<li class="prev"><a href="#">이전</a></li>
+			<li class="home"><a href="#">홈</a></li>
+			<li class="list"><a href="#">예약내역</a></li>
+			<li class="login"><a href="#">로그인</a></li>
+		</ul>
+		<div class="move_top">
+			<a href="#"><img src="http://img.cablecar.go.co.kr/ico_move_top.png" alt="위로 가기" /></a>
+		</div>
+	</div>
+</body>
+</html>

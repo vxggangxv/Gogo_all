@@ -21,7 +21,7 @@
 .blt_type01 > li:before {content:''; display:block; position:absolute; left:0; top:6px; width:2px; height:2px; border-radius:100%; background-color:#000;}
 .blt_type02 > li {position:relative; margin-top:5px; padding-left:15px;}
 .blt_type02 > li:first-child {margin-top:0;}
-.blt_type02 > li:before {content:''; display:block; position:absolute; left:0; top:4px; width:9px; height:7px; background:url('http://img.cablecar.go.co.kr/ico_chk01.png') no-repeat 0 0; background-size:100% 100%;}
+.blt_type02 > li:before {content:''; display:block; position:absolute; left:0; top:4px; width:9px; height:7px;}
 .blt_type03 > li {position:relative; margin-top:5px; padding-left:15px;}
 .blt_type03 > li:first-child {margin-top:0;}
 .blt_type03 > li:before {content:''; display:block; position:absolute; left:0; top:4px; width:9px; height:7px; background:url('http://img.cablecar.go.co.kr/ico_chk02.png') no-repeat 0 0; background-size:100% 100%;}
@@ -29,7 +29,6 @@
 /* button */
 .btn_area {margin:10px 0 0;}
 .btn {display:inline-block; width:100%; height:43px; border-radius:2px; color:#fff; font-weight:bold; font-size:15px; text-align:center; line-height:43px;}
-.btn.btn_type01 {background-color:#10318e;}
 
 /* 테이블 */
 .board_write {}
@@ -39,12 +38,12 @@
 .board_list {}
 .board_list tbody tr th {padding:5px 0 5px 10px; font-size:13px; text-align:left; vertical-align:middle;}
 .board_list tbody tr td {padding:5px 10px 5px 0; font-weight:bold; text-align:right; vertical-align:middle;}
-.board_list tfoot tr {border-top:1px solid #cecece; background-color:#e7eaf3;}
-.board_list tfoot tr th {padding:10px 0 10px 10px; color:#10318e; font-size:13px; text-align:left;}
-.board_list tfoot tr td {padding:10px 10px 10px 0; color:#10318e; font-weight:bold; text-align:right;}
+.board_list tfoot tr {border-top:1px solid #cecece;}
+.board_list tfoot tr th {padding:10px 0 10px 10px; font-size:13px; text-align:left;}
+.board_list tfoot tr td {padding:10px 10px 10px 0; font-weight:bold; text-align:right;}
 .board_view {}
-.board_view tbody tr th {padding:10px 0 10px 10px; border-top:1px solid #dedede; font-size:13px; text-align:left; vertical-align:middle;}
-.board_view tbody tr td {padding:10px 10px 10px 0; border-top:1px solid #dedede; color:#000; vertical-align:middle;}
+.board_view tbody tr th {padding:10px 0 10px 10px; border-top:1px solid #dedede; font-size:13px; text-align:left; vertical-align:top;}
+.board_view tbody tr td {padding:10px 10px 10px 0; border-top:1px solid #dedede; color:#000; vertical-align:top;}
 .board_view tbody tr:first-child th, .board_view tbody tr:first-child td {border-top:0;}
 
 /* 레이어팝업 */
@@ -67,7 +66,6 @@
 .move_top a {display:inline-block; width:47px; height:47px;}
 
 /* 달력 */
-.datepic {background-color:#10318e;}
 .datepic.on:after {content:''; position:fixed; left:0; right:0; top:0; bottom:0; z-index:200; background-color:rgba(0,0,0,.7);}
 .datepic .date_area {display:table; width:100%; padding:8px 15px; box-sizing:border-box;}
 .datepic .date_area > strong, .datepic .date_area > p {display:table-cell; vertical-align:middle;}
@@ -89,15 +87,14 @@
 .datepic .calendar table tbody tr td span {display:block; height:35px; padding-top:8px; color:#000;}
 .datepic .calendar table tbody tr td.selected span {color:#b3b3b3;}
 .datepic .calendar table tbody tr td.week span {color:#ca0a0a;}
-.datepic .calendar table tbody tr td.select span {position:relative; background-color:#10318e; color:#fff;}
+.datepic .calendar table tbody tr td.select span {position:relative; color:#fff;}
 .datepic .calendar table tbody tr td.select span:before {content:'이용중'; display:block; position:absolute; left:0; bottom:6px; width:100%; text-align:center; font-size:11px;}
 .datepic .calendar .btn_area {margin:10px 10px 0;}
 
 /* header */
-header {position:relative; z-index:100; height:41px; border-bottom:2px solid #10318e; background-color:#fff;}
-header.main {height:36px; padding-left:13px;}
-header.main h1.logo {position:relative; padding-left:25px; font-size:14px; color:#10318e; line-height:36px;}
-header.main h1.logo:before {content:''; display:block; position:absolute; left:0; top:50%; width:20px; height:20px; margin-top:-10px; background:url('http://img.cablecar.go.co.kr/logo.gif') no-repeat 0 0; background-size:100% 100%;}
+header {position:relative; z-index:100; height:41px; border-bottom:1px solid #c8c8c8; background-color:#fafafa;}
+header.main {height:38px; background-color:#fff;}
+header.main h1.logo {position:absolute; left:13px; top:50%; text-indent:-9999px;}
 header.main .buy_list {display:block; position:absolute; right:13px; top:50%; height:15px; margin-top:-15px; padding-top:16px; background:url('http://img.cablecar.go.co.kr/ico_buy.gif') no-repeat 50% 1px; background-size:19px 12px; color:#5c5c5c;}
 header.sub h1 {position:absolute; left:50%; top:50%; font-size:14px; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);}
 header.sub a {display:block; position:absolute; width:41px; height:41px; top:0; text-indent:-9999px;}
@@ -108,4 +105,3 @@ header.sub a.btn_close {right:0; background:url('http://img.cablecar.go.co.kr/bt
 footer {padding:10px; border-top:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5; background-color:#ececec; text-align:center;}
 footer a {position:relative; color:#7f7f7f; font-weight:bold; font-size:14px;}
 footer a:before {content:''; display:block; position:absolute; left:-15px; top:50%; width:12px; height:12px; margin-top:-6px; background:url('http://img.cablecar.go.co.kr/ico_call.png') no-repeat 0 0; background-size:100% 100%;}
-footer p {margin-top:5px; color:#8f8f8f; font-weight:bold;}

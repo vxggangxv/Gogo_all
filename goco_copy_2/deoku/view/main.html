@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang=ko>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>덕구온천</title>
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/reset.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/swiper.min.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/common.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/main.css" />
+<link rel="stylesheet" href="../src/css/deokgu.css" />
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/swiper.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/common.js"></script>
+</head>
+<body>
+	<div id="Wrapper" class="wrap">
+		<header class="main">
+			<h1 class="logo">덕구온천</h1>
+			<a href="#" class="buy_list">구매내역</a>
+		</header>
+		<div class="main_banner swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+			</ul>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.main_banner', {
+				prevButton : '.swiper-button-prev',
+				nextButton : '.swiper-button-next'
+			});
+		</script>
+		<div class="datepic">
+			<div class="date_area">
+				<strong>이용일자 선택</strong>
+				<p>2017.04.06(목)</p>
+			</div>
+			<div class="calendar" style="display:none;">
+				<span class="top_txt">이용일 선택</span>
+				<div class="month">
+					<span>2017.04</span>
+					 <button class="prev">이전 달</button>
+					 <button class="next">다음 달</button>
+				</div>
+				<table>
+					<caption>달력</caption>
+					<colgroup>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+
+						</address>
+						<col style="width:14.3%;"/>
+						<col style="width:*;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="selected"><span>26</span></td>
+							<td class="selected"><span>27</span></td>
+							<td class="selected"><span>28</span></td>
+							<td class="selected"><span>29</span></td>
+							<td class="selected"><span>30</span></td>
+							<td class="selected"><span>31</span></td>
+							<td class="selected"><span>1</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+							<td class="selected"><span>7</span></td>
+							<td class="selected"><span>8</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>9</span></td>
+							<td><span>10</span></td>
+							<td><span>11</span></td>
+							<td><span>12</span></td>
+							<td><span>13</span></td>
+							<td class="select"><span>14</span></td>
+							<td><span>15</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>16</span></td>
+							<td><span>17</span></td>
+							<td><span>18</span></td>
+							<td><span>19</span></td>
+							<td><span>20</span></td>
+							<td><span>21</span></td>
+							<td><span>22</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>23</span></td>
+							<td><span>24</span></td>
+							<td><span>25</span></td>
+							<td><span>26</span></td>
+							<td><span>27</span></td>
+							<td><span>28</span></td>
+							<td><span>29</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>30</span></td>
+							<td class="selected"><span>1</span></td>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_area">
+					<a href="#" class="btn btn_type01">이용일 선택완료</a>
+				</div>
+				<a href="#" class="btn_close">닫기</a>
+			</div>
+		</div>
+		<div class="section">
+			<p class="accordion">
+				<span>펼쳐보기</span>
+			</p>
+			<div class="area">
+				<div class="box item">
+					<div class="tiket">
+						<p>주말 이용권 소인</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">20,000</span> <strong>16,600</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주말 이용권 소인</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">20,000</span> <strong>16,600</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주말 이용권 소인</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">20,000</span> <strong>16,600</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주말 이용권 소인</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">20,000</span> <strong>16,600</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주말 이용권 소인</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">20,000</span> <strong>16,600</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주말 이용권 소인</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li><span class="discount">20,000</span> <strong>16,600</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+			</div>
+			<div class="area">
+				<div class="box intro">
+					<div class="group">
+						<img src="../src/img/img_deokguhotspring01.jpg" alt="덕구온천 사진" />
+						<p>
+							<strong>덕구온천스파월드를</strong><br>
+							사계절 휴양온천이라 불러주세요!<br>
+							(건강+자연+안락+휴식)
+						</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_deokguhotspring02.jpg" alt="덕구온천 사진" />
+						<p>
+							<strong>효능이 뛰어난 42.4℃ 약알카리성 온천수</strong><br>
+							해발 998m의 자연용출온천-덕구온천의 온도는<br>
+							데우거나 식히지 않는 자연 그대로의 42.4℃ 입니다.
+						</p>
+					</div>
+					<p class="view_point"><strong>Check Point</strong></p>
+					<div class="group">
+						<img src="../src/img/img_deokguhotspring03.jpg" alt="덕구온천 사진" />
+						<p>다양한 기포욕시설과 어린이를 위한 풀장, 야외 선텐장 및 자스민탕, 원목온탕 등 가족을 위한 시설이 가득합니다.</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_deokguhotspring04.jpg" alt="덕구온천 사진" />
+						<p>
+							자연 용출 온천수로 온천욕도 즐기고 한국산 자수정 사우나 옥 사우나, 자수정 찜질 침상등 다양한 분위기로<br>
+							피로를 떨쳐버리세요
+						</p>
+					</div>
+				</div>
+				<div class="box guide">
+					<p class="guide_txt"><strong>덕구온천 스파월드 시설 안내</strong></p>
+					<ul class="guide_list">
+						<li class="parking">스파월드</li>
+						<li class="food">온천</li>
+						<li class="fastfood">야외선탠존</li>
+						<li class="cafe">프라이빗룸</li>
+						<li class="market">푸드코트</li>
+					</ul>
+				</div>
+				<div class="box contact">
+					<div class="map">
+						<div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.107831892577!2d129.2821022154843!3d37.07873855967014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561022dfdfff191%3A0xfcac5bb5941e3323!2z6rK97IOB67aB64-EIOyauOynhOq1sCDrtoHrqbQg642V6rWs7Jio7LKc66GcIDkyNA!5e0!3m2!1sko!2skr!4v1492566342822" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+						</div>
+					</div>
+					<div class="address">
+						<p>경북 울진군 북면 덕구온천로 924</p>
+						<button class="copy">주소복사</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="info">
+			<li>
+				<p class="info_tit">입장권 사용방법</p>
+				<ul class="blt_type03">
+					<li>상품 구매</li>
+					<li>구매내역에서 바코드 보기 확인</li>
+					<li>이용당일 매표소에서 모바일 티켓(바코드) 제시후 입장</li>
+					<li>덕구온천 스파월드 이용</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">기본 정보</p>
+				<ul class="info_list">
+					<li>
+						<span>이용시간</span>
+						<p>
+							온천장 06:00 ~ 22:00<br>
+							스파 주중 10:00 ~ 19:00<br>
+							스파 주말 09:00 ~ 20:00
+						</p>
+					</li>
+					<li>
+						<span>기준안내</span>
+						<p>
+							소인 - 24개월 이상 ~ 초등학생 까지<br>
+							대인 - 초등학생 이상
+						</p>
+					</li>
+					<li>
+						<span>무료입장</span>
+						<p>24개월 미만 유아(의료보험증등 증빙서류 지참시)</p>
+					</li>
+					<li>
+						<span>이용안내</span>
+						<p>
+							매표소가 혼잡하오니 무인 발권기를 이용하시면 빠르게 발권 가능합니다.<br>
+							예약문자 수신 후 1시간 이후 부터 이용가능 하며 부분 발권 및 사용은 불가합니다.<br>
+							성수기 최대 수용인원 초과시 안전을 위해 입장이 제한 될수 있습니다.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">이용수칙</p>
+				<ul class="blt_type01">
+					<li>
+						스파월드 입장시 음식물 반입은 되지 않습니다. 단, 유리병을 제외한 바로 드실 수 있는 음료수나 물과 이유식, 껍질을 벗긴 씨 없는 과일은 반입이 가능합니다.<br>
+						보트, 튜브 등의 물놀이 용품은 크기가 제한 될 수 있습니다.
+					</li>
+					<li>덕구온천 내에는 돗자리, 유모차를 가지고 들어와서 이용 하실 수 없습니다.</li>
+					<li>온천 사우나 및 스파월드에서는 망원랜즈의 카메라를 사용 하실 수 없습니다.</li>
+					<li>
+						온천 수질 보호와 안전을 위해 슬리퍼, 아쿠아 슈즈, 오리발 등의 착용을 금합니다.<br>
+						신잘장 및 라커키를 분실하신 경우 제작비 10,000은 고객님께 부담되오니 주의해주십시오.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">복장안내</p>
+				<ul class="blt_type01">
+					<li>수영복 및 수모를 반드시 착용해야합니다.(대여가능)</li>
+					<li>
+						수질 보호를 위하여 오일, 화장품 등을 사용하지 않습니다.<br>
+						1.4m 이하의 소인은 안전을 위하여 구명조끼를 착용해 주셔야 합니다.(수심 1.1m)
+					</li>
+					<li>24개월 미만의 유아는 반드시 방수기저귀를 착용해 주셔야 합니다.</li>
+					<li>어린이의 안전을 위하여 반드시 보호자가 동행하여 이용해주시고 부주의로 인한 사고시 당사는 책임을 지지않습니다.</li>
+					<li>만5세 이상의 어린이는 성별을 구분하여 온천사우나(탈의실)을 이용해 주시기 바랍니다. </li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">주차안내</p>
+				<ul class="blt_type01">
+					<li>주차는 놀아정류장(돌산공원내) 주차장을 이용해주시기 바랍니다.</li>
+					<li>주차공간이 부족할 경우 돌산공원 공영주차장을 이용하시기 바랍니다.</li>
+					<li>돌산공원 주차장(내비게이션 &apos;돌산공원&apos; 검색)</li>
+					<li>오동도 전용 주차장(내비게이션 &apos;오동도&apos; 검색)</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="section">
+			<div class="area">
+				<div class="box notice">
+					<p><strong>입장권 환불안내</strong></p>
+					<div>
+						<ul class="blt_type01">
+							<li>환불 및 취소는 고객센터로 전화 부탁드립니다.</li>
+							<li>구매후 7일 이후에는 취소및 환불이 불가능합니다.  </li>
+							<li>본 상품은 특가로 책정된 상품으로 구매하신 내용중 1매라도 사용시 잔여 치켓에대한 부분 환불은 불가합니다.</li>
+							<li>유효기간 만료 이후 부터는 환불 취소가 불가하오니 이점 유념하여 주십시오.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="tel:1666-1243">고객센터 1666-1243</a>
+			<p>운영시간 : 10시 ~ 18시(점심 12시 ~ 1시)</p>
+		</footer>
+		<div class="btn_buy">
+			<a href="#" class="btn btn_type01">구매하기</a>
+		</div>
+		<ul class="quick">
+			<li class="prev"><a href="#">이전</a></li>
+			<li class="home"><a href="#">홈</a></li>
+			<li class="list"><a href="#">예약내역</a></li>
+			<li class="login"><a href="#">로그인</a></li>
+		</ul>
+		<div class="move_top">
+			<a href="#"><img src="http://img.cablecar.go.co.kr/ico_move_top.png" alt="위로 가기" /></a>
+		</div>
+	</div>
+</body>
+</html>

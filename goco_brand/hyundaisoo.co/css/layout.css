@@ -377,7 +377,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_tr"] td.ss{height:60px; border-top:1px solid #dddddd; position:relative;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_detail"] td.ss {height: auto;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac {background: #FBF6E8;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac {background: #FCF5E1;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac.select {background: #FFEBB9;}
 
 

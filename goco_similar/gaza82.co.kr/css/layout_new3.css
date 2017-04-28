@@ -1980,7 +1980,7 @@ background:url(http://img.gaza82.co.kr/checkbox_img.gif) no-repeat 0 0;backgroun
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_tr"] td.ss{height:60px; border-top:1px solid #dddddd; position:relative;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_detail"] td.ss {height: auto;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac {background: #FBF6E8;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac {background: #FCF5E1;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac.select {background: #FFEBB9;}
 
 
@@ -4611,7 +4611,7 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4, .fare_table .f_td li.c5  {vertical-align: top;}
 
 .fare_table .f_td .c1 {padding-left: 20px; font-size: 15px; font-weight: 600;	color: #202020;}
-.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {height: 40px; overflow: auto;}
+.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {min-height: 40px; overflow: auto; padding: 10px;}
 .fare_table .f_td .c2 div, 
 .fare_table .f_td .c3 div, 
 .fare_table .f_td .c4 div,
@@ -4622,17 +4622,17 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_td .c4 div:first-child,
 .fare_table .f_td .c5 div:first-child
 {border-top: none;}
-.fare_table .f_td .c2 p {float: left; position: relative; top: 10px; font-weight: 600; font-size: 14px;}
-.fare_table .f_td .c5 p {float: left; position: relative; font-weight: 600; font-size: 14px; left: 10px;}
+.fare_table .f_td .c2 p, .fare_table .f_td .c5 p {float: left; position: relative; font-weight: 600; font-size: 14px; line-height: 1.4em;}
+.fare_table .f_td .c2 p {top: 10px;}
 
 .fare_table .f_td .p1 {padding-left: 10px;}
-.fare_table .f_td .p2 {top: 7px; border: 1px solid #bbb; background: #fff; font-weight: 800;}
+.fare_table .f_td .p2 {top: 7px; border: 1px solid #bbb; background: #fff; font-weight: 800; width: 76px; height: 24px;}
 .fare_table .f_td .in1 {width: 32px; height: 24px; font-size: 13px; text-align: right; padding-right: 8px; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
 .fare_table .f_td.on .in1 {color: #202020;}
 .fare_table .f_td .p2 a {position: relative; top: 2px; display: inline-block; width: 16px;height: 24px;font-size: 14px; text-align: center; cursor: pointer;}
 
 .fare_table .c3 p, .fare_table .c4 p {font-size: 13px; position: relative; top: 10px; letter-spacing: 0; font-weight: 600;}
-.fare_table .c4 p {text-align: right; padding-right: 20px;}
+.fare_table .c4 p {text-align: right; padding-left: 0px;}
 .fare_table .c3 del {display: inline-block; width: 44%; margin-right: 5%; text-align: right;}
 .fare_table .c3 .a_r {/* margin: 0 8px 0 5px; */ letter-spacing: 0; display: inline-block; width: 4%; text-align: center;}
 .fare_table .fc1 {color: #ff2122; display: inline-block; width: 44%; text-align: left; margin-left: 3%;}
@@ -4734,3 +4734,25 @@ table.prize_list td {width: 350px; padding: 10px; vertical-align: top; border-bo
 #sub_main .tab02 {clear:both; float:left; margin:20px 0; width:740px; height:30px; border-bottom:2px solid #ff610a; font-size:14px}
 #sub_main .tab02 li {display:block; float:left; cursor:pointer; width:103.6px; height:30px; line-height:2; text-align:center; color:#ff610a; border:1px solid #ff610a; border-top-left-radius:10px; border-top-right-radius:10px}
 #sub_main .tab02 li.on {background:#ff610a; color:#fff}
+/* 예약완료관련상품노출_170419_강혜준 */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+.more-box {position: relative; width: 600px; height: 340px; margin: 0 auto; background: #f8f8f8; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;}
+.more-box, .more-box * {box-sizing: border-box;}
+.more-box h2 {font-size: 19px; font-weight: 500; color: #3d3d3d; padding-top: 26px; padding-bottom: 18px; font-family: "Noto Sans KR", "Nanum Gothic", "Malgun Gothic";}
+.more-box h2 .c-orange {color: #fd581d;}
+.more-box .list-box {position: relative; width: 570px; margin: 0 auto; }
+.more-box .list-box li {float: left; width: 180px; height: 180px; margin-left: 5px; margin-right: 5px; border: 1px solid #e6e6e6; background: #fff;}
+.more-box .list-box li .figure, .more-box .list-box li .info-area {position: relative;}
+.more-box .list-box li .figure {overflow: hidden; width: 180px; height: 110px;}
+.more-box .list-box li.item-1 .figure {background: url(http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1490058382_in1.jpg) no-repeat center;}
+.more-box .list-box li.item-2 .figure {background: url(http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1442364875_in1.png) no-repeat center;}
+.more-box .list-box li.item-3 .figure {background: url(http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1442363556_in2.jpg) no-repeat center;}
+.more-box .list-box li .info-area p {text-align: left; padding: 0 10px;}
+.more-box .list-box li .category, .more-box .list-box li .name {color: #5b5a60; font-size: 12px;}
+.more-box .list-box li .category {margin-top: 5px;}
+.more-box .list-box li .name {white-space: nowrap;  overflow: hidden; font-weight: 600; text-overflow: ellipsis;}
+.more-box .list-box li .price {color: #ff3636; font-weight: 600; font-size: 14px;}
+.more-box .btn-wrap {text-align: center; margin: 22px  0;}
+#contents .more-box .btn-wrap .btn-a {display: inline-block; width: 216px; height: 40px; background: #505050; font-size: 14px; color: #fff; border: 1px solid #000;  line-height: 2.7em;}
+.more-box .btn-wrap .btn-a .gt {position: relative; top: -1px; font-size: 10px;}
+#contents .more-box .btn-wrap .btn-a:hover {color: #fff;}

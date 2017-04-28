@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 버튼 */
+.btn.btn_type01 {background-color:#5b504c;}
+
+/* 불릿텍스트 */
+.blt_type02 > li:before {background:url('../img/ico_chk01.png') no-repeat 0 0; background-size:100% 100%;}
+
+/* header */
+header.main h1.logo {width:78px; height:26px; margin-top:-13px; background:url('../img/logo.png') no-repeat 0 0; background-size:100% 100%;}
+
+/* 테이블 */
+.board_list tfoot tr {background-color:#eeeded;}
+.board_list tfoot tr th {color:#5b504c;}
+.board_list tfoot tr td {color:#5b504c;}
+
+/* 달력 */
+.datepic {background-color:#5b504c;}
+.datepic .calendar table tbody tr td.select span {background-color:#5b504c;}
+
+/* 상품정보 */
+.card .caption p.bg_tit {background-color:#eeeded;}
+
+/* 결제수단 선택 */
+.card .cont .payment_list li.on {border:1px solid #5b504c; background-color:#eeeded;}
+.card .cont .payment_list li.on strong {color:#5b504c;}
+
+/* 편의시설 안내 */
+.guide .guide_list li.parking {background:url('../img/ico_food01.gif') no-repeat 50% 0; background-size:30px 26px;}
+.guide .guide_list li.food {background:url('../img/ico_food02.gif') no-repeat 50% 0; background-size:26px 26px;}
+.guide .guide_list li.fastfood {background:url('../img/ico_food03.gif') no-repeat 50% 0; background-size:24px 26px;}
+.guide .guide_list li.cafe {background:url('../img/ico_food04.gif') no-repeat 50% 0; background-size:27px 25px;}
+.guide .guide_list li.market {background:url('../img/ico_food05.gif') no-repeat 50% 0; background-size:26px 24px
+
+/* 결제완료 */
+.finish p em {color:#5b504c;}

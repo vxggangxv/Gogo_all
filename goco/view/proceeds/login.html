@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link rel="stylesheet" href="http://static.go.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css">
-    <link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/common.css">
-    <link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/proceeds.css">
+    <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/common.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/proceeds/proceeds.css"> -->
+    <link rel="stylesheet" href="../../src/css/proceeds/common.css">
+    <link rel="stylesheet" href="../../src/css/proceeds/proceeds.css">
 
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://static.go.co.kr/js/proceeds/proceeds.js"></script>
@@ -78,6 +80,173 @@
           </div>
         </section>
 
+      </div>
+
+      <div id="popupLayer" class="ui-draggable" style="position: absolute; top: 221.5px; left: 50%; margin-left: -395px; z-index: 100; display: none;">
+        <div id="close"></div>
+        <div style="clear:both"></div>
+        <ul class="tab">
+          <li class="on" id="id_tab" onclick="mem.find_info('id')" style="cursor:pointer">아이디 찾기</li>
+          <li id="pw_tab" onclick="mem.find_info('pw')" style="cursor:pointer" class="">비밀번호 찾기</li>
+        </ul>
+        <script>
+          
+        </script>
+        <div class="cts_wrap" id="id_div" style="display: block;">
+          <form name="id_form_hp" id="id_form_hp" method="post">
+          <input type="hidden" name="encrypt" value="0">
+          <input type="hidden" name="mode" value="TxcuRwFPOg==">
+          <input type="hidden" name="submode" value="QQ4=">
+          <input type="hidden" name="step" value="WgolU2w=">
+          <table>
+            <colgroup>
+              <col width="*">
+              <col width="220">
+            </colgroup>
+            <tbody><tr>
+              <td colspan="2" class="tit"><img src="http://img.go.co.kr/login_img04.jpg" alt=""><span>휴대폰번호</span>로 찾기</td>
+            </tr>
+            <tr>
+              <td colspan="2" height="70">회원가입 시 기재하신 이름과 휴대폰번호를<br>정확하게 입력해주세요.</td>
+            </tr>
+            <tr>
+              <td height="60" class="left">이름</td>
+              <td class="right"><input name="username" title="이름" id="username" validation="yes" type="text" maxlength="15" value="" class="input" style="width:150px"></td>
+            </tr>
+            <tr>
+              <td height="60" class="left">휴대폰번호</td>
+              <td class="right"><input name="tel" title="휴대폰번호" id="tel" validation="yes" type="text" maxlength="15" placeholder="-없이 입력해주세요" class="input" style="width:150px" onkeyup="util.checktype('number', 'tel')" onkeypress="if(event.keyCode == 13) { util.inst_fchk('id_form_hp'); }"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><a href="#" onclick="util.inst_fchk('id_form_hp');return false;"><img src="http://img.go.co.kr/login_img06.jpg" alt="아이디찾기"></a></td>
+            </tr>
+          </tbody></table>
+          </form>
+          <div class="line"></div>
+          <form name="id_form_email" id="id_form_email" method="post">
+          <input type="hidden" name="encrypt" value="0">
+          <input type="hidden" name="mode" value="TxcuRwFPOg==">
+          <input type="hidden" name="submode" value="TBMhSjI=">
+          <input type="hidden" name="step" value="WgolU2w=">
+          <table>
+            <colgroup>
+              <col width="*">
+              <col width="220">
+            </colgroup>
+            <tbody><tr>
+              <td colspan="2" class="tit"><img src="http://img.go.co.kr/login_img05.jpg" alt=""><span>이메일</span>로 찾기</td>
+            </tr>
+            <tr>
+              <td colspan="2" height="70">회원가입 시 기재하신 이름과 이메일을<br>정확하게 입력해주세요.</td>
+            </tr>
+            <tr>
+              <td height="60" class="left">이름</td>
+              <td class="right"><input name="username" title="이름" id="username" validation="yes" type="text" maxlength="15" value="" class="input" style="width:150px"></td>
+            </tr>
+            <tr>
+              <td height="60" class="left">이메일</td>
+              <td class="right"><input name="email" title="이메일" id="email" validation="yes" type="text" value="" class="input" style="width:150px" onkeypress="if(event.keyCode == 13) { util.inst_fchk('id_form_email'); }"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><a href="#" onclick="util.inst_fchk('id_form_email');return false;"><img src="http://img.go.co.kr/login_img06.jpg" alt="아이디찾기"></a></td>
+            </tr>
+          </tbody></table>
+          </form>
+        </div>
+
+        <!--- 비밀번호 찾기 입력폼 -->
+        <div class="cts_wrap" id="pw_div" style="display: none;">
+          <form name="pw_form_hp" id="pw_form_hp" method="post">
+          <input type="hidden" name="encrypt" value="0">
+          <input type="hidden" name="mode" value="TxcuRwFWKQ==">
+          <input type="hidden" name="submode" value="QQ4=">
+          <input type="hidden" name="step" value="WgolU2w=">
+          <input type="hidden" name="OTP" id="OTP">
+          <input type="hidden" name="OTP_chk" id="OTP_chk" title="인증번호입력">
+          <table>
+            <colgroup>
+              <col width="*">
+              <col width="220">
+            </colgroup>
+            <tbody><tr>
+              <td colspan="2" class="tit"><img src="http://img.go.co.kr/login_img04.jpg" alt=""><span>휴대폰번호</span>로 찾기</td>
+            </tr>
+            <tr>
+              <td colspan="2" height="70">회원가입 시 기재하신 이름과 휴대폰번호를<br>정확하게 입력해주세요.</td>
+            </tr>
+            <tr>
+              <td height="60" class="left">아이디</td>
+              <td class="right"><input name="userid" title="아이디" id="userid" validation="yes" type="text" maxlength="15" value="" class="input" style="width:150px"></td>
+            </tr>
+            <tr>
+              <td height="60" class="left">휴대폰번호</td>
+              <td class="right"><input name="pwtel" title="휴대폰번호" id="pwtel" validation="yes" type="text" maxlength="15" placeholder="-없이 입력해주세요" class="input" style="width:150px" onkeyup="util.checktype('number', 'pwtel')"></td>
+            </tr>
+            <tr id="hp_prev">
+              <td colspan="2" height="30" class="left" style="vertical-align:top"><a href="javascript:mem.find_info_verify('hp')"><img src="http://img.go.co.kr/login_img08.jpg" alt="인증번호요청" style="margin-right:40px"></a></td>
+            </tr>
+            <tr id="hp_mnum" style="display:none">
+              <td height="60" class="left">인증번호</td>
+              <td class="right">
+                <input name="mnum" title="인증번호" id="mnum" validation="yes" type="text" maxlength="6" class="input" style="width:80px" onkeyup="util.checktype('number', 'mnum')">
+                <a href="javascript:mem.find_info_verify('hp')"><img src="http://img.go.co.kr/login_img011.jpg" alt="재전송"></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><a href="#" title="비번찾기"><img src="http://img.go.co.kr/login_img09.jpg" alt="비번찾기"></a></td>
+            </tr>
+          </tbody></table>
+          </form>
+          <div class="line"></div>
+          <form name="pw_form_email" id="pw_form_email" method="post">
+          <input type="hidden" name="encrypt" value="0">
+          <input type="hidden" name="mode" value="TxcuRwFWKQ==">
+          <input type="hidden" name="submode" value="TBMhSjI=">
+          <input type="hidden" name="step" value="WgolU2w=">
+          <input type="hidden" name="OTP" id="OTP">
+          <input type="hidden" name="OTP_chk" id="OTP_chk" title="인증번호입력">
+          <table>
+            <colgroup>
+              <col width="*">
+              <col width="220">
+            </colgroup>
+            <tbody><tr>
+              <td colspan="2" class="tit"><img src="http://img.go.co.kr/login_img05.jpg" alt=""><span>이메일</span>로 찾기</td>
+            </tr>
+            <tr>
+              <td colspan="2" height="70">회원가입 시 기재하신 이름과 이메일을<br>정확하게 입력해주세요.</td>
+            </tr>
+            <tr>
+              <td height="60" class="left">아이디</td>
+              <td class="right"><input name="userid" title="아이디" id="userid" validation="yes" type="text" maxlength="15" value="" class="input" style="width:150px"></td>
+            </tr>
+            <tr>
+              <td height="60" class="left">이메일</td>
+              <td class="right"><input name="email" title="이메일" id="email" validation="yes" type="text" value="" class="input" style="width:150px"></td>
+            </tr>
+            <tr id="mail_prev">
+              <td colspan="2" height="30" class="left" style="vertical-align:top"><a href="javascript:mem.find_info_verify('email')"><img src="http://img.go.co.kr/login_img08.jpg" alt="인증번호요청" style="margin-right:40px"></a></td>
+            </tr>
+            <tr id="mail_mnum" style="display:none">
+              <td height="60" class="left">인증번호</td>
+              <td class="right">
+                <input name="mnum" title="인증번호" id="mnum" validation="yes" type="text" maxlength="6" class="input" style="width:80px">
+                <a href="#" onclick="mem.find_info_verify('email');return false;"><img src="http://img.go.co.kr/login_img011.jpg" alt="재전송"></a>
+              </td>
+            </tr>
+            <!---
+            <tr>
+              <td colspan="2" height="30" class="notice">※ 이메일 확인 후 비밀번호 재설정이 가능합니다.</td>
+            </tr>
+            -->
+            <tr>
+              <!---<td colspan="2"><a href=""><img src="http://img.go.co.kr/login_img010.jpg" alt="아이디찾기"></a></td>-->
+              <td colspan="2"><a href="javascript:mem.mnum_com_lay('email');" title="비번찾기"><img src="http://img.go.co.kr/login_img09.jpg" alt="비번찾기"></a></td>
+            </tr>
+          </tbody></table>
+          </form>
+        </div>
       </div>
 
       <footer class="footer">

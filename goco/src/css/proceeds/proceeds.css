@@ -1,13 +1,14 @@
 /*index페이지*/
 section[class*="-sec"] {width: 1069px; margin-left: auto; margin-right: auto;}
 .main-sec {}
+.main-sec figure img {display: block;}
 .ms-p1 {position: relative; height: 53px; background: #FDDF4D; font-size: 22px;}
 .ms-p1 i, .ms-p1 input, .ms-p1 a {position: relative; top: 6px; vertical-align: middle;}
 .ms-p1 i {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; color: #645b54; margin-left: 20px;}
 .ms-p1 input {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; border: 3px solid #fc7931; height: 32px; margin-left: 20px; text-indent: 8px; font-size: 24px; line-height: 1.4em;}
 .ms-p1 .code {width: 130px;}
-.ms-p1 .money {width: 217px;}
-.ms-p1 .btn {position: relative; display: inline-block; font-size: 17px; color: #fff; width: 117px; height: 38px; background: #fc7931; border-radius: 5px; line-height: 2.2em; text-align: center; margin-left: 30px;}
+.ms-p1 .money {width: 200px;}
+.ms-p1 .btn {position: relative; float: right; display: inline-block; font-size: 17px; color: #fff; width: 117px; height: 38px; background: #fc7931; border-radius: 5px; line-height: 2.2em; text-align: center; right: 20px;}
 .ms-p1 .btn span {position: relative; top: -1.5px; font-size: 13px;}
 .step-sec {margin-top: 25px;}
 
@@ -39,12 +40,13 @@ div[class*="isb-table"] li.nth-2 {font-size: 17px; width: 285px; text-align: rig
 .hsb-table ul.th li {font-size: 18px; background: #F7F7F7;}
 .hsb-table ul.td li {font-size: 17px; letter-spacing: 0;}
 .hsb-table ul.td.empty li {font-size: 17px; letter-spacing: 0; width: 1069px;}
-.hsb-table ul li.nth-1 {width: 140px;}
-.hsb-table ul li.nth-2 {width: 140px;}
-.hsb-table ul li.nth-3 {width: 200px;}
-.hsb-table ul li.nth-4 {width: 146px;}
-.hsb-table ul li.nth-5 {width: 268px;}
-.hsb-table ul li.nth-6 {width: 169px;}
+.hsb-table ul li.nth-1 {width: 125px;}
+.hsb-table ul li.nth-2 {width: 125px;}
+.hsb-table ul li.nth-3 {width: 185px;}
+.hsb-table ul li.nth-4 {width: 131px;}
+.hsb-table ul li.nth-5 {width: 253px;}
+.hsb-table ul li.nth-6 {width: 154px;}
+.hsb-table ul li.nth-7 {width: 90px;}
 .hs-box .btn {display: block; margin: 0 auto; width: 142px; height: 46px; font-size: 19px; border-radius: 5px; line-height: 2.45em; color: #fff; background: #fc7931; text-align: center; margin-bottom: 30px;}
 .hs-box .btn span {font-size: 15px; position: relative; top: -2px; margin-left: 5px;}
 
@@ -215,3 +217,23 @@ div[class*="miosb-table"] .in-txt + span {font-size: 15px; color: #999; margin-l
 .lsb-d2 a.nth-4 .sns {background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px -150px; left: 75px}
 .lsb-d2 a.nth-5 .sns {background: url(http://img.go.co.kr/proceeds/login_sns.png) no-repeat 0px -200px; top: 16px;}
 .lsb-p2 {width: 440px; margin: 0 auto; font-size: 15px; line-height: 1.35em;}
+/*아이디/비밀번호찾기 레이어팝업*/
+#popupLayer {display:none; width:790px; min-height:463px; text-align:center; z-index:999999;}
+#popupLayer #close {cursor:pointer; background: url(http://img.go.co.kr/login_img03.jpg) no-repeat; display:box; width:52px; height:48px; float:right;  text-indent:-10000px; top:-48px;}
+#popupLayer .tab ul {width:790px}
+#popupLayer .tab li {float:left; display:block; width:395px; height:60px; background:#ecebeb; font-size:20px; text-align:center; line-height:3; border-bottom:solid 1px #ff620b}
+#popupLayer .tab .on {float:left; display:block; width:393px; height:60px; background:#fff; font-size:20px; text-align:center; line-height:3; font-weight:600; border-bottom:none; border-top:solid 1px #ff620b; border-left:solid 1px #ff620b; border-right:solid 1px #ff620b}
+#popupLayer .cts_wrap {float:left; padding:30px; width:728px; background:#fff; border-bottom:solid 1px #ff620b; border-left:solid 1px #ff620b; border-right:solid 1px #ff620b}
+#popupLayer .cts_wrap span {color:#ff610a; font-weight:600}
+#popupLayer .cts_wrap table {float:left; width:320px}
+#popupLayer .cts_wrap table .tit {font-size:18px; font-weight:600}
+#popupLayer .cts_wrap table .left {background:#ffefe6; text-align:right; font-size:15px}
+#popupLayer .cts_wrap table .right {padding-left:10px; background:#ffefe6; text-align:left; font-size:15px}
+#popupLayer .cts_wrap table .notice {background:#ffefe6; text-align:center; font-size:11px; font-family:'돋움', Dotum, sans-serif}
+#popupLayer .cts_wrap .input {padding:10px; margin-right:10px; height:20px; border:1px solid #dedede; background:#f9f9f9; font-size:15px; color:#999999; text-align:left}
+#popupLayer .cts_wrap .input2 {padding:5px; margin-right:10px; height:10px; border:1px solid #fff; background:#fff; font-size:15px; color:#999999; text-align:left}
+#popupLayer .cts_wrap .line {float:left; margin-top:80px; width:80px; height:170px; background:url(http://img.go.co.kr/login_img07.jpg) repeat-y}
+#popupLayer .cts_wrap .btn {float:left; margin-top:40px; width:100%; text-align:center}
+#popupLayer .cts_wrap .result {clear:both; margin:40px 0 40px 40px; width:650px; padding:10px 0; text-align:center; background:#ffefe6; line-height:2}
+#popupLayer .cts_wrap .result2 {clear:both; margin:40px 0 40px 40px; width:650px; padding:10px 0; text-align:center; background:#ffefe6; line-height:4}
+#popupLayer .cts_wrap h3 {font-size:20px; font-weight:600}

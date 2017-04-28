@@ -3092,17 +3092,21 @@ color:#ff4800; border:1px solid #ff4800; letter-spacing:-1.2px; margin-top:2px; 
 #location_w .location_info .location_info_btn .info_btn{background:#f9f9f9; border:1px solid #e8e8e8; font-size:0.813em; padding:8px 5px; font-weight:600; cursor:pointer}
 
 #room_w{width:100%; float:left; border-top:1px solid #dddddd; letter-spacing:-0.5px; margin-bottom:30px}
-#room_w h3{margin-left:4%; padding:20px 0 20px 0; font-weight:600; color:#3f3f3f; font-size:1.125em}
-#room_w .room_ti_tx{width:100%; background:#f5f5f5; padding:20px 0; }
-#room_w .room_ti_tx .room_ti_tx_in{width:90%; margin:auto}
+#room_w h3{padding:20px 0 20px 0; font-weight:600; color:#3f3f3f; font-size:1.125em}
+#room_w .room_ti_tx{width:100%; padding: 0; padding-bottom: 14px;	border-bottom: 1px solid #e6e6e6;}
+#room_w .room_ti_tx .room_ti_tx_in{margin:auto;}
 #room_w .room_ti_tx .room_ti_tx_in h4{font-size:1.063em; color:#3f3f3f; font-weight:600}
-#room_w .room_ti_tx .room_ti_tx_in p{font-size:0.875em; color:#3f3f3f; margin-top:10px}
-#room_w .room_tx_w{width:100%; margin:auto}
-#room_w .room_tx_w .room_tx_in{float:left; margin-top:30px; width:100%}
-#room_w .room_tx_w .room_tx_in h4{font-size:1.0em; color:#3f3f3f; font-weight:600; }
-#room_w .room_tx_w .room_tx_in p{font-size:14px; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8}
-#room_w .room_tx_w .room_tx_in p .room_tx_icon{float:left; width:4%}
-#room_w .room_tx_w .room_tx_in p .room_tx_tx{float:left; width:95%}
+#room_w .room_ti_tx .room_ti_tx_in h4 + p + p {margin-top: 0;}
+#room_w .room_ti_tx .room_ti_tx_in p{font-size:0.875em; color:#3f3f3f; margin-top:10px; padding-left: 12px;}
+#room_w .room_tx_w {width:100%; margin:auto;}
+#room_w .room_tx_w .room_tx_in {margin-top: 0px; padding: 17px 0 14px; background: #fff; width:100%; border-top: 1px solid #e6e6e6;}
+#room_w .room_tx_w .room_tx_in:first-child {border-top: 0; margin-top: 3px;}
+#room_w .room_tx_w .room_tx_in h4{font-size:1.0em; color:#3f3f3f; font-weight:600;}
+#room_w .room_tx_w .room_tx_in p {font-size:14px; color:#555; margin-top:5px; letter-spacing:-0.2px; line-height:1.8;}
+#room_w .room_tx_w .room_tx_in > p {padding-left: 12px;}
+#room_w .room_tx_w .room_tx_in p .room_tx_icon{display: none; position: relative; top: 1px; font-size: 20px; width: 12px;}
+#room_w .room_tx_w .room_tx_in .room_tx_tx {position: relative; display: inline-block; padding-left: 12px;}
+#room_w .room_tx_w .room_tx_in .room_tx_tx:before {content: "·"; font-size: 38px; line-height: 27px; position: absolute; left: 0; width: 12px; height: 12px; font-family: "Nanum Gothic", sans-serif;}
 
 #kaka_advice{float:left; width:100%; border-top:1px solid #dddddd; padding:20px 0 80px 0}
 #kaka_advice .txt{float:left; margin-left:4%; font-size:0.875em; color:#3f3f3f;}
@@ -3740,12 +3744,49 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 .pay_reserInfo_table_option .checkbox label{margin-top: 8px; display: inline-block; position: relative; height: 20px; padding-left: 23px; background: url(http://img.go.co.kr/mobile/check_box_normal.jpg) no-repeat 0 0; background-size: 23px 40px; -webkit-background-size: 23px 40px;}
 .pay_reserInfo_table_option .checkbox .chk:checked+label{background-position: 0 -20px;}
 
-/* Å¸ÀÌÆ²º° ·Î°í_20170111 */
-#location_w h3 .goco_tit_logo {height:32px}
-#notice_w h4 img:nth-of-type(2) {height:32px;}
-#room_w h4 .goco_tit_logo {height:32px;}
-#room_w h3 .goco_tit_logo {height:32pxt;}
-#room_w .room_tx_w .room_tx_in h4 .goco_tit_logo {height:32px;}
+/* 타이틀별 로고_20170111 */
+#location_w h3 .goco_tit_logo, 
+#notice_w h4 .goco_tit_logo, 
+#room_w h4 .goco_tit_logo, 
+#room_w h3 .goco_tit_logo, 
+#room_w .room_tx_w .room_tx_in h4 .goco_tit_logo {height:32px; position: absolute; right: 12px;}
+#room_w h4, #room_w h3, #location_w h3, #room_w .room_tx_w .room_tx_in h4 {padding-left: 12px; font-family: "Nanum Gothic";}
+#location_w h3 {margin-left: 0;}
+#notice_w .notice_in {width: 100%;}
+#location_w, #room_w, #room_w .room_tx_w .room_tx_in {overflow-x: hidden;}
+#notice_w .notice_in p {padding-left: 12px; overflow-x: hidden;}
+.room_title {border-bottom: 0;}
+#room_w {border-top: 10px solid #f1f1f1;}
+#notice_w {border-top: 10px solid #f1f1f1;}
+.txt_forms {word-break: keep-all; width: 95%;}
+.txt_forms table {text-indent: center;}
+.txt_forms table th, .txt_forms table td {border-width: 1px;}
+.txt_forms b {position: relative;}
+/* 앱 에약완료관련상품노출_170419_강혜준 */	
+#reserve_complete {height: auto;}
+.more-box {position: relative;}
+.more-box .row-th {color: #fff; height: 40px; background: #ff6000; font-size: 14px; background: #ff6000; text-align: center; line-height: 2.8em;}
+.more-box .list-box {}
+.more-box .list-box li {position: relative; padding: 5px; border-bottom: 1px solid #d5d5d5;}
+.more-box .list-box li > div {float: left; position: relative;}
+.more-box .list-box li > a.link-a {position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.more-box .figure {}
+.more-box .figure img {width: 90px; height: 80px;}
+.more-box .figure .recommend {position: absolute; bottom: 0px; color: #fff; font-size: 10px; line-height: 1.3em; display: block; background: #12b4c1; text-align: center; width: 100%; height: 16px;}
+.more-box .con-area {margin-left: 8px; width: 68%; height: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.more-box .con-area .title {font-size: 14px; color: #313131; line-height: 1.5em; font-weight: 600; font-family: "Nanum Gothic", "Malgun Gothic";}
+.more-box .con-area .text {font-size: 11px; color: #b4b4b4; line-height: 1.2em;}
+.more-box .con-area .wra {position: relative; margin-top: 4px; text-align: right;}
+.more-box .con-area .wra .icon {position: absolute; left: 0; top: 6px;}
+.more-box .con-area .wra .icon img {height: 15px;}
+.more-box .price {position: absolute; display: block; width: 40%; top: 44px; right: 8px; text-align: right;}
+.more-box .highprice {font-size: 12px; color: #747474; letter-spacing: -1px;}
+.more-box .lowprice {color: #f15a53; font-weight: 600; font-family: "Nanum Gothic"; letter-spacing: -2px;}
+.more-box .btn-wrap {position: relative; text-align: center; height: 36px; background: #f4f2f3; border-top: 1px solid #cacaca;}
+.more-box .btn-wrap .btn-a {display: block; width: 100%; height: 100%; color: #313131; font-size: 13px; font-weight: 600; line-height: 2.6em;}
+.more-box .btn-wrap .btn-a .gt {position: relative; top: -1px; font-size: 10px; color: #ff6000; font-family: "Nanum Gothic", "Malgun Gothic"; font-weight: 800;}
+#room_w {word-break: keep-all;}
+
 #product_info tr td .goco_tit_logo{height:35px; margin-right:10px; margin-top:11px; margin-bottom:11px;}
 #product_info #bbs td img.bbs_arrow{height:9px;}
 #product_info #bbs tr td.review_body img{height:100%;}
@@ -3918,3 +3959,6 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #mypage #box .my_middle0 .my_box_2 a{border-right:0;border-bottom:1px solid #ececec; box-sizing: border-box;}
 #mypage #box .my_middle0 .my_box_3 a{border-right: 1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
 #mypage #box .my_middle0 .my_box_4 a{border-right: 0; border-bottom:1px solid #ececec; box-sizing: border-box;}
+/* 앱상세페이지_170425_강혜준 */
+.txt-ntc-i {margin-left: -11px; display: inline-block; margin-right: 3px; font-size: 38px; line-height: 0; top: 7px; position: relative;}
+.room-ntc, .room-cmn, .room-appb {display: inline-block; padding-left: 12px;}

@@ -1,0 +1,395 @@
+/* 도고, 리솜, 아산 랜딩*/
+#asan_sapa {float:left; padding-bottom:100px; width:100%; background:#fff; }
+
+/* 메인배너 */
+#slides_bn {width:100%; margin:auto; }
+#slides_bn .slide_img01{background:url(http://img.go.co.kr/top_dogospa.jpg) center 0 no-repeat; width:100%; height:200px;}
+#slides_bn .slide_img02{background:url(http://img.go.co.kr/top_resomspa.jpg) center 0 no-repeat; width:100%; height:200px; }
+#slides_bn .slide_img03{background:url(http://img.go.co.kr/top_asan01.jpg) center 0 no-repeat; width:100%; height:200px; }
+#slides_bn .imgw{ width:1300px;  margin:auto; position:relative; }
+#slides_bn .imgw ul{position:absolute; left:400px}
+#slides_bn .imgw ul li{float:left; margin-right:70px}
+
+/* 메인 좌우버튼 */
+#slide_btnw{width:1100px; margin:auto; position:relative;}
+#slide_btnw ul{width:1100px}
+#slide_btnw ul li{float:left;}
+#slide_btnw ul li.asan_prev a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/asan_prev.png); text-indent:-99999px;  position:absolute; top:37px}
+#slide_btnw ul li.asan_prev a:hover{background-position:0 -119px}
+#slide_btnw ul li.asan_next a{display:block;  width:120px; height:119px; background-image:url(http://img.go.co.kr/asan_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
+#slide_btnw ul li.asan_next a:hover{background-position:0 -119px}
+
+#slide_btnw ul li.resom_prev a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/resom_prev.png); text-indent:-99999px;  position:absolute; top:37px;}
+#slide_btnw ul li.resom_prev a:hover{background-position:0 -119px}
+#slide_btnw ul li.resom_next a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/resom_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
+#slide_btnw ul li.resom_next a:hover{background-position:0 -119px}
+
+#slide_btnw ul li.dogo_prev a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/dogo_prev.png); text-indent:-99999px;  position:absolute; top:37px}
+#slide_btnw ul li.dogo_prev a:hover{background-position:0 -119px}
+#slide_btnw ul li.dogo_next a{display:block;width:120px; height:119px; background-image:url(http://img.go.co.kr/dogo_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
+#slide_btnw ul li.dogo_next a:hover{background-position:0 -119px}
+
+/* 탭 */
+#asan_sapa #tab_wrap { width:1002px; height:60px; margin:auto; text-align:center; margin-bottom:28px; margin-top:28px;clear:both}
+#asan_sapa #tab_wrap .tab {margin:0 auto; width:1002px; height:60px; text-align:center}
+#asan_sapa #tab_wrap .tab .box_dogo {float:left; width:332px; height:60px; line-height:2.6; font-weight:600; font-size:22px; color:#fff; border:1px solid #d6d4d4; background-color:#0168e7; letter-spacing:-1.5px}
+#asan_sapa #tab_wrap .tab .box_asan {float:left; width:332px; height:60px; line-height:2.6; font-weight:600; font-size:22px; color:#fff; border:1px solid #d6d4d4; background-color:#e15148; letter-spacing:-1.5px}
+#asan_sapa #tab_wrap .tab .box_resom{float:left; width:332px; height:60px; line-height:2.6; font-weight:600; font-size:22px; color:#fff; border:1px solid #d6d4d4; background-color:#3e7e05; letter-spacing:-1.5px}
+#asan_sapa #tab_wrap .tab .box {float:left; width:332px; height:60px; line-height:2.6; font-weight:600; font-size:22px; color:#fff; border:1px solid #d6d4d4; background-color:#727272; letter-spacing:-1.5px}
+
+#list_etc_goods_cc {width:1002px; text-align:center; letter-spacing:-0.5px; margin:auto }
+#list_etc_goods_cc a:hover li{float:left; margin-bottom:20px; width:310px; height:330px; background:#fff; border:1px solid #ff4800; text-align:left}
+#list_etc_goods_cc li {float:left; margin-bottom:30px; width:310px; height:330px; background:#fff; border:1px solid #c8c8c8; text-align:left}
+#list_etc_goods_cc li p {padding:0 15px; line-height:1.4; font-size:14px}
+#list_etc_goods_cc li del {font-size:15px; color:#999}
+#list_etc_goods_cc .photo{position:relative; margin-right:32px}
+#list_etc_goods_cc .photo_last {position:relative}
+
+#list_etc_goods_cc .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
+#list_etc_goods_cc .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+#list_etc_goods_cc .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
+#list_etc_goods_cc .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+
+#list_etc_goods_cc img{margin-bottom:5px; width:310px; height:210px; text-align:center}
+#list_etc_goods_cc .dis_price{font-size:18px; font-weight:800; color:#ff0000; margin-left:7px; font-family:Tahoma;}
+#list_etc_goods_cc .dis_prices{font-size:16px; font-weight:600; color:#ff0000;}
+#list_etc_goods_cc .title{padding:5px 15px 5px 15px; font-weight:600; font-size:16px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+#list_etc_goods_cc .sdi{font-size:12px; color:#8d8d8d; margin-top:5px; line-height:1.6; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+#list_etc_goods_cc .sdia{font-size:12px; color:#8d8d8d; margin-top:10px; line-height:1.6; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+#list_etc_goods_cc .photo_ov{width:250px; height:180px; text-align:center}
+#list_etc_goods_cc .photo_ov .ov_text {padding-top:60px; width:250px; height:120px; background:#000000; opacity:0.9; filter:alpha(opacity=88); text-align:center}
+#list_etc_goods_cc .photo_ov .ov_text .name {color:#fd581d; font-size:15px; text-align:center}
+#list_etc_goods_cc .photo_ov .ov_text .discount_price {color:#fff; font-size:17px; text-align:center; font-weight:bold}
+#list_etc_goods_cc .mores img {width:1002px; height:38px; margin-top:20px}
+
+
+
+/* 게스트하우스 랜딩 */
+#guesthouse {float:left; padding-bottom:100px; width:100%; background:#fff; }
+
+/* 메인배너 */
+#guesthouse .guesthouse_bn1 {background:url(http://img.go.co.kr/top_guesthouse1.jpg) center 0 no-repeat; width:100%; height:200px;}
+
+
+/* 탭 */
+#guesthouse #tab_wrap { width:1002px;  margin:auto; text-align:center; margin-top:25px;clear:both; /*font-family:'돋움', Dotum, sans-serif;*/ letter-spacing:0pt}
+#guesthouse #tab_wrap .tab_menu {margin:0 auto; width:1002px; height:42px; text-align:center}
+#guesthouse #tab_wrap .tab_menu .box_ov {float:left; width:127px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#fff; border-right:1px solid #d6d4d4; background-color:#00c1c3; letter-spacing:-1.5px}
+#guesthouse #tab_wrap .tab_menu .box {float:left; width:127px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#eeeeee; border-right:1px solid #d6d4d4; background-color:#a4a4a4; letter-spacing:-1.5px}
+#guesthouse #tab_wrap .tab_menu .boxs_ov{float:left; width:232px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#fff; border-right:1px solid #d6d4d4; background-color:#00c1c3; letter-spacing:-1.5px}
+#guesthouse #tab_wrap .tab_menu .boxs {float:left; width:232px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#eeeeee; border-right:1px solid #d6d4d4; background-color:#a4a4a4; letter-spacing:-1.5px}
+
+#guesthouse #tab_wrap .tab_smenu {margin:0 auto; width:997px; height:105px; text-align:center; border:2px solid #00c1c3}
+#guesthouse #tab_wrap .tab_smenu ul.firstm{float:left; width:230px; height:105px;  border-right:1px solid #d6d4d4;}
+#guesthouse #tab_wrap .tab_smenu ul.firstm .list1{float:left; width:120px}
+#guesthouse #tab_wrap .tab_smenu ul.firstm .list2{float:left; width:100px}
+
+#guesthouse #tab_wrap .tab_smenu ul.firstm li {font-size:12px;  float:left; margin-top:8px; margin-left:16px; text-align:left}
+#guesthouse #tab_wrap .tab_smenu ul.firstm li.ov {font-size:12px;  float:left; margin-top:8px; margin-left:16px; text-align:left; color:#00c1c3; text-decoration:underline; font-weight:bold}
+#guesthouse #tab_wrap .tab_smenu ul.firstm a:hover li{font-size:12px; float:left; color:#00c1c3}
+#guesthouse #tab_wrap .tab_smenu ul.firstm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#guesthouse #tab_wrap .tab_smenu ul.listm{float:left; width:127px;  border-right:1px solid #d6d4d4; height:105px; }
+#guesthouse #tab_wrap .tab_smenu ul.listm li{font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#guesthouse #tab_wrap .tab_smenu ul.listm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#00c1c3; text-decoration:underline; font-weight:bold}
+#guesthouse #tab_wrap .tab_smenu ul.listm a:hover li{font-size:12px; color:#00c1c3}
+#guesthouse #tab_wrap .tab_smenu ul.listm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#guesthouse #tab_wrap .tab_smenu ul.lastm{float:left; width:126px; height:105px; }
+#guesthouse #tab_wrap .tab_smenu ul.lastm li{font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#guesthouse #tab_wrap .tab_smenu ul.lastm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#00c1c3; text-decoration:underline; font-weight:bold}
+#guesthouse #tab_wrap .tab_smenu ul.lastm a:hover li{font-size:12px; color:#00c1c3}
+#guesthouse #tab_wrap .tab_smenu ul.lastm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#guesthouse .list_title{floaT:left; width:1002px; height:46px; background-color:#00c1c3; margin:40px 0 20px 0;}
+#guesthouse .list_title h3{color:#fff; font-size:18px; line-height:2.3; margin-left:20px; float:left}
+
+#guesthouse_list_w {width:1002px; text-align:center; letter-spacing:-0.5px; margin:auto }
+#guesthouse_list_w a:hover li{float:left; margin-bottom:30px; width:310px; height:330px; background:#fff; border:1px solid #ff4800; text-align:left}
+#guesthouse_list_w li {float:left; margin-bottom:30px; width:310px; height:330px; background:#fff; border:1px solid #c8c8c8; text-align:left}
+#guesthouse_list_w li p {padding:0 15px; line-height:1.4; font-size:14px}
+#guesthouse_list_w li del {font-size:15px; color:#999}
+#guesthouse_list_w .photo{position:relative; margin-right:32px}
+#guesthouse_list_w .photo_last {position:relative}
+
+#guesthouse_list_w .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
+#guesthouse_list_w .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+#guesthouse_list_w .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
+#guesthouse_list_w .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+
+#guesthouse_list_w img{margin-bottom:5px; width:310px; height:210px; text-align:center}
+#guesthouse_list_w .dis_price{font-size:18px; font-weight:800; color:#ff0000; margin-left:7px; font-family:Tahoma;}
+#guesthouse_list_w .dis_prices{font-size:16px; font-weight:600; color:#ff0000;}
+#guesthouse_list_w .title{padding:5px 15px 5px 15px; font-weight:600; font-size:16px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+#guesthouse_list_w .sdi{font-size:12px; color:#8d8d8d; margin-top:5px; line-height:1.6;  }
+#guesthouse_list_w .sdia{font-size:12px; color:#8d8d8d; margin-top:10px; line-height:1.6; }
+
+#guesthouse_list_w .photo_ov{width:250px; height:180px; text-align:center}
+#guesthouse_list_w .photo_ov .ov_text {padding-top:60px; width:250px; height:120px; background:#000000; opacity:0.9; filter:alpha(opacity=88); text-align:center}
+#guesthouse_list_w .photo_ov .ov_text .name {color:#fd581d; font-size:15px; text-align:center}
+#guesthouse_list_w .photo_ov .ov_text .discount_price {color:#fff; font-size:17px; text-align:center; font-weight:bold}
+#guesthouse_list_w .mores img {width:1002px; height:38px; margin-top:20px}
+
+/* 우측 지역 메뉴 */
+#right_wing{position: relative; margin: 0px auto; width:1002px;}
+#right_wing .right_wing_wrap{position: absolute; right:-170px; top:24px; text-align: center; width:142px; border:1px solid #00c1c3; background-color:#fbfbfb}
+#right_wing .right_wing_wrap dl {padding:13px 15px; text-align:left; border-bottom:1px solid #e2e2e2}
+#right_wing .right_wing_wrap dt a{color:#069faf; font-weight:bold; font-size:13px; line-height:2.2;}
+#right_wing .right_wing_wrap dd a{font-size:11px; line-height:1.8; color:#696969}
+#right_wing .right_wing_wrap dd.ov a{font-size:11px; line-height:1.8; color:#069faf;  text-decoration:underline;}
+#right_wing .right_wing_wrap dd a:hover{font-size:11px; line-height:1.8; color:#069faf}
+
+
+
+/* 전국 스파/온천 패키지 랜딩 */
+#spapackage {float:left; padding-bottom:100px; width:100%; background:#fff; }
+
+/* 메인배너 */
+#spapackage .spapackage_bn {background:url(http://img.go.co.kr/top_aspa.jpg) center 0 no-repeat; width:100%; height:303px;}
+
+/* 탭 */
+#spapackage .tab_wrap {width:1002px; height:40px; margin:auto; margin-bottom:30px;  margin-top:30px; clear:both; background-color:#c6173a}
+#spapackage .tab_wrap p{ line-height:2.0;  font-size:18px; color:#fff; margin-left:20px}
+
+.spapackage_list_w {width:1002px; text-align:center; letter-spacing:-0.5px; margin:auto }
+.spapackage_list_w a:hover li{float:left; margin-bottom:20px; width:310px; height:330px; background:#fff; border:1px solid #ff4800; text-align:left}
+.spapackage_list_w li {float:left; margin-bottom:30px; width:310px; height:330px; background:#fff; border:1px solid #c8c8c8; text-align:left}
+.spapackage_list_w li p {padding:0 15px; line-height:1.4; font-size:14px}
+.spapackage_list_w li del {font-size:15px; color:#999}
+.spapackage_list_w .photo{position:relative; margin-right:32px}
+.spapackage_list_w .photo_last {position:relative}
+
+.spapackage_list_w .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
+.spapackage_list_w .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+.spapackage_list_w .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
+.spapackage_list_w .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+
+.spapackage_list_w img{margin-bottom:5px; width:310px; height:210px; text-align:center}
+.spapackage_list_w .dis_price{font-size:18px; font-weight:800; color:#ff0000; margin-left:7px; font-family:Tahoma;}
+.spapackage_list_w .dis_prices{font-size:16px; font-weight:600; color:#ff0000;}
+.spapackage_list_w .title{padding:5px 15px 5px 15px; font-weight:600; font-size:16px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+.spapackage_list_w .sdi{font-size:12px; color:#8d8d8d; margin-top:5px; line-height:1.6; }
+.spapackage_list_w .sdia{font-size:12px; color:#8d8d8d; margin-top:10px; line-height:1.6;}
+
+.spapackage_list_w .photo_ov{width:250px; height:180px; text-align:center}
+.spapackage_list_w .photo_ov .ov_text {padding-top:60px; width:250px; height:120px; background:#000000; opacity:0.9; filter:alpha(opacity=88); text-align:center}
+.spapackage_list_w .photo_ov .ov_text .name {color:#fd581d; font-size:15px; text-align:center}
+.spapackage_list_w .photo_ov .ov_text .discount_price {color:#fff; font-size:17px; text-align:center; font-weight:bold}
+.spapackage_list_w .mores img {width:1002px; height:38px; margin-top:20px}
+
+/* 테마별국내숙소모음 랜딩 */
+#themeLanding {float:left; padding-bottom:100px; width:100%; background:#fff}
+#themeLanding .busan_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/busan_titBG.jpg) center 0 no-repeat}
+#themeLanding .jeju_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/jeju_titBG.jpg) center 0 no-repeat}
+#themeLanding .lesidence_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/lesidence_titBG.jpg) center 0 no-repeat}
+#themeLanding .pension_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/pension_titBG.jpg) center 0 no-repeat}
+
+#themeLanding .listTit {float:left; margin:20px 0; width:1002px; height:46px; background-color:#4f4f4f}
+#themeLanding .listTit h3 {color:#fff; font-size:16px; line-height:2.8; margin-left:20px; text-align:left}
+#themeLanding .listTit h3 span {color:#fcff00}
+
+#themeLanding .lesidence_listTit {float:left; margin:20px 0; width:1002px; height:46px; background-color:#a38120}
+#themeLanding .lesidence_listTit h3 {color:#fff; font-size:16px; line-height:2.8; margin-left:20px; text-align:left}
+#themeLanding .lesidence_listTit h3 span {color:#fcff00}
+
+#themeLanding .pension_listTit {float:left; margin:20px 0; width:1002px; height:46px; background-color:#c30070}
+#themeLanding .pension_listTit h3 {color:#fff; font-size:16px; line-height:2.8; margin-left:20px; text-align:left}
+#themeLanding .pension_listTit h3 span {color:#fcff00}
+
+#themeLanding .tab_wrap {clear:both; margin:auto; margin-top:15px; width:1002px; font-size:12px}
+#themeLanding .tab_wrap .number {color:#f37720; font-weight:400}
+
+#themeLanding .tab_wrap .keyword {vertical-align:middle; text-align:center; background:#ed5050; color:#fff; font-weight:600; border-top:1px solid #ed5050; border-bottom:1px solid #ed5050}
+#themeLanding .tab_wrap .keyword_txt {box-sizing:border-box; text-align:left; line-height:30px; color:#686868; border-top:1px solid #bbbaba; border-bottom:1px solid #bbbaba; border-right:1px solid #bbbaba; background-color:#f6f6f6; letter-spacing:-1px}
+#themeLanding .tab_wrap .keyword_txt a {padding:10px; color:#686868}
+#themeLanding .tab_wrap .keyword_txt a:hover {text-decoration:underline; color:#ed5050}
+#themeLanding .tab_wrap .keyword_txt .on {text-decoration:underline; color:#ed5050; font-weight:600}
+
+#themeLanding .tab_wrap .localSmall {box-sizing:border-box; text-align:left; line-height:30px; color:#686868; border-top:1px solid #bbbaba; border-bottom:1px solid #bbbaba; border-right:1px solid #bbbaba; background-color:#f6f6f6; letter-spacing:-1px}
+#themeLanding .tab_wrap .localSmall a {float:left; display:inline-block; padding-left:10px; width:100px; color:#686868}
+#themeLanding .tab_wrap .localSmall a:hover {text-decoration:underline; color:#ff620b}
+#themeLanding .tab_wrap .localSmall .on {text-decoration:underline; color:#ff620b; font-weight:600}
+
+/* 우측 지역 메뉴 */
+#theme_right_wing{position:relative; margin:0px auto; width:1002px;}
+#theme_right_wing .right_wing_wrap{position: absolute; right:-170px; top:15px; width:142px; border:1px solid #a4a4a4; background-color:#fbfbfb}
+#theme_right_wing .right_wing_wrap dl {padding:13px 15px; border-bottom:1px solid #e2e2e2; text-align:left}
+#theme_right_wing .right_wing_wrap dt a{color:#f37720; font-weight:bold; font-size:13px; line-height:2.2;}
+#theme_right_wing .right_wing_wrap dd a{font-size:11px; line-height:1.8; color:#696969}
+#theme_right_wing .right_wing_wrap dd.ov a{font-size:11px; line-height:1.8; color:#f37720;  text-decoration:underline;}
+#theme_right_wing .right_wing_wrap dd a:hover{font-size:11px; line-height:1.8; color:#f37720}
+
+/* 탭 */
+#themeLanding .tab_wrap .busan {vertical-align:middle; text-align:center; background:#0c57bd; color:#fff; font-weight:600; border-top:1px solid #0c57bd; border-bottom:1px solid #0c57bd}
+#themeLanding .tab_wrap .jeju {vertical-align:middle; text-align:center; background:#ffad00; color:#fff; font-weight:600; border-top:1px solid #ffad00; border-bottom:1px solid #ffad00}
+
+/* 레지던스 */
+#lesidence_tab_wrap {width:1002px;  margin:auto; text-align:center; margin-top:15px;clear:both; /*font-family:'돋움', Dotum, sans-serif;*/ letter-spacing:0pt}
+#lesidence_tab_wrap .tab_menu {margin:0 auto; width:1002px; height:42px; text-align:center}
+#lesidence_tab_wrap .tab_menu .box_ov {float:left; width:250px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#fff; border-right:1px solid #d6d4d4; background-color:#a38120; letter-spacing:-1.5px}
+#lesidence_tab_wrap .tab_menu .box {float:left; width:249px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#eeeeee; border-right:1px solid #d6d4d4; background-color:#a4a4a4; letter-spacing:-1.5px}
+
+#lesidence_tab_wrap .tab_smenu {margin:0 auto; width:997px; height:190px; text-align:center; border:2px solid #a38120}
+
+#lesidence_tab_wrap .tab_smenu ul.firstm{float:left; width:249px; height:195px;  border-right:1px solid #d6d4d4;}
+#lesidence_tab_wrap .tab_smenu ul.firstm li {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#lesidence_tab_wrap .tab_smenu ul.firstm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#ff620b; text-decoration:underline; font-weight:bold}
+#lesidence_tab_wrap .tab_smenu ul.firstm a:hover li{font-size:12px; color:#ff620b}
+#lesidence_tab_wrap .tab_smenu ul.firstm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#lesidence_tab_wrap .tab_smenu ul.listm{float:left; width:248px;  border-right:1px solid #d6d4d4; height:190px}
+#lesidence_tab_wrap .tab_smenu ul.listm li{font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#lesidence_tab_wrap .tab_smenu ul.listm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#ff620b; text-decoration:underline; font-weight:bold}
+#lesidence_tab_wrap .tab_smenu ul.listm a:hover li{font-size:12px; color:#ff620b}
+#lesidence_tab_wrap .tab_smenu ul.listm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#lesidence_tab_wrap .tab_smenu ul.lastm{float:left; width:248px; height:190px}
+#lesidence_tab_wrap .tab_smenu ul.lastm li{font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#lesidence_tab_wrap .tab_smenu ul.lastm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#ff620b; text-decoration:underline; font-weight:bold}
+#lesidence_tab_wrap .tab_smenu ul.lastm a:hover li{font-size:12px; color:#ff620b}
+#lesidence_tab_wrap .tab_smenu ul.lastm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#pension_tab_wrap {width:1002px;  margin:auto; text-align:center; margin-top:15px;clear:both; /*font-family:'돋움', Dotum, sans-serif;*/ letter-spacing:0pt}
+#pension_tab_wrap .tab_menu {margin:0 auto; width:1002px; height:42px; text-align:center}
+#pension_tab_wrap .tab_menu .box_ov {float:left; width:142px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#fff; border-right:1px solid #d6d4d4; background-color:#c30070; letter-spacing:-1.5px}
+#pension_tab_wrap .tab_menu .box {float:left; width:142px; height:42px; line-height:2.6; font-weight:600; font-size:16px; color:#eeeeee; border-right:1px solid #d6d4d4; background-color:#a4a4a4; letter-spacing:-1.5px}
+
+#pension_tab_wrap .tab_smenu {margin:0 auto; width:997px; height:175px; text-align:center; border:2px solid #c30070}
+
+#pension_tab_wrap .tab_smenu ul.firstm{float:left; width:140px; height:175px;  border-right:1px solid #d6d4d4;}
+#pension_tab_wrap .tab_smenu ul.firstm li {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#pension_tab_wrap .tab_smenu ul.firstm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#ff620b; text-decoration:underline; font-weight:bold}
+#pension_tab_wrap .tab_smenu ul.firstm a:hover li{font-size:12px; color:#ff620b}
+#pension_tab_wrap .tab_smenu ul.firstm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#pension_tab_wrap .tab_smenu ul.listm{float:left; width:142px;  border-right:1px solid #d6d4d4; height:175px; }
+#pension_tab_wrap .tab_smenu ul.listm li{font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#pension_tab_wrap .tab_smenu ul.listm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#ff620b; text-decoration:underline; font-weight:bold}
+#pension_tab_wrap .tab_smenu ul.listm a:hover li{font-size:12px; color:#ff620b}
+#pension_tab_wrap .tab_smenu ul.listm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+#pension_tab_wrap .tab_smenu ul.lastm{float:left; width:141px; height:175px; }
+#pension_tab_wrap .tab_smenu ul.lastm li{font-size:12px;  margin-top:8px; margin-left:16px; text-align:left}
+#pension_tab_wrap .tab_smenu ul.lastm li.ov {font-size:12px;  margin-top:8px; margin-left:16px; text-align:left; color:#ff620b; text-decoration:underline; font-weight:bold}
+#pension_tab_wrap .tab_smenu ul.lastm a:hover li{font-size:12px; color:#ff620b}
+#pension_tab_wrap .tab_smenu ul.lastm .an{clear:both; font-size:11px; color:#fa6c0a}
+
+/*고코투어 앱다운로드 광고랜딩*/
+#appAd {float:left; width:100%; background:#fff}
+#appAd .top {margin:auto; width:1000px; height:103px}
+#appAd .top .logo {margin-top:22px}
+#appAd .top .menu {float:right}
+#appAd .top .menu li {float:left; color:#696868; font-size:18px; line-height:103px; letter-spacing:-0.3px}
+#appAd .top .menu li a {color:#696868; text-decoration:none}
+#appAd .top .menu li a:hover {color:#fa914d}
+#appAd .top .menu .line {margin:0 20px; color:#bbbbbb; font-size:14px}
+#appAd .main {float:left; width:100%; height:619px; background:url(http://img.go.co.kr/landing/appAd_img02.png) no-repeat}
+#appAd .main .wrap {position:relative; margin:auto; width:1000px; text-align:left}
+#appAd .main .wrap .txt {position:absolute; left:0; top:75px}
+#appAd .main .wrap .photo {position:absolute; right:-190px; top:70px}
+#appAd .footer {float:left; width:100%; height:200px; padding-top:20px; background:url(http://img.go.co.kr/landing/appAd_img03.png)}
+#appAd .footer .txt {margin:auto; width:1000px; text-align:center; color:#e3e3e3; font-size:12px}
+
+#appAd_m {float:left; width:100%; background:#fff}
+#appAd_m .top {height:50px; padding:0 10px; font-size:0.875em}
+#appAd_m .top .logo {height:26px; margin-top:12px}
+#appAd_m .top .menu {float:right; color:#696868; line-height:50px; letter-spacing:-1px}
+#appAd_m .top .menu a {color:#696868; text-decoration:none}
+#appAd_m .top .menu a:hover {color:#fa914d}
+#appAd_m .main {position:relative; float:left; width:100%}
+#appAd_m .main .btn {position:absolute; bottom:0; left:0}
+#appAd_m .main .btn img {float:left; width:33.3333%}
+#appAd_m .footer {float:left; width:100%; padding:20px 0; background:url(http://img.go.co.kr/landing/appAd_img03.png)}
+#appAd_m .footer p {padding:0 15px; text-align:center; color:#e3e3e3; font-size:0.563em; letter-spacing:-0.5px}
+
+
+/*고코투어 친구추천 광고랜딩*/
+#friendAd {float:left; width:100%; background:#fff}
+#friendAd .top {margin:auto; width:1000px; height:103px}
+#friendAd .top .logo {margin-top:22px}
+#friendAd .top .menu {float:right}
+#friendAd .top .menu li {float:left; color:#696868; font-size:16px; line-height:103px; letter-spacing:-0.3px}
+#friendAd .top .menu li a {color:#696868; text-decoration:none}
+#friendAd .top .menu li a:hover {color:#fa914d}
+#friendAd .top .menu .line {margin:0 20px; color:#bbbbbb; font-size:14px}
+#friendAd .main {margin:0 auto; width:100%; height:619px;background:url('http://img.go.co.kr/landing/friendAd_img02.png') center no-repeat;}
+#friendAd .main .wrap {clear:both;position:relative; margin:auto; width:1000px;height:100%; text-align:left; color:#d7f5ff;}
+
+
+#friendAd .contents_img{width:100%;background:#d7f5ff;}
+#friendAd .contents_img img{display:block;width:996px;margin:0 auto;}
+#friendAd .main .wrap .txt {position:absolute; left:-100px; top:0px }
+#friendAd .main .wrap .photo {position:absolute; right:-78px; top:0px}
+#friendAd .wrap_notice {position:relative; margin:auto; width:100%; text-align:left; background-color:#dedede;}
+#friendAd .wrap_notice img{display:block;width:997px;margin:0 auto;}
+#friendAd .footer {float:left; width:100%; height:210px; padding-top:20px;background:url('http://img.go.co.kr/landing/friendAd_img03.png') repeat; }
+#friendAd .footer .txt {margin:auto; width:1000px; text-align:center; color:#e3e3e3; font-size:12px}
+
+
+#friendAd_take {float:left; width:100%; background:#fff}
+#friendAd_take .top {margin:auto; width:1000px; height:103px}
+#friendAd_take .top .logo {margin-top:22px}
+#friendAd_take .top .menu {float:right}
+#friendAd_take .top .menu li {float:left; color:#696868; font-size:16px; line-height:103px; letter-spacing:-0.3px}
+#friendAd_take .top .menu li a {color:#696868; text-decoration:none}
+#friendAd_take .top .menu li a:hover {color:#fa914d}
+#friendAd_take .top .menu .line {margin:0 20px; color:#bbbbbb; font-size:14px}
+#friendAd_take .main {margin:0 auto; width:100%; height:410px;background:#00bff3}
+#friendAd_take .main .wrap {clear:both;position:relative; margin:auto; width:1000px;height:100%; text-align:left; color:#d7f5ff;}
+
+#friendAd_take .contents_img{width:100%;background:#d7f5ff;}
+#friendAd_take .contents_img img{display:block;width:996px;margin:0 auto;}
+#friendAd_take .main .rwing {position:fixed; left: 50%; right: 50%; top: 175px; margin-left: 520px;}
+#friendAd_take .main .txt {width: 100%;text-align: center; }
+#friendAd_take .main .Bgray {width: 100%; float:left; text-align: center; background: #eee}
+#friendAd_take .main .Bgray2 {width: 100%;  float:left; text-align: center; background: #dedede}
+#friendAd_take .footer {float:left; width:100%; height:210px; padding-top:20px;background:url('http://img.go.co.kr/landing/friendAd_img03.png') repeat; }
+#friendAd_take .footer .txt {margin:auto; width:1000px; text-align:center; color:#e3e3e3; font-size:12px}
+
+#friendAd_pop {width:100%; height:auto; float:left; margin-top:220px; position:fixed; z-index:99999}
+#friendAd_pop .box {width:560px; height:auto; background-color:#fff; margin:auto;}
+#friendAd_pop .box .top {width:560px; height:64px; background-color:#fa6b0a;}
+#friendAd_pop .box .top .logo {margin-top:12px; float:left; margin-left:20px;}
+#friendAd_pop .box .top .close {margin-top:20px; float:right; margin-right:20px;}
+#friendAd_pop .box .contents {width:560px; height:180px; text-align:center;}
+#friendAd_pop .box .contents p {font-size:22px; color:#282828; margin-top:30px;}
+#friendAd_pop .box .contents input {float:left; width: 314px; height: 50px; border:3px solid #fa6b0a; font-size: 16px; color:#aaaaaa; text-align: center; line-height:50px; margin-left: 68px; margin-top: 20px;}
+#friendAd_pop .box .contents .bt {float:left; margin-top: 20px;}
+#friendAd_pop .box .footer_n {width: 520px;height: auto;background-color: #f0f0f0;text-align: left;padding: 20px 20px 20px 20px;}
+#friendAd_pop .box .footer_n p {font-size:14px; color:#565656;}
+
+
+
+/* 연말연휴테마 */
+
+#year_end {width:100%; height:357px;  margin:auto;}
+#year_end .main01 {background:url(http://img.go.co.kr/landing/year_ski_01.jpg) center 0 no-repeat; width:100%; height:357px; margin-top:49px; }
+#year_end .main02 {background:url(http://img.go.co.kr/landing/year_waterpark_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
+#year_end .main03 {background:url(http://img.go.co.kr/landing/year_spa_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
+#year_end .main04 {background:url(http://img.go.co.kr/landing/year_sun_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
+#year_end .tab_wrap {background-color:#f4f2f3; padding-top:20px; paddign-bottom:20px;}
+#year_end .tab_wrap ul {position:relative; width:1002px; height:45px; text-align:center; letter-spacing:-0.5px; margin:auto; border:1px solid #c8c8c8; background-color:#fff;  clear:both; }
+#year_end .tab_wrap ul li {position:relative; float:left; display:inline-block; width:180px; height:45px; line-height:45px; text-align:center; border-right:1px solid #c8c8c8; color:#595858; font-size:14px; font-weight:600;  }
+#year_end .tab_wrap ul a:hover {position:relative; float:left; width:180px; height:45px;  border-right:1px solid #c8c8c8; color:#595858; background-color:#CCC; }
+#year_end .tap_title {position:absolute; float:left; padding-top:299px; width:100%; }
+#year_end div{text-align:center;}
+#year_end .title  {position:relative; float:left; padding-top:55px; padding-bottom:25px; width:100%; background:#f4f2f3;}
+
+#year_end .product_area {position:relative; float:left; width:100%;background:#f4f2f3;}
+#year_end .product_area .box ul {overflow:hidden; width:1002px; text-align:center; letter-spacing:-0.5px; margin:auto;}
+#year_end .product_area .box .bottom {margin-bottom:100px;}
+#year_end .product_area .box ul li {position:relative; float:left; display:inline-block; width:240px; height:345px; margin-right:8px; background:#fff; border:1px solid #c8c8c8; text-align:center;}
+#year_end .product_area .box ul a:hover li {position:relative; float:left; margin-right:8px; width:240px; height:343px; border:1px solid #ff4800; text-align:center; }
+#year_end .product_area .box ul li img {position:relative; width:240px; height:240px; margin-right:32px;  text-align:center; }
+#year_end .product_area .box ul li p.t01 {overflow:hidden; height:20px; margin-top:12px; color:#333; font-size:20px; font-weight:600; line-height:20px; text-align:center;}
+#year_end .product_area .box ul li p.t02 {overflow:hidden; height:17px; margin-top:12px; margin-right:10px; color:#777; font-size:15px; line-height:1.0; text-align:right; text-decoration:line-through; }
+#year_end .product_area .box ul li p.t03 {margin-top:-6px; margin-right:10px; margin-bottom:6px; text-align:right;  color:ff630e; font-family:Tahoma;}
+#year_end .product_area .box ul li p.t03 strong {font-size:25px; font-weight:600;}
+#year_end .product_area .box ul li p.t03 span {font-size:16px;}
+#year_end .product_area .box ul li p.t04 {position:absolute; margin-top:-62px;  margin-left:20px; margin-bottom:25px; text-align:left; color:#ff4800; font-family:Tahoma;}
+#year_end .product_area .box ul li p.t04 strong {font-size:38px;  font-weight:200;}
+#year_end .product_area .box ul li p.t04 span {font-size:24px;}

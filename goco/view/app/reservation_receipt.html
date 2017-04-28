@@ -8,34 +8,43 @@
 
 	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css"/>
 	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css"/>
-	<!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css"/> -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css"/>
 	<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
-	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">
+	<!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css"> -->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 	<style>
-	#reserve_complete {height: auto;}
+
+		/* #reserve_complete p .orange20 {font-size: 17px;}
+		#reserve_complete p {font-size: 12px;}
+		#reserve_complete p .black18 {font-size: 15px; margin-bottom: 15px; display: block; margin-bottom: 10px;} */
+
+		/* 앱 에약완료관련상품노출_170419_강혜준 */	
+		#reserve_complete {height: auto;}
 		.more-box {position: relative;}
 		.more-box .row-th {color: #fff; height: 40px; background: #ff6000; font-size: 14px; background: #ff6000; text-align: center; line-height: 2.8em;}
+		.more-box .list-box {}
+		.more-box .list-box li {position: relative; padding: 5px; border-bottom: 1px solid #d5d5d5;}
+		.more-box .list-box li > div {float: left; position: relative;}
+		.more-box .list-box li > a.link-a {position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+		.more-box .figure {}
+		.more-box .figure img {width: 90px; height: 80px;}
+		.more-box .figure .recommend {position: absolute; bottom: 0px; color: #fff; font-size: 10px; line-height: 1.3em; display: block; background: #12b4c1; text-align: center; width: 100%; height: 16px;}
+		.more-box .con-area {margin-left: 8px; width: 68%; height: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+		.more-box .con-area .title {font-size: 14px; color: #313131; line-height: 1.5em; font-weight: 600; font-family: "Nanum Gothic", "Malgun Gothic";}
+		.more-box .con-area .text {font-size: 11px; color: #b4b4b4; line-height: 1.2em;}
+		.more-box .con-area .wra {position: relative; margin-top: 4px; text-align: right;}
+		.more-box .con-area .wra .icon {position: absolute; left: 0; top: 6px;}
+		.more-box .con-area .wra .icon img {height: 15px;}
+		.more-box .price {position: absolute; display: block; width: 40%; top: 44px; right: 8px; text-align: right;}
+		.more-box .highprice {font-size: 12px; color: #747474; letter-spacing: -1px;}
+		.more-box .lowprice {color: #f15a53; font-weight: 600; font-family: "Nanum Gothic"; letter-spacing: -2px;}
 		.more-box .btn-wrap {position: relative; text-align: center; height: 36px; background: #f4f2f3; border-top: 1px solid #cacaca;}
 		.more-box .btn-wrap .btn-a {display: block; width: 100%; height: 100%; color: #313131; font-size: 13px; font-weight: 600; line-height: 2.6em;}
 		.more-box .btn-wrap .btn-a .gt {position: relative; top: -1px; font-size: 10px; color: #ff6000; font-family: "Nanum Gothic", "Malgun Gothic"; font-weight: 800;}
-		.more-box .list-box {padding: 15px 5px 5px 5px; border-bottom: 1px solid #cacaca;}
-		.more-box .list-box > div {float: left; position: relative;}
-		.more-box .figure {}
-		.more-box .figure img {width: 90px; height: 80px;}
-		.more-box .figure .recommend {position: absolute; bottom: 0px; color: #fff; font-size: 10px; line-height: 1.2em; display: block; background: #12b4c1; text-align: center; width: 100%; height: 14px;}
-		.more-box .con-area {margin-left: 10px; width: 210px;}
-		.more-box .con-area > a {position: absolute; width: 100%; height: 100%;}
-		.more-box .con-area .title {font-size: 14px; line-height: 1.8em;}
-		.more-box .con-area .text {font-size: 11px; color: #b4b4b4; line-height: 1.2em;}
-		.more-box .con-area .wra {position: relative; margin-top: 5px; text-align: right;}
-		.more-box .con-area .wra .icon {position: absolute; left: 0;}
-		.more-box .con-area .wra .highprice {}
-		.more-box .con-area .wra .lowprice {}
 	</style>
 
 </head>
@@ -44,188 +53,199 @@
 				<div id="scroll_box">
 
 					<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
-						<!-- 서브페이지 상단 -->
-						<div id="headTitle"><span class="back"><a href="javascript:history.back(-1)"><img src="http://img.go.co.kr/mobile/btn_back.png" width="47" height="15" alt="뒤로"></a></span>결제</div>				
-					</div>
-					<div id="top_box_bottom" style="height: 46px;"></div>
-					<div id="reserve_complete">
-						<p>
-							<span class="orange20">예약이 정상적으로 접수되었습니다.</span><br>
-							입력하신 메일 주소로 예약 정보가 발송되었습니다.<br>
-							인원 조정 등 예약 사항 변경을 원하실 경우<br>
-							미리 연락 주시면 성심껏 도와드리겠습니다.<br>
-							<span class="black18"><img src="http://img.go.co.kr/mobile/icon_tell.jpg" width="24"> 문의전화:1666-1243</span>
-						</p>
+						
 					</div>
 
 					<!-- 추가영역 -->
 					<div class="clr"></div>
 					<div class="more-box clr">
 						<div class="row-th">예약하신 주변에 이런상품은 어떠세요?</div>
-						<div class="list-box clr">
-							<div class="figure">
-								<a href="">
+						<ul class="list-box">
+							<li class="item-1 clr">
+								<div class="figure">
 									<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img3/1482901054_main1.jpg">
 									<span class="recommend">추천상품</span>
-								</a>
-							</div>
-							<div class="con-area">
-								<p class="title">여수 해상케이블카</p>
-								<p class="text">전남 여수시 돌산읍 우두리 794-89</p>
-								<div class="wra clr">
-									<span class="icon">
-										<img src="http://img.go.co.kr/mobile/icon_ticket.png" height="17px"> 
-										<img src="http://img.go.co.kr/mobile/icon_experience.png" height="17px">
-									</span>
-									<span class="price" style="text-align:right;padding-right:10px">
-										<del class="highprice">7,500원</del>
-										<span class="lowprice">6,500원</span>
-									</span>			
+								</div>
+								<div class="con-area">
+									<p class="title">여수 해상케이블카</p>
+									<p class="text">전남 여수시 돌산읍 우두리 794-89</p>
+									<div class="wra clr">
+										<span class="icon">
+											<img src="http://img.go.co.kr/mobile/icon_ticket.png"> 
+											<img src="http://img.go.co.kr/mobile/icon_experience.png">
+										</span>
 									</div>
 								</div>
+								<span class="price">
+									<del class="highprice">7,500원</del>
+									<span class="lowprice">6,500원</span>
+								</span>		
 								<a class="link-a" href=""></a>
-							</div>
-						</div>
+							</li>
+							<li class="item-2 clr">
+								<div class="figure">
+									<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img3/1482131341_main1.jpg">
+									<span class="recommend">추천상품</span>
+								</div>
+								<div class="con-area">
+									<p class="title">원마운트 워터파크 이용권</p>
+									<p class="text">경기 고양시 일산서구 대화동 2606</p>
+									<div class="wra clr">
+										<span class="icon">
+											<img src="http://img.go.co.kr/mobile/icon_ticket.png"> 
+											<img src="http://img.go.co.kr/mobile/icon_park.png">
+										</span>
+									</div>
+										
+								</div>
+								<span class="price">
+									<del class="highprice">30,000원</del>
+									<span class="lowprice">13,000원</span>
+								</span>
+								<a class="link-a" href=""></a>
+							</li>
+						</ul>
 						<div class="btn-wrap"><a href="" class="btn-a">더 많은 상품 보러가기 <span class="gt">&gt;</span></a></div>
 					</div>
-					<div class="clr"></div>
-					<!-- 추가영역 끝-->
+				</div>
+				<div class="clr"></div>
+				<!-- 추가영역 끝-->
 
-					<table id="reserve_table">
+				<table id="reserve_table">
 
-						<colgroup>
-						<col width="30%">
-						<col width="70%">
-					</colgroup>
-					<tbody>
-						<tr>
-							<td colspan="2" class="reserve_title" align="center" height="35">예약자 정보</td>
-						</tr>
-						<tr>
-							<th height="50" class="t_left">예약날짜</th>
-							<td>2017년 04월 19일</td>
-						</tr>
+					<colgroup>
+					<col width="30%">
+					<col width="70%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<td colspan="2" class="reserve_title" align="center" height="35">예약자 정보</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">예약날짜</th>
+						<td>2017년 04월 19일</td>
+					</tr>
 
-						<tr>
-							<th height="50" class="t_left">예약자</th>
-							<td>디자인팀테스트</td>
-						</tr>
+					<tr>
+						<th height="50" class="t_left">예약자</th>
+						<td>디자인팀테스트</td>
+					</tr>
 
+					<tr>
+						<th height="50" class="t_left">연락처</th>
+						<td>010-7766-9354</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">이메일</th>
+						<td>vxggangxv@naver.com</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">요청사항</th>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="reserve_title" align="center" height="35">결제 정보</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">상품정보</th>
+						<td><b>[단품]</b> 가평 박하사탕 펜션</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">주소</th>
+						<td>경기 가평군 가평읍 이화리 326-2</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">이용날짜</th>
+						<td>2017.06.15 (목) ~ 2017.06.16 (금)</td>
+					</tr>
+					<tr>
+						<th height="50" class="t_left">이용인원</th>
+						<td><b>[객실1]</b> 1명<br>
+						</td></tr>
 						<tr>
-							<th height="50" class="t_left">연락처</th>
-							<td>010-7766-9354</td>
+							<th height="50" class="t_left">객실명</th>
+							<td>딸기사탕</td>
 						</tr>
 						<tr>
-							<th height="50" class="t_left">이메일</th>
-							<td>vxggangxv@naver.com</td>
+							<th height="50" class="t_left">객실수</th>
+							<td>1실</td>
 						</tr>
 						<tr>
-							<th height="50" class="t_left">요청사항</th>
+							<th height="50" class="t_left">베드타입</th>
 							<td></td>
 						</tr>
 						<tr>
-							<td colspan="2" class="reserve_title" align="center" height="35">결제 정보</td>
+							<th height="50" class="t_left">결제수단</th>
+							<td class="payment_method">
+								가상계좌<span class="black3"> (국민은행 : 60539014642687)<br>예금주:(주)바로네트웍스</span>
+								<form name="va_form" id="va_form">
+									<input type="hidden" name="encrypt" value="0">
+									<input type="hidden" name="mode" value="Xx8fUDNV">
+									<input type="hidden" name="rnum" value="EUp1FmwW">
+									<input name="va_tel" title="휴대폰번호" class="input2" id="va_tel" style="margin-top:10px; padding-left:10px; width: 110px; height:30px; border:1px solid #ebebeb" type="text" maxlength="15" placeholder="" value="01077669354">
+								</form>
+
+								<p class="bankSMS" style="margin-bottom:15px;width:80%"><a href="javascript:mem.va_sms();">계좌번호 SMS전송</a></p>
+
+							</td>
 						</tr>
 						<tr>
-							<th height="50" class="t_left">상품정보</th>
-							<td><b>[단품]</b> 가평 박하사탕 펜션</td>
+							<th height="50" class="t_left">총 이용 금액</th>
+							<td>
+								<span class="black"><b>84,400원</b></span>
+							</td>
 						</tr>
 						<tr>
-							<th height="50" class="t_left">주소</th>
-							<td>경기 가평군 가평읍 이화리 326-2</td>
+							<th height="50" class="t_left">VAT,봉사료,예약수수료</th>
+							<td>17,800원</td>
+						</tr>
+
+						<tr>
+							<th height="50" class="t_left">결제금액</th>
+							<td class="payment_method">
+								<span class="sum">102,200</span>원
+							</td>
 						</tr>
 						<tr>
-							<th height="50" class="t_left">이용날짜</th>
-							<td>2017.06.15 (목) ~ 2017.06.16 (금)</td>
-						</tr>
-						<tr>
-							<th height="50" class="t_left">이용인원</th>
-							<td><b>[객실1]</b> 1명<br>
-							</td></tr>
+							<th colspan="2" height="50" class="t_left">취소수수료
+							</th></tr>
 							<tr>
-								<th height="50" class="t_left">객실명</th>
-								<td>딸기사탕</td>
-							</tr>
-							<tr>
-								<th height="50" class="t_left">객실수</th>
-								<td>1실</td>
-							</tr>
-							<tr>
-								<th height="50" class="t_left">베드타입</th>
-								<td></td>
-							</tr>
-							<tr>
-								<th height="50" class="t_left">결제수단</th>
-								<td class="payment_method">
-									가상계좌<span class="black3"> (국민은행 : 60539014642687)<br>예금주:(주)바로네트웍스</span>
-									<form name="va_form" id="va_form">
-										<input type="hidden" name="encrypt" value="0">
-										<input type="hidden" name="mode" value="Xx8fUDNV">
-										<input type="hidden" name="rnum" value="EUp1FmwW">
-										<input name="va_tel" title="휴대폰번호" class="input2" id="va_tel" style="margin-top:10px; padding-left:10px; width: 110px; height:30px; border:1px solid #ebebeb" type="text" maxlength="15" placeholder="" value="01077669354">
-									</form>
+								<td colspan="2"><table cellpadding="0" cellspacing="0" style="text-align: center; margin: 10px 0px 40px; width: 100%" width="450"><tbody><tr><th height="30" style="border-bottom-style: solid;border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; background: rgb(228,227,227); height: 30px; border-right-color:rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none;text-align:center">취소일</th><th style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; background: rgb(228,227,227); height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none;text-align:center">취소수수료</th></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 5~7일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none"><p>전체 금액의 10%</p></td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 4일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 20%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 3일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 30%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 2일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 50%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 1일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 70%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 0일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 100%</td></tr></tbody></table></td></tr>
+							</tbody>
+						</table>
 
-									<p class="bankSMS" style="margin-bottom:15px;width:80%"><a href="javascript:mem.va_sms();">계좌번호 SMS전송</a></p>
+						<div id="reserve_guide">
+							<p>
+								<span class="title">※안내</span><br>
+								1. 예약 접수[결제] 후에 고코투어 담당자가 숙박업체의 객실 예약
+								가능 여부 확인 후 <span class="strong">예약 확정 안내 문자</span>를 발송해드립니다.<br><br>
 
-								</td>
-							</tr>
-							<tr>
-								<th height="50" class="t_left">총 이용 금액</th>
-								<td>
-									<span class="black"><b>84,400원</b></span>
-								</td>
-							</tr>
-							<tr>
-								<th height="50" class="t_left">VAT,봉사료,예약수수료</th>
-								<td>17,800원</td>
-							</tr>
+								2. 예약 접수[결제] 후에도 객실이 마감되어 
+								결제가 자동 취소될 수 있습니다. <span class="strong">[취소 시 유선/문자통보]</span><br><br>
 
-							<tr>
-								<th height="50" class="t_left">결제금액</th>
-								<td class="payment_method">
-									<span class="sum">102,200</span>원
-								</td>
-							</tr>
-							<tr>
-								<th colspan="2" height="50" class="t_left">취소수수료
-								</th></tr>
-								<tr>
-									<td colspan="2"><table cellpadding="0" cellspacing="0" style="text-align: center; margin: 10px 0px 40px; width: 100%" width="450"><tbody><tr><th height="30" style="border-bottom-style: solid;border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; background: rgb(228,227,227); height: 30px; border-right-color:rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none;text-align:center">취소일</th><th style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; background: rgb(228,227,227); height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none;text-align:center">취소수수료</th></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 5~7일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none"><p>전체 금액의 10%</p></td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 4일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 20%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 3일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 30%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 2일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 50%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 1일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 70%</td></tr><tr><td height="30" style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">이용일 0일전</td><td style="border-bottom-style: solid; border-bottom-color: rgb(200,200,200); padding-bottom: 0px; border-top-color: rgb(200,200,200); border-left-style: solid; padding-left: 0px; padding-right: 0px; border-top-style: solid; height: 30px; border-right-color: rgb(200,200,200); border-right-style: solid; border-left-color: rgb(200,200,200); padding-top: 0px; border-image-source: none">전체 금액의 100%</td></tr></tbody></table></td></tr>
-								</tbody>
-							</table>
+								3. 무통장 입금 시 <span class="strong">예약일 기준 익일 오후 5시까지 
+								입금</span>이 완료되지 않으면 예약이 자동 취소되오니, 이 점 
+								유의하시기 바랍니다.<br><br>
 
-							<div id="reserve_guide">
-								<p>
-									<span class="title">※안내</span><br>
-									1. 예약 접수[결제] 후에 고코투어 담당자가 숙박업체의 객실 예약
-									가능 여부 확인 후 <span class="strong">예약 확정 안내 문자</span>를 발송해드립니다.<br><br>
+								4. 예약 접수를 위한 결제는 보다 빠른 예약 진행을 위하여
+								불가피하게 이루어지는 부분이므로 고객님의 양해 부탁드립니다.
 
-									2. 예약 접수[결제] 후에도 객실이 마감되어 
-									결제가 자동 취소될 수 있습니다. <span class="strong">[취소 시 유선/문자통보]</span><br><br>
+							</p>
+						</div>			
 
-									3. 무통장 입금 시 <span class="strong">예약일 기준 익일 오후 5시까지 
-									입금</span>이 완료되지 않으면 예약이 자동 취소되오니, 이 점 
-									유의하시기 바랍니다.<br><br>
+						<div id="btn">
+							<a href="/home/main/"><img src="http://img.go.co.kr/mobile/icon_home.jpg" width="24px" alt="메인으로"> 메인으로 &gt;</a>
+						</div>
 
-									4. 예약 접수를 위한 결제는 보다 빠른 예약 진행을 위하여
-									불가피하게 이루어지는 부분이므로 고객님의 양해 부탁드립니다.
+						<style>
+							#reserve_table td {border-bottom:1px solid #d2d2d2}
+						</style>
 
-								</p>
-							</div>			
-
-							<div id="btn">
-								<a href="/home/main/"><img src="http://img.go.co.kr/mobile/icon_home.jpg" width="24px" alt="메인으로"> 메인으로 &gt;</a>
-							</div>
-
-							<style>
-								#reserve_table td {border-bottom:1px solid #d2d2d2}
-							</style>
-
-							<!-- 전환페이지 설정 -->
-							<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script> 
-							<script type="text/javascript">
-								var _nasa={};
-			 _nasa["cnv"] = wcs.cnv("1","102200"); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고
+						<!-- 전환페이지 설정 -->
+						<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script> 
+						<script type="text/javascript">
+							var _nasa={};
+		 _nasa["cnv"] = wcs.cnv("1","102200"); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고
 			</script> 
 
 

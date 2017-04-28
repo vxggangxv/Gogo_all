@@ -3,7 +3,7 @@
 @import url(../proceeds/reset_custom.css);
 
 body {font-family: "Nanum Gothic", sans-serif; color: #333; letter-spacing: -0.7px;}
-img {display: block;}
+/* img {display: block;} */
 a {color: #333;}
 i {font-style: italic;}
 

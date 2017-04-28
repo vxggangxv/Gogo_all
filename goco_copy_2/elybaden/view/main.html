@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang=ko>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>온천엘리바덴</title>
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/reset.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/swiper.min.css" />
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/common.css">
+<link rel="stylesheet" href="http://static.cablecar.go.co.kr/css/main.css">
+<link rel="stylesheet" href="../src/css/elybaden.css" />
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/swiper.min.js"></script>
+<script type="text/javascript" src="http://static.cablecar.go.co.kr/js/common.js"></script>
+</head>
+<body>
+	<div id="Wrapper" class="wrap">
+		<header class="main">
+			<h1 class="logo">덕구온천</h1>
+			<a href="#" class="buy_list">구매내역</a>
+		</header>
+		<div class="main_banner swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+				<li class="swiper-slide"><img src="../src/img/main_banner01.jpg" alt="" /></li>
+			</ul>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.main_banner', {
+				prevButton : '.swiper-button-prev',
+				nextButton : '.swiper-button-next'
+			});
+		</script>
+		<div class="datepic">
+			<div class="date_area">
+				<strong>이용일자 선택</strong>
+				<p>2017.04.06(목)</p>
+			</div>
+			<div class="calendar" style="display:none;">
+				<span class="top_txt">이용일 선택</span>
+				<div class="month">
+					<span>2017.04</span>
+					 <button class="prev">이전 달</button>
+					 <button class="next">다음 달</button>
+				</div>
+				<table>
+					<caption>달력</caption>
+					<colgroup>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+						<col style="width:14.3%;"/>
+
+						</address>
+						<col style="width:14.3%;"/>
+						<col style="width:*;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="selected"><span>26</span></td>
+							<td class="selected"><span>27</span></td>
+							<td class="selected"><span>28</span></td>
+							<td class="selected"><span>29</span></td>
+							<td class="selected"><span>30</span></td>
+							<td class="selected"><span>31</span></td>
+							<td class="selected"><span>1</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+							<td class="selected"><span>7</span></td>
+							<td class="selected"><span>8</span></td>
+						</tr>
+						<tr>
+							<td class="selected"><span>9</span></td>
+							<td><span>10</span></td>
+							<td><span>11</span></td>
+							<td><span>12</span></td>
+							<td><span>13</span></td>
+							<td class="select"><span>14</span></td>
+							<td><span>15</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>16</span></td>
+							<td><span>17</span></td>
+							<td><span>18</span></td>
+							<td><span>19</span></td>
+							<td><span>20</span></td>
+							<td><span>21</span></td>
+							<td><span>22</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>23</span></td>
+							<td><span>24</span></td>
+							<td><span>25</span></td>
+							<td><span>26</span></td>
+							<td><span>27</span></td>
+							<td><span>28</span></td>
+							<td><span>29</span></td>
+						</tr>
+						<tr>
+							<td class="week"><span>30</span></td>
+							<td class="selected"><span>1</span></td>
+							<td class="selected"><span>2</span></td>
+							<td class="selected"><span>3</span></td>
+							<td class="selected"><span>4</span></td>
+							<td class="selected"><span>5</span></td>
+							<td class="selected"><span>6</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_area">
+					<a href="#" class="btn btn_type01">이용일 선택완료</a>
+				</div>
+				<a href="#" class="btn_close">닫기</a>
+			</div>
+		</div>
+		<div class="section">
+			<p class="accordion">
+				<span>펼쳐보기</span>
+			</p>
+			<div class="area">
+				<div class="box item">
+					<div class="tiket">
+						<p>주중/주말 종일권</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">27,000</span> <strong>17,900</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주중/주말 종일권</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">27,000</span> <strong>17,900</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주중/주말 종일권</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">27,000</span> <strong>17,900</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주중/주말 종일권</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">27,000</span> <strong>17,900</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주중/주말 종일권</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">27,000</span> <strong>17,900</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+				<div class="box item">
+					<div class="tiket">
+						<p>주중/주말 종일권</p>
+					</div>
+					<div class="option">
+						<ul class="blt_type01">
+							<li>2017.04.11 ~ 2017.05.31</li>
+							<li>대인,소인 공통</li>
+							<li><span class="discount">27,000</span> <strong>17,900</strong>원</li>
+						</ul>
+						<div class="count">
+							<button>-</button>
+							<span>0</span>
+							<button>+</button>
+						</div>
+						<span class="price">0원</span>
+					</div>
+				</div>
+			</div>
+			<div class="area">
+				<div class="box intro">
+					<div class="group">
+						<img src="../src/img/img_elybaden01.jpg" alt="온천엘리바덴 사진" />
+						<p>
+							<strong>온천 올리바덴은</strong><br>
+							Elysium(지상낙원)+Baden(유럽의 온천)<br>
+							지상에서 가장 이상적인 유럽형 워터파크입니다.
+						</p>
+					</div>
+					<p class="view_point"><strong>Check Point</strong></p>
+					<div class="group">
+						<img src="../src/img/img_elybaden02.jpg" alt="온천엘리바덴 사진" />
+						<p>지하 999m 아래의 태고적 물을 정수처리 과정없이 그대로 사용할 수 있는 국내 최고의 유황 온천수 온천!</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_elybaden03.jpg" alt="온천엘리바덴 사진" />
+						<p>독일식 水치료가 이루어지는 대형 바데풀에서 다양한 압력의 물줄기와 공기방울의 水치료를 직접 느껴보세요</p>
+					</div>
+					<div class="group">
+						<img src="../src/img/img_elybaden04.jpg" alt="온천엘리바덴 사진" />
+						<p>
+							황토 불가마,아이스 방, 히말라야 소금방 등<br>
+							다양한 향과 분위기로 피로를 떨쳐버리세요
+						</p>
+					</div>
+				</div>
+				<div class="box guide">
+					<p class="guide_txt"><strong>올리바덴 시설 안내</strong></p>
+					<ul class="guide_list">
+						<li class="parking">선배드존</li>
+						<li class="food">푸드코트</li>
+						<li class="fastfood">휴게시설</li>
+						<li class="cafe">패밀리룸</li>
+						<li class="market">휘트니스</li>
+					</ul>
+				</div>
+				<div class="box contact">
+					<div class="map">
+						<div>
+		 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.5076116216824!2d128.54578035102568!3d35.81201953029764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565fb389ff5cedf%3A0x369c11dc768fd3bf!2z64yA6rWs6rSR7Jet7IucIOuLrOyEnOq1rCDsg4Hsnbjrj5kgMTU1OA!5e0!3m2!1sko!2skr!4v1492743140026" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+						</div>
+					</div>
+					<div class="address">
+						<p>대구 달서구 상인동 1558</p>
+						<button class="copy">주소복사</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="info">
+			<li>
+				<p class="info_tit">입장권 사용방법</p>
+				<ul class="blt_type02">
+					<li>상품 구매</li>
+					<li>구매내역에서 바코드 보기 확인</li>
+					<li>이용당일 매표소에서 모바일 티켓(바코드) 제시후 입장</li>
+					<li>온천 올리바덴 이용</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">기본 정보</p>
+				<ul class="info_list">
+					<li>
+						<span>이용시간</span>
+						<p>
+							평일 10:00 ~ 17:30<br>
+							주말 09:00 ~ 19:00
+						</p>
+					</li>
+					<li>
+						<span>이용안내</span>
+						<p>티켓팅 시간으로부터 12시간동안 이용가능</p>
+					</li>
+					<li>
+						<span>무료입장</span>
+						<p>24개월 미만 유아(의료보험증등 증빙서류 지참시)</p>
+					</li>
+					<li>
+						<span>특이사항</span>
+						<p>
+							주중/주말 종일권, 주말/공휴일 오후권은 워터파크+찜질방 포함 상품입니다.(찜질복대여비 별도)<br>
+							주중/주말 찜질광장12시간 이용권 옵션은 워터파크 미포함 상품입니다.(찜질복대여비 포함)<br>
+							5세이상 또는 신장 100cm 이상의 유아는 혼욕이 불가합니다.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">이용안내</p>
+				<ul class="blt_type01">
+					<li>워터파크 구매 후 이용시 찜질복을 대여하시면, 찜질광장을 무료로 이용이 가능합니다.(찜질복 대여료 :1,000원)</li>
+					<li>찜질광장 이용권은 찜질복대여비 포함입니다.</li>
+					<li>수영복 및 수영모(야구모자가능) 착용 필수. 방수 비치웨어 하의 / 캡모자/ 티셔츠 착용가능 (선캡착용불가)</li>
+					<li>
+						신장 150cm 이하는 안전을 위해 구명조끼 착용필수(지참및 현장 별도대여 가능)<br>
+						구명조끼 대여료 5,000원 (보증금 3,000원 별도)
+					</li>
+					<li>5세이상 어린이또는 아동의 키가 100cm 넘을 경우 혼욕이 불가합니다</li>
+					<li>입장이후 12시간 초과시, 1시간마다 1,000원 추가요금이 발생합니다.</li>
+					<li>워터파크 입장권은 당일권으로, 워터파크 입장 운영시간에 한하여 입장 및 발권 가능합니다</li>
+					<li>고객님들의 안전과 수질보호를 위해 입장전 소지품 검사를 실시하오니 이점 양해부탁드립니다.</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">복장안내</p>
+				<ul class="blt_type01">
+					<li>수영복 및 수모(야구모자가능)를 반드시 착용해야합니다.</li>
+					<li>방수재질의 비치웨어 하의와 캡모자 및 티셔츠는 착용 가능합니다.(선캡착용불가)</li>
+					<li>물빠짐이 우려되는 청재질의 반바지와 속옷은 착용 불가합니다.</li>
+				</ul>
+			</li>
+			<li class="rental">
+				<p class="info_tit">렌탈요금 안내</p>
+				<ul class="ico_list">
+					<li class="ico01">튜브 대여료:5,000원+보증금 3,000원</li>
+					<li class="ico02">구명조끼 대여료:5,000원+보증금 3,000원</li>
+					<li class="ico03">선배드 대여료:9,000원+보증금 3,000원</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">유의사항</p>
+				<ul class="blt_type01">
+					<li>
+						입장 이후 추가요금으로 인해 변경 되지 않으며,입장 이후 품목은 변경되지 않습니다.<br>
+						ex) 찜질광장 &rarr; 워터파크 , 워터파크 &rarr; 찜질광장
+					</li>
+					<li>날씨 및 현장 상황으로 운영시간이 변경될 수 있습니다.</li>
+					<li>워터파크는 당일에만 사용이 가능하며, 전일저녁에 입장하여, 다음날 오전 워터파크 사용은 불가 합니다.</li>
+					<li>
+						유황온천 이용시 &quot;은&quot; 등의 귀금속 착용을 금지 합니다.<br>
+						(유황과 반응하여 변색의 우려가 있음)
+					</li>
+					<li>수질보호를 위해 실내/외풀에서 오일, 화장품 사용 불가합니다.</li>
+					<li>이용요금, 운영시간, 시즌별 기간은 엘리바덴 운영정책 및 시즌에 따라 변경될 수 있습니다.</li>
+					<li>고객님의 안전과 쾌적한 이용을 위해 일일 정원 초과 시 입장이 제한됩니다.</li>
+					<li>물, 이유식, 환자를 위한 특별식 외 모든 음식물 반입을 금지합니다.</li>
+					<li>
+						게이트옆 음식물 보관소에서 자율보관소 운영합니다.<br>
+						(음식물,돗자리 등 보관)
+					</li>
+					<li>노약자나, 어린이는 안전을 위해 보호자가 반드시 동행해야 하며, 부주의로 인한 사고 시 당사는 책임지지 않습니다.</li>
+					<li>귀중품 보관장소에 보관하지 않은 귀중품 도난 및 분실물에 대해서는 일절 책임지지 않습니다.</li>
+					<li>애완동물 출입불가합니다.</li>
+					<li>재입장 불가합니다.</li>
+					<li>본 쿠폰은 현장에서 현금으로의 환불 및 카드 취소가 불가 한 상품입니다.</li>
+					<li>타 할인 쿠폰 및 제휴 할인 등과 중복 사용이 불가합니다.</li>
+				</ul>
+			</li>
+			<li>
+				<p class="info_tit">주차안내</p>
+				<ul class="blt_type01">
+					<li>주차장 무료이용시간 : 워터파크 이용고객 7시간 (퇴장시 정산소에 주차권 요청/ 20분내 출차)</li>
+					<li>무료이용시간외 추가 30분당 1,000원의 요금이 발생됩니다.</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="section">
+			<div class="area">
+				<div class="box notice">
+					<p><strong>입장권 환불안내</strong></p>
+					<div>
+						<ul class="blt_type01">
+							<li>취소/ 환불 요청시 사용여부 확인 후 환불 가능합니다.</li>
+							<li>사용하신 티켓은 취소, 환불이 불가합니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="tel:1666-1243">고객센터 1666-1243</a>
+			<p>운영시간 : 10시 ~ 18시(점심 12시 ~ 1시)</p>
+		</footer>
+		<div class="btn_buy">
+			<a href="#" class="btn btn_type01">구매하기</a>
+		</div>
+		<ul class="quick">
+			<li class="prev"><a href="#">이전</a></li>
+			<li class="home"><a href="#">홈</a></li>
+			<li class="list"><a href="#">예약내역</a></li>
+			<li class="login"><a href="#">로그인</a></li>
+		</ul>
+		<div class="move_top">
+			<a href="#"><img src="http://img.cablecar.go.co.kr/ico_move_top.png" alt="위로 가기" /></a>
+		</div>
+	</div>
+</body>
+</html>
