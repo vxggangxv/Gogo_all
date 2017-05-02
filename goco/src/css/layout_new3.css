@@ -3804,8 +3804,8 @@ option {font-size:13px}
 #mainBox01_wrapper #mainBox01 #miniMypage_pop .info .list .list_t .line {height:20px; border-top:1px solid #dfdddf}
 #mainBox01_wrapper #mainBox01 #miniMypage_pop .btn {float:left}
 #mainBox01_wrapper #mainBox01 #miniMypage_pop .info .noreser {height:100px; font-weight:400; background:#fff; text-align:center}
-#mainBox01_wrapper #mainBox01 #miniMypage_pop .info .list .list_t .list_btn_pay a {display:block; margin-top:10px; width:150px; height:34px; border-radius:5px; background:#ff610a; color:#fff; font-size:15px; line-height:2.3; font-weight:600; text-align:center} 
-#mainBox01_wrapper #mainBox01 #miniMypage_pop .info .list .list_t .list_btn_pay a:hover {display:block;  margin-top:10px; width:150px; height:34px; border-radius:5px; background:#fe8949; color:#fff; font-size:15px; line-height:2.3; font-weight:600; text-align:center} 
+#mainBox01_wrapper #mainBox01 #miniMypage_pop .info .list .list_t .list_btn_pay a {display:block; margin-top:10px; width:150px; height:34px; border-radius:5px; background:#ff610a; color:#fff; font-size:15px; line-height:2.3; font-weight:600; text-align:center}
+#mainBox01_wrapper #mainBox01 #miniMypage_pop .info .list .list_t .list_btn_pay a:hover {display:block;  margin-top:10px; width:150px; height:34px; border-radius:5px; background:#fe8949; color:#fff; font-size:15px; line-height:2.3; font-weight:600; text-align:center}
 
 
 /*우측퀵메뉴*/
@@ -4391,7 +4391,7 @@ option {font-size:13px}
 /*결제페이지(적립안내추가)*/
 #wrapper #reser_check .receipt .pointBG {width:304px; height:60px; text-align:left; background:url(http://img.go.co.kr/pointBG.jpg) repeat-x}
 #wrapper #reser_check .receipt .pointBG p {display:block; width:100%; line-height:20px}
-#wrapper #reser_check .receipt .pointBG .point {float:right; padding-right:10px; color:#2aa7e7; font-weight:bold} 
+#wrapper #reser_check .receipt .pointBG .point {float:right; padding-right:10px; color:#2aa7e7; font-weight:bold}
 #wrapper #reser_check .receipt .pointBG .txt {padding-left:10px; font-weight:bold}
 
 /*안내팝업*/
@@ -4594,7 +4594,7 @@ option {font-size:13px}
 	height:80px;
 	z-index:10;
 	}
-.coupon_label p{	
+.coupon_label p{
 	width:80px;
 	height:80px;
 	background:url('http://img.go.co.kr/label_icon_Bg.png') no-repeat;
@@ -4657,15 +4657,15 @@ option {font-size:13px}
 /* 실시간문의 모달 */
 #q_modal {position: fixed; z-index: 6; width: 400px; height: 260px; top: 50%; margin-top: -130px; left: 50%; margin-left: -200px; background: #fff;}
 #q_modal h2 {height: 64px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 26px; color: #fff; font-weight: 700; text-align: center; line-height: 2.6em; background: #FB6B0A;}
-#q_modal .q_clsBtn {position: absolute; right: 0;	top: 0;	 display: inline-block; width: 64px; height: 64px; 
-	background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat center -520px; 
+#q_modal .q_clsBtn {position: absolute; right: 0;	top: 0;	 display: inline-block; width: 64px; height: 64px;
+	background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat center -520px;
 }
 #q_modal ul {width: 68%; margin: 0 auto; }
 #q_modal ul li {position: relative; height: 60px;	line-height: 3.8em; font-size: 17px; border-bottom: 1px solid #ddd; text-align: left;}
 #q_modal ul li:last-child { border: none; }
 #q_modal ul li a {display: block; padding-left: 100px; letter-spacing: -1px; color: #333;}
 #q_modal ul li a:before {content: ""; position: absolute; left: 34px;	top: 0;	 display: inline-block; width: 50px; height: 60px;
-background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat; 
+background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat;
 background-size: 54px; background-position: center -8px;}
 #q_modal ul li:nth-child(2) a:before {background-position: center -85px;}
 #q_modal ul li:nth-child(3) a:before {background-size: 70px; background-position: center -422px;}
@@ -4720,13 +4720,13 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 
 .fare_table .f_td .c1 {padding-left: 20px; font-size: 15px; font-weight: 600;	color: #202020;}
 .fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {min-height: 40px; overflow: auto; padding: 10px;}
-.fare_table .f_td .c2 div, 
-.fare_table .f_td .c3 div, 
+.fare_table .f_td .c2 div,
+.fare_table .f_td .c3 div,
 .fare_table .f_td .c4 div,
 .fare_table .f_td .c5 div
 {border-top: 1px solid #e5e5e5;}
-.fare_table .f_td .c2 div:first-child, 
-.fare_table .f_td .c3 div:first-child, 
+.fare_table .f_td .c2 div:first-child,
+.fare_table .f_td .c3 div:first-child,
 .fare_table .f_td .c4 div:first-child,
 .fare_table .f_td .c5 div:first-child
 {border-top: none;}
@@ -4908,3 +4908,6 @@ table.prize_list td {width: 350px; padding: 10px; vertical-align: top; border-bo
 #contents .more-box .btn-wrap .btn-a {display: inline-block; width: 216px; height: 40px; background: #505050; font-size: 14px; color: #fff; border: 1px solid #000;  line-height: 2.7em;}
 .more-box .btn-wrap .btn-a .gt {position: relative; top: -1px; font-size: 10px;}
 #contents .more-box .btn-wrap .btn-a:hover {color: #fff;}
+
+/* 썸네일 로고 170428 이현우 */
+#imgview_box .thumbnail_logo {position:absolute; left:15px; top:55px; width:80px !important; height:39px !important;}

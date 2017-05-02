@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 
 body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.1px; }
 a:link, a:visited {text-decoration:none; color:#000}
@@ -33,17 +34,13 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #submn_wrap .submn {position:relative; width:980px; margin:auto; height:35px;}
 
 #submn_wrap .submn .business{position:absolute; top:0; left:12px;}
-#submn_wrap .submn .business li {float:left; padding:0 20px; text-align:center; color:#dcd4c1; line-height:2.6; height:36px; font-weight:bold}
+#submn_wrap .submn .business li {float:left; padding:0 20px; text-align:center; color:#dcd4c1; line-height:2.9; height:36px; font-weight:bold}
 #submn_wrap .submn .business li a{color:#575757; font-size:12px;}
 #submn_wrap .submn .business li a:hover{color:#bd8f2b; height:33px;}
 #submn_wrap .submn .room{position:absolute; top:0; left:195px;}
 #submn_wrap .submn .room li {float:left; padding:0 20px; text-align:center; color:#dcd4c1; line-height:2.6; height:36px; font-weight:bold}
 #submn_wrap .submn .room li a{color:#575757;font-size:12px}
 #submn_wrap .submn .room li a:hover{color:#bd8f2b; height:33px;}
-/*#submn_wrap .submn .reservation{position:absolute; top:0; left:353px;}
-#submn_wrap .submn .reservation li {float:left; padding:0 20px; text-align:center; color:#dcd4c1; line-height:2.6; height:36px; font-weight:bold}
-#submn_wrap .submn .reservation li a{color:#575757; font-size:12px}
-#submn_wrap .submn .reservation li a:hover{color:#bd8f2b; height:33px;}*/
 #submn_wrap .submn .facilities{position:absolute; top:0; left:360px;}
 #submn_wrap .submn .facilities li {float:left; padding:0 20px; text-align:center; color:#dcd4c1; line-height:2.6; height:36px; font-weight:bold}
 #submn_wrap .submn .facilities li a{color:#575757; font-size:12px}
@@ -63,11 +60,10 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 
 /* 메인배너 */
 #slides_bn{width:100%; position:relative; height:812px; overflow:hidden; float:left; }
-/*#slides_bn .slide_img01{background:url(http://img.gobs.co.kr/main_slide_bn01.jpg) center 0 no-repeat; width:100%; height:812px;}
-#slides_bn .slide_img02{background:url(http://img.gobs.co.kr/main_slide_bn02.jpg) center 0 no-repeat; width:100%; height:812px; display:none}
-#slides_bn .slide_img03{background:url(http://img.gobs.co.kr/main_slide_bn03.jpg) center 0 no-repeat; width:100%; height:812px; display:none}*/
 
 /* 메인 좌우버튼*/
+#container:before, #container:after {content: ""; display: block;}
+#container:after {clear: both;}
 #container .slide_btn{width:980px; margin:auto; position:absolute; top:240px;}
 #container .slide_btn .prev{float:left}
 #container .slide_btn .next{float:right}
@@ -103,13 +99,19 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #container .subNavi ul li{float:left; font-size:11px; color:#888888;}
 #container .subNavi ul li span{ margin:0 10px;}
 #container .title{float:left; clear:both; margin-bottom:30px}
-#container .title h2{float:left; font-size:35px; font-weight:bold; color:#434343}
+#container .title h2{float:left; font-size:35px; color:#434343; font-family: "Noto Sans KR", "NanumGothic", sans-serif; text-align: left; font-weight: 600;}
 #container .sub_wrap {width:980px; margin:0 auto; margin-bottom: 20px; float:left}
 
 /* 업체정보 */
-.information_tx{text-align:center; width:980px; font-size:13px; color:#757575; margin-top:25px}
+.information_tx{text-align:center; width:980px; font-size:13px; color:#757575; margin-top: 50px;}
+.information_tx .p1, .information_tx .p2 {text-align: left; font-family: "Noto Sans KR", "NanumGothic", sans-serif;}
+.information_tx .p1 {font-size: 23px; color: #6a6a6a; font-weight: 500; line-height: 1.35em; font-weight: 600;}
+/*.information_tx .p1 span {font-weight: 600;}*/
+.information_tx .p2 {font-size: 17px; color: #8c8c8c; margin-top: 30px; font-weight: 400; line-height: 1.45em;}
+
 .information_tx .ti{font-size:28px; font-weight:bold; color:#000000; margin-bottom:25px}
 .information_tx .tx{font-size:13px; color:#757575;}
+
 /* 길찾기 */
 .map{float:left; width:978px; padding-bottom:20px; border-bottom:1px solid #cfcfcf; background-color:#f6f6f6}
 .map ul{margin-top:20px; float:left}
@@ -1001,7 +1003,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 /* detail_btnLogo - 상세페이지, page_btnLogo - 전체페이지 하단 로고 추가_2017_0201 */
 .page_btnLogo, .detail_btnLogo { position: relative; width: 800px; height: 110px; margin: 0 auto;  background: url("http://img.go.co.kr/btnlogo.png") no-repeat center; background-size: 140px; background-color: #f1f1f1; }
-.page_btnLogo {width: 100%;}
+.page_btnLogo {width: 100%; margin-top: 50px;}
 /* 실시간문의 배너_20170208_강혜준 */
 #rt_banner {/* position: fixed; top: 150px; left: 50%; margin-left: -634px; */ width: 110px; height: 223px; border: 1px solid #FE620F; text-align: center; letter-spacing: -1px; background: #fff;}
 #rt_banner h2 {color: #fff; height: 29px;	background: #fe620f;font-size: 15px; font-weight: 400; line-height: 1.8em;}
@@ -1172,9 +1174,9 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 /* 20170417 객실안내 _이동석 */
 .introduce_product {position: relative;}
 .product_text {width: 100%; overflow: hidden; background-color: #f5f5f5;}
-.product_text .tit {float: left; min-width:157px; background-color: #373737; padding: 20px 20px; color: #ffba01; font-weight: bolder; font-size:18px;
+.product_text .tit {float: left; width: 465px; background-color: #373737; padding: 20px 0 20px 20px; color: #ffba01; font-weight: bolder; font-size:18px;
 }
-.product_text .sub {float: right; padding: 23px 20px; color: #393939; font-weight: bolder; font-size:15px;}
+.product_text .sub {float: right; padding: 23px 23px 23px 0; color: #393939; font-weight: bolder; font-size:15px;}
 .product_text .tit_m {width: 100%; background-color: #373737; padding: 15px 20px; color: #ffba01; font-weight: bolder;}
 .product_text .sub_m {padding: 15px 20px; color: #393939; font-weight: bolder;}
 .product_picture {background-color: #ececec; padding: 20px 6px; text-align: left; position: relative; overflow: hidden;}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<title>문서 제목</title>
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css"/>
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css"/>
+	 <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css"/> 
+	<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
+	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<style>
+    .history-tab-01 {position: relative;}
+    .history-tab-01 * {font-family: "NanumGothic", "MalgunGothic", sans-serif; letter-spacing: -0.7px;}
+    .history-tab-01 ul li {position: relative; float: left; width: 33.33%;}
+    .history-tab-01 ul li a {display: block; width: 100%; height: 34px; font-size: 13px; color: #010101; text-align: center; line-height: 2.5em; border-bottom: 1px solid #e2e2e2; letter-spacing: 0px;}
+    .history-tab-01 ul li.on a {border-bottom: 1px solid #f96a0a;}
+    .history01-list {position: relative;}
+    .history01-list li {position: relative; width: 100%; height: 148px; overflow: hidden; margin-top: 3px;}
+    .history01-list li:first-child {margin-top: 0;}
+    
+    .history01-list li .a-bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+    
+    .history01-list li .black-a60 {background: rgba(0, 0, 0, 0.6);}
+    
+    .history01-list li .p-state {position: relative; text-align: right;}
+    .history01-list li .s0 {position: relative; top: 6px; right: 10px; display: inline-block; width: 42px; height: 42px;}
+    .history01-list li .s0 .white-a70 {background: rgba(255, 255, 255, 0.35); border: 1px solid #fff; border-radius: 50%;}
+    .history01-list li .s0 .orange-a70 {background: rgba(250, 106, 10, 0.7); border: 1px solid #fa6a0a; border-radius: 50%;}
+    .history01-list li .s0 .s0-1 {position: relative; display: block; width: 100%; text-align: center; top: 7px; color: #fff; font-size: 11px; line-height: 1.2em;}
+    .history01-list li p {text-align: center; color: #fff;}
+    .history01-list li .p0 {position: relative; top: 0; left: 0; width: 100%; height: 20px; margin-top: 6px; font-size: 11px; text-align: center; background: #000; line-height: 1.7em;}
+    .history01-list li .p1, .history01-list li .p2 {width: 100%; position: absolute;}
+    .history01-list li .p1 {top: 48px; font-size: 13px; letter-spacing: -0.7px;}
+    .history01-list li .p1 .s1 {position: relative; top: -2px; margin-right: 3px; display: inline-block; width: 42px; height: 16px; font-size: 11px; border: 1px solid #fa6a0a; border-radius: 2px; line-height: 1.2em;}
+    .history01-list li .p1 .s1 .black-a46 {background: rgba(0, 0, 0, 0.4);}
+    .history01-list li .p1 .s1-1 {position: relative; color: #fa6a0a;}
+    .history01-list li .p1 strong {font-size: 16px; font-weight: 600;}
+    .history01-list li .p2 {top: 100px; font-size: 12.5px; letter-spacing: 0px;}
+    
+    
+	</style>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="scroll_box">
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!-- 서브페이지 상단 -->
+				<div id="headTitle_box">
+					<div id="headTitle">
+						<span class="back">
+							<a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a>
+						</span>예약내역
+					</div>
+				</div>
+        <!-- 변경내용 시작 -->
+        <div class="history-tab-01">
+          <ul class="clr">
+            <li class="on"><a href="">이용가능</a></li>
+            <li><a href="">이용완료</a></li>
+            <li><a href="">환불/취소</a></li>
+          </ul>
+        </div>
+        
+			</div>
+
+			<div id="top_box_bottom" style="height: 80px;"></div>
+			
+			<div class="history01-list">
+        <ul>
+          <li class="item-1">
+            <div class="black-a60 a-bg"></div>
+            <!--결제대기 시-->
+            <p class="p0">2017.04.27 17:10까지 입금을 완료해주세요 (결제변경가능)</p>
+            <p class="p-state"><span class="s0"><span class="white-a70 a-bg"></span><span class="s0-1">결제<br>대기</span></span></p>
+            <p class="p1">
+              <span class="s1"><span class="black-a46 a-bg"></span><span class="s1-1">숙박</span></span><strong>오션투유 리조트</strong>
+              <br>
+              마운틴뷰 콘도[조개잡이PKG]
+            </p>
+            <p class="p2">2017.04.28(금) ~ 2017.04.29(토) 1박</p>
+          </li>
+          <li class="item-2">
+            <div class="black-a60 a-bg"></div>
+            <!--결제대기 시-->
+            <p class="p-state"><span class="s0"><span class="orange-a70 a-bg"></span><span class="s0-1">예약<br>완료</span></span></p>
+            <p class="p1">
+              <span class="s1"><span class="black-a46 a-bg"></span><span class="s1-1">입장권</span></span><strong>영등포 씨랄라 워터파크</strong>
+              <br>
+              오후권 주중 주말공통 2매
+            </p>
+            <p class="p2">2017.04.21(금) ~ 2017.05.31(수)</p>
+          </li>
+          <script>
+            $(".history01-list .item-1").css({
+              "background" : "url(http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg) no-repeat center",
+              "background-size": "cover"
+            });
+            $(".history01-list .item-2").css({
+              "background" : "url(http://cache.go.co.kr/media/375/admin.varonet.co.kr/bar/mshop_img/B_TOP_IMG120170421110359.jpg) no-repeat center",
+              "background-size": "cover"
+            });
+          </script>
+        </ul>
+			</div>
+			
+			
+    
+
+    
+			
+		</div>
+	</div>
+</body>
+</html>
