@@ -5,7 +5,7 @@ body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고
 a:link, a:visited {text-decoration:none; color:#000}
 a:hover, a:active {text-decoration:none; color:#000}
 input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
-input,button,select,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', font-size: 13px;font-weight: normal;line-height: 20px; text-align:center; }
+input,button,select,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic'; font-size: 13px;font-weight: normal;line-height: 20px; text-align:center; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, input:-ms-input-placeholder {color: #999999; letter-spacing:-0.8px}
 
 a, label { cursor: pointer; }
@@ -169,7 +169,7 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #loginW .login .txt{text-align:center; margin-top:30px; letter-spacing:-0.1px}
 
 /** 판매기록 **/
-#alert_info{floaT:left; width:1258px; height:35px; background:#fff4ec; border:1px solid #f3dbca; padding:0 10px; line-height:2.6}
+#alert_info{floaT:left; width:1240px; height:35px; background:#fff4ec; border:1px solid #f3dbca; padding:0 10px; line-height:2.6}
 #alert_info strong{font-weight:bold; color:#ed550b}
 #alert_info .alert_btn a{font-weight:bold; color:#ed550b}
 #alert_info .alert_btn a:hover{font-weight:bold; color:#ed550b; text-decoration:underline}
@@ -346,7 +346,71 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #charge_pop_02 .popCheck {  position:absolute; margin:auto; float:right; height:36px; line-height:36px; background:#f1f1f1; width:100%; bottom:0;}
 #charge_pop_02 .popCheck label { padding-left:515px; color:#686868; cursor:pointer;}
 
+/*객실현황 페이지 테이블 재코딩*/
+.clr:before, .clr:after {content: ""; display: block;}
+.clr:after {clear: both;}
+.table-wrapper {position: relative; width: 1260px; margin: 0 auto; margin-top: 30px;}
+.table-wrapper * {box-sizing: border-box; letter-spacing: -0.7px;}
+.table-wrapper .th-day {position: relative; text-align: center; font-size: 0;}
+.table-wrapper .th-day > span {display: inline-block; border: 1px solid #ddd; border-left: 0; width: 180px; padding: 6px 0; margin-right: 0; font-size: 13px; text-align: center; font-weight: 600;}
+.table-wrapper .th-day > .sun {color: red;}
+.table-wrapper .th-day > .sat {color: blue;}
+.table-wrapper .th-day > span:first-child {border-left: 1px solid #ddd;}
 
+.table-wrapper .table-box {position: relative; width: 1260px;}
+.table-wrapper .table-box .row-box {position: relative; margin-top: 10px;}
+.table-wrapper .table-box .row-box.pkg {margin-top: -1px; display: none; margin-bottom: 20px;}
+.table-wrapper .table-box .row-box.pkg.on {display: block;}
 
+.table-wrapper .table-box table {position: relative; width: 180px; height: 180px; float: left;}
+.table-wrapper .table-box table.on {border: 2px solid #fb6e0f;}
+.table-wrapper .table-box .d-table .blur {display: none;}
+.table-wrapper .table-box .d-table.off .blur {position: absolute; color: #fff; text-align: center; font-size: 24px; font-weight: 600; display: block; top: 0; left: 0; 
+  width: 100%; height: 100%; line-height: 7.6em; background: #000; letter-spacing: 1px; opacity: 0.8; filter: alpha(opacity=80);}
 
+.table-wrapper .table-box th, .table-wrapper .table-box td {border-collapse: collapse; border: 1px solid #ddd;}
+.table-wrapper .table-box .d-table th, .table-wrapper .table-box .d-table td {border-left: 0; width: 20%;}
+.table-wrapper .table-box table:first-child + table th, .table-wrapper .table-box table:first-child + table td {border-left: 1px solid #ddd;}
 
+.table-wrapper .table-box th {text-align: center;}
+.table-wrapper .table-box th.th-d {text-align: left; height: 40px;}
+.table-wrapper .table-box .d-table  th.th-d {width: 100%;}
+.table-wrapper .table-box .d-table  th.th-d input[type="checkbox"] {cursor: pointer;}
+.table-wrapper .table-box .l-table  th.th-d {border: 0;}
+
+.table-wrapper .table-box td {font-size: 11px;text-align: right;}
+.table-wrapper .table-box th .btn-a {display: inline-block; width: 60px; padding: 3px 0; text-align: center; border: 1px solid #ddd; border-radius: 4px;
+  font-size: 12px; color: #fff; margin-left: 3px; margin-right: 7px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d8286+0,5b5f68+100 */
+  background: #7d8286; /* Old browsers */
+  background: -moz-linear-gradient(top,  #888d91 0%, #5b5f68 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #888d91 0%,#5b5f68 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #888d91 0%,#5b5f68 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888d91', endColorstr='#5b5f68',GradientType=0 ); /* IE6-9 */
+}
+.table-wrapper .table-box th .btn-a:hover {background: #7d8286;}
+
+.table-wrapper .table-box .l-table {position: absolute; left: -190px; top: 0;}
+.table-wrapper .table-box .l-table th, .table-wrapper .table-box .l-table td {text-align: right; font-size: 12px;}
+.table-wrapper .table-box .l-table th:first-child, .table-wrapper .table-box .l-table td:first-child {padding-right: 8px;}
+.table-wrapper .table-box .l-table td {font-size: 11px;} 
+
+.table-wrapper .table-box .row-box .btn-area {position: relative; clear: both; height: 26px; border: 1px solid #ddd; border-top: 0;}
+.table-wrapper .table-box .row-box .btn-area .btn-a {display: block; text-align: center; font-size: 12px; line-height: 2.1em; 
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+99 */
+  background: #f6f8f9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#d7dee3',GradientType=0 ); /* IE6-9 */
+}
+.table-wrapper .table-box .row-box .btn-area .btn-a:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+99 */
+  background: #f6f8f9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e5ebee 0%, #d7dee3 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e5ebee 0%, #d7dee3 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #e5ebee 0%, #d7dee3 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ebee', endColorstr='#d7dee3',GradientType=0 ); /* IE6-9 */
+}
+.table-wrapper .table-box .row-box .btn-area .btn-a:after {content: "펼치기 ▼"}
+.table-wrapper .table-box .row-box .btn-area .btn-a.on:after {content: "닫기 ▲";}

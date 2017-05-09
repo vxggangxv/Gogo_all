@@ -1,0 +1,5 @@
+/* 썸네일 로고 170428 이현우 */
+#info_img_wrpa .thumbnail_logo {position:absolute; left:10px; top:46px; z-index:1;}
+#info_img_wrpa .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}
+#info_img .thumbnail_logo {position:absolute; left:10px; top:6px; z-index:1;}
+#info_img .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}

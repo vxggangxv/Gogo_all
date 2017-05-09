@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+  <title>고코투어 객실관리</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="Cache-Control" content="No-Cache">
+  <meta http-equiv="Pragma" content="No-Cache">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="imagetoolbar" content="false">
+
+  <link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
+  <link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css?v=1494219320" type="text/css">
+  <!--<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">-->
+  <link rel="stylesheet" href="http://static.go.co.kr/css/go/avgrund.css?v=1494219320" type="text/css">
+  <link rel="stylesheet" href="http://static.go.co.kr/css/go/Nwagon.css?v=1494219320" type="text/css">
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://static.go.co.kr/js/go/common.js"></script>
+  
+  <link rel="stylesheet" href="../../src/css/go/layout.css" type="text/css">
+</head>
+<body>
+  <div id="headerW">
+    <div class="header">
+      <h1><a href="/"><img src="http://img.go.co.kr/go/logo.jpg"></a></h1>
+      <div class="snb">
+        <span class="user">테스트용</span>
+        <a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+      </div>
+    </div>
+  </div>
+  <div id="navW" style="z-index: 2; position: relative; top: 0px;">
+    <ul class="nav" style="height: 50px; top: 0px;">
+
+      <li><a href="/reserve.php">판매기록</a></li>
+      <li class="on"><a href="/sale.php">객실관리</a></li>
+      <li><a href="/room_day.php">객실별 판매(일별)</a></li>
+      <li><a href="/room_month.php">객실별 판매(월별)</a></li>
+      <!--li ><a href="/review.php">고객리뷰</a></li-->
+      <li><a href="/info.php">호텔정보</a></li>
+      <li><a href="/pay.php">정산</a></li>
+      <li><a href="/guide.php">가이드 보기</a></li>
+    </ul>
+  </div>
+  <div id="top_mar" style="z-index: 9999; display: none;"></div>
+  
+  <div id="wrapper">
+    <div id="container">
+      <div id="alert_info" style="position: static; top: 0px; z-index: 2;"><span>현재 <strong>미확인</strong>된 예약이 <strong>1건</strong> 있습니다.</span> &nbsp; <span class="alert_btn2"><a href="reserve.php?u=1">미확인 리스트 보기 &gt;</a></span><span class="alert_tel">제휴점문의 : <strong>김민철 대리 &nbsp; | &nbsp; 070-4694-5803</strong> (09:00 ~ 18:00)</span></div>
+      <div class="current" style="clear: left; padding-top: 50px;">
+        <a href="sale.php?syear=2017&amp;smonth=04&amp;r=&amp;z=&amp;v="><span class="btn">◀</span></a>
+        <span class="mo">2017년 &nbsp;5월</span>
+        <a href="sale.php?syear=2017&amp;smonth=06&amp;r=&amp;z=&amp;v="><span class="btn">▶</span></a>
+      </div>
+
+      <div class="txtw">
+        <div class="lefts">
+          객실 등록율<p>59/61일 (96.72%)</p>
+        </div>
+        <div class="rights">
+          <span style="margin-right:32px"><img src="http://img.go.co.kr/go/txt_icon.jpg"> &nbsp; 두 달(5월8일 ~ 7월7일)뒤까지 앱 상에 노출됩니다.</span>&nbsp; &nbsp; 
+          <span><img src="http://img.go.co.kr/go/txt_icon.jpg"> &nbsp; 전체 선택 기능 또는 일괄 등록/수정 기능 등을 사용하시면 편리하게 이용이 가능합니다.</span><br>
+          <span style="margin-right:20px"><img src="http://img.go.co.kr/go/txt_icon.jpg">&nbsp;&nbsp;&nbsp;엑스트라넷 이용 시, 크롬(Chrome) 사용을 권장합니다.</span>
+          <span><img src="http://img.go.co.kr/go/txt_icon.jpg">&nbsp;&nbsp;&nbsp;마감임박 당일할인가를 미리 입력할 수 있습니다. 해당 기능을 이용하여 매출에 날개를 달아보세요!</span>
+        </div>
+      </div>
+
+      <div class="chba">
+        <form name="cform" method="get" class="form-inline calendar-head-form">
+          <label class="m-r-10"><strong>금액표시</strong></label>
+          <select name="z" id="option_room_view" class="form-controlk" style="width:100px;" onchange="document.cform.submit();">
+            <option value="1" selected="selected">상시요금</option>
+            <option value="2">당일특가</option>
+          </select> &nbsp; &nbsp;
+
+          <label class="radio" id="radio_view_deposit option-radio">	
+            <span><input type="radio" name="v" value="1" checked="checked" onclick="document.cform.submit();"></span> <span>입금가&nbsp; &nbsp;</span>
+          </label>
+          <label class="radio" id="radio_view_selling_price option-radio">
+            <input type="radio" name="v" value="2" onclick="document.cform.submit();"> 판매가
+          </label>
+          <label class="pd-option-mid"><strong>객실선택</strong></label>
+
+          <select name="r" id="option_room_view2" class="form-controlk" onchange="document.cform.submit();">
+            <option value="">전체</option>	
+            <option value="60061">더블</option><option value="60400">파란하늘</option>		</select>
+          <div class="btn_r">
+            <div class="btnr btn01 a" id="all" onclick="sale.all();">전체선택</div>
+            <div class="btnr btn02" onclick="sale.total(1);">일괄 마감</div>
+            <div class="btnr btn03" onclick="sale.total(2);">일괄 등록/수정</div>
+            <div class="btnr btn010" onclick="sale.longtime();">장기요금 등록/수정</div>
+            <div class="btnr btn03" onclick="room.detail();">객실 등록/수정</div>
+          </div>
+          <input type="hidden" name="syear" value="2017">
+          <input type="hidden" name="smonth" value="05">
+        </form>
+      </div>
+
+      <div id="detail" style="background: #fff;position:fixed; display:none;"></div>
+      <div id="test"></div>
+    </div>
+    
+    <!--추가내용 시작-->
+    <div class="clr"></div>
+    <div class="table-wrapper clr">
+      <div class="th-day">
+        <span class="sun">일(Sun)</span>
+        <span>월(Mon)</span>
+        <span>화(Tue)</span>
+        <span>수(Wed)</span>
+        <span>목(Thu)</span>
+        <span>금(Fri)</span>
+        <span class="sat">토(Sat)</span>
+      </div>
+      <div class="table-box clr" id="table-box">
+        <div class="row-box clr">
+          <table class="l-table">
+            <tr><th class="th-d"></th></tr>
+            <tr><th>객실명</th><th>총객실</th></tr>
+            <tr><td>마운틴뷰 콘도</td><td>168</td></tr>
+            <tr><td>오션뷰 콘도</td><td>38</td></tr>
+            <tr><td>마인틴뷰 콘도 리노베이션</td><td>10</td></tr>
+            <tr><td>오션뷰 호텔 리노베이션</td><td>31</td></tr>
+            <tr><td>오션뷰 콘도 리노베이션</td><td>12</td></tr>
+            <tr><td>오션뷰 콘도 VIP</td><td>1</td></tr>
+          </table>
+          <!--마감 표시 table.off-->
+          <table class="d-table off">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 1일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+            <!--마감 표시-->
+            <tr><td class="blur">마감</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 2일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 3일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 4일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 5일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 6일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 7일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+        </div>
+        <!--패키지 펼치기 클릭시 노출-->
+        <div class="row-box clr pkg">
+          <table class="l-table">
+            <tr><th class="th-d"></th></tr>
+            <tr><th>객실명</th><th>총객실</th></tr>
+            <tr><td>마운틴뷰 콘도</td><td>168</td></tr>
+            <tr><td>오션뷰 콘도</td><td>38</td></tr>
+            <tr><td>마인틴뷰 콘도 리노베이션</td><td>10</td></tr>
+            <tr><td>오션뷰 호텔 리노베이션</td><td>31</td></tr>
+            <tr><td>오션뷰 콘도 리노베이션</td><td>12</td></tr>
+            <tr><td>오션뷰 콘도 VIP</td><td>1</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 1일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 2일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 3일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 4일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 5일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 6일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 7일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+        </div>
+        
+        <div class="row-box clr">
+          <table class="l-table">
+            <tr><th class="th-d"></th></tr>
+            <tr><th>객실명</th><th>총객실</th></tr>
+            <tr><td>마운틴뷰 콘도</td><td>168</td></tr>
+            <tr><td>오션뷰 콘도</td><td>38</td></tr>
+            <tr><td>마인틴뷰 콘도 리노베이션</td><td>10</td></tr>
+            <tr><td>오션뷰 호텔 리노베이션</td><td>31</td></tr>
+            <tr><td>오션뷰 콘도 리노베이션</td><td>12</td></tr>
+            <tr><td>오션뷰 콘도 VIP</td><td>1</td></tr>
+          </table>
+          <table class="d-table on">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 8일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 9일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 10일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 11일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 12일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 13일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 14일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+        </div>
+        <!--패키지 펼치기 클릭시 노출-->
+        <div class="row-box clr pkg">
+          <table class="l-table">
+            <tr><th class="th-d"></th></tr>
+            <tr><th>객실명</th><th>총객실</th></tr>
+            <tr><td>마운틴뷰 콘도</td><td>168</td></tr>
+            <tr><td>오션뷰 콘도</td><td>38</td></tr>
+            <tr><td>마인틴뷰 콘도 리노베이션</td><td>10</td></tr>
+            <tr><td>오션뷰 호텔 리노베이션</td><td>31</td></tr>
+            <tr><td>오션뷰 콘도 리노베이션</td><td>12</td></tr>
+            <tr><td>오션뷰 콘도 VIP</td><td>1</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 1일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 2일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 3일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 4일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 5일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 6일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+          <table class="d-table">
+            <tr>
+              <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 7일</th>
+            </tr>
+            <tr><th class="bg">제외</th><th class="bg">가용</th><th class="bg">확정</th><th class="bg">잔여</th><th class="bg">금액</th></tr>
+            <tr><td>42</td><td>126</td><td>1</td><td>125</td><td>100000</td></tr>
+            <tr><td>11</td><td>27</td><td>1</td><td>26</td><td>100000</td></tr>
+            <tr><td>4</td><td>6</td><td>1</td><td>5</td><td>100000</td></tr>
+            <tr><td>21</td><td>10</td><td>1</td><td>9</td><td>100000</td></tr>
+            <tr><td>0</td><td>12</td><td>1</td><td>11</td><td>100000</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>100000</td></tr>
+          </table>
+        </div>
+      </div>
+      <script>
+        $("#table-box .row-box .btn-area .btn-a").on("click", function() {
+          $(this).toggleClass("on");
+          $(this).closest(".row-box").next(".row-box.pkg").toggleClass("on");
+          return false;
+          
+        });
+      </script>
+        
+    </div>
+    <!--추가내용 끝-->
+    
+  </div>
+  
+</body>
+</html>
