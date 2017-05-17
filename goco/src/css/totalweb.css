@@ -2,3 +2,15 @@
 #imgview_box .thumbnail_logo {position:absolute; left:15px; top:55px; width:80px !important; height:39px !important;}
 /* 상세페이지 테이블 패딩조정 */
 .fare_table .f_td .c3 div {padding: 10px 0;}
+/* 고코웹 상세페이지 폰트컬러 수정_170515_혜준 */
+#daySearch .input,
+#rsv_sang #rsv_s_tab .rsv_s_tabHead,
+#contents #rsv_s_list td,
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select,
+#cal_wrap2 .cal_section,
+#cal_wrap2 .cal_section .calendar th,
+#cal_wrap2 .cal_day2,
+.fare_table .f_td > li,
+.slt_pay .nth2,
+#noRoom {color: #313131;}
+#main5 .info_local {width: 369px;}

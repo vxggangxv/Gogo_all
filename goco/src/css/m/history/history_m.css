@@ -19,7 +19,7 @@
 
 .history01-list {position: relative; background: #f1f1f1;}
 .history01-list * {font-family: "Nanum Gothic", "Malgun Gothic", sans-serif;}
-.history01-list li {position: relative; width: 100%; height: 148px; overflow: hidden; margin-top: 5px;}
+.history01-list li {position: relative; width: 100%; height: 150px; overflow: hidden; margin-top: 5px;}
 .history01-list li .h-link-a {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
 .history01-list li .a-bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
@@ -34,6 +34,7 @@
 .history01-list li .p-state .s1 {position: absolute; left: 10px; margin-right: 3px; display: inline-block; width: 42px; height: 16px; font-size: 11px; border: 1px solid #fa6a0a; border-radius: 2px; line-height: 1.6em; text-align: center;}
 .history01-list li .p-state .s1 .black-a46 {background: rgba(0, 0, 0, 0.4);}
 .history01-list li .p-state .s1-1 {position: relative; color: #fa6a0a;}
+.history01-list li .p-state .s-pkg {position: absolute; width: 76px; height: 20px; left: 50%; top: 22px; margin-left: -38px; font-size: 12.5px; text-align: center; border: 1px solid #fff; line-height: 1.6em;}
 .history01-list li .s0 {position: relative; right: 10px; display: inline-block; width: 42px; height: 42px;}
 .history01-list li .s0 .white-a70 {background: rgba(255, 255, 255, 0.35); border: 1px solid #fff; border-radius: 50%;}
 .history01-list li .s0 .orange-a70 {background: rgba(250, 106, 10, 0.7); border: 1px solid #fa6a0a; border-radius: 50%;}
@@ -41,9 +42,9 @@
 .history01-list li .s0 .s0-1 {position: relative; display: block; width: 100%; text-align: center; top: 10px; color: #fff; font-size: 11px; line-height: 1.2em;}
 
 .history01-list li .p1, .history01-list li .p2 {width: 100%; position: relative;}
-.history01-list li .p1 {margin-top: -8px; font-size: 13px; letter-spacing: -0.7px;}
+.history01-list li .p1 {margin-top: 10px; font-size: 13px; letter-spacing: -0.7px; line-height: 1.5em;}
 .history01-list li .p1 strong {font-size: 16px; font-weight: 600;}
-.history01-list li .p2 {margin-top: 10px; font-size: 12.5px; letter-spacing: 0px;}
+.history01-list li .p2 {margin-top: 6px; font-size: 12.5px; letter-spacing: 0px;}
 
 /*페이지네이션*/
 .history01-list .pagenation {position: relative; text-align: center; width: 100%; margin-top: 20px; padding-bottom: 20px;}
@@ -53,27 +54,31 @@
 .history01-list .pagenation a.prev {text-indent: -4px;}
 .history01-list .pagenation a.next {text-indent: 1px;}
 
-.history02-info {position: relative; background: #f1f1f1; padding-bottom: 12px;}
+.history02-common, .history02-info {position: relative; background: #f1f1f1; padding-bottom: 6px;}
 .history02-info .d-l {float: left;}
 .history02-info .d-r {float: right;}
-.history02-info * {font-family: "Nanum Gothic", "Malgun Gothic", sans-serif; color: #010101; letter-spacing: -0.7px;}
-.history02-info > ul {position: relative; margin-top: 6px; padding: 10px 0; background: #fff; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;}
-.history02-info > ul:first-child {margin-top: 0; border-bottom: 1px solid #e1e1e1; border-top: 0;}
-.history02-info > ul > li {position: relative; padding: 0 10px; font-size: 12.5px; line-height: 1.5em; word-break: keep-all;}
+.history02-common *, .history02-info * {font-family: "Nanum Gothic", "Malgun Gothic", sans-serif; color: #010101; letter-spacing: -0.7px;}
+.history02-common > ul, .history02-info > ul {position: relative; margin-top: 6px; padding: 10px 0; background: #fff; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;}
+.history02-common > ul:first-child, .history02-info > ul:first-child {margin-top: 0; border-bottom: 1px solid #e1e1e1;}
+.history02-common > ul:first-child {border-top: 0;}
+.history02-common > ul > li, .history02-info > ul > li {position: relative; padding: 0 10px; font-size: 12.5px; line-height: 1.5em; word-break: keep-all;}
 .history02-info > ul > li .c-red {color: #c40018; font-weight: 600;}
 .history02-info > ul > li .c-orange {color: #fa6a0a;}
-.history02-info > ul > li:before, .history02-info > ul > li:after {display: block; content: "";}
-.history02-info > ul > li:after {clear: both;}
-.history02-info .name .ctgr {position: relative; display: inline-block; top: -2px; min-width: 40px; height: 17px; text-align: center; margin-right: 3px; background: #fa6a0a; color: #fff; font-size: 9px; padding: 0px 3px; border-radius: 2px;}
-.history02-info .name .tit {font-weight: 600; font-size: 15px;}
-.history02-info .name .addr {position: absolute; display: block; bottom: 0px; right: 10px; width: 55px; height: 20px; line-height: 1.6em; text-align: center; border: 1px solid #ddd;}
+
+.clr:before, .clr:after, .history02-info > ul > li:before, .history02-info > ul > li:after {display: block; content: "";}
+.clr:after, .history02-info > ul > li:after {clear: both;}
+
+.history02-common .name .ctgr {position: relative; display: inline-block; top: -2px; min-width: 40px; height: 17px; text-align: center; margin-right: 3px; background: #fa6a0a; color: #fff; font-size: 9px; padding: 0px 3px; border-radius: 2px;}
+.history02-common .name .tit {font-weight: 600; font-size: 15px;}
+.history02-common .name .addr {position: absolute; display: block; bottom: 0px; right: 10px; width: 55px; height: 20px; line-height: 1.6em; text-align: center; border: 1px solid #ddd;}
+
 .history02-info [class*="form"] li {padding-top: 2.5px; padding-bottom: 2.5px;}
 .history02-info [class*="form"] li:first-child {font-weight: 600; font-size: 14px; padding-top: 0;padding-bottom: 5px; border-bottom: 1px solid #eaeaea;}
 .history02-info [class*="form"] li:first-child + li {padding-top: 8px;}
 .history02-info [class*="form"].base li:first-child {font-weight: 600; font-size: 14px; padding-bottom: 5px; border-bottom: 0;}
 .history02-info [class*="form"].base li:first-child + li, .history02-info [class*="form"].talk li:first-child + li {padding-top: 0px;}
 
-.history02-info .pay .btn-a {display: block; background: #fa6a0a; color: #fff; text-align: center; height: 36px; line-height: 2.8em; border-radius: 2px; letter-spacing: 0; margin-bottom: -10px;}
+.history02-info .pay .btn-a {display: block; background: #fa6a0a; color: #fff; text-align: center; height: 36px; line-height: 2.8em; border-radius: 2px; letter-spacing: 0; margin-bottom: -4px;}
 
 .history02-info li.have-dot {padding-left: 18px;}
 .history02-info li.have-dot:before {content: "·"; position: absolute; left: 10px; line-height: 0.9em; font-size: 18px; font-weight: 600; color: #fa6a0a;}
@@ -113,14 +118,14 @@
 .history02-info .way li.nth-8:before {content: "8.";}
 .history02-info .way li.nth-9:before {content: "9.";}
 
-.history02-info .ticket-ent {position: relative; width: 94%; margin: 10px auto; background: #fff; overflow: hidden;}
+.history02-info .ticket-ent {position: relative; width: 94%; margin: 0px auto; background: #f1f1f1; overflow: hidden;}
 .history02-info .ticket-ent .t-head {background: #FA7922; padding: 14px 0 8px; border: 1px solid #ccc; border-bottom: 0;}
 .history02-info .ticket-ent .t-head:before {content: ""; display: block; position: absolute; top: -12px; left: 50%; margin-left: -12px; width: 20px; height: 20px; border-radius: 50%; background: #f1f1f1; border: 1px solid #ccc;}
 .history02-info .ticket-ent .t-head p {color: #fff; text-align: center; letter-spacing: 0;}
 .history02-info .ticket-ent .t-head p.nth-1 {font-size: 16px; font-weight: 600;}
 .history02-info .ticket-ent .t-head p.nth-2 {font-size: 11px;}
 .history02-info .ticket-ent .t-head p .check {display: inline-block; position: relative; border: 1px solid #fff; width: 3px; height: 7px; top: -1px; border-left: 0; border-top: 0; margin-right: 6px; transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg);}
-.history02-info .ticket-ent .t-contents {padding: 11px 0 12px; border: 1px solid #ccc; border-bottom: 0; border-top: 0;}
+.history02-info .ticket-ent .t-contents {background: #fff; padding: 11px 0 12px; border: 1px solid #ccc; border-bottom: 0; border-top: 0;}
 .history02-info .ticket-ent table {width: 96%; margin: 0 auto;}
 .history02-info .ticket-ent table td {font-size: 12.5px; border-collapse: collapse; border: 1px solid #cdcdcd; border-left: 1px solid #a3a3a3; border-right: 0; padding: 2px 0;}
 .history02-info .ticket-ent table .first td {border-top: 1px solid #a3a3a3;}
@@ -130,7 +135,7 @@
 .history02-info .ticket-ent .barcode {text-align: center; font-size: 13px;}
 .history02-info .ticket-ent .barcode img {width: 100%;}
 .history02-info .ticket-ent .barcode .p1 {position: relative; width: 65%; margin:0 auto; margin-bottom: 2px;}
-.history02-info .ticket-ent .t-footer {position: relative; font-size: 12px; padding: 10px 0 6px; border: 1px solid #ccc; border-top: 1px dashed #ccc; color: #595959;}
+.history02-info .ticket-ent .t-footer {position: relative; font-size: 12px; padding: 10px 0 6px; border: 1px solid #ccc; border-top: 1px dashed #ccc; color: #595959; background: #fff;}
 .history02-info .ticket-ent .t-footer .mag {position: absolute; bottom: 6px; right: 8px; display: inline-block; width: 18px; height: 18px; border:1px solid #888; border-radius: 50%;}
 .history02-info .ticket-ent .t-footer .mag:before, .history02-info .ticket-ent .t-footer .mag:after {content: ""; position: absolute; top: 8px; left: 4px; width: 10px; height: 1px; background: #888;}
 .history02-info .ticket-ent .t-footer .mag:before {transform: rotate(90deg); -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg);}
@@ -142,6 +147,7 @@
 .history02-info .ticket-ent .t-footer:after {right: -9px; border-right: 0; border-top: 0;}
 .history02-info .ticket-ent > a {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
+.history02-info .ticket-ent.tour {margin: 10px auto;}
 .history02-info .ticket-ent.tour .t-head {background: #e4dfc5; padding-bottom: 3px;}
 .history02-info .ticket-ent.tour .t-head p {color: #7a7154;}
 .history02-info .ticket-ent.tour .t-head p.nth-2 {font-size: 14px; font-weight: 600; margin-top: -5px;}
@@ -160,7 +166,7 @@
 .history02-info .barcode-pop .box .btn-a-cancel:before {transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg);}
 .history02-info .barcode-pop .box .btn-a-cancel:after {transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg);}
 
-.history02-info .ticket-ht {position: relative; margin: 10px auto -6px; background: #fff; overflow: hidden;}
+.history02-info .ticket-ht {position: relative; margin: 0px auto -6px; background: #fff; overflow: hidden;}
 .history02-info .ticket-ht .t-head {background: #FA7922; padding: 14px 0 8px; border: 1px solid #ccc; border-bottom: 0;}
 .history02-info .ticket-ht .t-head:before {content: ""; display: block; position: absolute; top: -12px; left: 50%; margin-left: -12px; width: 20px; height: 20px; border-radius: 50%; background: #f1f1f1; border: 1px solid #ccc;}
 .history02-info .ticket-ht .t-head p {color: #fff; text-align: center; letter-spacing: 0;}
