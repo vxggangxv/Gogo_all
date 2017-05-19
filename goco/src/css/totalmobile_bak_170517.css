@@ -25,5 +25,3 @@
 .item_recommend_list .item_swipe .item_name strong {margin-left:-4px; color:#3f3f3f; font-size:14px;}
 .item_recommend_list .item_swipe .item_price span {color:#8d8d8d; font-size:13px; text-decoration:line-through;}
 .item_recommend_list .item_swipe .item_price strong {color:#ee3c34; font-size:1.0em;}
-/* 앱상새_170519_혜준 */
-#room_w .room_tx_w .room_tx_in .room_tx_tx:before {line-height: 25px;}

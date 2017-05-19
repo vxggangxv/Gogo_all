@@ -1,0 +1,16 @@
+
+/* 20161223 연말초특가 */
+#special_price_161223 {position:relative; width:device-width;}
+#special_price_161223 img{display:block; }
+#special_price_161223 .link1-1{position:absolute; top:16.7%; left:10.3%; width:79%; height:0.7%;}
+#special_price_161223 .link1-2{position:absolute; top:24.67%; left:10.3%; width:79%; height:0.7%;}
+#special_price_161223 .link1-3{position:absolute; top:32.65%; left:10.3%; width:79%; height:0.7%;}
+#special_price_161223 .link_kakao{position:absolute; top:98.5%; left:6.6%; width:86.9%; height:0.9%;}
+/* 20161223 연말초특가 end*/
+
+/* 2017.02.16 모바일 앱설치안내-바우처확인  */
+#wrap {width:100%;  }
+ul li img{font-align:center; width:100%; }
+ul .btn{width: 100%; background:#fff; text-align:center; margin:0 auto; }
+ul .btn img{width: 60%; padding-bottom: 20px; }
+/* 2017.02.16 모바일 앱설치안내-바우처확인  */

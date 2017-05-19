@@ -5,19 +5,10 @@ body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고
 a:link, a:visited {text-decoration:none; color:#000}
 a:hover, a:active {text-decoration:none; color:#000}
 input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
-input,button,select,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic'; font-size: 13px;font-weight: normal;line-height: 20px; text-align:center; }
+input,button,select,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', font-size: 13px;font-weight: normal;line-height: 20px; text-align:center; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, input:-ms-input-placeholder {color: #999999; letter-spacing:-0.8px}
 
-a, label { cursor: pointer; }
-input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-}
+a { cursor: pointer; }
 
 /** 최상단 **/
 #headerW{position:relative; width:100%; height:55px; letter-spacing:-0.5px}
@@ -45,7 +36,6 @@ h3 .stxt{font-size:12px; color:#717171; margin-left:6px; font-weight:300}
 .board tr:hover{background:#f5f5f5}
 .board th{background:#f4f5f7; padding:8px; border:1px solid #e4e5e7; text-align:center; font-weight:bold}
 .board td{padding:5px; border:1px solid #e4e5e7; color:#555; text-align:center;}
-.board td.tow{padding:5px; border:1px solid #e4e5e7; color:#333333; text-align:right; background:#fef0e7; height:30px; font-weight:600; padding-right:30px; font-size:16px}
 .board th:first-child, .board td:first-child{border-left:none}
 .board th:last-child, .board td:last-child{border-right:none}
 
@@ -70,31 +60,10 @@ h3 .stxt{font-size:12px; color:#717171; margin-left:6px; font-weight:300}
 
 .boardN{floaT:left; width:990px; border-top:2px solid #666; font-size:13px; margin-top:20px}
 .boardN tr:hover{background:#f5f5f5}
-.boardN tr.disabled td {background:#f5f5f5}
 .boardN th{background:#f4f5f7; padding:8px; border:1px solid #e4e5e7; text-align:center; font-weight:bold}
 .boardN td{padding:15px; border:1px solid #e4e5e7; color:#555; text-align:left;}
 .boardN th:first-child, .boardN td:first-child{border-left:none}
 .boardN th:last-child, .boardN td:last-child{border-right:none}
-
-.boardN1{floaT:left; width:990px; border-top:2px solid #666; font-size:13px; }
-.boardN1 tr:hover{background:#f5f5f5}
-.boardN1 th{background:#f4f5f7; padding:8px; border:1px solid #e4e5e7; text-align:center; font-weight:bold}
-.boardN1 td{padding:15px; border:1px solid #e4e5e7; color:#555; text-align:left;}
-.boardN1 th:first-child, .boardN1 td:first-child{border-left:none}
-.boardN1 th:last-child, .boardN1 td:last-child{border-right:none}
-
-.boardF{floaT:left; width:1258px; border-top:2px solid #666; font-size:13px;}
-.boardF th{background:#f4f5f7; padding:13px 8px; border:1px solid #e4e5e7; text-align:center; font-weight:bold}
-.boardF td{padding:13px 5px; border:1px solid #e4e5e7; color:#555; text-align:center;}
-.boardF th:first-child, .boardF td:first-child{border-left:none}
-.boardF th:last-child, .boardF td:last-child{border-right:none}
-
-.boardM{floaT:left; width:990px; border-top:2px solid #666; font-size:13px; margin-top:20px; margin-bottom:20px}
-.boardM th{background:#f4f5f7; padding:15px; border:1px solid #e4e5e7; text-align:center; font-weight:bold}
-.boardM td{padding:15px; border:1px solid #e4e5e7; color:#555; text-align:center;}
-.boardM th:first-child, .boardM td:first-child{border-left:none}
-.boardM th:last-child, .boardM td:last-child{border-right:none}
-
 
 .atable{width:100%}
 .atable th{background:#f4f5f7; padding:8px; border:none; text-align:center; font-weight:bold}
@@ -109,15 +78,11 @@ h3 .stxt{font-size:12px; color:#717171; margin-left:6px; font-weight:300}
 .m-t-xs{floaT:left; margin-top:30px; margin-left:7px;}
 .select-sm{padding-left:5px}
 
-.form-controlp { width:75px; height:30px; font-size: 13px; line-height: 1.42857143; color: #555555; background-color: #ffffff;background-image: none; border: 1px solid #cccccc;
-border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
--o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
-
 .form-control {display: block;width:100px; height: 34px;font-size: 13px;line-height: 1.42857143;color: #555555;background-color: #ffffff;background-image: none; border: 1px solid #cccccc;
 border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; float:left;  }
 
-.form-controla {/* margin-bottom:5px; */ width:75px; height:34px; font-size: 13px; line-height: 1.42857143; color: #555555; background-color: #ffffff;background-image: none; border: 1px solid #cccccc;
+.form-controla {margin-bottom:5px; width:120px; height:34px; font-size: 13px; line-height: 1.42857143; color: #555555; background-color: #ffffff;background-image: none; border: 1px solid #cccccc;
 border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
@@ -169,21 +134,18 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #loginW .login .txt{text-align:center; margin-top:30px; letter-spacing:-0.1px}
 
 /** 판매기록 **/
-#alert_info{floaT:left; width:1240px; height:35px; background:#fff4ec; border:1px solid #f3dbca; padding:0 10px; line-height:2.6}
+#alert_info{floaT:left; width:1258px; height:35px; background:#fff4ec; border:1px solid #f3dbca; padding:0 10px; line-height:2.6}
 #alert_info strong{font-weight:bold; color:#ed550b}
 #alert_info .alert_btn a{font-weight:bold; color:#ed550b}
 #alert_info .alert_btn a:hover{font-weight:bold; color:#ed550b; text-decoration:underline}
 #alert_info .alert_tel{float:right}
-#alert_info .alert_btn2 {padding: 5px 10px; font-size: 11px; border-radius: 3px; color: #fff;background-color: #3d5696;}
-#alert_info .alert_btn2 a{ color: #fff; font-weight:bold}
-
 
 /* 객실현황 */
 .current{ text-align:center; font-size:20px; margin-top:10px}
 .current .mo{font-size:35px; font-weight:600; margin:0 15px}
 .current .btn{margin-top:-10px}
 .txtw{floaT:left; margin-top:30px; width:100%; height:85px; background:#f5f6f8; border:1px solid #e4e4e4}
-.txtw .lefts{floaT:left; background:#364b80 ; width:308px; height:70px; color:#fff; text-align:center; font-size:16px; padding-top:15px}
+.txtw .lefts{floaT:left; background:#364b80; width:308px; height:70px; color:#fff; text-align:center; font-size:16px; padding-top:15px}
 .txtw .lefts p{font-size:26px; margin-top:-5px}
 .txtw .rights{float:left; margin:19px 0 0 40px; line-height:1.9}
 
@@ -199,7 +161,6 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .chba .btn_r .btn01{background:url(http://img.go.co.kr/go/schedule_btn01.jpg); width:129px; height:36px; cursor: pointer;}
 .chba .btn_r .btn02{background:url(http://img.go.co.kr/go/schedule_btn02.jpg); width:129px; height:36px; cursor: pointer;}
 .chba .btn_r .btn03{background:url(http://img.go.co.kr/go/schedule_btn03.jpg); width:129px; height:36px; cursor: pointer;}
-.chba .btn_r .btn010{background:url(http://img.go.co.kr/go/schedule_btn010.jpg?ver=2); width:129px; height:36px; cursor: pointer;}
 
 .table-bordered {border-right:1px solid #dddddd; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; border-collapse: separate; border-radius: 4px; floaT:left; width:100%; margin-top:20px}
 .table-bordered .fc-head{height:35px; background:#f4f6f7;}
@@ -207,14 +168,14 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .table-bordered .fc-head th .checkbox1{margin-left:10px; font-weight:600; display:block}
 .table-bordered .fc-head th .calendar-date2{cursor: pointer; }
 
-.table-bordered .dhc-body td{border-left:1px solid #dddddd; border-top:1px solid #dddddd; padding:12px 12px 20px 12px; height:80px; position: relative;}
+.table-bordered .dhc-body td{border-left:1px solid #dddddd; border-top:1px solid #dddddd; padding:12px 12px 20px 12px; height:127px; position: relative;}
 .table-bordered .dhc-body td.disabled-bg{color:#b0b0b0; font-size:15px; vertical-align:top}
 .table-bordered .dhc-body td.disabled-bg1{color:#b0b0b0; font-size:15px; vertical-align:top;}
-.table-bordered .dhc-body td.disabled-bg1 .calendar-date{font-weight: bold; font-size:15px; color:#333333; width:100%; margin-bottom:15px;}
-.table-bordered .dhc-body td.disabled-bg1 .calendar-date1{font-weight: bold; font-size:15px; color:#d71400; margin-bottom:15px;}
+.table-bordered .dhc-body td.disabled-bg1 .calendar-date{font-weight: bold; font-size:15px; color:#333333; width:100%; cursor: pointer; }
+.table-bordered .dhc-body td.disabled-bg1 .calendar-date1{font-weight: bold; font-size:15px; color:#d71400; cursor: pointer;}
 
-.table-bordered .dhc-body td.disabled-bg1 .btn04{background:url(http://img.go.co.kr/go/schedule_btn04.png); width:79px; height:29px; cursor: pointer; color:#fff; text-align:center; line-height:2.0; font-weight:600; float:right; font-size:14px;}
-.table-bordered .dhc-body td.disabled-bg1 .btn05{background:url(http://img.go.co.kr/go/schedule_btn05.png); width:79px; height:29px; cursor: pointer; color:#fff; text-align:center; line-height:2.0; font-weight:600; float:right; font-size:14px;}
+.table-bordered .dhc-body td.disabled-bg1 .btn04{background:url(http://img.go.co.kr/go/schedule_btn04.png); width:155px; height:39px; cursor: pointer; color:#fff; text-align:center; line-height:2.5; margin-top:7px; font-weight:600;}
+.table-bordered .dhc-body td.disabled-bg1 .btn05{background:url(http://img.go.co.kr/go/schedule_btn05.png); width:155px; height:39px; cursor: pointer; color:#fff; text-align:center; line-height:2.5; margin-top:7px; font-weight:600;}
 
 .table-bordered .dhc-body td.disabled-bg1 .infosw{background:#daf4fc; width:100%; height:42px; margin-top:7px; font-size:13px; color:#242424; font-weight:600; padding-top:5px; cursor: pointer;}
 .table-bordered .dhc-body td.disabled-bg1 .infosw .roo{floaT:left; margin-left:5px;}
@@ -233,13 +194,13 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .hotel_stxt{font-size:12px; color:#c92e2e}
 .hotel_img{floaT:left; width:1260px; border-top:2px solid #666;}
 .hotel_img h4{margin-top:27px; font-weight:600; font-size:15px; float:left}
-.hotel_img ul{floaT:left; width:1260px; margin:15px 0px 25px 0px;}
-.hotel_img ul li{floaT:left; width:230px; height:280px; margin-right:15px; cursor:pointer;}
+.hotel_img ul{floaT:left; width:1260px; margin-top:15px}
+.hotel_img ul li{floaT:left; width:230px; height:160px; margin-right:15px; cursor:pointer;}
 .hotel_img ul li img{floaT:left; width:230px; height:160px}
 
 
 /** 팝업 **/
-#popW{width:990px; border:3px solid #97a5ab; padding:35px; height:600px; letter-spacing:-0.8px; display:block; float:left}
+#popW{width:990px; border:3px solid #97a5ab; padding:35px; height:100%; letter-spacing:-0.8px; display:block; float:left}
 #popW .top{floaT:left; width:990px; border-bottom:1px solid #d9d9d9; padding-bottom:20px}
 #popW .top .title{float:left; font-size:20px; font-weight:bold;}
 #popW .top .close{float:right}
@@ -250,7 +211,8 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #popW .info li .tx-a{font-size:20px; font-weight:bold; margin-left:5px; color:#f37720}
 #popW .notiw{float:left; margin-top:20px; line-height:1.8; font-size:12px; border-bottom:1px solid #d9d9d9; width:990px; padding-bottom:20px}
 #popW .chda{float:left; margin-top:20px; font-size:17px; font-weight:600}
-#popW .chda .basd{floaT:left; width:870px}
+#popW .chda .chdatix{color:#ff831d}
+#popW .chda .basd{floaT:left; width:900px}
 #popW .chda .chdati{background:#3d5696; padding:2px 7px; font-size:12px; margin-left:5px; margin-bottom:5px; float:left; color:#fff}
 #popW .chda .chdatihot{background:#be3a3a; padding:2px 7px; font-size:12px; margin-left:5px; margin-bottom:5px; float:left; color:#fff}
 #popW .txri{line-height:2.3; margin-left:3px; float:left}
@@ -263,23 +225,6 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #popW .btn09{background:url(http://img.go.co.kr/go/schedule_btn08.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#000; text-align:center; line-height:2.6; font-weight: bold;}
 #popW .btn08_on{background:url(http://img.go.co.kr/go/schedule_btn09.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;margin-left:50px}
 
-#popWs{width:990px; border:3px solid #97a5ab; padding:35px; height:350px; letter-spacing:-0.8px; display:block; float:left}
-#popWs .top{floaT:left; width:990px; border-bottom:1px solid #d9d9d9; padding-bottom:20px}
-#popWs .top .title{float:left; font-size:20px; font-weight:bold;}
-#popWs .top .close{float:right}
-#popWs .bobtn{margin-top:30px; float:left; margin-left:400px}
-#popWs .bobtn .btn06{background:url(http://img.go.co.kr/go/schedule_btn06.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
-#popWs .bobtn .btn07{background:url(http://img.go.co.kr/go/schedule_btn07.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; margin-left:5px; font-weight: bold;}
-
-.chem{floaT:left; margin:35px 0 0 10px; font-size:13px}
-.chem li{floaT:left;  font-size:13px; margin-right:20px}
-
-.no_txt{float:left; margin-top:35px; margin-left:15px}
-.pay_T{float:left; position:relative; width:100%; margin:20px 0;}
-.pay_T .pay_T_txt1{font-size:26px; font-weight:bold}
-.pay_T .pay_T_txt2{font-size:28px; font-weight:bold; color:#fc662b; margin-left:10px}
-
-.board_noti{float:left; width:100%}
 
 /** 상세정보 팝업 메모 추가 20160831 **/
 .memo_w{float:left; width:100%; margin-top:30px}
@@ -298,134 +243,3 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .m-t-xss{floaT:left; margin-left:7px;}
 
 .guide-btn{background:url(http://img.go.co.kr/go/guide_btn01.jpg); width:217px; height:51px; cursor: pointer; float:right; display:block; color:#fff; line-height:3.0; font-weight:600; font-size:15px; margin-bottom:25px}
-
-
-/** 실시간 알림 팝업창 20161019 **/
-#pop{width:704px;  border:2px solid #f25c27; padding-bottom:35px}
-#pop .tit{width:100%; height:42px; background:#dcdcdc}
-#pop .tit_txt{margin-left:20px; font-size:16px; font-weight:600; color:#000; line-height:2.4}
-#pop .close_btn{float:right}
-#pop .tit_txt2{font-size:18px; color:#000; text-align:center; margin:30px 0}
-#pop .tit_txt2 .txt_co2{font-weight:600; color:#f25c27}
-#pop .boardpop{width:620px; border-top:2px solid #666; font-size:13px; margin:auto}
-#pop .boardpop th{background:#f4f5f7; padding:8px; border:1px solid #e4e5e7; text-align:center; font-weight:bold}
-#pop .boardpop td{padding:8px; border:1px solid #e4e5e7; color:#555; text-align:center;}
-#pop .boardpop td.tow{padding:8px; border:1px solid #e4e5e7; color:#333333; text-align:right; background:#fef0e7; height:30px; font-weight:600; padding-right:30px; font-size:16px}
-#pop .boardpop th:first-child, .boardpop td:first-child{border-left:none}
-#pop .boardpop th:last-child, .boardpop td:last-child{border-right:none}
-#pop .pop_btn a{margin:auto; display:block; width:200px; height:40px; background:#f05d29; border-radius:5px; color:#fff; font-weight:600; font-size:19px; text-align:center; line-height:2.0}
-#pop .pop_btn{padding-top:33px}
-
-#popWs02{position:relative;width:550px;height:400px;padding:10px ;border:4px solid #d2d2d2;}
-#popWs02 .top{width:550px;height:45px;line-height:45px;font-size:18px;font-weight:600;border-bottom:1px solid #e0e0e0;padding-bottom:5px;}
-#popWs02 .boardS02{width:550px;margin-top:15px;border-top:3px solid #757575;}
-#popWs02 .boardS02 th{height:45px;background:#f4f5f7;border-bottom:1px solid #e4e5e7;text-align:center;font-weight:600;font-size:15px;}
-#popWs02 .boardS02 td{height:45px;background:#fff;border-bottom:1px solid #e4e5e7;}
-#popWs02 .boardS02 td input.mg{margin-left:15px;}
-#popWs02 .boardS02 td textarea{margin-left:15px;width:420px;height:60px;}
-#popWs02 .txt_0001{margin-left:120px;margin-top:10px;}
-#popWs02 .bobtn{width:140px;margin:0 auto;padding-top:5px;}
-#popWs02 .pop_close{position:absolute;width:19px;height:19px;top:15px;right:15px;cursor:pointer;}
-
-
-/* 고고 요금등록 팝업 20170324 */
-#charge_pop_01{width:650px; height:706px;  background:#fff;  position:absolute; border:solid 1px #cccccc; }
-#charge_pop_01 .charge_pop_close{position:relative; top:10px; left:610px; z-index:2;}
-#charge_pop_01 .charge_pop_img{position:absolute; top:0; }
-#charge_pop_01 .popCheck {  position:absolute; margin:auto; float:right; height:36px; line-height:36px; background:#f1f1f1; width:100%; bottom:0;}
-#charge_pop_01 .popCheck label { padding-left:515px; color:#686868; cursor:pointer;}
-
-#charge_pop_02{width:650px; height:655px;  background:#fff;  position:absolute; border:solid 1px #cccccc; }
-#charge_pop_02 .charge_pop_close{position:relative; top:-93px; left:610px}
-#charge_pop_02 .charge_pop_img{position:absolute; margin-top:-10px; }
-#charge_pop_02 .charge_pop_title{ margin:auto; text-align:center;  color:#000000; letter-spacing:-0.4px;  margin:28px 0 0 0; font-family:"Noto Sans KR",Helvetica,tahoma,sans-serif;  }
-#charge_pop_02 .charge_pop_title .txt{font-size:30px; line-height:40px;}
-#charge_pop_02 .charge_pop_title .txt .txt1{font-weight:bold; letter-spacing:-0.8px; }
-#charge_pop_02 .charge_pop_title .txt .txt2{font-weight:bold; color:#f95c24; letter-spacing:-0.8px; text-decoration:underline}
-#charge_pop_02 .charge_pop_title .txt .txt3{ color:#f95c24;  font-weight:bold; letter-spacing:-0.8px; text-decoration:underline}
-#charge_pop_02 .popCheck {  position:absolute; margin:auto; float:right; height:36px; line-height:36px; background:#f1f1f1; width:100%; bottom:0;}
-#charge_pop_02 .popCheck label { padding-left:515px; color:#686868; cursor:pointer;}
-
-/*객실현황 페이지 테이블 재코딩*/
-.clr:before, .clr:after {content: ""; display: block;}
-.clr:after {clear: both;}
-.table-wrapper {position: relative; width: 1260px; margin: 0 auto; margin-top: 30px;}
-.table-wrapper * {box-sizing: border-box; letter-spacing: -0.7px;}
-.table-wrapper .th-day {position: relative; text-align: center; font-size: 0;}
-.table-wrapper .th-day > span {display: inline-block; border: 1px solid #ddd; border-left: 0; width: 180px; padding: 6px 0; margin-right: 0; font-size: 13px; text-align: center; font-weight: 600;}
-.table-wrapper .th-day > .sun {color: red;}
-.table-wrapper .th-day > .sat {color: blue;}
-.table-wrapper .th-day > span:first-child {border-left: 1px solid #ddd;}
-
-.table-wrapper .table-box {position: relative; width: 1260px;}
-.table-wrapper .table-box .row-box {position: relative; margin-top: 0px;}
-.table-wrapper .table-box .row-box:first-child {margin-top: 10px;}
-.table-wrapper .table-box .row-box.pkg {margin-top: -1px; display: none; margin-bottom: 20px; border: 1px solid #2d71f9;}
-.table-wrapper .table-box .row-box.pkg.on {display: block;}
-
-.table-wrapper .table-box table {position: relative; width: 180px; height: 194px; float: left;}
-.table-wrapper .table-box .d-table.on {border: 2px solid #fb6e0f;}
-.table-wrapper .table-box .d-table .blur {display: none;}
-.table-wrapper .table-box .d-table.off .blur {position: absolute; color: #fff; text-align: center; font-size: 24px; font-weight: 600; display: block; top: 0; left: 0; 
-  width: 100%; height: 100%; line-height: 7.6em; background: #000; letter-spacing: 1px; opacity: 0.8; filter: alpha(opacity=80);}
-
-.table-wrapper .table-box th, .table-wrapper .table-box td {border-collapse: collapse; border: 1px solid #ddd;}
-.table-wrapper .table-box .d-table th, .table-wrapper .table-box .d-table td {border-left: 0; width: 20%;}
-.table-wrapper .table-box table:first-child th, .table-wrapper .table-box table:first-child td {border-left: 1px solid #ddd;}
-
-.table-wrapper .table-box .pkg table:first-child, .table-wrapper .table-box .pkg table:first-child + table {width: 179px;}
-.table-wrapper .table-box .pkg table:first-child th, .table-wrapper .table-box .pkg table:first-child td {border-left: 0;}
-.table-wrapper .table-box .pkg table:last-child th:last-child, .table-wrapper .table-box .pkg table:last-child td:last-child {border-right: 0;}
-.table-wrapper .table-box .pkg table th, .table-wrapper .table-box .pkg table td {border-bottom: 0;}
-.table-wrapper .table-box .pkg table tr:first-child th {border-top: 0;}
-
-.table-wrapper .table-box th {text-align: center;}
-.table-wrapper .table-box th.th-d {text-align: left; height: 40px;}
-.table-wrapper .table-box .d-table  th.th-d {width: 100%; line-height: 2em;}
-.table-wrapper .table-box .d-table.on  th.th-d {height: 38px;}
-.table-wrapper .table-box .d-table  th.th-d input[type="checkbox"] {cursor: pointer;}
-.table-wrapper .table-box .l-table  th.th-d {border: 0;}
-
-.table-wrapper .table-box td {font-size: 11px;text-align: right;}
-.table-wrapper .table-box th .btn-a {display: inline-block; width: 60px; padding: 3px 0; text-align: center; border: 1px solid #ddd; border-radius: 4px; line-height: 1.6em; float: right;
-  font-size: 12px; color: #fff; margin-left: 5px; margin-right: 5px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d8286+0,5b5f68+100 */
-  background: #7d8286; /* Old browsers */
-  background: -moz-linear-gradient(top,  #888d91 0%, #5b5f68 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #888d91 0%,#5b5f68 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #888d91 0%,#5b5f68 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888d91', endColorstr='#5b5f68',GradientType=0 ); /* IE6-9 */
-}
-.table-wrapper .left-box {position: absolute; left: -190px; top: 0; clear: both; width: 180px;}
-.table-wrapper .left-box th .btn-a:hover {background: #7d8286;}
-/*.table-wrapper .left-box th.th-d {height: 41px;}*/
-.table-wrapper .left-box .l-table {margin-top: 0px;}
-.table-wrapper .left-box .l-table:first-child {margin-top: 43px;}
-.table-wrapper .left-box .l-table.l-pkg {position: relative; display: none; margin-top: 26px;}
-.table-wrapper .left-box .l-table.l-pkg:after {content: ""; position: absolute; left: 0; top: 40px; width: 179px; height: 138px; border: 1px solid #2d71f9;}
-.table-wrapper .left-box .l-table.l-pkg.on {display: table;}
-.table-wrapper .left-box .l-table.l-pkg.on + .l-table {margin-top: 21px;}
-.table-wrapper .left-box .l-table th, .table-wrapper .table-box .l-table td {text-align: right; font-size: 12px;}
-.table-wrapper .left-box .l-table th:first-child, .table-wrapper .table-box .l-table td:first-child {padding-right: 8px;}
-.table-wrapper .left-box .l-table td {font-size: 11px;} 
-.table-wrapper .left-box .l-table th:last-child, .table-wrapper .left-box .l-table td:last-child {padding-right: 2px;}
-
-.table-wrapper .table-box .row-box .btn-area {position: relative; clear: both; height: 26px; border: 1px solid #ddd; border-top: 0;}
-.table-wrapper .table-box .row-box .btn-area .btn-a {display: block; text-align: center; font-size: 12px; line-height: 2.1em; 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+99 */
-  background: #f6f8f9; /* Old browsers */
-  background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#d7dee3',GradientType=0 ); /* IE6-9 */
-}
-.table-wrapper .table-box .row-box .btn-area .btn-a:hover {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+99 */
-  background: #f6f8f9; /* Old browsers */
-  background: -moz-linear-gradient(top,  #e5ebee 0%, #d7dee3 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e5ebee 0%, #d7dee3 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #e5ebee 0%, #d7dee3 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ebee', endColorstr='#d7dee3',GradientType=0 ); /* IE6-9 */
-}
-.table-wrapper .table-box .row-box .btn-area .btn-a:after {content: "펼치기 ▼"}
-.table-wrapper .table-box .row-box .btn-area .btn-a.on:after {content: "닫기 ▲";}

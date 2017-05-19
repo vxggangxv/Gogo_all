@@ -14,6 +14,7 @@ i {font-style: italic;}
 #wrap, .header, .container, .footer {position: relative;}
 .ht-box, .hn-box, .f-box {position: relative; width: 1069px; margin: 0 auto;}
 
+.container {min-height: 658px;}
 /*헤더 영역*/
 .header {}
 .h-top {position: relative; width: 100%; height: 40px; background: #fc7931;}
@@ -29,7 +30,7 @@ i {font-style: italic;}
 
 .h-nav {position: relative; width: 100%; height: 80px; background: #fff; border-bottom: 1px solid #e7e4e4;}
 .hn-box {}
-.hn-box h2 {position: absolute; top: 19px; left: 73px;}
+.hn-box h2 {position: absolute; top: 9px; left: 73px;}
 .hn-box .gnb {position: absolute; top: 39px; right: 76px;}
 .hn-box .gnb ul li {float: left;}
 .hn-box .gnb ul li a {position: relative; font-size: 18px; font-weight: 600; margin-left: 60px;}

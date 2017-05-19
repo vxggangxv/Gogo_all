@@ -2533,7 +2533,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 
 #wrapper #customer .qna_t_btn {float:left; margin:10px 0 30px 0; width:740px; text-align:center}
 #wrapper #customer .qna_t_btn .comfirm a {float:left; margin-right:5px; margin-left:247px; display:block; width:120px; height:35px; border:1px solid #e55201; text-align:center; color:#fff; background:#ff610a; font-weight:600; line-height:2.3; font-size:14px}
-#wrapper #customer .qna_t_btn .list a {float:left; display:block; width:120px; height:35px; border:1px solid #949494; text-align:center; color:#fff; background:#aaaaaa; font-weight:600; line-height:2.3; font-size:14px}
+#wrapper #customer .qna_t_btn .list a {float:left; display:block; width:120px; height:35px; border:1px solid #949494; text-align:center; color:#fff; background:#aaaaaa; font-weight:600; line-height:2.3; font-size:14px; margin-top:0px;}
 #wrapper #customer .qna_t_btn .list2 a {float:right; display:block; width:120px; height:35px; border:1px solid #e55201; text-align:center; color:#fff; background:#ff610a; font-weight:600; line-height:2.3; font-size:14px}
 
 #wrapper #customer .btn_my {float:left; width:100%; text-align:center}

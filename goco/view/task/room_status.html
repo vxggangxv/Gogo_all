@@ -119,7 +119,7 @@
       <div class="table-box clr" id="table-box">
         <div class="row-box clr">
           <!--마감 표시 table.off-->
-          <table class="d-table off">
+          <table class="d-table">
             <tr>
               <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a><input type="checkbox"> 1일</th>
             </tr>
@@ -480,6 +480,16 @@
           return false;
           
         });
+        //$("#table-box .d-table:odd").css("background", "#fff0f0");
+        $("#table-box .d-table:even").css("background", "#fff6ef");
+        $("#table-box .row-box").each(function() {
+          $(this).find(".d-table").eq(0).css("background", "#fbeded");
+          $(this).find(".d-table").eq(6).css("background", "#ddeffb");
+        });
+        /*$("#table-box .row-box .d-table").eq(0).css("background", "#fbdede");
+        $("#table-box .row-box .d-table").eq(6).css("background", "#ddeffb");*/
+        $(".d-table, .l-table").find("tr:eq(1) th").css("background", "#efefef");
+        $(".row-box .btn-area").hide();
       </script>
         
     </div>

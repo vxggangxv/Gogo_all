@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>상세피이지 로고 추가</title>
+
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css?ver=20170201165300" />
+  <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css?ver=20170201165300" /> 
+	<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3_tmp.css"/> -->
+
+	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
+	<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css?ver=20170201165300" />
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css?ver=20170201165300" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" /> -->
+
+	<!-- 폰트어썸 추가 -->
+	<!-- <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css"> -->
+	<!-- ie9이하 input꾸미기, nth-child 셀렉터 작동, html5, 미디어쿼리 작동 -->
+	<!--[if lt IE 9]>
+		<script src="http://static.onbiz.co.kr/js/poly-checked.min.js"></script>
+		<script src="http://static.onbiz.co.kr/js/selectivizr-min.js"></script>
+
+	  <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <style>
+      /*테스트용*/
+      body {height: 60000px;}
+      
+      
+      #ocean_3pkg_goBanner {position: fixed; left: 51%; margin-left: 504px; top: 240px; z-index: 9; width: 114px;}
+      #ocean_3pkg_boBanner {position: fixed; right: 50%; margin-right: -631px; top: 280px; z-index: 9; width: 114px;}
+      #ocean_3pkg_goBanner a, #ocean_3pkg_boBanner a {display: none;}
+      #ocean_3pkg_goBanner a.on, #ocean_3pkg_boBanner a.on {display: block;}
+    </style>
+
+	</head>
+	<body>
+   
+    <!--고코투어-->
+    <div id="ocean_3pkg_goBanner">
+      <!--<a class="oc1" href=""><img src="http://img.go.co.kr/banner/oc_wBanner_01.jpg" alt="오션투유"></a>-->
+      <!--<a class="oc2" href=""><img src="http://img.go.co.kr/banner/oc_wBanner_02.jpg" alt="오션투유"></a>-->
+      <!--<a class="oc3" href=""><img src="http://img.go.co.kr/banner/oc_wBanner_03.jpg" alt="오션투유"></a>-->
+    </div>	
+    
+    <!--브랜드검색사이트-->
+    <div id="ocean_3pkg_boBanner">
+      <a class="oc1" href=""><img src="http://img.go.co.kr/banner/oc_wBanner_01.jpg" alt="오션투유"></a>
+      <a class="oc2" href=""><img src="http://img.go.co.kr/banner/oc_wBanner_02.jpg" alt="오션투유"></a>
+      <a class="oc3" href=""><img src="http://img.go.co.kr/banner/oc_wBanner_03.jpg" alt="오션투유"></a>
+    </div>		
+
+    <script>
+      
+      //브랜드검색용 높이에 따른 배너 등장
+      $(window).scroll(function() {
+        var st = $(window).scrollTop();
+        if (st < 27972) {
+            $("#ocean_3pkg_boBanner a").removeClass("on");
+        } else if (st >= 27972 && st < 33944) {
+          $("#ocean_3pkg_boBanner a").eq(0).addClass("on").siblings().removeClass("on");
+        } else if (st >= 33944 && st < 41830) {
+          $("#ocean_3pkg_boBanner a").eq(1).addClass("on").siblings().removeClass("on");
+        } else if (st >= 41830) {
+          $("#ocean_3pkg_boBanner a").eq(2).addClass("on").siblings().removeClass("on");
+        }
+        
+        //scrollTop() 값 확인용
+        console.log($(window).scrollTop());
+      });
+    </script>
+
+	</body>
+	</html>

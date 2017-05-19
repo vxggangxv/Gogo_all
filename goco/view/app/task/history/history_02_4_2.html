@@ -8,17 +8,23 @@
 
 	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css"/>
 	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css"/>
-	 <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css"/> 
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css"/> 
+  <!--css추가-->
+  <link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css"/> 
 	<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
 	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">-->
   <!--<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">-->
+  
   <link rel="stylesheet" href="../../../../src/css/m/history/history_m.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
   <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+  <!--js추가-->
+  <script src="http://static.go.co.kr/js/swiper.min.js"></script>
 
-  <script src="http://static.go.co.kr/js/m/history/history_m.js"></script>
+  <!--<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>-->
+  <script src="../../../../src/js/m/history/history_m.js"></script>
   
 </head>
 <body>
@@ -40,8 +46,8 @@
           <ul class="clr">
             <li class=""><a href="./history_02_1.html">예약정보</a></li>
             <li class=""><a href="./history_02_2.html">시설정보</a></li>
-            <li class="on"><a href="./history_02_3.html">지도</a></li>
-            <li class=""><a href="./history_02_4.html">주변관광지</a></li>
+            <li class=""><a href="./history_02_3.html">지도</a></li>
+            <li class="on"><a href="./history_02_4.html">주변관광지</a></li>
           </ul>
         </div>
         
@@ -54,30 +60,28 @@
           <li><span class="ctgr">리조트/콘도</span><span class="tit">오션투유리조트</span></li>
           <li>강원 고성군 죽왕면 삼포리 243-13 <span class="addr">주소복사</span></li>
         </ul>
-      </div>
-
-      <div class="history02-info clr">
-        <div class="map" id="g-map">
-          <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td><a href="http://map.naver.com/?searchCoord=8281c53ce44923fe06e1c74b7328aff464f539d723b7f2a341b7308773514899&query=6rCV7JuQIOqzoOyEseq1sCDso73smZXrqbQg7IK87Y%2Bs66asIDI0My0xMw%3D%3D&menu=location&tab=1&lng=b4bd5743f9138f64f8f45375a1373f16&mapMode=0&mpx=09680630%3A37.4997625%2C127.0577911%3AZ11%3A0.0289825%2C0.0149442&lat=865b8563bfc701282d2d1aa84c3767ef&dlevel=12&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1493878367728_508346321" style="width:100%; max-height:340px; vertical-align:top;" alt="지도 크게 보기" title="지도 크게 보기" border="0"/></a></td> </tr> </table>
-          <a href="" target="_blank" class="btn-a">길찾기</a>
-        </div>
 			</div>
-			
-			<!--전화문의 팝업-->
-      <div class="h-q-pop" id="h-q-callPop">
-        <div class="box">
-          <a href="" class="btn-a-cancel"></a>
-          <p>전화문의</p>
+
+      <div class="history04-wrap">
+        <div class="history04-tab" id="history04-tab">
           <ul>
-            <!--<li class="front"><a href=""><span>예약 호텔 프론트</span></a></li>-->
-            <li class="go"><a href=""><span>고코투어 고객센터</span></a></li>
-            <!--<li class="kko"><a href=""><span>카카오톡 문의하기</span></a></li>-->
+            <li class=""><a href="./history_02_4_1.html">인근여행지</a></li>
+            <li class="on"><a href="./history_02_4_2.html">주변지도</a></li>
+            <li class=""><a href="./history_02_4_3.html">인근맛집</a></li>
+            <li class=""><a href="./history_02_4_4_1.html">인근입장권</a></li>
           </ul>
+        </div> 
+           
+        <div class="history04-2 history04-common">
+          <!--지도 삽입. 임시로 이미지 넣어놈-->                      
+          <div class="map-box"><img class="map-img" src="http://img.go.co.kr/mobile/h04_map.jpg" alt="지도"></div>
+          <!--spot 터치시-->
+          <!--<div class="map-box"><img class="map-img" src="http://img.go.co.kr/mobile/h04_map_touch.jpg" alt="지도"></div>-->
         </div>
       </div>
-			    
-			
-		</div>
-	</div>
+		</div><!--scrollbox 끝-->
+    
+	</div><!--wrapper 끝-->
+	
 </body>
 </html>
