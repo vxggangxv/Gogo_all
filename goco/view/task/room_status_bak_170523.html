@@ -1,0 +1,1832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+<head>
+    <title>고코투어 객실관리</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="false">
+
+    <link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css?v=1494219320" type="text/css">
+    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">-->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/go/avgrund.css?v=1494219320" type="text/css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/go/Nwagon.css?v=1494219320" type="text/css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://static.go.co.kr/js/go/common.js"></script>
+
+    <link rel="stylesheet" href="../../src/css/go/layout.css" type="text/css">
+    <style>
+        .table-wrapper .table-box .d-table  th.th-d {padding-left: 10px;}
+    </style>
+</head>
+
+<body>
+    <div id="headerW">
+        <div class="header">
+            <h1><a href="/"><img src="http://img.go.co.kr/go/logo.jpg"></a></h1>
+            <div class="snb">
+                <span class="user">테스트용</span>
+                <a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+            </div>
+        </div>
+    </div>
+    <div id="navW" style="z-index: 2; position: relative; top: 0px;">
+        <ul class="nav" style="height: 50px; top: 0px;">
+
+            <li><a href="/reserve.php">판매기록</a></li>
+            <li class="on"><a href="/sale.php">객실관리</a></li>
+            <li><a href="/room_day.php">객실별 판매(일별)</a></li>
+            <li><a href="/room_month.php">객실별 판매(월별)</a></li>
+            <!--li ><a href="/review.php">고객리뷰</a></li-->
+            <li><a href="/info.php">호텔정보</a></li>
+            <li><a href="/pay.php">정산</a></li>
+            <li><a href="/guide.php">가이드 보기</a></li>
+        </ul>
+    </div>
+    <div id="top_mar" style="z-index: 9999; display: none;"></div>
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="alert_info" style="position: static; top: 0px; z-index: 2;"><span>현재 <strong>미확인</strong>된 예약이 <strong>1건</strong> 있습니다.</span> &nbsp; <span class="alert_btn2"><a href="reserve.php?u=1">미확인 리스트 보기 &gt;</a></span><span class="alert_tel">제휴점문의 : <strong>김민철 대리 &nbsp; | &nbsp; 070-4694-5803</strong> (09:00 ~ 18:00)</span></div>
+            <div class="current" style="clear: left; padding-top: 50px;">
+                <a href="sale.php?syear=2017&amp;smonth=04&amp;r=&amp;z=&amp;v="><span class="btn">◀</span></a>
+                <span class="mo">2017년 &nbsp;5월</span>
+                <a href="sale.php?syear=2017&amp;smonth=06&amp;r=&amp;z=&amp;v="><span class="btn">▶</span></a>
+            </div>
+            <p style="float:right">
+                <button type="button" class="btn m-t-xs" style="background: #3d5696; color: #fff;" onclick="reserve.add_rsv()">현장 예약하기</button>
+            </p>
+        </div>
+
+        <!--추가내용 시작-->
+        <div class="clr"></div>
+        <div class="table-wrapper clr">
+            <div class="th-day">
+                <span class="sun">일(Sun)</span>
+                <span>월(Mon)</span>
+                <span>화(Tue)</span>
+                <span>수(Wed)</span>
+                <span>목(Thu)</span>
+                <span>금(Fri)</span>
+                <span class="sat">토(Sat)</span>
+            </div>
+            <!--좌측테이블-->
+            <div class="table-box left-box clr" id="left-box">
+                <table class="l-table">
+                    <tr>
+                        <th class="th-d"></th>
+                    </tr>
+                    <tr>
+                        <th>객실명</th>
+                        <th>총객실</th>
+                        <th>금액</th>
+                    </tr>
+                    <tr>
+                        <td>마운틴뷰 콘도</td>
+                        <td>168</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도</td>
+                        <td>38</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>마인틴뷰 콘도 리노베이션</td>
+                        <td>10</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 호텔 리노베이션</td>
+                        <td>31</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 리노베이션</td>
+                        <td>12</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 VIP</td>
+                        <td>1</td>
+                        <td>100000</td>
+                    </tr>
+                </table>
+
+                <table class="l-table l-pkg">
+                    <tr>
+                        <th class="th-d"></th>
+                    </tr>
+                    <tr>
+                        <th>객실명</th>
+                        <th>총객실</th>
+                        <th>금액</th>
+                    </tr>
+                    <tr>
+                        <td>마운틴뷰 콘도</td>
+                        <td>168</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도</td>
+                        <td>38</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>마인틴뷰 콘도 리노베이션</td>
+                        <td>10</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 호텔 리노베이션</td>
+                        <td>31</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 리노베이션</td>
+                        <td>12</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 VIP</td>
+                        <td>1</td>
+                        <td>100000</td>
+                    </tr>
+                </table>
+
+                <table class="l-table">
+                    <tr>
+                        <th class="th-d"></th>
+                    </tr>
+                    <tr>
+                        <th>객실명</th>
+                        <th>총객실</th>
+                        <th>금액</th>
+                    </tr>
+                    <tr>
+                        <td>마운틴뷰 콘도</td>
+                        <td>168</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도</td>
+                        <td>38</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>마인틴뷰 콘도 리노베이션</td>
+                        <td>10</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 호텔 리노베이션</td>
+                        <td>31</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 리노베이션</td>
+                        <td>12</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 VIP</td>
+                        <td>1</td>
+                        <td>100000</td>
+                    </tr>
+                </table>
+
+                <table class="l-table l-pkg">
+                    <tr>
+                        <th class="th-d"></th>
+                    </tr>
+                    <tr>
+                        <th>객실명</th>
+                        <th>총객실</th>
+                        <th>금액</th>
+                    </tr>
+                    <tr>
+                        <td>마운틴뷰 콘도</td>
+                        <td>168</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도</td>
+                        <td>38</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>마인틴뷰 콘도 리노베이션</td>
+                        <td>10</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 호텔 리노베이션</td>
+                        <td>31</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 리노베이션</td>
+                        <td>12</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>오션뷰 콘도 VIP</td>
+                        <td>1</td>
+                        <td>100000</td>
+                    </tr>
+                </table>
+            </div>
+            <!--우측테이블-->
+            <div class="table-box clr" id="table-box">
+                <div class="row-box clr">
+                    <!--마감 표시 table.off-->
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 1일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                        <!--마감 표시-->
+                        <tr>
+                            <td class="blur">마감</td>
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 2일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 3일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 4일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 5일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 6일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 7일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+                </div>
+                <!--패키지 펼치기 클릭시 노출-->
+                <div class="row-box clr pkg">
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 1일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 2일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 3일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 4일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 5일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 6일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 7일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row-box clr">
+                    <table class="d-table on">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 8일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 9일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 10일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 11일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 12일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 13일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 14일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+                </div>
+                <!--패키지 펼치기 클릭시 노출-->
+                <div class="row-box clr pkg">
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 1일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 2일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 3일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 4일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 5일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 6일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                    <table class="d-table">
+                        <tr>
+                            <th class="th-d" colspan="5"><a href="#" class="btn-a">마감</a>
+                                <input type="checkbox"> 7일</th>
+                        </tr>
+                        <tr>
+                            <th class="bg">제외</th>
+                            <th class="bg">가용</th>
+                            <th class="bg">확정</th>
+                            <th class="bg">잔여</th>
+
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>126</td>
+                            <td>1</td>
+                            <td>125</td>
+
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>27</td>
+                            <td>1</td>
+                            <td>26</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>9</td>
+
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>11</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <script>
+                $("#table-box .row-box .btn-area .btn-a").on("click", function () {
+                    var idx = $(this).closest(".row-box").index();
+                    console.log(idx);
+                    $(this).toggleClass("on");
+                    $(this).closest(".row-box").next(".row-box.pkg").toggleClass("on");
+                    $("#left-box .l-table").eq(idx + 1).toggleClass("on");
+                    return false;
+
+                });
+                //$("#table-box .d-table:odd").css("background", "#fff0f0");
+                //$("#table-box .d-table:even").css("background", "#fff6ef");
+                $("#table-box .row-box").each(function () {
+                    $(this).find(".d-table").eq(0).css("background", "#ffebeb");
+                    $(this).find(".d-table").eq(6).css("background", "#ddeffb");
+                });
+                /*$("#table-box .row-box .d-table").eq(0).css("background", "#fbdede");
+                $("#table-box .row-box .d-table").eq(6).css("background", "#ddeffb");*/
+                $(".d-table, .l-table").find("tr:eq(1) th").css("background", "#efefef");
+                $(".row-box .btn-area").hide();
+            </script>
+
+        </div>
+        <!--추가내용 끝-->
+
+    </div>
+
+</body>
+
+</html>

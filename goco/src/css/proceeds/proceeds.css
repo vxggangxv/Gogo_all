@@ -2,9 +2,11 @@
 section[class*="-sec"] {width: 1069px; margin-left: auto; margin-right: auto;}
 .main-sec {}
 .main-sec figure img {display: block;}
-.ms-p1 {position: relative; height: 53px; background: #FDDF4D; font-size: 22px;}
-.ms-p1 i, .ms-p1 input, .ms-p1 a {position: relative; top: 6px; vertical-align: middle;}
-.ms-p1 i {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; color: #645b54; margin-left: 20px;}
+.ms-p1 {position: relative; height: 52px; background: #FDDF4D; font-size: 22px;}
+.ms-p1 i, .ms-p1 input, .ms-p1 a {position: relative; top: 7px; vertical-align: middle;}
+.ms-p1 i {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; color: #645b54;}
+.ms-p1 i:first-child {margin-left: 20px;}
+.ms-p1 .c-orange {position: relative; margin-left: 10px;}
 .ms-p1 input {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; border: 3px solid #fc7931; height: 32px; margin-left: 20px; text-indent: 8px; font-size: 24px; line-height: 1.4em;}
 .ms-p1 .code {width: 130px;}
 .ms-p1 .money {width: 200px;}
@@ -95,7 +97,7 @@ div[class*="isb-table"] ul.posr .chk_txt02 {position:absolute; right:-347px; top
 .ssdb-tit h2 {float: left; font-size: 22px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-bottom: 12px; font-weight: 500;}
 .ssdb-tit p {float: right;}
 .ssdb-tit p input.in-txt {height: 26px; width: 102px; margin-left: 3px; margin-right: 3px; border: 1px solid #ccc; text-indent: 5px;}
-.ssdb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; 
+.ssdb-tit p input.btn {appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none;
   padding: 0 10px; height: 28px; margin-left: 5px; line-height: 1.45em; cursor: pointer;
   border-style: none; border: 1px solid #ccc; border-radius: 4px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f6+0,eeeeee+100 */
@@ -240,3 +242,37 @@ div[class*="miosb-table"] .in-txt + span {font-size: 15px; color: #999; margin-l
 #popupLayer .cts_wrap .result {clear:both; margin:40px 0 40px 40px; width:650px; padding:10px 0; text-align:center; background:#ffefe6; line-height:2}
 #popupLayer .cts_wrap .result2 {clear:both; margin:40px 0 40px 40px; width:650px; padding:10px 0; text-align:center; background:#ffefe6; line-height:4}
 #popupLayer .cts_wrap h3 {font-size:20px; font-weight:600}
+
+/* 홍보사이트 170522 이현우 */
+.mileage {width:1068px; margin:30px auto 85px;}
+.mileage .m-title {color:#090909; font-weight:bold; font-size:23px;}
+.mileage .cont {overflow:hidden; margin-top:20px;}
+.mileage .cont .left {position: relative; float:left; width:320px; height: 593px; background:url('http://img.go.co.kr/proceeds/bg_mileage.jpg') no-repeat 0 0;}
+.mileage .cont .left:after {position: absolute; display: block; content: "5,000P 지급 인트로"; color: #989898; bottom: 0px; left: 0;}
+.mileage .cont .left .recommend {margin-top:396px; padding:0 12px 0 11px;}
+.mileage .cont .left .recommend .code div {height:79px; padding:10px 12px 0; background:url('http://img.go.co.kr/proceeds/bg_code.jpg') no-repeat 0 0; text-align:center;}
+.mileage .cont .left .recommend .code div p {margin-bottom:10px; color:#202020; font-style:italic; font-weight:bold; font-size:16px; font-weight: 800;}
+.mileage .cont .left .recommend .code div p span {color:#db3713;}
+.mileage .cont .left .recommend .code div input[type="text"] {width:100%; height:40px; border:2px solid #f6850c; box-sizing:border-box; color:#202020; font-weight:bold; font-size:30px; text-align:center; letter-spacing:4px;}
+.mileage .cont .right {position: relative; float:left; width:728px; height: 569px; margin-left:20px;}
+.mileage .blt-txt {margin-bottom:10px; padding-left:15px; background:url('http://img.go.co.kr/proceeds/ico_mileage_arrow.gif') no-repeat 0 1px; color:#090909; font-weight:bold; font-size:20px;}
+.mileage .cont .right .box-cont {padding:12px 10px; border:1px solid #e0e0e0; border-top:5px solid #ff742e;}
+.mileage .cont .right .box-cont .copy-code {padding: 5px; border:1px solid #e0e0e0; line-height:1.2; word-break:break-all; width: 688px; height: 64.5px; margin: 0 auto; overflow: auto;}
+.mileage .cont .right .box-cont .code-btn {margin-top:10px; text-align:center;}
+.mileage .cont .right .box-cont .code-btn a {display:inline-block; width:128px; height:40px; margin:0 5px; border-radius:3px; font-size:18px; line-height:40px; box-sizing:border-box;}
+.mileage .cont .right .box-cont .code-btn a.copy {background-color:#f6702c; color:#fff;}
+.mileage .cont .right .box-cont .code-btn a.view {border:1px solid #d2d2d2; background-color:#f3f3f3; color:#403a3a;}
+.mileage .cont .right .banner_recommend {position: relative; width:367px; height:146px; margin:30px 0 20px; background:url('http://img.go.co.kr/proceeds/banner_mileage.jpg') no-repeat 0 0;}
+.mileage .cont .right .banner_recommend:after {position: absolute; content: "5,000P 지급 인트로 배너형"; color: #989898; bottom: 0; right: -183px;}
+.mileage .cont .right .banner_recommend .code {padding:94px 23px 0 91px;}
+.mileage .cont .right .banner_recommend .code input[type="text"] {width:100%; height:36px; border:none; color:#202020; font-weight:bold; font-size:30px; text-align:center; letter-spacing:4px; box-sizing:border-box;}
+.mileage .btm-guide {margin-top:35px;}
+.mileage .btm-guide .box-cont {padding:25px 15px 20px; border:1px solid #e0e0e0;}
+.mileage .btm-guide .box-cont .copy-code {padding:10px; border:1px solid #e0e0e0; line-height:1.2;}
+.mileage .btm-guide .box-cont .code-btn {margin-top:25px; text-align:center;}
+.mileage .btm-guide .box-cont .code-btn a {display:inline-block; width:128px; height:40px; margin:0 5px; border-radius:3px; font-size:18px; line-height:40px; box-sizing:border-box;}
+.mileage .btm-guide .box-cont .code-btn a.copy {background-color:#f6702c; color:#fff;}
+.mileage .btm-guide .box-cont .code-btn a.view {border:1px solid #d2d2d2; background-color:#f3f3f3; color:#403a3a;}
+
+/* 날개배너 추가 170522 이현우 */
+.quick {position:fixed; left:50%; top:150px; width:110px; margin-left:560px;}

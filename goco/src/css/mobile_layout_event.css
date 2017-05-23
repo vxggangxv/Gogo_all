@@ -7,12 +7,9 @@ a:hover, a:active {text-decoration:none; color:#000}
 input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
 
 /* 랜딩페이지 */
-.wrap_information{width:100%;}
-.wrap_information .request_btn{position:fixed; left:0; bottom:0; width:100%; padding:10px 0; background-color:#ffffff; border-top:1px solid #dedede;}
-.wrap_information .request_btn .btn_wrap {overflow:hidden; padding:0 10px; margin-top:-5px;}
-.wrap_information .request_btn a {width:48%; height:54px; margin-top:5px; border:1px solid #e0e0e0;}
-.wrap_information .request_btn a:nth-child(odd) {float:left; margin-right:1%;}
-.wrap_information .request_btn a:nth-child(even) {float:right; margin-left:1%;}
+.wrap_information{width:100%; text-align:center;}
+.wrap_information .request_btn{position:fixed; bottom:0; padding:8px 0; width:100%; height:72px; background-color:#ffffff; border-top:1px solid #dedede; text-align:center; display:table-cell;}
+.wrap_information .request_btn a{display:inline-block; vertical-align:middle; font-weight:bold; line-height:1.2; color:#fff; padding: 15px 3px; height:43px;}
 .wrap_information .request_btn a span{display:inline-block;}
 .wrap_information .ticket{background-color:#f57c3a; text-align:center;}
 .wrap_information .ticket span{display:inline-block; padding: 5px; font-size:17px;}
@@ -22,8 +19,6 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 .wrap_information .callcenter strong{color:#ffe400;}
 .wrap_information .callcenter span{display:inline-block;}
 .wrap_information .callcenter .s1{color:#fff60c;}
-.wrap_information .qna{background-color:#3a6af5; text-align:center;}
-.wrap_information .qna span{display:inline-block; padding: 5px; font-size:17px;}
 
 /* 예약하기-모바일 */
 .wrap_reservation-mobile{width:100%; height:1024px; background-color:#f2f2f2;}

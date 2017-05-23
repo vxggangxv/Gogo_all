@@ -34,6 +34,16 @@ textarea[readonly] {
 #navW .nav li a{float:left; text-align:center; width:155px; height:50px; line-height:2.9; font-size:16px; font-weight:bold; color:#fff}
 #navW .nav li a:hover{text-align:center; width:155px; height:50px; line-height:2.9; font-size:16px; font-weight:bold; color:#fff; background:#e45713}
 #navW .nav li.on a{text-align:center; width:155px; height:50px; line-height:2.9; font-size:16px; font-weight:bold; color:#fff; background:#e45713}
+/* 메뉴 새롭게 */
+#nav-bar {position: relative; width: 100%; height: 50px; letter-spacing:-0.5px; background:#f37720}
+#nav-bar .nav {margin:auto; width:1260px; height:50px;}
+#nav-bar .nav li {position: relative; float:left; width:172px; height:50px; background:#f37720}
+#nav-bar .nav li a {display: block; height: 100%; text-align:center; line-height: 3.3em; font-size:16px; font-weight:bold; color:#fff;}
+#nav-bar .nav li:hover > a, #nav-bar .nav li.on > a {color:#fff; background:#e45713}
+#nav-bar .nav li .dep2-menu {display: none; position: absolute;}
+#nav-bar .nav li:hover .dep2-menu {display: block;}
+#nav-bar .nav li .dep2-menu li {clear: both;}
+
 
 /** layout **/
 #wrapper{position:relative; width:100%; margin-top:20px; letter-spacing:-0.5px; padding-bottom:60px; floaT:left }
@@ -349,28 +359,42 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 /*객실현황 페이지 테이블 재코딩*/
 .clr:before, .clr:after {content: ""; display: block;}
 .clr:after {clear: both;}
-.table-wrapper {position: relative; width: 1260px; margin: 0 auto; margin-top: 30px;}
+.table-wrapper {position: relative; width: 1540px; margin: 0 auto; margin-top: 30px; left: 80px;}
 .table-wrapper * {box-sizing: border-box; letter-spacing: -0.7px;}
+
+.explain {position: absolute; top: -150px; left: -220px;}
+.explain li {display: table-row;}
+.explain li div {/*float: left;*/ display: table-cell; line-height: 1.8em; border: 1px solid #ddd; height: 22px; border-top: 0; border-left: 0; color: #333; font-size: 12px;}
+.explain li:first-child div {border-top: 1px solid #ddd;}
+.explain li div:first-child {border-left: 1px solid #ddd; background: #efefef;}
+.explain li div.nth-1 {width: 85px; padding-left: 3px;}
+.explain li div.nth-2 {padding-left: 5px; padding-right: 5px;}
+
 .table-wrapper .th-day {position: relative; text-align: center; font-size: 0;}
-.table-wrapper .th-day > span {display: inline-block; border: 1px solid #ddd; border-left: 0; width: 180px; padding: 6px 0; margin-right: 0; font-size: 13px; text-align: center; font-weight: 600;}
+.table-wrapper .th-day > span {display: inline-block; border: 1px solid #ddd; border-left: 0; width: 220px; padding: 6px 0; margin-right: 0; font-size: 13px; text-align: center; font-weight: 600;}
+.table-wrapper .th-day > .day {position: absolute; left: -220px; width: 210px;}
 .table-wrapper .th-day > .sun {color: red;}
 .table-wrapper .th-day > .sat {color: blue;}
-.table-wrapper .th-day > span:first-child {border-left: 1px solid #ddd;}
+.table-wrapper .th-day > .day, .table-wrapper .th-day > .day + .sun {border-left: 1px solid #ddd;}
 
-.table-wrapper .table-box {position: relative; width: 1260px;}
+.table-wrapper .table-box {position: relative; width: 1540px; margin-top: -1px;}
 .table-wrapper .table-box .row-box {position: relative; margin-top: 0px;}
-.table-wrapper .table-box .row-box:first-child {margin-top: 10px;}
+.table-wrapper .table-box .row-box:first-child {margin-top: 0px;}
 .table-wrapper .table-box .row-box.pkg {margin-top: -1px; display: none; margin-bottom: 20px; border: 1px solid #2d71f9;}
 .table-wrapper .table-box .row-box.pkg.on {display: block;}
 
-.table-wrapper .table-box table {position: relative; width: 180px; height: 194px; float: left;}
+.table-wrapper .table-box table {position: relative; width: 220px; height: 194px; float: left;}
 .table-wrapper .table-box .d-table.on {border: 2px solid #fb6e0f;}
 .table-wrapper .table-box .d-table .blur {display: none;}
 .table-wrapper .table-box .d-table.off .blur {position: absolute; color: #fff; text-align: center; font-size: 24px; font-weight: 600; display: block; top: 0; left: 0; 
   width: 100%; height: 100%; line-height: 7.6em; background: #000; letter-spacing: 1px; opacity: 0.8; filter: alpha(opacity=80);}
 
-.table-wrapper .table-box th, .table-wrapper .table-box td {border-collapse: collapse; border: 1px solid #ddd;}
-.table-wrapper .table-box .d-table th, .table-wrapper .table-box .d-table td {border-left: 0; width: 20%;}
+.table-wrapper .table-box th, .table-wrapper .table-box td {border-collapse: collapse; border: 1px solid #ddd; height: 38px;}
+.table-wrapper .table-box .d-table th, .table-wrapper .table-box .d-table td {border-left: 0; padding-right: 5px;}
+.table-wrapper .table-box .d-table th.nth-1 {width: 18%}
+.table-wrapper .table-box .d-table th.nth-2 {width: 30%;}
+.table-wrapper .table-box .d-table th.nth-3 {width: 26%;}
+.table-wrapper .table-box .d-table th.nth-4 {width: 26%;}
 .table-wrapper .table-box table:first-child th, .table-wrapper .table-box table:first-child td {border-left: 1px solid #ddd;}
 
 .table-wrapper .table-box .pkg table:first-child, .table-wrapper .table-box .pkg table:first-child + table {width: 179px;}
@@ -379,7 +403,7 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .table-wrapper .table-box .pkg table th, .table-wrapper .table-box .pkg table td {border-bottom: 0;}
 .table-wrapper .table-box .pkg table tr:first-child th {border-top: 0;}
 
-.table-wrapper .table-box th {text-align: center;}
+.table-wrapper .table-box .d-table th {text-align: center; padding-right: 0;}
 .table-wrapper .table-box th.th-d {text-align: left; height: 40px;}
 .table-wrapper .table-box .d-table  th.th-d {width: 100%; line-height: 2em;}
 .table-wrapper .table-box .d-table.on  th.th-d {height: 38px;}
@@ -396,19 +420,19 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
   background: linear-gradient(to bottom,  #888d91 0%,#5b5f68 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888d91', endColorstr='#5b5f68',GradientType=0 ); /* IE6-9 */
 }
-.table-wrapper .left-box {position: absolute; left: -190px; top: 0; clear: both; width: 180px;}
+.table-wrapper .left-box {position: absolute; width: 210px; left: -220px; top: 0; clear: both;}
 .table-wrapper .left-box th .btn-a:hover {background: #7d8286;}
 /*.table-wrapper .left-box th.th-d {height: 41px;}*/
-.table-wrapper .left-box .l-table {margin-top: 0px;}
-.table-wrapper .left-box .l-table:first-child {margin-top: 43px;}
+.table-wrapper .left-box .l-table {width: 100%; margin-top: 0px;}
+.table-wrapper .left-box .l-table:first-child {margin-top: 33px;}
 .table-wrapper .left-box .l-table.l-pkg {position: relative; display: none; margin-top: 26px;}
 .table-wrapper .left-box .l-table.l-pkg:after {content: ""; position: absolute; left: 0; top: 40px; width: 179px; height: 138px; border: 1px solid #2d71f9;}
 .table-wrapper .left-box .l-table.l-pkg.on {display: table;}
 .table-wrapper .left-box .l-table.l-pkg.on + .l-table {margin-top: 21px;}
-.table-wrapper .left-box .l-table th, .table-wrapper .table-box .l-table td {text-align: right; font-size: 12px;}
-.table-wrapper .left-box .l-table th:first-child, .table-wrapper .table-box .l-table td:first-child {padding-right: 8px;}
+.table-wrapper .left-box .l-table th, .table-wrapper .left-box .l-table td {text-align: right; font-size: 12px;}
+.table-wrapper .left-box .l-table th, .table-wrapper .left-box .l-table td {padding-right: 5px;}
+.table-wrapper .left-box .l-table tr:first-child th {border: 1px solid #ddd; text-align: center;}
 .table-wrapper .left-box .l-table td {font-size: 11px;} 
-.table-wrapper .left-box .l-table th:last-child, .table-wrapper .left-box .l-table td:last-child {padding-right: 2px;}
 
 .table-wrapper .table-box .row-box .btn-area {position: relative; clear: both; height: 26px; border: 1px solid #ddd; border-top: 0;}
 .table-wrapper .table-box .row-box .btn-area .btn-a {display: block; text-align: center; font-size: 12px; line-height: 2.1em; 

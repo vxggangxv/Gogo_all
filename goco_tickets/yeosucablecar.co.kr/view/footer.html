@@ -1,37 +1,51 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>여수해상케이블카</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 
-<meta http-equiv="Cache-Control" content="No-Cache">
-<meta http-equiv="Pragma" content="No-Cache">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta http-equiv="imagetoolbar" content="false">
-<meta name="robots" content="ALL">
-<link rel="shortcut icon" href="http://img.yeosucablecar.co.kr//yeosu_favicon.ico">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>여수해상케이블카</title>
 
-<link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/reset.css">
-<link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/prettyPhoto.css" charset="utf-8">
-<link rel="stylesheet" href="http://static.yeosucablecar.co.kr/css/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/layout_common.css">
-<link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/init.css">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="imagetoolbar" content="false">
+    <meta name="robots" content="ALL">
+    <link rel="shortcut icon" href="http://img.yeosucablecar.co.kr//yeosu_favicon.ico">
 
-
-<script src="http://static.yeosucablecar.co.kr/js/jquery.min.js"></script>
-<script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/jquery-ui.js"></script>
-<script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/common.js"></script>
-
-<script src="http://static.yeosucablecar.co.kr/js/datepicker_ko.js"></script>
-<script src="http://static.yeosucablecar.co.kr/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/jquery.cookie.js"></script>
-<script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/swiper.min.js"></script>
-<script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/jquery.number.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/prettyPhoto.css" charset="utf-8">
+    <link rel="stylesheet" href="http://static.yeosucablecar.co.kr/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/swiper.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/layout_common.css">-->
+    <link rel="stylesheet" type="text/css" href="../src/css/layout_common.css">
+    <link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/init.css">
 
 
-<style>
-	#overlay {position: absolute;top: 0;left: 0;z-index: 10;width: 100%;height: 100%;background-color: #464646;opacity: 0.8;}
-</style>
-<script src="http://static.yeosucablecar.co.kr/js/select_product.js"></script>		<!-- 20170227 입장권 UI변경하며 추가  -->
+    <script src="http://static.yeosucablecar.co.kr/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/common.js"></script>
+
+    <script src="http://static.yeosucablecar.co.kr/js/datepicker_ko.js"></script>
+    <script src="http://static.yeosucablecar.co.kr/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://static.yeosucablecar.co.kr/js/jquery.number.min.js"></script>
+
+
+    <style>
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            background-color: #464646;
+            opacity: 0.8;
+        }
+    </style>
+    <script src="http://static.yeosucablecar.co.kr/js/select_product.js"></script>
+    <!-- 20170227 입장권 UI변경하며 추가  -->
 
 </head>
 
@@ -39,310 +53,351 @@
 
 <body>
 
-	<style type="text/css">
-		#bannerTop {position:relative; width:100%; height:80px; background:#0090e5; text-align:center}
-		#bannerTop .close {position:absolute; top:0; right:0}
-		#bannerTop .contents {position:absolute; z-index:9999; top:80px; right:0; width:100%; height:392px; background:#fff; border-bottom:2px solid #003157; text-align:center}
-		#bannerTop .btn {position:relative; margin:auto; width:1001px; height:80px}
-		#bannerTop .btn .detail {position:absolute; top:50px; right:0; z-index:9}
-		#bannerTop .contents .shopLink {margin:auto; position:relative; width:1001px; height:392px; background:url(http://img.go.co.kr/bn_app04_2.jpg) no-repeat}
-		#bannerTop .contents .shopLink .text {position:absolute; top:100px; left:310px; font-weight:600; font-size:24px; text-align:left; line-height:1.3; letter-spacing:-1px}
-		#bannerTop .contents .shopLink .text span {display:inline-block; background:#fdff6c; color:#ff4800; text-decoration:underline; font-size:28px}
-		#bannerTop .contents .shopLink .download_btn {position:absolute; top:285px; left:310px}
-	</style>
-	<!-- 고코 앱설치배너 -->
-	<div id="bannerTop">
-		<div class="close"><a href="javascript:utils.appbn(&#39;&#39;, &#39;bannerTop&#39;);" title="닫기"><img src="http://img.yeosucablecar.co.kr//bn_app05.jpg"></a></div>
-		<div class="btn">
-			<div class="detail">
+    <style type="text/css">
+        #bannerTop {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            background: #0090e5;
+            text-align: center
+        }
+        
+        #bannerTop .close {
+            position: absolute;
+            top: 0;
+            right: 0
+        }
+        
+        #bannerTop .contents {
+            position: absolute;
+            z-index: 9999;
+            top: 80px;
+            right: 0;
+            width: 100%;
+            height: 392px;
+            background: #fff;
+            border-bottom: 2px solid #003157;
+            text-align: center
+        }
+        
+        #bannerTop .btn {
+            position: relative;
+            margin: auto;
+            width: 1001px;
+            height: 80px
+        }
+        
+        #bannerTop .btn .detail {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            z-index: 9
+        }
+        
+        #bannerTop .contents .shopLink {
+            margin: auto;
+            position: relative;
+            width: 1001px;
+            height: 392px;
+            background: url(http://img.go.co.kr/bn_app04_2.jpg) no-repeat
+        }
+        
+        #bannerTop .contents .shopLink .text {
+            position: absolute;
+            top: 100px;
+            left: 310px;
+            font-weight: 600;
+            font-size: 24px;
+            text-align: left;
+            line-height: 1.3;
+            letter-spacing: -1px
+        }
+        
+        #bannerTop .contents .shopLink .text span {
+            display: inline-block;
+            background: #fdff6c;
+            color: #ff4800;
+            text-decoration: underline;
+            font-size: 28px
+        }
+        
+        #bannerTop .contents .shopLink .download_btn {
+            position: absolute;
+            top: 285px;
+            left: 310px
+        }
+    </style>
+    <!-- 고코 앱설치배너 -->
+    <div id="bannerTop">
+        <div class="close">
+            <a href="javascript:utils.appbn(&#39;&#39;, &#39;bannerTop&#39;);" title="닫기"><img src="http://img.yeosucablecar.co.kr//bn_app05.jpg"></a>
+        </div>
+        <div class="btn">
+            <div class="detail">
 
-				<a href="javascript:utils.app_layer_new(&#39;bannertop_layer&#39;, &#39;&#39;);" title="자세히보기"><img src="http://img.yeosucablecar.co.kr//bn_app01.jpg" id="bannertop_btn"></a>
-				<!--레이어팝업 노출시 버튼명 변경  <a href="" title="닫기"><img src="http://img.elybaden.co.kr/bn_app02.jpg"></a>-->
-			</div>
-			<a href="javascript:utils.app_layer_new(&#39;bannertop_layer&#39;, &#39;&#39;);" title="고코투어앱 혜택보기"><img src="http://img.yeosucablecar.co.kr//bn_app03.jpg"></a>
-		</div>
+                <a href="javascript:utils.app_layer_new(&#39;bannertop_layer&#39;, &#39;&#39;);" title="자세히보기"><img src="http://img.yeosucablecar.co.kr//bn_app01.jpg" id="bannertop_btn"></a>
+                <!--레이어팝업 노출시 버튼명 변경  <a href="" title="닫기"><img src="http://img.elybaden.co.kr/bn_app02.jpg"></a>-->
+            </div>
+            <a href="javascript:utils.app_layer_new(&#39;bannertop_layer&#39;, &#39;&#39;);" title="고코투어앱 혜택보기"><img src="http://img.yeosucablecar.co.kr//bn_app03.jpg"></a>
+        </div>
 
 
 
-		<div class="contents" style="display:none;z-index:10" id="bannertop_layer">
-			<div class="shopLink">
-				<div class="text">
-					고코투어앱 설치하고 <br>
-					<span>온천엘리바덴 2,000원 즉시할인</span> 받으세요!
-				</div>
-				<div class="download_btn">
-					<a href="http://www.elybaden.co.kr/_appclick.php?val=android" target="_blank"><img src="http://img.yeosucablecar.co.kr//bn_app_btn01.jpg" alt="안드로이드 다운로드" style="margin-right:10px"></a>
-					<a href="http://www.elybaden.co.kr/_appclick.php?val=ios" target="_blank"><img src="http://img.yeosucablecar.co.kr//bn_app_btn02.jpg" alt="앱스토어 다운로드" style="margin-right:10px"></a>
-					<a href="http://www.elybaden.co.kr/_appclick.php?val=one" target="_blank"><img src="http://img.yeosucablecar.co.kr//bn_app_btn03.jpg" alt="원스토어 다운로드"></a>
-				</div>
-				<div class="detail" style="position:absolute;bottom:0;right:-110px">
-					<a href="javascript:utils.app_layer_new(&#39;bannertop_layer&#39;, &#39;&#39;);" title="자세히보기"><img src="http://img.yeosucablecar.co.kr//bn_app01.jpg" id="bannertop_btn2" style="display:none"></a>
-					<!--레이어팝업 노출시 버튼명 변경  <a href="" title="닫기"><img src="http://img.elybaden.co.kr/bn_app02.jpg"></a>-->
-				</div>
-			</div>
+        <div class="contents" style="display:none;z-index:10" id="bannertop_layer">
+            <div class="shopLink">
+                <div class="text">
+                    고코투어앱 설치하고
+                    <br>
+                    <span>온천엘리바덴 2,000원 즉시할인</span> 받으세요!
+                </div>
+                <div class="download_btn">
+                    <a href="http://www.elybaden.co.kr/_appclick.php?val=android" target="_blank"><img src="http://img.yeosucablecar.co.kr//bn_app_btn01.jpg" alt="안드로이드 다운로드" style="margin-right:10px"></a>
+                    <a href="http://www.elybaden.co.kr/_appclick.php?val=ios" target="_blank"><img src="http://img.yeosucablecar.co.kr//bn_app_btn02.jpg" alt="앱스토어 다운로드" style="margin-right:10px"></a>
+                    <a href="http://www.elybaden.co.kr/_appclick.php?val=one" target="_blank"><img src="http://img.yeosucablecar.co.kr//bn_app_btn03.jpg" alt="원스토어 다운로드"></a>
+                </div>
+                <div class="detail" style="position:absolute;bottom:0;right:-110px">
+                    <a href="javascript:utils.app_layer_new(&#39;bannertop_layer&#39;, &#39;&#39;);" title="자세히보기"><img src="http://img.yeosucablecar.co.kr//bn_app01.jpg" id="bannertop_btn2" style="display:none"></a>
+                    <!--레이어팝업 노출시 버튼명 변경  <a href="" title="닫기"><img src="http://img.elybaden.co.kr/bn_app02.jpg"></a>-->
+                </div>
+            </div>
 
 
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<div id="header_wrap">
-		<div id="header">
-			<ul class="top">
-				<li class="top_reservation"><a href="http://www.elybaden.co.kr/member/?dd=RREnSjA=">로그인 <img src="http://img.yeosucablecar.co.kr//top_reservation_icon.jpg"></a></li>
-			</ul>
-			<div class="logo">
-				<h1>
+    <div id="header_wrap">
+        <div id="header">
+            <ul class="top">
+                <li class="top_reservation"><a href="http://www.elybaden.co.kr/member/?dd=RREnSjA=">로그인 <img src="http://img.yeosucablecar.co.kr//top_reservation_icon.jpg"></a></li>
+            </ul>
+            <div class="logo">
+                <h1>
 				  <a class="corp" href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE="><img src="http://img.yeosucablecar.co.kr//logo.png" height="60" alt="여수해상케이블카"></a>
 				</h1>
-				<a class="official" href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE="><img src="http://img.yeosucablecar.co.kr//logo_c_r_b.png"></a>
-			</div>
-		</div>
-	</div>
+                <a class="official" href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE="><img src="http://img.yeosucablecar.co.kr//logo_c_r_b.png"></a>
+            </div>
+        </div>
+    </div>
 
-	<!-- gnb -->
-	<div id="gnb_wrap">
-		<div id="gnb">
-			<ul>
-        <li class="menu_on"><a href="./intro.html" title="여수해상케이블카">여수해상케이블카</a></li>
-				<li class="menu"><a href="./reservation.html" title="실시간 예약">실시간 예약</a></li>
-				<li class="menu"><a href="" title="예약내역조회">예약내역조회</a></li>
-				<li class="menu"><a href="" title="고객센터">고객센터</a></li>
-			</ul>
-		</div>
-		<!-- 서브메뉴 있을경우 -->
-		<div id="submn_wrap">
-      <div class="submn">
-        <ul class="business">
-          <li><a href="" style="color:#bc891c" title="여수해상케이블카 소개">여수해상케이블카 소개</a></li>
-          <li><a href="" title="찾아오시는 길">찾아오시는 길</a></li>
-        </ul>
-      </div>
-		</div>
+    <!-- gnb -->
+    <div id="gnb_wrap">
+        <div id="gnb">
+            <ul>
+                <li class="menu_on"><a href="./intro.html" title="여수해상케이블카">여수해상케이블카</a></li>
+                <li class="menu"><a href="./reservation.html" title="실시간 예약">실시간 예약</a></li>
+                <li class="menu"><a href="" title="예약내역조회">예약내역조회</a></li>
+                <li class="menu"><a href="" title="고객센터">고객센터</a></li>
+            </ul>
+        </div>
+        <!-- 서브메뉴 있을경우 -->
+        <div id="submn_wrap">
+            <div class="submn">
+                <ul class="business">
+                    <li><a href="" style="color:#bc891c" title="여수해상케이블카 소개">여수해상케이블카 소개</a></li>
+                    <li><a href="" title="찾아오시는 길">찾아오시는 길</a></li>
+                </ul>
+            </div>
+        </div>
 
-	</div>
-	<!-- gnb 끝 -->
+    </div>
+    <!-- gnb 끝 -->
 
-	<!-- wrapper -->
-	<div id="wrapper">
-		<div id="container" style="position:relative">
-			<div class="subNavi">
-				<ul>
-					<li><img src="http://img.yeosucablecar.co.kr//home_icon.jpg"><span>&gt;</span></li>
-          <li>여수해상케이블카<span>&gt;</span></li>
-          <li>여수해상케이블카 소개</li>
-				</ul>
-			</div>
+    <!-- wrapper -->
+    <div id="wrapper">
+        <div id="container" style="position:relative">
+            <div class="subNavi">
+                <ul>
+                    <li><img src="http://img.yeosucablecar.co.kr//home_icon.jpg"><span>&gt;</span></li>
+                    <li>여수해상케이블카<span>&gt;</span></li>
+                    <li>여수해상케이블카 소개</li>
+                </ul>
+            </div>
 
-			<div class="title">
-				<h2>여수해상케이블카 소개</h2>
-			</div>
-
-
-			<div class="sub_wrap">
-				<div style="position:absolute; top:220px; right:25px;cursor:pointer" id="reservBtn3" onclick="javascript:location.href='http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE='">
-					<div style="width: 110px !important; background-color: #fc762e; border-radius: 6px; color: #fff; text-align:center; font-size: 15px; line-height: 2.8; font-weight: 600; display: block;">예약하기</div>
-				</div>
-				<img src="http://img.yeosucablecar.co.kr//intro/introduce_view.jpg" alt="여수해상케이블카">
-				<div class="information_tx">
-          <p class="p1">
-            안녕하십니까?<br>
-            바다 위 하늘을 지나 섬과 육지를 잇는 한국 최초의 <span class="c-blue">여수해상케이블카</span>를 방문하여 주신<br>
-            고객님께 진심으로 감사드립니다.
-          </p>
-          <p class="p2">
-            여수해상케이블카는 바다위를 통과하여 돌산(섬)과 자산(육지)을 연결하는 국내 최초의 해상케이블카입니다.<br>
-            아시아에서는 홍콩, 싱카폴, 베트남에 이어 네번째로 바다위를 통과하는 해상케이블카입니다.<br>
-            이제 한국에서도 바다 뒤를 통과하는 해상케이블카에서 바다의 정취와 스릴감을 즐기실 수 있습니다.
-            <br><br>
-            마지막으로 고객님의 가정에 늘 건강과 행복이 가득하기 기원합니다.<br>
-            감사합니다.
-          </p>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- 고코투어 페이지 끝 알리는 로고 -->
-	<div class="page_btnLogo" style="clear:both;z-index:-1"></div>
-
-	<!-- footer-->
-	<!-- <div id="footer1">
-		<div class="link">
-			<a href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2Fy5FMQ==" title="예약방법">예약방법</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE=" title="온라인예약">온라인예약</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.elybaden.co.kr/mayhills/?dd=SBkyRjtLO000" title="이용약관">이용약관</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.elybaden.co.kr/mayhills/?dd=WQwpVT9FJw==" title="개인정보처리방침">개인정보처리방침</a>
-		</div>
-		<div class="copyright">
-			<span class="txt">
-				상호명 : (주)바로네트웍스  ㅣ 대표이사 : 전병권 ㅣ 고객상담 및 빠른객실문의 1666-1243 ㅣ 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
-				사업자등록번호 : 215-87-85373 ㅣ 통신판매업 : 제2017-서울강남-00561호 ㅣ 여행업등록번호 : 제2017-07호 <br>
-				여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>
-				help@go.co.kr | copyright 2015 by go co., all rights reserved.<br> <br>
+            <div class="title">
+                <h2>여수해상케이블카 소개</h2>
+            </div>
 
 
-				엘리바덴 | 대구광역시 달서구 상인동 1558 ㅣ 사업자등록번호 : 514-81-64273 ㅣ TEL : 1666-1243<br>
-				COPY RIGHT(C) 2007 ELYBADEN CONE. ALL RIGHTS RESERVED
-			</span>
-		</div>
-		<br><br>
-	</div>
-	<div id="footer2">
-		<div class="fimg">
-			<img src="http://img.yeosucablecar.co.kr//footer_img_01.gif" alt="랭커닷컴1위"><img src="http://img.yeosucablecar.co.kr//footer_img_02.gif" alt="관광사업등록"><img src="http://img.yeosucablecar.co.kr//footer_img_03.gif" alt="서울보증보험"><img src="http://img.yeosucablecar.co.kr//footer_img_04.gif" alt="신용카드결제"><img src="http://img.yeosucablecar.co.kr//footer_img_05.gif" alt="휴대폰결제"><img src="http://img.yeosucablecar.co.kr//footer_img_06.jpg" alt="공정거래위원회">
-		</div>
-	</div> 푸터 리뉴얼 170518 -->
-	<!-- Footer -->
-	<!--<style type="text/css">
-		#Footer {background-color:#323232;}
-		.f-area {width:1000px; margin:0 auto;}
-		.f-area .f-top {padding:20px 0;}
-		.f-area .f-top:after {content:''; display:block; clear:both;}
-		.f-area .f-top .link {float:left; color:#a3a3a3;}
-		.f-area .f-top .link a {color:#a3a3a3;}
-		.f-area .f-top .link a:hover {color:#fff;}
-		.f-area .f-top .link a.privacy {color:#fff; font-weight:bold;}
-		.f-area .f-bottom {overflow:hidden; position:relative; padding:30px 0 40px; border-top:1px solid #505050;}
-		.f-area .f-bottom .f-logo {float:left;}
-		.f-area .f-bottom .f-logo img {width:200px;}
-		.f-area .f-bottom .add {float:left; margin-left:40px;}
-		.f-area .f-bottom .add p {margin-top:15px; color:#a3a3a3; font-size:13px;}
-		.f-area .f-bottom .add p:first-child {margin-top:0;}
-		.f-area .f-bottom .add p.copy {color:#7f7f7f; letter-spacing:-0.3px;}
-		.f-area .f-bottom .add p strong {color:#cdcdcd; font-size:15px;}
-		.f-area .f-bottom .customer {float:right;}
-		.f-area .f-bottom .customer li {width:190px; height:70px; margin-bottom:10px; padding:10px 0 0 84px;}
-		.f-area .f-bottom .customer li.f_call {background:url('http://img.go.co.kr/f_ico_call.gif') no-repeat 20px 15px #414141;}
-		.f-area .f-bottom .customer li.f_mail {background:url('http://img.go.co.kr/f_ico_mail.gif') no-repeat 20px 15px #414141;}
-		.f-area .f-bottom .customer li p {color:#a4a4a4; font-size:14px;}
-		.f-area .f-bottom .customer li strong {color:#a4a4a4;}
-		.f-area .f-bottom .customer li.f_call strong {font-size:38px; line-height:35px; letter-spacing:-4px;}
-		.f-area .f-bottom .customer li.f_mail strong {font-size:28px; line-height:30px; letter-spacing:-2px;}
-		.f-area .f-bottom .four-list {position:absolute; right:0; bottom:40px;}
-		.f-area .f-bottom .four-list a, .f-area .f-bottom .four-list img {margin-left:10px;}
-	</style>-->
-	<div id="Footer">
-		<div class="f-area">
-			<div class="f-top">
-				<div class="link">
-					<a href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2Fy5FMQ==" title="예약방법">예약방법</a>
-					&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE=" title="온라인예약">온라인예약</a>
-					&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="http://www.elybaden.co.kr/mayhills/?dd=SBkyRjtLO000" title="이용약관">이용약관</a>
-					&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="http://www.elybaden.co.kr/mayhills/?dd=WQwpVT9FJw==" title="개인정보처리방침" class="privacy">개인정보처리방침</a>
-				</div>
-			</div>
+            <div class="sub_wrap">
+                <div style="position:absolute; top:220px; right:25px;cursor:pointer" id="reservBtn3" onclick="javascript:location.href='http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE='">
+                    <div style="width: 110px !important; background-color: #fc762e; border-radius: 6px; color: #fff; text-align:center; font-size: 15px; line-height: 2.8; font-weight: 600; display: block;">예약하기</div>
+                </div>
+                <img src="http://img.yeosucablecar.co.kr//intro/introduce_view.jpg" alt="여수해상케이블카">
+                <div class="information_tx">
+                    <p class="p1">
+                        안녕하십니까?
+                        <br> 바다 위 하늘을 지나 섬과 육지를 잇는 한국 최초의 <span class="c-blue">여수해상케이블카</span>를 방문하여 주신
+                        <br> 고객님께 진심으로 감사드립니다.
+                    </p>
+                    <p class="p2">
+                        여수해상케이블카는 바다위를 통과하여 돌산(섬)과 자산(육지)을 연결하는 국내 최초의 해상케이블카입니다.
+                        <br> 아시아에서는 홍콩, 싱카폴, 베트남에 이어 네번째로 바다위를 통과하는 해상케이블카입니다.
+                        <br> 이제 한국에서도 바다 뒤를 통과하는 해상케이블카에서 바다의 정취와 스릴감을 즐기실 수 있습니다.
+                        <br>
+                        <br> 마지막으로 고객님의 가정에 늘 건강과 행복이 가득하기 기원합니다.
+                        <br> 감사합니다.
+                    </p>
+                </div>
+            </div>
 
-			<div class="f-bottom">
-				<div class="f-logo"><img src="http://img.yeosucablecar.co.kr/f_logo.png" alt=""></div>
-				<div class="add">
-					<p>
-						<strong>(주)바로네트웍스</strong><br />
-						대표이사 : 전병권<br />
-						주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br />
-						사업자등록번호 : 215-87-85373<br />
-						여행업등록번호 : 제2017-07호<br />
-						여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br />
-					</p>
-					<p>
-						<strong>여수케이블카</strong><br />
-						주소 : 전라남도 여수시 돌산읍 강남로 34<br />
-						사업자등록번호 : 417-81-38931<br />
-						통신판매업 : 제 2014-전남여수-0105<br />
-					</p>
-					<p class="copy">copyright 2016 YEOSUCABLECAR CONE. ALL RIGHTS RESERVED</p>
-				</div>
-				<ul class="customer">
-					<li class="f_call">
-						<p>고객상담 및 빠른객실문의</p>
-						<strong>1666-1243</strong>
-					</li>
-					<li class="f_mail">
-						<p>E-mail 문의</p>
-						<a href="mailto:help@go.co.kr"><strong>help@go.co.kr</strong></a>
-					</li>
-				</ul>
-				<div class="four-list">
-					<img src="http://img.go.co.kr/f_icon01.gif" border="0" alt="랭키닷컴1위" /><img src="http://img.go.co.kr/f_icon02.gif" border="0" alt="관광업등록증" /><img src="http://img.go.co.kr/f_icon03.gif" border="0" alt="서울보증보험" /><img src="http://img.go.co.kr/f_icon04.gif" border="0" alt="신용카드결제" /><img src="http://img.go.co.kr/f_icon05.gif" border="0" alt="휴대폰결제" /><img src="http://img.go.co.kr/f_icon06.gif" alt="공정거래위원회" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer -->
-	<!-- footer 끝 -->
+        </div>
+    </div>
 
-	<!-- top 버튼 -->
-	<div id="quickMenu2" style="z-index: 9999; display: block; position: fixed; border-bottom: none; bottom: 70px;">
-		<a href="javascript:move_home();"><img src="http://img.yeosucablecar.co.kr//top_btn.png"></a>
-	</div>
+    <!-- 고코투어 페이지 끝 알리는 로고 -->
+    <div class="page_btnLogo" style="clear:both;z-index:-1"></div>
+
+    <div id="Footer">
+        <div class="f-area">
+            <div class="f-top">
+                <div class="link">
+                    <!--<a href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2Fy5FMQ==" title="예약방법">예약방법</a>
+                      &nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE=" title="온라인예약">온라인예약</a>-->
+                    <a href="" title="구매하기">구매하기</a> &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" title="이용약관">이용약관</a> &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.elybaden.co.kr/mayhills/?dd=WQwpVT9FJw==" title="개인정보처리방침" class="privacy">개인정보처리방침</a>
+                </div>
+            </div>
+
+            <div class="f-bottom">
+                <div class="f-logo"><img src="http://img.go.co.kr/f_logo.gif" alt=""></div>
+                <div class="add">
+                    <p>
+                        <strong>(주)바로네트웍스</strong>
+                        <br /> 대표이사 : 전병권
+                        <br /> 주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)
+                        <br /> 사업자등록번호 : 215-87-85373
+                        <br /> 여행업등록번호 : 제2017-07호
+                        <br /> 여행영업보증서 : 국내여행 제100-000-2015 0144 5816호
+                        <br />
+                    </p>
+                    <p>
+                        <strong>여수케이블카</strong>
+                        <br /> 주소 : 전라남도 여수시 돌산읍 강남로 34
+                        <br /> 사업자등록번호 : 417-81-38931
+                        <br /> 통신판매업 : 제 2014-전남여수-0105
+                        <br />
+                    </p>
+                    <p class="copy">copyright 2016 YEOSUCABLECAR CONE. ALL RIGHTS RESERVED</p>
+                </div>
+                <ul class="customer">
+                    <li class="f_call">
+                        <p>고객상담 및 빠른객실문의</p>
+                        <strong>02-2202-3435</strong>
+                    </li>
+                    <li class="f_mail">
+                        <p>E-mail 문의</p>
+                        <a href="mailto:help@go.co.kr"><strong>varonet@varonet.co.kr</strong></a>
+                    </li>
+                </ul>
+                <div class="four-list">
+                    <img src="http://img.go.co.kr/f_icon01.gif" border="0" alt="랭키닷컴1위" /><img src="http://img.go.co.kr/f_icon02.gif" border="0" alt="관광업등록증" /><img src="http://img.go.co.kr/f_icon03.gif" border="0" alt="서울보증보험" /><img src="http://img.go.co.kr/f_icon04.gif" border="0" alt="신용카드결제" /><img src="http://img.go.co.kr/f_icon05.gif" border="0" alt="휴대폰결제" /><img src="http://img.go.co.kr/f_icon06.gif" alt="공정거래위원회" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <!-- footer 끝 -->
+
+    <!-- top 버튼 -->
+    <div id="quickMenu2" style="z-index: 9999; display: block; position: fixed; border-bottom: none; bottom: 70px;">
+        <a href="javascript:move_home();"><img src="http://img.yeosucablecar.co.kr//top_btn.png"></a>
+    </div>
 
 
-	<div id="app_pop_w" style="display:none;position:fixed;height:330px">
-		<div class="app_pop_title"><img src="http://img.yeosucablecar.co.kr//pop_title_app.jpg"></div>
-		<div class="app_pop_close"><a href="javascript:utils.out(&#39;#app_pop_w&#39;);"><img src="http://img.yeosucablecar.co.kr//soldout_close_btn.jpg"></a></div>
-		<div class="app_pop_img" style="margin: 0px 35px 10px 10px">
-			<img src="http://img.yeosucablecar.co.kr//app_qr.jpg">
-		</div>
-		<div class="app_pop_txt" style="margin-top:0px">
-			<p class="txt1" style="font-weight:bold;">앱으로 예약시&nbsp;<span class="txt1_F">최대 80%할인</span>&nbsp;가능!</p>
-			<p class="txt2">
-				<span style="font-weight:bold;font-size:17px">추가할인이 가능한 앱을 설치하여 예약해보세요.</span><br><br>
-				<span class="txt2_R">핸드폰번호를 입력하시면 <br><span class="txt2_F">앱 설치 URL을 문자</span>로
-				보내드립니다.
-			</span></p>
-		</div>
-		<div class="app_pop_num" style="margin-top:10px">
-			<input id="phone" name="phone" placeholder="휴대폰 번호 입력 (”-” 제외)" class="inputp" value="" style="width:235px" maxlength="11" type="text" onkeypress="if(event.keyCode == 13) { app_bn_submit(); }" onkeyup="util.checktype(&#39;number&#39;, &#39;phone&#39;)"> <span class="app_pop_btn" onclick="app_bn_submit()">전송</span>
-		</div>
-		<div class="app_pop_rtxt" style="height:40px">
-			<p class="app_pop_rtxt_txt">
-				* 문자로 발송드린 URL을 클릭하시면 앱설치가 가능한 설치페이지로 이동합니다.<br>
-			</p>
-		</div>
-	</div>
+    <div id="app_pop_w" style="display:none;position:fixed;height:330px">
+        <div class="app_pop_title"><img src="http://img.yeosucablecar.co.kr//pop_title_app.jpg"></div>
+        <div class="app_pop_close">
+            <a href="javascript:utils.out(&#39;#app_pop_w&#39;);"><img src="http://img.yeosucablecar.co.kr//soldout_close_btn.jpg"></a>
+        </div>
+        <div class="app_pop_img" style="margin: 0px 35px 10px 10px">
+            <img src="http://img.yeosucablecar.co.kr//app_qr.jpg">
+        </div>
+        <div class="app_pop_txt" style="margin-top:0px">
+            <p class="txt1" style="font-weight:bold;">앱으로 예약시&nbsp;<span class="txt1_F">최대 80%할인</span>&nbsp;가능!</p>
+            <p class="txt2">
+                <span style="font-weight:bold;font-size:17px">추가할인이 가능한 앱을 설치하여 예약해보세요.</span>
+                <br>
+                <br>
+                <span class="txt2_R">핸드폰번호를 입력하시면 <br><span class="txt2_F">앱 설치 URL을 문자</span>로 보내드립니다.
+                </span>
+            </p>
+        </div>
+        <div class="app_pop_num" style="margin-top:10px">
+            <input id="phone" name="phone" placeholder="휴대폰 번호 입력 (”-” 제외)" class="inputp" value="" style="width:235px" maxlength="11" type="text" onkeypress="if(event.keyCode == 13) { app_bn_submit(); }" onkeyup="util.checktype(&#39;number&#39;, &#39;phone&#39;)"> <span class="app_pop_btn" onclick="app_bn_submit()">전송</span>
+        </div>
+        <div class="app_pop_rtxt" style="height:40px">
+            <p class="app_pop_rtxt_txt">
+                * 문자로 발송드린 URL을 클릭하시면 앱설치가 가능한 설치페이지로 이동합니다.
+                <br>
+            </p>
+        </div>
+    </div>
 
-<script type="text/javascript">
-$(function() {
-	$(window).scroll(function() {
-		var scrollTop = $(window).scrollTop();
-		if(scrollTop > 100) {
-			$("#quickMenu2").css({"position":"fixed", "bottom":"70px", "z-index":"9999", "display":"block"});		//타이틀라인
-		} else if(scrollTop < 100) {
-			$("#quickMenu2").css({"position":"static", "border-bottom":"none" , "display":"none"});		//타이틀라인
-		}
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > 100) {
+                    $("#quickMenu2").css({
+                        "position": "fixed",
+                        "bottom": "70px",
+                        "z-index": "9999",
+                        "display": "block"
+                    }); //타이틀라인
+                } else if (scrollTop < 100) {
+                    $("#quickMenu2").css({
+                        "position": "static",
+                        "border-bottom": "none",
+                        "display": "none"
+                    }); //타이틀라인
+                }
 
-		if(scrollTop > 230) {
-			$("#gnb_wrap2").css({"position":"fixed", "top":"0px", "z-index":"499", "display":"block"});		//타이틀라인
-		} else if(scrollTop < 230) {
-			$("#gnb_wrap2").css({"position":"static", "border-bottom":"none" , "display":"none"});		//타이틀라인
-		}
+                if (scrollTop > 230) {
+                    $("#gnb_wrap2").css({
+                        "position": "fixed",
+                        "top": "0px",
+                        "z-index": "499",
+                        "display": "block"
+                    }); //타이틀라인
+                } else if (scrollTop < 230) {
+                    $("#gnb_wrap2").css({
+                        "position": "static",
+                        "border-bottom": "none",
+                        "display": "none"
+                    }); //타이틀라인
+                }
 
 
-					var list_totalh = parseInt($("#reservation_go").height()) + parseInt($("#header_wrap").height());	// 객실리스트 끝난 후 노출
+                var list_totalh = parseInt($("#reservation_go").height()) + parseInt($("#header_wrap").height()); // 객실리스트 끝난 후 노출
 
-		if(scrollTop > list_totalh) {
-			$("#re_choice_fix").css({"position":"fixed", "top":"47px", "z-index":"499", "display":"block"});		//타이틀라인
-		} else if(scrollTop < list_totalh) {
-			$("#re_choice_fix").css({"position":"static", "border-bottom":"none" , "display":"none"});		//타이틀라인
-		}
-	});
+                if (scrollTop > list_totalh) {
+                    $("#re_choice_fix").css({
+                        "position": "fixed",
+                        "top": "47px",
+                        "z-index": "499",
+                        "display": "block"
+                    }); //타이틀라인
+                } else if (scrollTop < list_totalh) {
+                    $("#re_choice_fix").css({
+                        "position": "static",
+                        "border-bottom": "none",
+                        "display": "none"
+                    }); //타이틀라인
+                }
+            });
 
 
-});
+        });
 
 
 
-function move_home() {
-	$(window).scrollTop(0);
-}
-</script>
+        function move_home() {
+            $(window).scrollTop(0);
+        }
+    </script>
 
 
 </body>
+
 </html>

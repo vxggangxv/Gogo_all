@@ -1,7 +1,7 @@
 /*#wrapper * {box-sizing: border-box;}*/
 #headTitle #h-phone {position: absolute; top: 15px; right: 10px; width: 17px; height: 16px; cursor: pointer;}
 
-.nb-wrap {position: relative; height: 430px; padding-bottom: 10px; background: #fff;}
+.nb-wrap {position: relative; height: 430px; padding-bottom: 10px; background: #f1f1f;}
 .non-box {position: absolute; left: 50%; top: 50%; margin-left: -150px; margin-top: -83px; width: 300px; height: 166px; text-align: center;}
 .non-box img {display: block; margin: 0 auto; width: 50px; margin-bottom: 10px;}
 .non-box strong {color: #010101; font-size: 16px;}
@@ -17,9 +17,20 @@
 .history-tab-01 ul li:first-child a {border-left: 0;}
 .history-tab-01 ul li.on a {border-bottom: 2px solid #f96a0a; color: #010101;}
 
-.history01-list {position: relative; background: #f1f1f1;}
+.history01-list {position: relative; background: #f1f1f1; padding-top: 5px;}
 .history01-list * {font-family: "Nanum Gothic", "Malgun Gothic", sans-serif;}
-.history01-list li {position: relative; width: 100%; height: 150px; overflow: hidden; margin-top: 5px;}
+.history01-list .code-wrap {position: relative; background: #fff; padding: 10px; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;}
+.history01-list .code-wrap .code , .history01-list .code-wrap .reg {border-radius: 2px; font-size: 13px;}
+.history01-list .code-wrap .code {border: 1px solid #e2e2e2; width: 80%; text-indent: 3px; color: #010101;}
+.history01-list .code-wrap .code::-webkit-input-placeholder {color: #a2a2a2;}
+.history01-list .code-wrap .code::-moz-placeholder {color: #a2a2a2;}
+.history01-list .code-wrap .code::-ms-input-placeholder {color: #a2a2a2;}
+.history01-list .code-wrap .code::-moz-placeholder {color: #a2a2a2;}
+@media (max-width: 359px) {
+  .history01-list .code-wrap .code {width: 77%;}
+}
+.history01-list .code-wrap .reg {margin-left: 5px; background: #fa6a0a; color: #fff; width: 60px;}
+.history01-list li {position: relative; width: 100%; height: 150px; overflow: hidden; margin-top: 5px; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;}
 .history01-list li .h-link-a {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
 .history01-list li .a-bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
