@@ -1323,3 +1323,5 @@ background-size: 54px; background-position: center -8px;}
 .bn-more-pdt .d1 .p4 {width: 83px; font-size: 25px; font-weight: 700; letter-spacing: 0;}
 .bn-more-pdt .d2 {height: 30px; background: #ff7a2d; text-align: center; color: #fff; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic"; line-height: 2.1em;}
 .bn-more-pdt .d2 .gt {position: absolute; top: 12px; right: 22px;}
+/* 메인페이지 패키지 이미지 추가_170620_혜준 */
+.infomation_pkg {margin-bottom: 80px;}
