@@ -2509,8 +2509,8 @@ background:url(http://img.gaza82.co.kr/checkbox_img.gif) no-repeat 0 0;backgroun
 #wrapper #customer .qna_t_list td a:hover {color:#343e77}
 
 #wrapper #customer .qna_t_btn {float:left; margin:10px 0 30px 0; width:740px; text-align:center}
-#wrapper #customer .qna_t_btn .comfirm a {float:left; margin-right:5px; margin-left:247px; display:block; width:120px; height:35px; border:1px solid #e55201; text-align:center; color:#fff; background:#343e77; font-weight:600; line-height:2.3; font-size:14px}
-#wrapper #customer .qna_t_btn .list a {float:left; display:block; width:120px; height:35px; border:1px solid #949494; text-align:center; color:#fff; background:#aaaaaa; font-weight:600; line-height:2.3; font-size:14px}
+#wrapper #customer .qna_t_btn .comfirm a {float:left; margin-right:5px; margin-left:247px; display:block; width:120px; height:35px; text-align:center; color:#fff; background:#343e77; font-weight:600; line-height:2.3; font-size:14px}
+#wrapper #customer .qna_t_btn .list a {float:left; display:block; width:120px; height:35px; border:1px solid #949494; text-align:center; color:#fff; background:#aaaaaa; font-weight:600; line-height:2.3; font-size:14px; margin-top:0px;}
 #wrapper #customer .qna_t_btn .list2 a {float:right; display:block; width:120px; height:35px; border:1px solid #e55201; text-align:center; color:#fff; background:#343e77; font-weight:600; line-height:2.3; font-size:14px}
 
 #wrapper #customer .btn_my {float:left; width:100%; text-align:center}
@@ -3460,7 +3460,7 @@ background:url(http://img.gaza82.co.kr/checkbox_img.gif) no-repeat 0 0;backgroun
 /*메인 개선 201512*/
 option {font-size:13px}
 
-#headerWrap{position:relative; margin:auto; width:1002px; height:100px}
+#headerWrap{position:relative; margin:auto; width:1064px; height:100px}
 
 #headerWrap .header{width:100%}
 #headerWrap .header .logo {float:left; margin-top:8px}

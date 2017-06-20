@@ -18,9 +18,11 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://static.go.co.kr/js/go/common.js"></script>
 
-    <link rel="stylesheet" href="../../src/css/go/layout.css" type="text/css">
+     <link rel="stylesheet" href="../../src/css/go/layout.css" type="text/css"> 
     <style>
-        .table-wrapper .table-box .d-table  th.th-d {padding-left: 10px;}
+        .table-wrapper .table-box .d-table th.th-d {
+            padding-left: 10px;
+        }
     </style>
 </head>
 
@@ -92,7 +94,7 @@
                     <div class="nth-2"></div>
                 </li>
             </ul>
-            
+
             <div class="th-day">
                 <span class="day">요일</span>
                 <span class="sun">일(Sun)</span>
@@ -202,6 +204,9 @@
             <div class="table-box clr" id="table-box">
                 <div class="row-box clr">
                     <!--마감 표시 table.off-->
+                    <table class="d-table non-table">
+                        <tr><td></td></tr>
+                    </table>
                     <table class="d-table">
                         <tr>
                             <th class="th-d" colspan="4"><a href="#" class="btn-a">마감</a>1일</th>
@@ -211,6 +216,7 @@
                             <th class="bg nth-2">가용객실수</th>
                             <th class="bg nth-3">입실예정</th>
                             <th class="bg nth-4">판매가능</th>
+
                         </tr>
                         <tr>
                             <td>42</td>
@@ -259,10 +265,6 @@
                             <td>50</td>
                             <td>50</td>
                             <td>50</td>
-                        </tr>
-                        <!--마감 표시-->
-                        <tr>
-                            <td class="blur">마감</td>
                         </tr>
                     </table>
                     <table class="d-table">
@@ -565,7 +567,11 @@
                             <td>50</td>
                         </tr>
                     </table>
-                    <table class="d-table">
+                    <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+                </div>
+
+                <div class="row-box clr">
+                    <table class="d-table on">
                         <tr>
                             <th class="th-d" colspan="4"><a href="#" class="btn-a">마감</a>7일</th>
                         </tr>
@@ -574,7 +580,6 @@
                             <th class="bg nth-2">가용객실수</th>
                             <th class="bg nth-3">입실예정</th>
                             <th class="bg nth-4">판매가능</th>
-
                         </tr>
                         <tr>
                             <td>42</td>
@@ -625,11 +630,7 @@
                             <td>50</td>
                         </tr>
                     </table>
-                    <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
-                </div>
-
-                <div class="row-box clr">
-                    <table class="d-table on">
+                    <table class="d-table">
                         <tr>
                             <th class="th-d" colspan="4"><a href="#" class="btn-a">마감</a>8일</th>
                         </tr>
@@ -638,6 +639,7 @@
                             <th class="bg nth-2">가용객실수</th>
                             <th class="bg nth-3">입실예정</th>
                             <th class="bg nth-4">판매가능</th>
+
                         </tr>
                         <tr>
                             <td>42</td>
@@ -988,66 +990,6 @@
                             <td>50</td>
                         </tr>
                     </table>
-                    <table class="d-table">
-                        <tr>
-                            <th class="th-d" colspan="4"><a href="#" class="btn-a">마감</a>14일</th>
-                        </tr>
-                        <tr>
-                            <th class="bg nth-1">일제외</th>
-                            <th class="bg nth-2">가용객실수</th>
-                            <th class="bg nth-3">입실예정</th>
-                            <th class="bg nth-4">판매가능</th>
-
-                        </tr>
-                        <tr>
-                            <td>42</td>
-                            <td>126</td>
-                            <td>1</td>
-                            <td>125</td>
-
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>27</td>
-                            <td>1</td>
-                            <td>26</td>
-
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>6</td>
-                            <td>1</td>
-                            <td>5</td>
-
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td>10</td>
-                            <td>1</td>
-                            <td>9</td>
-
-                        </tr>
-                        <tr>
-                            <td>0</td>
-                            <td>12</td>
-                            <td>1</td>
-                            <td>11</td>
-
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-
-                        </tr>
-                        <tr>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                        </tr>
-                    </table>
                     <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
                 </div>
             </div>
@@ -1066,6 +1008,7 @@
                 $("#table-box .row-box").each(function () {
                     $(this).find(".d-table").eq(0).css("background", "#ffebeb");
                     $(this).find(".d-table").eq(6).css("background", "#ddeffb");
+                    $(this).find(".non-table").css("background", "#fff");
                 });
                 /*$("#table-box .row-box .d-table").eq(0).css("background", "#fbdede");
                 $("#table-box .row-box .d-table").eq(6).css("background", "#ddeffb");*/

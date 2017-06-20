@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>문서 제목</title>
+
+    <link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css" />
+    <!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
+    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">-->
+    <link rel="stylesheet" href="../../../src/css/m/history/history_m.css">
+    <link rel="stylesheet" href="../../../src/css/totalmobile.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!--<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="scroll_box">
+            <div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+                <!-- 서브페이지 상단 -->
+                <div id="headTitle_box">
+                    <div id="headTitle">
+                        <span class="back">
+                <a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a>
+              </span>예약내역
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="history-tab-01">
+                    <ul class="clr">
+                        <li class="on"><a href="./history_01_1.html">이용가능</a></li>
+                        <li><a href="./history_01_2.html">이용완료</a></li>
+                        <li><a href="./history_01_3.html">환불/취소</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="top_box_bottom" style="height: 80px;"></div>
+            <!-- 변경내용 시작 -->
+
+            <div class="history01-list">
+                <div class="code-wrap">
+                    <input type="text" class="code" placeholder="이용권 번호를 입력해주세요"><input type="button" class="reg" value="등록">
+                </div>
+
+                <div class="nb-wrap">
+                    <div class="non-box">
+                        <img src="http://img.go.co.kr/mobile/h_1.png" alt="느낌표">
+                        <strong>예약내역이 없습니다.</strong>
+                        <p>레저 입장권과 다양한 숙박시설을
+                            <br>고코만의 특가로 예약해보세요!</p>
+                        
+                        <!--추가내용_170605-->
+                        <div class="clearHere">
+                            <a href="javascript: void(0)" onclick="$('#layer-pop-bg').show();">
+                                구매하신 예약건이 보이지 않는다면, <br>
+                                <span class="c-yellow">여기를 클릭</span>하여 확인하세요
+                            </a>
+                        </div>
+                        <!--추가내용_170605 끝-->
+                    </div>
+
+                    <div class="non-btn-area"><a href="">예약하러 가기</a></div>
+                </div>
+
+            </div>
+            
+            <style>
+                /*.layer-pop-bg {display: none;}
+                .clearHere {position: relative; text-align: center; margin-top: 15px;}
+                .clearHere > a {display: inline-block; width: 230px; height: 42px; padding-top: 6px; background-color: #585858; border-radius: 3px; font-size: 14px; color: #fff; line-height: 1.3em; letter-spacing: -0.7px;}
+                .clearHere .c-yellow {color: #fff600;}
+                .clearHere .gt {position: relative; top: -2px; left: 45px;font-size: 12px; font-family: "Nanum Gothic"; font-weight: 400;}*/
+            </style>
+
+            <!-- 예약내역 레이어팝업 -->
+            <div class="layer-pop-bg" id="layer-pop-bg">
+                <!--조회-->
+                <!--<div id="r-lookup">
+                    <h2>예약내역 조회<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#layer-pop-bg').hide();"></a></h2>
+                    <p class="nth-1">예약하신 휴대폰 번호를 입력해주세요</p>
+                    <p class="nth-2">
+                        <input type="text"><span></span><input type="text"><span></span><input type="text">
+                    </p>
+                    <p class="nth-3"><a href="#">검 색</a></p>
+                </div>-->
+                <!--확인-->
+                <div id="r-confirm">
+                    <h2>예약내역 확인<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#layer-pop-bg').hide();"></a></h2>
+                    <p class="nth-1">고객님의 예약정보를 확인해주세요</p>
+                    <div class="inner-box">
+                        <p class="nth-1">고객님은<br><span class="f-bd">네이버 아이디 abced12345</span>로<br>로그인 후 예약하셨습니다.</p>
+                        <p class="nth-2"><a href="#">네이버 아이디로 로그인</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--추가내용_170605 예약내역 레이어팝업 끝-->
+
+        </div>
+    </div>
+</body>
+
+</html>

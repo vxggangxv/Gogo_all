@@ -535,7 +535,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 #cart_end_wrap #cart_end .go {color:#ea0000; font-weight:600}
 
 /* 부대시설 */
-.facilities_tx{float:left; width:980px} 
+.facilities_tx{float:left; width:980px}
 .facilities_tx dl{overflow:hidden; padding: 0; width: 480px; height:400px; border-top: solid 1px #e3e3e3; float: left; margin-bottom: 30px; line-height: 2.8;}
 .facilities_tx dl:nth-of-type(1){border-top:0px;}
 .facilities_tx dl:nth-of-type(2){border-top:0px;}
@@ -885,7 +885,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 
 /* 주변 이용권_20161223 */
-.attractions_use{float:left; width:980px} 
+.attractions_use{float:left; width:980px}
 .attractions_use dl{padding:20px 0; width:980px; border-top:solid 1px #e3e3e3; float:left; margin-bottom:30px; line-height:2.8}
 .attractions_use dl:nth-of-type(1){border-top:0px;}
 .attractions_use dl dt{float:left}
@@ -1005,13 +1005,13 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 #callCenter span{font-size:15px; font-weight: 500;}
 #callcenter2 {width: 112px; height: 172px; background-color:#2d4f88; border-radius: 4px; color: #fff; text-align: center; padding: 10px 0;}
 
-#reservBtn{position:fixed; right:17.55%; width:112px; height:172px; border-radius:4px; color: #fff; text-align:center; padding:10px 0;}
-#reservBtn > div{font-size: 20px; margin-top:20px; line-height:1.3; font-weight: 600;}
-#reservBtn2, #reservBtn3 {position: absolute; top: 0px; width: 112px; height: 177px; background-color: #fa6b0a; border-radius: 4px; color: #fff; text-align: center; }
-#reservBtn2 {display: none;}
+#reservBtn {position:fixed; right:17.55%; width:112px; border-radius:4px; color: #fff; text-align:center;}
+#reservBtn > div {/* display: none; */ font-size: 20px; margin-top:10px; line-height:1.3; font-weight: 600; position: relative; top: 0px; width: 112px; color: #fff; text-align: center; }
+/* #reservBtn > div.on {display: block;} */
+#reservBtn2 {display: none; height: 177px; background-color: #fa6b0a; border-radius: 4px;}
 #reservBtn2 img {width:60px; margin-top:35px; margin-bottom: 20px;}
-#reservBtn3 {background: none; border-radius: 0;}
-#reservBtn3 img {width: 100%;}
+/*#reservBtn3 {background: none; border-radius: 0;}
+#reservBtn3 img {width: 100%;}*/
 #cal_wrap2 .cal_result .allprice {margin: auto; margin-top: 10px; padding: 5px 0 10px 0; width: 244px; letter-spacing: -0.5px; font-weight: 600; font-size: 14px; text-align: center; background-color: #ffffff; border: 3px solid #d1d5db; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; color: #222;}
 #cal_wrap2 .cal_result .allprice .num {vertical-align: -2px; font-weight: 800; font-size: 25px; color: #ff1200; letter-spacing: -1px;}
 #cal_wrap2 .cal_result .allprice .summary {font-size: 12px; font-weight: 400;}
@@ -1058,15 +1058,15 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 /* 실시간문의 모달 */
 #q_modal {position: fixed; z-index: 6; width: 400px; height: 260px; top: 50%; margin-top: -130px; left: 50%; margin-left: -200px; background: #fff;}
 #q_modal h2 {height: 64px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 26px; color: #fff; font-weight: 700; text-align: center; line-height: 2.6em; background: #FB6B0A;}
-#q_modal .q_clsBtn {position: absolute; right: 0;	top: 0;	 display: inline-block; width: 64px; height: 64px; 
-	background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat center -520px; 
+#q_modal .q_clsBtn {position: absolute; right: 0;	top: 0;	 display: inline-block; width: 64px; height: 64px;
+	background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat center -520px;
 }
 #q_modal ul {width: 68%; margin: 0 auto; }
 #q_modal ul li {position: relative; height: 60px;	line-height: 3.8em; font-size: 17px; border-bottom: 1px solid #ddd; text-align: left;}
 #q_modal ul li:last-child { border: none; }
 #q_modal ul li a {display: block; padding-left: 100px; letter-spacing: -1px; color: #333;}
 #q_modal ul li a:before {content: ""; position: absolute; left: 34px;	top: 0;	 display: inline-block; width: 50px; height: 60px;
-background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat; 
+background: url("http://img.go.co.kr/mobile/q_picto.png") no-repeat;
 background-size: 54px; background-position: center -8px;}
 #q_modal ul li:nth-child(2) a:before {background-position: center -85px;}
 #q_modal ul li:nth-child(3) a:before {background-size: 70px; background-position: center -422px;}
@@ -1099,7 +1099,7 @@ background-size: 54px; background-position: center -8px;}
 /* 도표 추가 20170410 */
 .tit_box {position: relative; width: 100%; /* margin: 0 auto; margin-left: 25px; */ height: 48px; padding-top: 8px; background: #ff7a2d;}
 .tit_box > span {position:relative; top: 3px; color: #fff;}
-.tit_box .t1 {font-size: 22px; margin-left: 140px;/* margin-left: 230px; */ font-weight: 800; margin-right: 10px;}
+.tit_box .t1 {font-size: 22px; margin-left: 140px;/* margin-left: 230px; */ font-weight: 800; margin-right: 10px; font-family: "Malgun Gothic"; letter-spacing: -0.5px;}
 .tit_box > label {margin-right: 5px; display: inline-block; height: 34px; cursor: pointer;}
 .tit_box #s1 {height: 30px; width: 230px; border:1px solid #ec671a; border-right: none; font-size: 15px; font-weight: 600; text-indent: 10px; line-height: 2.1em;}
 .tit_box .i1 {display: inline-block; width: 32px; background: #fff; }
@@ -1118,7 +1118,7 @@ background-size: 54px; background-position: center -8px;}
 
 .slt_contents {width: 540px; background: #fff; border-left: 1px solid #ccc; border-right: 1px solid #ccc; padding: 20px 0 12px;}
 .slt_contents div {float:left;}
-.sc_h {width: 68px; padding-left: 12px; text-align: left; margin-right: 10px; font-weight: 600; font-size: 16px; letter-spacing: -1px;}
+.sc_h {width: auto; padding-left: 12px; text-align: left; margin-right: 10px; font-weight: 400; font-size: 15px; letter-spacing: -1px; line-height: 1.6em;}
 .sc_m {width: 433px; font-size: 15px;}
 .sc_m li {border-top: 1px dashed #ccc; padding: 8px 0; text-align: left; color: #333;}
 .sc_m li:first-child {border: none; padding: 0 0 8px;}
@@ -1138,9 +1138,9 @@ background-size: 54px; background-position: center -8px;}
 .slt_pay .nth3 {display: inline-block; margin-top: 5px; text-align: center; line-height: 2.4em; width: 100%; height: 50px; background: #CA2F00; color: #fff; font-size: 24px; font-weight: 600; letter-spacing: 0; font-size: 21px;}
 .slt_pay .nth3 span {position: relative; font-size: 17px; top: -2px; margin-left: 15px;}
 /*최종 결제금액 박스 그림자*/
-.slt_wrap {border:none;} 
-.slt_tit {border:1px solid #ccc; border-right: 0;} 
-.slt_contents {border-top:1px solid #ccc; border-bottom:1px solid #ccc;} 
+.slt_wrap {border:none;}
+.slt_tit {border:1px solid #ccc; border-right: 0;}
+.slt_contents {border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
 .slt_pay {border:1px solid #000; box-shadow: 0 3px 3px;}
 .fare_table .fc1 {text-align:right; margin-left:0;}
 
@@ -1148,7 +1148,7 @@ background-size: 54px; background-position: center -8px;}
 /* 안내 및 유의사항 */
 .ntc_wrap {display: table; position: relative; width: 100%; height: auto; /* margin: 0 auto;  margin-left: 25px; */ margin-top: 15px; border: 1px solid #ccc; color: #333; box-sizing: border-box;}
 .ntc_wrap > div {display: table-cell; text-align: left;}
-.ntc_tit {width: 100px; font-size: 18px; padding: 15px 0 15px 20px; background: #f5f5f5; font-weight: 600;}
+.ntc_tit {width: 100px; font-size: 18px; padding: 15px 0 15px 20px; background: #f5f5f5; font-weight: 600; letter-spacing: -0.5px;}
 .ntc_contents {border-left: 1px solid #ccc; padding: 15px 0 15px 17px; font-size: 16px;}
 
 /* 날짜 셀렉트박스 클릭시 */
@@ -1165,8 +1165,8 @@ background-size: 54px; background-position: center -8px;}
 
 .fare_table .f_th > li{height: 50px; text-align: center; background: #5E5E5E; color: #fff; font-size: 18px; font-weight: 600; border-left: 1px solid #343434;}
 .fare_table .f_th > li:first-child {border-left: none;}
-.fare_table .c1 {width: 260px;}
-.fare_table .c2 {width: 276px;}
+.fare_table .c1 {width: 270px;}
+.fare_table .c2 {width: 296px;}
 .fare_table .c3 {width: 163px;}
 .fare_table .c5 {width: 79px;}
 .fare_table .c4 {width: 100px;}
@@ -1178,34 +1178,34 @@ background-size: 54px; background-position: center -8px;}
 .fare_table .f_td li.c4 {border-right: 1px solid #e5e5e5;}
 .fare_table .f_td.on li {background: #FFF2E9;}
 
-.fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4, .fare_table .f_td li.c5  {vertical-align: top;}
+.fare_table .f_td li.c2, .fare_table .f_td li.c3, .fare_table .f_td li.c4, .fare_table .f_td li.c5  {vertical-align: center;}
 
-.fare_table .f_td .c1 {padding-left: 20px; font-size: 15px; font-weight: 600;	color: #202020;}
-.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {min-height: 34px; overflow: auto; padding: 10px;}
-.fare_table .f_td .c2 div, 
-.fare_table .f_td .c3 div, 
+.fare_table .f_td .c1 {padding-left: 10px; font-size: 15px; font-weight: 600;	color: #202020;}
+.fare_table .f_td .c2 div, .fare_table .f_td .c3 div, .fare_table .f_td .c4 div, .fare_table .f_td .c5 div {min-height: 34px; overflow: auto; padding: 10px; line-height: normal;}
+.fare_table .f_td .c2 div,
+.fare_table .f_td .c3 div,
 .fare_table .f_td .c4 div,
 .fare_table .f_td .c5 div
 {border-top: 1px solid #e5e5e5;}
-.fare_table .f_td .c2 div:first-child, 
-.fare_table .f_td .c3 div:first-child, 
+.fare_table .f_td .c2 div:first-child,
+.fare_table .f_td .c3 div:first-child,
 .fare_table .f_td .c4 div:first-child,
 .fare_table .f_td .c5 div:first-child
 {border-top: none;}
-.fare_table .f_td .c2 p, .fare_table .f_td .c5 p {float: left; position: relative; font-weight: 600; font-size: 16px; line-height: 1.4em;}
+.fare_table .f_td .c2 p, .fare_table .f_td .c5 p {position: relative; font-weight: 600; font-size: 16px; line-height: 1.4em;}
 .fare_table .f_td .c2 p, .fare_table .c3 p, .fare_table .c4 p {top: 6px;}
 
-.fare_table .f_td .p1 {padding-left: 10px;}
-.fare_table .f_td .p2 {top: 4px; left: 3px; border: 1px solid #bbb; background: #fff; font-weight: 800; width: 66px;}
-.fare_table .f_td .in1 {width: 22px; height: 24px; font-size: 13px; text-align: right; padding-right: 8px; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
+.fare_table .f_td .p1 {/* padding-left: 10px; */ width: 285px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.fare_table .f_td .p2 {top: 4px; border: 1px solid #bbb; background: #fff; font-weight: 800; width: 66px; margin: 0 auto;}
+.fare_table .f_td .in1 {width: 32px; height: 24px; font-size: 13px; text-align: center; line-height: 1.7em; border:none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999;}
 .fare_table .f_td.on .in1 {color: #202020;}
 .fare_table .f_td .p2 a {position: relative; top: 2px; display: inline-block; width: 16px;height: 24px;font-size: 14px; text-align: center; cursor: pointer;}
 
 .fare_table .c3 p, .fare_table .c4 p {font-size: 15px; position: relative; letter-spacing: 0; font-weight: 600;}
 .fare_table .c4 p {text-align: right; padding-left: 0px;}
-.fare_table .c3 del {display: inline-block; width: 42%; margin-right: 5%; text-align: right;}
+.fare_table .c3 del {display: inline-block; width: 41%; margin-right: 10px; text-align: right; font-size: 14px; letter-spacing: -0.5px;}
 .fare_table .c3 .a_r {/* margin: 0 8px 0 5px; */ letter-spacing: 0; display: inline-block; width: 4%; text-align: center;}
-.fare_table .fc1 {color: #ff2122; display: inline-block; width: 44%; text-align: left; margin-left: 3%;}
+.fare_table .fc1 {color: #ff2122; display: inline-block; width: 46%; text-align: left; letter-spacing: -0.5px; margin-right: 2px;}
 .fare_table .f_td.on .fc2 {color: #ff2122;}
 
 /* 고코투어 로고 */
@@ -1303,3 +1303,23 @@ background-size: 54px; background-position: center -8px;}
 .map_way2 tr{border-bottom:1px solid #fff; height:40px}
 .map_way2 .name th{width:30%; border-right:1px solid #fff; background-color:#ececec; text-align:center; font-weight:bold}
 .map_way2 .content th{border:1px solid #ececec; border-top:0px; background-color:#fff; text-align:center;}
+
+/*요금표 UI변경_170531_혜준*/
+#fare_section {padding-top: 10px;}
+#fare_section .notice-box {width: 980px;}
+.nb-open-btn > a {left: 420px;}
+/*좌측배너추가_170601_혜준*/
+.pull-left {float: left;}
+.pull-right {float: right;}
+.bn-more-pdt {position: fixed; top: 240px; left: 50%; width: 112px; height: 181px; margin-left: -630px; }
+.bn-more-pdt > div {position: relative;}
+.bn-more-pdt .d1 {border: 5px solid #ff7a2d; border-bottom: 0; height: 151px;}
+.bn-more-pdt .d1 > p {font-family: "Noto Sans KR", "Nanum Gothic"; letter-spacing: -1px; line-height: 1.5em;}
+.bn-more-pdt .d1 .p1 {background-color: #ff7a2d; width: 88px; height: 21px; color: #fff; margin: 0 auto; text-align: center; margin-top: 11px; font-size: 14px;}
+.bn-more-pdt .d1 .p2, .bn-more-pdt .d1 .p3, .bn-more-pdt .d1 .p4 {font-size: 24px; font-weight: 600; width: 88px; margin: 0 auto; margin-top: 10px; line-height: 1em;}
+.bn-more-pdt .d1 .p2 {width: auto; text-align: center; margin-top: 8px; letter-spacing: -0.1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.bn-more-pdt .d1 .p3 {color: #ff5b04; letter-spacing: -1.1px;}
+.bn-more-pdt .d1 .p3 > span {}
+.bn-more-pdt .d1 .p4 {width: 83px; font-size: 25px; font-weight: 700; letter-spacing: 0;}
+.bn-more-pdt .d2 {height: 30px; background: #ff7a2d; text-align: center; color: #fff; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic"; line-height: 2.1em;}
+.bn-more-pdt .d2 .gt {position: absolute; top: 12px; right: 22px;}

@@ -3457,7 +3457,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 /*메인 개선 201512*/
 option {font-size:13px}
 
-#headerWrap{position:relative; margin:auto; width:1002px; height:100px}
+#headerWrap{position:relative; margin:auto; width:1064px; height:100px}
 
 #headerWrap .header{width:100%}
 #headerWrap .header .logo {float:left; margin-top:8px; width: 26%}

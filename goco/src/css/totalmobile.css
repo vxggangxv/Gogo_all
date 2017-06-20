@@ -27,3 +27,78 @@
 .item_recommend_list .item_swipe .item_price strong {color:#ee3c34; font-size:1.0em;}
 /* 앱상새_170519_혜준 */
 #room_w .room_tx_w .room_tx_in .room_tx_tx:before {line-height: 25px;}
+
+/* 온라인최저가보장 아이콘 추가 170526 이현우 */
+#search_list .photo .lowest_price {display:block; position:relative;}
+#search_list .photo .lowest_price .img_lowest_price {position:absolute; left:4px; top:4px; width:42px;}
+#info_img_wrpa .l_price {position:relative;}
+#info_img_wrpa .l_price .img_l_price {position:absolute; right:10px; top:50%; width:40px; margin-top:-68px;}
+#info_img .l_price {position:relative;}
+#info_img .l_price .img_l_price {position:absolute; right:10px; top:10px; width:40px;}
+
+/* 푸터 리뉴얼 170530 이현우 */
+#Footer {}
+#Footer .f-menu {overflow:hidden; border-top:1px solid #b9b9b9; border-bottom:1px solid #b9b9b9; background-color:#fff;}
+#Footer .f-menu > li {float:left; position:relative; width:25%;}
+#Footer .f-menu > li:before {content:''; display:block; position:absolute; left:0; top:50%; width:1px; height:14px; margin-top:-7px; background-color:#b0b0b0;}
+#Footer .f-menu > li:first-child:before {display:none;}
+#Footer .f-menu > li > a {display:block; padding:10px 0; color:#373737; font-weight:bold; font-size:14px; text-align:center;}
+#Footer .f-menu > li > a.move_top span {color:#ff6600;}
+#Footer .f-area {padding:0 15px 70px; background-color:#323232;}
+#Footer .f-area .policy {overflow:hidden; border-bottom:1px solid #515151;}
+#Footer .f-area .policy > li {float:left; position:relative; margin-left:15px; padding-left:15px;}
+#Footer .f-area .policy > li:first-child {margin-left:0; padding-left:0;}
+#Footer .f-area .policy > li:before {content:''; display:block; position:absolute; left:0; top:50%; width:1px; height:14px; margin-top:-7px; background-color:#858585;}
+#Footer .f-area .policy > li:first-child:before {display:none;}
+#Footer .f-area .policy > li > a {display:inline-block; padding:10px 0; color:#a3a3a3; font-size:14px;}
+#Footer .f-area .policy > li.privacy > a {color:#fff; font-weight:bold;}
+#Footer .f-area .customer {overflow:hidden; padding-top:10px;}
+#Footer .f-area .customer > li {float:left; position:relative; margin-left:10px; padding-left:10px;}
+#Footer .f-area .customer > li:first-child {margin-left:0; padding-left:0;}
+#Footer .f-area .customer > li:before {content:''; display:block; position:absolute; left:0; top:50%; width:1px; height:14px; margin-top:-5px; background-color:#858585;}
+#Footer .f-area .customer > li:first-child:before {display:none;}
+#Footer .f-area .customer > li > a {display:inline-block; position:relative; padding-left:18px; color:#a3a3a3; font-size:12px;}
+#Footer .f-area .customer > li > a.call:before {content:''; display:block; position:absolute; left:0; top:50%; width:14px; height:14px; margin-top:-6px; background:url('http://img.go.co.kr/mobile/f_call.gif') no-repeat 0 0; background-size:100% 100%;}
+#Footer .f-area .customer > li > a.mail:before {content:''; display:block; position:absolute; left:0; top:50%; width:14px; height:14px; margin-top:-6px; background:url('http://img.go.co.kr/mobile/f_mail.gif') no-repeat 0 0; background-size:100% 100%;}
+#Footer .f-area address p {margin-top:10px; color:#a3a3a3; font-size:12px;}
+#Footer .f-area address p strong {color:#cdcdcd; font-size:14px;}
+#Footer .f-area address .copy {margin-top:15px; color:#7f7f7f;}
+
+/* 오션투유이벤트 지류권 170531 이현우 */
+.culture_wrap .culture_top {padding:10px; background-color:#323232; color:#fff; font-weight:bold; font-size:16px; text-align:center;}
+.culture_wrap .culture_cont {padding:15px 10px;}
+.culture_wrap .culture_cont table {width:100%;}
+.culture_wrap .culture_cont table tbody tr th {padding:10px 0; color:#282828; font-weight:bold; font-size:14px; text-align:left; vertical-align:top;}
+.culture_wrap .culture_cont table tbody tr td {padding:5px 0; color:#282828; vertical-align:top;}
+.culture_wrap .culture_cont table tbody tr th label {display:block;}
+.culture_wrap .culture_cont table tbody tr td input[type="text"], 
+.culture_wrap .culture_cont table tbody tr td input[type="password"] {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; font-size:14px; box-sizing:border-box; border-radius: 0;}
+input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; font-size:14px; box-sizing:border-box; border-radius: 0;}
+.culture_wrap .culture_cont table tbody tr td .select_wrap {position:relative;}
+.culture_wrap .culture_cont table tbody tr td .select_wrap:before {content:''; display:block; position:absolute; right:15px; top:50%; width:0; height:0; margin-top:-2px; border-top:5px solid transparent; border-bottom:5px solid #333; border-right:5px solid transparent; border-left:5px solid transparent; -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+.culture_wrap .culture_cont table tbody tr td .select_wrap select {width:100%; height:30px; padding:5px; border:1px solid #c8c8c8; font-size:14px; box-sizing:border-box; -webkit-appearance:none; border-radius:0;}
+.culture_wrap .culture_foot {padding:25px 10px 80px; background-color:#f0f0f0;}
+.culture_wrap .culture_foot .foot_title {color:#282828;}
+.culture_wrap .culture_foot .foot_txt li {font-size:12px;}
+.culture_wrap .culture_btn {position:fixed; left:0; bottom:0; width:100%; height:50px; background-color:#ff6600; color:#fff; font-weight:bold; font-size:18px; text-align:center; line-height:50px;}
+.culture_wrap .culture_inner {background-color:#f0f0f0;}
+.culture_wrap .culture_inner .culture_inner_box input[type="text"], .culture_wrap .culture_inner .culture_inner_box input[type="password"] {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; font-size:14px; box-sizing:border-box;}
+.culture_wrap .culture_inner .culture_inner_box .culture_box_btn {display:block; height:45px; color:#fff; font-size:16px; background-color:#ff6600; font-weight:bold; line-height:45px; text-align:center;}
+.culture_wrap .culture_inner .culture_inner_box {margin-top:10px; background-color:#fff;}
+.culture_wrap .culture_inner .culture_inner_box:first-child {margin-top:0;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont {padding:10px 10px 15px;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .tit {padding-bottom:10px; border-bottom:1px solid #000; color:#000; font-weight:bold; font-size:16px;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .culture_coupon {width:290px; margin:15px auto 0;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .culture_coupon > p {color:#282828; font-size:14px;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .culture_coupon .culture_coupon_form {overflow:hidden; margin-top:10px;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .culture_coupon .culture_coupon_form > li:first-child {float:left; width:150px;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .culture_coupon .culture_coupon_form > li:last-child {float:right;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .culture_blt_txt {margin-top:10px; font-size:12px;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area {padding:10px 0;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table {width:100%;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table tbody tr th {padding:10px 0; color:#282828; font-weight:bold; font-size:14px; text-align:left; vertical-align:top;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table tbody tr td {padding:5px 0; color:#282828; vertical-align:top;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table tbody tr th label {display:block;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table tbody tr td .select_wrap {position:relative;}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table tbody tr td .select_wrap:before {content:''; display:block; position:absolute; right:15px; top:50%; width:0; height:0; margin-top:-2px; border-top:5px solid transparent; border-bottom:5px solid #333; border-right:5px solid transparent; border-left:5px solid transparent; -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+.culture_wrap .culture_inner .culture_inner_box .culture_inner_box_cont .input_area table tbody tr td .select_wrap select {width:100%; height:30px; padding:5px; border:1px solid #c8c8c8; font-size:14px; box-sizing:border-box; -webkit-appearance:none; border-radius:0;}

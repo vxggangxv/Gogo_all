@@ -1,4 +1,4 @@
-/* ������ �е��� �ʱ�ȭ */
+/* ¸¶Áø°ú ÆÐµùÀÇ ÃÊ±âÈ­ */
 a, abbr, acronym, address, 
 b, blockquote, big, body,
 center, caption, cite, code, command,
@@ -16,34 +16,34 @@ table, tbody, tfoot, thead, th, tr,
 u, ul, 
 var { margin:0; padding:0}
 
-/* ��� ��Ʈ ������ �ʱ�ȭ */
+/* Çì´õ ÆùÆ® »çÀÌÁî ÃÊ±âÈ­ */
 h1,h2,h3,h4,h5,h6 {font-size:100% }
 
 
-/* ����Ʈ�� ��Ÿ�� ���� */
+/* ¸®½ºÆ®ÀÇ ½ºÅ¸ÀÏ Á¦°Å */
 ol, ul {list-style:none}
 
 
-/* ��Ʈ ���� Ư�� �ʱ�ȭ */
+/* ÆùÆ® °­Á¶ Æ¯¼º ÃÊ±âÈ­ */
 address, caption, cite, code, dfn, em, 
 strong, th, var {font-style :normal; font-weight:normal}
 
 
-/* ���̺� ��Ÿ�� �ʱ�ȭ */
+/* Å×ÀÌºí ½ºÅ¸ÀÏ ÃÊ±âÈ­ */
 table {border-collapse:collapse; border-spacing:0}
 
 
-/* �̹��� �� �ʵ�¿��� ����ǥ�� �ʱ�ȭ */
+/* ÀÌ¹ÌÁö ¹× ÇÊµå¼Â¿¡¼­ º¸´õÇ¥½Ã ÃÊ±âÈ­ */
 fieldset, img {border:0}
 
 img, input, button, select, textarea {margin:0; padding:0; vertical-align:middle}
 
 
-/* ĸ�ǰ� ���̺���� �ؽ�Ʈ ���� �ʱ�ȭ */
+/* Ä¸¼Ç°ú Å×ÀÌºíÇì´õ ÅØ½ºÆ® Á¤·Ä ÃÊ±âÈ­ */
 caption, th {text-align:left }
 
 
-/* �ο뱸 ǥ�� �ʱ�ȭ */
+/* ÀÎ¿ë±¸ Ç¥½Ã ÃÊ±âÈ­ */
 q:before, q:after {content :''} 
 
 /* hidden_class */

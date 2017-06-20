@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    
+    <title>구매하기</title>
+    
+    <link rel="stylesheet" href="http://static.hotelgangneung.kr/css/moblie_reset.css" type="text/css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
+    <!--<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/mobile_layout3.css" type="text/css">-->
+    <link rel="stylesheet" href="../../../hotelgangneung.kr/src/css/moblie_reset.css" type="text/css">
+    <link rel="stylesheet" href="../../../hotelgangneung.kr/src/css/mobile_layout3.css" type="text/css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        body {padding-top: 200px;}
+    </style>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="scroll_box">
+            <div id="pruduct_tit_w" style="background:#ffffff">
+                <div class="pruduct_tit">
+                    <span class="icon"><img src="http://img.yeosucablecar.co.kr/mobile/icon_ticket.png" height="17px"> </span>				<span class="tit">여수해상케이블카</span>
+                </div>
+                <!--내부스타일시트 삭제 요청-->
+                <!--<style type="text/css">
+                    #pruduct_tit_w .pruduct_tit {width:auto; padding:10px 10px 15px;}
+                    #pruduct_tit_w .pruduct_info {margin:0 10px; padding:10px 0; border-top:1px solid #dddbd8;}
+                    #pruduct_tit_w .pruduct_info ul li {color:#7f7f7f; font-weight:bold; font-size:12px;}
+                </style>-->
+                <div class="pruduct_info">
+                    <ul>
+                        <li>1. 당일 구매후, 당일 사용은 불가합니다.</li>
+                        <li>2. 크리스탈 캐빈의 편도는 판매하지 않습니다.</li>
+                        <li>3. 36개월 이하 무임. 소인은 37개월 ~ 초등학생(만 12세)</li>
+                        <li>4. 유모차, 휠체어 크리스탈 케이블카 내 탑승불가입니다.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <style>
+                /*구매하기 상품리스트_170522_강혜준*/
+                .f-bd {font-weight: 600;}
+                .banner-box {border-bottom: 1px solid #d2d2d2;}
+
+                .tl-day {font-size: 14px; color: #212121; padding: 8px 15px; height: 22px; border-bottom: 1px solid #000; background: #f0f0f0; letter-spacing: -0.7px;}
+
+                .tl-box {position: relative; margin: 0 auto; letter-spacing: -1px; background: #fff; background: #fbfbfb; border-bottom: 4px solid #d2d2d2;}
+                .tl-box * {letter-spacing: -0.7px;}
+                .tl-box {color: #212121;}
+                .tl-box li {font-size: 14px; padding: 0px 10px; position: relative;}
+                .tl-box li.bg1 {background: #fdf4ed; border-top: 1px solid #000;}
+                .tl-box li .item-inner {padding: 10px 5px 11px; border-top: 1px solid #ddd;}
+                .tl-box li:first-child, .tl-box li:first-child .item-inner {border-top: none;}
+
+                .tl-box .item-number-wrap .item-number {float: left; position: relative; top: -1px;}
+                .tl-box .item-number-wrap .item-nb-outer {float: right;}
+                .tl-box .item-number {width: 66%;}
+                .tl-box .item-nb-outer {width: 110px;}
+                .tl-box .item-number .h-ctgr {position: relative;  display: inline-block;}
+                .tl-box .itm-price {font-size: 14px; line-height: 1.3em;}
+                .tl-box .itm-price {color: #333; margin-top: 2px;}
+                .tl-box .itm-price .pull-left {font-weight: 600;}
+                .tl-box .itm-price .pull-right {position: relative;}
+                .tl-box .itm-price .pull-right:before {position: absolute; top: 4px; right: 104px; content: ""; height: 13px; width: 1px; background: #a2a2a2;}
+                .tl-box .item-number .h-ctgr span {position: absolute; left: 0;}
+                .tl-box .number-box {position: relative; top: 1px; height: 40px; display: inline-block; width: 88px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
+                @media (max-width: 359px) {
+                    .tl-box .item-number {width: 62%;}
+                    .tl-day, .tl-box li, .tl-box .itm-price {font-size: 13px;}
+                    .tl-box .itm-price .pull-right:before {top: 3px; right: 86px; height: 12px; display: none;}
+                }
+                @media (max-device-width: 320px) {
+                    .tl-box .item-number {width: 62%;}
+                    .tl-day, .tl-box li, .tl-box .itm-price {font-size: 13px;}
+                    .tl-box .itm-price .pull-right:before {top: 3px; right: 86px; height: 12px; display: none;}
+                }
+
+                .tl-box .number-box a, 
+                .tl-box .number-box input, 
+                .tl-box .number-box > .ui-input-text {float: left; display: inline-block; text-align: center; box-sizing: border-box; height: 30px;}
+                .tl-box .number-box a {width: 27px; height: 100%; font-size: 18px; line-height: 1.9em; background: #f7f7f7; color: #727272;}
+                .tl-box .number-box a.nb-left {border-right: 1px solid #ddd;}
+                .tl-box .number-box a.nb-right {border-left: 1px solid #ddd;}
+                .tl-box .number-box a:hover, 
+                .tl-box .number-box a:active {color: #3f3f3f;}
+                .tl-box .number-box input {width: 32px; height: 100%; font-size: 16px;color: #212121; background: #fff; font-weight: 600; letter-spacing: -1px; /* text-indent: 15px; */}
+                .tl-box .number-box input.on, 
+                .tl-box .number-box input:active, 
+                .tl-box .number-box input:focus {color: #f95c25;}
+
+                .tl-box .list_btn_wrap {width: 100%; height: 53px; position: fixed; bottom: 0; background: #fff; padding-top: 7px; border-top: 1px solid #f3f3f3;}
+                .tl-box .list_btn_wrap a {display: block; text-align: center; width: 96%; margin: 0 auto; height: 45px; background: #f95c25; color: #fff; font-size: 17px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;}
+
+                .buying-area {position: fixed; width: 100%; bottom: 0; border-top: 1px solid #000; background: #f0f0f0; padding: 5px 0;}
+                .buying-area .total-prc {display: none; padding: 0 10px 5px;}
+                .buying-area .total-prc.on {display: block;}
+                .buying-area .total-prc .pull-left {font-size: 14px; position: relative; top: 5px;}
+                .buying-area .total-prc .pull-right {font-size: 18px;}
+                .buying-area .btn-area {padding: 5px 10px;}
+                .buying-area .btn-area a {position: relative; display: block; float: left; width: 48%; height: 40px; background: #7e7e7e; font-size: 14px; font-weight: 600; text-align: center; color: #fff;
+                    font-family: "Nanum Gothic";}
+                .buying-area .btn-area a.nth-1 {margin-right: 10px; line-height: 34px;}
+                .buying-area .btn-area a.nth-2 {background: #f05d29; line-height: 21px;}
+                .buying-area .btn-area a.nth-2 .s1 {display: block; font-size: 13px; line-height: 0.7em; font-weight: 400;}
+                .buying-area .btn-area a .gt {position: relative; font-size: 18px; font-weight: 400;}
+                .buying-area .btn-area a.nth-1 .gt {top: 1px;}
+
+            </style>
+            
+            <!--변경내용-->
+            <div class="banner-box">
+                <a class="" href="#"><img src="http://img.yeosucablecar.co.kr/mobile/bn_appdown03.png" width="100%" alt="모바일앱구매시2천원할인"></a>
+            </div>
+            
+            <div class="tl-day clr">
+                <span class="pull-left">&#8226; 이용기간</span><span class="pull-right">2017.05.24 ~ 2017.06.30 (당일사용불가)</span>
+            </div>
+            
+            <ul class="tl-box">
+                <li class="item-number-wrap bg1">
+                    <div class="item-inner clr">
+                        <div class="item-number">
+                            <p class="h-ctgr">일반케빈 왕복 대인 (바닥불투명)</p>
+                            <p class="itm-price"><span class="pull-left">만 13세 이상</span><span class="pull-right">1장당 <span class="f-bd">12,000원</span></span></p>
+                        </div>
+                        <div class="item-nb-outer clr">
+                            <p class="number-box clr">
+                                <a href="" class="nb-left">&#45;</a>
+                                <input type="text" class="nb-txt" value="1">
+                                <a href="" class="nb-right">&#43;</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-number-wrap">
+                    <div class="item-inner clr">
+                        <div class="item-number">
+                            <p class="h-ctgr">일반케빈 왕복 소인 (바닥불투명)</p>
+                            <p class="itm-price"><span class="pull-left">37개월~만 12세</span><span class="pull-right">1장당 <span class="f-bd">7,600원</span></span></p>
+                        </div>
+                        <div class="item-nb-outer clr">
+                            <p class="number-box clr">
+                                <a href="" class="nb-left">&#45;</a>
+                                <input type="text" class="nb-txt" value="0">
+                                <a href="" class="nb-right">&#43;</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-number-wrap bg1">
+                    <div class="item-inner clr">
+                        <div class="item-number">
+                            <p class="h-ctgr">일반케빈 편도 대인 (바닥불투명)</p>
+                            <p class="itm-price"><span class="pull-left">37개월~만 12세</span><span class="pull-right">1장당 <span class="f-bd">8,600원</span></span></p>
+                        </div>
+                        <div class="item-nb-outer clr">
+                            <p class="number-box clr">
+                                <a href="" class="nb-left">&#45;</a>
+                                <input type="text" class="nb-txt" value="0">
+                                <a href="" class="nb-right">&#43;</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-number-wrap">
+                    <div class="item-inner clr">
+                        <div class="item-number">
+                            <p class="h-ctgr">일반케빈 편도 소인 (바닥불투명)</p>
+                            <p class="itm-price"><span class="pull-left">37개월~만 12세</span><span class="pull-right">1장당 <span class="f-bd">6,200원</span></span></p>
+                        </div>
+                        <div class="item-nb-outer clr">
+                            <p class="number-box clr">
+                                <a href="" class="nb-left">&#45;</a>
+                                <input type="text" class="nb-txt" value="0">
+                                <a href="" class="nb-right">&#43;</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-number-wrap bg1">
+                    <div class="item-inner clr">
+                        <div class="item-number">
+                            <p class="h-ctgr">크리스탈 왕복 소인 (바닥불투명)</p>
+                            <p class="itm-price"><span class="pull-left">37개월~만 12세</span><span class="pull-right">1장당 <span class="f-bd">8,600원</span></span></p>
+                        </div>
+                        <div class="item-nb-outer clr">
+                            <p class="number-box clr">
+                                <a href="" class="nb-left">&#45;</a>
+                                <input type="text" class="nb-txt" value="0">
+                                <a href="" class="nb-right">&#43;</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-number-wrap">
+                    <div class="item-inner clr">
+                        <div class="item-number">
+                            <p class="h-ctgr">크리스탈 왕복 소인 (바닥불투명)</p>
+                            <p class="itm-price"><span class="pull-left">37개월~만 12세</span><span class="pull-right">1장당 <span class="f-bd">6,200원</span></span></p>
+                        </div>
+                        <div class="item-nb-outer clr">
+                            <p class="number-box clr">
+                                <a href="" class="nb-left">&#45;</a>
+                                <input type="text" class="nb-txt" value="0">
+                                <a href="" class="nb-right">&#43;</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            
+                <!--수량 모두 0일 때-->
+                <!--<div class="total-prc clr">
+                    <span class="pull-left">총 금액</span><span class="pull-right"><span id="fin_price">12,000</span>원</span>  
+                </div>-->
+                <!--수량 모두 0이 아닐 때 on 클래스 추가 - 총 금액 등장-->
+            <div class="buying-area">
+                <div class="total-prc clr on">
+                    <span class="pull-left">총 금액</span><span class="pull-right"><span id="fin_price">12,000</span>원</span>  
+                </div>
+                <div class="btn-area clr" id="btn-area-buying">
+                    <a href="" class="nth-1">구매하기 <span class="gt">&gt;</span></a><a href="" class="nth-2">앱으로 할인받기 <span class="gt">&gt;</span> <span class="s1">(2,000원 즉시 할인)</span></a>
+                </div>
+            </div>
+            <script>
+                //구매하기 버튼 클릭시 스크롤 위치잡기
+                $("#btn-area-buying a.nth-1").on("click", function() {
+                   var targetTop = $("#pruduct_tit_w div.pruduct_tit").offset().top;
+                   //console.log(targetTop);
+                    $(window).scrollTop(targetTop);
+                    return false;
+                });
+            </script>
+            <!--변경내용 끝-->
+            
+            <div id="room_w" style="overflow-x:hidden;overflow-y:auto">			
+                <div id="room_infogo">
+                    <div class="room_tx_w">
+                        <div class="room_tx_in">	
+                            <h4 class="room_title"><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px">안내 및 유의사항</h4>
+                            <div class="txt_forms">
+                                <p>
+                                    <!--- 체크인/체크아웃 --->
+
+                                    <!--- 기본 등록 내용 ---->
+                                    운영시간: 일~금요일 - 오전 9시 ~ 오후 9시 30분 / 토요일 - 오전 9시 ~ 오후 10시 30분<br>
+                                    <br>
+                                    강풍 및 우천 등, 기상상황에 따라 케이블카가 미운행 될 수 있습니다. <br>
+                                    기상상황이 안좋을 때는 미리 현장문의 후 이용하시기를 바랍니다. <br>
+                                    여수해상케이블카 현장 고객센터 : 02-2202-3435 <br>
+                                    <br>
+                                    미운행시 티켓은 100% 환불해 드립니다. <br>
+                                    다만, 세트권은 할인 된 요금이므로, 부분 환불시는 환불금액이 정상가격 또는 단품가격보다 적을 수 있습니다. <br>
+                                    <br>
+                                    주차는 돌산공원 주차장을 이용하실수 있습니다.<br>
+                                    자산(오동도) 쪽에서 이용하실 경우 유료 공영주차장을 이용하시면 됩니다.<br>
+                                    <br>
+                                    혐오 또는 냄새로 인하여 다른 승객에게 불쾌감을 줄 우려가 있는 물품은, 휴대가 금지됩니다. <br>
+                                    <br>
+                                    애완동물은 애견가방 없이 탑승 불가하며, 반드시 가방에 넣어 주셔야 탑승가능합니다. (단, 장애인 보조견은 제외) <br>
+                                    <br>
+                                    크리스탈 캐빈 편도는 운영하지 않습니다. <br>
+                                    <br>
+                                    유모차, 휠체어는 크리스탈 캐빈에 탑승불가 합니다.	</p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+
+
+                        <!-- 객실안내 -->
+
+                        <div class="room_tx_in">	
+                            <h4 class="room_tit_mle" style="padding-left:20px"><img src="http://img.go.co.kr/mobile//slogan_icon.png" height="22px"> 시설안내</h4>
+                            <div class="txt_forms">
+                                <p>
+                                    <img src="http://img.yeosucablecar.co.kr/TOP_IMG120170420120011.jpg?ver=20170524102049" alt="" style="width:100%">
+                                    <img src="http://img.yeosucablecar.co.kr/BOT_IMG120170420120107-1.jpg?ver=20170524102049" alt="" style="width:100%">
+                                    <img src="http://img.yeosucablecar.co.kr/BOT_IMG120170420120107-2.jpg?ver=20170524102049" alt="" style="width:100%">
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </div><!--scroll_box 끝-->
+    </div><!--wrapper 끝-->
+</body>
+</html>

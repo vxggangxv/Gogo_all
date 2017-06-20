@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.c-blue {color: #0051af;}
+
+/* 디오션워터파크 디오션리조트배너 추가 170605 이현우 */
+.bn_theocean {display:none; position:fixed; left:50%; top:70px; z-index:1000; margin-left:80px;}
+.bn_theocean a {position:absolute; left:50%; top:116px; margin-left:-82px;}
+
+/* 모바일 디오션워터파크 디오션리조트배너 추가 170605 이현우 */
+.m_bn_theocean {display:none; position:fixed; right:10px; top:60px; z-index:1000;}
+.m_bn_theocean a {position:absolute; left:50%; top:64px; margin-left:-44px;}

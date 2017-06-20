@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <title>상세피이지 로고 추가</title>
+
+        <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css?ver=20170201165300" />
+        <!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3_tmp.css"/> -->
+        <!-- <link rel="stylesheet" type="text/css" href="../src/css/layout_new3_tmp.css" /> -->
+        <link rel="stylesheet" type="text/css" href="../../../../src/css/layout_new3.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../src/css/totalweb.css" />
+
+        <link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
+        <!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
+<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css?ver=20170201165300" />
+<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css?ver=20170201165300" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- <script src="http://static.go.co.kr/js/select_product.js"></script> -->
+        <script src="../../../../src/js/select_product.js"></script>
+
+        <style>
+            /* #room_result tr:hover {background: #e3e3e3;}
+            #room_result .expand-list:hover {background: #f5f5f5;} */
+        </style>
+    </head>
+
+    <body>
+
+        <div class="noover" id="wrapper">
+            <div id="contents">
+                <div id="rsv_wrapper" class="rsv_wrapper">
+                    <div id="room_result" class="r_on">
+
+
+                        <div class="rsv_top" id="rsv_sang">
+                            <table id="rsv_s_tab">
+                                <colgroup>
+                                    <col width="655">
+                                    <col width="140">
+                                    <col width="159">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="rsv_s_tabHead">
+                                        <td>상품선택</td>
+                                        <td>기준인원/최대인원</td>
+                                        <!--최저가보장 이미지추가-->
+                                        <td>최저가<img style="position: relative; top: -1px; margin-left: 5px;" alt="최저가보장" src="http://img.go.co.kr/banner_lowest_price.gif"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                            <div id="rsv_s_list_box2">
+                                <table id="rsv_s_list">
+                                    <colgroup>
+                                        <col width="655">
+                                        <col width="140">
+                                        <col width="159">
+                                    </colgroup>
+                                    <tbody>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="2299_tr" class="over_tr select" style="cursor:pointer;" onclick="booking.sclick('2299', 'y');">
+                                            <td class="pl15 left ss">
+                                                <input type="radio" name="sang" value="2299" id="sang_2299" checked="checked">
+
+                                                <!-- 패키지 말머리 추가 -->
+
+                                                마운틴뷰 콘도형 </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">84% 할인</div></div>
+                                                <del class="price_s">330,000원</del>
+                                                <br> <span class="price">54,000원~</span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr id="2299_detail" style="display: table-row;" class="tb_on">
+                                            <td colspan="3">
+
+                                                <style>
+                                                    #rsv_s_list {border-bottom: 1px solid #ddd;}
+                                                    #rsv_s_list .over_tr td:last-child {line-height: 1.3em;}
+                                                    .lowest_price_wrap {top: 18px; -webkit-transform: translateY(0); transform: translateY(0);}
+                                                    #rsv_s_list .over_tr input[type="radio"] {position: relative; top: -2px;}
+                                                    
+                                                    #rsv_s_list #pdtSlt-wrapper {position: relative;}
+
+                                                    #rsv_s_list .pay-box {position: relative; margin-top: -1px; width: 100%; height: 80px; border: 1px solid #000; background: #fff8d5; box-sizing: border-box; letter-spacing: -0.5px; text-align: right; padding-right: 20px;}
+                                                    #rsv_s_list .pay-box > p {display: inline-block; vertical-align: middle;  color: #302e2b; font-family: "Noto Sans KR", "Nanum Gothic"; text-align: left;
+                                                        padding-top: 14px;}
+                                                    #rsv_s_list .pay-box > .nth2 {color: #000; font-size: 21px; text-align: right; padding-right: 15px;}
+                                                    #rsv_s_list .pay-box > .nth2 s, #rsv_s_list .pay-box > .nth2 .c-red {font-family: "Arial", "Malgun Gothic", "Nanum Gothic";}
+                                                    #rsv_s_list .pay-box > .nth2 s {position: relative; top: 2px; color: #323232; font-size: 25px;}
+                                                    #rsv_s_list .pay-box > .nth2 s > span {position: relative; top: -2px;font-family: "Nanum Gothic"; font-size: 20px;}
+                                                    #rsv_s_list .pay-box > .nth2 .sm {font-weight: 400;}
+                                                    #rsv_s_list .pay-box > .nth2 .f-bd.s1 {margin-right: 3px; font-weight: 400; font-size: 24px; color: #000;}
+                                                    #rsv_s_list .pay-box > .nth2 .ps {color: #313131; font-size: 12px; font-family: "Dotun", "Gulim"; margin-right: 16px;}
+                                                    #rsv_s_list .pay-box > .nth2 .c-red {font-size: 36px; font-family: "Arial", "Malgun Gothic", "Nanum Gothic"; line-height: 0em; margin-left: 7px; color: #ff1200;}
+                                                    #rsv_s_list .pay-box > .nth2 .c-red .f-bd {position: relative; top: 3px;}
+                                                    #rsv_s_list .pay-box > .nth2 .c-red .sm {font-size: 27px; font-weight: 400; font-family: "Nanum Gothic";}
+                                                    #rsv_s_list .pay-box > .nth3 a {color: #fff; display: block; width: 235px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 2.4em;}
+                                                    #rsv_s_list .pay-box > .nth3 a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -4px; margin-left: 10px; font-weight: 600;}
+
+                                                    .pdtSlt-sec {display: table; position: relative; width: 100%; font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box; 
+                                                        background: #fff; color: #000;}
+                                                    .pdtSlt-sec > div {display: table-cell; width: 34%; border: 1px solid #000; border-collapse: collapse;}
+                                                    .pdtSlt-sec > div > * {text-align: left;}
+                                                    .pdtSlt-sec > div h2 {font-size: 17px; color: #fff; font-weight: 400; padding-top: 9px; padding-bottom: 9px; padding-left: 15px;}
+                                                    .pdtSlt-sec > div h2 > span {position: relative; top: 1px; vertical-align: middle;}
+                                                    .pdtSlt-sec > div h2 > .f-arial {font-family: "Arial", sans-serif; font-size: 20px; margin-right: 6px;}
+                                                    .pdtSlt-sec > div ul li {position: relative;}
+                                                    .pdtSlt-sec input[type="checkbox"] {appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
+                                                        display: inline-block; position: relative; top: -1px;
+                                                        border: 1px solid #a5a5a5; width: 15px; height: 15px; border-radius: 0; outline: 0;
+                                                        background: #fff; margin-right: 5px; margin-left: 15px;
+                                                    }
+                                                    .pdtSlt-sec input[type="checkbox"]:checked {background: #fff url("http://img.go.co.kr/chk_bg.png") no-repeat 1px 2px;}
+                                                    .pdtSlt-sec .part-1 h2 {background: #ff7a2d;}
+                                                    .pdtSlt-sec .part-1 .dep-1 > li {line-height: 1.2em; padding: 7px 0 7px;}
+                                                    .pdtSlt-sec .part-1 .dep-1 > li .label {user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+                                                        display: inline-block; position: relative; vertical-align: top; font-size: 15px; color: #000; word-break: break-all;
+                                                        cursor: pointer; padding-right: 15px;
+                                                    }
+                                                    .pdtSlt-sec .part-1 .dep-1 > li.on {background: #3a4351;}
+                                                    .pdtSlt-sec .part-1 .dep-1 > li.on > .label {color: #fff;}
+
+                                                    .pdtSlt-sec .part-1 ul.slt-drop {display: none; background: #f2f2f2; margin-top: 7px; margin-bottom: -7px;}
+                                                    .pdtSlt-sec .part-1 ul.slt-drop.on {display: block;}
+                                                    .pdtSlt-sec .part-1 ul.slt-drop > li {padding: 0px 15px 15px 0;}
+                                                    .pdtSlt-sec .part-1 ul.slt-drop > li:first-child {padding-top: 15px;}
+                                                    .pdtSlt-sec .part-1 ul.slt-drop > li s, .pdtSlt-sec .part-1 ul.slt-drop > li .c-red {float: right;}
+                                                    .pdtSlt-sec .part-1 ul.slt-drop > li s {font-size: 12px; color: #313131; margin-right: 5px;}
+                                                    .pdtSlt-sec .part-1 ul.slt-drop > li .c-red {font-size: 15px; color: #ff4445; font-weight: 600;}
+
+                                                    .pdtSlt-sec .part-2 h2 {background: #ec5700; margin-bottom: 3px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li {font-size: 0; padding-top: 5px; padding-bottom: 5px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li > * {display: inline-block; vertical-align: middle;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li.mg {width: 296px; margin: 15px auto 5px; border-top: 1px dashed #bcbcbc;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li .label {font-size: 15px; width: 66px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li select {padding: 3px 6px 4px; font-size: 15px; border-radius: 0; border:1px solid #bcbcbc;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li select option {font-size: 15px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li select.type-1 {width: 131px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li select.type-2 {width: 80px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li select.type-2 {width: 80px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li select.type-3 {width: 70px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li .pl-10 {padding-left: 10px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li .pl-15 {padding-left: 15px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li .ml-10 {margin-left: 10px;}
+                                                    .pdtSlt-sec .part-2 .dep-1 > li .mr-10 {margin-right: 10px;}
+
+                                                    .pdtSlt-sec .part-3 {}
+                                                    .pdtSlt-sec .part-3 > h2 {background: #bf2d00;}
+                                                    .pdtSlt-sec .part-3 > h2 .i-close {float: right; position: relative; right: 12px; top: 5px; width: 20px; cursor: pointer;}
+                                                    .pdtSlt-sec .part-3 > div.itm {padding: 9px 15px; font-size: 0;}
+                                                    .pdtSlt-sec .part-3 > div.itm p.p-1 {margin-bottom: 8px; line-height: 1.2em; font-size: 15px;}
+                                                    .pdtSlt-sec .part-3 > div.itm p.p-1 img {position: relative; top: -1px; float: right;}
+                                                    .pdtSlt-sec .part-3 .ul-1 {border-top: 1px solid #b0b0b0; border-bottom: 1px solid #b0b0b0; background: #f2f2f2; padding: 4px 0 9px;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li {padding: 6px 15px;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li > * {display: inline-block; vertical-align: middle;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li .label {position: relative; top: 3px;font-size: 15px; font-weight: 600;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li .label:before {content: ""; position: relative; top: -1px; vertical-align: middle; margin-right: 5px; display: inline-block; width: 3px; height: 3px; background: #b0b0b0;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li select {position: relative; float: right; padding: 3px 6px 4px; font-size: 15px; border-radius: 0; border:1px solid #bcbcbc; width: 168px;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li option {font-size: 15px; padding: 4px 6px;}
+
+                                                    .pdtSlt-sec .part-3 .ul-1 li .quan {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+                                                        position: relative; width: 70px; height: 24px; margin: 0 auto; border: 1px solid #bbb; background: #fff; box-sizing: border-box;
+                                                        float: right; top: 3px;
+                                                    }
+                                                    .pdtSlt-sec .part-3 .ul-1 li .quan input.inp {width: 32px; height: 24px; text-align: center; font-size: 13px; line-height: 1.7em; border: none; border-left: 1px solid #bbb; border-right: 1px solid #bbb; font-weight: 800; color: #999; background-color: transparent; position: relative; top: -1px;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li .quan input.inp.on, .pdtSlt-sec .part-3 .ul-1 li td.on .quan input.inp {color: #202020;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li .quan > span {position: relative; top: 0px; display: inline-block; width: 16px; height: 100%; font-size: 14px; text-align: center; cursor: pointer; line-height: 1.7em;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li .quan > .s-l {float: left;}
+                                                    .pdtSlt-sec .part-3 .ul-1 li .quan > .s-r {float: right; right: 2px;}
+
+                                                    .pdtSlt-sec .part-3 .ul-2 {margin-top: 16px;}
+                                                    .pdtSlt-sec .part-3 .ul-2 li {font-size: 15px; line-height: 1.5em;}
+                                                    .pdtSlt-sec .part-3 .ul-2 li.th {color: #000; font-weight: 600;}
+                                                    .pdtSlt-sec .part-3 .ul-2 li.td {position: relative; color: #323232; padding-left: 10px; letter-spacing: -1px; word-break: keep-all;}
+                                                    .pdtSlt-sec .part-3 .ul-2 li.td:before {position: absolute; content: "-"; left: 0;}
+                                                </style>
+                                                <script>
+                                                    $(function() {
+                                                        $("#rsv_s_list div.pdtSlt-sec span.label").on("click", function() {
+                                                            $(this).closest("li").toggleClass("on");
+                                                            var isChecked = $(this).prev().prop("checked");
+                                                            isChecked = !isChecked;
+                                                            $(this).prev().prop("checked", isChecked);
+                                                            if( isChecked ){
+                                                                $(this).closest("li").find(".slt-drop").addClass("on");
+                                                            } else {
+                                                                $(this).closest("li").find(".slt-drop").removeClass("on");
+                                                            }
+                                                        });
+                                                        $("#rsv_s_list div.pdtSlt-sec input[type=checkbox]").on("click", function() {
+                                                            $(this).closest("li").toggleClass("on");
+                                                            var isChecked = $(this).prop("checked");
+                                                            if( isChecked ){
+                                                                $(this).closest("li").find(".slt-drop").addClass("on");
+                                                            } else {
+                                                                $(this).closest("li").find(".slt-drop").removeClass("on");
+                                                            }
+                                                        });
+                                                    });
+                                                </script>
+
+
+                                                <!-- 변경내용_170614 -->
+                                                <div class="pdtSlt-sec clr" id="pdtSlt-sec">
+                                                    <div class="part-1">
+                                                        <h2><span class="f-arial">1</span><span>패키지 선택</span></h2>
+                                                        <ul class="dep-1">
+                                                            <li class="on"><input type="checkbox" checked="cheked"><span class="label">마운틴뷰 콘도만 이용</span></li>
+                                                            <li><input type="checkbox"><span class="label">바베큐 테이블 대여</span></li>
+                                                            <li><input type="checkbox"><span class="label">조개잡이 패키지</span></li>
+                                                            <li><input type="checkbox"><span class="label">테디베어뮤지엄설악</span></li>
+                                                            <li><input type="checkbox"><span class="label">ALIVE HEART(트릭아트 1층+미로탐험2층)</span></li>
+                                                            <li>
+                                                                <input type="checkbox"><span class="label">한화 설악 워터피아 종일권</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="part-2">
+                                                        <h2><span class="f-arial">2</span><span>객실 설정</span></h2>
+                                                        <ul class="dep-1">
+                                                            <li>
+                                                                <span class="label pl-15">체크인</span>
+                                                                <select name="" id="" class="type-1">
+                                                                    <option value="">2017-06-08</option>
+                                                                </select>
+                                                                <select name="" id="" class="type-2 ml-10">
+                                                                    <option value="">1박</option>
+                                                                </select>
+                                                            </li>
+                                                            <li>
+                                                                <span class="label pl-15">체크아웃</span>
+                                                                <select name="" id="" class="type-1">
+                                                                    <option value="">2017-06-08</option>
+                                                                </select>
+                                                            </li>
+                                                            <li class="mg"></li>
+                                                            <li>
+                                                                <span class="label pl15">투숙인원</span>
+                                                                <select name="" id="" class="type-3">
+                                                                    <option value="">2</option>
+                                                                </select>
+                                                                <span class="label pl-15">객실갯수</span>
+                                                                <select name="" id="" class="type-3">
+                                                                    <option value="">2</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="part-3">
+                                                        <h2><span class="f-arial">3</span><span>패키지 수량</span><img onclick="$(this).closest('#pdtSlt-sec').hide();" src="http://img.go.co.kr/i_close.png" alt="닫기" class="i-close"></h2>
+                                                        <div class="itm">
+                                                            <p class="p-1">패키지를 선택해 주세요</p>
+                                                            <ul class="ul-1">
+                                                                <li>
+                                                                    <span class="label">이용날짜</span>
+                                                                    <select name="" id="">
+                                                                        <option value="">2017-06-09</option>
+                                                                    </select>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pay-box clr">
+                                                    <p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
+                                                    </p>
+                                                    <p class="nth3">
+                                                        <a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
+                                                    </p>
+                                                </div>
+
+                                                <!-- 변경내용_170614 끝-->
+
+
+                                                <!--- 객실별 이미지 추가설명 부분 --->
+                                                <!--<table id="room_detail_info">
+<colgroup>
+<col width="380">
+<col width="574">
+</colgroup>
+<tbody>
+<tr>
+<th height="30">갤러리 [총 4장]</th>
+<th>객실정보</th>
+</tr>
+<tr>
+<td id="room_gall_2299" class="gall">
+<img src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img2/1491201477_1.jpg" style="cursor:pointer;" alt="" id="img_0" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+<img src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img2/1491201477_2.jpg" style="cursor:pointer;;margin-left:10px" alt="" id="img_1" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+</td>
+<td>
+<div class="roomInfo_scroll">▣ 4인실[최대7명]23평/방1개
+<br> ▣ 객실전망 : 오션뷰/파크뷰
+<br>▣ 부대시설 : 일반TV,에어컨,싱크대,조리도구,냉장고,전기밥솥,세면용품,수건
+<br>* 방(1) + 거실(1) + 주방(1) + 욕실(1)
+<br> * 객실타입:침대방(1)+온돌방(1) or 온돌방(2), 체크인시 현지배정
+<br> * 콘도 총 250실 (한실 149실/양실101실), 비치하우스 총 292실
+<br> * 4인 1실 기준
+<br> * 흰색을 주 칼라로 하여 시원하고 깨끗한 분위기를 자아내는 객실에서 바라본 바다풍경. 푸른 바다의 출렁임과 새벽녘에 펼쳐지는 일출.
+<br>
+</div>
+</td>
+</tr>
+</tbody>
+</table>-->
+
+                                                <!--- 이미지 확대 레이어 --->
+                                                <div class="view_img_layer" style="display:none;position:fixed;visibility:visible;margin-left:0;padding-bottom:30px;height:auto;padding-right:45px" id="room_layer_2299">
+                                                    <p class="view_title" style="text-align:left">마운틴뷰 콘도</p>
+                                                    <p class="view_layer_close" onclick="utils.out('#room_layer_2299')"><img src="http://img.go.co.kr/btn_close_layer.jpg" alt="닫기"></p>
+                                                    <div class="swiper_room img_area" style="width:100%;background:#000000">
+                                                        <div class="swiper-wrapper" style="width:100%;padding:none">
+                                                            <div class="swiper-slide" style="text-align:center;"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1491201477_1.jpg" alt="" style="max-width:1000px;width:auto;height:auto;margin:0 auto;max-height:667px"></div>
+                                                            <div class="swiper-slide" style="text-align:center;"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1491201477_2.jpg" alt="" style="max-width:1000px;width:auto;height:auto;margin:0 auto;max-height:667px"></div>
+                                                            <div class="swiper-slide" style="text-align:center;"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1491201478_3.jpg" alt="" style="max-width:1000px;width:auto;height:auto;margin:0 auto;max-height:667px"></div>
+                                                            <div class="swiper-slide" style="text-align:center;"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1491201478_4.jpg" alt="" style="max-width:1000px;width:auto;height:auto;margin:0 auto;max-height:667px"></div>
+                                                        </div>
+                                                        <a class="btn3 prev swiper-button-prev" style="display: block;top:22px;height:100%;background-position:0 50%;z-index:9999;cursor:pointer"></a>
+                                                        <a class="btn3 next3 swiper-button-next" style="display: block;top:22px;height:100%;background-position:100% 50%;z-index:9999;cursor:pointer"></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

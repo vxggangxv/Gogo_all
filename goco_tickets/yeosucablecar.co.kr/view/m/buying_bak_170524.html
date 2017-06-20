@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    
+    <title>구매하기</title>
+    
+    <link rel="stylesheet" href="http://static.hotelgangneung.kr/css/moblie_reset.css" type="text/css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
+    <!--<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/mobile_layout3.css" type="text/css">-->
+    <link rel="stylesheet" href="../../../hotelgangneung.kr/src/css/mobile_layout3.css" type="text/css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="scroll_box">
+            <div id="pruduct_tit_w" style="background:#ffffff">
+                <div class="pruduct_tit">
+                    <span class="icon"><img src="http://img.yeosucablecar.co.kr/mobile/icon_ticket.png" height="17px"> </span>				<span class="tit">여수해상케이블카</span>
+                </div>
+                <!--내부스타일시트 삭제 요청-->
+                <!--<style type="text/css">
+                    #pruduct_tit_w .pruduct_tit {width:auto; padding:10px 10px 15px;}
+                    #pruduct_tit_w .pruduct_info {margin:0 10px; padding:10px 0; border-top:1px solid #dddbd8;}
+                    #pruduct_tit_w .pruduct_info ul li {color:#7f7f7f; font-weight:bold; font-size:12px;}
+                </style>-->
+                <div class="pruduct_info">
+                    <ul>
+                        <li>1. 당일 구매후, 당일 사용은 불가합니다.</li>
+                        <li>2. 크리스탈 캐빈의 편도는 판매하지 않습니다.</li>
+                        <li>3. 36개월 이하 무임. 소인은 37개월 ~ 초등학생(만 12세)</li>
+                        <li>4. 유모차, 휠체어 크리스탈 케이블카 내 탑승불가입니다.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            
+            <form name="rform" id="rform" method="post" action="/home/reservation2/?dd=WxAlVAFWP1ofDVxMDnE=">
+                <table id="product_info">
+                    <colgroup>
+                        <col width="25%">
+                        <col width="75%">
+                    </colgroup>
+                    <tbody>
+
+                        <tr>
+                            <td colspan="2"><a href="#" class="app_gobt"><img src="http://img.yeosucablecar.co.kr/mobile/bn_appdown03.png?ver=20170524102049" width="100%" alt="모바일앱구매시2천원할인"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="hidden" id="125432_room" name="sang" class="chk" value="125432" checked="checked"> 
+                                <input type="hidden" id="125432_room_pno" value="290357">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border:0">
+                                <div class="room_info_box 125432_room_info r_on2"><div style="padding:5px 10px">
+
+                                    <table id="goods_table" class="ticket_table">
+                                        <tbody><tr>
+                                            <td colspan="2">이용기간
+                                                <span style="float:right">
+                                                    2017.05.25 ~ 2017.06.30 (당일사용불가)
+                                                    <input type="hidden" id="hseldate_sub" name="hseldate_sub" value="2017.05.25" readonly="" style="text-align:center;width:40%">
+                                                </span>	
+                                            </td>
+                                            </tr>												
+                                            <tr class="ticket_row">
+                                                <td colspan="2">일반캐빈 왕복 대인 (바닥 불투명) (12,000원)
+                                                    <span style="float:right">
+                                                        <select name="person_d705" id="person_d705" class="select_box" onchange="go_price_calc_final()" style="width:50px; margin-left:10px; height:35px; border:solid 1px #dadada; background-color:#ffffff"><option value="0">0매</option><option value="1">1매</option><option value="2">2매</option><option value="3">3매</option><option value="4">4매</option><option value="5">5매</option><option value="6">6매</option><option value="7">7매</option><option value="8">8매</option><option value="9">9매</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="ticket_row">
+                                                <td colspan="2" style="border-bottom:1px solid #000000;">일반캐빈 왕복 소인 (바닥 불투명) (7,600원)
+                                                    <span style="float:right">
+                                                        <select name="person_d706" id="person_d706" class="select_box" onchange="go_price_calc_final()" style="width:50px; margin-left:10px; height:35px; border:solid 1px #dadada; background-color:#ffffff"><option value="0">0매</option><option value="1">1매</option><option value="2">2매</option><option value="3">3매</option><option value="4">4매</option><option value="5">5매</option><option value="6">6매</option><option value="7">7매</option><option value="8">8매</option><option value="9">9매</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="ticket_row">
+                                                <td colspan="2">일반캐빈 편도 대인 (바닥 불투명) (8,600원)
+                                                    <span style="float:right">
+                                                        <select name="person_d707" id="person_d707" class="select_box" onchange="go_price_calc_final()" style="width:50px; margin-left:10px; height:35px; border:solid 1px #dadada; background-color:#ffffff"><option value="0">0매</option><option value="1">1매</option><option value="2">2매</option><option value="3">3매</option><option value="4">4매</option><option value="5">5매</option><option value="6">6매</option><option value="7">7매</option><option value="8">8매</option><option value="9">9매</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="ticket_row">
+                                                <td colspan="2" style="border-bottom:1px solid #000000;">일반캐빈 편도 소인 (바닥 불투명) (6,200원)
+                                                    <span style="float:right">
+                                                        <select name="person_d708" id="person_d708" class="select_box" onchange="go_price_calc_final()" style="width:50px; margin-left:10px; height:35px; border:solid 1px #dadada; background-color:#ffffff"><option value="0">0매</option><option value="1">1매</option><option value="2">2매</option><option value="3">3매</option><option value="4">4매</option><option value="5">5매</option><option value="6">6매</option><option value="7">7매</option><option value="8">8매</option><option value="9">9매</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="ticket_row">
+                                                <td colspan="2">크리스탈캐빈 왕복 대인 (바닥 유리) (18,700원)
+                                                    <span style="float:right">
+                                                        <select name="person_d709" id="person_d709" class="select_box" onchange="go_price_calc_final()" style="width:50px; margin-left:10px; height:35px; border:solid 1px #dadada; background-color:#ffffff"><option value="0">0매</option><option value="1">1매</option><option value="2">2매</option><option value="3">3매</option><option value="4">4매</option><option value="5">5매</option><option value="6">6매</option><option value="7">7매</option><option value="8">8매</option><option value="9">9매</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="ticket_row">
+                                                <td colspan="2">크리스탈캐빈 왕복 소인 (바닥 유리) (13,900원)
+                                                    <span style="float:right">
+                                                        <select name="person_d710" id="person_d710" class="select_box" onchange="go_price_calc_final()" style="width:50px; margin-left:10px; height:35px; border:solid 1px #dadada; background-color:#ffffff"><option value="0">0매</option><option value="1">1매</option><option value="2">2매</option><option value="3">3매</option><option value="4">4매</option><option value="5">5매</option><option value="6">6매</option><option value="7">7매</option><option value="8">8매</option><option value="9">9매</option>
+                                                        </select>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </tbody></table>
+                                    <div id="final_price_info"><input type="hidden" name="final_price" id="final_price" value="0"><input type="hidden" name="normal_price" id="normal_price" value="0"><input type="hidden" name="show_price" id="show_price" value="0"><input type="hidden" name="deposit_price" id="deposit_price" value=""></div>
+
+                                    <div class="total-prc clr">
+                                        <span class="pull-left">총 금액</span><span class="pull-right"><span id="fin_price">0</span>원</span>  
+                                    </div>
+                                    <div class="clr"></div>
+
+                                    <script type="text/javascript">
+                                        function go_price_calc_final() {
+                                            $("#hseldate").val($("#hseldate_sub").val());
+                                            $("#nseldate").val($("#hseldate_sub").val());
+ 
+
+                                            var string = $("#rform").serialize();
+                                            $.ajax({
+                                                url : "/home/reservation2/state.php",
+                                                data: "mode=go_priceinfo_single&"+string,
+                                                type : "post",
+                                                success: function(e) {
+                                                    go_cookie();
+                                                    $("#final_price_info").html(e);
+
+                                                    price_set();
+
+                                                }
+                                            });
+                                        }
+                                        function go_price_calc() {
+                                            $.ajax({
+                                                url : "/home/reservation2/state.php",
+                                                type : "post",
+                                                data : "mode=ticket_reload&p_no=290357&sang=125432&sel_date="+$("#hseldate_sub").val(),
+                                                cache: false, 
+                                                success: function(e) {
+                                                    $(".ticket_table").find(".ticket_row").remove();
+                                                    $(".ticket_table").find("tr:last").after(e);
+
+                                                    go_price_calc_final();
+                                                }
+                                            });
+                                        }
+                                        go_price_calc();
+
+                                        function price_set() {
+                                            $("#fin_price").text(number_format($("#final_price").val()));
+                                        }
+
+                                    </script>
+                                    <form name="info_form" id="info_form">
+                                        <input type="hidden" name="info_site" value="varonet">
+                                        <input type="hidden" name="info_p_no" value="290357">
+                                        <input type="hidden" name="info_r_no" value="125432">
+                                        <input type="hidden" name="info_hseldate" value="2017-05-25">
+                                        <input type="hidden" name="info_nseldate" value="2017-06-30">
+                                        <input type="hidden" name="info_person" value="">
+                                        <input type="hidden" name="info_single" value="Y">
+                                    </form>
+
+
+                                    <div style="position:relative">
+
+
+                                        <div id="btn_reser1"><a href="javascript:app_search_confirm('login');button_count('290357', 'simple')">구매하기 &gt;</a></div>
+                                        <div id="btn_reser2" class="app_gobt" style="position: relative;"><a href="#" style="line-height:24px;">앱으로 할인받기 &gt;</a><span style="position: absolute;top: 29px;text-align: center;width: 54%;font-size: 13px;color: #fff;">(2,000원 즉시할인)</span></div>
+
+
+                                    </div>
+
+                                    </div>
+
+
+
+
+
+                                    <!-- 앱 설치 유도 배너 -->
+                                    <div id="popup_btn2" style="z-index: 20;display:none;position:fixed;top:50%;left:50%;">
+                                        <div class="closew" onclick="utils.out('#popup_btn2');">
+                                            <span class="close"><img width="30" alt="닫기" src="http://img.yeosucablecar.co.kr/mobile/menu_close.jpg"></span>
+                                        </div>
+                                        <div class="txt" style="width:75%">
+                                            <p class="txt1">고코투어 앱 할인 안내<br></p>
+                                            <p class="txt2">잠깐만!! 고코투어 앱으로 구매하시면 <br><span class="txt2_color">추가할인이 가능</span>합니다.</p>
+                                            <p class="txt2 m_t15"><b>앱으로 구매하시겠습니까?</b></p>
+
+                                        </div>
+                                        <div class="pobtn">
+                                            <a href="#" id="mobile_reserve">
+                                                <div class="leftbtn">모바일 구매</div></a> 
+                                            <a href="javascript:app_count_go();"><div class="rightbtn">앱으로 할인구매</div></a> 
+                                        </div>
+                                    </div>
+
+                                    <!--- 선택값 쿠키 저장 ---->
+                                    <script type="text/javascript">
+                                        function go_cookie() {
+                                            var string = $("#rform").serialize();
+                                            $.ajax({
+                                                url : "/home/reservation2/state.php",
+                                                data: "mode=go_cookie&"+string,
+                                                type : "post",
+                                                success: function(e) {
+
+                                                }
+                                            });
+                                        }
+                                        go_cookie();
+
+
+                                        function info_pop(p_no) {
+                                            if($("#link_"+p_no).hasClass("on") == false) {
+                                                $("#link_"+p_no).addClass("on");
+                                                var string = $("#info_form").serialize();
+                                                $.ajax({
+                                                    url : "/home/reservation2/info_pop.php",
+                                                    data: string,
+                                                    type : "post",
+                                                    success: function(e) {
+                                                        $("#info_pops_"+p_no).show();
+                                                        $("#info_pops_"+p_no).html(e);		
+                                                    }
+                                                });
+                                            } else {
+                                                $("#link_"+p_no).removeClass("on");
+                                                $("#info_pops_"+p_no).hide();
+                                            }
+                                        }
+
+                                        $(".app_gobt").click(function(e) {
+                                            button_count('', 'apppay_and');
+
+                                            e.preventDefault();
+                                            callApp.exec(navigator.userAgent, 'http://app.go.co.kr/home/view/?p_no=');
+                                        });
+
+                                        // 앱 설치 유도 레이어
+                                        function app_search_confirm(target) {
+
+                                            // 2017-05-22
+                                            var per = 0;
+                                            $("select[name^='person']").each(function(i) {
+                                                var id =$("select[name^='person']").eq(i).attr("id");
+
+                                                per += parseInt($("#"+id+"").val());		
+
+                                            });
+
+
+                                            if(parseInt(per) < 1) {
+                                                alert("총 한장이상 구매해야합니다.");
+                                                return;
+                                            }
+
+
+                                            switch(target) {
+                                                case "login":
+                                                    var script_target = "javascript:booking.prev_nlogin2('', '');";
+                                                    break;
+                                                case "rstep":
+                                                    var script_target = "javascript:booking.rstep1();";
+                                                    break;
+                                                case "final":
+                                                    var script_target = "javascript:booking.final_chk('290357', '');";
+                                                    break;
+                                            }
+
+                                            //utils.on("#popup_btn2");
+
+                                            //utils.on("#pop_pay_ag");
+
+                                            $.ajax({
+                                                url : "/home/reserve/state.php",
+                                                data: "mode=popup_cont_ticket&p_no=G0dwEGsR&hseldate="+$("#hseldate_sub").val()+"&TDATE=2017-06-30",
+                                                type: "post",
+                                                success: function(e) {
+                                                    $("#pop_cont").html(e);
+                                                    utils.on('#pop_pay_ag');
+                                                    $("#mobile_reserve").attr("href", script_target);
+                                                }
+                                            });
+
+                                        }
+
+                                        function app_count_go() {
+                                            $.ajax({
+                                                url: "/home/reservation2/state.php",
+                                                type: "post",
+                                                data: "mode=reserve_app_click&p_no=290357",
+                                                success: function() {
+                                                    callApp.exec(navigator.userAgent, 'http://app.go.co.kr/home/main/');				
+                                                    //utils.out("#popup_btn2");
+                                                    utils.on("#pop_pay_ag");
+                                                }
+                                            });
+                                        }
+
+                                    </script>
+
+
+                                </div>
+                                <div style="float:left; width:100%; height:3px; background:#d2d2d2"></div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </form>
+            
+            <div id="room_w" style="overflow-x:hidden;overflow-y:auto">			
+                <div id="room_infogo">
+                    <div class="room_tx_w">
+                        <div class="room_tx_in">	
+                            <h4 class="room_title"><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px">안내 및 유의사항</h4>
+                            <div class="txt_forms">
+                                <p>
+                                    <!--- 체크인/체크아웃 --->
+
+                                    <!--- 기본 등록 내용 ---->
+                                    운영시간: 일~금요일 - 오전 9시 ~ 오후 9시 30분 / 토요일 - 오전 9시 ~ 오후 10시 30분<br>
+                                    <br>
+                                    강풍 및 우천 등, 기상상황에 따라 케이블카가 미운행 될 수 있습니다. <br>
+                                    기상상황이 안좋을 때는 미리 현장문의 후 이용하시기를 바랍니다. <br>
+                                    여수해상케이블카 현장 고객센터 : 02-2202-3435 <br>
+                                    <br>
+                                    미운행시 티켓은 100% 환불해 드립니다. <br>
+                                    다만, 세트권은 할인 된 요금이므로, 부분 환불시는 환불금액이 정상가격 또는 단품가격보다 적을 수 있습니다. <br>
+                                    <br>
+                                    주차는 돌산공원 주차장을 이용하실수 있습니다.<br>
+                                    자산(오동도) 쪽에서 이용하실 경우 유료 공영주차장을 이용하시면 됩니다.<br>
+                                    <br>
+                                    혐오 또는 냄새로 인하여 다른 승객에게 불쾌감을 줄 우려가 있는 물품은, 휴대가 금지됩니다. <br>
+                                    <br>
+                                    애완동물은 애견가방 없이 탑승 불가하며, 반드시 가방에 넣어 주셔야 탑승가능합니다. (단, 장애인 보조견은 제외) <br>
+                                    <br>
+                                    크리스탈 캐빈 편도는 운영하지 않습니다. <br>
+                                    <br>
+                                    유모차, 휠체어는 크리스탈 캐빈에 탑승불가 합니다.	</p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+
+
+                        <!-- 객실안내 -->
+
+                        <div class="room_tx_in">	
+                            <h4 class="room_tit_mle" style="padding-left:20px"><img src="http://img.go.co.kr/mobile//slogan_icon.png" height="22px"> 시설안내</h4>
+                            <div class="txt_forms">
+                                <p>
+                                    <img src="http://img.yeosucablecar.co.kr/TOP_IMG120170420120011.jpg?ver=20170524102049" alt="" style="width:100%">
+                                    <img src="http://img.yeosucablecar.co.kr/BOT_IMG120170420120107-1.jpg?ver=20170524102049" alt="" style="width:100%">
+                                    <img src="http://img.yeosucablecar.co.kr/BOT_IMG120170420120107-2.jpg?ver=20170524102049" alt="" style="width:100%">
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </div><!--scroll_box 끝-->
+    </div><!--wrapper 끝-->
+</body>
+</html>

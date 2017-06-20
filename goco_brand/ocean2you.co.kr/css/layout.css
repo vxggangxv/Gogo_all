@@ -21,13 +21,18 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 /* GNB */
 #gnb_wrap{clear:both; width:100%;}
 #gnb{width:100%; text-align:center; margin:auto; clear:both; height:47px; background-color:#222222;}
-#gnb ul{margin:auto; width:980px; text-align:center; height:47px}
-#gnb li.menu{display:block; width:163px; float:left;}
+#gnb ul{margin:auto;width:980px;text-align:center;height:47px;}
+#gnb li.menu{display:block; width:110px; float:left;}
 #gnb li.menu a{transition:0.3s; color:#c5c5c5; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
-#gnb li:nth-of-type(2) a{color:#c5c5c5; background-color:#171717; height: 47px;}
-#gnb li.menu_on a{color:#f0cc7f; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
 #gnb li.menu a:hover{color:#f0cc7f; font-size:15px; line-height:2.8;  display:block;}
-#gnb li.menu_on{display:block; float:left; width:163px}
+#gnb li.menu_on{display:block; width:110px; float:left;}
+#gnb li.menu_on a{color:#f0cc7f; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li.menu_tit{display:block; width:310px !important; float:left;}
+#gnb li.menu_tit a{transition:0.3s; color:#c5c5c5; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li.menu_tit a:hover{color:#f0cc7f; font-size:15px; line-height:2.8;  display:block;}
+#gnb li.menu_tit_on{display:block; float:left;}
+#gnb li.menu_tit_on a{color:#f0cc7f; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li:nth-of-type(2) a{color:#c5c5c5; background-color:#171717; height: 47px;}
 
 /*서브메뉴*/
 #submn_wrap{width:100%; height:38px; background:#efefef; border-bottom:1px solid #e3e3e3; margin:auto; }
@@ -373,14 +378,11 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 
 /*2015.02. 상세리뉴얼 관련*/
-#rsv_sang #rsv_s_list_box2 {clear:left;width:954px}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list {width:954px;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_tr"] td.ss{height:60px; border-top:1px solid #dddddd; position:relative;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_detail"] td.ss {height: auto;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac {background: #FCF5E1;}
-#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.pac.select {background: #FFEBB9;}
-
+#rsv_sang #rsv_s_list_box2 {clear:left;width:980px}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list {width:980px;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list td.ss{padding-left:20px; height:60px;border-bottom:1px solid #dddddd; position: relative;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list td.ss2{height:60px;border-bottom:1px solid #dddddd; position: relative;}
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select {padding:none; background:#e3e3e3; color:#3a3a3a; font-weight:600}
 
 #contents .contents_tit2 {float:left; margin-bottom:15px; padding-bottom:10px; padding-top:10px; padding-left:20px; width:982px; color:#000; font-weight:600; text-align:left; font-size:17px; border-bottom:1px solid #b2b2b2; border-top:1px solid #b2b2b2}
 #main5 {position:relative; width:961px; margin:auto; margin-top:22px}
@@ -925,7 +927,8 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 #gnb2 li.reserv a{color:#fff !important; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
 #gnb_wrap2{clear:both; width:100%;}
 #gnb2{width:100%; text-align:center; margin:auto; clear:both; height:47px; background-color:#222222;}
-#gnb2 ul{margin:auto; width:1247px !important; text-align:center; height:47px}
+#gnb2 ul{margin:auto; width:1318px !important;/* width:1247px !important; */ text-align:center; height:47px}
+#gnb2 ul.thecloud {margin: auto; width: 1350px !important; text-align: center; height: 47px;}
 #gnb2 li.menu{display:block; width:163px; float:left;}
 #gnb2 li.menu a{color:#c5c5c5; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
 #gnb2 li.menu a:hover{color:#f0cc7f; font-size:15px; line-height:2.8;  display:block;}
@@ -1104,3 +1107,17 @@ table.ReservationCalendar{ border-left:1px solid #c6c6c6; border-top:1px solid #
 p{ line-height: 15px;}
 .btn_submit{padding: 5px 20px; border:0px solid #9c9c9c; background-color:#f25c27; height:27px; color:#fff;}
 .btn_cancel{padding: 5px 20px; margin-top:2px; border:0px solid #9c9c9c; background-color:#949494; height:29px; color:#fff !important;}
+
+/* 고코웹 상세페이지 폰트컬러 수정_170515_혜준 */
+#daySearch .input,
+#rsv_sang #rsv_s_tab .rsv_s_tabHead,
+#contents #rsv_s_list td,
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr.select,
+#cal_wrap2 .cal_section,
+#cal_wrap2 .cal_section .calendar th,
+#cal_wrap2 .cal_day2,
+.fare_table .f_td > li,
+.slt_pay .nth2,
+#noRoom {color: #313131;}
+/* index페이지 pkg이미지추가_170609_혜준 */
+.inf-pkg {margin-bottom: 97px;}

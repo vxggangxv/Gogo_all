@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 
 body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.5px; background-color:#fff}
 a:link, a:visited {text-decoration:none; color:#000}
@@ -2070,7 +2071,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #tour_taste_select{clear:both; float:right; margin-right:46px; margin-bottom:10px; padding: 4px 3px 5px; border: 1px solid rgb(192, 197, 201); width: 130px; height: 28px; color: rgb(116, 124, 132); font-size: 13px;}
 
 #cal_wrap .btn_close {clear:both; float:right; margin-right:15px}
-#room_detail_info {width:952px; border-left:2px solid #afb6bc; border-right:2px solid #afb6bc; border-bottom:2px solid #afb6bc}
+#room_detail_info {width:954px; border-left:2px solid #afb6bc; border-right:2px solid #afb6bc; border-bottom:2px solid #afb6bc}
 #room_detail_info th {padding-left:10px; background:#f6f6f6; border-bottom:1px solid #dddee0; text-align:left; font-size:13px; line-height:2; font-weight:600; color:#3d3d3d}
 #room_detail_info td {padding:10px 0 10px 10px; background:#f6f6f6; text-align:left; font-size:12px; line-height:1.5}
 #room_detail_info td img {width:158px; height:88px}
@@ -4686,7 +4687,7 @@ background-size: 54px; background-position: center -8px;}
 #rsv_wrapper .slg {float: right; margin-top: -60px;}
 .tit_box {position: relative; width: 954px; /* margin: 0 auto; margin-left: 25px; */ height: 42px; padding-top: 8px; background: #ff7a2d;}
 .tit_box > span {position:relative; top: 3px; color: #fff;}
-.tit_box .t1 {font-size: 16px; margin-left: 140px;/* margin-left: 230px; */ font-weight: 800; margin-right: 10px;}
+.tit_box .t1 {font-size: 19px; margin-left: 140px;/* margin-left: 230px; */ font-weight: 800; margin-right: 10px;}
 .tit_box > label {margin-right: 5px; display: inline-block; height: 34px; cursor: pointer;}
 .tit_box #s1 {height: 30px; width: 230px; border:1px solid #ec671a; border-right: none; font-size: 15px; font-weight: 600; text-indent: 10px; line-height: 2.1em;}
 .tit_box .i1 {display: inline-block; width: 32px; background: #fff; }
@@ -4845,7 +4846,7 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 .event_list td dd h4 a{width:440px; float:left; text-align:left; font-size:15px; color:#444444; font-weight:600;}
 .event_list td dd p{width:440px; text-align: left;}
 .event_list td dd .event_go{position:absolute; right:0; top:28px}
-#event_bn_right{background-image:url('http://img.go.co.kr/event/20170320_ocean2you-freeticket/ticket-side.png'); position: absolute; top: 0px; left: 51%; margin-left: 504px; width: 268px; height:139px; font-size: 11px; text-align: center;}
+#event_bn_right{background-image:url('http://img.go.co.kr/event/20170320_ocean2you-freeticket/ticket-side.png'); position: absolute; top: -4px; left: 51%; margin-left: 504px; width: 268px; height:139px; font-size: 11px; text-align: center; z-index: -6px;}
 
 /* 선택자 */
 .select_search{position:relative; line-height:normal; display:inline-block; *display:inline; vertical-align:middle; background:#fff; *zoom:1;}
