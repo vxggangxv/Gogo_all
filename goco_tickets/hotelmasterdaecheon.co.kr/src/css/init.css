@@ -1,0 +1,38 @@
+/* 상단 가로 사이즈 20170612 이동석 */
+#gnb2 ul {margin: auto; width: 930px !important; text-align: center; height: 47px;}
+#gnb li.menu_on{display:block; float:left; width:163px}
+#gnb li.menu{display:block; width:150px; float:left;}
+#gnb li.menu_reservation{display:block; /* width:148px; */ width:228px; float:left;}
+#gnb li.menu_on_reservation{display:block; float:left; /* width:148px; */ width:228px;}
+#gnb li.menu_on_reservation a{transition:0.3s; color:#c5c5c5; font-size:15px; font-weight:600; display:block;}
+#gnb2.accom ul {width: 1320px !important;}
+#gnb2.accom li.menu{display:block; width:148px; float:left;}
+#gnb2.accom li.menu_on{display:block; float:left; width:148px}
+
+
+/* 업체 로고 사이즈 20170613 이동석 */
+#header .logo .corp img{width:210px; height:40px; padding-top:5px;}
+
+/* 상단 이용기간_170615_이동석 */
+.tit_box {position: relative; width: 100%; /* margin: 0 auto; margin-left: 25px; */ height: 48px; padding-top: 8px; background: #ff7a2d;}
+.tit_box > span {position:relative; top: 3px; color: #fff;}
+.tit_box .t1 {font-size: 22px; margin-left: 140px;/* margin-left: 230px; */ font-weight: 800; margin-right: 10px; font-family: "Malgun Gothic"; letter-spacing: -0.5px;}
+.tit_box > label {margin-right: 5px; display: inline-block; height: 34px; cursor: pointer;}
+.tit_box #s1 {height: 30px; width: 230px; border:1px solid #ec671a; border-right: none; font-size: 15px; font-weight: 600; text-indent: 10px; line-height: 2.1em;}
+.tit_box .i1 {display: inline-block; width: 32px; background: #fff; }
+.tit_box .i1 img {position: relative; left: 2px;}
+.tit_box .t2 {letter-spacing: -1px; font-size: 15px;}
+.tit_box #cal_wrap2 {opacity: 0; visibility: hidden; position: absolute; top: 39px; left: 295px; box-sizing: border-box; border: 1px solid #ec671a; z-index: 11; width: 385px; /* height: 412px; */ box-shadow: 2px 4px 1px 2px rgba(0,0,0,0.196); transition: all 0.5s;}
+.tit_box #cal_wrap2.on {opacity: 1; visibility: visible;}
+.tit_box #cal_wrap2 .clsBtn {position: absolute; display: block; bottom: 20px; right: 6px; background: #ff7a2d; width: 36px; height: 19px; font-size: 12px; color: #fff; text-align: center;}
+
+/* 숙박권, 입장권 버튼_170615_이동석 */
+.d-room-enter input {display: inline-block; width: 200px; height: 50px; font-size: 19px; font-weight: bold; color: #fff; background-color: #aaa; border: 0px; margin-top: 20px; margin-bottom: 10px;}
+.d-room-enter input.on {background: #ff7a2d;}
+.btn-reservation_enter, .btn-reservation_room {}
+.btn-reservation_enter {margin-right: 15px;}
+.btn-reservation_room {}
+
+/* .btn-reservation_enter, .btn-reservation_room {}
+.btn-reservation_enter {width: 200px; height: 50px; font-size: 19px; font-weight: bold; color: #fff; background-color: #ff7a2d; border: 0px; margin-top: 20px; margin-bottom: 10px; margin-right: 15px;}
+.btn-reservation_room {width: 200px; height: 50px; font-size: 19px; font-weight: bold; color: #fff; background-color: #ff7a2d; border: 0px; margin-top: 20px; margin-bottom: 10px;} */

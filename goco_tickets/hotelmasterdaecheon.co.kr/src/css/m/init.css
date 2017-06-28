@@ -1,0 +1,6 @@
+/* 호텔마스타대천 숙박/입장권 통합_170616_혜준 */
+.d-room-enter {font-size: 0; box-sizing: border-box; clear: both; padding-top: 5px;	}
+.d-room-enter input {display: inline-block; font-size: 14px; background: #aaa; color: #fff; width: 50%;}
+.d-room-enter input.on {background: #f95c24;}
+.btn-reservation_room, .btn-reservation_enter {}
+.btn-reservation_enter {border-left: 1px solid #ccc;}
