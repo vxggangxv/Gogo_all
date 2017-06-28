@@ -23,10 +23,11 @@
     <!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css" />
     <link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/layout_common.css">
     <link rel="stylesheet" type="text/css" href="http://static.yeosucablecar.co.kr/css/init.css">-->
-      <link rel="stylesheet" type="text/css" href="../../../goco/src/css/totalweb.css" />
-         <link rel="stylesheet" type="text/css" href="../src/css/layout_common.css">
-         <link rel="stylesheet" type="text/css" href="../src/css/init.css">  
+    <link rel="stylesheet" type="text/css" href="../../../goco/src/css/totalweb.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/layout_common.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/init.css">  
     <link rel="stylesheet" type="text/css" href="../../hotelgangneung.kr/src/css/layout2.css">
+         
 
 
     <script src="http://static.yeosucablecar.co.kr/js/jquery.min.js"></script>
@@ -174,14 +175,22 @@
         </div>
     </div>
 
-    <div id="header_wrap">
+    <div id="header_wrap" style="height:90px">
         <div id="header">
-            <ul class="top">
-                <li class="top_reservation"><a href="http://www.elybaden.co.kr/member/?dd=RREnSjA=">로그인 <img src="http://img.yeosucablecar.co.kr/top_reservation_icon.jpg"></a></li>
-            </ul>
+
+            <!--
+<ul class="top">
+<li class="top_reservation"><a href="http://www.yeosucablecar.co.kr/member/?dd=RREnSjA=&rurl=QQo0U2QJcVQ3CQZQGy9QK0U/QSwbS0gMbkAxCDVRbwhBTAlvHC55MEx9ORhNCQVkLXQ=">로그인 <img src="http://img.yeosucablecar.co.kr/top_reservation_icon.jpg"></a></li>
+</ul>
+-->
+
             <div class="logo">
-                <a class="corp" href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE="><img src="http://img.yeosucablecar.co.kr/logo.png"></a>
-                <a class="official" href="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE="><img src="http://img.yeosucablecar.co.kr/logo_c_r_b.png"></a>
+                <p style="font-size:20px;color:#ffffff;font-weight:bold;padding-top:30px;float:left"><a class="corp" href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR" style="color:#ffffff">여수해상케이블카</a></p>
+                <!---<a class="corp" href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR"><img src="http://img.yeosucablecar.co.kr/logo.png" style="margin-top:18px;max-height:60px"></a>---->
+                <a id="lowest-price_grnty-w" href="#"><img src="http://img.yeosucablecar.co.kr/lowest-price_grnty-w.jpg" style="position:absolute; top:8px; margin-left:12px;margin-top:18px"></a>
+
+                <a class="official" href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR"><img src="http://img.go.co.kr/logo_c_r_b.png" style="margin-top:18px"></a>
+                <span style="clear:left"></span>
             </div>
         </div>
     </div>
@@ -190,375 +199,181 @@
     <div id="gnb_wrap">
         <div id="gnb">
             <ul>
-                <li class="menu"><a href="./intro.html" title="소개">소개</a></li>
-                <li class="menu_on"><a href="./reservation.html" title="실시간 예약">실시간 예약</a></li>
-                <li class="menu"><a href="" title="예약내역조회">예약내역조회</a></li>
-                <li class="menu"><a href="" title="고객센터">고객센터</a></li>
+                <li class="menu"><a href="http://www.yeosucablecar.co.kr" title="여수해상케이블카">시설안내</a></li>
+                <li class="menu"><a href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR" title="실시간 구매">실시간 구매</a></li>
+
+
+                <li class="menu"><a href="javascript:view_move('info_box2');" title="요금/예약">갤러리</a></li>
+                <li class="menu"><a href="javascript:view_move('how_come');" title="요금/예약">오시는길</a></li>
+                <li class="menu"><a href="javascript:view_move('info_box5');" title="요금/예약">축제/관광지/맛집</a></li>
+
+                <li class="menu"><a href="http://www.yeosucablecar.co.kr/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZQGy9QK0U/QSwbS0gMbkAxCDVRbwxNWhsyVT9SN0wuURdNGn1wKVVrdzoafmIZfR4=" title="구매내역조회">구매내역조회</a></li>
+                <li class="menu"><a href="http://www.yeosucablecar.co.kr/customer/?dd=RAcfTzdVKnwmH1k=" title="고객센터">고객센터</a></li>
+
+                <li class="menu"><a href="http://www.yeosucablecar.co.kr/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZQGy9QK0U/QSwbS0gMbkAxCDVRbwhBTAlvHC55MEx9ORhNCQVkLXQ=">로그인</a></li>
             </ul>
         </div>
+
 
     </div>
     <!-- gnb 끝 -->
 
     <!-- wrapper -->
     <div id="wrapper">
-        <div id="container" style="position:relative">
+       
+       
+        <div id="contents">
+            <div class="contents_tit2">
+            
+            
+                <span style="width:700px; float:left">
+                    [입장권] 여수해상케이블카 		</span>
+                <!-- 공유하기 -->
+                <span style="float:right; margin-right:20px">
+                </span>
+            </div>
+            
+            <div id="reservation_go">
 
-            <div class="sub_wrap" id="reservation_go" style="margin-bottom:70px">
 
 
-                <!-- <div style="margin-left:13px"><img src="http://img.elybaden.co.kr/step01.jpg" alt="01예약정보입력"></div> -->
                 <form name="prev_form" id="prev_form">
-                    <input type="hidden" name="base_ts" id="base_ts" value="1492700400">
-                    <input type="hidden" name="prev_hseldate" id="prev_hseldate" value="2017-04-21">
+                    <input type="hidden" name="base_ts" id="base_ts" value="1498662000">
+                    <input type="hidden" name="prev_hseldate" id="prev_hseldate" value="2017-06-29">
                 </form>
 
-                <form name="rform" id="rform" method="post" action="http://www.elybaden.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnI=&amp;p_no=G0dwE2ge">
+                <form name="rform" id="rform" method="post" action="/reservation/?dd=WxszRixQP1cpEUZ2TnI=&amp;p_no=G0dwEGsR">
                     <input type="hidden" name="fval_s" id="fval_s" value="">
-                    <input type="hidden" name="p_no" id="p_no" value="290068">
+                    <input type="hidden" name="p_no" id="p_no" value="290357">
                     <input type="hidden" name="gubun" id="gubun" value="T">
                     <input type="hidden" name="res_type2" id="res_type2" value="varonet">
                     <input type="hidden" name="single" id="single" value="on">
+                    <input type="hidden" name="abr_val" value="">
+                    <input type="hidden" name="ticket_newchk" id="ticket_newchk" value="Y"> <!-- 신규 바로넷 구분 -->
+                    <input type="hidden" name="max_pnum" id="max_pnum" value="10/">
+                    <input type="hidden" name="pno_arr" id="pno_arr" value="">
 
-                    <!--변경내용_0531 수정-->
-                    <!--<div class="title-1">
-                        <h2 class="tit-h2">여수해상케이블카 5,6월 탑승권</h2>
-                        <div class="slt-bgc"></div>
-                        <select name="" id="">
-                            <option value="">5,6월 탑승권</option>
-                            <option value="">5,6월 탑승권</option>
-                        </select>
-                    </div>-->
-                    <!--변경내용_0531 끝-->
+                    <link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css">
                     <div id="rsv_wrapper" class="rsv_wrapper">
 
                         <div class="clr"></div>
 
                         <div class="fare_section" id="fare_section">
                             <div class="tit_box" align="center">
+
                                 <span class="t1" style="margin-left:0px">이용기간 :</span>
-                                <!--변경내용_0531 폰트색추가-->
                                 <span class="t1" style="margin-left:0px">
-                                    <span class="c-yellow">2017년 05월 24일 ~ 2017년 06월 30일</span> (당일 불가상품)
-                                </span>
+                                    <span class="c-yellow">2017년 05월 22일 ~ 2017년 07월 31일</span> 
+                                    (당일 불가상품)				</span>
+
+                                <input type="hidden" name="hseldate" id="hseldate" value="2017-06-29">
+                                <input type="hidden" name="nseldate" id="nseldate" value="2017-07-31">
+                                <input type="hidden" name="ticket_mode" value="dates">
+
 
                             </div>
-
-                            <!--변경내용_0531 테이블로 변경-->
                             <div id="fare_wrapper">
-
-                                <!--성별 없을 경우-->
-                                <!--<table class="gender-non">
+                                <table class="gender-non">
                                     <colgroup>
                                         <col width="261px">
-                                            <col width="123px">
-                                                <col width="123px">
-                                                    <col width="208px">
-                                                        <col width="122px">
-                                                            <col width="143px">
+                                        <col width="123px">
+                                        <col width="123px">
+                                        <col width="208px">
+                                        <col width="122px">
+                                        <col width="143px">
                                     </colgroup>
                                     <thead>
                                         <tr>
                                             <th>상품명</th>
                                             <th>주중/주말</th>
                                             <th>대인/소인</th>
-                                            <th>할인판매가</th>
+                                            <th>할인<img src="http://img.go.co.kr/banner_lowest_price.gif" alt="" class="banner_lowest_price"></th>
                                             <th>수량선택</th>
                                             <th class="last">결제금액</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="" rowspan="2">일반캐빈 왕복
-                                                <br>(바닥불투명)</td>
-                                            <td class="" rowspan="2">공통</td>
-                                            <td class="ctgr">대인</td>
-                                            <td class="prc-sale"><s>13,000원</s><span class="gt">&#62;</span><span class="prc c-red">12,000원</span></td>
+                                    <tbody id="varo_listre">
+                                        <tr><td rowspan="2">일반캐빈 왕복 (바닥 불투명)</td><td rowspan="2">공통</td><td class="ctgr" rowspan="1">대인</td>
+                                            <td class="prc-sale"><s>13,000원</s><span class="gt">&gt;</span><span class="prc c-red">12,000원</span></td>
                                             <td>
                                                 <p class="quan clr">
-                                                    <span class="s-l">-</span>
-                                                    <input type="text" class="inp on" value="1"><span class="s-r">+</span>
+                                                    <span class="s-l" onclick="single.up_down_bt('down', 'person_de73', 0, '290357')">-</span>
+                                                    <input type="text" class="inp on" value="0" id="person_de73" name="person_de73" numberonly="true" maxlength="2">
+                                                    <span class="s-r" onclick="single.up_down_bt('up', 'person_de73', '10', '290357')">+</span>
                                                 </p>
                                             </td>
-                                            <td class="total"><span class="on">12,000원</span></td>
-                                        </tr>
-                                        <tr class="">
-                                            <td class="ctgr">소인</td>
-                                            <td class="prc-sale"><s>9,000원</s><span class="gt">&#62;</span><span class="prc c-red">7,600원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span>
-                                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td rowspan="1" colspan="6" class="division"></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="" rowspan="2">일반캐빈 편도
-                                                <br>(바닥불투명)</td>
-                                            <td class="" rowspan="2">공통</td>
-                                            <td class="ctgr">대인</td>
-                                            <td class="prc-sale"><s>10,000원</s><span class="gt">&#62;</span><span class="prc c-red">8,600원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span>
-                                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr class="">
-                                            <td class="ctgr">소인</td>
-                                            <td class="prc-sale"><s>7,000원</s><span class="gt">&#62;</span><span class="prc c-red">6,200원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span>
-                                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td rowspan="1" colspan="6" class="division"></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td rowspan="2">크리스탈캐빈 왕도
-                                                <br>(바닥유리)</td>
-                                            <td rowspan="2">공통</td>
-                                            <td class="ctgr">대인</td>
-                                            <td class="prc-sale"><s>20,000원</s><span class="gt">&#62;</span><span class="prc c-red">18,700원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span>
-                                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ctgr">소인</td>
-                                            <td class="prc-sale"><s>15,000원</s><span class="gt">&#62;</span><span class="prc c-red">13,900원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span>
-                                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-
-
-
-                                    </tbody>
-                                </table>-->
-
-                                <!--성별 있을 경우-->
-                                <table class="gender">
-                                    <colgroup>
-                                        <col width="225px">
-                                        <col width="106px">
-                                        <col width="106px">
-                                        <col width="106px">
-                                        <col width="192px">
-                                        <col width="106px">
-                                        <col width="140px">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>상품명</th>
-                                            <th>주중/주말</th>
-                                            <th>대인/소인</th>
-                                            <th>성별</th>
-                                            <th>할인판매가</th>
-                                            <th>수량선택</th>
-                                            <th class="last">결제금액</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="" rowspan="4">일반캐빈 왕복<br>(바닥불투명)</td>
-                                            <td class="" rowspan="4">공통</td>
-                                            <td class="ctgr" rowspan="2">대인</td>
-                                            <td>남자</td>
-                                            <td class="prc-sale" rowspan="2"><s>13,000원</s><span class="gt">&#62;</span><span class="prc c-red">12,000원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="1"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span class="on">12,000원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>여자</td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ctgr " rowspan="2">소인</td>
-                                            <td>남자</td>
-                                            <td class="prc-sale " rowspan="2"><s>9,000원</s><span class="gt">&#62;</span><span class="prc c-red">7,600원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">여자</td>
-                                            <td class="">
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total "><span>0원</span></td>
-                                        </tr>
-                                        
-                                        <tr><td rowspan="1" colspan="7" class="division"></td></tr>
-
-                                        <tr>
-                                            <td rowspan="4">크리스탈캐빈 왕복<br>(바닥유리)</td>
-                                            <td rowspan="4">공통</td>
-                                            <td class="ctgr" rowspan="2">대인</td>
-                                            <td>남자</td>
-                                            <td class="prc-sale" rowspan="2"><s>20,000원</s><span class="gt">&#62;</span><span class="prc c-red">18,700원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="1"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>여자</td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ctgr" rowspan="2">소인</td>
-                                            <td>남자</td>
-                                            <td class="prc-sale" rowspan="2"><s>15,000원</s><span class="gt">&#62;</span><span class="prc c-red">13,900원</span></td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>여자</td>
-                                            <td>
-                                                <p class="quan clr">
-                                                    <span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                                </p>
-                                            </td>
-                                            <td class="total"><span>0원</span></td>
-                                        </tr>
-                                        
-                                    </tbody>
+                                            <td class="total"><span class="on" id="person_de73_price">0원</span></td>
+                                        </tr><tr><td class="ctgr" rowspan="1">소인</td>
+                                        <td class="prc-sale"><s>9,000원</s><span class="gt">&gt;</span><span class="prc c-red">7,600원</span></td>
+                                        <td>
+                                            <p class="quan clr">
+                                                <span class="s-l" onclick="single.up_down_bt('down', 'person_de94', 0, '290357')">-</span>
+                                                <input type="text" class="inp on" value="0" id="person_de94" name="person_de94" numberonly="true" maxlength="2">
+                                                <span class="s-r" onclick="single.up_down_bt('up', 'person_de94', '10', '290357')">+</span>
+                                            </p>
+                                        </td>
+                                        <td class="total"><span class="on" id="person_de94_price">0원</span></td>
+                                        </tr><tr><td rowspan="1" colspan="6" class="division"></td></tr><tr><td rowspan="2">일반캐빈 편도 (바닥 불투명)</td><td rowspan="2">공통</td><td class="ctgr" rowspan="1">대인</td>
+                                        <td class="prc-sale"><s>10,000원</s><span class="gt">&gt;</span><span class="prc c-red">8,600원</span></td>
+                                        <td>
+                                            <p class="quan clr">
+                                                <span class="s-l" onclick="single.up_down_bt('down', 'person_de95', 0, '290357')">-</span>
+                                                <input type="text" class="inp on" value="0" id="person_de95" name="person_de95" numberonly="true" maxlength="2">
+                                                <span class="s-r" onclick="single.up_down_bt('up', 'person_de95', '10', '290357')">+</span>
+                                            </p>
+                                        </td>
+                                        <td class="total"><span class="on" id="person_de95_price">0원</span></td>
+                                        </tr><tr><td class="ctgr" rowspan="1">소인</td>
+                                        <td class="prc-sale"><s>7,000원</s><span class="gt">&gt;</span><span class="prc c-red">6,200원</span></td>
+                                        <td>
+                                            <p class="quan clr">
+                                                <span class="s-l" onclick="single.up_down_bt('down', 'person_de96', 0, '290357')">-</span>
+                                                <input type="text" class="inp on" value="0" id="person_de96" name="person_de96" numberonly="true" maxlength="2">
+                                                <span class="s-r" onclick="single.up_down_bt('up', 'person_de96', '10', '290357')">+</span>
+                                            </p>
+                                        </td>
+                                        <td class="total"><span class="on" id="person_de96_price">0원</span></td>
+                                        </tr><tr><td rowspan="1" colspan="6" class="division"></td></tr><tr><td rowspan="2">크리스탈캐빈 왕복 (바닥 유리)</td><td rowspan="2">공통</td><td class="ctgr" rowspan="1">대인</td>
+                                        <td class="prc-sale"><s>20,000원</s><span class="gt">&gt;</span><span class="prc c-red">18,700원</span></td>
+                                        <td>
+                                            <p class="quan clr">
+                                                <span class="s-l" onclick="single.up_down_bt('down', 'person_de97', 0, '290357')">-</span>
+                                                <input type="text" class="inp on" value="0" id="person_de97" name="person_de97" numberonly="true" maxlength="2">
+                                                <span class="s-r" onclick="single.up_down_bt('up', 'person_de97', '10', '290357')">+</span>
+                                            </p>
+                                        </td>
+                                        <td class="total"><span class="on" id="person_de97_price">0원</span></td>
+                                        </tr><tr><td class="ctgr" rowspan="1">소인</td>
+                                        <td class="prc-sale"><s>15,000원</s><span class="gt">&gt;</span><span class="prc c-red">13,900원</span></td>
+                                        <td>
+                                            <p class="quan clr">
+                                                <span class="s-l" onclick="single.up_down_bt('down', 'person_de98', 0, '290357')">-</span>
+                                                <input type="text" class="inp on" value="0" id="person_de98" name="person_de98" numberonly="true" maxlength="2">
+                                                <span class="s-r" onclick="single.up_down_bt('up', 'person_de98', '10', '290357')">+</span>
+                                            </p>
+                                        </td>
+                                        <td class="total"><span class="on" id="person_de98_price">0원</span></td>
+                                        </tr>				</tbody>
                                 </table>
-                                <!--변경내용_0531 끝-->
-
-                                <!--보류_0531 클릭시 효과-->
-                                <script>
-                                    /*보류*/
-                                    /*$("#fare_wrapper tbody tr").on("click", function() {
-                                        $(this).closest("#fare_wrapper").find("td").removeClass("on");
-                                        $(this).find("td").addClass("on").end().find("td[rowspan]").removeClass("on"); 
-                                    });*/
-                                </script>
                             </div>
 
                             <!--변경내용_0531 결제하기-->
-                            <div class="pay-box clr">
-                                <!--<p class="nth1">
-                                    •<span class="f-bd">구매혜택</span> 카드무이자
-                                    <a href="javascript:util.on(&#39;#loadcard&#39;)"><img src="http://img.yeosucablecar.co.kr/btn_card.jpg" alt="카드무이자"></a>
-                                </p>-->
-                                <p class="nth2"><span class="f-bd s1">최종 결제금액</span><s>42,000원</s><span class="c-red"><span class="f-bd">12,000</span><span class="sm">원</span></span>
+                            <div class="pay-box clr" id="payresult">
+                                <!--
+<p class="nth1">
+•<span class="f-bd">구매혜택</span> 카드무이자
+<a href="javascript:util.on(&#39;#loadcard&#39;)"><img src="http://img.go.co.kr/btn_card.jpg" alt="카드무이자"></a>
+</p>
+-->
+                                <p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="c-red"><span class="f-bd">0</span><span class="sm">원</span></span>
                                 </p>
                                 <p class="nth3">
-                                    <a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">결제하기<span class="gt">&gt;</span></a>
+                                    <a class="nth3" href="javascript:alert('입장권을 선택해주세요.')">결제하기<span class="gt">&gt;</span></a>
                                 </p>
                             </div>
-                            
-                            <style>
-                                /*#fare_section .notice-box {position: fixed; margin-top: 0; display: table; width: 979px; border-collapse: collapse; color: #181818;
-                                bottom: -500px; z-index: 10; box-sizing: border-box;}*/
-                            </style>
-                            <script>
-                                $(function() {
-                                    var $_nb = $("#fare_section .notice-box");
-                                    var nb_height =  $_nb.height();
-                                    $_nb.css("bottom", "-" + nb_height + "px");
-                                    //$_nb.css("bottom", 0 );
-                                    nb_height = nb_height - 50;
-                                    $_nb.animate({"bottom": "-" + nb_height + "px"}, 500);
-                                    var t_ofs = $(".title").offset().top;
-                                    t_ofs = t_ofs - 800;
-                                    $("#nb-open-btn a").on("click", function() {
-                                        if(!$_nb.hasClass("on")){
-                                            //$_nb.css("bottom", "-2px");
-                                            $_nb.animate({"bottom": "-2px"}, 300);
-                                            $(this).find("img").attr("src", "http://img.go.co.kr/bt.png");
-                                        } else {
-                                            //$_nb.css("bottom", "-" + nb_height + "px");
-                                            $_nb.animate({"bottom": "-" + nb_height + "px"}, 300);
-                                            $(this).find("img").attr("src", "http://img.go.co.kr/bt.gif");
-                                        }
-                                        $(this).toggleClass("on");
-                                        $_nb.toggleClass("on");
-                                    });
-                                    $(window).scroll(function() {
-                                        var t_scr = $(window).scrollTop();
-                                        if(t_ofs < t_scr){
-                                            $_nb.hide();
-                                        } else {
-                                            $_nb.show();
-                                        }
-                                    });
-                                });
-                                /*$(function() {
-                                    var $_nb = $("#fare_section .notice-box");
-                                    var nb_height =  $_nb.height();
-                                    $_nb.css("bottom", "-" + nb_height + "px");
-                                    $_nb.animate({
-                                        "bottom": "0px",
-                                    }, 500);
-                                    var t_ofs = $(".title").offset().top;
-                                    t_ofs = t_ofs - 800;
-                                    $(window).scroll(function() {
-                                        var t_scr = $(window).scrollTop();
-                                        if(t_ofs < t_scr){
-                                            $_nb.animate({
-                                                "bottom": "-" + nb_height
-                                            }, 0);
-                                        } else {
-                                            $_nb.animate({
-                                                "bottom": "0"
-                                            }, 0);
-                                        }
-                                    });
-                                });*/
-                            </script>
 
-                            <!--변경내용_0531 추가-->
-                            <table class="notice-box">
+
+                            <table class="notice-box" style="bottom: -117px;">
                                 <colgroup>
                                     <col width="1px">
                                     <col width="237px">
@@ -572,7 +387,7 @@
                                 <thead>
                                     <tr class="nb-open-btn">
                                         <th id="nb-open-btn">
-                                            <a class="" href="javascript: void(0)"><span>자세히 보기</span><i class="bt"><img src="http://img.go.co.kr/bt.gif" alt="아래로"></i></a>
+                                            <a href="javascript: void(0)"><span>자세히 보기</span><i class="bt"><img src="http://img.go.co.kr/bt.gif" alt="아래로"></i></a>
                                         </th>
                                     </tr>
                                     <tr><th colspan="7" style="padding: 0; height: 1px; background: #ff7a2d;"></th></tr>
@@ -592,32 +407,33 @@
                                         <td style="padding: 0; width: 1px; background: #ff7a2d;"></td>
                                         <td class="td nth-1">
                                             <div class="d1">
-                                                <p class="dot"><span class="f-bd">일~금요일</span>
-                                                    <br>오전 9시 ~ 오후 9시 30분</p>
-                                            </div>
-                                            <div class="d2">
-                                                <p class="dot"><span class="f-bd">토요일</span>
-                                                    <br>오전 9시 ~ 오후 9시 30분</p>
+
+                                                일~금- 오전9시 ~ 오후9시30분 <br>
+                                                토 - 오전9시 ~ 오후10시30분
                                             </div>
                                         </td>
                                         <td style="padding: 0; width: 1px; background: #ccc;"></td>
                                         <td class="td nth-2">
-                                            <p class="dot">대인 : 중학생 이상</p>
-                                            <p class="dot">소인 : 36개월 이상 ~ 초등학생</p>
-                                            <p class="dot">무료 : 36개월 미만 (증빙서류 지참)</p>
+
+                                            대인 : 중학생 이상<br>
+                                            소인 : 36개월 이상 ~ 초등학생<br>
+                                            무료 : 36개울 미만 (증빙서류 지참)						
                                         </td>
                                         <td style="padding: 0; width: 1px; background: #ccc;"></td>
                                         <td class="td nth-3">
-                                            <p class="dot"><span class="f-bd">당일 구매 후 당일 사용 불가</span>
-                                                <br>
+                                            <p>							
+                                                <span class="f-bd" style="color:#db3300">
+
+                                                    당일 구매 후 당일 사용 불가<br>
+                                                    애완견등 애완동물은 애견가방 없이 탑승 불가하며,  반드시 가방에 넣어 주셔야 탑승가능.(단, 장애인 보조견은 제외)
+                                                </span>
+
                                             </p>
-                                            <p class="dot"><span class="f-bd">안전정검으로 인해 6월 12~13일 운행을 안합니다.</span></p>
                                         </td>
                                         <td style="padding: 0; width: 1px; background: #ff7a2d;"></td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <!--변경내용_0531 끝-->
 
                             <!-- 안내 및 유의사항 -->
                             <div class="ntc_wrap">
@@ -628,57 +444,76 @@
                                     <span style="font-weight:bold;"># 여수해상케이블카</span>
                                     <br>
                                     <br>
-                                    <p>운영시간: 일~금요일 - 오전 9시 ~ 오후 9시 30분 / 토요일 - 오전 9시 ~ 오후 10시 30분
+                                    <p>★여수해상케이블카 점검으로인해 6월 27일(9시~12시) 운행하지 않습니다.<br>
                                         <br>
-                                        <br> 강풍 및 우천 등, 기상상황에 따라 케이블카가 미운행 될 수 있습니다.
-                                        <br> 기상상황이 안좋을 때는 미리 현장문의 후 이용하시기를 바랍니다.
-                                        <br> 여수해상케이블카 현장 고객센터 : 02-2202-3435
+                                        운영시간<br>
+                                        일~금요일 - 오전 9시 ~ 오후 9시 30분 <br>
+                                        토요일 - 오전 9시 ~ 오후 10시 30분<br>
                                         <br>
-                                        <br> 미운행시 티켓은 100% 환불해 드립니다.
-                                        <br> 다만, 세트권은 할인 된 요금이므로, 부분 환불시는 환불금액이 정상가격 또는 단품가격보다 적을 수 있습니다.
+                                        강풍 및 우천 등, 기상상황에 따라 <br>
+                                        케이블카가 미운행 될 수 있습니다. <br>
                                         <br>
-                                        <br> 주차는 돌산공원 주차장을 이용하실수 있습니다.
-                                        <br> 자산(오동도) 쪽에서 이용하실 경우 유료 공영주차장을 이용하시면 됩니다.
+                                        기상상황이 안좋을 때는 미리 현장문의 후 <br>
+                                        이용하시기를 바랍니다. <br>
                                         <br>
-                                        <br> 혐오 또는 냄새로 인하여 다른 승객에게 불쾌감을 줄 우려가 있는 물품은, 휴대가 금지됩니다.
+                                        여수해상케이블카 현장 고객센터 : 02-2202-3435 <br>
                                         <br>
-                                        <br> 애완동물은 애견가방 없이 탑승 불가하며, 반드시 가방에 넣어 주셔야 탑승가능합니다. (단, 장애인 보조견은 제외)
+                                        미운행시 티켓은 100% 환불해 드립니다. <br>
+                                        다만, 세트권은 할인 된 요금이므로, <br>
+                                        부분 환불시는 환불금액이 정상가격 또는 <br>
+                                        단품가격보다 적을 수 있습니다. <br>
                                         <br>
-                                        <br> 크리스탈 캐빈 편도는 운영하지 않습니다.
+                                        주차는 돌산공원 주차장을 이용하실수 있습니다.<br>
+                                        자산(오동도) 쪽에서 이용하실 경우 <br>
+                                        유료 공영주차장을 이용하시면 됩니다.<br>
                                         <br>
-                                        <br> 유모차, 휠체어는 크리스탈 캐빈에 탑승불가 합니다.</p>
+                                        혐오 또는 냄새로 인하여 다른 승객에게 <br>
+                                        불쾌감을 줄 우려가 있는 물품은, 휴대가 금지됩니다. <br>
+                                        <br>
+                                        애완동물은 애견가방 없이 탑승 불가하며, <br>
+                                        반드시 가방에 넣어 주셔야 탑승가능합니다. <br>
+                                        (단, 장애인 보조견은 제외) <br>
+                                        <br>
+                                        크리스탈 캐빈 편도는 운영하지 않습니다. <br>
+                                        <br>
+                                        유모차, 휠체어는 크리스탈 캐빈에 탑승불가 합니다.</p>
 
                                 </div>
                             </div>
                             <!--변경내용_0531 추가-->
                             <div class="q-wrap clr">
-                                <div class="q-tit">자주 묻는
-                                    <br>질문</div>
+                                <div class="q-tit">자주 묻는<br>질문</div>
                                 <div class="q-contents">
                                     <ul>
-                                        <li class="tit">여수해상케이블카</li>
                                         <li>
-                                            <p class="q-p f-bd">당일구매 당일사용 가능한가요?</p>
-                                            <p class="a-p">당일 구매 당일 사용 불가합니다.</p>
-                                        </li>
-                                        <li>
-                                            <p class="q-p f-bd">어디서 타야 하나요?</p>
-                                            <p class="a-p">돌산공원, 자산공원중 선택하셔서 탑승 가능하십니다.</p>
-                                        </li>
-                                        <li>
-                                            <p class="q-p f-bd">모바일 티케승로 바로 이용 가능한가요?</p>
-                                            <p class="a-p">요수 해상케이블카는 매표소에서 따로 발권을 받아주셔아 합니다.</p>
-                                        </li>
-                                        <li class="tit">여수엑스포카트</li>
-                                        <li>
-                                            <p class="q-p f-bd">대기시간이 많은가요?</p>
-                                            <p class="a-p">주말이나 공휴일의 경우 대기시간은 발생할 수 있습니다.</p>
-                                        </li>
-                                        <li>
-                                            <p class="q-p f-bd">비가 많이 오면 못 타나요?</p>
-                                            <p class="a-p">비가 많이 올 경우 현장에서 운영을 하지 않으면 탑승이 어려우시며, 해당의 경우로 이용을 못하셨을 경우엔 환불 가능하십니다.</p>
-                                        </li>
-                                    </ul>
+                                            <p class="q-p f-bd">당일구매 당일사용 가능한가요?
+                                            </p>
+                                            <p class="a-p">당일 구매 당일 사용 불가합니다.
+
+                                            </p>
+                                        </li><li>
+                                        <p class="q-p f-bd">어디서 타야 하나요? 
+                                        </p>
+                                        <p class="a-p">돌산공원, 자산공원중 선택하셔서 탑승 가능하십니다.
+
+                                        </p>
+                                        </li><li>
+                                        <p class="q-p f-bd">모바일 티켓으로 바로 이용 가능한가요?
+                                        </p>
+                                        <p class="a-p">여수 해상케이블카는 매표소에서 따로 발권을 받아주셔야 합니다
+
+                                        </p>
+                                        </li><li>
+                                        <p class="q-p f-bd">대기시간이 많은가요?
+                                        </p>
+                                        <p class="a-p">주말이나 공휴일의 경우 대기시간은 발생할수 있습니다.
+
+                                        </p>
+                                        </li><li>
+                                        <p class="q-p f-bd">비가 많이 오면 못타나요?
+                                        </p>
+                                        <p class="a-p">비가 많이 올 경우 현장에서 운영을 하지 않으면 탑승은 어려우시며, 해당의경우로 이용을 못하셨을 경우엔 환불 가능하십니다.</p>
+                                        </li>				</ul>
                                 </div>
                             </div>
                             <!--변경내용_0531 끝-->
@@ -686,60 +521,293 @@
                         </div>
                         <!--fare_section end-->
                     </div>
-
                 </form>
 
-            </div>
+                <script type="text/javascript">
+                    var base_ts = '1498662000';
+                    var single = {
+                        up_down_bt: function(gubun, id, limit, p_no)  {
+                            if(gubun == "down") {
+                                if(parseInt($("#"+id).val()) > limit) {
+                                    var su2 = parseInt($("#"+id).val())-1;
+                                    $("#"+id).val(su2);				
+
+                                    single.list_calc(id, su2, p_no);
+
+                                    if(su2 > 0) {
+                                        single.pno_arr(p_no, 'Y');
+                                    } else { 
+                                        single.pno_arr(p_no, 'N');
+                                    }
+
+                                    //single.result();
+                                } else {
+                                    single.pno_arr(p_no, 'N');
+                                    alert("0매 이하 선택 불가능합니다.");
+                                    return false;
+                                }
+                            } else if(gubun == "up") {
+                                if(parseInt($("#"+id).val()) < limit) {
+                                    var su2 = parseInt($("#"+id).val())+1;
+                                    $("#"+id).val(su2);
+
+                                    single.list_calc(id, su2, p_no);
+                                    single.pno_arr(p_no, 'Y');
+                                    //single.result();
+
+                                } else {
+                                    alert("최대 "+limit+"매까지 구매가능합니다.");
+
+                                    return false;
+                                }
+                            }
+
+                            var pt = $("#"+id).parent().parent().parent().parent().attr("id");	
+                            var pt_val = 0;
+                            $("#"+pt+" input[class='in1']").each(function(e) {
+                                pt_val += parseInt($("#"+pt+" input[class='in1']").eq(e).val());
+                            });
+
+                            if(pt_val > 0 && $("#"+pt).hasClass("on") == false) {
+                                $("#"+pt).addClass("on");
+                            } else if(pt_val < 1 && $("#"+pt).hasClass("on") == true) { 
+                                $("#"+pt).removeClass("on");
+                            }
+                        },
+
+                        pno_arr: function(p_no, st) {
+                            var target = "/reservation/state.php";
+                            var string = $("#rform").serialize();
+                            $.ajax({
+                                url : target,
+                                type:"post",
+                                data: "mode=pno_arr&st="+st+"&"+string+"&p_no2="+p_no,
+                                cache: false,
+                                success: function(data) {
+                                    if(data != "N") {
+                                        $("#pno_arr").val(data);
+                                    } else { 
+                                        $("#pno_arr").val('');
+                                    }
+                                    single.result();
+                                }
+                            });
+                        },
+
+                        list_calc: function(id, val, p_no) {
+                            var target = "/reservation/state.php";
+                            $.ajax({
+                                url : target,
+                                type:"post",
+                                data: "mode=single_list_calc&p_no="+p_no+"&id="+id+"&val="+val+"&hseldate="+$("#hseldate").val()+"&res_type2=varonet&tnewchk="+$("#ticket_newchk").val(),
+                                cache: false,
+                                success: function(data) {
+                                    $("#"+id+"_price").text(number_format(data)+"원");
+                                }
+                            });
+
+                        },
+
+                        result: function() {
+                            var string = $("#rform").serialize();
+                            var target = "/reservation/state.php";
+                            $.ajax({
+                                url : target,
+                                type:"post",
+                                data: "mode=choice_check&"+string,
+                                cache: false,
+                                success: function(data) {
+                                    $("#payresult").html(data);
+
+                                }
+                            });
+                        },
+
+                        basic_list: function() {
+                            $("input[name^='person']").each(function(i) {
+                                var id =$("input[name^='person']").eq(i).attr("id");
+                                $("#"+id+"").val('0');
+                            });	
+                        }, 
+
+                        choice: function(date, date_text) {
+                            $("#s1").val(date_text);
+
+                            $("#hseldate").val(date);
+                            $("#nseldate").val(date);
+
+                            $.cookie("save_sdate_single", $("#hseldate").val(), {domain: 'yeosucablecar.co.kr', path : '/'});
+
+                            $(".calendar td").removeClass("pric_normal_ov2");
+                            $("#date_"+date).addClass("pric_normal_ov2");
+
+                            $("#cal_wrap2").removeClass("on");
+
+                            var string = $("#rform").serialize();
+
+                            var target = "/reservation/state.php";
+                            $.ajax({
+                                url : target,
+                                type:"post",
+                                data: "mode=varo_single_list&p_no=290357&hseldate="+date+"&"+string,
+                                cache: false,
+                                success: function(data) {		
+                                    $("#varo_listre").html(data);
+                                    single.result();
+
+                                    $("input[id^='person_']").click(function() {
+                                        $(this).select();
+                                    });
+
+                                    $("input[id^='person_']").keyup(function() {
+
+                                        if(parseInt($(this).val()) > parseInt($("#max_pnum").val())){		
+                                            alert("최대 "+parseInt($("#max_pnum").val())+"매까지 구매가능합니다.");
+                                            $(this).val(parseInt($("#max_pnum").val()));
+
+                                        } else if(parseInt($(this).val()) < 0){ 
+                                            alert("0매 이하로 구매할수 없습니다.");
+                                            $(this).val("0");
+                                        }
+
+                                        if($(this).val() == "") {
+                                            $(this).val(0);
+                                        }
+
+                                        var pt = $(this).parent().parent().parent().parent().attr("id");
+                                        var pt_val = 0;
+                                        $("#"+pt+" input[class='in1']").each(function(e) {
+                                            pt_val += parseInt($("#"+pt+" input[class='in1']").eq(e).val());
+                                        });
+
+                                        if(pt_val > 0 && $("#"+pt).hasClass("on") == false) {
+                                            $("#"+pt).addClass("on");
+                                        } else if(pt_val < 1 && $("#"+pt).hasClass("on") == true) { 
+                                            $("#"+pt).removeClass("on");
+                                        }
+
+                                        single.list_calc($(this).attr("id"), $(this).val());
+                                        single.result();
+
+                                    });
+                                }
+                            });		
+                        } 
+                    }
 
 
-            <!-- 이용안내 -->
+                    $(function() {
+                        //booking.basedt_reset();
+                        $("input[id^='person_']").click(function() {
+                            $(this).select();
+                        });
+
+                        single.basic_list();
+
+                        $("input[id^='person_']").keyup(function() {
+
+                            if(parseInt($(this).val()) > parseInt($("#max_pnum").val())){		
+                                alert("최대 "+parseInt($("#max_pnum").val())+"매까지 구매가능합니다.");
+                                $(this).val(parseInt($("#max_pnum").val()));
+
+                            } else if(parseInt($(this).val()) < 0){ 
+                                alert("0매 이하로 구매할수 없습니다.");
+                                $(this).val("0");
+                            }
+
+                            if($(this).val() == "") {
+                                $(this).val(0);
+                            }
+
+                            $(this).val(parseInt($(this).val()) * 1);
+
+                            var pt = $(this).parent().parent().parent().parent().attr("id");
+                            var pt_val = 0;
+                            $("#"+pt+" input[class='in1']").each(function(e) {
+                                pt_val += parseInt($("#"+pt+" input[class='in1']").eq(e).val());
+                            });
+
+                            if(pt_val > 0 && $("#"+pt).hasClass("on") == false) {
+                                $("#"+pt).addClass("on");
+                            } else if(pt_val < 1 && $("#"+pt).hasClass("on") == true) { 
+                                $("#"+pt).removeClass("on");
+                            }
+
+                            if($(this).hasClass("pkg") == true) {
+                                var pno_tmpchk = $("#p_no_pack").val();
+                                single.list_calc($(this).attr("id"), $(this).val(), $("#p_no_pack").val());
+                            } else {
+                                var pno_tmpchk = $("#p_no").val();
+                                single.list_calc($(this).attr("id"), $(this).val(), $("#p_no").val());
+                            }
+
+                            single.pno_arr(pno_tmpchk, 'Y');
+                            //single.result();
+
+                        });
+
+                        // 이용시간, 필수 유의사항 고정
+                        var $_nb = $("#fare_section .notice-box");
+                        var nb_height =  $_nb.height();
+
+                        $_nb.css("bottom", "-" + nb_height + "px");
+                        nb_height = nb_height - 50;
+                        $_nb.animate({"bottom": "-" + nb_height + "px"}, 500);	
+
+                        //$_nb.css("bottom", 0 );
+                        //nb_height = nb_height - 52;
+
+                        var t_ofs = $(".title").offset().top;
+                        t_ofs = t_ofs - 800;
+                        $("#nb-open-btn > a").on("click", function() {
+                            if(!$_nb.hasClass("on")){
+                                $_nb.animate({"bottom": "-2px"}, 500); 
+                                $(this).find("img").attr("src", "http://img.go.co.kr/bt.png");
+                            } else {
+                                $_nb.animate({"bottom": "-" + nb_height + "px"}, 500);
+                                $(this).find("img").attr("src", "http://img.go.co.kr/bt.gif");
+                            }
+                            $(this).toggleClass("on");
+                            $_nb.toggleClass("on");
+                        });
+                        $(window).scroll(function() {
+                            var t_scr = $(window).scrollTop();
+                            if(t_ofs < t_scr){
+                                $_nb.hide();
+                            } else {
+                                $_nb.show();
+                            }
+                        });
+
+                        $(document).on("keyup", "input:text[numberOnly]", function() {$(this).val( $(this).val().replace(/[^0-9]/gi,"") );});
+                    });
 
 
-
-            <div class="sub_wrap">
-                <div class="title" style="width:100%;margin-top:30px">
-                    <img src="http://img.go.co.kr/logo_dtl.png" style="float:left; height:44px; padding-top:3px">
-                    <h2>시설안내</h2>
-                </div>
-
-                <img width="100%" src="http://admin.varonet.co.kr/bar/mshop_img/TOP_IMG120170420120011.jpg" alt="">
-                <img width="100%" src="http://img.yeosucablecar.co.kr/BOT_IMG120170420120107-1.jpg" alt="">
-                <img width="100%" src="http://img.yeosucablecar.co.kr/BOT_IMG120170420120107-2.jpg" alt="">
-
-
-
+                </script>
             </div>
         </div>
-        <!-- wrapper끝-->
-        <!-- 좌측배너 추가 -->
-        <!--<div id="left_info_banner" style="position:fixed;top:240px;left:50%;width:112px;margin-left:-630px;">
-            <a href="http://www.go.co.kr/home/main/?dd=WhcuRDJDAVMyEQ=="><img src="http://img.yeosucablecar.co.kr/banner/yst_info_banner.jpg" alt=""></a>
-        </div>-->
+        
+    
         <style>
-            /*.pull-left {float: left;}
-            .pull-right {float: right;}
-            .bn-more-pdt {position: fixed; top: 240px; left: 50%; width: 112px; height: 181px; margin-left: -630px; }
-            .bn-more-pdt > div {position: relative;}
-            .bn-more-pdt .d1 {border: 5px solid #ff7a2d; border-bottom: 0; height: 151px;}
-            .bn-more-pdt .d1 > p {font-family: "Noto Sans KR", "Nanum Gothic"; letter-spacing: -1px; }
-            .bn-more-pdt .d1 .p1 {background-color: #ff7a2d; width: 88px; height: 21px; color: #fff; margin: 0 auto; text-align: center; margin-top: 11px; font-size: 14px;}
-            .bn-more-pdt .d1 .p2, .bn-more-pdt .d1 .p3, .bn-more-pdt .d1 .p4 {font-size: 24px; font-weight: 600; width: 88px; margin: 0 auto; margin-top: 10px; line-height: 1em;}
-            .bn-more-pdt .d1 .p2 {text-align: justify; margin-top: 8px;}
-            .bn-more-pdt .d1 .p3 {color: #ff5b04; letter-spacing: -1.1px;}
-            .bn-more-pdt .d1 .p3 > span {}
-            .bn-more-pdt .d1 .p4 {width: 83px; font-size: 25px; font-weight: 700; letter-spacing: 0;}
-            .bn-more-pdt .d2 {height: 30px; background: #ff7a2d; text-align: center; color: #fff; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic"; line-height: 2.1em;}
-            .bn-more-pdt .d2 .gt {position: absolute; top: 12px; right: 22px;}*/
+            @import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+            .bn-more-pdt2 {position: fixed; top: 240px; left: 50%; width: 112px; min-height: 171px; margin-left: -645px; background: #007edf;}
+            .bn-more-pdt2 > div {position: relative; color: #323232;}
+            .bn-more-pdt2 .d1 {position: relative; width: 104px; margin: 0 auto; min-height: 132px; background: #fff; margin-top: 7px;}
+            .bn-more-pdt2 .d1 > p {font-family: "Noto Sans KR", "Nanum Gothic"; letter-spacing: -1px; line-height: 1.15em; text-align: center;}
+            .bn-more-pdt2 .d1 .p2, .bn-more-pdt2 .d1 .p3 {font-size: 28px;}
+            .bn-more-pdt2 .d1 .p2 {padding-top: 18px; word-break: keep-all; font-weight: 600; }
+            .bn-more-pdt2 .d1 .p3 {font-family: "Nanum Square", "Nanum Gothic", sans-serif; margin-top: 5px; text-shadow: 0 0 1px rgba(50,50,50,.3);}
+            .bn-more-pdt2 .d2 {height: 32px; background: #007edf; text-align: center; color: #fff; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic"; line-height: 30px; letter-spacing: -1px;}
+            .bn-more-pdt2 .d2 .gt {font-family: "Nanum Gothic", sans-serif; font-size: 9px; font-weight: 800; color: #f3ff33; position: relative; margin-left: 5px; top: -2px;}
+            .bn-more-pdt2 .c-blue {color: #007edf;}
         </style>
         <!--변경내용_0601 좌측배너 추가 -->
-        <div class="bn-more-pdt">
+        <div class="bn-more-pdt2">
             <div class="d1">
-                <p class="p1">즐거움 가득한</p>
-                <p class="p2">여수지역</p>
-                <p class="p3 clr"><span class="pull-left">다른</span><span class="pull-right">상품</span></p>
-                <p class="p4 clr"><span class="pull-left">더</span><span class="pull-right">보기</span></p>
+                <p class="p2 c-blue">청평 풀빌라온</p>
+                <p class="p3">상품소개</p>
             </div>
-            <div class="d2">더보기<img class="gt" src="http://img.yeosucablecar.co.kr/icon_gt.png" alt="바로가기"></div>
+            <div class="d2">자세히 보러가기<span class="gt">&gt;</span></div>
         </div>
 
         <!--변경내용-->
@@ -748,7 +816,7 @@
                 <img src="http://img.yeosucablecar.co.kr/icon_reserv.png">
                 <div>예약하기</div>
             </div>
-            <div id="reservBtn3">
+            <div id="reservBtn3" style="display: none;">
                 <img src="http://img.yeosucablecar.co.kr/banner/ys_cabin_banner.jpg">
             </div>
         </div>

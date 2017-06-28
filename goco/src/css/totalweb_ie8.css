@@ -1,6 +1,6 @@
 #fix-nav .nav .inp > select {background: #fff;}
-#fix-nav .nav .inp > .chkIn, #fix-nav .nav .inp > select {padding-left: 10px; max-height: 38px;}
-#fix-nav .nav .inp > .chkIn {padding-top: 9px; /* height: 28px; */}
+#fix-nav .nav .inp > .chkIn, #fix-nav .nav .inp > select {padding-left: 10px; max-height: 45px;}
+#fix-nav .nav .inp > .chkIn {padding-top: 12px; /* height: 28px; */}
 #fix-nav .nav .inp > select {padding: 9px 10px;}
 .pdtSlt-sec .part-3 .ul-2:after {content: ""; display: block; position: absolute; width: 17px; height: 15px; bottom: -15px; right: 75px; background: url(http://img.go.co.kr/i_trangle_ie8.png) no-repeat;
 }

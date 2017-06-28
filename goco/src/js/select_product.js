@@ -9,16 +9,16 @@ $(function () {
     });
 
     // 고정네비게이션 상세검색 노출
-    $("#fix-nav a.more-a").on("click" , function() {
+    /*$("#fix-nav a.more-a").on("click" , function() {
         $(this).toggleClass("on");
         $("#fix-nav div.nb-drop-bar").toggleClass("on");
         return false;
-    });
+    });*/
     // 고정네비게이션 상세검색 닫기
-    $("#fix-nav .i-close").on("click", function() {
+    /*$("#fix-nav .i-close").on("click", function() {
         $("#fix-nav div.nb-drop-bar, #fix-nav a.more-a").toggleClass("on");
         return false;
-    });
+    });*/
     
 
     // 확인팝업 중앙정렬

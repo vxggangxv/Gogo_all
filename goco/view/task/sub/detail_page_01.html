@@ -11,7 +11,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3_tmp.css"/> -->
         <!-- <link rel="stylesheet" type="text/css" href="../src/css/layout_new3_tmp.css" /> -->
         <link rel="stylesheet" type="text/css" href="../../../src/css/layout_new3.css" />
-        <link rel="stylesheet" type="text/css" href="../../../src/css/totalweb.css" />
+        <link rel="stylesheet" type="text/css" href="../../../src/css/totalweb2.css" />
 
         <link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
         <!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
@@ -98,10 +98,12 @@
 
         <div class="layer-pop-bg">
             <div class="sltCal-sec clr">
+                <!--변경내용_170623 상품선택시 상품이름 ex.오션투유 마운틴뷰-->
                 <h3>체크인/아웃 날짜선택<img onclick="$(this).closest('.layer-pop-bg').hide();" class="i-close" src="http://img.go.co.kr/i_close.png" alt="닫기"></h3>
                 
                 <div class="cal-inner">
-                    <p class="p-1"><a href="" class="prev-a"></a><em>2017. 06</em><a href="" class="next-a"></a></p>
+                    <!--변경내용_170623 텍스트추가-->
+                    <p class="p-1"><a href="" class="prev-a"></a>체크인<em>2017. 06</em><a href="" class="next-a"></a></p>
                     <table class="cal-tb">
                         <colgroup>
                             <col style="width:55px">
@@ -123,66 +125,67 @@
                                 <th>토</th>
                             </tr>
                         </thead>
+                        <!--변경내용_170623 가격추가-->
                         <tbody>
                             <tr>
-                                <td class="off">28</td>
-                                <td class="off">29</td>
-                                <td class="off">30</td>
-                                <td class="off">31</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
+                                <td class="off"><div>28 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>29 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>30 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>31 <span class="prc">￦52,000</span></div></td>
+                                <td><div>1 <span class="prc">￦52,000</span></div></td>
+                                <td><div>2 <span class="prc">￦52,000</span></div></td>
+                                <td><div>3 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
+                                <td><div>4 <span class="prc">￦52,000</span></div></td>
+                                <td><div>5 <span class="prc">￦52,000</span></div></td>
+                                <td><div>6 <span class="prc">￦52,000</span></div></td>
+                                <td><div>7 <span class="prc">￦52,000</span></div></td>
+                                <td><div>8 <span class="prc">￦52,000</span></div></td>
+                                <td><div>9 <span class="prc">￦52,000</span></div></td>
+                                <td><div>10 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
+                                <td><div>11 <span class="prc">￦52,000</span></div></td>
+                                <td><div>12 <span class="prc">￦52,000</span></div></td>
+                                <td><div>13 <span class="prc">￦52,000</span></div></td>
+                                <td><div>14 <span class="prc">￦52,000</span></div></td>
+                                <td><div>15 <span class="prc">￦52,000</span></div></td>
+                                <td><div>16 <span class="prc">￦52,000</span></div></td>
+                                <td><div>17 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
+                                <td><div>18 <span class="prc">￦52,000</span></div></td>
+                                <td><div>19 <span class="prc">￦52,000</span></div></td>
+                                <td><div>20 <span class="prc">￦52,000</span></div></td>
+                                <td><div>21 <span class="prc">￦52,000</span></div></td>
+                                <td><div>22 <span class="prc">￦52,000</span></div></td>
+                                <td><div>23 <span class="prc">￦52,000</span></div></td>
+                                <td><div>24 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>25</td>
-                                <td class="chkIn">26<img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"></td>
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
-                                <td class="chkOut">30<img src="http://img.go.co.kr/i_chkOut.png" alt="체크아웃" class="i-chkIn"></td>
-                                <td class="off">1</td>
+                                <td><div>25 <span class="prc">￦52,000</span></div></td>
+                                <td class="chkIn"><div>26<img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"> <span class="prc">￦52,000</span></div></td>
+                                <td><div>27 <span class="prc">￦52,000</span></div></td>
+                                <td><div>28 <span class="prc">￦52,000</span></div></td>
+                                <td><div>29 <span class="prc">￦52,000</span></div></td>
+                                <td><div>30 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>1 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td class="off">2</td>
-                                <td class="off">3</td>
-                                <td class="off">4</td>
-                                <td class="off">5</td>
-                                <td class="off">6</td>
-                                <td class="off">7</td>
-                                <td class="off">8</td>
+                                <td class="off"><div>2 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>3 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>4 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>5 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>6 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>7 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>8 <span class="prc">￦52,000</span></div></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="cal-inner">
-                    <p class="p-1"><a href="" class="prev-a"></a><em>2017. 07</em><a href="" class="next-a"></a></p>
+                    <p class="p-1"><a href="" class="prev-a"></a>체크아웃<em>2017. 07</em><a href="" class="next-a"></a></p>
                     <table class="cal-tb">
                         <colgroup>
                             <col style="width:55px">
@@ -204,69 +207,74 @@
                                 <th>토</th>
                             </tr>
                         </thead>
+                        <!--변경내용_170623 10일 상품일 경우 10일을 제외한 tr태그에 off클래스 추가-->
                         <tbody>
                             <tr>
-                                <td class="off">25</td>
-                                <td class="off">26</td>
-                                <td class="off">27</td>
-                                <td class="off">28</td>
-                                <td class="off">29</td>
-                                <td class="off">30</td>
-                                <td>1</td>
+                                <td class="off"><div>25 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>26 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>27 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>28 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>29 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>30 <span class="prc">￦52,000</span></div></td>
+                                <td><div>1</div></td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
+                                <td><div>2 <span class="prc">￦52,000</span></div></td>
+                                <td class="chkOut"><div>3 <img src="http://img.go.co.kr/i_chkOut.png" alt="체크아웃" class="i-chkOut"><span class="prc">￦52,000</span></div></td>
+                                <td><div>4 <span class="prc">￦52,000</span></div></td>
+                                <td><div>5 <span class="prc">￦52,000</span></div></td>
+                                <td><div>6 <span class="prc">￦52,000</span></div></td>
+                                <td><div>7 <span class="prc">￦52,000</span></div></td>
+                                <td><div>8 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
+                                <td><div>9 <span class="prc">￦52,000</span></div></td>
+                                <td><div>10 <span class="prc">￦52,000</span></div></td>
+                                <td><div>11 <span class="prc">￦52,000</span></div></td>
+                                <td><div>12 <span class="prc">￦52,000</span></div></td>
+                                <td><div>13 <span class="prc">￦52,000</span></div></td>
+                                <td><div>14 <span class="prc">￦52,000</span></div></td>
+                                <td><div>15 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
+                                <td><div>16 <span class="prc">￦52,000</span></div></td>
+                                <td><div>17 <span class="prc">￦52,000</span></div></td>
+                                <td><div>18 <span class="prc">￦52,000</span></div></td>
+                                <td><div>19 <span class="prc">￦52,000</span></div></td>
+                                <td><div>20 <span class="prc">￦52,000</span></div></td>
+                                <td><div>21 <span class="prc">￦52,000</span></div></td>
+                                <td><div>22 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
+                                <td><div>23 <span class="prc">￦52,000</span></div></td>
+                                <td><div>24 <span class="prc">￦52,000</span></div></td>
+                                <td><div>25 <span class="prc">￦52,000</span></div></td>
+                                <td><div>26 <span class="prc">￦52,000</span></div></td>
+                                <td><div>27 <span class="prc">￦52,000</span></div></td>
+                                <td><div>28 <span class="prc">￦52,000</span></div></td>
+                                <td><div>29 <span class="prc">￦52,000</span></div></td>
                             </tr>
                             <tr>
-                                <td>30</td>
-                                <td>31</td>
-                                <td class="off">1</td>
-                                <td class="off">2</td>
-                                <td class="off">3</td>
-                                <td class="off">4</td>
-                                <td class="off">5</td>
+                                <td><div>30 <span class="prc">￦52,000</span></div></td>
+                                <td><div>31 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>1 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>2 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>3 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>4 <span class="prc">￦52,000</span></div></td>
+                                <td class="off"><div>5 <span class="prc">￦52,000</span></div></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 
+                <!--변경내용_170623 선택완료 추가-->
+                <div class="clr"></div>
+                <a href="" class="btn-a">선택완료</a>
             </div>
+            
         </div>
         <style>
-            .sltCal-sec {position: absolute; left: 50%; margin-left: -414px; top: 50%; margin-top: -242px; background-color: #fff; width: 828px; min-height: 483px; letter-spacing: -0.5px;}
+            /*.sltCal-sec {position: absolute; left: 50%; margin-left: -414px; top: 50%; margin-top: -242px; background-color: #fff; width: 828px; min-height: 483px; letter-spacing: -0.5px;}
             .sltCal-sec .cal-inner {width: 414px; float: left;}
             .sltCal-sec h3 {text-align: center; color: #fff; font-size: 20px; background: #ff7a2d; line-height: 3em; font-weight: 400; height: 58px;}
             .sltCal-sec h3 .i-close {position: absolute; top: 16px; right: 18px; float: right; cursor: pointer;}
@@ -285,12 +293,11 @@
             .sltCal-sec .cal-tb td.chkIn, .sltCal-sec .cal-tb td.chkOut {position: relative; color: #fff; z-index: 1;}
             .sltCal-sec .cal-tb td.chkIn {background: #e33e3e;}
             .sltCal-sec .cal-tb td.chkOut {background: #39c9ba;}
-            /*.sltCal-sec .cal-tb td.on {position: relative; background: #faf2e3;}*/
             .sltCal-sec .cal-tb td.chkIn:before, .sltCal-sec .cal-tb td.chkOut:before,
             .sltCal-sec .cal-tb td.on:before {content: ""; display: block; position: absolute; top: -1px; left: -1px; width: 100%; height: 100%;}
             .sltCal-sec .cal-tb td.chkIn:before {border: 1px solid #b52b2b;}
             .sltCal-sec .cal-tb td.chkOut:before {border: 1px solid #329288;}
-            .sltCal-sec .cal-tb td.on:before {border: 1px solid #dbc7a7;}
+            .sltCal-sec .cal-tb td.on:before {border: 1px solid #dbc7a7;}*/
         </style>
 
         <div class="noover" id="wrapper">
@@ -308,10 +315,10 @@
                                 </colgroup>
                                 <tbody>
                                     <tr class="rsv_s_tabHead">
-                                        <td>상품선택</td>
-                                        <td>기준인원/최대인원</td>
+                                        <td><div>상품선택</div></td>
+                                        <td><div>기준인원/최대인원</div></td>
                                         <!-- 변경내용_170614 최저가보장 이미지추가-->
-                                        <td>최저가<img style="position: relative; top: -1px; margin-left: 5px;" alt="최저가보장" src="http://img.go.co.kr/banner_lowest_price.gif"></td>
+                                        <td><div>최저가<img style="position: relative; top: -1px; margin-left: 5px;" alt="최저가보장" src="http://img.go.co.kr/banner_lowest_price.gif"></div></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -332,20 +339,20 @@
 
                                                 <!-- 패키지 말머리 추가 -->
 
-                                                마운틴뷰 콘도형 </td>
-                                            <td class="center ss">4인/7인</td>
+                                                마운틴뷰 콘도형 </div></td>
+                                            <td class="center ss">4인/7인</div></td>
                                             <td class="center ss" style="width:159px;position:relative">
                                                 <div class="lowest_price_wrap"><div class="dis_icon_dt">84% 할인</div></div>
                                                 <del class="price_s">330,000원</del>
                                                 <br> <span class="price">54,000원~</span>
-                                            </td>
+                                            </div></td>
                                         </tr>
 
 
                                         <tr id="2299_detail" style="display: table-row;" class="tb_on">
                                             <td colspan="3">
 
-                                                <style>
+                                                <!--<style>
                                                     #rsv_s_list {border-bottom: 1px solid #ddd;}
                                                     #rsv_s_list .over_tr td:last-child {line-height: 1.3em;}
                                                     .lowest_price_wrap {top: 18px; -webkit-transform: translateY(0); transform: translateY(0);}
@@ -455,7 +462,7 @@
                                                     .pdtSlt-sec .part-3 .ul-2 li.th {color: #000; font-weight: 600;}
                                                     .pdtSlt-sec .part-3 .ul-2 li.td {position: relative; color: #323232; padding-left: 10px; letter-spacing: -1px; word-break: keep-all;}
                                                     .pdtSlt-sec .part-3 .ul-2 li.td:before {position: absolute; content: "-"; left: 0;}
-                                                </style>
+                                                </style>-->
                                                 <script>
                                                     $(function() {
                                                         $("#rsv_s_list div.pdtSlt-sec span.label").on("click", function() {
@@ -562,7 +569,7 @@
                                                         <a class="btn3 next3 swiper-button-next" style="display: block;top:22px;height:100%;background-position:100% 50%;z-index:9999;cursor:pointer"></a>
                                                     </div>
                                                 </div>
-                                            </td>
+                                            </div></td>
                                         </tr>
 
                                         <!-- 객실명, 인원, 금액 나오는 라인 -->
@@ -571,12 +578,12 @@
 
                                                 <!--- 패키지 말머리 추가 --->
 
-                                                마운틴뷰 콘도[조개잡이패키지]  </td>
-                                            <td class="center ss">4인/7인</td>
+                                                마운틴뷰 콘도[조개잡이패키지]  </div></td>
+                                            <td class="center ss">4인/7인</div></td>
                                             <td class="center ss" style="width:159px;position:relative">
                                                 <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
                                                 </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
-                                            </td>
+                                            </div></td>
                                         </tr>
 
 
