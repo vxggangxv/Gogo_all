@@ -790,18 +790,21 @@
     
         <style>
             @import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
-            .bn-more-pdt2 {position: fixed; top: 240px; left: 50%; width: 112px; min-height: 171px; margin-left: -645px; background: #007edf;}
+            .bn-more-pdt2 {position: fixed; top: 240px; left: 50%; width: 112px; min-height: 171px; margin-left: -645px; background: #007edf; cursor: pointer;}
             .bn-more-pdt2 > div {position: relative; color: #323232;}
-            .bn-more-pdt2 .d1 {position: relative; width: 104px; margin: 0 auto; min-height: 132px; background: #fff; margin-top: 7px;}
-            .bn-more-pdt2 .d1 > p {font-family: "Noto Sans KR", "Nanum Gothic"; letter-spacing: -1px; line-height: 1.15em; text-align: center;}
+            .bn-more-pdt2 .d1 {position: relative; width: 104px; margin: 7px auto 0; padding-bottom: 15px;  min-height: 117px; background: #fff;}
+            .bn-more-pdt2 .d1:before {position: absolute; content: ""; display: block; left: 50%; margin-left: -9px; top: -1px; border: 8px solid transparent; border-top-color: #007edf;}
+            .bn-more-pdt2 .d1 > p {font-family: "Noto Sans KR", "Nanum Gothic"; letter-spacing: -1px; line-height: 1.14em; text-align: center;}
             .bn-more-pdt2 .d1 .p2, .bn-more-pdt2 .d1 .p3 {font-size: 28px;}
-            .bn-more-pdt2 .d1 .p2 {padding-top: 18px; word-break: keep-all; font-weight: 600; }
+            .bn-more-pdt2 .d1 .p2 {padding-top: 18px; word-break: keep-all; word-wrap: break-word; font-weight: 600;}
             .bn-more-pdt2 .d1 .p3 {font-family: "Nanum Square", "Nanum Gothic", sans-serif; margin-top: 5px; text-shadow: 0 0 1px rgba(50,50,50,.3);}
-            .bn-more-pdt2 .d2 {height: 32px; background: #007edf; text-align: center; color: #fff; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic"; line-height: 30px; letter-spacing: -1px;}
+            .bn-more-pdt2 .d2 {height: 32px; background: #007edf; text-align: center; color: #fff; font-size: 14px; font-family: "Nanum Square", "Nanum Gothic", sans-serif;
+                line-height: 34px; letter-spacing: -0.7px; font-weight: 600;
+            }
             .bn-more-pdt2 .d2 .gt {font-family: "Nanum Gothic", sans-serif; font-size: 9px; font-weight: 800; color: #f3ff33; position: relative; margin-left: 5px; top: -2px;}
             .bn-more-pdt2 .c-blue {color: #007edf;}
         </style>
-        <!--변경내용_0601 좌측배너 추가 -->
+        <!--변경내용_170628 좌측배너 추가 -->
         <div class="bn-more-pdt2">
             <div class="d1">
                 <p class="p2 c-blue">청평 풀빌라온</p>
@@ -809,8 +812,9 @@
             </div>
             <div class="d2">자세히 보러가기<span class="gt">&gt;</span></div>
         </div>
+        <!--변경내용_170628 끝-->
+        
 
-        <!--변경내용-->
         <div id="reservBtn" style="position:fixed; right:50%; margin-right: -629px; top:460px; cursor:pointer">
             <div id="reservBtn2" onclick="$(window).scrollTop(0)">
                 <img src="http://img.yeosucablecar.co.kr/icon_reserv.png">
@@ -820,7 +824,6 @@
                 <img src="http://img.yeosucablecar.co.kr/banner/ys_cabin_banner.jpg">
             </div>
         </div>
-        <!--변경내용 끝-->
 
         <!-- 상단 고정 바 -->
         <div id="gnb_wrap2" style="display: none; position: fixed; border-bottom: none; top: 0px; z-index: 499;">
