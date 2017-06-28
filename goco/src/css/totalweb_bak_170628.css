@@ -145,7 +145,7 @@ box-sizing:border-box;}
 #fare_wrapper tbody s {text-align: right; float: left;}
 #fare_wrapper tbody .prc {text-align: right;}
 #fare_wrapper tbody .quan {position: relative; width: 68px; height: 26px; margin: 0 auto; border: 1px solid #bbb; background: #fff;
-	-webkit-user-select: none; /* Chrome, Opera, Safari */
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
     -moz-user-select: none; /* Firefox 2+ */
     -ms-user-select: none; /* IE 10+ */
     user-select: none; /* Standard syntax */
@@ -258,8 +258,8 @@ box-sizing:border-box;}
 #r-lookup {position: fixed; z-index: 6; width: 430px; height: 272px; top: 50%; margin-top: -136px; left: 50%; margin-left: -215px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px;}
 #r-lookup * {letter-spacing: -0.5px; color: #303030;}
 #r-lookup h2 {height: 62px; font-size: 22px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
-#r-lookup .clsBtn {position: absolute; right: 20px;	top: 16px;	 display: inline-block; width: 22px; height: 22px;
-	background: url("http://img.go.co.kr/x_btn.png") no-repeat;
+#r-lookup .clsBtn {position: absolute; right: 20px; top: 16px;   display: inline-block; width: 22px; height: 22px;
+    background: url("http://img.go.co.kr/x_btn.png") no-repeat;
 }
 #r-lookup > p {font-size: 19px; line-height: 1.5em; text-align: center; margin-top: 20px; box-sizing: border-box; padding: 0 20px;}
 #r-lookup > p.nth-1 {}
@@ -277,10 +277,11 @@ box-sizing:border-box;}
 }
 #r-lookup > p.nth-3 a:first-child {background: #ff610a; color: #fff; margin-right: 20px;}
 
+
 #r-confirm {position: fixed; z-index: 6; width: 430px; min-height: 356px; padding-bottom: 36px; top: 50%; margin-top: -200px; left: 50%; margin-left: -215px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a; border-radius: 2px;}
 #r-confirm * {letter-spacing: -0.5px; color: #303030;}
 #r-confirm h2 {height: 62px; font-size: 22px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
-#r-confirm .clsBtn {position: absolute; right: 20px;	top: 16px;	 display: inline-block; width: 22px; height: 22px;
+#r-confirm .clsBtn {position: absolute; right: 20px;    top: 16px;   display: inline-block; width: 22px; height: 22px;
     background: url("http://img.go.co.kr/x_btn.png") no-repeat;
 }
 #r-confirm > p.nth-1 {font-size: 19px; line-height: 1.5em; text-align: center; margin-top: 20px; box-sizing: border-box;}
@@ -297,7 +298,7 @@ box-sizing:border-box;}
 #fix-nav {position: relative; clear: both; top: 0; z-index: 10; width: 100%;}
 #fix-nav * {box-sizing: border-box;}
 #fix-nav .nav-bar {height: 96px; padding-top: 20px; background: #e6e6e6; border-bottom: 1px solid #dcdcdc;}
-#fix-nav .nav {position: relative; margin: 0 auto; width: 1002px;/* width: 1135px; */ font-size: 0;}
+#fix-nav .nav {position: relative; margin: 0 auto; width: 1002px;/* width: 1135px; */ /* font-size: 0; */}
 #fix-nav .nav > * {display: inline-block; vertical-align: middle;}
 #fix-nav .nav h2 {position: absolute; left: -130px; top: 6px;}
 #fix-nav .nav h2 a {display: block; width: 112px; height: 47px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat 0 0;}
@@ -614,3 +615,5 @@ z-index: 12;}
 #rsv_s_tab .rsv_s_tabHead .max_discount > a {display:inline-block; padding:3px 5px; background-color:#cd2814; color:#fff; font-weight:; font-size:12px;}
 #rsv_s_tab .rsv_s_tabHead .max_discount > a span {color:#ffef03;}
 #rsv_s_tab .rsv_s_tabHead .max_discount > img {position:absolute; left:50%; top:-29px; margin-left:-35px;}
+/* 가운데정렬_170628_혜준 */
+.tit_box {text-align: center;}
