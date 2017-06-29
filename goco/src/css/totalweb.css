@@ -138,7 +138,7 @@ box-sizing:border-box;}
 #fare_wrapper tbody td {height: 50px; text-align: center; font-size: 17px; font-weight: 600; color: #202020; text-align: center;}
 #fare_wrapper tbody tr td.on {background: #fff2e9;}
 /*#fare_wrapper tbody td.ctgr {text-align: left;}*/
-/*#fare_wrapper tbody td.total {text-align: right;}*/
+#fare_wrapper tbody td.total {text-align: right; padding-right: 10px;}
 #fare_wrapper tbody tr.division td, #fare_wrapper tbody td.division {border-bottom: 1px solid #333;}
 #fare_wrapper tbody .prc-sale {font-size: 15px;}
 #fare_wrapper tbody .gt {position: relative; left: 2px; display: inline-block; width: 5%;}
@@ -356,11 +356,11 @@ box-sizing:border-box;}
 
 .backDrop-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
 
-.sltCheck-sec {position: absolute; left: 50%; margin-left: -357px; top: 160px; background-color: #fff; min-width: 368px; max-width: 714px; min-height: 440px; letter-spacing: -0.5px; box-sizing: border-box;
+.sltCheck-sec {position: fixed; top: 160px; /* position: absolute; top: 160px; */ left: 50%; margin-left: -357px; background-color: #fff; min-width: 372px; max-width: 714px; min-height: 456px; letter-spacing: -0.5px; box-sizing: border-box;
 z-index: 12;}
 .sltCheck-sec h3 {text-align: center; color: #fff; font-size: 20px; background: #ff7a2d; line-height: 3em; font-weight: 400; height: 58px;}
 .sltCheck-sec h3 .i-close {position: absolute; top: 16px; right: 18px; float: right; cursor: pointer;}
-.sltCheck-sec .pc-outer {padding: 15px;}
+.sltCheck-sec .pc-outer {padding: 15px; text-align: left;}
 .sltCheck-sec .part-common {float: left; margin: 5px; width: 326px; min-height: 156px; padding-top: 10px; border: 1px solid #bcbcbc; width: 298px; padding: 6px 16px 0;}
 .sltCheck-sec .part-common h4 {position: relative; font-size: 18px; font-weight: 400; padding-bottom: 5px;}
 .sltCheck-sec .part-common h4:after {position: absolute; bottom: 0; left: -3px; content: ""; display: block; width: 304px; height: 1px; background: #000;}
@@ -372,6 +372,9 @@ z-index: 12;}
 .sltCheck-sec .part-3 {position: relative; margin-top: -1px; width: 100%; height: 80px; border-top: 1px solid #caba9c; background: #fff8d5; box-sizing: border-box; letter-spacing: -0.5px; padding-right: 20px; text-align: right;}
 .sltCheck-sec .part-3 > p {display: inline-block; vertical-align: middle;  color: #302e2b; font-family: "Noto Sans KR", "Nanum Gothic"; text-align: left;
     padding-top: 14px;}
+/*.sltCheck-sec .part-3 > .nth1 {width: 200px; text-align: center;}
+.sltCheck-sec .part-3 > .nth1 .f-bd.s1 {position: relative; top: -2px; margin-right: 3px; font-weight: 400; font-size: 24px; color: #000;}
+.sltCheck-sec .part-3 > .nth1 .ps {position: absolute; top: 46px; left: 20px; color: #313131; font-size: 12px; font-family: "Dotun", "Gulim"; margin-right: 16px;}*/
 .sltCheck-sec .part-3 > .nth2 {color: #000; font-size: 21px; text-align: right; padding-right: 15px;}
 .sltCheck-sec .part-3 > .nth2 s, #rsv_s_list .pay-box > .nth2 .c-red {font-family: "Arial", "Malgun Gothic", "Nanum Gothic";}
 .sltCheck-sec .part-3 > .nth2 s {position: relative; top: 2px; color: #323232; font-size: 25px;}
@@ -382,8 +385,15 @@ z-index: 12;}
 .sltCheck-sec .part-3 > .nth2 .c-red {font-size: 36px; font-family: "Arial", "Malgun Gothic", "Nanum Gothic"; line-height: 0em; margin-left: 7px; color: #ff1200;}
 .sltCheck-sec .part-3 > .nth2 .c-red .f-bd {position: relative; top: 3px;}
 .sltCheck-sec .part-3 > .nth2 .c-red .sm {font-size: 27px; font-weight: 400; font-family: "Nanum Gothic";}
-.sltCheck-sec .part-3 > .nth3 a {color: #fff; display: block; width: 215px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 2.4em;}
+#contents .sltCheck-sec .part-3 > .nth3 a, .sltCheck-sec .part-3 > .nth3 a {color: #fff; display: block; width: 215px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 2.4em;}
 .sltCheck-sec .part-3 > .nth3 a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -4px; margin-left: 10px; font-weight: 600;}
+.sltCheck-sec.case-1 .part-3 {width: 372px; height: auto; padding-right: 0; padding-bottom: 20px;}
+.sltCheck-sec.case-1 .part-3 > p {display: block;}
+.sltCheck-sec.case-1 .part-3 > .nth2 {padding-right: 0; text-align: center;}
+.sltCheck-sec.case-1 .part-3 > .nth2 .f-bd.s1, .sltCheck-sec.case-1 .part-3 > .nth2 .ps {position: relative; top: 0; left: 0; display: block;}
+.sltCheck-sec.case-1 .part-3 > .nth2 .f-bd.s1 {}
+.sltCheck-sec.case-1 .part-3 > .nth2 .ps {margin-bottom: 5px; margin-right: 0;}
+.sltCheck-sec.case-1 .part-3 > .nth3 a {margin: 0 auto;}
 /*170619_패키지선택 개선_혜준*/
 .sltCal-sec {position: absolute; left: 50%; margin-left: -414px; top: 50%; margin-top: -275px; background-color: #fff; width: 828px; min-height: 550px; letter-spacing: -0.5px; z-index: 11;}
 .sltCal-sec .cal-inner {width: 414px; float: left;}
@@ -611,12 +621,16 @@ z-index: 12;}
 #membership .member_rsv_complete .modal_area .mid .cancel_wrap .notice_txt {padding:5px 30px 0; font-size:14px; color:#e44f49; line-height:1.5;}
 
 /* 상세페이지 상품 타이틀_170626_혜준 */
-#wrapper #contents .contents_tit2 > span:first-child {width: 640px; float: left;}
+#wrapper #contents .contents_tit2 > span:first-child {width: 620px; float: left;}
 
 /* 상품 구매페이지 요금정보 수정 170623 이현우 */
 #rsv_s_tab .rsv_s_tabHead .max_discount {position:relative; display:inline-block;}
 #rsv_s_tab .rsv_s_tabHead .max_discount > a {display:inline-block; padding:3px 5px; background-color:#cd2814; color:#fff; font-weight:; font-size:12px;}
 #rsv_s_tab .rsv_s_tabHead .max_discount > a span {color:#ffef03;}
 #rsv_s_tab .rsv_s_tabHead .max_discount > img {position:absolute; left:50%; top:-29px; margin-left:-35px;}
-/* 가운데정렬_170628_혜준 */
+/* 입장권 표 제목_170628_혜준 */
 .tit_box {text-align: center;}
+/* 실시간 요금정보예약하기_170629_혜준 */
+#reserveTitle {margin-bottom: 0;}
+/* 숙박 기존 날자선택_170629_혜준 */
+#daySearch {margin: 10px 0;}

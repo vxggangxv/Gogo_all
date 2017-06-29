@@ -764,7 +764,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 #container .sub_wraps {width:980px; margin:0 auto;  float:left}
 #wrapper1 { width: 1002px; margin:0 auto; margin-bottom:120px; float:left}
-#reser_check {float:left; padding:10px; margin-top:50px; width:304px; background:#fff; border:1px solid #b9b9b9; font-family:'돋움', Dotum, sans-serif; font-size:12px; color:#4b4b4c}
+/* #reser_check {float:left; padding:10px; margin-top:50px; width:304px; background:#fff; border:1px solid #b9b9b9; font-family:'돋움', Dotum, sans-serif; font-size:12px; color:#4b4b4c}
 #reser_check h3 {margin:5px 0; letter-spacing:-0.3px; font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:20px; font-weight:600}
 #reser_check .goods_box {float:left; padding:15px; margin-bottom:5px; width:274px; background:#f4f3f3; border-bottom:3px solid #eae9e9}
 #reser_check .goods_box .name {padding-left:14px; font-weight:bold; font-size:15px; vertical-align:top; letter-spacing:-0.3px}
@@ -779,7 +779,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 #reser_check .receipt .p_l_10 {padding-left:10px}
 #reser_check .receipt .p_r_10 {padding-right:10px}
 #reser_check .receipt .p_l_20 {padding-left:20px}
-#reser_check .receipt .p_r_20 {padding-right:20px}
+#reser_check .receipt .p_r_20 {padding-right:20px} */
 
 #reser_enter {float:right; margin-top:50px; width:655px; background:#fff; border:1px solid #b9b9b9; font-family:'돋움', Dotum, sans-serif; font-size:12px; color:#4b4b4c}
 #reser_enter .notice {float:left; padding:15px 10px 0 10px; font-size:11px; border-top:1px solid #b9b9b9; border-bottom:1px solid #b9b9b9; }
@@ -820,7 +820,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 
 /*결제페이지-무이자할부혜택*/
-#reserLeft {float:left; width:324px}
+/* #reserLeft {float:left; width:324px} */
 #cardFree {float:left; margin-top:30px; width:324px; font-family:'돋움', Dotum, sans-serif; font-size:12px; color:#4b4b4c}
 #cardFree h3 {letter-spacing:-0.8px}
 #cardFree table {float:left; margin:5px 0 10px 0; width:100%; background:#fff; color:#656565; border:1px solid #d0d0d0}
@@ -829,7 +829,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 
 /* 이용약관  */
-.boxw{width:980px; float:left; margin-bottom:120px}
+/* .boxw{width:980px; float:left; margin-bottom:120px} */
 
 #noRoom {clear:both; float:left; width:954px; padding:60px 0; font-size:25px; letter-spacing:-0.5px; color:#6c6c6c; font-weight:600; text-align:center}
 

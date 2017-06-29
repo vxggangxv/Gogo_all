@@ -980,7 +980,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 #reservBtn{position:fixed; right:17.55%; width:112px; border-radius:4px; color: #fff; text-align:center; margin-right:-652px !important;}
 #reservBtn2 img{width:60px; margin-top:25px;}
-#reservBtn div{font-size: 20px; margin-top:10px; line-height:1.3; font-weight: 600;}
+#reservBtn > div{font-size: 20px; margin-top:10px; line-height:1.3; font-weight: 600;}
 #reservBtn2 {top: 0px; width: 112px; height: 165px; background-color: #fa6b0a; border-radius: 4px; color: #fff; text-align: center; padding: 10px 0 13px 0;}
 
 #cal_wrap2 .cal_result .allprice {margin: auto; margin-top: 10px; padding: 5px 0 10px 0; width: 244px; letter-spacing: -0.5px; font-weight: 600; font-size: 14px; text-align: center; background-color: #ffffff; border: 3px solid #d1d5db; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; color: #222;}
@@ -1339,9 +1339,9 @@ table.ReservationCalendar{ border-left:1px solid #c6c6c6; border-top:1px solid #
 #reser_enter .input .official_logo span {color:#0f2d52}
 #reser_enter .input .official_logo em {color:#fa6b0a}
 /* 브검왼쪽 텍스트 배너 추가_170628_혜준 */
-.bn-more-pdt2 {position: fixed; top: 240px; left: 50%; width: 112px; min-height: 171px; margin-left: -645px; background: #007edf; cursor: pointer;}
+.bn-more-pdt2 {/* position: fixed; top: 240px; left: 50%; margin-left: -645px;*/ width: 112px; min-height: 171px; background: #007edf; cursor: pointer; font-weight: 400; padding-top:7px; box-sizing: border-box;}
 .bn-more-pdt2 > div {position: relative; color: #323232;}
-.bn-more-pdt2 .d1 {position: relative; width: 104px; margin: 7px auto 0; padding-bottom: 15px;  min-height: 117px; background: #fff;}
+.bn-more-pdt2 .d1 {position: relative; width: 104px; margin: 0 auto; padding-bottom: 15px;  min-height: 117px; background: #fff;}
 .bn-more-pdt2 .d1:before {position: absolute; content: ""; display: block; left: 50%; margin-left: -9px; top: -1px; border: 8px solid transparent; border-top-color: #007edf;}
 .bn-more-pdt2 .d1 > p {font-family: "Noto Sans KR", "Nanum Gothic"; letter-spacing: -1px; line-height: 1.14em; text-align: center;}
 .bn-more-pdt2 .d1 .p2, .bn-more-pdt2 .d1 .p3 {font-size: 28px;}
@@ -1352,3 +1352,10 @@ table.ReservationCalendar{ border-left:1px solid #c6c6c6; border-top:1px solid #
 }
 .bn-more-pdt2 .d2 .gt {font-family: "Nanum Gothic", sans-serif; font-size: 9px; font-weight: 800; color: #f3ff33; position: relative; margin-left: 5px; top: -2px;}
 .bn-more-pdt2 .c-blue {color: #007edf;}
+
+/* 결제하기 내 상품 상세 좌측정렬 170629 이현우 */
+#reser_check .goods_box {text-align:left;}
+#reser_check .goods_box .name {text-align:center;}
+
+/* 개인정보취급방침 좌측정렬 170629 이현우 */
+.boxw {text-align:left;}
