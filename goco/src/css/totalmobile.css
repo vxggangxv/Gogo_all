@@ -125,3 +125,16 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 
 #cal-date, #btnTOP a {bottom: 65px;}
 #btnTOP a {left: 10px;}
+/* 내주변-거리순 배경색_170625_혜준 */
+#searchMore .right .select01 {background: #7d431d url("http://img.go.co.kr/mobile/btn_more4.png") right 12px no-repeat;
+-webkit-background-size: 10px 6px; background-size: 10px 6px; position: relative; top: -1px;}
+/* 모바일이용권_170628_혜준 */
+#goods_table .ticket_row td {position: relative; /* padding: 5px 70px 5px 5px; */}
+#goods_table .ticket_row td > .pdt-txt, #goods_table .ticket_row td > .s-sltBox {display: inline-block;}
+#goods_table .ticket_row td > .pdt-txt {line-height: 1.6em;}
+#goods_table .ticket_row td > .s-sltBox {vertical-align: top; margin: 3px 0;}
+#goods_table .ticket_row td .detail_addtic {display: inline-block; line-height: 1.4em; font-size: 13px;}
+/* 앱이용권_170628_혜준 */
+@media (max-device-width: 320px) {
+	.itm-price.ref {font-size: 12px;}
+}

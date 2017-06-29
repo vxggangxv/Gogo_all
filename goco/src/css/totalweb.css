@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 .pull-left {float: left;}
@@ -127,9 +128,10 @@ box-sizing:border-box;}
 }
 .title-1 select option {font-size: 15px;}
 #fare_wrapper table {position: relative; width: 100%;}
-#fare_wrapper table th, #fare_wrapper table td {position: relative; border-collapse: collapse; border: 1px solid #ddd; box-sizing: border-box; letter-spacing: -1px; line-height: 1.4em;}
-#fare_wrapper thead th {text-align: center; height: 50px; border: 1px solid #5e5e5e; border-right-color: #333; background: #5e5e5e; color: #fff;
-    font-size: 18px; font-weight: 600;
+#fare_wrapper table th, #fare_wrapper table td {position: relative; border-collapse: collapse; border: 1px solid #ddd; box-sizing: border-box; letter-spacing: -1px;}
+#fare_wrapper thead {position: relative; background: #5e5e5e;}
+#fare_wrapper thead th {text-align: center; height: 50px; border: 1px solid #5e5e5e; border-right-color: #333; color: #fff;
+    font-size: 18px; font-weight: 600; z-index: 1;
 }
 #fare_wrapper thead th .banner_lowest_price {position: relative; top: -1px; margin-left: 8px;}
 #fare_wrapper thead th.last {border-right-color: #5e5e5e;}
@@ -181,7 +183,7 @@ box-sizing:border-box;}
 
 #fare_section .notice-box {position: relative; margin-top: 10px; width: 100%; border-collapse: collapse; color: #181818;}
 #fare_section .notice-box {position: fixed; margin-top: 0; width: 954px; border-collapse: collapse; color: #181818;
-    bottom: 0; z-index: 10; box-sizing: border-box; bottom: -500px;} 
+    bottom: 0; z-index: 10; box-sizing: border-box; bottom: -500px;}
 #fare_section .notice-box tr {/*display: table-row;*/}
 #fare_section .notice-box thead, #fare_section .notice-box tbody {position: relative;}
 #fare_section .notice-box thead {background: #f5f5f5;}
@@ -235,7 +237,7 @@ box-sizing:border-box;}
 #fare_section .q-contents li p:first-child {margin-top: 0;}
 #fare_section .q-contents li:first-child p:first-child {top: -1px;}
 #fare_section .q-contents li .q-p, #fare_section .q-contents li .a-p {position: relative; padding-left: 25px;}
-#fare_section .q-contents li .q-p:before, #fare_section .q-contents li .a-p:before {content: ""; position: absolute; display: inline-block;; top: 2px; left: 0; width: 20px; height: 20px; 
+#fare_section .q-contents li .q-p:before, #fare_section .q-contents li .a-p:before {content: ""; position: absolute; display: inline-block;; top: 2px; left: 0; width: 20px; height: 20px;
     background: url(http://img.yeosucablecar.co.kr/bg_q.png) no-repeat;}
 #fare_section .q-contents li .q-p:before {background-position: 0 0;}
 #fare_section .q-contents li .a-p:before {background-position: 0 -30px;}
@@ -263,7 +265,7 @@ box-sizing:border-box;}
 #r-lookup > p {font-size: 19px; line-height: 1.5em; text-align: center; margin-top: 20px; box-sizing: border-box; padding: 0 20px;}
 #r-lookup > p.nth-1 {}
 #r-lookup > p.nth-2 {}
-#r-lookup > p.nth-2 input{-webkit-appearance: none; border: none; border-radius: 0; width: 100px; height: 47px; background: #fff; border: 1px solid #d6d6d6; font-size: 19px; text-align: center; 
+#r-lookup > p.nth-2 input{-webkit-appearance: none; border: none; border-radius: 0; width: 100px; height: 47px; background: #fff; border: 1px solid #d6d6d6; font-size: 19px; text-align: center;
     color: #000;}
 #r-lookup > p.nth-2 span {display: inline-block; background: #bbb; height: 1px; width: 10px; margin: 0 4px; position: relative; top: -5px;}
 #r-lookup > p.nth-3 {}
@@ -293,44 +295,46 @@ box-sizing:border-box;}
 .tb-default th, .tb-default td {border: 1px solid #c8c8c8; padding: 3px 0; text-align: center;}
 .tb-default th {background: #e4e3e3;}
 /*패키지 UI변경 20170613_혜준*/
-#fix-nav {position: fixed; top: 0; z-index: 9999; width: 100%;}
+#fix-nav {position: relative; clear: both; top: 0; z-index: 10; width: 100%;}
 #fix-nav * {box-sizing: border-box;}
 #fix-nav .nav-bar {height: 96px; padding-top: 20px; background: #e6e6e6; border-bottom: 1px solid #dcdcdc;}
-#fix-nav .nav {margin: 0 auto; width: 1135px; font-size: 0;}
+#fix-nav .nav {position: relative; margin: 0 auto; width: 1002px;/* width: 1135px; */ /* font-size: 0; */}
 #fix-nav .nav > * {display: inline-block; vertical-align: middle;}
+#fix-nav .nav h2 {position: absolute; left: -130px; top: 6px;}
 #fix-nav .nav h2 a {display: block; width: 112px; height: 47px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat 0 0;}
-#fix-nav .nav h3 {margin-left: 16px; margin-right: 10px; width: 161px; height: 51px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -140px 0;}
-#fix-nav .nav .inp {margin-left: 10px;}
-#fix-nav .nav .inp > span {position: relative; top: -3px;display: block; color: #787878; font-size: 13px;}
-#fix-nav .nav .inp > .chkIn, #fix-nav .nav .inp > select {border: none; padding-left: 10px; font-size: 15px; height: 38px; border: 1px solid #7d7d7d;}
+#fix-nav .nav h3 {margin-right: 10px; width: 161px; height: 51px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -140px 0;}
+#fix-nav .nav .inp {margin-left: 10px; margin-top: -6px;}
+#fix-nav .nav .inp > span {position: relative; top: -1px;display: block; color: #787878; font-size: 13px;}
+#fix-nav .nav .inp > .chkIn, #fix-nav .nav .inp > select {border: none; padding-left: 10px; font-size: 15px; /* height: 38px; */ height: 45px; border: 1px solid #7d7d7d;}
 #fix-nav .nav .inp > select option {font-size: 15px;}
 #fix-nav .nav .inp > .chkIn {
     appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
-    width: 144px;
+    width: 174px;/* width: 144px; */
     background: #fff url(http://img.go.co.kr/i-cal.jpg) no-repeat right 0;
 }
 #fix-nav .nav .inp > select {
     appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
     background: #fff url(http://img.go.co.kr/i-down-arrow.png) no-repeat right 15px;
 }
-#fix-nav .nav .inp > select.global {width: 110px; background-position: 85px;}
-#fix-nav .nav .inp > select.city {width: 130px; background-position: 105px;}
+#fix-nav .nav .inp > select::-ms-expand {display: none;}
+/* #fix-nav .nav .inp > select.global {width: 110px; background-position: 85px;} */
+#fix-nav .nav .inp > select.global, #fix-nav .nav .inp > select.city {width: 130px; background-position: 105px;}
 #fix-nav .nav .inp > select.number {width: 80px; background-position: 55px;}
-#fix-nav .nav .more-a, #fix-nav .nav .search-a {position: relative; height: 58px; font-size: 18px; color: #fff; text-align: center; line-height: 3.1em;}
+#fix-nav .nav .more-a, #fix-nav .nav .search-a {position: absolute; height: 58px; font-size: 18px; color: #fff; text-align: center; line-height: 3.1em;}
 #fix-nav .nav .more-a:active, #fix-nav .nav .search-a:active {font-weight: 400;}
-#fix-nav .nav .more-a {width: 128px; background: #9c9c9c; margin-left: 20px;}
+#fix-nav .nav .more-a {right: 170px; width: 128px; background: #9c9c9c; /* margin-left: 20px; */}
 #fix-nav .nav .more-a:before {position: absolute; content: ""; bottom: -14px; left: 57px; width: 1px; border: 8px solid transparent; border-top-color: #9c9c9c;}
 #fix-nav .nav .more-a .i-plus {display: inline-block; position: relative; top: 4px; margin-right: 4px; width: 20px; height: 20px; background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -440px 0;}
 #fix-nav .nav .more-a.on .i-plus {background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -480px 0;}
-#fix-nav .nav .search-a {width: 160px; background: #fa6b0a; margin-left: 10px;}
+#fix-nav .nav .search-a {right: 0; width: 160px; background: #344570;/* background: #fa6b0a; */ margin-left: 10px;}
 #fix-nav .nav .search-a .i-search {display: inline-block; position: relative; top: 5px; margin-right: 6px; width: 21px; height: 22px; background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -520px 0;}
 
 #fix-nav .nb-drop-bar {display: none; height: 39px; padding-top: 5px; background: #efefef; border-bottom: 1px solid #d9d9d9;}
 #fix-nav .nb-drop-bar.on {display: block;}
-#fix-nav .nb-drop-bar .nb-outer {position: relative; margin: 0 auto; width: 1115px;}
-#fix-nav .nb-drop {position: relative; float: right; width: 1007px; font-size: 0;}
+#fix-nav .nb-drop-bar .nb-outer {position: relative; margin: 0 auto; width: 1002px;/* width: 1115px; */}
+#fix-nav .nb-drop {position: relative; float: right; width: 100%;/* width: 1007px; */ font-size: 0;}
 #fix-nav .nb-drop > * {display: inline-block; vertical-align: middle; color: #fff;}
-#fix-nav .nb-drop h4 {position: relative; width: 88px; height: 26px; font-size: 14px; color: #fff; text-align: center; line-height: 1.8em; background: #9d8676; font-weight: 400; letter-spacing: -1px; margin-right: 10px;}
+#fix-nav .nb-drop h4 {position: relative; min-width: 88px; height: 26px; padding: 0 6px; font-size: 14px; color: #fff; text-align: center; line-height: 1.8em; background: #9d8676; font-weight: 400; letter-spacing: -1px; margin-right: 10px;}
 #fix-nav .nb-drop .nb-drInp {
     outline: 0;
     appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
@@ -381,31 +385,37 @@ z-index: 12;}
 .sltCheck-sec .part-3 > .nth3 a {color: #fff; display: block; width: 215px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 2.4em;}
 .sltCheck-sec .part-3 > .nth3 a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -4px; margin-left: 10px; font-weight: 600;}
 /*170619_패키지선택 개선_혜준*/
-.sltCal-sec {position: absolute; left: 50%; margin-left: -414px; top: 50%; margin-top: -242px; background-color: #fff; width: 828px; min-height: 483px; letter-spacing: -0.5px;}
+.sltCal-sec {position: absolute; left: 50%; margin-left: -414px; top: 50%; margin-top: -275px; background-color: #fff; width: 828px; min-height: 550px; letter-spacing: -0.5px; z-index: 11;}
 .sltCal-sec .cal-inner {width: 414px; float: left;}
 .sltCal-sec h3 {text-align: center; color: #fff; font-size: 20px; background: #ff7a2d; line-height: 3em; font-weight: 400; height: 58px;}
 .sltCal-sec h3 .i-close {position: absolute; top: 16px; right: 18px; float: right; cursor: pointer;}
-.sltCal-sec p.p-1 {position: relative; text-align: center; padding: 11px 18px 10px;}
-.sltCal-sec p.p-1 em {font: normal 600 26px "Arial", sans-serif; color: #000;}
-.sltCal-sec p.p-1 a {position: relative; display: inline-block; width: 11px; height: 17px; top: 5px; background: url("http://img.go.co.kr/cal_sprBg.png") no-repeat 0 0;}
+.sltCal-sec p.p-1 {position: relative; text-align: center; padding: 7px 18px 6px; font-size: 21px; font-family: "Noto Sans KR", "Nanum Gothic";}
+.sltCal-sec p.p-1 em {position: relative; margin-left: 10px; top: -1px; font: normal 600 24px "Arial", sans-serif; color: #000; vertical-align: middle;}
+.sltCal-sec p.p-1 a {position: relative; display: inline-block; width: 11px; height: 17px; top: 4px; /* top: 7px; */ background: url("http://img.go.co.kr/cal_sprBg.png") no-repeat 0 0;}
 .sltCal-sec p.p-1 .prev-a {float: left;}
 .sltCal-sec p.p-1 .next-a {float: right; background-position: -20px 0;}
 
 .sltCal-sec .cal-inner {}
 .sltCal-sec .cal-tb {position: relative; width: 393px; border-collapse: collapse; margin: 0 auto;}
 .sltCal-sec .cal-tb th, .sltCal-sec .cal-tb td {width: 55px; border: 1px solid #e6e6e6; font-size: 15px; color: #000; text-align: center; line-height: 1.3em;}
-.sltCal-sec .cal-tb th {background: #f0f0f0; padding: 6px 0;}
-.sltCal-sec .cal-tb td {font-family: "Arial", sans-serif; height: 48px; vertical-align: top; padding-top: 6px;}
-.sltCal-sec .cal-tb td.off {color: #c8c8c8;}
+.sltCal-sec .cal-tb th {background: #282828; padding: 6px 0; color: #fff; border: 1px solid #141414;}
+.sltCal-sec .cal-tb td {position: relative; font-family: "Arial", sans-serif; height: 55px; vertical-align: top;}
+.sltCal-sec .cal-tb td > div {padding-top: 2px; height: 100%;}
+.sltCal-sec .cal-tb td.off > div {color: #969696; background: #f0f0f0;}
 .sltCal-sec .cal-tb td.chkIn, .sltCal-sec .cal-tb td.chkOut {position: relative; color: #fff; z-index: 1;}
-.sltCal-sec .cal-tb td.chkIn {background: #e33e3e;}
-.sltCal-sec .cal-tb td.chkOut {background: #39c9ba;}
-/*.sltCal-sec .cal-tb td.on {position: relative; background: #faf2e3;}*/
+.sltCal-sec .cal-tb td.chkIn img, .sltCal-sec .cal-tb td.chkOut img {display: block; margin: 0 auto;}
+.sltCal-sec .cal-tb td.ing > div {position: relative; background: #e5f4ff;}
+.sltCal-sec .cal-tb td.chkIn > div {background: #e33e3e;}
+.sltCal-sec .cal-tb td.chkOut > div {background: #39c9ba;}
 .sltCal-sec .cal-tb td.chkIn:before, .sltCal-sec .cal-tb td.chkOut:before,
-.sltCal-sec .cal-tb td.on:before {content: ""; display: block; position: absolute; top: -1px; left: -1px; width: 100%; height: 100%;}
+.sltCal-sec .cal-tb td.ing:before {content: ""; display: block; position: absolute; top: -1px; left: -1px; width: 100%; height: 55px;}
 .sltCal-sec .cal-tb td.chkIn:before {border: 1px solid #b52b2b;}
 .sltCal-sec .cal-tb td.chkOut:before {border: 1px solid #329288;}
-.sltCal-sec .cal-tb td.on:before {border: 1px solid #dbc7a7;}
+.sltCal-sec .cal-tb td.ing:before {border: 1px solid #D1EAFD;}
+.sltCal-sec .cal-tb td .prc {position: absolute; bottom: 0; font-size:11px; display: block; width: 100%; text-align: center; color: #0056a4;}
+.sltCal-sec .cal-tb td.off .prc {color: #969696;}
+.sltCal-sec .cal-tb td.chkIn .prc, .sltCal-sec .cal-tb td.chkOut .prc {color: #fff;}
+.sltCal-sec .btn-a {clear: both; display: block; margin: 20px auto 0; width: 172px; height: 42px; color: #fff; font-size: 18px; background: #ff7a2d; text-align: center; line-height: 40px;}
 
 #rsv_s_list #pdtSlt-wrapper {position: relative;}
 
@@ -425,7 +435,7 @@ z-index: 12;}
 #rsv_s_list .pay-box > .nth3 a {color: #fff; display: block; width: 235px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 2.4em;}
 #rsv_s_list .pay-box > .nth3 a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -4px; margin-left: 10px; font-weight: 600;}
 
-.pdtSlt-sec {display: table; position: relative; width: 100%; font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box; 
+.pdtSlt-sec {display: table; position: relative; width: 100%; font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box;
     background: #fff; color: #000;}
 .pdtSlt-sec > div {display: table-cell; border: 1px solid #000; border-collapse: collapse;}
 .pdtSlt-sec > div.part-1 {width: 33%;}
@@ -439,21 +449,25 @@ z-index: 12;}
 
 .pdtSlt-sec .part-1 h2 {background: #ff7a2d;}
 .pdtSlt-sec .part-1 h3 {position: relative; background: #f5f5f5; font-size: 18px; color: #000; box-sizing: border-box;
-    padding: 10px 10px 10px 77px; line-height: 1.3em; font-weight: 400; border-bottom: 1px solid #bcbcbc; margin-bottom: 5px;}
-.pdtSlt-sec .part-1 h3 span.tt {position: absolute; display: inline-block; width: 58px; height: 17px; 
+    padding: 10px 10px 10px 77px; line-height: 1.3em; font-weight: 400; border-bottom: 1px solid #bcbcbc; /* margin-bottom: 5px; */}
+.pdtSlt-sec .part-1 h3 span.tt {position: absolute; display: inline-block; width: 58px; height: 17px;
     left: 15px; top: 13px;
     background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -340px 0;
 }
+.pdtSlt-sec .part-1 .dep-1 {padding: 5px 0;}
 .pdtSlt-sec .part-1 .dep-1 > li {font-size: 0; padding-top: 5px; padding-bottom: 5px;}
 .pdtSlt-sec .part-1 .dep-1 > li > * {display: inline-block; vertical-align: middle;}
 .pdtSlt-sec .part-1 .dep-1 > li.mg {width: 296px; margin: 15px auto 5px; border-top: 1px dashed #bcbcbc;}
-.pdtSlt-sec .part-1 .dep-1 > li .label {font-size: 15px; width: 66px;}
-.pdtSlt-sec .part-1 .dep-1 > li select {padding: 3px 6px 4px; font-size: 15px; border-radius: 0; border:1px solid #bcbcbc;}
+.pdtSlt-sec .part-1 .dep-1 > li .lbl {font-size: 15px; width: 66px; color: #000000; font-weight: 400; padding: 0; text-align: left;}
+.pdtSlt-sec .part-1 .dep-1 > li select {padding: 3px 6px 4px; height: 28px; font-size: 15px; border-radius: 0; border:1px solid #bcbcbc;}
 .pdtSlt-sec .part-1 .dep-1 > li select option {font-size: 15px;}
 .pdtSlt-sec .part-1 .dep-1 > li select.type-1 {width: 131px;}
 .pdtSlt-sec .part-1 .dep-1 > li select.type-2 {width: 80px;}
 .pdtSlt-sec .part-1 .dep-1 > li select.type-2 {width: 80px;}
 .pdtSlt-sec .part-1 .dep-1 > li select.type-3 {width: 70px;}
+.pdtSlt-sec .part-1 .dep-1 > li input {padding: 3px 6px 4px; height: 28px; font-size: 15px; border-radius: 0; border:1px solid #bcbcbc; box-sizing: border-box;}
+.pdtSlt-sec .part-1 .dep-1 > li input.type-1 {width: 131px;}
+
 .pdtSlt-sec .part-1 .dep-1 > li .pl-10 {padding-left: 10px;}
 .pdtSlt-sec .part-1 .dep-1 > li .pl-15 {padding-left: 15px;}
 .pdtSlt-sec .part-1 .dep-1 > li .ml-10 {margin-left: 10px;}
@@ -467,18 +481,18 @@ z-index: 12;}
 .pdtSlt-sec input[type="checkbox"]:checked {background: #fff url("http://img.go.co.kr/chk_bg.png") no-repeat 1px 2px;}
 .pdtSlt-sec .part-2 h2 {background: #ec5700;}
 .pdtSlt-sec .part-2 .dep-1 > li {line-height: 1.2em; padding: 7px 0 7px;}
-.pdtSlt-sec .part-2 .dep-1 > li .label {user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+.pdtSlt-sec .part-2 .dep-1 > li .lbl {user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
     display: inline-block; position: relative; width: 271px; vertical-align: top; font-size: 15px; color: #000; word-break: break-all;
-    cursor: pointer; padding-right: 15px;
+    cursor: pointer; padding: 0; padding-right: 15px; text-align: left;
 }
 .pdtSlt-sec .part-2 .dep-1 > li.on {background: #3a4351;}
-.pdtSlt-sec .part-2 .dep-1 > li.on > .label {color: #fff;}
+.pdtSlt-sec .part-2 .dep-1 > li.on > .lbl, .pdtSlt-sec .part-2 .dep-1 > li.on > label .lbl {color: #fff;}
 
 .pdtSlt-sec .part-2 ul.slt-drop {display: none; background: #f2f2f2; margin-top: 7px; margin-bottom: -7px;}
 .pdtSlt-sec .part-2 ul.slt-drop.on {display: block;}
 .pdtSlt-sec .part-2 ul.slt-drop > li {padding: 0px 15px 15px 35px;}
 .pdtSlt-sec .part-2 ul.slt-drop > li:first-child {padding-top: 15px;}
-.pdtSlt-sec .part-2 ul.slt-drop > li .label {width: auto;}
+.pdtSlt-sec .part-2 ul.slt-drop > li .lbl {width: auto;}
 .pdtSlt-sec .part-2 ul.slt-drop > li s, .pdtSlt-sec .part-2 ul.slt-drop > li .c-red {float: right;}
 .pdtSlt-sec .part-2 ul.slt-drop > li s {font-size: 12px; color: #313131; margin-right: 5px;}
 .pdtSlt-sec .part-2 ul.slt-drop > li .c-red {font-size: 15px; color: #ff4445; font-weight: 600;}
@@ -496,10 +510,10 @@ z-index: 12;}
 .pdtSlt-sec .part-3 .ul-1 {border-top: 1px solid #b0b0b0; border-bottom: 1px solid #b0b0b0; background: #f2f2f2; padding: 4px 0 9px;}
 .pdtSlt-sec .part-3 .ul-1 li {padding: 6px 15px;}
 .pdtSlt-sec .part-3 .ul-1 li > * {display: inline-block; vertical-align: middle;}
-.pdtSlt-sec .part-3 .ul-1 li .label {position: relative;  top: 3px;font-size: 15px; font-weight: 600;}
-.pdtSlt-sec .part-3 .ul-1 li .label.type-1 {width: 82px;}
-.pdtSlt-sec .part-3 .ul-1 li .label.type-2 {width: 180px;}
-/*.pdtSlt-sec .part-3 .ul-1 li .label:before {content: ""; position: relative; top: -1px; vertical-align: middle; margin-right: 5px; display: inline-block; width: 3px; height: 3px; background: #b0b0b0;}*/
+.pdtSlt-sec .part-3 .ul-1 li .lbl {position: relative;  top: 3px;font-size: 15px; font-weight: 600;}
+.pdtSlt-sec .part-3 .ul-1 li .lbl.type-1 {width: 82px;}
+.pdtSlt-sec .part-3 .ul-1 li .lbl.type-2 {width: 180px;}
+/*.pdtSlt-sec .part-3 .ul-1 li .lbl:before {content: ""; position: relative; top: -1px; vertical-align: middle; margin-right: 5px; display: inline-block; width: 3px; height: 3px; background: #b0b0b0;}*/
 .pdtSlt-sec .part-3 .ul-1 li select {position: relative; float: right; padding: 3px 6px 4px; font-size: 15px; border-radius: 0; border:1px solid #bcbcbc; width: 168px; max-height: 32px;}
 .pdtSlt-sec .part-3 .ul-1 li option {font-size: 15px; padding: 4px 6px;}
 
@@ -513,7 +527,7 @@ z-index: 12;}
 .pdtSlt-sec .part-3 .ul-1 li .quan > .s-l {float: left;}
 .pdtSlt-sec .part-3 .ul-1 li .quan > .s-r {float: right; right: 2px;}
 
-.pdtSlt-sec .part-3 .ul-2 {display: none; position: absolute; top: 0; right: 15px; width: 330px; margin-top: 16px; background: #fff; z-index: 5; 
+.pdtSlt-sec .part-3 .ul-2 {display: none; position: absolute; top: 0; right: 15px; width: 330px; margin-top: 16px; background: #fff; z-index: 5;
     padding: 10px 12px; border: 1px solid #000; box-shadow: 3px 4px rgba(0,0,0, .18);}
 .pdtSlt-sec .part-3 .ul-2.on {display: block;}
 .pdtSlt-sec .part-3 .ul-2:after {content: ""; display: block; position: absolute; width: 17px; height: 15px; bottom: -15px; right: 75px;
@@ -525,3 +539,84 @@ z-index: 12;}
 .pdtSlt-sec .part-3 .ul-2 li.td:before {position: absolute; content: "-"; left: 0;}
 /* 계좌페이지 패딩 줄임_170619_혜준 */
 #wrapper #reser_enter .input .input_t li {padding-right: 13px;}
+
+/* 예약내역조회수정 170626 이현우 */
+#wrapper #membership .member_info_t td {padding:20px 0;}
+#wrapper #membership .member_info_t td .member_info_t_payment {margin-top:5px;}
+#wrapper #membership .member_info_t td .member_info_t_payment .member_info_t_payment_btn {display:inline-block; padding:2px 5px; background-color:#ff6833; color:#fff; font-size:12px;}
+#wrapper #membership .member_info_t td .member_info_t_chk {-webkit-appearance:none; -moz-appearance:none; appearance:none; width:0; height:0; overflow:hidden;}
+#wrapper #membership .member_info_t td .member_info_t_chkbox {display:inline-block; position:relative; width:16px; height:14px; background:url('http://img.go.co.kr/member_info_t_chk_off.gif') no-repeat 0 0; vertical-align:middle;}
+#wrapper #membership .member_info_t td .member_info_t_chkbox.on {background:url('http://img.go.co.kr/member_info_t_chk_on.gif') no-repeat 0 0;}
+#wrapper #membership .member_info_t td .orange {color:#ff610a;}
+#wrapper #membership .member_info_t td .sml_gray_txt {color:#b0b0b0; font-weight:normal; font-size:11px;}
+#wrapper #membership .member_info_t td .member_info_t_fail {position:relative; width:556px; padding:15px 10px; background-color:#2ba78d; border-radius:3px; color:#fff; margin:15px auto 0; font-size:16px;}
+#wrapper #membership .member_info_t td .member_info_t_fail:before {content:''; display:block; position:absolute; right:25px; top:50%; width:8px; height:14px; margin-top:-7px; background:url('http://img.go.co.kr/member_info_t_arrow.gif') no-repeat 0 0;}
+#wrapper #membership .member_info_t td .member_info_t_fail em {color:#fffc01;}
+
+/* 상품 최저가 안내 레이어팝업 위치 수정 170626 이현우 */
+#rsv_wrapper #rsv_sang {position:relative;}
+#rsv_wrapper #discount_pop {top:29px !important; right:auto !important; left:-92px;}
+#rsv_wrapper #discount_pop {position:absolute; top:195px; right:-30px; width:275px; text-align:left; line-height:2}
+#rsv_wrapper #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.go.co.kr/discount_bg.png) no-repeat}
+#rsv_wrapper #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
+#rsv_wrapper #discount_pop .text span {color:#ec5700; font-weight:600}
+#rsv_wrapper {position:relative; text-align:left; z-index: 10;}
+#rsv_wrapper span.big {font-size:22px;font-weight:600;letter-spacing:-1.5px;color:#3a3a3a}
+#rsv_wrapper span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
+
+/* 예약내역_170626_현우 */
+#membership .member_rsv_complete {position:fixed; left:0; top:0; right:0; bottom:0; text-align:center; font-size:0; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0;}
+#membership .member_rsv_complete:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
+#membership .member_rsv_complete .modal_area {display:inline-block; width:600px; border:3px solid #ff610a; border-radius:3px; background-color:#fff; vertical-align:middle; text-align:left;}
+#membership .member_rsv_complete .modal_area.type2 {width:758px; border:1px solid #7f8082; border-radius:0;}
+#membership .member_rsv_complete .modal_area .top {position:relative; border-bottom:2px solid #f2f2f2;}
+#membership .member_rsv_complete .modal_area .top strong {display:block; padding:15px; border-bottom:1px solid #c5c5c5; font-size:16px; color:#181818;}
+#membership .member_rsv_complete .modal_area .top .modal_close {position:absolute; right:20px; top:50%; margin-top:-9px;}
+#membership .member_rsv_complete .modal_area.type2 .top {border-bottom:0; background-color:#7e8186;}
+#membership .member_rsv_complete .modal_area.type2 .top strong {padding:10px 10px 10px 47px; color:#fff; background:url('http://img.go.co.kr/modal_bullet.gif') no-repeat 30px 50%;}
+#membership .member_rsv_complete .modal_area.type2 .top .modal_close {margin-top:-11px;}
+#membership .member_rsv_complete .modal_area .mid {padding:20px 25px 35px;}
+#membership .member_rsv_complete .modal_area .mid .com_txt {text-align:center;}
+#membership .member_rsv_complete .modal_area .mid .com_txt > strong {font-size:18px; color:#ff6108;}
+#membership .member_rsv_complete .modal_area .mid .com_txt p {font-size:16px; color:#272727;}
+#membership .member_rsv_complete .modal_area .mid .com_txt .refund {font-size:18px !important;}
+#membership .member_rsv_complete .modal_area .mid .com_txt .sign {width:340px; margin:10px auto 0; height:90px; border:1px solid #aaa; font-size:14px; color:#a7a7a7; line-height:90px;}
+#membership .member_rsv_complete .modal_area .mid .bank_data {width:100%; margin-top:20px; border-bottom:1px solid #c5c5c5;}
+#membership .member_rsv_complete .modal_area .mid .bank_data tr th {background-color:#f7f7f7; font-size:16px; padding:5px 10px; color:#090909; text-align:center; border-top:1px solid #c5c5c5; font-weight:bold;}
+#membership .member_rsv_complete .modal_area .mid .bank_data tr td {border-left:1px solid #c5c5c5; border-top:1px solid #c5c5c5; font-size:14px; padding:5px 10px;}
+#membership .member_rsv_complete .modal_area .mid .bank_data tr td input[type="text"], #membership .member_rsv_complete .modal_area .mid .bank_data tr td input[type="password"], #membership .member_rsv_complete .modal_area .mid .bank_data tr td select {box-sizing:border-box; height:30px; padding:5px;}
+#membership .member_rsv_complete .modal_area .modal_bullet {line-height:1.5; color:#e44f49; font-size:14px; padding-left:20px; background:url('http://img.go.co.kr/modal_mark.gif') no-repeat 0 3px; margin-top:10px;}
+#membership .member_rsv_complete .modal_area .mid .com_txt .modal_bullet {display:inline-block;}
+#membership .member_rsv_complete .modal_area .mid .go_qna {margin-top:20px;}
+#membership .member_rsv_complete .modal_area .mid .go_qna a {display:block; position:relative; background-color:#636363; padding:10px; font-size:16px; color:#fff; border-radius:3px; text-align:center;}
+#membership .member_rsv_complete .modal_area .mid .go_qna a:before {content:''; display:block; position:absolute; width:7px; height:12px; right:21px; top:50%; margin-top:-7px; background:url('http://img.go.co.kr/modal_arrow01.gif') no-repeat 0 0;}
+#membership .member_rsv_complete .modal_area .mid .go_qna a span {color:#fff701;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn {margin-top:25px; text-align:center;}
+#membership .member_rsv_complete .modal_area.type2 .mid .modal_btn {margin-top:15px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn > a {display:inline-block; border-radius:3px; width:84px; height:36px; line-height:36px; color:#fff; font-size:14px; vertical-align:middle; margin:0 8px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .complete {background-color:#fb610b;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .refund01 {box-sizing:border-box; width:220px; height:54px; line-height:54px; font-size:18px; font-weight:bold; background-color:#fc6009; position:relative; margin:0 20px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .refund02 {box-sizing:border-box; width:220px; height:54px; line-height:54px; background-color:#fff; border:1px solid #fb6109; color:#fb6109; font-size:18px; font-weight:bold; position:relative; margin:0 20px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .refund01:before {content:''; display:block; position:absolute; right:18px; top:50%; width:8px; height:13px; background:url('http://img.go.co.kr/modal_arrow02.gif') no-repeat 0 0; margin-top:-6px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .refund02:before {content:''; display:block; position:absolute; right:18px; top:50%; width:8px; height:13px; background:url('http://img.go.co.kr/modal_arrow03.gif') no-repeat 0 0; margin-top:-6px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .chk {background-color:#e05244;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .no {background-color:#fdfdfd; color:#333; border:1px solid #d6d6d6;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap {margin-top:15px; padding:20px 0 10px; border-top:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .cancel_data {width:100%; margin-top:15px;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .cancel_data:first-child {margin-top:0;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .cancel_data tr th {border-top:1px solid #c5c5c5; background-color:#f5f5f5; color:#090909; font-size:16px; padding:5px 10px; text-align:center; font-weight:bold; border-left:1px solid #c5c5c5;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .cancel_data tr th:first-child {border-left:0;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .cancel_data tr td {border-top:1px solid #c5c5c5; font-size:14px; padding:5px 10px; text-align:center; border-left:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .cancel_data tr td:first-child {border-left:0;}
+#membership .member_rsv_complete .modal_area .mid .cancel_wrap .notice_txt {padding:5px 30px 0; font-size:14px; color:#e44f49; line-height:1.5;}
+
+/* 상세페이지 상품 타이틀_170626_혜준 */
+#wrapper #contents .contents_tit2 > span:first-child {width: 640px; float: left;}
+
+/* 상품 구매페이지 요금정보 수정 170623 이현우 */
+#rsv_s_tab .rsv_s_tabHead .max_discount {position:relative; display:inline-block;}
+#rsv_s_tab .rsv_s_tabHead .max_discount > a {display:inline-block; padding:3px 5px; background-color:#cd2814; color:#fff; font-weight:; font-size:12px;}
+#rsv_s_tab .rsv_s_tabHead .max_discount > a span {color:#ffef03;}
+#rsv_s_tab .rsv_s_tabHead .max_discount > img {position:absolute; left:50%; top:-29px; margin-left:-35px;}
+/* 가운데정렬_170628_혜준 */
+.tit_box {text-align: center;}
