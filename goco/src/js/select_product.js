@@ -39,7 +39,7 @@ $(function () {
         return false;
     });
 
-    $("#rsv_s_list div.pdtSlt-sec span.label").on("click", function () {
+    /*$("#rsv_s_list div.pdtSlt-sec span.lbl").on("click", function () {
         $(this).closest("li").toggleClass("on");
         var isChecked = $(this).prev().prop("checked");
         isChecked = !isChecked;
@@ -49,7 +49,7 @@ $(function () {
         } else {
             $(this).closest("li").find(".slt-drop").removeClass("on");
         }
-    });
+    });*/
     $("#rsv_s_list div.pdtSlt-sec input[type=checkbox]").on("click", function () {
         $(this).closest("li").toggleClass("on");
         var isChecked = $(this).prop("checked");
