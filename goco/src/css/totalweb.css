@@ -295,7 +295,7 @@ box-sizing:border-box;}
 .tb-default th, .tb-default td {border: 1px solid #c8c8c8; padding: 3px 0; text-align: center;}
 .tb-default th {background: #e4e3e3;}
 /*패키지 UI변경 20170613_혜준*/
-#fix-nav {position: relative; clear: both; top: 0; z-index: 10; width: 100%;}
+#fix-nav {position: relative; clear: both; top: 0; z-index: 9; width: 100%;}
 #fix-nav * {box-sizing: border-box;}
 #fix-nav .nav-bar {height: 96px; padding-top: 20px; background: #e6e6e6; border-bottom: 1px solid #dcdcdc;}
 #fix-nav .nav {position: relative; margin: 0 auto; width: 1002px;/* width: 1135px; */ /* font-size: 0; */}
@@ -572,7 +572,7 @@ z-index: 12;}
 #rsv_wrapper #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.go.co.kr/discount_bg.png) no-repeat}
 #rsv_wrapper #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
 #rsv_wrapper #discount_pop .text span {color:#ec5700; font-weight:600}
-#rsv_wrapper {position:relative; text-align:left; z-index: 10;}
+#rsv_wrapper {position:relative; text-align:left; z-index: 9;}
 #rsv_wrapper span.big {font-size:22px;font-weight:600;letter-spacing:-1.5px;color:#3a3a3a}
 #rsv_wrapper span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
 

@@ -4,8 +4,7 @@
 .nb-wrap {position: relative; height: 430px; padding-bottom: 10px; background: #f1f1f;}
 .non-box {position: absolute; left: 50%; top: 50%; margin-left: -150px; margin-top: -140px; width: 300px; height: 200px; text-align: center;}
 .non-box img {display: block; margin: 0 auto; width: 50px; margin-bottom: 10px;}
-.non-box strong {color: #010101; font-size: 16px;}
-.non-box p {font-size: 13px; margin-top: 8px; line-height: 1.4em;}
+.non-box p {font-size: 13px; margin-top: 15px; line-height: 1.4em;}
 .non-btn-area {position: absolute; bottom: 10px; width: 100%;}
 .non-btn-area a {display: block; width: 96%; margin: 0 auto; text-align: center; border-radius: 2px; background: #F96A0A; color: #fff; font-size: 13px; line-height: 3.2em; height: 44px;}
 
@@ -296,7 +295,7 @@
 .h04-pop {position: relative;}
 .h04-pop * {color: #2a2a2a;}
 .h04-pop:before {content: ""; display: inline-block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; vertical-align: middle; background: rgba(0, 0, 0, .5); z-index: 10000;}
-.h04-pop .box {position: fixed; left: 50%; top: 50%; margin-left: -150px; margin-top: -260px; width: 300px; height: auto; max-height: 520px; background: #fff; text-align: center; font-size: 14px; z-index: 10000; padding-bottom: 15px; overflow-y: auto;}
+.h04-pop .box {position: fixed; left: 50%; top: 50%; margin-left: -150px; margin-top: -245px; width: 300px; height: auto; max-height: 440px; background: #fff; text-align: center; font-size: 14px; z-index: 10000; padding-bottom: 15px; overflow-y: auto;}
 .h04-pop .box header {position: relative; height: 40px; width: 300px; background: #f96a0a; color: #fff; font-size: 14px; line-height: 2.8em; font-weight: 600; letter-spacing: -0.5px; text-align: left;
   padding-left: 12px;}
 .h04-pop header:before, .h04-pop footer .addr:before, .h04-pop footer .copy:before {content: ""; display: inline-block; background: url(http://img.go.co.kr/mobile/mk_icons.png) no-repeat 0; background-size: 52px; position: relative; margin-right: 3px; top: 3px; width: 12px; height: 14px;}
@@ -412,3 +411,78 @@
 #r-confirm > div > p.nth-1 {margin-top: 10px;}
 #r-confirm > div > p.nth-2 {margin-top: 14px; padding: 12px; border-top: 1px solid #d6d6d6;}
 #r-confirm > div > p.nth-2 > a {display: block; margin: 0px auto; width: 100%; height: 45px; border-radius: 4px; background: #ff610a; color: #fff; line-height: 3em; font-size: 14px; font-weight: 600;}
+
+/* 예약내역 없음페이지 초록박스 추가 170626 이현우 */
+.non-box .non-box-ntcbox {display:inline-block; padding:7px 15px; background-color:#2ba78d; border-radius:3px; color:#fff; font-size:13px;}
+.non-box .non-box-ntcbox span {color:#fffc01;}
+
+/* 버튼 추가 170627 이현우 */
+.btn-wrap {margin-top:6px; padding:0 7px;}
+.btn-wrap .btn-area {display:table; width:100%;}
+.btn-wrap .btn-area > div {display:table-cell; vertical-align:middle; padding:0 7px;}
+.btn-wrap .btn-area > div a {display:block; height:34px; line-height:34px; font-size:13px; text-align:center; box-sizing:border-box; border-radius:2px;}
+.btn-wrap .btn-area > div a.graybtn {background-color:#5f5f5f; color:#fff;}
+.btn-wrap .btn-area > div a.whitebtn {background-color:#fffdfe; color:#413839; border:1px solid #d2d2d2; background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f4f4)); background-image: -webkit-linear-gradient(top, #fff, #f4f4f4); background-image: -moz-linear-gradient(top, #fff, #f4f4f4); background-image: -ms-linear-gradient(top, #fff, #f4f4f4); background-image: -o-linear-gradient(top, #fff, #f4f4f4); background-image: linear-gradient(to bottom, #fff, #f4f4f4);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fff, endColorstr=#f4f4f4);}
+
+/* 이용후기작성 버튼 추가 170627 이현우 */
+.history02-info [class*="form"] li:first-child .review {display:inline-block; padding:2px 4px; border-radius:2px; color:#fd5413; border:1px solid #fd5413; font-size:13px; position:absolute; right:10px; top:-6px;}
+
+/* 이용완료 삭제버튼 추가 170627 이현우 */
+#headTitle .delete {position:absolute; right:10px; padding-left:15px; background:url('http://img.go.co.kr/mobile/btn_delete2.png') no-repeat 0 50%; background-size:11.5px 11px;}
+#headTitle .delete.on {background:url('http://img.go.co.kr/mobile/btn_delete2_on.png') no-repeat 0 50%; background-size:11.5px 11px; color:#ff6701}
+.fixdelete {position:fixed; left:0; bottom:0; z-index:9999; width:100%; height:42px; line-height:42px; color:#fff; background-color:#f96a0a; font-size:16px; text-align:center;}
+.history01-list li .chk {display:none; position:absolute; right:8px; top:10px; z-index:9000; width:44px; height:44px; border-radius:100%; font-size:11px; box-sizing:border-box; padding-top:22px; text-align:center; color:#fff; background:url('http://img.go.co.kr/mobile/history_ico_chk_off.png') no-repeat 50% 9px #000; background-size:14.5px 10.5px;}
+.history01-list li .chk.on {background:url('http://img.go.co.kr/mobile/history_ico_chk_on.png') no-repeat 50% 9px #f96a0a; background-size:14.5px 10.5px; color:#fffc00;}
+
+/* 취소팝업 추가 170627 이현우 */
+.modal-wrap {position:absolute; left:0; top:0; width:100%; z-index:10000; background-color:rgba(0,0,0,.7);}
+.modal-group {position:absolute; left:0; top:0; width:100%; height:100%; z-index:10001; text-align:center; font-size:0;}
+.modal-group:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
+.modal-area {display:inline-block; box-sizing:border-box; width:100%; padding:0 20px; vertical-align:middle;}
+.modal-inner {position:relative; background-color:#fff; border-radius:3px; font-size:14px;}
+.modal-inner .modal-close {position:absolute; right:0; top:0; width:39px; height:39px; text-align:center; line-height:39px;}
+.modal-inner .modal-close img {vertical-align:middle; width:11px;}
+.modal-inner .top {position:relative; height:39px; border-bottom:1px solid #cfcfcf;}
+.modal-inner .top > p {position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); color:#141414; font-weight:bold; font-size:16px;}
+
+.modal-inner .mid {padding:15px 10px;}
+.modal-inner .mid > strong {font-size:16px; color:#f96a0a;}
+.modal-inner .mid .txt {font-size:14px; color:#262626; margin-top:5px;}
+.modal-inner .mid .txt .cancle {color:#e3372d;}
+.modal-inner .mid .rule {margin-top:15px; border:1px solid #d1d1d1; padding:5px 10px; font-size:14px; background-color:#f7f7f7; color:#262626;}
+.modal-inner .mid .rule input[type="checkbox"] {height:auto; -webkit-appearance:checkbox; appearance:checkbox; background-color:#fff; border:1px solid #707070; border-radius:0;}
+.modal-inner .mid .input-area {margin-top:10px; border:1px solid #c5c5c5; padding:8px;}
+.modal-inner .mid .input-area > li {display:table; width:100%; text-align:left; font-size:14px; color:#262626; margin-top:4px;}
+.modal-inner .mid .input-area > li:first-child {margin-top:0;}
+.modal-inner .mid .input-area > li .left {display:table-cell; width:80px; vertical-align:middle;}
+.modal-inner .mid .input-area > li .right {display:table-cell; vertical-align:middle;}
+.modal-inner .mid .input-area > li .right .sel-box {position:relative;}
+.modal-inner .mid .input-area > li .right .sel-box:before {content:''; display:block; position:absolute; right:10px; top:50%; width:7px; height:7px; margin-top:-6px; border-left:2px solid #000; border-top:2px solid #000; transform:rotate(225deg);}
+.modal-inner .mid .input-area > li .right .sel-box select {-webkit-appearance:none; appearance:none; border:1px solid #b5b5b5; border-radius:0; background:#fff; height:30px; box-sizing:border-box; padding:5px; color:#262626;}
+.modal-inner .mid .input-area > li .right input[type="text"], .modal-inner .mid .input-area > li .right input[type="password"] {-webkit-appearance:none; appearance:none; border:1px solid #b5b5b5; background-color:#fff; border-radius:0; box-sizing:border-box; padding:5px; height:30px;}
+.modal-inner .mid .notice {margin-top:5px;}
+.modal-inner .mid .notice li {color:#e35d54; text-align:left; font-size:12px;}
+.modal-inner .mid .go-qna {margin-top:10px;}
+.modal-inner .mid .go-qna a {display:block; padding:10px; background-color:#FFF; font-size:12px; font-weight:bold; color:#fff; background-color:#575757; border-radius:3px;}
+.modal-inner .mid .go-qna a span {color:#fff701;}
+.modal-inner .mid .modal-btn {margin-top:15px;}
+.modal-inner .mid .modal-btn a {display:inline-block; margin:0 7px; width:110px; height:35px; line-height:35px; font-size:14px; font-weight:bold; box-sizing:border-box; vertical-align:middle; border-radius:3px;}
+.modal-inner .mid .modal-btn .comp {background-color:#f96a0a; color:#fff;}
+.modal-inner .mid .modal-btn .enter {background-color:#df5143; color:#fff;}
+.modal-inner .mid .modal-btn .no {background-color:#fffdfe; color:#413839; border:1px solid #d9d9d9; background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f4f4)); background-image: -webkit-linear-gradient(top, #fff, #f4f4f4); background-image: -moz-linear-gradient(top, #fff, #f4f4f4); background-image: -ms-linear-gradient(top, #fff, #f4f4f4); background-image: -o-linear-gradient(top, #fff, #f4f4f4); background-image: linear-gradient(to bottom, #fff, #f4f4f4);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fff, endColorstr=#f4f4f4);}
+.modal-inner .mid .refund a {display:block; font-size:16px; height:40px; line-height:40px; font-size:bold; box-sizing:border-box; border-radius:3px; margin-top:13px;}
+.modal-inner .mid .refund a:first-child {margin-top:0;}
+.modal-inner .mid .refund .refund01 {background-color:#f96a0a; color:#fff;}
+.modal-inner .mid .refund .refund02 {border:1px solid #f96a0a; color:#f96a0a;}
+.modal-inner .mid .bank-data {margin-top:10px;}
+.modal-inner .mid .bank-data table {width:100%; border-bottom:1px solid #c5c5c5;}
+.modal-inner .mid .bank-data table tr th {background-color:#f7f7f7; padding:5px 10px; color:#090909; border-top:1px solid #c5c5c5; font-weight:bold; font-size:12px;}
+.modal-inner .mid .bank-data table tr td {border-left:1px solid #c5c5c5; border-top:1px solid #c5c5c5; font-size:12px; padding:5px 10px; text-align:left;}
+.modal-inner .mid .bank-data table tr td input[type="text"], #membership .member_rsv_complete .modal_area .mid .bank_data tr td input[type="password"], #membership .member_rsv_complete .modal_area .mid .bank_data tr td select {box-sizing:border-box; height:30px; padding:5px;}
+.modal-inner .mid .cancel_wrap {margin-top:15px;}
+.modal-inner .mid .cancel_wrap .cancel_data {width:100%; margin-top:8px;}
+.modal-inner .mid .cancel_wrap .cancel_data:first-child {margin-top:0;}
+.modal-inner .mid .cancel_wrap .cancel_data tr th {border-top:1px solid #c5c5c5; background-color:#f5f5f5; color:#090909; font-size:11px; padding:5px; font-weight:bold; border-left:1px solid #c5c5c5;}
+.modal-inner .mid .cancel_wrap .cancel_data tr th:first-child {border-left:0;}
+.modal-inner .mid .cancel_wrap .cancel_data tr td {border-top:1px solid #c5c5c5; font-size:11px; padding:5px; text-align:center; border-left:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5;}
+.modal-inner .mid .cancel_wrap .cancel_data tr td:first-child {border-left:0;}
