@@ -141,3 +141,7 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 
 /* 지역검색 텍스트크기 수정 170630 이현우 */
 #localList4 .localSmall li {font-size:17px;}
+
+/* 상품상세 최저가배너 추가 170703 */
+#headTitle .m_price_all_banner_fxd {width:100%; height:50px;}
+#detail_tab {margin-top:50px;}
