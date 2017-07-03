@@ -71,7 +71,7 @@
 .culture_wrap .culture_cont table tbody tr th {padding:10px 0; color:#282828; font-weight:bold; font-size:14px; text-align:left; vertical-align:top;}
 .culture_wrap .culture_cont table tbody tr td {padding:5px 0; color:#282828; vertical-align:top;}
 .culture_wrap .culture_cont table tbody tr th label {display:block;}
-.culture_wrap .culture_cont table tbody tr td input[type="text"], 
+.culture_wrap .culture_cont table tbody tr td input[type="text"],
 .culture_wrap .culture_cont table tbody tr td input[type="password"] {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; font-size:14px; box-sizing:border-box; border-radius: 0;}
 input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; font-size:14px; box-sizing:border-box; border-radius: 0;}
 .culture_wrap .culture_cont table tbody tr td .select_wrap {position:relative;}
@@ -114,7 +114,7 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 #searchMore .room1 p {width: 80%; margin: 0 auto; position: relative; text-align: left;}
 #searchMore .right0, #searchMore .right1 {float: left; text-align: center;}
 #searchMore .room1 p,
-#searchMore .right0 .select01, 
+#searchMore .right0 .select01,
 #searchMore .right1 .select01 {font-size: 11.5px; background: transparent url("http://img.go.co.kr/mobile/i_down_arrow.png") right 13px no-repeat; background-size: 10px 6px;}
 #searchMore .right0 .select01, #searchMore .right1 .select01 {position: relative; left: -3px; width: 86%; margin-right: 0px; color: #fff; height: 30px;}
 
@@ -138,3 +138,6 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 @media (max-device-width: 320px) {
 	.itm-price.ref {font-size: 12px;}
 }
+
+/* 지역검색 텍스트크기 수정 170630 이현우 */
+#localList4 .localSmall li {font-size:17px;}
