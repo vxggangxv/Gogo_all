@@ -37,7 +37,7 @@
 #info_img .l_price .img_l_price {position:absolute; right:10px; top:10px; width:40px;}
 
 /* 푸터 리뉴얼 170530 이현우 */
-#Footer {}
+#Footer {line-height: 1.5;}
 #Footer .f-menu {overflow:hidden; border-top:1px solid #b9b9b9; border-bottom:1px solid #b9b9b9; background-color:#fff;}
 #Footer .f-menu > li {float:left; position:relative; width:25%;}
 #Footer .f-menu > li:before {content:''; display:block; position:absolute; left:0; top:50%; width:1px; height:14px; margin-top:-7px; background-color:#b0b0b0;}
