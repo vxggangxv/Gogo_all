@@ -1,0 +1,97 @@
+@charset "UTF-8";
+body { font-family: "Nanum Gothic", sans-serif; color: #333; letter-spacing: -0.7px; }
+
+body * { box-sizing: border-box; }
+
+a { color: #333; }
+
+/*공통요소*/
+strong, .fwe-600 { font-weight: 600; }
+
+.c-orange { color: #ff742e; }
+
+.clearfix::before, .clearfix::after { content: ""; display: table; }
+
+.clearfix::after { clear: both; }
+
+/*해더영역*/
+.header .h-top { height: 43px; }
+
+.header .h-top h2 { text-align: center; }
+
+.header .h-top h2 img { position: relative; top: 8px; display: inline-block; width: 98px; }
+
+.header .h-top .i-my-a { position: absolute; top: 14px; right: 12px; width: 16px; height: 19px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat 0 0; background-size: 150px; }
+
+.header .gnb { position: relative; height: 34px; }
+
+.header .gnb ul { display: table; width: 100%; height: 34px; vertical-align: middle; }
+
+.header .gnb ul li { position: relative; display: table-cell; text-align: center; }
+
+.header .gnb ul li a { display: block; background: #ff742e; color: #fff; font-size: 14px; font-weight: 600; width: 100%; height: 100%; line-height: 34px; }
+
+.header .gnb ul li.on a { background: #f0580c; }
+
+.header .gnb ul li.nth-1 { width: 19%; }
+
+.header .gnb ul li.nth-2 { width: 33%; }
+
+.header .gnb ul li.nth-3 { width: 24%; }
+
+.header .gnb ul li.nth-4 { width: 24%; }
+
+/*푸터영역*/
+#Footer { line-height: 1.5; }
+
+#Footer .f-menu { overflow: hidden; border-top: 1px solid #b9b9b9; border-bottom: 1px solid #b9b9b9; background-color: #fff; }
+
+#Footer .f-menu > li { float: left; position: relative; width: 25%; }
+
+#Footer .f-menu > li:before { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 1px; height: 14px; margin-top: -7px; background-color: #b0b0b0; }
+
+#Footer .f-menu > li > a { display: block; padding: 10px 0; color: #373737; font-weight: bold; font-size: 14px; text-align: center; }
+
+#Footer .f-menu > li > a.move_top span { color: #ff6600; }
+
+#Footer .f-menu > li:first-child:before { display: none; }
+
+#Footer .f-area { padding: 0 15px 70px; background-color: #323232; }
+
+#Footer .f-area .policy { overflow: hidden; border-bottom: 1px solid #515151; }
+
+#Footer .f-area .policy > li { float: left; position: relative; margin-left: 15px; padding-left: 15px; }
+
+#Footer .f-area .policy > li:first-child { margin-left: 0; padding-left: 0; }
+
+#Footer .f-area .policy > li:first-child:before { display: none; }
+
+#Footer .f-area .policy > li:before { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 1px; height: 14px; margin-top: -7px; background-color: #858585; }
+
+#Footer .f-area .policy > li > a { display: inline-block; padding: 10px 0; color: #a3a3a3; font-size: 14px; }
+
+#Footer .f-area .policy > li.privacy > a { color: #fff; font-weight: bold; }
+
+#Footer .f-area .customer { overflow: hidden; padding-top: 10px; }
+
+#Footer .f-area .customer > li { float: left; position: relative; margin-left: 10px; padding-left: 10px; }
+
+#Footer .f-area .customer > li:first-child { margin-left: 0; padding-left: 0; }
+
+#Footer .f-area .customer > li:first-child:before { display: none; }
+
+#Footer .f-area .customer > li:before { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 1px; height: 14px; margin-top: -5px; background-color: #858585; }
+
+#Footer .f-area .customer > li > a { display: inline-block; position: relative; padding-left: 18px; color: #a3a3a3; font-size: 12px; }
+
+#Footer .f-area .customer > li > a.call:before { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 14px; height: 14px; margin-top: -6px; background: url(http://img.go.co.kr/mobile/f_call.gif) no-repeat 0 0; background-size: 100% 100%; }
+
+#Footer .f-area .customer > li > a.mail:before { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 14px; height: 14px; margin-top: -6px; background: url(http://img.go.co.kr/mobile/f_mail.gif) no-repeat 0 0; background-size: 100% 100%; }
+
+#Footer .f-area address p { margin-top: 10px; color: #a3a3a3; font-size: 12px; }
+
+#Footer .f-area address p strong { color: #cdcdcd; font-size: 14px; }
+
+#Footer .f-area address .copy { margin-top: 15px; color: #7f7f7f; }
+
+/*# sourceMappingURL=common.css.map */

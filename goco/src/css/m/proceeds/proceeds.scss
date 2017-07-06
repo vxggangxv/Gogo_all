@@ -1,0 +1,293 @@
+@charset "utf-8";
+@import "parts/mixins";
+
+/*컨테이너*/
+%border-tb {border: 1px solid #dfdfdf; border-right: 0; border-left: 0;}
+
+.container {
+	position: relative;
+	padding: 6px 0 10px 0;
+	background: #ededed;
+	
+	.codeMoney-sec {
+		/*코드 및 수익금*/
+		.code-money {
+			@extend %border-tb;
+			background: #fff;
+			> li {
+				float: left;
+				width: 50%;
+				padding: 4px 0 7px;
+				&.nth-2 {
+					border-left: 1px solid #d9d9d9;
+				}
+				p {
+					position: relative;
+					padding: 6px 5px 0px 33px;
+					font-size: 13px;
+					line-height: 15px;
+					@media (max-width:320px){
+						font-size: 12px;
+					}
+					.icon {
+						@include position-tl(relative, 4px);
+						display: inline-block;
+						background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat;
+						background-size: 200px;
+					}
+					.i-user {
+						@include position-tl(absolute, 6px, 16px);
+						@include size(16px, 16px);
+						background-position: -25px 0;
+					}
+					.i-coin {
+						@include position-tl(absolute, 6px, 11px);
+						@include size(22px, 17px);
+						background-position: -51px 0;
+					}
+					.btn-a {
+						display: inline-block;
+						font-size: 12px;
+						color: #fff;
+						background: #a4a4a4;
+						padding: 3px 6px;
+						height: 19px;
+						border-radius: 19px;
+						@media (max-width:320px){
+							font-size: 11px;
+						}
+					}
+				}
+				.type-2 {
+					padding-left: 34px;
+					line-height: 13px;
+				}
+				&.nth-2 p.type-2 {
+					padding-left: 14px;
+				}
+			}
+		}
+	}
+	.main-sec {
+		/*메인이미지*/
+		.main-img {
+			display: block;
+			@extend %border-tb;
+			margin: 6px 0 6px 0;
+			img {display: block;}
+		}
+	}
+	.rank-sec {
+		/*랭킹차트*/
+		position: relative;
+		margin: 10px 10px 14px;
+		background: #fff;
+		@include bor-1();
+		
+		.top-bg, .bottom-bg {
+			position: relative;
+			height: 50px;
+			> span {
+				display: block;
+				@include position-tl(absolute, 0);
+				&.left, &.right {
+					display: inline-block;
+					@include size(44px, 50px);
+					background: url(http://img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat;
+				}
+				&.left {
+					left: 0;
+				}
+				&.right {
+					right: 0;
+				}
+				&.center {
+					width: 100%; height: 1px;
+					@include bor-1(1px, #eaddb3, solid);
+				}
+			}
+		}
+		.top-bg > span {
+			&.right {
+				background-position: -44px 0;
+			}
+			&.center {
+				top: 14px;
+			}
+		}
+		.bottom-bg > span {
+			&.left {
+				background-position: 0px -50px;
+			}
+			&.right {
+				background-position: -44px -50px;
+			}
+			&.center {
+				top: 34px;
+			}
+		}
+		
+		.friend-outer {
+			
+		}
+		
+		%extend_1 {
+			position: relative;
+			width: 29px;
+			height: auto;
+			left: -5px;
+		}
+		//@extend-elements
+		//original selectors
+		//.contents01 .fr-low.nth-1 .fr-cell.nth-1 img, #container .contents01 .fr-low.nth-2 .fr-cell.nth-1 img, .contents01 .fr-low.nth-3 .fr-cell.nth-1 img
+		.friend-rankbox {
+			position: relative;
+			border: solid #cecece 1px;
+			> h3 {
+				
+			}
+			.fr-rankbox {
+				&.no0 {
+					width: 378px;
+					height: 34px;
+					font-size: 16px;
+					font-family: Nanum Gothic, sans-serif;
+					font-weight: bold;
+					color: #5c5c5c;
+				}
+				&.no1 {
+					border-right: solid #cecece 1px;
+					width: 124px;
+					height: 34px;
+					text-align: center;
+					line-height: 2.4em;
+				}
+				&.no2 {
+					border-right: solid #cecece 1px;
+					width: 124px;
+					text-align: center;
+					line-height: 2.4em;
+					margin-left: 126px;
+				}
+				&.no3 {
+					border-right: solid #cecece 1px;
+					width: 124px;
+					text-align: center;
+					line-height: 2.4em;
+					margin-left: 251px;
+				}
+			}
+			li {
+				a {
+					font-size: 16px;
+					font-family: Nanum Gothic, sans-serif;
+					font-weight: bold;
+					color: #5c5c5c;
+					display: block;
+					width: 124px;
+					height: 35px;
+				}
+				&.fr-rankbox.on {
+					background: #ffd954;
+				}
+			}
+		}
+		.friend-rank {
+			position: relative;
+			width: 378px;
+			height: 300px;
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		.fr-low {
+			position: relative;
+			border-bottom: 1px solid #dfd1b6;
+			background: #fff;
+			&:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			&.nth-1 {
+				z-index: 3;
+				background: #feefd2;
+			}
+			&.nth-2 {
+				z-index: 2;
+			}
+			&.nth-3 {
+				z-index: 0;
+			}
+		}
+		.fr-cell {
+			position: relative;
+			float: left;
+			height: 30px;
+			font-weight: 600;
+			letter-spacing: -1px;
+			line-height: 2.1em;
+			color: #343434;
+			&.nth-1 {
+				width: 58px;
+				text-align: center;
+				color: #fff;
+				background: url(http://img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat 0 7px;
+				font-size: 14px;
+				line-height: 2.4em;
+				text-indent: -12px;
+			}
+			&.nth-2 {
+				width: 224px;
+			}
+			&.nth-3 {
+				width: 1px;
+				background-color: #b4b4b4;
+				font-weight: 400;
+				top: 10px;
+				height: 15px;
+			}
+			&.nth-4 {
+				width: 90px;
+				text-align: right;
+				padding-right: 5px;
+			}
+		}
+		.contents01 .fr-low {
+			&.nth-2 .fr-cell.nth-1 {
+				overflow: hidden;
+				img {
+					width: 28px;
+					top: -1px;
+				}
+			}
+			&.nth-1 .fr-cell.nth-1 {
+				background: none;
+				img {
+					@extend %extend_1;
+					width: 31px;
+					top: -8px;
+				}
+			}
+			&.nth-3 .fr-cell.nth-1 {
+				background: none;
+				img {
+					@extend %extend_1;
+					width: 27px;
+					top: -2px;
+				}
+			}
+		}
+		.contents01 .fr-low {
+			&.nth-3 .fr-cell.nth-1 {
+				overflow: hidden;
+			}
+			&.nth-2 .fr-cell.nth-1 {
+				background: none;
+				img {
+					@extend %extend_1;
+				}
+			}
+		}
+	}
+}
+

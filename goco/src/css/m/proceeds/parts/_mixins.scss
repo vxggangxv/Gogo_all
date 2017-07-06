@@ -1,0 +1,21 @@
+//믹스인
+@mixin position-tl($type: relative, $t: null, $l: null){
+	position: $type;
+	top: $t;
+	left: $l;
+}
+@mixin position-tr($type: relative, $t: null, $r: null){
+	position: $type;
+	top: $t;
+	right: $r;
+}
+@mixin size($w: null, $h: null){
+	width: $w;
+	height: $h;
+}
+@mixin bor-1($w: 1px, $c: #dcdcdc, $s: solid){
+	border: $w $c $s;
+}
+@mixin bs($bs: border-box){
+	box-sizing: $bs;
+}

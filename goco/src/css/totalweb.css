@@ -502,12 +502,33 @@ z-index: 12;}
 
 .pdtSlt-sec .part-2 ul.slt-drop {display: none; background: #f2f2f2; margin-top: 7px; margin-bottom: -7px;}
 .pdtSlt-sec .part-2 ul.slt-drop.on {display: block;}
-.pdtSlt-sec .part-2 ul.slt-drop > li {padding: 0px 15px 15px 35px;}
+.pdtSlt-sec .part-2 ul.slt-drop > li {padding: 0px 15px 15px 15px;}
+.pdtSlt-sec .part-2 ul.slt-drop > li.p0 {padding: 0;}
 .pdtSlt-sec .part-2 ul.slt-drop > li:first-child {padding-top: 15px;}
 .pdtSlt-sec .part-2 ul.slt-drop > li .lbl {width: auto;}
 .pdtSlt-sec .part-2 ul.slt-drop > li s, .pdtSlt-sec .part-2 ul.slt-drop > li .c-red {float: right;}
 .pdtSlt-sec .part-2 ul.slt-drop > li s {font-size: 12px; color: #313131; margin-right: 5px;}
 .pdtSlt-sec .part-2 ul.slt-drop > li .c-red {font-size: 15px; color: #ff4445; font-weight: 600;}
+
+/*170705_더보기 추가*/
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 {position: relative; background: #fff; border: 1px solid #bdbdbd; margin-top: 10px; padding: 8px 0 0;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p {padding: 0 6px; font-size: 13px; letter-spacing: -1px; margin-top: 2px; color: #000;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p:first-child {margin-top: 0;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p {position: relative; margin-top: 8px; border-top: 1px solid #bdbdbd; text-align: center; padding: 0;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p > a {display: block; padding: 5px 0;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p .i-plus-btn {display: inline-block; position: relative; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #3a4351;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p .i-plus-btn:before, .pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p .i-plus-btn:after {content: ""; display: block; position: absolute; top: 0; left: 0; background: #fff;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p .i-plus-btn:before {width: 5px; height: 1px; left: 4px; top: 5.5px;}
+.pdtSlt-sec .part-2 ul.slt-drop .box-type-0 > p.btn-p .i-plus-btn:after {width: 1px; height: 5px; left: 5.5px; top: 4px;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer {position: fixed; left: 50%; margin-left: -240px; top: 35%;  width: 490px;  border: 1px solid #000; background: #fff; z-index: 10;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer > h3 {color: #fff; font-size: 18px; background: #ec5700; height: 45px; padding-top: 14px; box-sizing: border-box; text-indent: 14px;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer > h3 .close-a {position: absolute; right: 10px; top: 10px;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer > h3 img {width: 25px;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer > .txt-box {position: relative; padding: 12px 0; max-height: 320px; overflow-y: auto;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer .p-txt {position: relative; font-size: 16px; padding: 0px 15px 0px 25px; margin-top: 5px; line-height: 26px;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer .p-txt:first-child {margin-top: 0;}
+.pdtSlt-sec .part-2 ul.slt-drop .bt0-layer .p-txt .dot {position: absolute; left: 15px;}
+
 
 .pdtSlt-sec .part-3 {padding-bottom: 4px;}
 .pdtSlt-sec .part-3 > h2 {background: #bf2d00;}
@@ -572,7 +593,7 @@ z-index: 12;}
 #rsv_wrapper #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.go.co.kr/discount_bg.png) no-repeat}
 #rsv_wrapper #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
 #rsv_wrapper #discount_pop .text span {color:#ec5700; font-weight:600}
-#rsv_wrapper {position:relative; text-align:left; z-index: 9;}
+#rsv_wrapper {position:relative; text-align:left;}
 #rsv_wrapper span.big {font-size:22px;font-weight:600;letter-spacing:-1.5px;color:#3a3a3a}
 #rsv_wrapper span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
 
@@ -643,7 +664,7 @@ z-index: 12;}
 .sltCheck-sec .pc-outer .part-common {display:inline-block; float:none; text-align:left;} */
 
 /* 상품상세 최저가배너, 최저가안내 레이어팝업 추가 */
-#main5 .banner_price_all {float:left; margin:-15px 0 15px -21px;}
+#main5 .banner_price_all {float:left; margin:-15px 0 15px -20px;}
 .price_all_layer_pop {position:fixed; left:0; top:0; width:100%; height:100%; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0; text-align:center; z-index:9999;}
 .price_all_layer_pop:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
 .price_all_layer_pop .price_all_layer_area {display:inline-block; margin-left:-4px; vertical-align:middle; background-color:#fff; color:#282828;}
@@ -660,3 +681,14 @@ z-index: 12;}
 .price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li:first-child {margin-top:0;}
 .price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li > ul {padding-left:10px;}
 .price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li > ul .sign {background-color:#ffdd00;}
+/* 고코상세페이지 글 크기 및 색상 조절_170705_혜준 */
+.info_box, #contents .detail_goods {color: #202020; /* color: #434343; */ line-height: 28px; font-size: 16px;}
+.info_box .info_tit, .info_box .info_tit1_2, #contents .info_tit2, #detail_noticeBox2 .box h3 {/* color: red; */ font-size: 18px; font-weight: 600;}
+.info_box .info_tit1_2, #contents .info_tit2 {margin-bottom: -15px;}
+.info_box .info_txt, .info_box .info_none {margin-top: 10px;}
+.info_box .info_none {margin-bottom: 0; padding-bottom: 50px; box-sizing: border-box;}
+#main5 .goods_info {font-size: 15px;}
+#main5 .goods_info .tit2 {color: #434343;}
+#main5 .goods_info .contents {color: #000000;}
+#main5 .goods_info .add-txt {font-size: 15px; position: relative; margin-left: 10px; color: #444444;}
+#detail_noticeBox2 .box .p-1 {padding: 0 40px;}

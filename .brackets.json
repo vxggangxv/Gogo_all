@@ -1,0 +1,31 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "*.sass": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "",
+                "includePaths": [],
+                "sourceComments": false,
+                "outputStyle": "compact"
+            },
+            "linting.collapsed": false
+        },
+        "*.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "",
+                "includePaths": [],
+                "sourceComments": false,
+                "outputStyle": "compact"
+            },
+            "linting.collapsed": true,
+            "fonts.fontFamily": "'NanumGothicCoding'"
+        }
+    },
+    "brackets-indent-guides.enabled": true,
+    "linting.collapsed": true,
+    "fonts.fontFamily": "'NanumGothicCoding'",
+    "tabSize": 4
+}

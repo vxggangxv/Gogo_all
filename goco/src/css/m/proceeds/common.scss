@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import "parts/mixins";
+
+body {
+	font-family: "Nanum Gothic", sans-serif; color: #333; letter-spacing: -0.7px;
+	* {
+		box-sizing: border-box;
+	}
+}
+
+a {color: #333;}
+
+
+/*공통요소*/
+strong, .fwe-600 {font-weight: 600;}
+.c-orange {color: #ff742e;}
+.clearfix {
+	&::before, &::after {
+		content: ""; display: table;	
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+/*해더영역*/
+.header {
+	.h-top {
+		height: 43px;
+		h2 {
+			text-align: center;
+			img {
+				position: relative;
+				top: 8px;
+				display: inline-block;
+				width: 98px;
+			}
+		}
+		.i-my-a {
+			@include position-tr(absolute, 14px, 12px)
+			width: 16px;
+			height: 19px;
+			display: inline-block;
+			background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat 0 0;
+			background-size: 150px;
+		}
+	}
+	
+	.gnb {
+		position: relative;
+		height: 34px;
+		ul {
+			display: table; width: 100%; height: 34px; vertical-align: middle;
+			li {
+				position: relative; display: table-cell; text-align: center;
+				a {
+					display: block;
+					background: #ff742e;
+					color: #fff;
+					font-size: 14px;
+					font-weight: 600;
+					width: 100%;
+					height: 100%;
+					line-height: 34px;
+				}
+				&.on a {
+					background: #f0580c;
+				}
+				&.nth-1 {width: 19%;}
+				&.nth-2 {width: 33%;}
+				&.nth-3 {width: 24%;}
+				&.nth-4 {width: 24%;}
+			}
+		}
+	}
+}
+
+//colors
+$color_pink_swan_approx: #b9b9b9;
+$white: #fff;
+$color_silver_chalice_approx: #b0b0b0;
+$color_tuatara_approx: #373737;
+$blaze_orange: #ff6600;
+$mine_shaft: #323232;
+$color_fuscous_gray_approx: #515151;
+$color_gunsmoke_approx: #858585;
+$color_delta_approx: #a3a3a3;
+$color_celeste_approx: #cdcdcd;
+$color_gray_approx: #7f7f7f;
+
+//urls
+$url_0: url(http://img.go.co.kr/mobile/f_call.gif);
+$url_1: url(http://img.go.co.kr/mobile/f_mail.gif);
+
+/*푸터영역*/
+
+#Footer {
+	line-height: 1.5;
+	.f-menu {
+		overflow: hidden;
+		border-top: 1px solid $color_pink_swan_approx;
+		border-bottom: 1px solid $color_pink_swan_approx;
+		background-color: $white;
+		> li {
+			float: left;
+			position: relative;
+			width: 25%;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 1px;
+				height: 14px;
+				margin-top: -7px;
+				background-color: $color_silver_chalice_approx;
+			}
+			> a {
+				display: block;
+				padding: 10px 0;
+				color: $color_tuatara_approx;
+				font-weight: bold;
+				font-size: 14px;
+				text-align: center;
+				&.move_top span {
+					color: $blaze_orange;
+				}
+			}
+			&:first-child:before {
+				display: none;
+			}
+		}
+	}
+	.f-area {
+		padding: 0 15px 70px;
+		background-color: $mine_shaft;
+		.policy {
+			overflow: hidden;
+			border-bottom: 1px solid $color_fuscous_gray_approx;
+			> li {
+				float: left;
+				position: relative;
+				margin-left: 15px;
+				padding-left: 15px;
+				&:first-child {
+					margin-left: 0;
+					padding-left: 0;
+					&:before {
+						display: none;
+					}
+				}
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 1px;
+					height: 14px;
+					margin-top: -7px;
+					background-color: $color_gunsmoke_approx;
+				}
+				> a {
+					display: inline-block;
+					padding: 10px 0;
+					color: $color_delta_approx;
+					font-size: 14px;
+				}
+				&.privacy > a {
+					color: $white;
+					font-weight: bold;
+				}
+			}
+		}
+		.customer {
+			overflow: hidden;
+			padding-top: 10px;
+			> li {
+				float: left;
+				position: relative;
+				margin-left: 10px;
+				padding-left: 10px;
+				&:first-child {
+					margin-left: 0;
+					padding-left: 0;
+					&:before {
+						display: none;
+					}
+				}
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 1px;
+					height: 14px;
+					margin-top: -5px;
+					background-color: $color_gunsmoke_approx;
+				}
+				> a {
+					display: inline-block;
+					position: relative;
+					padding-left: 18px;
+					color: $color_delta_approx;
+					font-size: 12px;
+					&.call:before {
+						content: '';
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						width: 14px;
+						height: 14px;
+						margin-top: -6px;
+						background: $url_0 no-repeat 0 0;
+						background-size: 100% 100%;
+					}
+					&.mail:before {
+						content: '';
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						width: 14px;
+						height: 14px;
+						margin-top: -6px;
+						background: $url_1 no-repeat 0 0;
+						background-size: 100% 100%;
+					}
+				}
+			}
+		}
+		address {
+			p {
+				margin-top: 10px;
+				color: $color_delta_approx;
+				font-size: 12px;
+				strong {
+					color: $color_celeste_approx;
+					font-size: 14px;
+				}
+			}
+			.copy {
+				margin-top: 15px;
+				color: $color_gray_approx;
+			}
+		}
+	}
+}

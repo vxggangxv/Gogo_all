@@ -793,7 +793,7 @@ background:url(http://img.gobs.co.kr/checkbox_img.gif) no-repeat 0 0;background-
 
 /*결제페이지-무이자할부혜택*/
 #reserLeft {float:left; width:324px}
-#cardFree {float:left; margin-top:30px; width:324px; font-family:'돋움', Dotum, sans-serif; font-size:12px; color:#4b4b4c}
+#cardFree {float:left; margin-top:30px; width:324px; font-family:'돋움', Dotum, sans-serif; font-size:12px; color:#4b4b4c; text-align: left;}
 #cardFree h3 {letter-spacing:-0.8px}
 #cardFree table {float:left; margin:5px 0 10px 0; width:100%; background:#fff; color:#656565; border:1px solid #d0d0d0}
 #cardFree table td {border-bottom:1px solid #d0d0d0; text-align:center}
@@ -1330,7 +1330,7 @@ table.ReservationCalendar{ border-left:1px solid #c6c6c6; border-top:1px solid #
 #rsv_wrapper #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.go.co.kr/discount_bg.png) no-repeat}
 #rsv_wrapper #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
 #rsv_wrapper #discount_pop .text span {color:#ec5700; font-weight:600}
-#rsv_wrapper {position:relative; text-align:left; z-index: 10;}
+#rsv_wrapper {position:relative; text-align:left;}
 #rsv_wrapper span.big {font-size:22px;font-weight:600;letter-spacing:-1.5px;color:#3a3a3a}
 #rsv_wrapper span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
 
