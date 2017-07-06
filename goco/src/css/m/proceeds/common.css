@@ -21,7 +21,7 @@ strong, .fwe-600 { font-weight: 600; }
 
 .header .h-top h2 img { position: relative; top: 8px; display: inline-block; width: 98px; }
 
-.header .h-top .i-my-a { position: absolute; top: 14px; right: 12px; width: 16px; height: 19px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat 0 0; background-size: 150px; }
+.header .h-top .i-my-a { position: absolute; top: 12px; right: 10px; width: 20px; height: 23px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat 0 0; background-size: 170px; }
 
 .header .gnb { position: relative; height: 34px; }
 

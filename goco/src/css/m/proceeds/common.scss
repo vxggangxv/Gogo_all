@@ -37,12 +37,12 @@ strong, .fwe-600 {font-weight: 600;}
 			}
 		}
 		.i-my-a {
-			@include position-tr(absolute, 14px, 12px)
-			width: 16px;
-			height: 19px;
+			@include position-tr(absolute, 12px, 10px)
+			width: 20px;
+			height: 23px;
 			display: inline-block;
 			background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat 0 0;
-			background-size: 150px;
+			background-size: 170px;
 		}
 	}
 	
