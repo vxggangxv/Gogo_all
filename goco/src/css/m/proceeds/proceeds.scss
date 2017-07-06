@@ -1,8 +1,9 @@
 @charset "utf-8";
 @import "parts/mixins";
+@import "parts/variables";
 
 /*컨테이너*/
-%border-tb {border: 1px solid #dfdfdf; border-right: 0; border-left: 0;}
+%border-tb {border: 1px solid $borCr; border-right: 0; border-left: 0;}
 
 .container {
 	position: relative;
@@ -80,7 +81,7 @@
 /*랭킹차트*/
 .rank-sec {
 	position: relative;
-	margin: 7px 9px 14px;
+	margin: $mt-2 9px ($mt-2 * 2);
 	padding: 50px 0;
 	background: #fff;
 	@include border();
@@ -272,6 +273,7 @@
 .step-sec {
 	background: #fff;
 	padding: 0 12px;
+	border-top: 1px solid $borCr;
 	h3 {
 		position: relative;
 		font-size: 14px;
@@ -280,6 +282,11 @@
 		padding-top: 15px;
 	}
 	.step-img {padding: 15px 0 20px;}
+}
+/*수익금 상세 현황*/
+.status-sec {
+	margin: $mt-2 0 0;
+	border-top: 1px solid $borCr;
 }
 
 

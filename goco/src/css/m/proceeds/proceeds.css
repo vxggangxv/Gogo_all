@@ -106,10 +106,13 @@
 .rank-sec .fr-low .fr-cell.nth-4 { float: right; width: 100px; text-align: right; right: 10px; }
 
 /*적립금 지급 안내*/
-.step-sec { background: #fff; padding: 0 12px; }
+.step-sec { background: #fff; padding: 0 12px; border-top: 1px solid #dfdfdf; }
 
 .step-sec h3 { position: relative; font-size: 14px; font-weight: 600; color: #2f2f2f; padding-top: 15px; }
 
 .step-sec .step-img { padding: 15px 0 20px; }
+
+/*수익금 상세 현황*/
+.status-sec { margin: 7px 0 0; border-top: 1px solid #dfdfdf; }
 
 /*# sourceMappingURL=proceeds.css.map */
