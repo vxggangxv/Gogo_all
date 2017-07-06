@@ -5,6 +5,7 @@ $(function() {
     $(this).closest("ul").find("li").eq(idx).addClass("on").siblings().removeClass("on");
   });
   //공지사항 리스트 페이지번호
+  /*
   $("#pagenation a").on("click", function() {
     var idx = $(this).index();
     var lastIdx = $(this).closest("div").find("a").length;
@@ -14,5 +15,5 @@ $(function() {
       $(this).addClass("on").siblings().removeClass("on");
     }
     event.preventDefault();
-  });
+  });*/
 });

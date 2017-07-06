@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="../../../src/css/m/proceeds/proceeds.css">
 
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="http://static.go.co.kr/js/proceeds/proceeds.js"></script>
+	<script src="../../../src/js/m/proceeds/proceeds.js"></script>
+	<!--<script src="http://static.go.co.kr/js/proceeds/proceeds.js"></script>-->
 
 
 </head>
@@ -65,13 +66,18 @@
 					<span class="left"></span>
 					<span class="right"></span>
 				</div>
+				<div class="bottom-bg">
+					<span class="center"></span>
+					<span class="left"></span>
+					<span class="right"></span>
+				</div>
 				<div class="friend-outer">
-					<div class="friend-rankbox">
+					<div class="friend-rankbox clearfix">
 						<h3>추천인 TOP 랭킹</h3>
-						<ul class="fr-rankbox no0">
-							<li class="fr-rankbox no1 on"><a href="">전체</a></li>
-							<li class="fr-rankbox no2"><a href="">주간</a></li>
-							<li class="fr-rankbox no3"><a href="">월간</a></li>
+						<ul class="fr-rankbox" id="fr-rankbox">
+							<li class="no1 on"><a href="">전체</a></li>
+							<li class="no2"><a href="">월간</a></li>
+							<li class="no3"><a href="">주간</a></li>
 						</ul>
 					</div>
 					<div class="friend-rank">
@@ -79,72 +85,69 @@
 							<li class="fr-cell nth-1"><img src="http://img.go.co.kr/landing//20170320//ranking/1gold.png" alt="1등금메달"></li>
 							<li class="fr-cell nth-2">neoa***@naver.com</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,685,000</li>
+							<li class="fr-cell nth-4">1,685,000원</li>
 						</ul>
 						<ul class="fr-low nth-2">
 							<li class="fr-cell nth-1"><img src="http://img.go.co.kr/landing//20170320//ranking/2silver.png" alt="2등은메달"></li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,285,000</li>
+							<li class="fr-cell nth-4">1,285,000원</li>
 						</ul>
 						<ul class="fr-low nth-3">
 							<li class="fr-cell nth-1"><img src="http://img.go.co.kr/landing//20170320//ranking/3bronze.png" alt="3등동메달"></li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,185,000</li>
+							<li class="fr-cell nth-4">1,185,000원</li>
 						</ul>
 						<ul class="fr-low nth-4">
 							<li class="fr-cell nth-1">4위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,000,000원</li>
 						</ul>
 						<ul class="fr-low nth-5">
 							<li class="fr-cell nth-1">5위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,000,000원</li>
 						</ul>
 						<ul class="fr-low nth-6">
 							<li class="fr-cell nth-1">6위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,000,000원</li>
 						</ul>
 						<ul class="fr-low nth-7">
 							<li class="fr-cell nth-1">7위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,000,000원</li>
 						</ul>
 						<ul class="fr-low nth-8">
 							<li class="fr-cell nth-1">8위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,000,000원</li>
 						</ul>
 						<ul class="fr-low nth-9">
 							<li class="fr-cell nth-1">9위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,000,000원</li>
 						</ul>
 						<ul class="fr-low nth-10">
 							<li class="fr-cell nth-1">10위</li>
 							<li class="fr-cell nth-2">neoa***</li>
 							<li class="fr-cell nth-3"></li>
-							<li class="fr-cell nth-4">1,000,000</li>
+							<li class="fr-cell nth-4">1,001,000,000원</li>
 						</ul>
 					</div>
 				</div>
-				<div class="bottom-bg">
-					<span class="center"></span>
-					<span class="left"></span>
-					<span class="right"></span>
-				</div>
+				
 			</section>
 			<section class="step-sec">
-				<figure><img src="http://img.go.co.kr/proceeds/step.jpg" alt="적립금지급안내"></figure>
+				<h3>고코투어 적립금 지급 안내</h3>
+				<figure class="step-img"><img src="http://img.go.co.kr/proceeds/m/step.jpg" alt="적립금지급안내"></figure>
 			</section>
 		</div>
 

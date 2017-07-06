@@ -1,3 +1,4 @@
+@charset "utf-8";
 //믹스인
 @mixin position-tl($type: relative, $t: null, $l: null){
 	position: $type;
@@ -13,8 +14,12 @@
 	width: $w;
 	height: $h;
 }
-@mixin bor-1($w: 1px, $c: #dcdcdc, $s: solid){
+@mixin border($w: 1px, $c: #dcdcdc, $s: solid){
 	border: $w $c $s;
+}
+@mixin bor-lr($w: 1px, $c: #dcdcdc, $s: solid){
+	border-left: $w $c $s;
+	border-right: $w $c $s;
 }
 @mixin bs($bs: border-box){
 	box-sizing: $bs;

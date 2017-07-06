@@ -1,117 +1,115 @@
 @charset "UTF-8";
 /*컨테이너*/
-.container .codeMoney-sec .code-money, .container .main-sec .main-img { border: 1px solid #dfdfdf; border-right: 0; border-left: 0; }
+.codeMoney-sec .code-money, .main-sec .main-img { border: 1px solid #dfdfdf; border-right: 0; border-left: 0; }
 
-.container { position: relative; padding: 6px 0 10px 0; background: #ededed; }
+.container { position: relative; padding: 6px 0 0px 0; background: #ededed; }
 
-.container .codeMoney-sec { /*코드 및 수익금*/ }
+/*코드 및 수익금*/
+.codeMoney-sec .code-money { background: #fff; }
 
-.container .codeMoney-sec .code-money { background: #fff; }
+.codeMoney-sec .code-money > li { float: left; width: 50%; padding: 4px 0 7px; }
 
-.container .codeMoney-sec .code-money > li { float: left; width: 50%; padding: 4px 0 7px; }
+.codeMoney-sec .code-money > li.nth-2 { border-left: 1px solid #d9d9d9; }
 
-.container .codeMoney-sec .code-money > li.nth-2 { border-left: 1px solid #d9d9d9; }
+.codeMoney-sec .code-money > li p { position: relative; padding: 6px 5px 0px 33px; font-size: 13px; line-height: 15px; }
 
-.container .codeMoney-sec .code-money > li p { position: relative; padding: 6px 5px 0px 33px; font-size: 13px; line-height: 15px; }
+@media (max-width: 320px) { .codeMoney-sec .code-money > li p { font-size: 12px; } }
 
-@media (max-width: 320px) { .container .codeMoney-sec .code-money > li p { font-size: 12px; } }
+.codeMoney-sec .code-money > li p .icon { position: relative; top: 4px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 200px; }
 
-.container .codeMoney-sec .code-money > li p .icon { position: relative; top: 4px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 200px; }
+.codeMoney-sec .code-money > li p .i-user { position: absolute; top: 6px; left: 16px; width: 16px; height: 16px; background-position: -25px 0; }
 
-.container .codeMoney-sec .code-money > li p .i-user { position: absolute; top: 6px; left: 16px; width: 16px; height: 16px; background-position: -25px 0; }
+.codeMoney-sec .code-money > li p .i-coin { position: absolute; top: 6px; left: 11px; width: 22px; height: 17px; background-position: -51px 0; }
 
-.container .codeMoney-sec .code-money > li p .i-coin { position: absolute; top: 6px; left: 11px; width: 22px; height: 17px; background-position: -51px 0; }
+.codeMoney-sec .code-money > li p .btn-a { display: inline-block; font-size: 12px; color: #fff; background: #a4a4a4; padding: 3px 6px; height: 19px; border-radius: 19px; }
 
-.container .codeMoney-sec .code-money > li p .btn-a { display: inline-block; font-size: 12px; color: #fff; background: #a4a4a4; padding: 3px 6px; height: 19px; border-radius: 19px; }
+@media (max-width: 320px) { .codeMoney-sec .code-money > li p .btn-a { font-size: 11px; } }
 
-@media (max-width: 320px) { .container .codeMoney-sec .code-money > li p .btn-a { font-size: 11px; } }
+.codeMoney-sec .code-money > li .type-2 { padding-left: 34px; line-height: 13px; }
 
-.container .codeMoney-sec .code-money > li .type-2 { padding-left: 34px; line-height: 13px; }
+.codeMoney-sec .code-money > li.nth-2 p.type-2 { padding-left: 14px; }
 
-.container .codeMoney-sec .code-money > li.nth-2 p.type-2 { padding-left: 14px; }
+/*메인이미지*/
+.main-sec .main-img { display: block; margin: 6px 0 6px 0; }
 
-.container .main-sec { /*메인이미지*/ }
+.main-sec .main-img img { display: block; }
 
-.container .main-sec .main-img { display: block; margin: 6px 0 6px 0; }
+/*랭킹차트*/
+.rank-sec { position: relative; margin: 10px 10px 14px; padding: 50px 0; background: #fff; border: 1px #dcdcdc solid; }
 
-.container .main-sec .main-img img { display: block; }
+.rank-sec .top-bg, .rank-sec .bottom-bg { position: absolute; width: 100%; height: 37.5px; }
 
-.container .rank-sec { /*랭킹차트*/ position: relative; margin: 10px 10px 14px; background: #fff; border: 1px #dcdcdc solid; }
+.rank-sec .top-bg > span, .rank-sec .bottom-bg > span { display: block; position: absolute; top: 0; }
 
-.container .rank-sec .top-bg, .container .rank-sec .bottom-bg { position: relative; height: 50px; }
+.rank-sec .top-bg > span.left, .rank-sec .top-bg > span.right, .rank-sec .bottom-bg > span.left, .rank-sec .bottom-bg > span.right { display: inline-block; width: 33px; height: 37.5px; background: url(http://img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat; background-size: 66px; }
 
-.container .rank-sec .top-bg > span, .container .rank-sec .bottom-bg > span { display: block; position: absolute; top: 0; }
+.rank-sec .top-bg > span.left, .rank-sec .bottom-bg > span.left { left: 0; }
 
-.container .rank-sec .top-bg > span.left, .container .rank-sec .top-bg > span.right, .container .rank-sec .bottom-bg > span.left, .container .rank-sec .bottom-bg > span.right { display: inline-block; width: 44px; height: 50px; background: url(http://img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat; }
+.rank-sec .top-bg > span.right, .rank-sec .bottom-bg > span.right { right: 0; }
 
-.container .rank-sec .top-bg > span.left, .container .rank-sec .bottom-bg > span.left { left: 0; }
+.rank-sec .top-bg > span.center, .rank-sec .bottom-bg > span.center { width: 100%; height: 1px; border: 1px #EDDDBD solid; }
 
-.container .rank-sec .top-bg > span.right, .container .rank-sec .bottom-bg > span.right { right: 0; }
+.rank-sec .top-bg { top: 0; }
 
-.container .rank-sec .top-bg > span.center, .container .rank-sec .bottom-bg > span.center { width: 100%; height: 1px; border: 1px #eaddb3 solid; }
+.rank-sec .top-bg > span.right { background-position: -33px 0; }
 
-.container .rank-sec .top-bg > span.right { background-position: -44px 0; }
+.rank-sec .top-bg > span.center { top: 10px; }
 
-.container .rank-sec .top-bg > span.center { top: 14px; }
+.rank-sec .bottom-bg { bottom: 0; }
 
-.container .rank-sec .bottom-bg > span.left { background-position: 0px -50px; }
+.rank-sec .bottom-bg > span.left { background-position: 0px -37.5px; }
 
-.container .rank-sec .bottom-bg > span.right { background-position: -44px -50px; }
+.rank-sec .bottom-bg > span.right { background-position: -33px -37.5px; }
 
-.container .rank-sec .bottom-bg > span.center { top: 34px; }
+.rank-sec .bottom-bg > span.center { top: 26px; }
 
-.container .rank-sec .contents01 .fr-low.nth-1 .fr-cell.nth-1 img, .container .rank-sec .contents01 .fr-low.nth-3 .fr-cell.nth-1 img, .container .rank-sec .contents01 .fr-low.nth-2 .fr-cell.nth-1 img { position: relative; width: 29px; height: auto; left: -5px; }
+.rank-sec .friend-outer { margin: -16px 9px -18px; border-left: 2px #F8E8B6 solid; border-right: 2px #F8E8B6 solid; padding: 0 10px; }
 
-.container .rank-sec .friend-rankbox { position: relative; border: solid #cecece 1px; }
+.rank-sec .friend-rankbox { position: relative; }
 
-.container .rank-sec .friend-rankbox .fr-rankbox.no0 { width: 378px; height: 34px; font-size: 16px; font-family: Nanum Gothic, sans-serif; font-weight: bold; color: #5c5c5c; }
+.rank-sec .friend-rankbox > h3 { position: relative; float: left; font-size: 15px; font-weight: 600; color: #2f2f2f; }
 
-.container .rank-sec .friend-rankbox .fr-rankbox.no1 { border-right: solid #cecece 1px; width: 124px; height: 34px; text-align: center; line-height: 2.4em; }
+.rank-sec .friend-rankbox .fr-rankbox { position: relative; float: right; }
 
-.container .rank-sec .friend-rankbox .fr-rankbox.no2 { border-right: solid #cecece 1px; width: 124px; text-align: center; line-height: 2.4em; margin-left: 126px; }
+.rank-sec .friend-rankbox .fr-rankbox li { position: relative; display: inline-block; height: 18px; }
 
-.container .rank-sec .friend-rankbox .fr-rankbox.no3 { border-right: solid #cecece 1px; width: 124px; text-align: center; line-height: 2.4em; margin-left: 251px; }
+.rank-sec .friend-rankbox .fr-rankbox li a { padding: 1px 10px; font-size: 12px; line-height: 15px; text-align: center; display: block; width: 100%; height: 100%; border: 1px #c4c4c4 solid; border-radius: 3px; }
 
-.container .rank-sec .friend-rankbox li a { font-size: 16px; font-family: Nanum Gothic, sans-serif; font-weight: bold; color: #5c5c5c; display: block; width: 124px; height: 35px; }
+.rank-sec .friend-rankbox .fr-rankbox li.on a { border-color: #f97319; color: #f97319; background: #fef0e6; }
 
-.container .rank-sec .friend-rankbox li.fr-rankbox.on { background: #ffd954; }
+.rank-sec .friend-rank { position: relative; margin-top: 8px; box-sizing: border-box; }
 
-.container .rank-sec .friend-rank { position: relative; width: 378px; height: 300px; box-sizing: border-box; }
+.rank-sec .fr-low { position: relative; border-bottom: 1px solid #dfd1b6; background: #fff; }
 
-.container .rank-sec .fr-low { position: relative; border-bottom: 1px solid #dfd1b6; background: #fff; }
+.rank-sec .fr-low:after { content: ""; display: block; clear: both; }
 
-.container .rank-sec .fr-low:after { content: ""; display: block; clear: both; }
+.rank-sec .fr-low.nth-1 { z-index: 3; background: #feefd2; }
 
-.container .rank-sec .fr-low.nth-1 { z-index: 3; background: #feefd2; }
+.rank-sec .fr-low.nth-2 { z-index: 2; }
 
-.container .rank-sec .fr-low.nth-2 { z-index: 2; }
+.rank-sec .fr-low.nth-3 { z-index: 0; }
 
-.container .rank-sec .fr-low.nth-3 { z-index: 0; }
+.rank-sec .fr-low.nth-1 .fr-cell.nth-1, .rank-sec .fr-low.nth-2 .fr-cell.nth-1, .rank-sec .fr-low.nth-3 .fr-cell.nth-1 { background: none; }
 
-.container .rank-sec .fr-cell { position: relative; float: left; height: 30px; font-weight: 600; letter-spacing: -1px; line-height: 2.1em; color: #343434; }
+.rank-sec .fr-low .fr-cell { position: relative; float: left; height: 24px; font-weight: 600; letter-spacing: -1px; line-height: 24px; color: #343434; font-size: 13px; }
 
-.container .rank-sec .fr-cell.nth-1 { width: 58px; text-align: center; color: #fff; background: url(http://img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat 0 7px; font-size: 14px; line-height: 2.4em; text-indent: -12px; }
+.rank-sec .fr-low .fr-cell.nth-1 { width: 37px; text-align: center; color: #fff; background: url(http://img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat -7px 5px; background-size: 42px; font-size: 11px; line-height: 25px; text-indent: -10px; }
 
-.container .rank-sec .fr-cell.nth-2 { width: 224px; }
+.rank-sec .fr-low .fr-cell.nth-1 img { position: relative; top: -2px; width: 22px; }
 
-.container .rank-sec .fr-cell.nth-3 { width: 1px; background-color: #b4b4b4; font-weight: 400; top: 10px; height: 15px; }
+.rank-sec .fr-low .fr-cell.nth-2 { width: 52%; overflow: hidden; text-overflow: ellipsis; }
 
-.container .rank-sec .fr-cell.nth-4 { width: 90px; text-align: right; padding-right: 5px; }
+@media (max-device-width: 320px) { .rank-sec .fr-low .fr-cell.nth-2 { width: 45%; } }
 
-.container .rank-sec .contents01 .fr-low.nth-2 .fr-cell.nth-1 { overflow: hidden; }
+.rank-sec .fr-low .fr-cell.nth-3 { display: none; width: 1px; background-color: #b4b4b4; font-weight: 400; top: 10px; height: 15px; }
 
-.container .rank-sec .contents01 .fr-low.nth-2 .fr-cell.nth-1 img { width: 28px; top: -1px; }
+.rank-sec .fr-low .fr-cell.nth-4 { float: right; width: 100px; text-align: right; right: 10px; }
 
-.container .rank-sec .contents01 .fr-low.nth-1 .fr-cell.nth-1 { background: none; }
+/*적립금 지급 안내*/
+.step-sec { background: #fff; padding: 0 12px; }
 
-.container .rank-sec .contents01 .fr-low.nth-1 .fr-cell.nth-1 img { width: 31px; top: -8px; }
+.step-sec h3 { position: relative; font-size: 14px; font-weight: 600; color: #2f2f2f; padding-top: 15px; }
 
-.container .rank-sec .contents01 .fr-low.nth-3 .fr-cell.nth-1 { background: none; }
-
-.container .rank-sec .contents01 .fr-low.nth-3 .fr-cell.nth-1 img { width: 27px; top: -2px; }
-
-.container .rank-sec .contents01 .fr-low.nth-3 .fr-cell.nth-1 { overflow: hidden; }
-
-.container .rank-sec .contents01 .fr-low.nth-2 .fr-cell.nth-1 { background: none; }
+.step-sec .step-img { padding: 15px 0 20px; }
 
 /*# sourceMappingURL=proceeds.css.map */
