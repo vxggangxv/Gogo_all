@@ -1,9 +1,14 @@
 @charset "utf-8";
-@import "parts/mixins";
 @import "parts/variables";
+@import "parts/mixins";
 
 /*컨테이너*/
 %border-tb {border: 1px solid $borCr; border-right: 0; border-left: 0;}
+%appear {
+	@include bor();
+	appearance: none; -webkit-appearance: none; -moz-appearance: none;
+	border-radius: 0; letter-spacing: -0.7px;
+}
 
 .container {
 	position: relative;
@@ -19,9 +24,7 @@
 			float: left;
 			width: 50%;
 			padding: 4px 0 7px;
-			&.nth-2 {
-				border-left: 1px solid #d9d9d9;
-			}
+			border-right: 1px solid #d9d9d9;
 			p {
 				position: relative;
 				padding: 6px 5px 0px 33px;
@@ -84,7 +87,7 @@
 	margin: $mt-2 9px ($mt-2 * 2);
 	padding: 50px 0;
 	background: #fff;
-	@include border();
+	@include bor();
 
 	.top-bg, .bottom-bg {
 		position: absolute;
@@ -107,7 +110,7 @@
 			}
 			&.center {
 				width: 100%; height: 1px;
-				@include border(1px, #EDDDBD, solid);
+				@include bor(1px, #EDDDBD, solid);
 			}
 		}
 	}
@@ -178,7 +181,7 @@
 					text-align: center;
 					display: block;
 					width: 100%; height: 100%;
-					@include border(1px, #c4c4c4);
+					@include bor(1px, #c4c4c4);
 					border-radius: 3px;
 				}
 				&.on a {
@@ -284,9 +287,147 @@
 	.step-img {padding: 15px 0 20px;}
 }
 /*수익금 상세 현황*/
-.status-sec {
+%common-sec {
 	margin: $mt-2 0 0;
-	border-top: 1px solid $borCr;
+	padding: 5px 10px 15px;
+	border-top: 1px solid #cdcdcd;
+	background: #fff;
+	h2 {
+		margin: 5px 0;
+	}
+}
+%slt-custom {
+	@extend %appear;
+	background: #fff url(http://img.go.co.kr/proceeds/m/select_arr.png) no-repeat;
+	background-size: 16px;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.status-sec {
+	@extend %common-sec;
+	
+	.ssmb-tit {
+		position: relative; font-size: 15px; font-weight: 600;
+		height: 40px; line-height: 30px;
+		h2 {
+			float: left;
+		}
+		select {
+			@include size(150px, 30px);
+			@extend %appear;
+			@extend %slt-custom;
+			@include position-tl(relative, 5px);
+			background-position: 122px 10px;
+			float: right;
+		}
+	}
+	.ssmb-table {
+		position: relative;
+		margin-top: 3px;
+		width: 100%;
+		%bg-f5 {background: #f5f5f5;}
+		th, td {
+			height: 30px; vertical-align: middle; text-align: center;
+			font-size: 14px; border: 1px solid #c5c5c5;
+		}
+		thead tr, .total {@extend %bg-f5;}
+		th {
+			border-top: 3px solid $orange; font-weight: 600;
+		}
+		tbody td {
+			&.nth-2, &.nth-3 {text-align: right; padding-right: 8px;}
+		}
+	}
+}
+/*수익금 신청 정보*/
+.applyInfo-sec {
+	@extend %common-sec;
+	.apply-tab {
+		position: relative; margin: 5px 0 10px; width: 100%;
+		li {
+			float: left;
+			@include size(50%, 36px, 34px, center, 14px, $orange);
+			@include bor(1px, $orange);
+			&.on {
+				color: $white;
+				background: $orange;
+			}
+			&.nth-1 {
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+			}
+			&.nth-2 {
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-left: 0;
+			}
+		}
+	}
+	.tab-con {
+		position: relative;
+		width: 100%;
+		> li {
+			display: none;
+			&.on {display: block;}
+		}
+	}
+	.apInfo-table {
+		position: relative; width: 100%;
+		font-size: 14px; text-align: left;
+		@include bor(1px, #e6e6e6);
+		th, td {height: 34px; vertical-align: middle;}
+		thead tr {
+		}
+		%bg-f1 {background: #f1f1f1;}
+		th {
+			border-bottom: 1px solid #e6e6e6;
+			position: relative;
+			text-align: center;
+			@extend %bg-f1;
+		}
+		%fz {font-size: 13px;}
+		tbody tr {
+			&:first-child td {padding-top: 10px;}
+			&.lt-1 td {padding-bottom: 10px;}
+			&.last td {
+				@extend %bg-f1;
+				padding: 15px 12px;
+				p {
+					position: relative;
+					padding-left: 8px;
+					@extend %fz;
+					word-break: keep-all;
+					line-height: 20px;
+					color: #4a4a4a;
+					.dot {
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+		}
+		td {
+			padding: 3px 0;
+			@extend %fz;
+			&.nth-1 {padding-left: 12px; font-weight: 600;}
+			&.nth-2 {padding-right: 12px;}
+			select {
+				@include size(100%, 30px);
+				@extend %slt-custom;
+				@extend %fz;
+				line-height: 28px;
+				background-position: 95% 10px;
+			}
+			.data {
+				@extend %appear;
+				@include size(100%, 30px);
+				@include bor();
+				@extend %fz;
+				padding: 2px 5px 5px;
+			}
+		}
+	}
+	
 }
 
 

@@ -6,13 +6,15 @@ body * { box-sizing: border-box; }
 a { color: #333; }
 
 /*공통요소*/
-strong, .fwe-600 { font-weight: 600; }
+strong, .fwe-6 { font-weight: 600; }
 
 .c-orange { color: #ff742e; }
 
 .clearfix::before, .clearfix::after { content: ""; display: table; }
 
 .clearfix::after { clear: both; }
+
+.cursor { cursor: pointer; }
 
 .container > section { position: relative; }
 
@@ -31,7 +33,7 @@ strong, .fwe-600 { font-weight: 600; }
 
 .header .gnb ul li { position: relative; display: table-cell; text-align: center; }
 
-.header .gnb ul li a { display: block; background: #ff742e; color: #fff; font-size: 14px; font-weight: 600; width: 100%; height: 100%; line-height: 34px; }
+.header .gnb ul li a { display: block; background: #ff742e; color: #fff; font-size: 14px; width: 100%; height: 100%; line-height: 34px; }
 
 .header .gnb ul li.on a { background: #f0580c; }
 

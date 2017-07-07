@@ -10,11 +10,16 @@
 	top: $t;
 	right: $r;
 }
-@mixin size($w: null, $h: null){
+@mixin size($w: null, $h: null, $l: null, $ta: null, $fz: null, $cr: null, $bg: null){
 	width: $w;
 	height: $h;
+	line-height: $l;
+	text-align: $ta;
+	font-size: $fz;
+	color: $cr;
+	background: $bg;
 }
-@mixin border($w: 1px, $c: #dcdcdc, $s: solid){
+@mixin bor($w: 1px, $c: #dcdcdc, $s: solid){
 	border: $w $c $s;
 }
 @mixin bor-lr($w: 1px, $c: #dcdcdc, $s: solid){

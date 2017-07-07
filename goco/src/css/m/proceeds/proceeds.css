@@ -2,14 +2,14 @@
 /*컨테이너*/
 .codeMoney-sec .code-money, .main-sec .main-img { border: 1px solid #dfdfdf; border-right: 0; border-left: 0; }
 
+.status-sec .ssmb-tit select, .applyInfo-sec .apInfo-table td select, .applyInfo-sec .apInfo-table td .data { border: 1px #dcdcdc solid; appearance: none; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; letter-spacing: -0.7px; }
+
 .container { position: relative; padding: 5px 0 0px 0; background: #ededed; }
 
 /*코드 및 수익금*/
 .codeMoney-sec .code-money { background: #fff; }
 
-.codeMoney-sec .code-money > li { float: left; width: 50%; padding: 4px 0 7px; }
-
-.codeMoney-sec .code-money > li.nth-2 { border-left: 1px solid #d9d9d9; }
+.codeMoney-sec .code-money > li { float: left; width: 50%; padding: 4px 0 7px; border-right: 1px solid #d9d9d9; }
 
 .codeMoney-sec .code-money > li p { position: relative; padding: 6px 5px 0px 33px; font-size: 13px; line-height: 15px; }
 
@@ -113,6 +113,73 @@
 .step-sec .step-img { padding: 15px 0 20px; }
 
 /*수익금 상세 현황*/
-.status-sec { margin: 7px 0 0; border-top: 1px solid #dfdfdf; }
+.status-sec, .applyInfo-sec { margin: 7px 0 0; padding: 5px 10px 15px; border-top: 1px solid #cdcdcd; background: #fff; }
+
+.status-sec h2, .applyInfo-sec h2 { margin: 5px 0; }
+
+.status-sec .ssmb-tit select, .applyInfo-sec .apInfo-table td select { background: #fff url(http://img.go.co.kr/proceeds/m/select_arr.png) no-repeat; background-size: 16px; font-size: 14px; padding-left: 5px; }
+
+.status-sec .ssmb-tit { position: relative; font-size: 15px; font-weight: 600; height: 40px; line-height: 30px; }
+
+.status-sec .ssmb-tit h2 { float: left; }
+
+.status-sec .ssmb-tit select { width: 150px; height: 30px; position: relative; top: 5px; background-position: 122px 10px; float: right; }
+
+.status-sec .ssmb-table { position: relative; margin-top: 3px; width: 100%; }
+
+.status-sec .ssmb-table thead tr, .status-sec .ssmb-table .total { background: #f5f5f5; }
+
+.status-sec .ssmb-table th, .status-sec .ssmb-table td { height: 30px; vertical-align: middle; text-align: center; font-size: 14px; border: 1px solid #c5c5c5; }
+
+.status-sec .ssmb-table th { border-top: 3px solid #ff742e; font-weight: 600; }
+
+.status-sec .ssmb-table tbody td.nth-2, .status-sec .ssmb-table tbody td.nth-3 { text-align: right; padding-right: 8px; }
+
+/*수익금 신청 정보*/
+.applyInfo-sec .apply-tab { position: relative; margin: 5px 0 10px; width: 100%; }
+
+.applyInfo-sec .apply-tab li { float: left; width: 50%; height: 36px; line-height: 34px; text-align: center; font-size: 14px; color: #ff742e; border: 1px #ff742e solid; }
+
+.applyInfo-sec .apply-tab li.on { color: #fff; background: #ff742e; }
+
+.applyInfo-sec .apply-tab li.nth-1 { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.applyInfo-sec .apply-tab li.nth-2 { border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-left: 0; }
+
+.applyInfo-sec .tab-con { position: relative; width: 100%; }
+
+.applyInfo-sec .tab-con > li { display: none; }
+
+.applyInfo-sec .tab-con > li.on { display: block; }
+
+.applyInfo-sec .apInfo-table { position: relative; width: 100%; font-size: 14px; text-align: left; border: 1px #e6e6e6 solid; }
+
+.applyInfo-sec .apInfo-table th, .applyInfo-sec .apInfo-table td { height: 34px; vertical-align: middle; }
+
+.applyInfo-sec .apInfo-table th, .applyInfo-sec .apInfo-table tbody tr.last td { background: #f1f1f1; }
+
+.applyInfo-sec .apInfo-table th { border-bottom: 1px solid #e6e6e6; position: relative; text-align: center; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td p, .applyInfo-sec .apInfo-table td, .applyInfo-sec .apInfo-table td select, .applyInfo-sec .apInfo-table td .data { font-size: 13px; }
+
+.applyInfo-sec .apInfo-table tbody tr:first-child td { padding-top: 10px; }
+
+.applyInfo-sec .apInfo-table tbody tr.lt-1 td { padding-bottom: 10px; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td { padding: 15px 12px; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td p { position: relative; padding-left: 8px; word-break: keep-all; line-height: 20px; color: #4a4a4a; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td p .dot { position: absolute; left: 0; }
+
+.applyInfo-sec .apInfo-table td { padding: 3px 0; }
+
+.applyInfo-sec .apInfo-table td.nth-1 { padding-left: 12px; font-weight: 600; }
+
+.applyInfo-sec .apInfo-table td.nth-2 { padding-right: 12px; }
+
+.applyInfo-sec .apInfo-table td select { width: 100%; height: 30px; line-height: 28px; background-position: 95% 10px; }
+
+.applyInfo-sec .apInfo-table td .data { width: 100%; height: 30px; border: 1px #dcdcdc solid; padding: 2px 5px 5px; }
 
 /*# sourceMappingURL=proceeds.css.map */

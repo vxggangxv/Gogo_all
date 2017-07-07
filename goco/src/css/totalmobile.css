@@ -155,3 +155,6 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 #headTitle2 > p {vertical-align: middle; line-height: 15px;}
 #headTitle2 > a {}
 #scroll_box #headTitle_box2 img {width: 176px;}
+/* .tl-box .item-inner .pull-right:before {
+	position: absolute; top: 4px; right: 104px; content: ""; height: 13px; width: 1px; background: #a2a2a2;
+} */
