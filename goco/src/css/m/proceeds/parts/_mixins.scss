@@ -1,5 +1,12 @@
 @charset "utf-8";
 //믹스인
+@mixin position($type: relative, $t: null, $l: null, $b: null, $r: null){
+	position: $type;
+	top: $t;
+	left: $l;
+	bottom: $b;
+	right: $r;
+}
 @mixin position-tl($type: relative, $t: null, $l: null){
 	position: $type;
 	top: $t;
@@ -9,6 +16,13 @@
 	position: $type;
 	top: $t;
 	right: $r;
+}
+@mixin center($type: absolute, $t: 50%, $mt: null, $l: 50%, $ml: null){
+	position: $type;
+	top: $t;
+	margin-top: $mt;
+	left: $l;
+	margin-left: $ml;
 }
 @mixin size($w: null, $h: null, $l: null, $ta: null, $fz: null, $cr: null, $bg: null){
 	width: $w;

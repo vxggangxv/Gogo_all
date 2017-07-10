@@ -2,7 +2,7 @@
 @import "parts/variables";
 @import "parts/mixins";
 
-/*컨테이너*/
+/*****컨테이너*****/
 %border-tb {border: 1px solid $borCr; border-right: 0; border-left: 0;}
 %appear {
 	@include bor();
@@ -15,7 +15,7 @@
 	padding: 5px 0 0px 0;
 	background: #ededed;
 }
-/*코드 및 수익금*/
+/*****코드 및 수익금*****/
 .codeMoney-sec {
 	.code-money {
 		@extend %border-tb;
@@ -72,7 +72,7 @@
 		}
 	}
 }
-/*메인이미지*/
+/*****메인이미지*****/
 .main-sec {
 	.main-img {
 		display: block;
@@ -81,7 +81,7 @@
 		img {display: block;}
 	}
 }
-/*랭킹차트*/
+/*****랭킹차트*****/
 .rank-sec {
 	position: relative;
 	margin: $mt-2 9px ($mt-2 * 2);
@@ -272,7 +272,7 @@
 		}
 	}
 }
-/*적립금 지급 안내*/
+/*****적립금 지급 안내*****/
 .step-sec {
 	background: #fff;
 	padding: 0 12px;
@@ -286,10 +286,10 @@
 	}
 	.step-img {padding: 15px 0 20px;}
 }
-/*수익금 상세 현황*/
+/*****수익금 상세 현황*****/
 %common-sec {
 	margin: $mt-2 0 0;
-	padding: 5px 10px 15px;
+	padding: 5px 10px 20px;
 	border-top: 1px solid #cdcdcd;
 	background: #fff;
 	h2 {
@@ -339,37 +339,44 @@
 		}
 	}
 }
-/*수익금 신청 정보*/
+/*****수익금 신청 정보*****/
+%common-tab {
+	position: relative; margin: 5px 0 10px; width: 100%;
+	li {
+		float: left;
+		@include size(50%, 36px, 36px, center, 14px, $orange);
+		@include bor(1px, $orange);
+		border-left: 0;
+		&.on {
+			color: $white;
+			background: $orange;
+		}
+		&.nth-1 {
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-left: 1px solid $orange;
+		}
+		&.nth-2 {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	}
+}
+%tab-con {
+	position: relative;
+	width: 100%;
+	> li {
+		display: none;
+		&.on {display: block;}
+	}
+}
 .applyInfo-sec {
 	@extend %common-sec;
 	.apply-tab {
-		position: relative; margin: 5px 0 10px; width: 100%;
-		li {
-			float: left;
-			@include size(50%, 36px, 34px, center, 14px, $orange);
-			@include bor(1px, $orange);
-			&.on {
-				color: $white;
-				background: $orange;
-			}
-			&.nth-1 {
-				border-top-left-radius: 4px;
-				border-bottom-left-radius: 4px;
-			}
-			&.nth-2 {
-				border-top-right-radius: 4px;
-				border-bottom-right-radius: 4px;
-				border-left: 0;
-			}
-		}
+		@extend %common-tab;
 	}
 	.tab-con {
-		position: relative;
-		width: 100%;
-		> li {
-			display: none;
-			&.on {display: block;}
-		}
+		@extend %tab-con;
 	}
 	.apInfo-table {
 		position: relative; width: 100%;
@@ -423,11 +430,201 @@
 				@include size(100%, 30px);
 				@include bor();
 				@extend %fz;
-				padding: 2px 5px 5px;
+				padding: 1px 5px 4px;
+				&.num {
+					padding: 0px 5px;
+				}
 			}
 		}
 	}
+	.apl {
+		td .data {
+			width: 90%; margin-right: 2px;
+		}
+	}
+	.fullBtn-a {
+		display: block; width: 100%; text-align: center;
+		background: $orange; color: $white;
+		font-size: 14px; border-radius: 4px;
+		margin-top: 10px; height: 40px; line-height: 42px;
+	}
 	
 }
+/*****홍보이미지*****/
+.promotion-sec {
+	@extend %common-sec;
+	.promo-tab {
+		@extend %common-tab;
+		margin-top: 10px;
+		li {
+			@include size($w100/3, 40px, 41px);
+			&:nth-child(2) {}
+		}
+	}
+	.tab-con {
+		@extend %tab-con;
+		margin-top: 20px;
+	}	
+	.recommend {
+		position: relative;
+		@include size(208px, 350px); margin: 0 auto;
+		background:url('http://img.go.co.kr/proceeds/bg_mileage.jpg') no-repeat 0 0;
+		background-size: 208px;
+		border-bottom: 1px solid #ddd;
+		.code {
+			@include position(absolute, 260px, 10px);
+			width: 188px;
+			height: 79px; /*padding:10px 12px 0;*/ 
+			text-align:center;
+			background:url('http://img.go.co.kr/proceeds/bg_code.jpg') no-repeat 0 0; 
+			background-size: 188px;
+			.inner {
+				> p {
+					margin: 7px 0 5px;
+					font-size: 13px;
+					font-weight: 800;
+					font-style: italic;
+					> span {
+						color: #d82802;
+					}
+				}
+				> input {
+					@extend %appear;
+					@include bor(2px, $orange);
+					@include size(92%, 26px, null, center, 18px);
+					letter-spacing: 1px;
+					padding-top: 2px;
+					text-transform: uppercase;
+					outline: 0;
+				}
+			}
+			.btn-a {
+				@include position(absolute, 56px, 0);
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	.copy-code {
+		margin: 12px auto 0; overflow: auto;
+		padding: 3px 5px; border:1px solid #e0e0e0; 
+		line-height: 18px; font-size: 13px;
+		word-break:break-all; width: 100%; height: 63px;
+	}
+	.btn-area {
+		margin-top: 12px;
+		.btn-a {
+			@include size(46%, 40px, 40px);
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+			&.pull-left {
+				@include bor(1px, #5f5f5f);
+				background: #5f5f5f;
+				color: #fff;
+			}
+			&.pull-right {
+				@include bor(1px, #d2d2d2);
+				background: #ffffff; /* Old browsers */
+				background: -moz-linear-gradient(top,  #ffffff 0%, #fbfbfb 50%, #f3f3f4 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #ffffff 0%,#fbfbfb 50%,#f3f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #ffffff 0%,#fbfbfb 50%,#f3f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f4',GradientType=0 ); /* IE6-9 */
+			}
+		}
+	}
+	.banner-rec {
+		position: relative;
+		.code {
+			position: relative;
+			margin: 0 auto;
+			@include size(300px, 120px);
+			background:url('http://img.go.co.kr/proceeds/banner_mileage.jpg') no-repeat 0 0;
+			background-size: contain;
+			> input {
+				@include position(absolute, 78px, 77px);
+				@include size(196px, 30px, null, center, 22px);
+				border: 0; 
+				background: none;
+				letter-spacing: 1px;
+				outline: 0; 
+				text-transform: uppercase;
+			}
+		}
+	}
+	.div-h2 {
+		position: relative;
+		font-size: 15px;
+		margin: 25px 0 10px;
+		> .pull-right {
+			@include position(relative, -15px);
+			> a {
+				@include size(34px, 34px);
+				display: inline-block;
+				background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat;
+				background-size: 150px;
+				&.i-copy {
+					background-position: -60px 0;
+					margin-right: 5px;
+				}
+				&.i-share {
+					background-position: -100px 0;
+				}
 
-
+			}
+		}
+	}
+	.txt-box {
+		@include bor();
+		padding: 6px;
+		> p {
+			font-size: 13px;
+			word-break: keep-all;
+			line-height: 20px;
+		}
+	}
+	.q-modal {
+		display: none;
+		position: fixed;
+		z-index: 12;
+		width: 250px;
+		/*height: 170px;*/
+		top: 50%;
+		margin-top: -145px;
+		left: 50%;
+		margin-left: -125px;
+		background: #fff;
+		border-radius: 6px;
+		h2 {
+			width: 100%;
+			height: 50px;
+			margin: 0 auto;
+			font-family: "Nanum Gothic", sans-serif;
+			font-size: 17px;
+			font-weight: 600;
+			text-align: center;
+			border-bottom: 1px solid #dfdfdf;
+			line-height: 3em;
+		}
+		ul {
+			padding: 5px 0 7px;
+			li {
+			position: relative;
+			/*height: 60px;*/
+			line-height: 50px;
+			a {
+				display: block;
+				padding: 0 22px;
+				font-size: 14px;
+				font-weight: 600;
+				img {
+					@include position(relative, -1px);
+					vertical-align: middle;
+					width: 35px;
+					margin-right: 13px;
+				}
+			}
+		}
+		}
+	}
+}

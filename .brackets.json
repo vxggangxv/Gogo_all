@@ -20,7 +20,7 @@
                 "sourceComments": false,
                 "outputStyle": "compact"
             },
-            "linting.collapsed": false,
+            "linting.collapsed": true,
             "fonts.fontFamily": "'NanumGothicCoding'"
         }
     },

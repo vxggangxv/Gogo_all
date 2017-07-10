@@ -6,7 +6,7 @@ body * { box-sizing: border-box; }
 a { color: #333; }
 
 /*공통요소*/
-strong, .fwe-6 { font-weight: 600; }
+strong, .fwe-6, .fwe-600 { font-weight: 600; }
 
 .c-orange { color: #ff742e; }
 
@@ -14,7 +14,23 @@ strong, .fwe-6 { font-weight: 600; }
 
 .clearfix::after { clear: both; }
 
+.pull-left { float: left; }
+
+.pull-right { float: right; }
+
 .cursor { cursor: pointer; }
+
+/*레이어팝업배경*/
+.bg-drop { display: none; position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat; }
+
+/*닫기버튼*/
+.i-clsBtn { position: absolute; width: 30px; height: 30px; right: 15px; top: 8px; }
+
+.i-clsBtn:before, .i-clsBtn:after { content: ""; display: block; position: absolute; top: 15px; right: -3px; width: 20px; height: 1px; background: #878787; }
+
+.i-clsBtn:before { -ms-transform: rotate(45deg); /* IE 9 */ -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */ transform: rotate(45deg); }
+
+.i-clsBtn:after { -ms-transform: rotate(-45deg); /* IE 9 */ -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */ transform: rotate(-45deg); }
 
 .container > section { position: relative; }
 
@@ -33,7 +49,7 @@ strong, .fwe-6 { font-weight: 600; }
 
 .header .gnb ul li { position: relative; display: table-cell; text-align: center; }
 
-.header .gnb ul li a { display: block; background: #ff742e; color: #fff; font-size: 14px; width: 100%; height: 100%; line-height: 34px; }
+.header .gnb ul li a { display: block; background: #ff742e; color: #fff; font-size: 14px; width: 100%; height: 100%; line-height: 35px; }
 
 .header .gnb ul li.on a { background: #f0580c; }
 

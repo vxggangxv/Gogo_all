@@ -58,72 +58,54 @@
 					</ul>
 				</section>
 				<section class="applyInfo-sec">
-					<ul class="apply-tab cursor clearfix">
+					<ul class="apply-tab cursor clearfix" id="tab">
 						<li class="on nth-1">수익금 신청</li>
 						<li class="nth-2">수임금 신청정보</li>
 					</ul>
-					<ul class="tab-con">
+					<ul class="tab-con" id="tab-con">
 						<li class="on">
-							<table class="apInfo-table">
+							<table class="apInfo-table apl">
 								<colgroup>
-									<col style="width:32%;">
-									<col style="width:68%;">
+									<col style="width:38%;">
+									<col style="width:62%;">
 								</colgroup>
 								<thead>
 									<tr>
 										<th class="nth-1" colspan="2">
-											김지여어영님의 <span class="fwe-6">수익금 신청정보</span>
+											김지여어영님의 <span class="fwe-6">수익금 신청</span>
 										</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="nth-1">은행명</td>
-										<td class="nth-2">
-											<select name="" id="">
-												<option value="">기업은행</option>
-											</select>
-										</td>
+										<td class="nth-1">현재 수익금</td>
+										<td class="nth-2">11,695원</td>
 									</tr>
 									<tr>
-										<td class="nth-1">예금주</td>
-										<td class="nth-2">
-											<input type="text" class="data" value="김지영" readonly>
-										</td>
-									</tr>
-									<tr>
-										<td class="nth-1">계좌번호</td>
-										<td class="nth-2">
-											<input type="text" class="data" value="101565889235" readonly>
-										</td>
-									</tr>
-									<tr>
-										<td class="nth-1">통장사본</td>
-										<td class="nth-2">
-											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly>
-										</td>
-									</tr>
-									<tr>
-										<td class="nth-1">신분증</td>
-										<td class="nth-2">
-											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly>
-										</td>
+										<td class="nth-1">출금 가능액</td>
+										<td class="nth-2">100,000원 이상부터 가능</td>
 									</tr>
 									<tr class="lt-1">
-										<td class="nth-1">주민등록본</td>
+										<td class="nth-1">출금 신청금액</td>
 										<td class="nth-2">
-											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly>
+											<input type="text" class="data num" value="0">
+											<span class="won">원</span>
 										</td>
 									</tr>
 									<tr class="last">
 										<td colspan="2">
-											<p><span class="dot">-</span>수익금 신청을 위해서는 해당 서류가 필요합니다.</p>
-											<p><span class="dot">-</span>계정의 소유자와 신분증 및 통장사본의 소유자는 일치하여야지만 수익금이 지급됩니다.</p>
-											<p><span class="dot">-</span>서류 제출 후 최종 확인까지 최대 7일의 시간이 소요됩니다.</p>
+											<p><span class="dot">-</span>수익금 신청은 최소 100,000원 이상부터 가능합니다.</p>
+											<p><span class="dot">-</span>수익금 신청은 최소 10,000원 단위로 가능합니다.</p>
+											<p><span class="dot">-</span>수익금 신청 시 송금 수수료 500원이 부과됩니다.</p>
+											<p><span class="dot">-</span>수익금 지급은 매주 목요일에 일괄 지급되며 휴일의 경우 다음 영업일에 지급됩니다.</p>
+											<p><span class="dot">-</span>수익금 신청 시에는 신청금액을 다른 용도(상품 구매 등)로 사용할 
+												수 없습니다.</p>
+											<p><span class="dot">-</span>수익금 신청은 필요서류를 제출 및 승인 후 신청 가능합니다.</p>
 										</td>
 									</tr>
 								</tbody>
 							</table>
+							<a href="" class="fullBtn-a">수익금 신청</a>
 						</li>
 						<li class="">
 							<table class="apInfo-table">
@@ -150,31 +132,31 @@
 									<tr>
 										<td class="nth-1">예금주</td>
 										<td class="nth-2">
-											<input type="text" class="data" value="김지영" readonly>
+											<input type="text" class="data" value="김지영" readonly="readonly">
 										</td>
 									</tr>
 									<tr>
 										<td class="nth-1">계좌번호</td>
 										<td class="nth-2">
-											<input type="text" class="data" value="101565889235" readonly>
+											<input type="text" class="data num" value="101565889235" readonly="readonly">
 										</td>
 									</tr>
 									<tr>
 										<td class="nth-1">통장사본</td>
 										<td class="nth-2">
-											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly>
+											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly="readonly">
 										</td>
 									</tr>
 									<tr>
 										<td class="nth-1">신분증</td>
 										<td class="nth-2">
-											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly>
+											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly="readonly">
 										</td>
 									</tr>
 									<tr class="lt-1">
 										<td class="nth-1">주민등록본</td>
 										<td class="nth-2">
-											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly>
+											<input type="text" class="data" value="보내주신 서류를 확인 중입니다." readonly="readonly">
 										</td>
 									</tr>
 									<tr class="last">

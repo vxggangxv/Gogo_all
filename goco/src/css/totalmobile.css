@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* 썸네일 로고 170428 이현우 */
 #info_img_wrpa .thumbnail_logo {position:absolute; left:10px; top:46px; z-index:1;}
 #info_img_wrpa .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}
@@ -158,3 +159,27 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 /* .tl-box .item-inner .pull-right:before {
 	position: absolute; top: 4px; right: 104px; content: ""; height: 13px; width: 1px; background: #a2a2a2;
 } */
+/*입장권 확인 앱 설치 유도_170710*/
+.hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
+.ticket-check-sec {position: relative; padding: 50px 30px 30px;}
+.ticket-check-sec .main-img {width: 100%;}
+.ticket-check-sec .fullBtn-a {width: 100%; display: block; margin: 30px auto 0; background: #ff610a; color: #fff; text-align: center; height: 46px; line-height: 48px; border-radius: 4px; font-size: 15px;}
+/*****팝업*****/
+.ticket-check-pop {position: fixed; width: 100%; height: 100%; z-index: 9999;}
+.ticket-check-pop:before {content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+background: rgba(0,0,0,.5); z-index: 9999;}
+.ticket-check-pop > .box {position: absolute; width: 300px; padding-bottom: 20px; left: 50%; margin-left: -150px; top: 50%; margin-top: -205px; background: #fff; z-index: 9999;}
+.ticket-check-pop > .box .i-cancle {position: absolute; width: 20px; height: 24px; right: 12px; top: 6px;}
+.ticket-check-pop > .box .i-cancle:before, .ticket-check-pop .i-cancle:after {content: ""; display: block; position: absolute; top: 12px; right: -3px; width: 24px; height: 1px; background: #222;}
+.ticket-check-pop > .box .i-cancle:before {
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+.ticket-check-pop > .box .i-cancle:after {
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	transform: rotate(-45deg);
+}
+.ticket-check-pop > .box .main-img {display: block; width: 94%; margin: 0px auto; padding-top: 26px;}
+.ticket-check-pop > .box .fullBtn-a {width: 83%; display: block; margin: 20px auto 0; background: #ff610a; color: #fff;	text-align: center; height: 46px; line-height: 48px; border-radius: 4px; font-size: 15px;}
