@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 /* 썸네일 로고 170428 이현우 */
 #info_img_wrpa .thumbnail_logo {position:absolute; left:10px; top:46px; z-index:1;}
 #info_img_wrpa .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}
@@ -54,9 +55,10 @@
 #Footer .f-area .policy > li > a {display:inline-block; padding:10px 0; color:#a3a3a3; font-size:14px;}
 #Footer .f-area .policy > li.privacy > a {color:#fff; font-weight:bold;}
 #Footer .f-area .customer {overflow:hidden; padding-top:10px;}
-#Footer .f-area .customer > li {float:left; position:relative; margin-left:10px; padding-left:10px;}
+#Footer .f-area .customer > li {float:left; position:relative; /* margin-left:10px; padding-left:10px; */ margin-right: 12px;}
 #Footer .f-area .customer > li:first-child {margin-left:0; padding-left:0;}
-#Footer .f-area .customer > li:before {content:''; display:block; position:absolute; left:0; top:50%; width:1px; height:14px; margin-top:-5px; background-color:#858585;}
+#Footer .f-area .customer > li:last-child {margin-right: 0;}
+#Footer .f-area .customer > li:before {content:''; display:none; position:absolute; left:0; top:50%; width:1px; height:14px; margin-top:-5px; background-color:#858585;}
 #Footer .f-area .customer > li:first-child:before {display:none;}
 #Footer .f-area .customer > li > a {display:inline-block; position:relative; padding-left:18px; color:#a3a3a3; font-size:12px;}
 #Footer .f-area .customer > li > a.call:before {content:''; display:block; position:absolute; left:0; top:50%; width:14px; height:14px; margin-top:-6px; background:url('http://img.go.co.kr/mobile/f_call.gif') no-repeat 0 0; background-size:100% 100%;}
@@ -161,25 +163,222 @@ input.inn {height:30px; padding:5px; border:1px solid #c8c8c8; color:#282828; fo
 } */
 /*입장권 확인 앱 설치 유도_170710*/
 .hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
-.ticket-check-sec {position: relative; padding: 50px 30px 30px;}
-.ticket-check-sec .main-img {width: 100%;}
-.ticket-check-sec .fullBtn-a {width: 100%; display: block; margin: 30px auto 0; background: #ff610a; color: #fff; text-align: center; height: 46px; line-height: 48px; border-radius: 4px; font-size: 15px;}
-/*****팝업*****/
-.ticket-check-pop {position: fixed; width: 100%; height: 100%; z-index: 9999;}
-.ticket-check-pop:before {content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-background: rgba(0,0,0,.5); z-index: 9999;}
-.ticket-check-pop > .box {position: absolute; width: 300px; padding-bottom: 20px; left: 50%; margin-left: -150px; top: 50%; margin-top: -205px; background: #fff; z-index: 9999;}
-.ticket-check-pop > .box .i-cancle {position: absolute; width: 20px; height: 24px; right: 12px; top: 6px;}
-.ticket-check-pop > .box .i-cancle:before, .ticket-check-pop .i-cancle:after {content: ""; display: block; position: absolute; top: 12px; right: -3px; width: 24px; height: 1px; background: #222;}
-.ticket-check-pop > .box .i-cancle:before {
+.ticket-check-sec {position: relative; padding: 40px 30px 25px;}
+.ticket-check-sec .d-h2 {text-align: center; font-family: "Noto Sans KR"; font-weight: 500; margin-bottom: 24px; font-size: 20px; letter-spacing: 0; color: #202020; line-height: 1.3;}
+@media (max-device-width: 320px) {
+	.ticket-check-sec .d-h2 {font-size: 18px;}
+}
+.ticket-check-sec .c-orange {color: #ff5a00;}
+.ticket-check-sec .main-img {width: 100%; max-width: 300px; display: block; margin: 0 auto;}
+.ticket-check-sec .fullBtn-a {width: 100%; max-width: 300px; display: block; margin: 20px auto 0; background: #ff610a; color: #fff; text-align: center; height: 46px; line-height: 48px; border-radius: 4px; font-size: 15px;}
+/*****팝업 X닫기*****/
+.i-cancle {position: absolute; width: 20px; height: 24px; right: 12px; top: 6px;}
+.i-cancle:before, .i-cancle:after {content: ""; display: block; position: absolute; top: 12px; right: -3px; width: 24px; height: 1px; background: #222;}
+.i-cancle:before {
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
 	transform: rotate(45deg);
 }
-.ticket-check-pop > .box .i-cancle:after {
+.i-cancle:after {
 	-ms-transform: rotate(-45deg); /* IE 9 */
 	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
 	transform: rotate(-45deg);
 }
+/*****팝업*****/
+.ticket-check-pop {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999;}
+.ticket-check-pop:before {content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+background: rgba(0,0,0,.5); z-index: 9999;}
+.ticket-check-pop > .box {position: absolute; width: 300px; padding-bottom: 20px; left: 50%; margin-left: -150px; top: 50%; margin-top: -205px; background: #fff; z-index: 9999;}
+/*.ticket-check-pop > .box .i-cancle {position: absolute; width: 20px; height: 24px; right: 12px; top: 6px;}
+.ticket-check-pop > .box .i-cancle:before, .ticket-check-pop .i-cancle:after {content: ""; display: block; position: absolute; top: 12px; right: -3px; width: 24px; height: 1px; background: #222;}
+.ticket-check-pop > .box .i-cancle:before {
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.ticket-check-pop > .box .i-cancle:after {
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}*/
 .ticket-check-pop > .box .main-img {display: block; width: 94%; margin: 0px auto; padding-top: 26px;}
 .ticket-check-pop > .box .fullBtn-a {width: 83%; display: block; margin: 20px auto 0; background: #ff610a; color: #fff;	text-align: center; height: 46px; line-height: 48px; border-radius: 4px; font-size: 15px;}
+/*입장권 등록 레이어팝업_170713_혜준*/
+.layer-pop-bg {position: fixed; z-index:9999; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+#tk-lookup {position: fixed; z-index: 6; width: 300px; top: 50%; margin-top: -144px; left: 50%; margin-left: -150px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px; padding-bottom: 16px;}
+#tk-lookup * {letter-spacing: -0.5px; color: #303030;}
+#tk-lookup h2 {height: 42px; font-size: 15px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
+#tk-lookup .clsBtn {position: absolute; right: 12px;	top: 10px; display: inline-block; width: 18px; height: 18px;
+    background: url("http://img.go.co.kr/x_btn.png") no-repeat; background-size: 18px;
+}
+#tk-lookup > p {font-size: 14px; line-height: 1.5em; text-align: center; margin-top: 15px; box-sizing: border-box; padding: 0 20px;}
+#tk-lookup > p.nth-1 {margin-top: 16px; margin-bottom: -4px;}
+#tk-lookup > p.nth-2 {}
+#tk-lookup > p.nth-2 input{-webkit-appearance: none; border: none; border-radius: 0; width: 30%; height: 32px; background: #fff; border: 1px solid #d6d6d6; font-size: 14px; text-align: center; box-sizing: border-box; color: #000;}
+#tk-lookup > p.nth-2 span {display: inline-block; background: #bbb; height: 1px; width: 3%; margin: 0 1%; position: relative; top: -5px;}
+#tk-lookup > p.nth-3 {}
+#tk-lookup > p.nth-3 a {display: inline-block; width: 100%; height: 45px; border-radius: 4px; border: 1px solid #d6d6d6; color: #403a3a; font-weight: 600; line-height: 3em; font-size: 15px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+#tk-lookup > p.nth-3 a:first-child {background: #ff610a; color: #fff; margin-right: 20px;}
+
+/* 고코투어 빠른 문의하기 레이어팝업 단체문의 아이콘 변경 170718 이현우 */
+#q_modal ul li:nth-child(4) a:before {background-position:center -348px;}
+
+/*입장권등록하기 팝업_170720_혜준*/
+.ticket-index-pop > .box {position: absolute; width: 300px; height: 351px; left: 50%; margin-left: -150px; top: 50%; margin-top: -180px; z-index: 9999;}
+.ticket-index-pop > .box > .main-img {position: absolute; width: 100%;}
+.ticket-index-pop > .box > .i-close, .ticket-index-pop > .box > .fullBtn-a {position: absolute; display: block; text-indent: -9999px; line-height: 0;}
+.ticket-index-pop > .box > .i-close {width: 22px; height: 22px; top: 10px; right: 12px;}
+.ticket-index-pop > .box > .fullBtn-a {width: 247px; height: 45px; left: 50%; margin-left: -123.5px; bottom: 21px;}
+/* 결제 이용자정보 */
+#reserInfo_title .reserInfo_title_txt .txt_right {position: relative; margin-right: 8px; font-size: 11px; top: 2px;}
+@media (max-device-width: 320px) {
+	#reserInfo_title {margin-bottom: 18px;}
+	#reserInfo_title .reserInfo_title_txt .txt_right {
+		margin-right: 12px;
+	}
+	.pay_list li:first-child .pay_list_stxt {font-size: 12px;}
+}
+/* 팝업-버튼2개 - 20160818 추가*/
+#popup_btn2 {position:absolute; z-index:99999; left:10%; top:20%; height: 170px; margin:auto; width:80%; background:#fff; border-radius:5px; color:#535252; letter-spacing:-0.5px}
+#popup_btn2 .closew {position:relative; float:left; width:100%; height:20px;}
+#popup_btn2 .closew .close {position:absolute; top:7px; right:10px}
+#popup_btn2 .txt{ position:relative; margin:auto; width:90%; text-align:center; }
+#popup_btn2 .txt1{ font-size:1.000em; font-weight:bold; line-height:1.4; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #e9e9ea;}
+#popup_btn2 .txt2_color{ font-size:0.938em; font-weight:bold; line-height:1.4;color: #ff6600}
+#popup_btn2 .txt2{text-align:center; font-size:0.875em;}
+#popup_btn2 .pobtn {width:100%; position:absolute; bottom:0px; font-size:0.875em;}
+#popup_btn2 .pobtn .leftbtn{float:left; width:50%; background:#a8a8a8; text-aligN:center; height:40px; border-bottom-left-radius:5px; color:#fff; line-height:2.7}
+#popup_btn2 .pobtn .rightbtn{float:right; width:50%; background:#ff6600; text-aligN:center; height:40px; border-bottom-right-radius:5px; color:#fff; line-height:2.7}
+#popup_btn2 .pobtn .rightbtn_one{float:right; width:100%; background:#ff6600; text-aligN:center; height:40px; border-bottom-right-radius:5px; border-bottom-left-radius:5px; color:#fff; line-height:2.7}
+#popup_btn2 .ptit_s {font-size: 0.75em; color:#999; text-align:center; line-height: 30px}
+/* 고코앱달력폰트굵기_170725_혜준 */
+#calendar_w .calendar_product_list .week_day_table td {font-weight: normal;}
+@media (max-device-width: 320px) {
+	#calendar_w .calendar_product_list .week_day_table td.Check-in a .Check-in-txt,
+	#calendar_w .calendar_product_list .week_day_table td.Check-out a .Check-in-txt {font-size: 10px;}
+}
+/* 여수해상케이블카 랜딩페이지 170705 이현우 */
+.new_yeosu {clear:both;}
+.new_yeosu .mid_area {background-color:#f1f1f1; padding-top:10px;}
+.new_yeosu .mid_area .title_banner {margin:10px 0; padding:10px; background-color:#05467d; border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;; color:#fff; text-align:center;}
+.new_yeosu .mid_area .title_banner:nth-of-type(1) {margin-top:0;}
+.new_yeosu .mid_area .title_banner strong {font-size:18px;}
+.new_yeosu .mid_area .title_banner span {font-size:14px; word-break: keep-all;}
+.new_yeosu .mid_area .item_list {background-color:#fff; padding:14px 4px; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+.new_yeosu .mid_area .item_list:after {content:''; display:block; clear:both;}
+.new_yeosu .mid_area .item_list > li {float:left; width:49%; padding:4px 4px 6px 4px; text-align:center; letter-spacing:-1px; box-sizing:border-box; border:1px solid #dfdfdf; box-shadow:0 1px 1px; min-height:170px; margin-bottom:15px;}
+.new_yeosu .mid_area .item_list > li:nth-child(odd) {margin-right:1%;}
+.new_yeosu .mid_area .item_list > li:nth-child(even) {margin-left:1%;}
+.new_yeosu .mid_area .item_list > li .img_area {position:relative; padding-top:56.25%;}
+.new_yeosu .mid_area .item_list > li .img_area img {position:absolute; left:0; top:0; width:100%; height:100%;}
+.new_yeosu .mid_area .item_list > li p {color:#181818; font-weight:bold; font-size:14px; letter-spacing:-1px;}
+.new_yeosu .mid_area .item_list > li p.line1 {margin-top:18px;}
+.new_yeosu .mid_area .item_list > li p.line2 {margin-top:10px; height:45px; overflow:hidden;
+/* text-overflow: ellipsis; white-space: nowrap; */}
+.new_yeosu .mid_area .item_list > li .prc {margin-top:6px;}
+.new_yeosu .mid_area .item_list > li .prc em {color:#ff2400; font-weight:bold; font-size:16px; margin-left:5px;}
+.new_yeosu .mid_area .item_list > li .prc .num {font-size:14px; font-weight:bold; color:#939393; text-decoration:line-through;}
+.new_yeosu .mid_area .item_list > li .prc .txt {font-size:15px; font-weight:bold; color:#181818;}
+
+/* 검색영역 연관검색어 추가 170731 이현우 */
+#sub_search {overflow:visible;}
+#sub_search .select .select05 .connected_search {position:absolute; left:0; top:40px; width:100%; box-sizing:border-box; border:1px solid #ff6600; z-index:1000; background-color:#fff; padding:10px;}
+#sub_search .select .select05 .connected_search .ctd_srch_list li {margin-top:5px; font-size:15px; color:#7b7b7b;}
+#sub_search .select .select05 .connected_search .ctd_srch_list li:first-child {margin-top:0;}
+#sub_search .select .select05 .connected_search .ctd_srch_list li .marking {color:#ff6700;}
+#top_sea_w .sub_connected_search {position:absolute; left:0; top:50px; width:100%; background-color:#fff; box-sizing:border-box; padding:10px; border-bottom:1px solid #ff8534;}
+#top_sea_w .sub_connected_search .sub_ctd_srch_list li {margin-top:5px; font-size:15px; color:#7b7b7b; text-align:left;}
+#top_sea_w .sub_connected_search .sub_ctd_srch_list li:first-child {margin-top:0;}
+#top_sea_w .sub_connected_search .sub_ctd_srch_list li .marking {color:#ff6700;}
+
+/* 상품상세 부대시설 내 아이콘 추가 170801 이현우 */
+#room_w .room_tx_w .room_tx_in .establishment_wrap {padding-top:20px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list {overflow:hidden; margin-top:4px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list:first-child {margin-top:0;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li {float:left; display:table; position:relative; width:25%; height:80px; background-color:#fafafa;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li + li:before {content:''; display:block; position:absolute; left:0; top:50%; width:1px; height:63px; margin-top:-31px; background-color:#ededed;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li > div {display:table-cell; text-align:center; vertical-align:middle;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.businesscenter .ebm_ico {width:33px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.banquethall .ebm_ico {width:33px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.fitness .ebm_ico {width:31px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.clean .ebm_ico {width:15px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.conveniencestore .ebm_ico {width:25px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.caferestaurant .ebm_ico {width:14px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.foodmarket .ebm_ico {width:23px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.parking .ebm_ico {width:20px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.sauna .ebm_ico {width:22px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.pool .ebm_ico {width:21px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.barbecue .ebm_ico {width:20px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.eat .ebm_ico {width:29px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.pet .ebm_ico {width:30px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.freewifi .ebm_ico {width:34px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li.publicwifi .ebm_ico {width:31px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li p {margin-top:0; font-size:13px; letter-spacing:-1.5px;}
+
+/* 간편지역 추가, 지역 검색 바 사이즈 수정 지역태그 추가 170804 */
+.zone_nav {position:static; width:100%; background-color:#262626;}
+.zone_nav ul {font-size:0; padding-left: 16px;}
+@media (max-device-width: 320px) {
+	.zone_nav ul {padding-left: 11px;}
+}
+.zone_nav ul li {display:inline-block; height:28px; margin:0 10px; color:#fff; font-size:12px; line-height:28px;}
+.zone_nav ul li.on {color:#f15d28;}
+#search_list .zone_recommend {position: relative; padding:54px 10px 15px; background:url('http://img.go.co.kr/mobile/zone_nav_bg.png') no-repeat 0 0; background-size:cover;}
+
+#search_list .zone_recommend:after {content: ""; display: block; width: 100%; height: 100%; position: absolute; background: rgba(0,0,0,0.40);
+    top: 0; left: 0; 
+}
+#search_list .zone_recommend.pre:after {background: rgba(0,0,0,0.50); z-index: 1;}
+#search_list .zone_recommend .lowPrc {position: absolute; z-index: 1; right: 15px; top: 10px; width: 40px;}
+#search_list .zone_recommend .category
+, #search_list .zone_recommend .store_name
+, #search_list .zone_recommend .store_info 
+{position: relative;; z-index: 1;}
+
+#search_list .zone_recommend .category span {display:inline-block; font-weight:bold; font-size:12px; border-radius:2px; box-sizing:border-box; height:20px; line-height:20px; vertical-align:middle;
+background-color:#ff8a00; color:#fff; padding:0 10px;}
+/* #search_list .zone_recommend .category span:nth-child(1) {border:1px solid #f96a0a; color:#f96a0a; padding:0 6px;} 
+#search_list .zone_recommend .category span:nth-child(2) {background-color:#ff8a00; color:#fff; padding:0 10px;}*/
+#search_list .zone_recommend .store_name {color:#fff; font-size:14px; font-weight:bold; margin:5px 0;}
+#search_list .zone_recommend .store_info {display:table; width:100%; color:#fff;}
+#search_list .zone_recommend .store_info > div {display:table-cell; vertical-align:bottom;}
+#search_list .zone_recommend .store_info .guide {width: 76%;}
+@media (max-device-width: 320px) {
+	#search_list .zone_recommend .store_info .guide {width: 74%;}
+}
+#search_list .zone_recommend .store_info .money {text-align:right;}
+#search_list .zone_recommend .store_info .money .prc {font-size:14px; font-weight:bold;}
+#search_list .zone_recommend .r-txt {position: absolute; bottom: 12px; left: 0; width: 100%; text-align: center; z-index: 2; color: #fff; background: rgba(0,0,0,0.75); line-height: 28px;}
+#search_list .zone_recommend .r-pre {position: absolute; bottom: 30px; right: 15px;
+z-index: 2; width: 110px;}
+
+#localList5{float:left; width:100%; letter-spacing:-0.6px; font-size:1.000em}
+#localList5 .localBig {float:left; width:100%;}
+#localList5 .localBig li{float:left; display:block; cursor:pointer; width:99.5%; line-height:40px; color:#aaaaaa; background:#fff; text-align:center; border-bottom:1px solid #e4e4e4; font-size:15px;
+border-right:1px solid #e4e4e4}
+#localList5 .localBig .on a{color:#ff5100;}
+#localList5 .localBig a {color:#000}
+#localList5 .localSmall {float:right; width:100%}
+#localList5 .localSmall li{
+float:left; display:block; cursor:pointer;
+width:100%; line-height:40px; color:#000; background: url(http://img.go.co.kr/mobile/btn_more2.png) 93% 50% no-repeat; background-size:8px 14px; -webkit-background-size:8px 14px;
+text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:15px;}
+#localList5 .localSmall .on {color:#ff5100;}
+#localList5 .localSmall a {color:#3f3f3f}
+#localList5 .localSmall .all {height:640px; background:#f7f5e0; text-align:center; line-height:1.2; color:#a3a2a2; text-indent:0px; font-size:0.813em; letter-spacing:-1px}
+#localList5 .localSmall .all p {padding:40px 15px 0 15px; }
+#localList5 .localSmall .all .linkTxt {text-decoration:underline; color:#ff6600; line-height:3}
+#localList5 .check_img {display:block; width:20px; height:20px; margin: auto; top: -2px; left:-23px;position: absolute;}
+#localList5 .check_img img{position:relative; top:0px; left:0px}
+#localList5 .localBig_wrap {float:left; width:35%; margin-bottom:70px; overflow-y:scroll; box-sizing:border-box;}
+#localList5 .localSmall_wrap {float:right; width:65%; margin-bottom:70px; overflow-y:scroll; box-sizing:border-box;}
+/* 앱리스트 수정 170809 혜준 */
+#search_list .photo .soldout_mask1_w {background-color: transparent;}
+#search_list .photo .soldout_mask1 {top: 10px; background-size: 48px; background-position: center center;}
+#search_list .photo .soldout_mask1 .fontx {line-height: 15px;}

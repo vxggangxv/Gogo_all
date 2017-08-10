@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>문서 제목</title>
+
+    <link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!--<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="scroll_box">
+            <div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+                <!-- 서브페이지 상단 -->
+                <div id="headTitle_box">
+                    <div id="headTitle">
+                        <span class="back">
+                <a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a>
+              </span>예약내역
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="history-tab-01">
+                    <ul class="clr">
+                        <li class="on"><a href="./history_01_1.html">이용가능</a></li>
+                        <li><a href="./history_01_2.html">이용완료</a></li>
+                        <li><a href="./history_01_3.html">환불/취소</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 입장권 등록 레이어팝업 -->
+            <div class="layer-pop-bg" id="layer-pop-bg">
+                <div id="tk-lookup">
+                    <h2>입장권 등록<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#layer-pop-bg').hide();"></a></h2>
+                    <p class="nth-1">구매하신 휴대폰 번호를 입력해주세요</p>
+                    <p class="nth-2">
+                        <input type="text"><span></span><input type="text"><span></span><input type="text">
+                    </p>
+                    <p class="nth-3"><a href="#">등록하기</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

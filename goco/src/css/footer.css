@@ -19,6 +19,9 @@
 .f-area .f-bottom .address {float:left; margin-left:40px;}
 .f-area .f-bottom .address p {margin-bottom:10px; font-size:13px;}
 .f-area .f-bottom .address p.copy {color:#7f7f7f; letter-spacing:-0.3px;}
+.f-area .f-bottom .address p.store {}
+.f-area .f-bottom .address p.store > a {margin-left: 10px;}
+.f-area .f-bottom .address p.store > a:first-child {margin-left: 0;}
 .f-area .f-bottom .address p strong {color:#cdcdcd; font-size:15px;}
 .f-area .f-bottom .address p a {margin-left:5px; vertical-align:middle;}
 .f-area .f-bottom .address p span {color:#a3a3a3; vertical-align:middle;}

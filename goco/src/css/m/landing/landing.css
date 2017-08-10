@@ -1,0 +1,14 @@
+/* 고코투어 최저가보장 랜딩페이지 */
+.btn_decl {position:fixed; left:0; bottom:0; width:100%; z-index:999999;}
+.btn_decl a {display:block; height:46px; background-color:#919191; font-size:16px; font-weight:bold; color:#fff; text-align:center; line-height:46px;}
+.decl_area {padding:15px 10px;}
+.decl_area .decl_write > li {margin-top:10px;}
+.decl_area .decl_write > li:first-child {margin-top:0;}
+.decl_area .decl_write > li > p {margin-right:10px; font-size:14px; color:#282828; font-weight:bold;}
+.decl_area .decl_write > li .input_area {margin-top:5px; background-color:#f8f8f8; border:1px solid #ccc; padding:10px;}
+.decl_area .decl_write > li .input_area input[type="text"] {border:1px solid #a9a9a9; height:35px; border-radius:0; box-sizing:border-box; padding:5px;}
+.decl_area .decl_write > li .input_area .ip_txt {width:100%;}
+.decl_area .decl_write > li .input_area textarea {-webkit-appearance:none; appearance:none; border-radius:0; background-color:#fff; width:100%; resize:none; border:1px solid #a9a9a9; padding:5px; box-sizing:border-box; height:100px;}
+.decl_area .decl_write > li .input_area input[type="file"] {-webkit-appearance:none; appearance:none; border-radius:0; border:1px solid #ccc; height:35px; box-sizing:border-box; padding:5px 10px; width:100%; background-color:#fff;}
+.decl_area .submit_decl {margin-top:15px; text-align:center;}
+.decl_area .submit_decl a {display:inline-block; width:250px; height:46px; line-height:46px; color:#fff; font-size:16px; font-weight:bold; background-color:#000;}z

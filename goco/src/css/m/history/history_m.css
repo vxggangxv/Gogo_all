@@ -5,8 +5,18 @@
 .non-box {position: absolute; left: 50%; top: 50%; margin-left: -150px; margin-top: -140px; width: 300px; height: 200px; text-align: center;}
 .non-box img {display: block; margin: 0 auto; width: 50px; margin-bottom: 10px;}
 .non-box p {font-size: 13px; margin-top: 15px; line-height: 1.4em;}
-.non-btn-area {position: absolute; bottom: 10px; width: 100%;}
-.non-btn-area a {display: block; width: 96%; margin: 0 auto; text-align: center; border-radius: 2px; background: #F96A0A; color: #fff; font-size: 13px; line-height: 3.2em; height: 44px;}
+.non-btn-area {position: absolute; bottom: 10px; width: 100%; text-align: center;}
+.non-btn-area a {display: block; width: 96%; margin: 0 auto; text-align: center; border-radius: 3px; background: #F96A0A; color: #fff; font-size: 13px; line-height: 3.2em; height: 44px;}
+.non-btn-area a.regist, .non-btn-area a.reserv {width: 40%; height: 48px; font-size: 14px; line-height: 50px; display: inline-block; box-sizing: border-box; border: 1px solid #f96a0a; font-weight: 600;}
+.non-btn-area a.regist {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f9fafa+49,f1f2f4+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f9fafa 49%, #f1f2f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f9fafa 49%,#f1f2f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f9fafa 49%,#f1f2f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f2f4',GradientType=0 ); /* IE6-9 */
+	color: #f96a0a;
+}
+.non-btn-area a.reserv {margin-left: 15px;}
 
 .history-tab-01 {position: relative;}
 .history-tab-01 * {font-family: "Nanum Gothic", "Malgun Gothic", sans-serif;}
@@ -377,7 +387,7 @@
 .clearHere > a {display: inline-block; width: 230px; height: 42px; padding-top: 5px; background-color: #585858; border-radius: 3px; font-size: 14px; color: #fff; line-height: 1.3em; letter-spacing: -0.7px;}
 .clearHere .c-yellow {color: #fff600;}
 .clearHere .gt {position: relative; top: -2px; left: 45px;font-size: 12px; font-family: "Nanum Gothic"; font-weight: 400;}
-.layer-pop-bg {position: fixed; z-index:5; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+.layer-pop-bg {position: fixed; z-index:9999; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
 #r-lookup {position: fixed; z-index: 6; width: 300px; height: 208px; top: 50%; margin-top: -104px; left: 50%; margin-left: -150px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px;}
 #r-lookup * {letter-spacing: -0.5px; color: #303030;}
 #r-lookup h2 {height: 42px; font-size: 15px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
@@ -411,6 +421,13 @@
 #r-confirm > div > p.nth-1 {margin-top: 10px;}
 #r-confirm > div > p.nth-2 {margin-top: 14px; padding: 12px; border-top: 1px solid #d6d6d6;}
 #r-confirm > div > p.nth-2 > a {display: block; margin: 0px auto; width: 100%; height: 45px; border-radius: 4px; background: #ff610a; color: #fff; line-height: 3em; font-size: 14px; font-weight: 600;}
+#r-confirm > div > p.nth-2 > a:last-child {
+	margin-top:12px; height:45px; color:#fd610a; border:1px solid #ff600a; box-sizing:border-box;
+	background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 
 /* 예약내역 없음페이지 초록박스 추가 170626 이현우 */
 .non-box .non-box-ntcbox {display:inline-block; padding:7px 15px; background-color:#2ba78d; border-radius:3px; color:#fff; font-size:13px;}
@@ -438,13 +455,15 @@
 .modal-wrap {position:absolute; left:0; top:0; width:100%; z-index:10000; background-color:rgba(0,0,0,.7);}
 .modal-group {position:absolute; left:0; top:0; width:100%; height:100%; z-index:10001; text-align:center; font-size:0;}
 .modal-group:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
-.modal-area {display:inline-block; box-sizing:border-box; width:100%; padding:0 20px; vertical-align:middle;}
+.modal-area {display:inline-block; box-sizing:border-box; width:100%; padding:0 20px; vertical-align:middle; position: relative; top: 20px;}
+.modal-area.type02, .modal-area.type03 {padding: 0 20px; position: fixed; left: 0;}
+.modal-area.type02 {top: 50%; margin-top: -132px;}
+.modal-area.type03 {top: 50%; margin-top: -202px;}
 .modal-inner {position:relative; background-color:#fff; border-radius:3px; font-size:14px;}
 .modal-inner .modal-close {position:absolute; right:0; top:0; width:39px; height:39px; text-align:center; line-height:39px;}
 .modal-inner .modal-close img {vertical-align:middle; width:11px;}
 .modal-inner .top {position:relative; height:39px; border-bottom:1px solid #cfcfcf;}
 .modal-inner .top > p {position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); color:#141414; font-weight:bold; font-size:16px;}
-
 .modal-inner .mid {padding:15px 10px;}
 .modal-inner .mid > strong {font-size:16px; color:#f96a0a;}
 .modal-inner .mid .txt {font-size:14px; color:#262626; margin-top:5px;}
@@ -482,7 +501,49 @@
 .modal-inner .mid .cancel_wrap {margin-top:15px;}
 .modal-inner .mid .cancel_wrap .cancel_data {width:100%; margin-top:8px;}
 .modal-inner .mid .cancel_wrap .cancel_data:first-child {margin-top:0;}
-.modal-inner .mid .cancel_wrap .cancel_data tr th {border-top:1px solid #c5c5c5; background-color:#f5f5f5; color:#090909; font-size:11px; padding:5px; font-weight:bold; border-left:1px solid #c5c5c5;}
+.modal-inner .mid .cancel_wrap .cancel_data tr th {border-top:1px solid #c5c5c5; background-color:#f5f5f5; color:#090909; font-size:11px; padding:5px; font-weight:bold; border-left:1px solid #c5c5c5; word-break: keep-all;}
 .modal-inner .mid .cancel_wrap .cancel_data tr th:first-child {border-left:0;}
-.modal-inner .mid .cancel_wrap .cancel_data tr td {border-top:1px solid #c5c5c5; font-size:11px; padding:5px; text-align:center; border-left:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5;}
+.modal-inner .mid .cancel_wrap .cancel_data tr td {border-top:1px solid #c5c5c5; font-size:11px; padding:5px; text-align:center; border-left:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5; word-break: keep-all;}
 .modal-inner .mid .cancel_wrap .cancel_data tr td:first-child {border-left:0;}
+
+/* 아이디통합하기 팝업 170706 이현우 */
+.grated_wrap {position:fixed; left:0; right:0; bottom:0; top:0; background-color:rgba(0,0,0,.58); text-align:center; z-index:5;}
+.grated_wrap:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
+.grated_wrap .grated {display:inline-block; width:300px; vertical-align:middle; border:2px solid #ff610a; border-radius:2px; background-color:#f1f1f1; letter-spacing:-0.5px; margin-right:-5px; word-break:break-all;}
+.grated_wrap .grated .top_area {padding:10px; position:relative; background-color:#ff610a; text-align:center;}
+.grated_wrap .grated .top_area strong {font-size:15px; color:#fff; font-weight:700;}
+.grated_wrap .grated .top_area .close_btn {position:absolute; right:12px; top:50%; margin-top:-9px; width:18px; height:18px;}
+.grated_wrap .grated .top_area .close_btn img {width:18px;}
+.grated_wrap .grated .mid_area {padding:15px 20px;}
+.grated_wrap .grated .mid_area .t_txt {font-size:14px; color:#303030; letter-spacing:-0.5px; margin-bottom:15px;}
+.grated_wrap .grated .mid_area .area_com {padding:15px 10px; background-color:#fff; border:1px solid #c1c1c1;}
+.grated_wrap .grated .mid_area .area_com .bn_list li {margin-top:15px;}
+.grated_wrap .grated .mid_area .area_com .bn_list li:first-child {margin-top:0;}
+.grated_wrap .grated .mid_area .gtd_btn {display:block; box-sizing:border-box; font-size:15px; height:40px; line-height:40px; font-weight:600;}
+.grated_wrap .grated .mid_area .btn_lightred {background-color:#fc4314; border-radius:2px; color:#fff;}
+.grated_wrap .grated .mid_area .btn_orange {background-color:#ff610a; border-radius:2px; color:#fff;}
+.grated_wrap .mid_area .user_id_list {border:1px solid #c1c1c1; background-color:#fff;}
+.grated_wrap .mid_area .user_id_list > li {padding:10px 0; border-top:1px solid #e7e7e7; display:table; width:100%;}
+.grated_wrap .mid_area .user_id_list > li.on {background-color:#fff3ec;}
+.grated_wrap .mid_area .user_id_list > li > div {display:table-cell; vertical-align:middle;}
+.grated_wrap .mid_area .user_id_list > li .rad_area {width:30px; font-size:0;}
+.grated_wrap .mid_area .user_id_list > li .rad_area input[type="radio"] {height:0; position:relative; border:none; border-radius:0; background:none; outline:none;}
+.grated_wrap .mid_area .user_id_list > li .rad_area input[type="radio"]:before {content:''; display:block; position:absolute; width:14px; height:14px; left:50%; top:50%; margin:-8px 0 0 -8px; background-color:#fff; border:1px solid #9a9a9a; border-radius:100%;}
+.grated_wrap .mid_area .user_id_list > li .rad_area input[type="radio"]:after {content:''; display:none; position:absolute; left:50%; top:50%; width:8px; height:8px; margin:-4px 0 0 -4px; background-color:#f95c24; border-radius:100%;}
+.grated_wrap .mid_area .user_id_list > li .rad_area input[type="radio"]:checked:before {border:1px solid #f95c24;}
+.grated_wrap .mid_area .user_id_list > li .rad_area input[type="radio"]:checked:after {display:block;}
+.grated_wrap .mid_area .user_id_list > li .id_img {width:35px;}
+.grated_wrap .mid_area .user_id_list > li .id_img img {width:28px;}
+.grated_wrap .mid_area .user_id_list > li .id_txt {text-align:left; font-size:14px; color:#000; padding:0 10px;}
+.grated_wrap .mid_area .user_id_list > li .id_txt p {letter-spacing:-1px;}
+.grated_wrap .grated .mid_area .grated_btn_area {margin:15px 6px 0;}
+.grated_wrap .mid_area .id_grated {border:1px solid #c1c1c1; background-color:#fff; box-sizing:border-box; width:100%; display:table; padding:10px 0;}
+.grated_wrap .mid_area .id_grated > div {padding:10px 0; display:table-cell; vertical-align:middle;}
+.grated_wrap .mid_area .id_grated .id_img {width:40px; text-align:right;}
+.grated_wrap .mid_area .id_grated .id_img img {width:28px;}
+.grated_wrap .mid_area .id_grated .id_txt {text-align:left; font-size:14px; color:#000; padding:0 10px;}
+.grated_wrap .mid_area .id_grated .id_txt p {letter-spacing:-1px;}
+
+/*입장권등록아이콘_170720_혜준*/
+#headTitle .i-tickets {position: absolute; top: 10px; right: 10px; width: 44px;}
+#headTitle .i-tickets > img {width: 100%;}

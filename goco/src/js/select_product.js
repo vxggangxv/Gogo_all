@@ -23,6 +23,7 @@ $(function () {
 
     // 확인팝업 중앙정렬
     var wd = $("#sltCheck-sec").width() / 2;
+        wd -= 2;
     $("#sltCheck-sec").css({
         "margin-left": -wd
     });

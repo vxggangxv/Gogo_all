@@ -349,7 +349,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #wrapper #left_mn h4 {margin-top:15px; font-size:24px; color:#6a2d00; letter-spacing:-1.2px; font-weight:300; line-height:1.2}
 
 #wrapper #left_mn ul {margin-top:15px}
-#wrapper #left_mn li {float:left; padding-left:15px; width:160px; font-size:14px; border-bottom:1px solid #dedede; line-height:3}
+#wrapper #left_mn li {padding-left:15px; width:160px; font-size:14px; border-bottom:1px solid #dedede; line-height:3}
 #wrapper #left_mn li a:hover{color:#fe5b0e}
 #wrapper #left_mn li.on {padding-left:15px; width:160px; background:#6a2d00; font-weight:600; color:#fff}
 #wrapper #left_mn li.on a{color:#fff}
@@ -449,7 +449,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #wrapper #membership .member_info_t {clear:both; float:left; margin-bottom:20px; width:740px; text-align:left; border-top:1px solid #dfdfdf}
 #wrapper #membership .member_info_t tr:hover {background:#fef1e9; cursor:pointer}
 #wrapper #membership .member_info_t th {height:35px; background:#f5f5f5; border-bottom:1px solid #dfdfdf; text-align:center}
-#wrapper #membership .member_info_t td {padding:10px 0; height:35px; border-bottom:1px solid #dfdfdf; text-align:center}
+#wrapper #membership .member_info_t td {height:35px; border-bottom:1px solid #dfdfdf; text-align:center}
 #wrapper #membership .member_info_t span {font-weight:600; color:#ff610a}
 #wrapper #membership .member_info_t .name {padding-left:10px; text-align:left}
 
@@ -500,7 +500,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #wrapper #membership .modify_t {float:left; width:740px; text-align:left; border-top:1px solid #dedede; color:#7b7a7a; font-size:15px}
 #wrapper #membership .modify_t th {height:35px; text-align:left; padding-left:15px; background:#f5f5f5; border-bottom:1px solid #dfdfdf}
 #wrapper #membership .modify_t td {height:20px; text-align:left; padding-left:15px; padding-top:10px; padding-bottom:10px; border-bottom:1px solid #dfdfdf}
-#wrapper #membership .modify_t .input {padding:10px; margin-right:10px; height:20px; border:1px solid #dedede; background:#f9f9f9; font-size:15px; color:#999999; text-align:left}
+#wrapper #membership .modify_t .input {padding:12px; margin-right:10px; height:20px; border:1px solid #dedede; background:#f9f9f9; font-size:15px; color:#999999; text-align:left; box-sizing:content-box;}
 #wrapper #membership .modify_t .select {margin-right:10px; *display:inline; zoom:1; position:relative; display:inline-block; vertical-align:middle; font-size:15px}
 #wrapper #membership .modify_t .select span {vertical-align:middle; display:block; padding:9px; overflow:hidden; white-space:nowrap; background:none}
 #wrapper #membership .modify_t .select p {width:100%; border:1px solid #dedede; background:#fff url(http://img.go.co.kr/bg_selectbox.gif) no-repeat right center; cursor:pointer}
@@ -2654,8 +2654,8 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 /*자주묻는질문-카테고리 탭*/
 #wrapper #customer .category2 {margin:auto; margin-top:50px; width:440px}
 #wrapper #customer .category2 li a {float:left; display:block; cursor:pointer; line-height:2.2; margin-right:5px; width:80px; height:30px; border-radius:5px; border:1px solid #dedede; text-align:center}
-#wrapper #customer .category2 li a:hover {float:left; display:block; cursor:pointer; line-height:2.2; margin-right:5px; background:#ff610a; color:#fff; width:80px; height:30px; border-radius:5px; border:1px solid #ff610a; text-align:center}
-#wrapper #customer .category2 .on a {float:left; display:block; cursor:pointer; line-height:2.2; margin-right:5px; background:#ff610a; color:#fff; width:80px; height:30px; border-radius:5px; border:1px solid #ff610a; text-align:center}
+#wrapper #customer .category2 li a:hover {background:#ff610a; color:#fff; border:1px solid #ff610a;}
+#wrapper #customer .category2 .on a {background:#ff610a; color:#fff; border:1px solid #ff610a;}
 
 /*로그인 20150825*/
 #customer .Login {float:left; width:740px}
@@ -2689,11 +2689,11 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #call_notice .left {float:left; padding:15px 0 0 15px; width:475px; height:159px; text-align:left}
 #call_notice .left .title {padding-bottom:10px; font-weight:600; color:#ff610a; font-size:26px}
 #call_notice .left .faq a {float:left; display:block; margin-top:15px; width:110px; height:35px; border-radius:5px; background:#ff610a; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
-#call_notice .left .faq a:hover {float:left; display:block; margin-top:15px; width:110px; height:35px; border-radius:5px; background:#fe8949; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
+#call_notice .left .faq a:hover {background:#fe8949;}
 #call_notice .left .qna a {float:left; display:block; margin-top:15px; margin-left:5px; width:110px; height:35px; border-radius:5px; background:#7b7b7b; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
-#call_notice .left .qna a:hover {float:left; display:block; margin-top:15px; margin-left:5px; width:110px; height:35px; border-radius:5px; background:#999999; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
+#call_notice .left .qna a:hover {background:#999999;}
 #call_notice .left .cancel a {float:left; display:block; margin-top:15px; margin-left:5px; width:110px; height:35px; border-radius:5px; background:#6d3916; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
-#call_notice .left .cancel a:hover {float:left; display:block; margin-top:15px; margin-left:5px; width:110px; height:35px; border-radius:5px; background:#954e1e; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
+#call_notice .left .cancel a:hover {background:#954e1e;}
 #call_notice .left .kakao a {float:left; display:block; margin-top:15px; margin-left:5px; width:120px; height:35px; border-radius:5px; background:#ffeb00; border:1px solid #ebce07; letter-spacing:-0.5px; color:#3b1e1e; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
 #call_notice .left .kakao a:hover {float:left; display:block; margin-top:15px; margin-left:5px; width:120px; height:35px; border-radius:5px; background:#fff148; border:1px solid #ebce07; letter-spacing:-0.5px; color:#3b1e1e; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
 #call_notice .right {float:right; padding:10px 0 0 25px; width:210px; height:164px; text-align:left; font-size:12px}
@@ -3491,12 +3491,21 @@ option {font-size:13px}
 #headerWrap .header .bn_top {position:relative; float:right; margin-top:14px}
 #headerWrap .header .bn_top .btn {position:absolute; bottom:0; right:0; width:29px; height:15px; z-index:999}
 
-#headerWrap .header .searchBox {float:left; margin-left:70px; margin-top:25px; width:447px; height:45px; letter-spacing:-0.3px; background:url(http://img.go.co.kr/search_inputBG.png) no-repeat}
-#headerWrap .header .searchBox .select {margin-left:15px}
-#headerWrap .header .searchBox .select a {color:#6d6d6d}
-#headerWrap .header .searchBox .select a.on {font-weight:800; color:#f37720}
+#headerWrap .header .searchBox {float:left; letter-spacing:-0.3px; position: relative; width: 492px; height: 51px; margin-left: 33px; padding-top: 12px; margin-top: 24px;
+background: url(http://img.go.co.kr/search_inputBG_big.png) no-repeat;}
+#headerWrap .header .searchBox .select {margin-left:15px; position: relative; top: 3px; font-size: 15px;}
+#headerWrap .header .searchBox .select a {color:#6d6d6d; letter-spacing: -0.3px;}
+#headerWrap .header .searchBox .select a.on {font-weight: 600; color:#f37720}
 #headerWrap .header .searchBox .searchInput {margin-left:15px; width:220px; height:31px}
-#headerWrap .header .searchBox .searchInput .search_keyword {outline:none; display:inline-block; width:220px; border:0 none; letter-spacing:-0.3px; font-size:13px; color:#656565}
+#headerWrap .header .searchBox .searchInput .search_keyword {outline:none; display:inline-block; border:0 none;}
+#headerWrap .header .searchBox .select > a > img {position: relative; top: -2px;}
+#headerWrap .header .searchBox .searchInput .search_keyword {font-size: 15px; color: #414141; letter-spacing: normal; background: none;
+width: 250px; line-height: normal; position: relative; top: 1px;}
+#headerWrap .header .searchBox .searchInput .search_keyword::-webkit-input-placeholder {color: #414141;}
+#headerWrap .header .searchBox .searchInput .search_keyword::-moz-placeholder {color: #414141;}
+#headerWrap .header .searchBox .searchInput .search_keyword:-ms-input-placeholder {color: #414141;}
+#headerWrap .header .searchBox .searchInput .search_keyword:-moz-placeholder {color: #414141;}
+#headerWrap .header .searchBox .searchInput + a {position: absolute; top: 3px; right: 1px;}
 
 #headerWrap .header .menu {float:right; margin-top:40px}
 #headerWrap .header .menu a {font-size:15px; color:#414141; letter-spacing:-0.3px; font-weight:600}
@@ -3528,9 +3537,9 @@ option {font-size:13px}
 #gnbWrap { float:left; width:100%; height:50px; background:#f37720; text-align:center}
 #gnbWrap .gnb {margin:auto; width:1002px; letter-spacing:-0.3px}
 #gnbWrap .gnb > li {float:left; height:50px; text-align:center; color:#fff; font-size:16px; font-weight:800; line-height:50px}
-#gnbWrap .gnb > li > a {float:left; display:block; width: 229px; height:50px; color:#fff}
+#gnbWrap .gnb > li > a {float:left; display:block; height:50px; color:#fff}
 #gnbWrap .gnb > li > a:hover {background:#e45713}
-#gnbWrap .gnb .line {float:left; width:1px; background:#ffab72}
+#gnbWrap .gnb .line {width:1px; background:#ffab72}
 #gnbWrap .gnb .all {width:80px; padding-top:3px; height:47px; font-size:14px; font-weight:600; line-height:25px}
 #gnbWrap .gnb .all > a {float:left; width:80px; height:50px; color:#fff}
 #gnbWrap .gnb .all > a:hover {float:left; width:80px; height:50px; color:#fff; background:#e45713}
@@ -3603,7 +3612,7 @@ option {font-size:13px}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .total .comment {margin-top:20px; letter-spacing:-0.3px; color:#595858; font-size:13px}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country {width:117px; height:30px; font-weight:800; font-size:13px; line-height:30px}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country a {display:block; width:117px; height:30px; color:#383431; line-height:30px}
-#gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country a:hover {display:block; width:117px; height:30px; background:#dadada; line-height:30px}
+#gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country a:hover {background:#dadada;}
 
 #gnbWrap .gnb .all .subMenu .totalWrap {margin:0 auto; width:1002px; padding:20px 0; border-left:1px solid #dfdddf; border-right:1px solid #dfdddf; background:#fff}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalTxt {float:left; padding:10px 0; border-bottom:2px solid #414141; width:1002px; height:40px; background:#ffede3; font-weight:800; color:#6d3916; font-size:18px; text-align:center}
@@ -3718,8 +3727,8 @@ option {font-size:13px}
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local {float:right}
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local > li {float:left; width:43px; height:40px; line-height:39px; text-align:center; background:#fff; color:#595858; font-size:15px; font-weight:600}
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local > li > a {float:left; width:43px; height:40px; line-height:39px; color:#595858}
-#mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local .on {float:left; width:43px; height:40px; line-height:39px; background:#6d3916; color:#fff}
-#mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local > li > a:hover {float:left; width:43px; height:40px; line-height:39px; background:#6d3916; color:#fff}
+#mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local .on {background:#6d3916; color:#fff}
+#mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local > li > a:hover {background:#6d3916; color:#fff}
 #mainBox02_wrapper #mainBox02 .localRecommend .photo {position:relative; float:left; width:676px; height:285px}
 #mainBox02_wrapper #mainBox02 .localRecommend .photo table a:hover {border:1px solid #6d3916}
 #mainBox02_wrapper #mainBox02 .localRecommend .photo .icon {position:absolute; top:0; left:15px}
@@ -3742,8 +3751,8 @@ option {font-size:13px}
 #mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local {margin:auto; width:700px}
 #mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local > li {float:left; width:100px; height:40px; line-height:39px; text-align:center; color:#595858; font-size:15px; font-weight:600}
 #mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local > li > a {float:left; width:100px; height:40px; line-height:39px; color:#595858}
-#mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local .on {float:left; width:100px; height:40px; line-height:39px; background:#6d3916; color:#fff}
-#mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local > li > a:hover {float:left; width:100px; height:40px; line-height:39px; background:#6d3916; color:#fff}
+#mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local .on {background:#6d3916; color:#fff}
+#mainBox02_wrapper #mainBox02 .localRecommend_global .titleLocal .local > li > a:hover {background:#6d3916; color:#fff}
 #mainBox02_wrapper #mainBox02 .localRecommend_global .list {float:left; padding-bottom:40px; width:1002px}
 #mainBox02_wrapper #mainBox02 .localRecommend_global .list .btn {float:left; width:100%; padding:10px 0}
 #mainBox02_wrapper #mainBox02 .localRecommend_global .list .btn a {float:right; display:block; margin-right:25px; width:72px; height:23px; background:url(http://img.go.co.kr/btn_mainLocal_more.png) no-repeat; background-position:100% 0; text-indent:-99999px}
@@ -3954,12 +3963,12 @@ option {font-size:13px}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local {float:right}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local > li {position:relative; float:left; width:90px; height:40px; line-height:39px; text-align:center; color:#595858; font-size:14px; font-weight:600}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local > li > a {float:left; width:90px; height:40px; line-height:39px; color:#595858}
-#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .on {float:left; width:90px; height:40px; line-height:39px; background:#404d6c; color:#fff}
-#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local > li > a:hover {float:left; width:90px; height:40px; line-height:39px; background:#404d6c; color:#fff}
+#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .on {background:#404d6c; color:#fff}
+#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local > li > a:hover {background:#404d6c; color:#fff}
 
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .sGnbArea2 {display:none; position:absolute; top:40px; z-index:9; width:90px; background-color:#fff; border:1px solid #dadada}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .sGnbArea2 ul li a {float:left; display:block; font-size:13px; width:90px; height:30px; line-height:30px; font-weight:400; color:#595858}
-#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .sGnbArea2 ul li a:hover {display:block; width:90px; height:30px; background:#dadada}
+#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .sGnbArea2 ul li a:hover {background:#dadada}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local .on2 .sGnbArea2 {display:block}
 
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .titleLocal2 .local2 {float:right}
@@ -3975,7 +3984,6 @@ option {font-size:13px}
 
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .listTitle {float:left; margin-top:30px; width:100%; height:40px}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .listTitle h4 {float:left; font-size:23px; font-weight:800; color:#293550}
-#mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .listTitle h4 span a {font-size:14px; font-weight:400}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .listTitle h4 span a {font-size:14px; font-weight:600; color:#71767d; text-decoration:underline; letter-spacing:-0.3px}
 #mainGlobal02_wrapper #mainGlobal02 .localRecommend_global .listTitle h4 span a:hover {color:#0181fe}
 
@@ -4094,9 +4102,8 @@ option {font-size:13px}
 #search_result .wrap .goods_t td {text-align:left; height:30px; color:#252525}
 #search_result .wrap .goods_t th {color:#888888; height:30px}
 #search_result .wrap .goods_t .line {background:#dadada; height:1px}
-#search_result .wrap .goods_t .tit {line-height:40px; padding-left:10px; font-weight:bold; font-size:19px; letter-spacing:-1px; color:#252525; text-transform:capitalize}
-#search_result .wrap .goods_t .photo {position:relative; width:238px; height:153px}
-#search_result .wrap .goods_t .photo img {width:238px; height:153px}
+#search_result .wrap .goods_t .tit {line-height:40px; font-weight:bold; font-size:19px; color:#252525; text-transform:capitalize}
+#search_result .wrap .goods_t .photo {position:relative;}
 #search_result .wrap .goods_t .photo .goods_price{position:absolute; top:144px; padding-top:10px; width:198px; height:30px; background:#000000; color:#ffea00; font-size:16px; font-weight:bold; opacity:0.8; filter:alpha(opacity=88); text-align:center}
 #search_result .wrap .goods_t .photo .label {position:absolute; right:15px; top:5px; width:74px; height:79px; background:url(http://img.go.co.kr/icon_localbest.png) no-repeat}
 #search_result .wrap .goods_t .photo .label2 {position:absolute; right:15px; top:5px; width:74px; height:79px; background:url(http://img.go.co.kr/icon_pkg.png) no-repeat}
@@ -4456,8 +4463,8 @@ option {font-size:13px}
 #mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu ul {float:left; width:229px; height:200px; font-size:13px; color:#444444; letter-spacing:-0.3px}
 #mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu li {float:left; display:block; width:214px; line-height:34px; height:33.2px; padding-left:15px; border-bottom:1px solid #bfc2ca}
 #mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu li a {color:#959595; display:block; width:201px}
-#mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .on {display:block; width:214px; padding-left:15px; background:#404d6d}
-#mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .on a {color:#fff; width:201px;}
+#mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .on {background:#404d6d}
+#mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .on a {color:#fff;}
 #mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .default {float:left; display:block; width:214px; line-height:40px; height:40px; padding-left:15px; border-bottom:1px solid #bfc2ca}
 #mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .default a {display:block; color:#959595}
 #mainGlobal01_wrapper #mainGlobal01 .banner .bannerMenu .default a:hover {display:block; font-weight:600; color:#404d6d}
@@ -4559,7 +4566,7 @@ option {font-size:13px}
 .naver_login_bn{position:absolute; top:105px; right:0px}
 .view_img_layer {visibility:hidden;position:absolute;top:30%;left:50%;margin-left:-314px;width:628px;height:468px;border:3px solid #f37720;background:#fff;z-index:1000;padding:25px 0 0 30px;}
 .view_img_layer .view_title {background:url(http://img.go.co.kr/ico_camera.jpg) no-repeat 0 5px;font-size:18px;font-weight:600;color:#323232;padding:0 0 15px 33px;}
-.view_img_la er .view_layer_close {position:absolute; right:-1px; top:-1px;cursor:pointer;}
+.view_img_layer .view_layer_close {position:absolute; right:-1px; top:-1px;cursor:pointer;}
 .view_img_layer .img_area {position:relative;width:598px;overflow:hidden;}
 .view_img_layer .img_area li {width:598px;height:398px;text-align:center;float:left;}
 .view_img_layer .img_area li img {max-width:598px;height:398px;}

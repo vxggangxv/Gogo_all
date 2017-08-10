@@ -1,0 +1,14 @@
+/* 호텔마스타대천 숙박/입장권 통합_170616_혜준 */
+.d-room-enter {font-size: 0; box-sizing: border-box; clear: both; padding-top: 5px;	}
+.d-room-enter input {display: inline-block; font-size: 14px; background: #aaa; color: #fff; width: 50%;}
+.d-room-enter input.on {background: #f95c24;}
+.btn-reservation_room, .btn-reservation_enter {}
+.btn-reservation_enter {border-left: 1px solid #ccc;}
+/* 앱 메인_170711_혜준 */
+#head #allmenu > .tab-bar > span {background: #0b82c6;}
+#head #logo2 a > img {top: 6px; width: 160px;}
+#menu .on {border-color: #0b82c6;}
+#menu .on a, #menu a:hover, #menu a:active {color: #0b82c6;}
+.c-theme {color: #0b82c6 !important;}
+
+@media (max-device-width: 320px) { .int-main-sec .content > .p-type01 {letter-spacing: -1px;} }

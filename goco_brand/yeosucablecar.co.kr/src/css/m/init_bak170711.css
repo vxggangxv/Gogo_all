@@ -1,0 +1,23 @@
+/* 여수해상케이블카 랜딩페이지 170705 이현우 */
+.buying-area {z-index:10;}
+.new_yeosu {clear:both;}
+.new_yeosu .mid_area {background-color:#f1f1f1; padding-top:10px;}
+.new_yeosu .mid_area .title_banner {margin:10px 0; padding:10px; background-color:#05467d; border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;; color:#fff; text-align:center;}
+.new_yeosu .mid_area .title_banner:nth-of-type(1) {margin-top:0;}
+.new_yeosu .mid_area .title_banner strong {font-size:18px;}
+.new_yeosu .mid_area .title_banner span {font-size:14px; word-break: keep-all;}
+.new_yeosu .mid_area .item_list {background-color:#fff; padding:14px 4px; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+.new_yeosu .mid_area .item_list:after {content:''; display:block; clear:both;}
+.new_yeosu .mid_area .item_list > li {float:left; width:49%; padding:4px 4px 6px 4px; text-align:center; letter-spacing:-1px; box-sizing:border-box; border:1px solid #dfdfdf; box-shadow:0 1px 1px; min-height:170px; margin-bottom:15px;}
+.new_yeosu .mid_area .item_list > li:nth-child(odd) {margin-right:1%;}
+.new_yeosu .mid_area .item_list > li:nth-child(even) {margin-left:1%;}
+.new_yeosu .mid_area .item_list > li .img_area {position:relative; padding-top:56.25%;}
+.new_yeosu .mid_area .item_list > li .img_area img {position:absolute; left:0; top:0; width:100%; height:100%;}
+.new_yeosu .mid_area .item_list > li p {color:#181818; font-weight:bold; font-size:14px; letter-spacing:-1px;}
+.new_yeosu .mid_area .item_list > li p.line1 {margin-top:18px;}
+.new_yeosu .mid_area .item_list > li p.line2 {margin-top:10px; height:45px; overflow:hidden;
+/* text-overflow: ellipsis; white-space: nowrap; */}
+.new_yeosu .mid_area .item_list > li .prc {margin-top:6px;}
+.new_yeosu .mid_area .item_list > li .prc em {color:#ff2400; font-weight:bold; font-size:16px; margin-left:5px;}
+.new_yeosu .mid_area .item_list > li .prc .num {font-size:14px; font-weight:bold; color:#939393; text-decoration:line-through;}
+.new_yeosu .mid_area .item_list > li .prc .txt {font-size:15px; font-weight:bold; color:#181818;}

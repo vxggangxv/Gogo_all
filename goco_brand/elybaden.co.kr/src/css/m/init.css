@@ -1,0 +1,9 @@
+/* 앱 메인_170711_혜준 */
+#head {background: #fafafa;}
+#head #allmenu > .tab-bar > span {background: #01a6eb;}
+#head #logo2 a > img {top: 6px; width: 106px;}
+#menu .on {border-color: #01a6eb;}
+#menu .on a, #menu a:hover, #menu a:active {color: #01a6eb;}
+.c-theme {color: #01a6eb !important;}
+
+@media (max-device-width: 320px) { .int-main-sec .content > .p-type01 {letter-spacing: -1px;} }

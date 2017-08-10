@@ -24,9 +24,10 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 .wrap_reservation-mobile{width:100%; height:1024px; background-color:#f2f2f2;}
 .wrap_reservation-mobile .title{padding:20px 0; text-align:center; background-color:#f2f2f2; color:#404040; font-size:20px; font-weight:bold; border-bottom:1px solid #dedede;}
 .wrap_reservation-mobile .title span{color:#2395ff;}
-.wrap_reservation-mobile .contents{padding:13px 16px; text-align:center; background-color:#fff; border-bottom:1px solid #dedede;}
+.wrap_reservation-mobile .contents{padding:13px 16px; text-align:left; background-color:#fff; border-bottom:1px solid #dedede;}
 .wrap_reservation-mobile .contents form .labelStyle{text-align:left; font-size:17px; color:#696969; margin-bottom:8px;}
 .wrap_reservation-mobile .contents form .inputStyle{margin-bottom:20px;}
+.wrap_reservation-mobile .contents form .inputStyle-date {margin-bottom: 20px;}
 .wrap_reservation-mobile .contents form .inputStyle-date input{width:47%; border-bottom:1px solid #dedede; font-size:17px; font-weight:bold;}
 .wrap_reservation-mobile .contents form input{appearance:none; width:100%; background-color:#fff; border-bottom:1px solid #dedede; font-size:17px; font-weight:bold;}
 .wrap_reservation-mobile .contents form input#tel1{width:30%;}

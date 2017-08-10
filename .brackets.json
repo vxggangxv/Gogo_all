@@ -10,7 +10,7 @@
                 "sourceComments": false,
                 "outputStyle": "compact"
             },
-            "linting.collapsed": false
+            "linting.collapsed": true
         },
         "*.scss": {
             "sass.enabled": true,
@@ -20,7 +20,7 @@
                 "sourceComments": false,
                 "outputStyle": "compact"
             },
-            "linting.collapsed": true,
+            "linting.collapsed": false,
             "fonts.fontFamily": "'NanumGothicCoding'"
         }
     },

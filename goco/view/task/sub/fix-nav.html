@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>상세피이지 로고 추가</title>
+
+		<!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css?ver=20170201165300" />-->
+		<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3_tmp.css"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="../src/css/layout_new3_tmp.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../../../src/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../../src/css/layout_new3.css" />
+		<link rel="stylesheet" type="text/css" href="../../../src/css/totalweb.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../../../src/css/totalweb_bak_170615.css" />-->
+
+		<!--<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />-->
+		<!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
+<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css?ver=20170201165300" />
+<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css?ver=20170201165300" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- <script src="http://static.go.co.kr/js/select_product.js"></script> -->
+		<!--<script src="../../../src/js/select_product.js"></script>-->
+
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+<link rel="stylesheet" href="../../../src/css/totalweb_ie8.css">
+<![endif]-->
+
+		<style>
+			body {height: 2000px;}
+			#fix-nav .nb-drop-bar {display: block;}
+			
+			
+			#fix-nav .nav-bar.on {height: 86px; padding-top: 14px;}
+			#fix-nav .nb-drop-bar.on {height: 36px; padding-top: 4px;}
+			#fix-nav .nav .d-h3 {}
+			#fix-nav .nav .d-h3 > h3 {margin-right: 10px; width: 161px; height: 51px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -140px 0;}
+			#fix-nav .nav .d-h3 > .inp {display: none; margin-left: 0;}
+			#fix-nav .nav .d-h3 > .inp .sch-wd {width: 325px;}
+		</style>
+		
+		
+		<script>
+			//변경내용_170712_스크롤시 높이에 따른 변화
+			// 예시 높이, 적용 스크립트에 추가
+			$(function() {
+				$("#fix-nav .nav h2").hide();
+				$(window).scroll(function() {
+					if($(window).scrollTop() > 100) { 
+						$("#fix-nav .nav-bar, #fix-nav .nb-drop-bar").addClass("on");
+						$("#fix-nav .nav h2").show();
+						$("#fix-nav .nav .more-a").css("visibility", "hidden");
+						$("#fix-nav .nav .d-h3 h3").hide();
+						$("#fix-nav .nav .d-h3 .inp").show();
+						$("#fix-nav").css({"position":"fixed", "top":"0px", "z-index":"9999"});
+						$("#fix-nav .nb-drop-bar .i-close").hide();
+					} else {
+						$("#fix-nav .nav-bar, #fix-nav .nb-drop-bar").removeClass("on");
+						$("#fix-nav .nav .more-a").css("visibility", "visible");
+						$("#fix-nav .nav .d-h3 h3").show();
+						$("#fix-nav .nav .d-h3 .inp").hide();
+						$("#fix-nav .nav h2").hide();
+						$("#fix-nav .nb-drop-bar .i-close").show();
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="fix-nav">
+
+			<div class="nav-bar">
+				<div class="nav">
+					<h2><a href=""></a></h2>
+					<!--변경내용_170712-->
+					<div class="d-h3">
+						<h3></h3>
+						<div class="inp">
+							<span>검색어</span>
+							<input type="text" class="sch-wd" value="검색어를 입력해주세요">	
+						</div>
+					</div>
+					<!--변경내용_170712 끝-->
+					<div class="inp">
+						<span>이용날짜</span>
+						<input type="text" class="chkIn" value="2017-06-08">
+					</div>
+					<div class="inp slt">
+						<span>지역검색</span>
+						<select name="" id="" class="global">
+							<option value="" selected="seleted">전국</option>
+						</select>
+					</div>
+					<div class="inp slt">
+						<span>상세지역</span>
+						<select name="" id="" class="city">
+							<option value="" selected="seleted">시/구 지역</option>
+						</select>
+					</div>
+					<a class="more-a" href=""><span class="i-plus"></span>상세조건</a>
+					<a class="search-a" href=""><span class="i-search"></span>검색하기</a>
+				</div>
+			</div>
+			<div class="nb-drop-bar">
+				<div class="nb-outer clr">
+					<div class="nb-drop">
+						<h4>숙박유형 선택</h4>
+						<input type="checkbox" class="nb-drInp type-l" id="ttype_all">
+						<label for="nb-all">전체</label>
+						<input type="checkbox" class="nb-drInp" id="nb-hotel">
+						<label for="nb-hotel">호텔</label>
+						<input type="checkbox" class="nb-drInp" id="nb-motel">
+						<label for="nb-motel">모텔</label>
+						<input type="checkbox" class="nb-drInp" id="nb-residence">
+						<label for="nb-residence">레지던스</label>
+						<input type="checkbox" class="nb-drInp" id="nb-resrot">
+						<label for="nb-resrot">리조트/콘도</label>
+						<input type="checkbox" class="nb-drInp" id="nb-pention">
+						<label for="nb-pention">펜션</label>
+						<input type="checkbox" class="nb-drInp" id="nb-guest">
+						<label for="nb-guest">게스트하우스</label>
+						<input type="checkbox" class="nb-drInp" id="nb-youth">
+						<label for="nb-youth">유스호스텔</label>
+						<input type="checkbox" class="nb-drInp type-l" id="nb-single">
+						<label for="nb-ticket">입장권</label>
+						
+						<!--숙박경우-->
+						<div class="d-right">
+							<input type="checkbox" class="nb-drInp" id="nb-occupied">
+							<label for="nb-occupied">만실제외</label>
+							<input type="checkbox" class="nb-drInp" id="nb-confirm">
+							<label for="nb-confirm">즉시확정</label>
+							<img class="i-close" src="http://img.go.co.kr/i_close_black.png" alt="닫기">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="noover" id="wrapper">
+            <div id="contents">
+                <div id="rsv_wrapper" class="rsv_wrapper">
+                    <div id="room_result" class="r_on">
+
+
+                        <div class="rsv_top" id="rsv_sang">
+                            <table id="rsv_s_tab">
+                                <colgroup>
+                                    <col width="655">
+                                    <col width="140">
+                                    <col width="159">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="rsv_s_tabHead">
+                                        <td>상품선택</td>
+                                        <td>기준인원/최대인원</td>
+                                        <!-- 변경내용_170614 최저가보장 이미지추가-->
+                                        <td>최저가<img style="position: relative; top: -1px; margin-left: 5px;" alt="최저가보장" src="http://img.go.co.kr/banner_lowest_price.gif"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                            <div id="rsv_s_list_box2">
+                                <table id="rsv_s_list">
+                                    <colgroup>
+                                        <col width="655">
+                                        <col width="140">
+                                        <col width="159">
+                                    </colgroup>
+                                    <tbody>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="2299_tr" class="over_tr select" style="cursor:pointer;" onclick="booking.sclick('2299', 'y');">
+                                            <td class="pl15 left ss">
+                                                <input type="radio" name="sang" value="2299" id="sang_2299" checked="checked">
+
+                                                <!-- 패키지 말머리 추가 -->
+
+                                                마운틴뷰 콘도형 </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">84% 할인</div></div>
+                                                <del class="price_s">330,000원</del>
+                                                <br> <span class="price">54,000원~</span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr id="2299_detail" style="display: table-row;" class="tb_on">
+                                            <td colspan="3">
+
+                                                <style>
+                                                    #rsv_s_list {border-bottom: 1px solid #ddd;}
+                                                    #rsv_s_list .over_tr td:last-child {line-height: 1.3em;}
+                                                    .lowest_price_wrap {top: 18px; -webkit-transform: translateY(0); transform: translateY(0);}
+                                                    #rsv_s_list .over_tr input[type="radio"] {position: relative; top: -2px;}
+                                                    
+                                                    #rsv_s_list #pdtSlt-wrapper {position: relative;}
+
+                                                    
+                                                </style>
+
+                                            </td>
+                                        </tr>
+
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+                                        <!-- 객실명, 인원, 금액 나오는 라인 -->
+                                        <tr id="125565_tr" class="over_tr" style="cursor:pointer;" onclick="booking.sclick('125565', 'y');">
+                                            <td class="pl15 left ss"><input type="radio" name="sang" value="125565" id="sang_125565"> 
+
+                                                <!--- 패키지 말머리 추가 --->
+
+                                                마운틴뷰 콘도[조개잡이패키지]  </td>
+                                            <td class="center ss">4인/7인</td>
+                                            <td class="center ss" style="width:159px;position:relative">
+                                                <div class="lowest_price_wrap"><div class="dis_icon_dt">81% 할인</div>
+                                                </div>				<del class="price_s">330,000원</del><br>		<span class="price">62,000원~</span>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+	</body>
+
+</html>

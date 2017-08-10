@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.c-blue {color: #0051af;}
+
+/* 모바일 디오션워터파크 디오션리조트배너 추가 170605 이현우 */
+.m_bn_theocean {display:none; position:fixed; right:10px; top:60px; z-index:1000;}
+.m_bn_theocean a {position:absolute; left:50%; top:64px; margin-left:-44px;}
+/* 앱 메인_170711_혜준 */
+#head {}
+#head #allmenu > .tab-bar > span {background: #1590dd;}
+#head #logo2 a > img {top: -3px; width: 92px;}
+#menu .on {border-color: #1590dd;}
+#menu .on a, #menu a:hover, #menu a:active {color: #1590dd;}
+.c-theme {color: #0071bb !important;}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.c-blue {color: #0051af;}
+
+/* 시설안내 배너 탭 */
+#container .seoulpark_intro_tab {overflow:hidden; margin-top:50px;}
+#container .seoulpark_intro_tab > li {float:left;}
+
+/* 시설안내 우측배너 */
+.sp_guide_right_banner {display:none; position:fixed; right:50%; top:100px; margin-right:-630px; width:112px;}
+.sp_guide_right_banner > a {display:block; margin-bottom:10px;}
