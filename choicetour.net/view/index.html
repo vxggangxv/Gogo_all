@@ -1,0 +1,1553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>초이스투어</title>
+	
+	<link rel="stylesheet" type="text/css" href="http://static.choicetour.net/css/reset.css">
+
+	<!--<link rel="stylesheet" type="text/css" href="../../goco/src/css/layout_goco.css">-->
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_goco.css?ver=20171011155113">
+	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css">
+
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://static.choicetour.net/css/advisor.css">
+
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css">
+	<link rel="stylesheet" type="text/css" href="http://static.choicetour.net/css/prettyPhoto.css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
+
+	<link rel="stylesheet" href="../src/css/layout_new3.css">
+	<!--171012초이스투어 리뉴얼Css-->
+	<!--<link rel="stylesheet" href="http://static.choicetour.net/css/layout_new3.css">-->
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	
+	
+
+	<!--<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20171013091917"></script>-->
+	<!--<script type="text/javascript" src="http://static.choicetour.net/js/common_ver2.js?ver=20171013091917"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.banner.js"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/follower.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jwSlide_ver2.js?ver=20171013091917"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.Popup.js"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.dotdotdot.js"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.raty.js"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/placeholders.js"></script>
+
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="http://static.choicetour.net/js/jquery.easing.1.3.min.js"></script>
+
+	<script type="text/javascript" src="http://static.choicetour.net/js/bjqs-1.3.min.js?ver=20171013091917"></script>
+	
+	<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/cssjs/postcode/1506320738556/170925.js"></script>
+
+	<link rel="stylesheet" href="http://static.choicetour.net/css/jquery-ui.css">
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery_ui.js"></script>
+	
+	<script type="text/javascript" src="http://static.choicetour.net/js/datepicker_ko.js"></script>
+
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/main_rolling.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/picker_pc.js?ver=20171013091917"></script>
+
+	<script type="text/javascript" src="http://static.go.co.kr/js/moment.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/bootstrap.css">
+	
+	<script type="text/javascript" src="http://static.go.co.kr/js/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/daterangepicker.css">-->
+
+
+	<style type="text/css">
+	#headerWrap .header #AutosearchBox .Searching p a:hover {float:left; display:block; background:#FAF4C0; padding-left:10px; width:250px; height:25px; color:#4b4b4c; letter-spacing:-0.3px}
+	#overlay { position: absolute; top: 0; left: 0; z-index: 450; width: 100%; height: 100%; background-color: #464646; opacity: 0.8 }
+	</style>
+
+
+	<script type="text/javascript">
+	/* 쿠키 60분 */
+	var date = new Date(); 
+	var minutes = 120; 
+	date.setTime(date.getTime() + (minutes * 60 * 1000)); 
+	</script>
+
+
+	<!--- 모든사이트 공통 사항 ---->
+	<!--<script type="text/javascript">
+
+	$(function(){
+		var pos = true;
+		if(pos == true) {
+			slide.start2('tour/img1');
+		}
+
+		if(window.CSSBS_ie) {
+			$("#top2 ._nocr").show();
+		} else {
+			$("#top2 ._nocr").hide();
+		}
+
+
+			var sub_div = "submn_wrap2";
+			$("#keyword").keyup(function(e) {
+			if($("#summer_box2").hasClass("on") == true) {
+				$("#auto_searching").html("");
+				$("#auto_searching").removeClass("auto_lon");
+				$("#"+sub_div).show();	
+			} else {
+				if($("#keyword").val() == "") {
+					$("#auto_searching").html("");
+					$("#auto_searching").removeClass("auto_lon");
+					$("#"+sub_div).show();	
+				} else {
+
+					$.ajax({
+						url : "/home/search/state.php",
+						data: "mode=auto_keyword&s_key="+$("#keyword").val()+"&s_select="+$("#search_select").val(),
+						type : "post",
+						success: function(e) {
+							$("#"+sub_div).html("");		
+							$("#auto_searching").html(e);
+							$("#auto_searching").addClass("auto_lon");
+						}
+					});			
+				}
+			}		
+		});
+
+		isOver = false;
+		$('#auto_searching').mouseover(function(){
+			isOver = true;
+		}).mouseleave(function(){
+			isOver = false;
+		});
+		$("#keyword").bind("focusout", function() {
+
+			if(!isOver){
+				$("#auto_searching").hide();
+				$("#"+sub_div).show();	
+			}
+		});
+
+		$("#keyword").focusin(function() {
+			$("#auto_searching").show();
+			$("#auto_searching").addClass("auto_lon");
+			$("#"+sub_div).html("");
+		});	
+
+		$("#keyword").click(function() {
+			$("#auto_searching").show();
+			$("#auto_searching").addClass("auto_lon");
+			$("#"+sub_div).html("");
+		});	
+
+		var menu = $(".gnb > li");
+		var timer_b;
+		var isClick_b = 0;
+		menu.on({
+			mouseover:function(){
+				isClick_b = 1;
+
+				var tg = $(this);
+
+				if($(this).attr("id") == "allmenu" || $(this).attr("id") == "gnb_sub_globalTotal") {
+					isClick_b = 0;
+					menu.removeClass('on');
+					tg.addClass('on');
+				} else {
+					timer_b = setTimeout(function() {
+						if(isClick_b != 0) {
+							isClick_b = 0;
+							menu.removeClass('on');
+							tg.addClass('on');
+						}
+					}, 300);
+				}
+
+			},
+			mouseout:function(){
+				var tg = $(this);
+				tg.removeClass('on');
+
+				clearTimeout(timer_b);
+				isClick_b = 0;
+			}
+		});
+
+		var sub_menu = $(".area_list > li.local");
+		var timer;
+		var isClick = 0;
+
+
+		$('.area_list > li.local').on('mouseover', function() {
+			$('.sub_local').css('display','none');						// 카테고리 전체 비노출
+			$(this).children('.sub_local').css('display','block');		// 현재 카테고리 노출
+			$(this).children('a').addClass('on');						// a 태그 스타일 추가
+		});
+
+		$('.area_list > li.local').on('mouseleave', function() {
+			$('.sub_local').css('display','none');						// 카테고리 전체 비노출
+			$(this).children('a').removeClass('on');					// a 태그 스타일 제거
+		});
+
+
+		$('.sub_local').mouseover(function(){
+			$(this).parent("li.local").children("a").addClass("on");
+			$(this).css("display","block");
+			isClick = 0;
+		}).mouseleave(function(){
+			$(this).parent("li.local").children("a").removeClass("on");
+			$(this).css("display","");
+			isClick = 0;
+		});
+		$('.subMenu').mouseover(function(){
+			$(this).parent("li").addClass("on");
+			$(this).css("display","block");
+			isClick_b = 0;
+		}).mouseleave(function(){
+			$(this).parent("li").removeClass("on");
+			$(this).css("display","");
+			isClick_b = 1;
+		});
+
+
+
+		$("#biglocal_select").click(function(e) {
+			e.preventDefault();
+			var biglocal = $("#biglocal_select");
+			var biglocal_sub = $("#biglocal_select_smenu");
+			if(biglocal.hasClass("on") == true) {
+				biglocal.removeClass("on");
+				biglocal_sub.hide();
+			} else {
+				biglocal.addClass("on");
+				biglocal_sub.show();
+			}
+		});
+
+		$("#sublocal_select").click(function(e) {
+			e.preventDefault();
+			var sublocal = $("#sublocal_select");
+			var sublocal_sub = $("#sublocal_select_smenu");
+			if(sublocal.hasClass("on") == true) {
+				sublocal.removeClass("on");
+				sublocal_sub.hide();
+			} else {
+				sublocal.addClass("on");
+				sublocal_sub.show();
+			}
+		});
+
+		$("#sublocal_select2").click(function(e) {
+			e.preventDefault();
+			var sublocal = $("#sublocal_select2");
+			var sublocal_sub = $("#sublocal_select2_smenu");
+			if(sublocal.hasClass("on") == true) {
+				sublocal.removeClass("on");
+				sublocal_sub.hide();
+			} else {
+				sublocal.addClass("on");
+				sublocal_sub.show();
+			}
+		});
+
+		$(".sh_select").click(function(e) {
+			e.preventDefault();
+
+			var id = $(this).attr("id");
+
+			$("#search_select").val(id);
+			if(id == "sh_global") {
+				$("#sh_internal").removeClass("on");
+				$("#sh_global").addClass("on");
+				$("#sh_global_img").attr("src", "http://img.choicetour.net/btn_radioON.png");
+				$("#sh_internal_img").attr("src", "http://img.choicetour.net/btn_radioOFF.png");
+			} else {
+				$("#sh_internal").addClass("on");
+				$("#sh_global").removeClass("on");
+				$("#sh_internal_img").attr("src", "http://img.choicetour.net/btn_radioON.png");
+				$("#sh_global_img").attr("src", "http://img.choicetour.net/btn_radioOFF.png");
+			}
+		});
+	});
+	</script>-->
+
+
+	</head>
+<body>
+
+	<h1 class="hidden">초이스트립</h1>
+
+	<div id="top2" class="noover">
+		<div class="link">
+			<span class="right">
+				<span class="top_submenu2" id="login_bn">
+					<a href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw=" title="로그인">로그인</a>
+					<!--171012 스타일 제거후 클래스추가-->
+					<span class="mgl">|</span>
+					<span id="top_mypage" class="top_submenu">
+								<a href="http://www.choicetour.net/home/member/?dd=RgwkRix5MkozCg==" title="마이페이지">마이페이지</a>
+								<div class="menu" style="display:none" id="mypage_menu">
+									<p><a title="예약내역조회" href="http://www.choicetour.net/home/member/?dd=RgwkRix5MkozCg==">예약내역조회</a></p>
+									<p><a title="적립금 조회" href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LGpKDRJJZ2QREDdMbhlPJQ==">적립금 조회</a></p>
+														<p><a title="쿠폰 조회" href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LUBsTxVZGG8fdngObH8JfQ==">쿠폰 조회</a></p> 
+														<p><a title="회원정보관리" href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LUBwDBNJHGcTcn1D">회원정보관리</a></p>
+									<p><a title="나의1:1문의" href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LGlKGBRnHGI=">나의1:1문의</a></p>
+									<p><a title="찜목록" href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9JkBKBBNZFHYSdSND">찜목록</a></p>
+								</div>
+							</span>
+				<span class="mgl">|</span>
+				<span class="top_submenu2"><a href="http://www.choicetour.net/home/member/?dd=RgwkRix5MkozCg==" title="예약내역조회">예약내역조회</a></span>
+
+				<!--171011 고객센터 수정-->
+				<span class="mgl">|</span>
+				<span id="top_customer" class="top_submenu">
+							<div class="menu" style="display:none" id="cus_menu">
+								<p><a title="자주묻는질문" href="http://www.choicetour.net/home/customer/?dd=Tx8x">자주묻는질문</a></p>
+								<p><a title="1:1 문의하기" href="http://www.choicetour.net/home/member/?dd=RAcfTDBD">1:1 문의하기</a></p>
+								<p><a title="이벤트" href="http://www.choicetour.net/home/customer/?dd=TAglTSo=">이벤트</a></p>
+								<p><a title="고객센터" href="http://www.choicetour.net/home/customer/?dd=RB8pTQ==">고객센터</a></p>
+							</div>
+							<a href="http://www.choicetour.net/home/customer/?dd=RB8pTQ==" title="고객센터">고객센터</a>
+						</span>
+
+				</span>
+			</span>
+		</div>
+	</div>
+
+	<!--header-->
+	<div id="headerWrap" class="noover">
+		<div class="header" style="position:relative">
+			<div class="logo">
+				<a href="http://choicetour.net/home/main/?a=1" title="고코투어 온라인 지정예약처 올고투어">
+					<!--171012 로고변경-->
+					<img src="http://img.choicetour.net/renew/logo.png" alt="고코투어 온라인 지정예약처 초이스투어">
+				</a>
+			</div>
+			<div class="menu">
+				<!--171012 이벤트 효과 제거 및 mgl추가-->
+				<a href="http://www.choicetour.net/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의">광고/입점/제휴문의</a>
+				<span class="mgl">|</span><a href="http://www.choicetour.net/home/member/?dd=RgwkRix5MkozCg==" title="예약내역조회">예약내역조회</a>
+				<span class="mgl">|</span><a href="http://www.choicetour.net/home/customer/?dd=TAglTSo=" title="이벤트"><span>이벤트</span>
+				</a>		
+			</div>
+
+			<form name="kform" id="kform" action="http://search.choicetour.net/home/" method="get">
+			<input type="hidden" name="search_select" id="search_select" value="sh_internal">
+			<input type="hidden" name="sub_sdate2">
+			<input type="hidden" name="sub_edate2">
+			<input type="hidden" name="empty_room_top">
+			</form>
+
+			<style>
+	.myButton {
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:3px;
+		padding-right:3px;
+		color:white;
+		background:#2b66bc;
+		text-align:center;
+		text-decoration:none;
+		border-radius:2px;
+		border:1px solid #1476ba;
+		box-shadow:1px 1px 1px #62615f;
+		cursor:pointer
+	}
+
+	.mbt_col_red {background:#e24b04;border:1px solid #bb3c00;box-shadow:1px 1px 1px #bb3c00}
+	</style>
+	<script type="text/javascript">
+	function counter_switch(val) {
+		$.cookie("cswitch", val, {expires:365, path:'/'});
+		location.reload();
+	}
+	function counter_switch2(val) {
+		$.cookie("cswitch2", val, {expires:365, path:'/'});
+		location.reload();
+	}
+	</script>
+
+			<!---자동완성기능-->
+			<div id="auto_searching" class="auto_lon" style="display: none;"></div>
+			<!---자동완성기능(검색어 입력전) 끝-->
+
+		</div>
+	</div>
+
+	<!--GNB-->
+	<div id="gnbWrap">
+		<ul class="gnb">
+			<li class="line"></li>
+			<!--171012 all 바 수정-->
+			<li class="all" id="allmenu">
+				<a href="#">
+					<span class="s1"></span>
+					<span class="s2"></span>
+					<span class="s3"></span>
+				</a>
+			<!--전체메뉴 마우스 오버시 노출-->
+				<div class="subMenu" style="top:177px;">
+					<div class="totalWrap">
+						<!--<div class="totalTxt">전체메뉴 한눈에 보기</div>-->
+						<table class="totalMenu">
+							<tbody><tr>
+								<td valign="top" class="line_r" style="width:250px">
+									<h4 style="width:100%"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFIO1Q=" title="국내숙박">국내숙박</a></h4>
+									<dl class="spotList_local" style="width:100%">
+										<dt style="width:230px">
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S', 'S', '');" title="서울">서울</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2', 'K2', '');" title="경기">경기</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC', 'IC', '');" title="인천">인천</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K', 'K', '');" title="강원">강원</a>
+										</dt>
+										<dt style="width:230px">
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B', 'B', '');" title="부산">부산</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN', 'GN', '');" title="경남">경남</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG', 'DG', '');" title="대구">대구</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB', 'GB', '');" title="경북">경북</a>
+
+										</dt>
+										<dt style="width:230px">
+
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ', 'DJ', '');" title="대전">대전</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN', 'CN', '');" title="충남">충남</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB', 'CB', '');" title="충북">충북</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ', 'KJ', '');" title="광주">광주</a>
+										</dt>
+										<dt style="width:230px">
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN', 'JN', '');" title="전남">전남</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US', 'US', '');" title="울산">울산</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB', 'JB', '');" title="전북">전북</a>
+											<span class="local_line">|</span>
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ', 'JJ', '');" title="제주">제주</a>
+										</dt>
+										<dt class="last" style="width:230px">
+											<a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ', 'SJ', '');" title="세종">세종</a>
+
+										</dt>
+									</dl>
+								</td>
+								<td valign="top" class="line_r" style="width:250px">
+									<h4 style="width:100%"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFIO1QfH0pb">해외호텔</a></h4>
+									<dl class="spotList" style="width:100%">
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP">일본</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH">홍콩/중국</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS">동남아</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU">유럽</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US">미주</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU">남태평양</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF">중동/아프리카</a></dt>
+									</dl>
+								</td>
+								<td valign="top" class="line_r" style="width:250px">
+									<h4 style="width:100%" class="customer"><a href="http://www.choicetour.net/home/member/?dd=RgwkRix5MkozCg==" style="width:250px">마이페이지</a></h4>
+									<dl class="spotList" style="width:100%">
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RgwkRix5MkozCg==">예약내역조회</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LGpKDRJJZ2QREDdMbhlPJQ==">적립금 조회</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LUBsTxVZGG8fdngObH8JfQ==">쿠폰 조회</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LUBwDBNJHGcTcn1D">회원정보관리</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZKFi9KPUMqTDUMBkcbNAw2STNGbxNNRBwlUXEZOkd9LGlKGBRnHGI=">나의 1:1문의</a></dt>
+									</dl>
+								</td>
+								<td valign="top" style="width:250px">
+									<h4 style="width:100%" class="customer"><a href="http://www.choicetour.net/home/customer/" title="고객센터" style="width:100%">고객센터</a></h4>
+									<dl class="spotList" style="width:250px">
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/customer/?dd=Tx8x" title="자주묻는질문">자주묻는질문</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RAcfTDBD" title="1:1문의하기">1:1문의하기</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/member/?dd=RAcfTDBDAVQyF1xM&amp;brd=RhAlfD1HMEAlEg==" title="예약변경/취소">예약변경/취소</a></dt>
+										<dt style="width:250px"><a href="http://www.choicetour.net/home/customer/?dd=WxsjTDNLO00k" title="숙소 추천받기">숙소 추천받기</a></dt>
+									</dl>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</li>
+			<li class="line"></li>
+			<li><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFIO1Q=" title="국내숙박 할인">국내숙박 할인</a>
+			<!--국내숙박 할인 메뉴 마우스 오버시 노출-->
+				<div class="subMenu" style="top:177px">
+					<ul class="area_list">
+						<li class="title">지역별 검색</li>
+											<li class="submenu_first local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S', 'S', '');" title="서울">서울</a>
+							<div class="sub_local" style="position:absolute; left:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'S', '중구');">중구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A2%85%EB%A1%9C%EA%B5%AC', 'S', '종로구');">종로구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%A7%88%ED%8F%AC%EA%B5%AC', 'S', '마포구');">마포구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%82%A8%EA%B5%AC', 'S', '강남구');">강남구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9A%A9%EC%82%B0%EA%B5%AC', 'S', '용산구');">용산구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC', 'S', '동대문구');">동대문구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC', 'S', '영등포구');">영등포구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%86%A1%ED%8C%8C%EA%B5%AC', 'S', '송파구');">송파구</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EC%B4%88%EA%B5%AC', 'S', '서초구');">서초구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EB%8C%80%EB%AC%B8', 'S', '서대문');">서대문</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'S', '강서구');">강서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%8F%99%EA%B5%AC', 'S', '강동구');">강동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%B6%81%EA%B5%AC', 'S', '강북구');">강북구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%80%EC%95%85%EA%B5%AC', 'S', '관악구');">관악구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%8F%99%EA%B5%AC', 'S', '성동구');">성동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%B6%81%EA%B5%AC', 'S', '성북구');">성북구</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%91%EC%A7%84%EA%B5%AC', 'S', '광진구');">광진구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EB%9E%91%EA%B5%AC', 'S', '중랑구');">중랑구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B5%AC%EB%A1%9C%EA%B5%AC', 'S', '구로구');">구로구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9D%80%ED%8F%89%EA%B5%AC', 'S', '은평구');">은평구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B8%88%EC%B2%9C%EA%B5%AC', 'S', '금천구');">금천구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EC%9E%91%EA%B5%AC', 'S', '동작구');">동작구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%85%B8%EC%9B%90%EA%B5%AC', 'S', '노원구');">노원구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%96%91%EC%B2%9C%EA%B5%AC', 'S', '양천구');">양천구</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%84%EB%B4%89%EA%B5%AC', 'S', '도봉구');">도봉구</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2', 'K2', '');" title="경기">경기</a>
+							<div class="sub_local" style="position:absolute; left:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B0%80%ED%8F%89%EA%B5%B0', 'K2', '가평군');">가평군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%ED%8F%89%EA%B5%B0', 'K2', '양평군');">양평군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%88%98%EC%9B%90%EC%8B%9C', 'K2', '수원시');">수원시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%AC%EC%B2%9C%EC%8B%9C', 'K2', '포천시');">포천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9A%A9%EC%9D%B8%EC%8B%9C', 'K2', '용인시');">용인시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%82%B0%EC%8B%9C', 'K2', '안산시');">안산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%B6%80%EC%B2%9C%EC%8B%9C', 'K2', '부천시');">부천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%96%91%EC%8B%9C', 'K2', '안양시');">안양시</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%99%94%EC%84%B1%EC%8B%9C', 'K2', '화성시');">화성시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%82%A8%EC%96%91%EC%A3%BC', 'K2', '남양주');">남양주</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8C%8C%EC%A3%BC%EC%8B%9C', 'K2', '파주시');">파주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C', 'K2', '의정부시');">의정부시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%AC%EC%A3%BC%EC%8B%9C', 'K2', '여주시');">여주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%A0%EC%96%91%EC%8B%9C', 'K2', '고양시');">고양시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%84%B1%EB%82%A8%EC%8B%9C', 'K2', '성남시');">성남시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%8B%9C%ED%9D%A5%EC%8B%9C', 'K2', '시흥시');">시흥시</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%89%ED%83%9D%EC%8B%9C', 'K2', '평택시');">평택시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%B0%ED%8F%AC%EC%8B%9C', 'K2', '군포시');">군포시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%EC%A3%BC%EC%8B%9C', 'K2', '양주시');">양주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%AC%EB%A6%AC%EC%8B%9C', 'K2', '구리시');">구리시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%B4%EC%B2%9C%EC%8B%9C', 'K2', '이천시');">이천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EB%AA%85%EC%8B%9C', 'K2', '광명시');">광명시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%84%B1%EC%8B%9C', 'K2', '안성시');">안성시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%98%A4%EC%82%B0%EC%8B%9C', 'K2', '오산시');">오산시</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B9%80%ED%8F%AC%EC%8B%9C', 'K2', '김포시');">김포시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%99%95%EC%8B%9C', 'K2', '의왕시');">의왕시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%BC%EC%B2%9C%EC%8B%9C', 'K2', '과천시');">과천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%B0%EC%B2%9C%EA%B5%B0', 'K2', '연천군');">연천군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EC%A3%BC%EC%8B%9C', 'K2', '광주시');">광주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%8F%99%EB%91%90%EC%B2%9C%EC%8B%9C', 'K2', '동두천시');">동두천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%95%98%EB%82%A8%EC%8B%9C', 'K2', '하남시');">하남시</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC', 'IC', '');" title="인천">인천</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EA%B0%95%ED%99%94%EA%B5%B0', 'IC', '강화군');">강화군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'IC', '중구');">중구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'IC', '남구');">남구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EB%B6%80%ED%8F%89%EA%B5%AC', 'IC', '부평구');">부평구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EC%98%B9%EC%A7%84%EA%B5%B0', 'IC', '옹진군');">옹진군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EC%97%B0%EC%88%98%EA%B5%AC', 'IC', '연수구');">연수구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EB%82%A8%EB%8F%99%EA%B5%AC', 'IC', '남동구');">남동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'IC', '서구');">서구</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EA%B3%84%EC%96%91%EA%B5%AC', 'IC', '계양구');">계양구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=IC&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'IC', '동구');">동구</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K', 'K', '');" title="강원">강원</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%8F%89%EC%B0%BD%EA%B5%B0', 'K', '평창군');">평창군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B0%95%EB%A6%89%EC%8B%9C', 'K', '강릉시');">강릉시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B6%98%EC%B2%9C%EC%8B%9C', 'K', '춘천시');">춘천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EC%96%91%EA%B5%B0', 'K', '양양군');">양양군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%8D%EC%B2%9C%EA%B5%B0', 'K', '홍천군');">홍천군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%86%8D%EC%B4%88%EC%8B%9C', 'K', '속초시');">속초시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%9A%A1%EC%84%B1%EA%B5%B0', 'K', '횡성군');">횡성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'K', '고성군');">고성군</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9B%90%EC%A3%BC%EC%8B%9C', 'K', '원주시');">원주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%98%81%EC%9B%94%EA%B5%B0', 'K', '영월군');">영월군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%A0%95%EC%84%A0%EA%B5%B0', 'K', '정선군');">정선군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EB%8F%99%ED%95%B4%EC%8B%9C', 'K', '동해시');">동해시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9D%B8%EC%A0%9C%EA%B5%B0', 'K', '인제군');">인제군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%82%BC%EC%B2%99%EC%8B%9C', 'K', '삼척시');">삼척시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%94%EC%B2%9C%EA%B5%B0', 'K', '화천군');">화천군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%83%9C%EB%B0%B1%EC%8B%9C', 'K', '태백시');">태백시</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B2%A0%EC%9B%90%EA%B5%B0', 'K', '철원군');">철원군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EA%B5%AC%EA%B5%B0', 'K', '양구군');">양구군</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B', 'B', '');" title="부산">부산</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC', 'B', '해운대구');">해운대구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%80%EC%82%B0%EC%A7%84', 'B', '부산진');">부산진</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'B', '중구');">중구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'B', '동구');">동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EB%9E%98%EA%B5%AC', 'B', '동래구');">동래구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%88%98%EC%98%81%EA%B5%AC', 'B', '수영구');">수영구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%97%B0%EC%A0%9C%EA%B5%AC', 'B', '연제구');">연제구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%EC%83%81%EA%B5%AC', 'B', '사상구');">사상구</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'B', '서구');">서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'B', '남구');">남구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%B0%EC%9E%A5%EA%B5%B0', 'B', '기장군');">기장군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'B', '북구');">북구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%ED%95%98%EA%B5%AC', 'B', '사하구');">사하구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%98%81%EB%8F%84%EA%B5%AC', 'B', '영도구');">영도구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'B', '강서구');">강서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%88%EC%A0%95%EA%B5%AC', 'B', '금정구');">금정구</a></td></tr><tr>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN', 'GN', '');" title="경남">경남</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%A0%9C%EC%8B%9C', 'GN', '거제시');">거제시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%86%B5%EC%98%81%EC%8B%9C', 'GN', '통영시');">통영시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%82%A8%ED%95%B4%EA%B5%B0', 'GN', '남해군');">남해군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EC%9B%90%EC%8B%9C', 'GN', '창원시');">창원시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B9%80%ED%95%B4%EC%8B%9C', 'GN', '김해시');">김해시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%96%91%EC%82%B0%EC%8B%9C', 'GN', '양산시');">양산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%A7%84%EC%A3%BC%EC%8B%9C', 'GN', '진주시');">진주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%98%EB%8F%99%EA%B5%B0', 'GN', '하동군');">하동군</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%B0%EC%B2%AD%EA%B5%B0', 'GN', '산청군');">산청군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EB%85%95%EA%B5%B0', 'GN', '창녕군');">창녕군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%AC%EC%B2%9C%EC%8B%9C', 'GN', '사천시');">사천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%B0%80%EC%96%91%EC%8B%9C', 'GN', '밀양시');">밀양시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'GN', '고성군');">고성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%B0%BD%EA%B5%B0', 'GN', '거창군');">거창군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%95%88%EA%B5%B0', 'GN', '함안군');">함안군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%9D%98%EB%A0%B9%EA%B5%B0', 'GN', '의령군');">의령군</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%96%91%EA%B5%B0', 'GN', '함양군');">함양군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A9%EC%B2%9C%EA%B5%B0', 'GN', '합천군');">합천군</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG', 'DG', '');" title="대구">대구</a>
+							<div class="sub_local" style="position:absolute; right:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EB%8B%AC%EC%84%9C%EA%B5%AC', 'DG', '달서구');">달서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'DG', '중구');">중구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'DG', '동구');">동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EC%88%98%EC%84%B1%EA%B5%AC', 'DG', '수성구');">수성구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'DG', '남구');">남구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'DG', '북구');">북구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'DG', '서구');">서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DG&amp;sub_loca=%EB%8B%AC%EC%84%B1%EA%B5%B0', 'DG', '달성군');">달성군</a></td></tr><tr>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB', 'GB', '');" title="경북">경북</a>
+							<div class="sub_local" style="position:absolute; right:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%A3%BC%EC%8B%9C', 'GB', '경주시');">경주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%ED%8F%AC%ED%95%AD%EC%8B%9C', 'GB', '포항시');">포항시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%AC%EB%AF%B8%EC%8B%9C', 'GB', '구미시');">구미시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EB%8D%95%EA%B5%B0', 'GB', '영덕군');">영덕군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%95%88%EB%8F%99%EC%8B%9C', 'GB', '안동시');">안동시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EC%A7%84%EA%B5%B0', 'GB', '울진군');">울진군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%A3%BC%EC%8B%9C', 'GB', '영주시');">영주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%AC%B8%EA%B2%BD%EC%8B%9C', 'GB', '문경시');">문경시</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B9%80%EC%B2%9C%EC%8B%9C', 'GB', '김천시');">김천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%83%81%EC%A3%BC%EC%8B%9C', 'GB', '상주시');">상주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%82%B0%EC%8B%9C', 'GB', '경산시');">경산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EB%8F%84%EA%B5%B0', 'GB', '청도군');">청도군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%B2%9C%EC%8B%9C', 'GB', '영천시');">영천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B9%A0%EA%B3%A1%EA%B5%B0', 'GB', '칠곡군');">칠곡군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%84%B1%EC%A3%BC%EA%B5%B0', 'GB', '성주군');">성주군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9D%98%EC%84%B1%EA%B5%B0', 'GB', '의성군');">의성군</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B3%A0%EB%A0%B9%EA%B5%B0', 'GB', '고령군');">고령군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EC%86%A1%EA%B5%B0', 'GB', '청송군');">청송군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%88%EC%B2%9C%EA%B5%B0', 'GB', '예천군');">예천군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EB%A6%89%EA%B5%B0', 'GB', '울릉군');">울릉군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%B0%EC%9C%84%EA%B5%B0', 'GB', '군위군');">군위군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%B4%89%ED%99%94%EA%B5%B0', 'GB', '봉화군');">봉화군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%96%91%EA%B5%B0', 'GB', '영양군');">영양군</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="submenu_first local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ', 'DJ', '');" title="대전">대전</a>
+							<div class="sub_local" style="position:absolute; left:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'DJ', '중구');">중구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ&amp;sub_loca=%EC%9C%A0%EC%84%B1%EA%B5%AC', 'DJ', '유성구');">유성구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'DJ', '동구');">동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'DJ', '서구');">서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=DJ&amp;sub_loca=%EB%8C%80%EB%8D%95%EA%B5%AC', 'DJ', '대덕구');">대덕구</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN', 'CN', '');" title="충남">충남</a>
+							<div class="sub_local" style="position:absolute; left:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%83%9C%EC%95%88%EA%B5%B0', 'CN', '태안군');">태안군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%9C%EC%95%88%EC%8B%9C', 'CN', '천안시');">천안시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B3%B4%EB%A0%B9%EC%8B%9C', 'CN', '보령시');">보령시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%95%84%EC%82%B0%EC%8B%9C', 'CN', '아산시');">아산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%82%B0%EC%8B%9C', 'CN', '서산시');">서산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%B5%EC%A3%BC%EC%8B%9C', 'CN', '공주시');">공주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%98%88%EC%82%B0%EA%B5%B0', 'CN', '예산군');">예산군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%84%EB%A3%A1%EC%8B%9C', 'CN', '계룡시');">계룡시</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B6%80%EC%97%AC%EA%B5%B0', 'CN', '부여군');">부여군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%B2%9C%EA%B5%B0', 'CN', '서천군');">서천군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B8%88%EC%82%B0%EA%B5%B0', 'CN', '금산군');">금산군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%85%BC%EC%82%B0%EC%8B%9C', 'CN', '논산시');">논산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%99%8D%EC%84%B1%EA%B5%B0', 'CN', '홍성군');">홍성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%8B%B9%EC%A7%84%EA%B5%B0', 'CN', '당진군');">당진군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%97%B0%EA%B8%B0%EA%B5%B0', 'CN', '연기군');">연기군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%AD%EC%96%91%EA%B5%B0', 'CN', '청양군');">청양군</a></td></tr><tr>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB', 'CB', '');" title="충북">충북</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%8B%A8%EC%96%91%EA%B5%B0', 'CB', '단양군');">단양군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%A3%BC%EC%8B%9C', 'CB', '청주시');">청주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B6%A9%EC%A3%BC%EC%8B%9C', 'CB', '충주시');">충주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A0%9C%EC%B2%9C%EC%8B%9C', 'CB', '제천시');">제천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EA%B4%B4%EC%82%B0%EA%B5%B0', 'CB', '괴산군');">괴산군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%B3%B4%EC%9D%80%EA%B5%B0', 'CB', '보은군');">보은군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%9D%8C%EC%84%B1%EA%B5%B0', 'CB', '음성군');">음성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A7%84%EC%B2%9C%EA%B5%B0', 'CB', '진천군');">진천군</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%A5%EC%B2%9C%EA%B5%B0', 'CB', '옥천군');">옥천군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%81%EB%8F%99%EA%B5%B0', 'CB', '영동군');">영동군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A6%9D%ED%8F%89%EA%B5%B0', 'CB', '증평군');">증평군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%9B%90%EA%B5%B0', 'CB', '청원군');">청원군</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ', 'KJ', '');" title="광주">광주</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'KJ', '서구');">서구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ&amp;sub_loca=%EA%B4%91%EC%82%B0%EA%B5%AC', 'KJ', '광산구');">광산구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'KJ', '북구');">북구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'KJ', '동구');">동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=KJ&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'KJ', '남구');">남구</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN', 'JN', '');" title="전남">전남</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%97%AC%EC%88%98%EC%8B%9C', 'JN', '여수시');">여수시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%88%9C%EC%B2%9C%EC%8B%9C', 'JN', '순천시');">순천시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AA%A9%ED%8F%AC%EC%8B%9C', 'JN', '목포시');">목포시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B4%91%EC%96%91%EC%8B%9C', 'JN', '광양시');">광양시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B5%AC%EB%A1%80%EA%B5%B0', 'JN', '구례군');">구례군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%99%84%EB%8F%84%EA%B5%B0', 'JN', '완도군');">완도군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%B4%EB%82%A8%EA%B5%B0', 'JN', '해남군');">해남군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%82%98%EC%A3%BC%EC%8B%9C', 'JN', '나주시');">나주시</a></td></tr><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EA%B4%91%EA%B5%B0', 'JN', '영광군');">영광군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EC%95%94%EA%B5%B0', 'JN', '영암군');">영암군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%EC%84%B1%EA%B5%B0', 'JN', '장성군');">장성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%8B%B4%EC%96%91%EA%B5%B0', 'JN', '담양군');">담양군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%ED%9D%A5%EA%B5%B0', 'JN', '장흥군');">장흥군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A0%ED%9D%A5%EA%B5%B0', 'JN', '고흥군');">고흥군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A1%EC%84%B1%EA%B5%B0', 'JN', '곡성군');">곡성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%99%94%EC%88%9C%EA%B5%B0', 'JN', '화순군');">화순군</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%8B%A0%EC%95%88%EA%B5%B0', 'JN', '신안군');">신안군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%B3%B4%EC%84%B1%EA%B5%B0', 'JN', '보성군');">보성군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B0%95%EC%A7%84%EA%B5%B0', 'JN', '강진군');">강진군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AC%B4%EC%95%88%EA%B5%B0', 'JN', '무안군');">무안군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%A7%84%EB%8F%84%EA%B5%B0', 'JN', '진도군');">진도군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%A8%ED%8F%89%EA%B5%B0', 'JN', '함평군');">함평군</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US', 'US', '');" title="울산">울산</a>
+							<div class="sub_local" style="position:absolute; right:-150px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EC%9A%B8%EC%A3%BC%EA%B5%B0', 'US', '울주군');">울주군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'US', '남구');">남구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'US', '동구');">동구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'US', '북구');">북구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'US', '중구');">중구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EA%B4%91%EC%82%B0%EA%B5%AC', 'US', '광산구');">광산구</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=US&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'US', '서구');">서구</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB', 'JB', '');" title="전북">전북</a>
+							<div class="sub_local" style="position:absolute; right:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%84%EC%A3%BC%EC%8B%9C', 'JB', '전주시');">전주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%B6%80%EC%95%88%EA%B5%B0', 'JB', '부안군');">부안군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B5%B0%EC%82%B0%EC%8B%9C', 'JB', '군산시');">군산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9D%B5%EC%82%B0%EC%8B%9C', 'JB', '익산시');">익산시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%AC%B4%EC%A3%BC%EA%B5%B0', 'JB', '무주군');">무주군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%82%A8%EC%9B%90%EC%8B%9C', 'JB', '남원시');">남원시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%99%84%EC%A3%BC%EA%B5%B0', 'JB', '완주군');">완주군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%A5%EC%88%98%EA%B5%B0', 'JB', '장수군');">장수군</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B3%A0%EC%B0%BD%EA%B5%B0', 'JB', '고창군');">고창군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A7%84%EC%95%88%EA%B5%B0', 'JB', '진안군');">진안군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%95%EC%9D%8D%EC%8B%9C', 'JB', '정읍시');">정읍시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B9%80%EC%A0%9C%EC%8B%9C', 'JB', '김제시');">김제시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%88%9C%EC%B0%BD%EA%B5%B0', 'JB', '순창군');">순창군</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%84%EC%8B%A4%EA%B5%B0', 'JB', '임실군');">임실군</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ', 'JJ', '');" title="제주">제주</a>
+							<div class="sub_local" style="position:absolute; right:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%A0%9C%EC%A3%BC%EC%8B%9C', 'JJ', '제주시');">제주시</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C', 'JJ', '서귀포시');">서귀포시</a></td>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+											<li class="submenu_first local"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ', 'SJ', '');" title="세종">세종</a>
+							<div class="sub_local" style="position:absolute; left:0px; top:35px; z-index:9;display:none">
+								<table class="sub_local_t">
+
+									<tbody><tr class="underline"><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%97%B0%EB%8F%99%EB%A9%B4', 'SJ', '연동면');">연동면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EA%B8%88%EB%82%A8%EB%A9%B4', 'SJ', '금남면');">금남면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%A0%84%EC%9D%98%EB%A9%B4', 'SJ', '전의면');">전의면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%B0%98%EA%B3%A1%EB%8F%99', 'SJ', '반곡동');">반곡동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%86%8C%EB%8B%B4%EB%8F%99', 'SJ', '소담동');">소담동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%B3%B4%EB%9E%8C%EB%8F%99', 'SJ', '보람동');">보람동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%8C%80%ED%8F%89%EB%8F%99', 'SJ', '대평동');">대평동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EA%B0%80%EB%9E%8C%EB%8F%99', 'SJ', '가람동');">가람동</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%ED%95%9C%EC%86%94%EB%8F%99', 'SJ', '한솔동');">한솔동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%82%98%EC%84%B1%EB%8F%99', 'SJ', '나성동');">나성동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%83%88%EB%A1%AC%EB%8F%99', 'SJ', '새롬동');">새롬동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%8B%A4%EC%A0%95%EB%8F%99', 'SJ', '다정동');">다정동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%96%B4%EC%A7%84%EB%8F%99', 'SJ', '어진동');">어진동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%A2%85%EC%B4%8C%EB%8F%99', 'SJ', '종촌동');">종촌동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EA%B3%A0%EC%9A%B4%EB%8F%99', 'SJ', '고운동');">고운동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%95%84%EB%A6%84%EB%8F%99', 'SJ', '아름동');">아름동</a></td></tr><tr><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%8F%84%EB%8B%B4%EB%8F%99', 'SJ', '도담동');">도담동</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%A1%B0%EC%B9%98%EC%9B%90%EC%9D%8D', 'SJ', '조치원읍');">조치원읍</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%97%B0%EA%B8%B0%EB%A9%B4', 'SJ', '연기면');">연기면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EB%B6%80%EA%B0%95%EB%A9%B4', 'SJ', '부강면');">부강면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%9E%A5%EA%B5%B0%EB%A9%B4', 'SJ', '장군면');">장군면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%97%B0%EC%84%9C%EB%A9%B4', 'SJ', '연서면');">연서면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%A0%84%EB%8F%99%EB%A9%B4', 'SJ', '전동면');">전동면</a></td><td><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=SJ&amp;sub_loca=%EC%86%8C%EC%A0%95%EB%A9%B4', 'SJ', '소정면');">소정면</a></td></tr><tr>								</tr>
+								</tbody></table>
+							</div>
+						</li>
+
+						<li class="line"></li>
+						<li class="title2">유형별 검색</li>
+						<li class="room"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;ttype=QRE0RjI=');" title="호텔">호텔</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;ttype=RBE0RjI=', '', '');" title="모텔">모텔</a></li>
+						<li class="room" style="width:152px"><a href="#" style="width:152px " onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;ttype=WxszTCxS', '', '');" title="리조트">리조트/콘도/레지던스</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;ttype=TgslUCo=');" title="게스트하우스">게스트하우스</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;ttype=WRsuUDdJMA==');" title="펜션">펜션</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link('http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;ttype=UBE1VzY=');" title="유스호스텔">유스호스텔</a></li>
+						<li class="blank"></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==">입장권 할인</a>
+				<div class="subMenu" style="top:177px">
+					<ul class="area_list">
+						<li class="title">지역별 검색</li>
+						<li class="submenu_first local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=I', 'I', '');" title="서울">서울 · 인천</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=K2', 'K2', '');" title="경기">경기</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=K', 'K', '');" title="강원">강원</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=B', 'B', '');" title="부산">부산</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=G', 'G', '');" title="경상">경상</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=C', 'C', '');" title="충청">충청</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=J', 'J', '');" title="전라">전라</a>
+						</li>
+						<li class="local">
+							<a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;loca=JJ', 'JJ', '');" title="제주">제주</a>
+						</li>
+											<li class="line"></li>
+						<li class="title2">유형별 검색</li>
+						<li class="room"><a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;sttype=Xh80Riw=', '', '');" title="워터파크">워터파크</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;sttype=XRYlTj8=', '', '');" title="테마파크">테마파크</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;sttype=QhckUA==', '', '');" title="키즈">키즈</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;sttype=XRcjSDtS', '', '');" title="입장권">입장권</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;sttype=RRswTCxSLQ==', '', '');" title="레포츠">레포츠</a></li>
+						<li class="room"><a href="#" onclick="search_apply_link_single('http://www.choicetour.net/home/main/?dd=WhcuRDJDAVMyEQ==&amp;sttype=TxszVzdQP08=', '', '');" title="체험/축제">체험/축제</a></li>
+						<li class="blank"></li>
+					</ul>
+				</div>							
+			</li>
+			<li><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFIO1QfH0pb">해외호텔 할인</a>
+			<!--해외호텔 할인 메뉴 마우스 오버시 노출-->
+			<div class="subMenu" id="gnb_sub_globalTotal" style="top:177px">
+				<table class="globalTotal_t" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td class="total" rowspan="2">
+							<img src="http://img.go.co.kr/icon_global.png" style="margin-bottom:10px">
+							<h3>해외호텔<br>전체지역</h3>
+							<p class="comment">원하시는 지역이 없을 경우<br>검색창을 이용해주세요!</p>
+						</td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP">일본</a></td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH">홍콩/중국</a></td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS">동남아</a></td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU">유럽</a></td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US">미주</a></td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU">남태평양</a></td>
+						<td class="country"><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF">중동/아프리카</a></td>
+					</tr>
+					<tr>
+						<td class="japan">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%8F%84%EC%BF%84">도쿄</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%EC%82%AC%EC%B9%B4">오사카</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4">후쿠오카</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%82%BF%ED%8F%AC%EB%A1%9C">삿포로</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80">오키나와</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B5%90%ED%86%A0">교토</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B3%A0%EB%B2%A0">고베</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%82%98%EA%B3%A0%EC%95%BC">나고야</a></dt>
+
+						</dl></td>
+						<td class="china">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%ED%99%8D%EC%BD%A9">홍콩</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%A7%88%EC%B9%B4%EC%98%A4">마카오</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%B2%A0%EC%9D%B4%EC%A7%95">베이징</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%83%81%ED%95%98%EC%9D%B4">상하이</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%B9%AD%EB%8B%A4%EC%98%A4">칭다오</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EA%B4%91%EC%A0%80%EC%9A%B0">광저우</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%A0%EC%A0%84">선전</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%8B%A4%EB%A1%84">다롄</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%9C%EC%95%88">서안</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%98%8C%ED%83%80%EC%9D%B4">옌타이</a></dt>
+							</dl>
+						</td>
+						<td class="asia">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%8B%B1%EA%B0%80%ED%8F%B4">싱가폴</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%B0%A9%EC%BD%95">방콕</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%B9%98%EC%95%99%EB%A7%88%EC%9D%B4">치앙마이</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%83%80%EC%9D%B4%ED%8E%98%EC%9D%B4">타이페이</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%A7%88%EB%8B%90%EB%9D%BC">마닐라</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%BF%A0%EC%95%8C%EB%9D%BC%EB%A3%B8%ED%94%84%EB%A5%B4">쿠알라룸프르</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%98%B8%EC%B9%98%EB%AF%BC">호치민</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%95%98%EB%85%B8%EC%9D%B4">하노이</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%9E%90%EC%B9%B4%EB%A5%B4%ED%83%80">자카르타</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%94%A8%EC%97%A0%EB%A6%BD">씨엠립</a></dt>
+							</dl>
+						</td>
+						<td class="europe">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%8C%8C%EB%A6%AC">파리</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%B0%EB%8D%98">런던</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%A1%9C%EB%A7%88">로마</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9D%BC%ED%95%98">프라하</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%80%EB%9D%BC%EB%85%B8">밀라노</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98">바르셀로나</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%8C%EB%A1%9C%EB%A0%8C%EC%8A%A4">플로렌스</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B2%A0%EB%8B%88%EC%8A%A4">베니스</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9E%91%ED%81%AC%ED%91%B8%EB%A5%B4%ED%8A%B8">프랑크푸르트</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%91%90%EB%B0%94%EC%9D%B4">두바이</a></dt>
+							</dl>
+						</td>
+						<td class="north">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%98%B8%EB%86%80%EB%A3%B0%EB%A3%A8">호놀룰루</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%89%B4%EC%9A%95">뉴욕</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%9D%BC%EC%8A%A4%EB%B2%A0%EA%B0%80%EC%8A%A4">라스베가스</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4">로스앤젤레스</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%83%8C%ED%94%84%EB%9E%80%EC%8B%9C%EC%8A%A4%EC%BD%94">샌프란시스코</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%8B%9C%EC%B9%B4%EA%B3%A0">시카고</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%9B%8C%EC%8B%B1%ED%84%B4">워싱턴DC</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%B2%A4%EC%BF%A0%EB%B2%84">벤쿠버</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%86%A0%EB%A1%A0%ED%86%A0">토론토</a></dt>
+							</dl>
+						</td>
+						<td class="island">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EA%B4%8C">아가나(괌)</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%82%AC%EC%9D%B4%ED%8C%90">사이판</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%8B%9C%EB%93%9C%EB%8B%88">시드니</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%A9%9C%EB%B2%84%EB%A5%B8">멜버른</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%98%A4%ED%81%B4%EB%9E%9C%EB%93%9C">오클랜드</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%81%AC%EB%9D%BC%EC%9D%B4%EC%8A%A4%ED%8A%B8%EC%B2%98%EC%B9%98">크라이스트처치</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%80%B8%EC%A6%88%ED%83%80%EC%9A%B4">퀸즈타운</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%BD%94%EB%A1%A4">코롤(팔라우)</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%82%9C%EB%94%94">난디(피지)</a></dt>
+							</dl>
+						</td>
+						<td class="africa">
+							<dl class="city">
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EB%91%90%EB%B0%94%EC%9D%B4">두바이</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%95%84%EB%B6%80%EB%8B%A4%EB%B9%84">아부다비</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%9A%94%ED%95%98%EB%84%A4%EC%8A%A4%EB%B2%84%EA%B7%B8">요하네스버그</a></dt>
+								<dt><a href="http://www.choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%BC%80%EC%9D%B4%ED%94%84%ED%83%80%EC%9A%B4">케이프타운</a></dt>
+							</dl>
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</li>
+
+
+		</ul>
+	</div>
+
+
+	<!--171012 대문이미지 및 검색-->
+	<div class="clr"></div>
+	<div class="rn-mdBox">
+		<div class="rn-schBox ftfm-nt bsLs clr">
+			<h2 class="hidden">숙소검색</h2>
+
+			<div class="d1">
+				<p class="p0">검색어</p>
+				<p class="p1"><input type="text" tabindex="-1" autofocus="autofocus" placeholder="오션투유리조트"/></p>
+			</div>
+			<div class="d2 cm-s">
+				<p class="p0">이용일</p>
+				<p class="p1">2017-10-11</p>
+			</div>
+			<div class="d3 cm-s" id="rgSelect">
+				<p class="p0">지역검색</p>
+				<p class="p1">전국</p>
+
+				<div class="rgOption" id="rgOption">
+					<div class="rgScroller">
+						<ul class="ul1 ul1-rg">
+							<li><a href="#">전국</a></li>
+							<li><a href="#">서울</a></li>
+							<li><a href="#">경기</a></li>
+							<li><a href="#">인천</a></li>
+							<li><a href="#">강원</a></li>
+							<li><a href="#">부산</a></li>
+							<li><a href="#">경남</a></li>
+							<li><a href="#">대구</a></li>
+							<li><a href="#">경북</a></li>
+							<li><a href="#">대전</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="d4 cm-s" id="dtRgSelect">
+				<p class="p0">상세지역</p>
+				<p class="p1">시/구 지역</p>
+
+				<div class="rgOption" id="dtRgOption">
+					<div class="rgScroller">
+						<ul class="ul1 ul1-dtRg">
+							<li><a href="#">시군별 전체</a></li>
+							<li><a href="#">중구</a></li>
+							<li><a href="#">종로구</a></li>
+							<li><a href="#">마포구</a></li>
+							<li><a href="#">강남구</a></li>
+							<li><a href="#">용산구</a></li>
+							<li><a href="#">동대문구</a></li>
+							<li><a href="#">영등포구</a></li>
+							<li><a href="#">송파구</a></li>
+							<li><a href="#">서초구</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="d5">
+				<button type="button">속소 검색</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--171012초이스투어 리뉴얼 메인페이지 Js-->
+	<!--<script src="../src/js/renew/init.js"></script>-->
+	<script>
+		$(function() {
+	
+			// 검색박스, Option 박스 관련
+			$('#rgSelect, #dtRgSelect').on('click', function() {
+				if($(this).find('.rgOption').css('display') == 'block') {
+					$(this).find('.rgOption').hide();
+				} else {
+					$(this).find('.rgOption').fadeIn();
+				}
+			});
+
+			$('#rgOption a').on('click', function() {
+				var thTxt = $(this).text();
+				$('#rgSelect > .p1').text(thTxt);
+			});
+			$('#dtRgOption a').on('click', function() {
+				var thTxt = $(this).text();
+				$('#dtRgSelect > .p1').text(thTxt);
+			});
+
+
+
+		});
+	</script>
+
+	<!--171012 지역검색 drop박스 scrollbar UI 라이브러리 ie10이상일때 적용되도록-->
+
+	<!--[if gte IE 10]><!--> 
+	<script src="http://static.choicetour.net/js/iscroll.js"></script>
+	<script>
+		var rgOption, dtRgOption;
+
+		$(function() {
+
+			/*지역검색 drop박스 scrollbar UI*/
+			rgOption = new IScroll('#rgOption', {
+				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});
+
+			dtRgOption = new IScroll('#dtRgOption', {
+				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});
+
+			$(this).find('.rgOption').hide();
+
+		});
+
+	</script>
+	<!--<![endif]-->
+	
+	
+<!--171012 지역별 인기 숙소-->
+<div id="mainBox02_wrapper">
+	<div id="mainBox02">
+	
+	
+	<div class="localRecommend">
+		<div class="titleLocal">
+			<h3>지역별 인기 숙소</h3>
+			<ul class="local" id="local_tab">
+				<li class=""><a href="javascript:listing.locallist_ver2('S')" class="local_S on" title="서울">서울</a>
+					<div class="sGnbArea2" style="top:40px;">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'S', '중구');">중구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A2%85%EB%A1%9C%EA%B5%AC', 'S', '종로구');">종로구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%A7%88%ED%8F%AC%EA%B5%AC', 'S', '마포구');">마포구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%82%A8%EA%B5%AC', 'S', '강남구');">강남구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9A%A9%EC%82%B0%EA%B5%AC', 'S', '용산구');">용산구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC', 'S', '동대문구');">동대문구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC', 'S', '영등포구');">영등포구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%86%A1%ED%8C%8C%EA%B5%AC', 'S', '송파구');">송파구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EC%B4%88%EA%B5%AC', 'S', '서초구');">서초구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EB%8C%80%EB%AC%B8', 'S', '서대문');">서대문</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'S', '강서구');">강서구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%8F%99%EA%B5%AC', 'S', '강동구');">강동구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%B6%81%EA%B5%AC', 'S', '강북구');">강북구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%80%EC%95%85%EA%B5%AC', 'S', '관악구');">관악구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%8F%99%EA%B5%AC', 'S', '성동구');">성동구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%B6%81%EA%B5%AC', 'S', '성북구');">성북구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%91%EC%A7%84%EA%B5%AC', 'S', '광진구');">광진구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EB%9E%91%EA%B5%AC', 'S', '중랑구');">중랑구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B5%AC%EB%A1%9C%EA%B5%AC', 'S', '구로구');">구로구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9D%80%ED%8F%89%EA%B5%AC', 'S', '은평구');">은평구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B8%88%EC%B2%9C%EA%B5%AC', 'S', '금천구');">금천구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EC%9E%91%EA%B5%AC', 'S', '동작구');">동작구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%85%B8%EC%9B%90%EA%B5%AC', 'S', '노원구');">노원구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%96%91%EC%B2%9C%EA%B5%AC', 'S', '양천구');">양천구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%84%EB%B4%89%EA%B5%AC', 'S', '도봉구');">도봉구</a></li>
+												</ul>
+					</div>
+				</li>		
+				<li class=""><a href="javascript:listing.locallist_ver2('K2')" class="local_K2" title="경기">경기</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B0%80%ED%8F%89%EA%B5%B0', 'K2', '가평군');">가평군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%ED%8F%89%EA%B5%B0', 'K2', '양평군');">양평군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%88%98%EC%9B%90%EC%8B%9C', 'K2', '수원시');">수원시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%AC%EC%B2%9C%EC%8B%9C', 'K2', '포천시');">포천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9A%A9%EC%9D%B8%EC%8B%9C', 'K2', '용인시');">용인시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%82%B0%EC%8B%9C', 'K2', '안산시');">안산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%B6%80%EC%B2%9C%EC%8B%9C', 'K2', '부천시');">부천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%96%91%EC%8B%9C', 'K2', '안양시');">안양시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%99%94%EC%84%B1%EC%8B%9C', 'K2', '화성시');">화성시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%82%A8%EC%96%91%EC%A3%BC', 'K2', '남양주');">남양주</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8C%8C%EC%A3%BC%EC%8B%9C', 'K2', '파주시');">파주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C', 'K2', '의정부시');">의정부시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%AC%EC%A3%BC%EC%8B%9C', 'K2', '여주시');">여주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%A0%EC%96%91%EC%8B%9C', 'K2', '고양시');">고양시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%84%B1%EB%82%A8%EC%8B%9C', 'K2', '성남시');">성남시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%8B%9C%ED%9D%A5%EC%8B%9C', 'K2', '시흥시');">시흥시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%89%ED%83%9D%EC%8B%9C', 'K2', '평택시');">평택시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%B0%ED%8F%AC%EC%8B%9C', 'K2', '군포시');">군포시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%EC%A3%BC%EC%8B%9C', 'K2', '양주시');">양주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%AC%EB%A6%AC%EC%8B%9C', 'K2', '구리시');">구리시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%B4%EC%B2%9C%EC%8B%9C', 'K2', '이천시');">이천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EB%AA%85%EC%8B%9C', 'K2', '광명시');">광명시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%84%B1%EC%8B%9C', 'K2', '안성시');">안성시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%98%A4%EC%82%B0%EC%8B%9C', 'K2', '오산시');">오산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B9%80%ED%8F%AC%EC%8B%9C', 'K2', '김포시');">김포시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%99%95%EC%8B%9C', 'K2', '의왕시');">의왕시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%BC%EC%B2%9C%EC%8B%9C', 'K2', '과천시');">과천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%B0%EC%B2%9C%EA%B5%B0', 'K2', '연천군');">연천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EC%A3%BC%EC%8B%9C', 'K2', '광주시');">광주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%8F%99%EB%91%90%EC%B2%9C%EC%8B%9C', 'K2', '동두천시');">동두천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%95%98%EB%82%A8%EC%8B%9C', 'K2', '하남시');">하남시</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('K')" class="local_K" title="강원">강원</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%8F%89%EC%B0%BD%EA%B5%B0', 'K', '평창군');">평창군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B0%95%EB%A6%89%EC%8B%9C', 'K', '강릉시');">강릉시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B6%98%EC%B2%9C%EC%8B%9C', 'K', '춘천시');">춘천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EC%96%91%EA%B5%B0', 'K', '양양군');">양양군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%8D%EC%B2%9C%EA%B5%B0', 'K', '홍천군');">홍천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%86%8D%EC%B4%88%EC%8B%9C', 'K', '속초시');">속초시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%9A%A1%EC%84%B1%EA%B5%B0', 'K', '횡성군');">횡성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'K', '고성군');">고성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9B%90%EC%A3%BC%EC%8B%9C', 'K', '원주시');">원주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%98%81%EC%9B%94%EA%B5%B0', 'K', '영월군');">영월군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%A0%95%EC%84%A0%EA%B5%B0', 'K', '정선군');">정선군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EB%8F%99%ED%95%B4%EC%8B%9C', 'K', '동해시');">동해시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9D%B8%EC%A0%9C%EA%B5%B0', 'K', '인제군');">인제군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%82%BC%EC%B2%99%EC%8B%9C', 'K', '삼척시');">삼척시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%94%EC%B2%9C%EA%B5%B0', 'K', '화천군');">화천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%83%9C%EB%B0%B1%EC%8B%9C', 'K', '태백시');">태백시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B2%A0%EC%9B%90%EA%B5%B0', 'K', '철원군');">철원군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EA%B5%AC%EA%B5%B0', 'K', '양구군');">양구군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('CN')" class="local_CN" title="충남">충남</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%83%9C%EC%95%88%EA%B5%B0', 'CN', '태안군');">태안군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%9C%EC%95%88%EC%8B%9C', 'CN', '천안시');">천안시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B3%B4%EB%A0%B9%EC%8B%9C', 'CN', '보령시');">보령시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%95%84%EC%82%B0%EC%8B%9C', 'CN', '아산시');">아산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%82%B0%EC%8B%9C', 'CN', '서산시');">서산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%B5%EC%A3%BC%EC%8B%9C', 'CN', '공주시');">공주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%98%88%EC%82%B0%EA%B5%B0', 'CN', '예산군');">예산군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%84%EB%A3%A1%EC%8B%9C', 'CN', '계룡시');">계룡시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B6%80%EC%97%AC%EA%B5%B0', 'CN', '부여군');">부여군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%B2%9C%EA%B5%B0', 'CN', '서천군');">서천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B8%88%EC%82%B0%EA%B5%B0', 'CN', '금산군');">금산군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%85%BC%EC%82%B0%EC%8B%9C', 'CN', '논산시');">논산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%99%8D%EC%84%B1%EA%B5%B0', 'CN', '홍성군');">홍성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%8B%B9%EC%A7%84%EA%B5%B0', 'CN', '당진군');">당진군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%97%B0%EA%B8%B0%EA%B5%B0', 'CN', '연기군');">연기군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%AD%EC%96%91%EA%B5%B0', 'CN', '청양군');">청양군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('CB')" class="local_CB" title="충북">충북</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%8B%A8%EC%96%91%EA%B5%B0', 'CB', '단양군');">단양군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%A3%BC%EC%8B%9C', 'CB', '청주시');">청주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B6%A9%EC%A3%BC%EC%8B%9C', 'CB', '충주시');">충주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A0%9C%EC%B2%9C%EC%8B%9C', 'CB', '제천시');">제천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EA%B4%B4%EC%82%B0%EA%B5%B0', 'CB', '괴산군');">괴산군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%B3%B4%EC%9D%80%EA%B5%B0', 'CB', '보은군');">보은군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%9D%8C%EC%84%B1%EA%B5%B0', 'CB', '음성군');">음성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A7%84%EC%B2%9C%EA%B5%B0', 'CB', '진천군');">진천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%A5%EC%B2%9C%EA%B5%B0', 'CB', '옥천군');">옥천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%81%EB%8F%99%EA%B5%B0', 'CB', '영동군');">영동군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A6%9D%ED%8F%89%EA%B5%B0', 'CB', '증평군');">증평군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%9B%90%EA%B5%B0', 'CB', '청원군');">청원군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('JN')" class="local_JN" title="전남">전남</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%97%AC%EC%88%98%EC%8B%9C', 'JN', '여수시');">여수시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%88%9C%EC%B2%9C%EC%8B%9C', 'JN', '순천시');">순천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AA%A9%ED%8F%AC%EC%8B%9C', 'JN', '목포시');">목포시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B4%91%EC%96%91%EC%8B%9C', 'JN', '광양시');">광양시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B5%AC%EB%A1%80%EA%B5%B0', 'JN', '구례군');">구례군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%99%84%EB%8F%84%EA%B5%B0', 'JN', '완도군');">완도군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%B4%EB%82%A8%EA%B5%B0', 'JN', '해남군');">해남군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%82%98%EC%A3%BC%EC%8B%9C', 'JN', '나주시');">나주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EA%B4%91%EA%B5%B0', 'JN', '영광군');">영광군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EC%95%94%EA%B5%B0', 'JN', '영암군');">영암군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%EC%84%B1%EA%B5%B0', 'JN', '장성군');">장성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%8B%B4%EC%96%91%EA%B5%B0', 'JN', '담양군');">담양군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%ED%9D%A5%EA%B5%B0', 'JN', '장흥군');">장흥군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A0%ED%9D%A5%EA%B5%B0', 'JN', '고흥군');">고흥군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A1%EC%84%B1%EA%B5%B0', 'JN', '곡성군');">곡성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%99%94%EC%88%9C%EA%B5%B0', 'JN', '화순군');">화순군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%8B%A0%EC%95%88%EA%B5%B0', 'JN', '신안군');">신안군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%B3%B4%EC%84%B1%EA%B5%B0', 'JN', '보성군');">보성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B0%95%EC%A7%84%EA%B5%B0', 'JN', '강진군');">강진군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AC%B4%EC%95%88%EA%B5%B0', 'JN', '무안군');">무안군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%A7%84%EB%8F%84%EA%B5%B0', 'JN', '진도군');">진도군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%A8%ED%8F%89%EA%B5%B0', 'JN', '함평군');">함평군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('JB')" class="local_JB" title="전북">전북</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%84%EC%A3%BC%EC%8B%9C', 'JB', '전주시');">전주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%B6%80%EC%95%88%EA%B5%B0', 'JB', '부안군');">부안군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B5%B0%EC%82%B0%EC%8B%9C', 'JB', '군산시');">군산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9D%B5%EC%82%B0%EC%8B%9C', 'JB', '익산시');">익산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%AC%B4%EC%A3%BC%EA%B5%B0', 'JB', '무주군');">무주군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%82%A8%EC%9B%90%EC%8B%9C', 'JB', '남원시');">남원시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%99%84%EC%A3%BC%EA%B5%B0', 'JB', '완주군');">완주군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%A5%EC%88%98%EA%B5%B0', 'JB', '장수군');">장수군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B3%A0%EC%B0%BD%EA%B5%B0', 'JB', '고창군');">고창군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A7%84%EC%95%88%EA%B5%B0', 'JB', '진안군');">진안군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%95%EC%9D%8D%EC%8B%9C', 'JB', '정읍시');">정읍시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B9%80%EC%A0%9C%EC%8B%9C', 'JB', '김제시');">김제시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%88%9C%EC%B0%BD%EA%B5%B0', 'JB', '순창군');">순창군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%84%EC%8B%A4%EA%B5%B0', 'JB', '임실군');">임실군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('B')" class="local_B" title="부산">부산</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC', 'B', '해운대구');">해운대구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%80%EC%82%B0%EC%A7%84', 'B', '부산진');">부산진</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'B', '중구');">중구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'B', '동구');">동구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EB%9E%98%EA%B5%AC', 'B', '동래구');">동래구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%88%98%EC%98%81%EA%B5%AC', 'B', '수영구');">수영구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%97%B0%EC%A0%9C%EA%B5%AC', 'B', '연제구');">연제구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%EC%83%81%EA%B5%AC', 'B', '사상구');">사상구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'B', '서구');">서구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'B', '남구');">남구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%B0%EC%9E%A5%EA%B5%B0', 'B', '기장군');">기장군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'B', '북구');">북구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%ED%95%98%EA%B5%AC', 'B', '사하구');">사하구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%98%81%EB%8F%84%EA%B5%AC', 'B', '영도구');">영도구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'B', '강서구');">강서구</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%88%EC%A0%95%EA%B5%AC', 'B', '금정구');">금정구</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li class=""><a href="javascript:listing.locallist_ver2('GN')" class="local_GN" title="경남">경남</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%A0%9C%EC%8B%9C', 'GN', '거제시');">거제시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%86%B5%EC%98%81%EC%8B%9C', 'GN', '통영시');">통영시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%82%A8%ED%95%B4%EA%B5%B0', 'GN', '남해군');">남해군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EC%9B%90%EC%8B%9C', 'GN', '창원시');">창원시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B9%80%ED%95%B4%EC%8B%9C', 'GN', '김해시');">김해시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%96%91%EC%82%B0%EC%8B%9C', 'GN', '양산시');">양산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%A7%84%EC%A3%BC%EC%8B%9C', 'GN', '진주시');">진주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%98%EB%8F%99%EA%B5%B0', 'GN', '하동군');">하동군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%B0%EC%B2%AD%EA%B5%B0', 'GN', '산청군');">산청군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EB%85%95%EA%B5%B0', 'GN', '창녕군');">창녕군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%AC%EC%B2%9C%EC%8B%9C', 'GN', '사천시');">사천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%B0%80%EC%96%91%EC%8B%9C', 'GN', '밀양시');">밀양시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'GN', '고성군');">고성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%B0%BD%EA%B5%B0', 'GN', '거창군');">거창군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%95%88%EA%B5%B0', 'GN', '함안군');">함안군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%9D%98%EB%A0%B9%EA%B5%B0', 'GN', '의령군');">의령군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%96%91%EA%B5%B0', 'GN', '함양군');">함양군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A9%EC%B2%9C%EA%B5%B0', 'GN', '합천군');">합천군</a></li>
+												</ul>
+					</div>
+				</li>	
+				<li><a href="javascript:listing.locallist_ver2('GB')" class="local_GB" title="경북">경북</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%A3%BC%EC%8B%9C', 'GB', '경주시');">경주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%ED%8F%AC%ED%95%AD%EC%8B%9C', 'GB', '포항시');">포항시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%AC%EB%AF%B8%EC%8B%9C', 'GB', '구미시');">구미시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EB%8D%95%EA%B5%B0', 'GB', '영덕군');">영덕군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%95%88%EB%8F%99%EC%8B%9C', 'GB', '안동시');">안동시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EC%A7%84%EA%B5%B0', 'GB', '울진군');">울진군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%A3%BC%EC%8B%9C', 'GB', '영주시');">영주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%AC%B8%EA%B2%BD%EC%8B%9C', 'GB', '문경시');">문경시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B9%80%EC%B2%9C%EC%8B%9C', 'GB', '김천시');">김천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%83%81%EC%A3%BC%EC%8B%9C', 'GB', '상주시');">상주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%82%B0%EC%8B%9C', 'GB', '경산시');">경산시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EB%8F%84%EA%B5%B0', 'GB', '청도군');">청도군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%B2%9C%EC%8B%9C', 'GB', '영천시');">영천시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B9%A0%EA%B3%A1%EA%B5%B0', 'GB', '칠곡군');">칠곡군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%84%B1%EC%A3%BC%EA%B5%B0', 'GB', '성주군');">성주군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9D%98%EC%84%B1%EA%B5%B0', 'GB', '의성군');">의성군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B3%A0%EB%A0%B9%EA%B5%B0', 'GB', '고령군');">고령군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EC%86%A1%EA%B5%B0', 'GB', '청송군');">청송군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%88%EC%B2%9C%EA%B5%B0', 'GB', '예천군');">예천군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EB%A6%89%EA%B5%B0', 'GB', '울릉군');">울릉군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%B0%EC%9C%84%EA%B5%B0', 'GB', '군위군');">군위군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%B4%89%ED%99%94%EA%B5%B0', 'GB', '봉화군');">봉화군</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%96%91%EA%B5%B0', 'GB', '영양군');">영양군</a></li>
+												</ul>
+					</div>
+				</li>	
+				<li><a href="javascript:listing.locallist_ver2('JJ')" class="local_JJ" title="제주">제주</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%A0%9C%EC%A3%BC%EC%8B%9C', 'JJ', '제주시');">제주시</a></li>
+												<li><a href="javascript:search_apply_link('http://choicetour.net/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C', 'JJ', '서귀포시');">서귀포시</a></li>
+												</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="local_list" style="clear: left; height: 290px; max-width: 676px; position: relative;">
+			<ul class="bjqs" style="height: 290px; width: 100%; display: block;">
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						<!--171012 고코추천 아이콘 삭제-->
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=GEZwGg'" style="cursor:pointer">
+							<span class="name">[특2급]▶베이튼호텔(Baition) </span>
+							<span class="localName">서울 중구 오장동</span>
+							<span class="price">57,200원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=GEZwGg"><img src="http://img.go.co.kr/S/list_main_011bn.jpg" width="676" height="285"></a>
+					</div>
+				</li><li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=Gkd4'" style="cursor:pointer">
+							<span class="name">[특2급] ★라마다서울</span>
+							<span class="localName">서울 강남구 삼성동</span>
+							<span class="price">55,200원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=Gkd4"><img src="http://img.go.co.kr/S/list_main_01bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=H05y'" style="cursor:pointer">
+							<span class="name">[1급] ▶이태원크라운호텔</span>
+							<span class="localName">용산구 이태원동 </span>
+							<span class="price">31,680원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=H05y"><img src="http://img.go.co.kr/S/list_main_06bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=GEpzEA=='" style="cursor:pointer">
+							<span class="name">[특2급] ▶베스트웨스턴프리미어구로</span>
+							<span class="localName">서울 구로구 구로3동 </span>
+							<span class="price">90,000원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=GEpzEA=="><img src="http://img.go.co.kr/S/list_main_07bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=HU5y'" style="cursor:pointer">
+							<span class="name">[특2급] 프로비스타호텔</span>
+							<span class="localName">서울 서초구 서초1동</span>
+							<span class="price">74,300원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=HU5y"><img src="http://img.go.co.kr/S/list_main_08bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=GEp4Ew=='" style="cursor:pointer">
+							<span class="name">[관광호텔] 더디자이너스호텔홍대</span>
+							<span class="localName">서울 마포구 서교동 </span>
+							<span class="price">70,000원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=GEp4Ew=="><img src="http://img.go.co.kr/S/list_main_09bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: list-item;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://choicetour.net/home/view/?p_no=HU5x'" style="cursor:pointer">
+							<span class="name">[레지던스] 역삼아르누보시티레지던스</span>
+							<span class="localName">서울 강남구 역삼동</span>
+							<span class="price">86,300원~</span>
+						</div>
+						<a href="http://choicetour.net/home/view/?p_no=HU5x"><img src="http://img.go.co.kr/S/list_main_010bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+			</ul>
+		<ul class="bjqs-controls v-centered"><li class="bjqs-prev"><a href="#" data-direction="previous" style="top: 41.2069%;"><img src="http://img.go.co.kr/btnPrevious.png" alt="이전"></a></li><li class="bjqs-next"><a href="#" data-direction="forward" style="top: 41.2069%;"><img src="http://img.go.co.kr/btnNext.png" alt="다음"></a></li></ul>
+			<ol class="bjqs-markers"><li class="active-marker"><a href="#">1</a></li><li class=""><a href="#">2</a></li><li class=""><a href="#">3</a></li><li class=""><a href="#">4</a></li><li class=""><a href="#">5</a></li><li class=""><a href="#">6</a></li><li class=""><a href="#">7</a></li></ol>
+		</div>		
+	</div>
+
+		
+	<!---171012 추천 할인패키지 코딩변경---->
+	<div class="mainTicket" id="pack_list" style="height: 332px; max-width: 292px; position: relative;">
+		<div class="title">
+			<h3>추천 할인패키지</h3>
+			<ul class="bjqs" style="height: 332px; width: 100%; display: block;">
+				<li class="bjqs-slide" style="height: 332px; width: 100%; display: none;">
+					<div class="photo">
+						<a href="http://choicetour.net/home/view/?p_no=G0dxEWYR">
+							<div class="d-fig">
+								<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1461647622_main1.jpg" width="240" height="190">
+							</div>
+						<p class="name">곤지암리조트[林패키지-화담숲2인]</p>
+						<p><span class="price">195,700원~</span></p></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 332px; width: 100%; display: none;">
+					<div class="photo">
+						<a href="http://choicetour.net/home/view/?p_no=G0Z0G2cR">
+							<div class="d-fig">
+								<img src="http://file.go.co.kr/tour/img3/BS_main.jpg" width="240" height="190">
+							</div>
+						<p class="name">켄트호텔 광안리 by 켄싱턴 + 2인라운지PKG</p>
+						<p><span class="price">85,400원~</span></p></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 332px; width: 100%; display: list-item;">
+					<div class="photo">
+						<a href="http://choicetour.net/home/view/?p_no=G0hy">
+							<div class="d-fig">
+								<img src="http://file.go.co.kr/tour/img3/GB_main.jpg" width="240" height="190">
+							</div>
+						<p class="name">대구프린스호텔 + 2인조식PKG</p>
+						<p><span class="price">99,000원~</span></p></a>
+					</div>
+				</li>
+			</ul>			
+		</div>
+		<ol class="bjqs-markers"><li class=""><a href="#">1</a></li><li class="active-marker"><a href="#">2</a></li><li class=""><a href="#">3</a></li></ol>
+	</div>
+	
+	
+	</div>
+</div>	
+	
+<!--171012 변경내용 별도 분리-->
+<div class="clr"></div>
+<div class="mainBox02_wrapper">
+	<div class="mainBox02 clr">
+	
+	
+		<!--171011 해외 지역별 인기 호텔 top: 80px 제거--->
+		<!--171012 지역별 인기 숙소 clr 클래스 추가-->
+		<div class="localRecommend_global">
+			<div class="titleLocal clr">
+				<h3>해외 지역별 인기 호텔</h3>
+				<ul class="local" id="local_tab_abr">
+					<li><a href="javascript:listing.locallist_abr_ver2('JP')" class="local_JP on" title="일본">일본</a>
+						<div class="sGnbArea2" style="">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%8F%84%EC%BF%84">도쿄</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%EC%82%AC%EC%B9%B4">오사카</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4">후쿠오카</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%82%BF%ED%8F%AC%EB%A1%9C">삿포로</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80">오키나와</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B5%90%ED%86%A0">교토</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B3%A0%EB%B2%A0">고베</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%82%98%EA%B3%A0%EC%95%BC">나고야</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('HK')" class="local_HK" title="홍콩/중국">홍콩/중국</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%ED%99%8D%EC%BD%A9">홍콩</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%A7%88%EC%B9%B4%EC%98%A4">마카오</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%B2%A0%EC%9D%B4%EC%A7%95">베이징</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%83%81%ED%95%98%EC%9D%B4">상하이</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%B9%AD%EB%8B%A4%EC%98%A4">칭다오</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EA%B4%91%EC%A0%80%EC%9A%B0">광저우</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%A0%EC%A0%84">선전</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%8B%A4%EB%A1%84">다롄</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%9C%EC%95%88">서안</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%98%8C%ED%83%80%EC%9D%B4">옌타이</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('AS')" class="local_AS" title="아시아">아시아</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%8B%B1%EA%B0%80%ED%8F%B4">싱가폴</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%B0%A9%EC%BD%95">방콕</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%B9%98%EC%95%99%EB%A7%88%EC%9D%B4">치앙마이</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%83%80%EC%9D%B4%ED%8E%98%EC%9D%B4">타이페이</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%A7%88%EB%8B%90%EB%9D%BC">마닐라</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%BF%A0%EC%95%8C%EB%9D%BC%EB%A3%B8%ED%94%84%EB%A5%B4">쿠알라룸프르</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%98%B8%EC%B9%98%EB%AF%BC">호치민</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%95%98%EB%85%B8%EC%9D%B4">하노이</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%9E%90%EC%B9%B4%EB%A5%B4%ED%83%80">자카르타</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%94%A8%EC%97%A0%EB%A6%BD">씨엠립</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('EU')" class="local_EU" title="유럽">유럽</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%8C%8C%EB%A6%AC">파리</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%B0%EB%8D%98">런던</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%A1%9C%EB%A7%88">로마</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9D%BC%ED%95%98">프라하</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%80%EB%9D%BC%EB%85%B8">밀라노</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98">바르셀로나</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%BC%EB%A0%8C%EC%B2%B4">피렌체</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84">베네치아</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9E%91%ED%81%AC%ED%91%B8%EB%A5%B4%ED%8A%B8">프랑크푸르트</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%AC%EC%8B%9C%EC%95%84">러시아</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('US')" class="local_US" title="미주">미주</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%98%B8%EB%86%80%EB%A3%B0%EB%A3%A8">호놀룰루</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%89%B4%EC%9A%95">뉴욕</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%9D%BC%EC%8A%A4%EB%B2%A0%EA%B0%80%EC%8A%A4">라스베가스</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4">로스앤젤레스</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%83%8C%ED%94%84%EB%9E%80%EC%8B%9C%EC%8A%A4%EC%BD%94">샌프란시스코</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%8B%9C%EC%B9%B4%EA%B3%A0">시카고</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%9B%8C%EC%8B%B1%ED%84%B4">워싱턴</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%B2%A4%EC%BF%A0%EB%B2%84">벤쿠버</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%86%A0%EB%A1%A0%ED%86%A0">토론토</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('AU')" class="local_PA" title="남태평양">남태평양</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EA%B4%8C">괌</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%82%AC%EC%9D%B4%ED%8C%90">사이판</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%8B%9C%EB%93%9C%EB%8B%88">시드니</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%A9%9C%EB%B2%84%EB%A5%B8">멜버른</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%98%A4%ED%81%B4%EB%9E%9C%EB%93%9C">오클랜드</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%81%AC%EB%9D%BC%EC%9D%B4%EC%8A%A4%ED%8A%B8%EC%B2%98%EC%B9%98">크라이스트처치</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%80%B8%EC%A6%88%ED%83%80%EC%9A%B4">퀸즈타운</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%BD%94%EB%A1%A4">코롤</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%82%9C%EB%94%94">난디</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('AF')" class="local_AF" title="중동/아프리카">중동/아프리카</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EB%91%90%EB%B0%94%EC%9D%B4">두바이</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%95%84%EB%B6%80%EB%8B%A4%EB%B9%84">아부다비</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%9A%94%ED%95%98%EB%84%A4%EC%8A%A4%EB%B2%84%EA%B7%B8">요하네스버그</a></li>
+													<li><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%BC%80%EC%9D%B4%ED%94%84%ED%83%80%EC%9A%B4">케이프타운</a></li>
+													</ul>
+						</div>
+					</li>
+				</ul>
+				<!--171012 더보기 위치 변경-->
+				<div class="btn"><a href="http://choicetour.net/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP">+ 더보기</a></div>	
+			</div>
+			<!--171012 리스트 지역베스트 이미지 삭제, _성급 텍스트 삭제-->
+			<div class="list" id="local_abr_list">
+				<ul class="photo">
+				<li>
+					<a href="http://choicetour.net/home/view/?p_no=GE93FmwT&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/5000000/4990000/4980700/4980630/4980630_1_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]리잔 시파크 호텔 탄차 ...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">40,800원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li>
+				<li class="m_l20">
+					<a href="http://choicetour.net/home/view/?p_no=GEdxFGYW&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/11000000/10410000/10409200/10409172/10409172_3_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]자탄 비치사이드 콘도미...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">34,900원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li>
+				<li class="m_l20">
+					<a href="http://choicetour.net/home/view/?p_no=EUl0E2o=&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/4000000/3590000/3580400/3580323/3580323_1_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]호텔 신사이바시 라이온...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">100,700원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li>
+				<li class="m_l20">
+					<a href="http://choicetour.net/home/view/?p_no=GE93Em8f&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/5000000/4970000/4960100/4960048/4960048_19_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]호텔 타이요</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-half.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">11,200원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li></ul>		
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!--171012 픽토그램추가-->
+<div class="pic-mySec ftfm-nt">
+	<ul class="ul1 clr">
+		<li><a href="#"><img src="http://img.choicetour.net/renew/i_my_01.png" alt="아이콘"><span>나의 예약상태</span></a></li>
+		<li><a href="#"><img src="http://img.choicetour.net/renew/i_my_02.png" alt="아이콘"><span>자주묻는질문</span></a></li>
+		<li><a href="#"><img src="http://img.choicetour.net/renew/i_my_03.png" alt="아이콘"><span>예약변경/취소</span></a></li>
+		<li><a href="#"><img src="http://img.choicetour.net/renew/i_my_04.png" alt="아이콘"><span>시설이용안내</span></a></li>
+		<li><a href="#"><img src="http://img.choicetour.net/renew/i_my_05.png" alt="아이콘"><span>예약진행절차</span></a></li>
+		<li><a href="#"><img src="http://img.choicetour.net/renew/i_my_06.png" alt="아이콘"><span>1:1문의/내역</span></a></li>
+	</ul>
+</div>
+
+<!--171012 푸터-->
+<div class="footer bsLs ftfm-nt">
+	<div class="f-top">
+		<div class="f-policy cm-s">
+			<a href="javascript:utils.pop_open('http://choicetour.net/home/policy/join_policy_pop.php', 'join_policy', '')" title="이용약관">이용약관</a>
+			<span class="mgl"></span>
+			<a href="javascript:utils.pop_open('http://choicetour.net/home/policy/privacy_pop.php', 'privacy_policy', '')" title="개인정보처리방침">개인정보처리방침</a>
+			<span class="mgl"></span>
+			<a href="http://choicetour.net/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의">광고/입점/제휴문의</a>
+			<span class="mgl"></span>
+			<a href="http://choicetour.net/home/customer/" title="고객센터">고객센터</a>
+		</div>
+	</div>
+	
+	<div class="f-area">
+		<address class="cm-s">
+			<strong>(주)디비고투어</strong>
+			<br>
+			대표이사 : 김영환<span class="mgl"></span>주소 : 서울특별시 강남구 테헤란로82길 15, 13층(대치동, 디아이타워)
+			<br>
+			사업자등록번호 : 739-81-00790<a class="busInf" href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=8848800084" target="_blank">사업자정보확인<span class="gt">&gt;</span></a>
+			<br>
+			통신판매업 : 제2017-서울강남-01518호<span class="mgl"></span>여행업등록번호 : 제2017-14호
+			<br>
+			여행영업보증서 : 국내여행 제100-000-2017 0188 4303호<span class="mgl"></span>국외여행업등록번호 : 제2017-31호 
+			<br>
+			고객상담 : 1234-5678<span class="mgl"></span>e-mail 문의 : abcd@efg.com
+		</address>
+		<div class="f-certImg cm-s">
+			<img src="http://img.choicetour.net/renew/f_linkImg_01.jpg" border="0" alt="관광업등록증">
+			<a href="javascript:util.regist_pop('registration02')"><img src="http://img.choicetour.net/renew/f_linkImg_02.jpg" border="0" alt="관광업등록증"></a>
+			<a href="javascript:util.regist_pop('registration01')"><img src="http://img.choicetour.net/renew/f_linkImg_03.jpg" border="0" alt="서울보증보험"></a>
+			<img src="http://img.choicetour.net/renew/f_linkImg_04.jpg" border="0" alt="신용카드결제">
+			<img src="http://img.choicetour.net/renew/f_linkImg_05.jpg" border="0" alt="휴대폰결제">
+			<img src="http://img.choicetour.net/renew/f_linkImg_06.jpg" alt="공정거래위원회" onclick="onopen();" style="cursor:pointer">
+		</div>
+		<small class="cm-s">copyright 2016 by CHOICETOUR.NET co. all rights reserved.</small>
+	</div>
+</div>
+
+	
+</body>
+</html>
+
