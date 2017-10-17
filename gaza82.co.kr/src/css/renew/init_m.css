@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
+/* 초기화 */
+.rn-schBox input[type=text] {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none;
+}
+
+/* 글자 Sptr */
+.mainSprt {background: url(http://img.gaza82.co.kr/renew/mainSprt.png) no-repeat;}
+
+/* 아이콘 */
+.i-sch {position: relative; display: inline-block; vertical-align: middle; background: url(http://img.gaza82.co.kr/renew/i_sprt_01.png) no-repeat left center; height: 30px;}
+.i-sch.i-pen {width: 20px; background-position: 0 0;}
+.i-sch.i-bad {width: 33px; background-position: -40px 0;}
+.i-sch.i-cal {width: 22px; background-position: -80px 0;}
+.i-sch.i-mag {width: 20px; background-position: -120px 0;}
+
+
+/* 공통 css */
+.bsLs, .bsLs * {box-sizing: border-box; letter-spacing: -0.5px;}
+.mgl, .mg- {position: relative; display: inline-block; vertical-align: middle;}
+.ftfm-sq {font-family: "Nanum Square", "Nanum Gothic", sans-serif;}
+
+/* 공통 박스너비 시작 */
+/*.rn-container {width: 1400px; margin: 0 auto;}*/
+
+/* 푸터 */
+.footer {position: relative; width: 100%; background: #282828;}
+.footer .f-logo {width: 130px; margin: 15px 0;}
+.footer .mgl {margin: 0 10px; width: 1px; height: 15px; background: #fff; top: -1px;}
+.footer .f-top {width: 100%; height: 50px; padding-top: 12px; background: #212121;}
+.footer .cm-s, .footer .busInf {color: #fff; font-size: 15px;}
+.footer .f-policy a {color: #fff; font-size: 16px;}
+.footer .cm-s {width: 1002px; margin: 0 auto; text-align: center;}
+.footer .f-area {padding-bottom: 24px; line-height: 1.6; font-family: "Nanum Gothic", sans-serif;}
+.footer address .mgl {margin: 0 6px;}
+.footer address strong {font-size: 18px;}
+.footer .busInf {position: relative; display: inline-block; font-size: 13px; padding: 0px 5px; border: 1px solid #646464; margin-left: 10px;}
+.footer .busInf span {position: relative; top: -2px;font-family: "Nanum Gothic", sans-serif; font-size: 10px; font-weight: 700; margin-left: 5px;}
+.footer .f-certImg {margin-top: 5px;}
+.footer small.cm-s {display: block; margin-top: 10px;}
+
+
+/* 달력 색상수정 */
+.sltCal-sec h3, .sltCal-sec .btn-a {background: #434343;}
+
+/* 리뉴얼 대문 */
+
+.rn-mdBox {position: relative; width: 100%; height: 926px; background: url(http://img.gaza82.co.kr/renew/m/maindoor_bg.jpg) center; background-size: cover;}
+.rn-mdBox .logo {position: absolute; width: 110px; left: 10px; top: 10px;}
+.rn-mdBox .md-txt {text-align: center; padding: 100px 0 25px;}
+.rn-mdBox .md-txt img {width: 213px;}
+
+
+.rn-mdBox .rn-schBox {position: relative; margin: 0px 10px;}
+.rn-mdBox .rn-schBox > div {position: relative; background: #fff; height: 40px; margin-left: 2px; padding: 8px 12px 0 11px; cursor: pointer; border-radius: 4px; margin-top: 10px;}
+.rn-mdBox .rn-schBox > div .p1 {color: #4f4f4f; font-size: 15px;}
+.rn-mdBox .rn-schBox > div .p1 input, .rn-mdBox .rn-schBox > div .p1 .s-txt {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.rn-mdBox .rn-schBox > div .p1 input {position: relative; font-size: 15px; top: -1px; /* top: 4px; */}
+.rn-mdBox .rn-schBox > div .p1 .i-sch {float: right;}
+.rn-mdBox .rn-schBox > div .p1 .s-txt {display: inline-block; width: 124px;}
+.rn-mdBox .rn-schBox > div .p1 .sch-inp { background: none;}
+.rn-mdBox .rn-schBox > div .p1 .date-chk {font-size: 14px; width: 146px; background: none; cursor: pointer;}
+.ie8 .rn-mdBox .rn-schBox .cm-s {background-position: 140px center;}
+.rn-mdBox .rn-schBox .d1 {margin-top: 0;}
+.rn-mdBox .rn-schBox .d2 {}
+.rn-mdBox .rn-schBox .d3, .rn-mdBox .rn-schBox .d4 {}
+.rn-mdBox .rn-schBox .d3 {}
+.rn-mdBox .rn-schBox .d4 {}
+.rn-mdBox .rn-schBox .d5 {padding: 0;}
+.rn-mdBox .rn-schBox .d5 button {width: 100%; height: 100%; border: none; background: #292929; color: #fff; font-size: 20px; border-radius: 4px; text-indent: -10px; cursor: pointer;}
+.rn-mdBox .rn-schBox .d5 button img {margin-right: -7px;}
+.rn-mdBox .rn-schBox .d5 button:hover {background: #383838;}
+.rn-mdBox .rn-schBox input[type=text]::-webkit-input-placeholder {color: #4f4f4f;}
+.rn-mdBox .rn-schBox input[type=text]::-moz-placeholder {color: #4f4f4f;}
+.rn-mdBox .rn-schBox input[type=text]:-ms-input-placeholder {color: #4f4f4f;}
+.rn-mdBox .rn-schBox input[type=text]:-moz-placeholder {color: #4f4f4f;}
+.rn-mdBox .scrBtn {position: absolute; bottom: 50px; left: 50%; margin-left: -25px; display: block; width: 50px; height: 49px; background: url(http://img.gaza82.co.kr/renew/i_wdArr.png); border: none; outline: none;}
+.rgOption {
+	position: absolute;
+	z-index: 1;
+	top: 54px;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	border-top: 3px solid #434343;
+	height: 186px;
+	overflow: hidden;
+}
+.lt-ie10 .rgOption {overflow-y: auto; display: none;}
+.rgScroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.rn-mdBox .rn-schBox .ul1 > li {}
+.rn-mdBox .rn-schBox .ul1 > li a {display: block; font-size: 15px; padding: 3.5px 12px; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.rn-mdBox .rn-schBox .ul1 > li a:hover {background: #efefef;}
