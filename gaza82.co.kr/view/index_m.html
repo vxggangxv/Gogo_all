@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-                             <html lang="ko">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
@@ -21,8 +21,9 @@
 	
 	<!--171016 리뉴얼 Js 추가-->
 	<script src="http://static.go.co.kr/js/jquery.bxslider.min.js"></script>
+	<script src="http://static.go.co.kr/js/iscroll.js"></script>
 	<!--<script src="../src/js/renew/init_m.js"></script>-->
-	<!--<script src="http://static.gaza82.co.kr/js/renew/init_m.js"></script>-->
+	<script src="http://static.gaza82.co.kr/js/renew/init_m.js"></script>
 	
 	
 </head>
@@ -37,11 +38,17 @@
 			<h2 class="hidden">숙소검색</h2>
 
 			<div class="d1">
-				<p class="p1"><input class="sch-inp" type="text" tabindex="-1" value="도시, 지역, 혹은 호텔명 입력"/><span class="i-sch i-pen"></span></p>
+				<p class="p1"><input class="sch-inp" type="text" placeholder="도시, 지역, 혹은 호텔명 입력"/><span class="i-sch i-pen"></span></p>
+			</div>
+			<div class="d3 cm-s">
+				<p class="p1"><input class="date-in date-chk" type="text" placeholder="체크인 날짜"/><span class="i-sch i-cal"></span></p>
+			</div>
+			<div class="d4 cm-s">
+				<p class="p1"><input class="date-out date-chk" type="text" placeholder="체크아웃 날짜"/><span class="i-sch i-cal"></span></p>
 			</div>
 			<div class="d2 cm-s" id="rgSelect">
 				<p class="p1"><span class="s-txt">숙박유형</span><span class="i-sch i-bad"></span></p>
-				<!--<div class="rgOption" id="rgOption">
+				<div class="rgOption" id="rgOption">
 					<div class="rgScroller">
 						<ul class="ul1 ul1-rg">
 							<li><a href="#">전체</a></li>
@@ -54,21 +61,170 @@
 							<li><a href="#">반려동물 동반입실</a></li>
 						</ul>
 					</div>
-				</div>-->
-			</div>
-			<div class="d3 cm-s">
-				<p class="p1"><input class="date-in date-chk" type="text" tabindex="-1" value="체크인 날짜"/><span class="i-sch i-cal"></span></p>
+				</div>
 			</div>
 			<div class="d4 cm-s" id="dtRgSelect">
-				<p class="p1"><input class="date-out date-chk" type="text" tabindex="-1" value="체크아웃 날짜"/><span class="i-sch i-cal"></span></p>
+				<p class="p1"><span class="s-txt">인원</span><span class="i-sch i-user"></span></p>
+
+				<div class="rgOption" id="dtRgOption">
+					<div class="rgScroller">
+						<ul class="ul1 ul1-dtRg">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
+			
 			<div class="d5">
 				<button type="button"><img src="http://img.gaza82.co.kr/renew/i_mag.png" alt="찾아보기">검색</button>
 			</div>
 		</div>
 		<div class="mg-"></div>
+	</div>
+	
+	<div class="pic-box">
+		<a href="#"><span class="i-pic i-ht"></span><span class="s1">호텔&sdot;콘도</span></a>
+		<a href="#"><span class="i-pic i-mt"></span><span class="s1">모텔</span></a>
+		<a href="#"><span class="i-pic i-ps"></span><span class="s1">펜션</span></a>
+		<a href="#"><span class="i-pic i-ges"></span><span class="s1">게스트하우스</span></a>
+		<a href="#"><span class="i-pic i-gla"></span><span class="s1">캠핑&sdot;글램핑</span></a>
+		<a href="#"><span class="i-pic i-tck"></span><span class="s1">입장권</span></a>
+	</div>
+	
+	<div class="sec-outer">
+		<!--핫한 국내 숙소 모음-->
+		<section class="hotTrv-sec cm-s-sec ftfm-sq">
+			<h2><img src="http://img.gaza82.co.kr/renew/i_bulb.png" alt="핫"> 핫한 국내 숙소 모음</h2>
+			
+			<div class="msBox-wrap rn-container clr">
+				<div class="msBox-01">
+					<h3 class="hidden">국내인기숙소</h3>
+					<ul class="ul1" id="msBox01-slider">
+						<li>
+							<a href="#">
+								<img src="http://img.gaza82.co.kr/renew/m/msImg_01.jpg" alt="국내인기숙소">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="http://img.gaza82.co.kr/renew/m/msImg_02.jpg" alt="국내인기숙소">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="http://img.gaza82.co.kr/renew/m/msImg_03.jpg" alt="국내인기숙소">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="http://img.gaza82.co.kr/renew/m/msImg_04.jpg" alt="국내인기숙소">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="http://img.gaza82.co.kr/renew/m/msImg_05.jpg" alt="국내인기숙소">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		
-		<button class="scrBtn" type="button"></button>
+		<!--이벤트-->
+		<section class="evt-sec cm-s-sec">
+			<a href="#"><img class="evtImg" src="http://img.gaza82.co.kr/renew/m/evtImg_01.jpg" alt="생일잔치할인쿠폰"></a>
+		</section>
+		
+		<!--테마 국내 숙소 모음-->
+		<section class="themeTrv-sec cm-s-sec ftfm-sq">
+			<h2><img src="http://img.gaza82.co.kr/renew/i_bever.png" alt="테마"> 테마별 국내 숙소 모음</h2>
+			
+			<div class="thImgBox-wrap rn-container clr">
+				<a href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/themeImg_01.jpg" alt="테마별">
+					<div class="d1">
+						<p class="p0">인스타 갬성 뿜뿜</p>
+						<p class="p1">낭만 가득 제주여행</p>
+					</div>
+				</a>
+				<a href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/themeImg_02.jpg" alt="테마별">
+					<div class="d1">
+						<p class="p0">여행자들의 쉼터</p>
+						<p class="p1">새로운 만남 게스트하우스</p>
+					</div>
+				</a>
+				<a href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/themeImg_03.jpg" alt="테마별">
+					<div class="d1">
+						<p class="p0">짜릿한 즐거움, 피로를 날려줄</p>
+						<p class="p1">온천/워터파크</p>
+					</div>
+				</a>
+				<a href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/themeImg_04.jpg" alt="테마별">
+					<div class="d1">
+						<p class="p0">동화속 주인공이 된것 같은</p>
+						<p class="p1">아름다운 펜션여행</p>
+					</div>
+				</a>
+			</div>	
+		</section>
+		
+		<!--추천 할인 패키지-->
+		<section class="pkgTrv-sec cm-s-sec ftfm-sq">
+			<h2><img src="http://img.gaza82.co.kr/renew/i_thumb.png" alt="추천"> 추천할인 패키지</h2>
+			
+			<div class="thImgBox-wrap pkgImgBox-wrap rn-container clr">
+				<a class="pkg-a" href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/pkgImg_01.jpg" alt="테마별">
+					<em>추천할인<br>패키지</em>
+				</a>
+				<a class="pkg-a" href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/pkgImg_02.jpg" alt="테마별">
+					<em>추천할인<br>패키지</em>
+				</a>
+				<a class="pkg-a" href="#">
+					<img class="themeImg" src="http://img.gaza82.co.kr/renew/m/pkgImg_03.jpg" alt="테마별">
+					<em>추천할인<br>패키지</em>
+				</a>
+			</div>	
+		</section>
+		
+	</div>
+	
+	<div class="footer bsLs ftfm-ng">
+		<img class="f-logo" src="http://img.gaza82.co.kr/renew/m/f_logo.png" alt="가자닷컴투어">
+		<div class="f-top">
+			<div class="f-policy cm-s">
+				<a href="#" title="개인정보처리방침">개인정보처리방침</a>
+				<a href="#" title="이용약관">서비스 이용약관</a>
+				<a class="busInf" href="" target="_blank">사업자정보확인<span class="gt">&gt;</span></a>
+			</div>
+		</div>
+		<div class="f-area">
+			<address class="cm-s">
+				(주)가자닷컴투어<span class="mgl"></span>대표이사 : 김영환
+				<br>
+				주소 : 서울특별시 강남구 테헤란로82길 15, 13층(대치동, 디아이타워)
+				<br>
+				사업자등록번호 : 220-88-92970<span class="mgl"></span>통신판매업 : 제2014-서울강남-03546호<span class="mgl"></span>여행업등록번호 : 제2015-02호
+				<br>
+				여행영업보증서 : 국내여행 제100-000-2015 0144 5816호
+				<br>
+				고객상담 및 빠른 객실문의: 1234-5678
+			</address>
+			<small class="cm-s">copyright 2015 by GAZA82.CO.KR co., all rights reserved.</small>
+		</div>
 	</div>
 </div>
 	

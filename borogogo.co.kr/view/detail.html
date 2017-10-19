@@ -8,10 +8,8 @@
 	<meta charset="UTF-8">
 	<title>바로고고</title>
 	
-	<link rel="shortcut icon" href="http://img.borogogo.co.kr/tournspa.ico">
 	<link rel="stylesheet" type="text/css" href="http://static.borogogo.co.kr/css/reset.css">
 
-	<!--<link rel="stylesheet" type="text/css" href="../../goco/src/css/layout_goco.css">-->
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_goco.css">
 	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css">
 
@@ -22,12 +20,16 @@
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css">
 	<link rel="stylesheet" type="text/css" href="http://static.borogogo.co.kr/css/prettyPhoto.css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
 
+	
 	<link rel="stylesheet" href="../src/css/layout_new3.css">
-	<!--171012바로고고 리뉴얼Css-->
+	
+	<!--171019바로고고 리뉴얼Css, 폰트추가-->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
 	<!--<link rel="stylesheet" href="http://static.borogogo.co.kr/css/layout_new3.css">-->
 	
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	
 	
 	
@@ -41,7 +43,7 @@
 	<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.Popup.js"></script>
 	<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.dotdotdot.js"></script>
 	<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.raty.js"></script>
-	<script type="text/javascript" src="http://static.borogogo.co.kr/js/placeholders.js"></script>
+	<script type="text/javascript" src="http://static.borogogo.co.kr/js/values.js"></script>
 
 	<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.transit.min.js"></script>
 	<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.easing.1.3.min.js"></script>
@@ -64,221 +66,6 @@
 	
 	<script type="text/javascript" src="http://static.go.co.kr/js/daterangepicker.js"></script>
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/daterangepicker.css">-->
-
-
-	<style type="text/css">
-	#headerWrap .header #AutosearchBox .Searching p a:hover {float:left; display:block; background:#FAF4C0; padding-left:10px; width:250px; height:25px; color:#4b4b4c; letter-spacing:-0.3px}
-	#overlay { position: absolute; top: 0; left: 0; z-index: 450; width: 100%; height: 100%; background-color: #464646; opacity: 0.8 }
-	</style>
-
-
-	<script type="text/javascript">
-	/* 쿠키 60분 */
-	var date = new Date(); 
-	var minutes = 120; 
-	date.setTime(date.getTime() + (minutes * 60 * 1000)); 
-	</script>
-
-
-	<!--- 모든사이트 공통 사항 ---->
-	<!--<script type="text/javascript">
-
-	$(function(){
-		var pos = true;
-		if(pos == true) {
-			slide.start2('tour/img1');
-		}
-
-		if(window.CSSBS_ie) {
-			$("#top2 ._nocr").show();
-		} else {
-			$("#top2 ._nocr").hide();
-		}
-
-
-			var sub_div = "submn_wrap2";
-			$("#keyword").keyup(function(e) {
-			if($("#summer_box2").hasClass("on") == true) {
-				$("#auto_searching").html("");
-				$("#auto_searching").removeClass("auto_lon");
-				$("#"+sub_div).show();	
-			} else {
-				if($("#keyword").val() == "") {
-					$("#auto_searching").html("");
-					$("#auto_searching").removeClass("auto_lon");
-					$("#"+sub_div).show();	
-				} else {
-
-					$.ajax({
-						url : "/home/search/state.php",
-						data: "mode=auto_keyword&s_key="+$("#keyword").val()+"&s_select="+$("#search_select").val(),
-						type : "post",
-						success: function(e) {
-							$("#"+sub_div).html("");		
-							$("#auto_searching").html(e);
-							$("#auto_searching").addClass("auto_lon");
-						}
-					});			
-				}
-			}		
-		});
-
-		isOver = false;
-		$('#auto_searching').mouseover(function(){
-			isOver = true;
-		}).mouseleave(function(){
-			isOver = false;
-		});
-		$("#keyword").bind("focusout", function() {
-
-			if(!isOver){
-				$("#auto_searching").hide();
-				$("#"+sub_div).show();	
-			}
-		});
-
-		$("#keyword").focusin(function() {
-			$("#auto_searching").show();
-			$("#auto_searching").addClass("auto_lon");
-			$("#"+sub_div).html("");
-		});	
-
-		$("#keyword").click(function() {
-			$("#auto_searching").show();
-			$("#auto_searching").addClass("auto_lon");
-			$("#"+sub_div).html("");
-		});	
-
-		var menu = $(".gnb > li");
-		var timer_b;
-		var isClick_b = 0;
-		menu.on({
-			mouseover:function(){
-				isClick_b = 1;
-
-				var tg = $(this);
-
-				if($(this).attr("id") == "allmenu" || $(this).attr("id") == "gnb_sub_globalTotal") {
-					isClick_b = 0;
-					menu.removeClass('on');
-					tg.addClass('on');
-				} else {
-					timer_b = setTimeout(function() {
-						if(isClick_b != 0) {
-							isClick_b = 0;
-							menu.removeClass('on');
-							tg.addClass('on');
-						}
-					}, 300);
-				}
-
-			},
-			mouseout:function(){
-				var tg = $(this);
-				tg.removeClass('on');
-
-				clearTimeout(timer_b);
-				isClick_b = 0;
-			}
-		});
-
-		var sub_menu = $(".area_list > li.local");
-		var timer;
-		var isClick = 0;
-
-
-		$('.area_list > li.local').on('mouseover', function() {
-			$('.sub_local').css('display','none');						// 카테고리 전체 비노출
-			$(this).children('.sub_local').css('display','block');		// 현재 카테고리 노출
-			$(this).children('a').addClass('on');						// a 태그 스타일 추가
-		});
-
-		$('.area_list > li.local').on('mouseleave', function() {
-			$('.sub_local').css('display','none');						// 카테고리 전체 비노출
-			$(this).children('a').removeClass('on');					// a 태그 스타일 제거
-		});
-
-
-		$('.sub_local').mouseover(function(){
-			$(this).parent("li.local").children("a").addClass("on");
-			$(this).css("display","block");
-			isClick = 0;
-		}).mouseleave(function(){
-			$(this).parent("li.local").children("a").removeClass("on");
-			$(this).css("display","");
-			isClick = 0;
-		});
-		$('.subMenu').mouseover(function(){
-			$(this).parent("li").addClass("on");
-			$(this).css("display","block");
-			isClick_b = 0;
-		}).mouseleave(function(){
-			$(this).parent("li").removeClass("on");
-			$(this).css("display","");
-			isClick_b = 1;
-		});
-
-
-
-		$("#biglocal_select").click(function(e) {
-			e.preventDefault();
-			var biglocal = $("#biglocal_select");
-			var biglocal_sub = $("#biglocal_select_smenu");
-			if(biglocal.hasClass("on") == true) {
-				biglocal.removeClass("on");
-				biglocal_sub.hide();
-			} else {
-				biglocal.addClass("on");
-				biglocal_sub.show();
-			}
-		});
-
-		$("#sublocal_select").click(function(e) {
-			e.preventDefault();
-			var sublocal = $("#sublocal_select");
-			var sublocal_sub = $("#sublocal_select_smenu");
-			if(sublocal.hasClass("on") == true) {
-				sublocal.removeClass("on");
-				sublocal_sub.hide();
-			} else {
-				sublocal.addClass("on");
-				sublocal_sub.show();
-			}
-		});
-
-		$("#sublocal_select2").click(function(e) {
-			e.preventDefault();
-			var sublocal = $("#sublocal_select2");
-			var sublocal_sub = $("#sublocal_select2_smenu");
-			if(sublocal.hasClass("on") == true) {
-				sublocal.removeClass("on");
-				sublocal_sub.hide();
-			} else {
-				sublocal.addClass("on");
-				sublocal_sub.show();
-			}
-		});
-
-		$(".sh_select").click(function(e) {
-			e.preventDefault();
-
-			var id = $(this).attr("id");
-
-			$("#search_select").val(id);
-			if(id == "sh_global") {
-				$("#sh_internal").removeClass("on");
-				$("#sh_global").addClass("on");
-				$("#sh_global_img").attr("src", "http://img.borogogo.co.kr/btn_radioON.png");
-				$("#sh_internal_img").attr("src", "http://img.borogogo.co.kr/btn_radioOFF.png");
-			} else {
-				$("#sh_internal").addClass("on");
-				$("#sh_global").removeClass("on");
-				$("#sh_internal_img").attr("src", "http://img.borogogo.co.kr/btn_radioON.png");
-				$("#sh_global_img").attr("src", "http://img.borogogo.co.kr/btn_radioOFF.png");
-			}
-		});
-	});
-	</script>-->
 
 
 	</head>
@@ -796,15 +583,15 @@
 	</div>
 
 
-	<!--171012 대문이미지 및 검색-->
+	<!--171019 상단검색 cm-sch 클래스 추가 -->
 	<div class="clr"></div>
-	<div class="rn-mdBox">
+	<div class="rn-mdBox cm-sch">
 		<div class="rn-schBox ftfm-nt bsLs clr">
 			<h2 class="hidden">숙소검색</h2>
 
 			<div class="d1">
 				<p class="p0">검색어</p>
-				<p class="p1"><input type="text" tabindex="-1" autofocus="autofocus" placeholder="오션투유리조트"/></p>
+				<p class="p1"><input type="text" tabindex="-1" placeholder="오션투유리조트"/></p>
 			</div>
 			<div class="d2 cm-s">
 				<p class="p0">이용일</p>
@@ -919,593 +706,1301 @@
 	</script>
 	<!--<![endif]-->
 	
+	<!--171019 상세페이지 시작-->
+	<div class="content-sec">
+
+		<div id="contents">
+		<!--171019 클래스 추가 clr-->
+			<div id="main5" class="clr">
+				<div class="left" style="position:relative">
+					<table class="photo">
+						<colgroup>
+						<col width="78">
+						<col width="78">
+						<col width="78">
+						<col width="78">
+						<col width="73">
+						</colgroup>
+						<tbody><tr>
+							<td colspan="5" class="img_big" id="jwSlide_view">
+
+														<div style="text-align:center;background:#000000;width:385px;height:257px" id="imgview_box">
+									<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" alt="★오션투유리조트 속초설악비치 호텔앤콘도  이미지1" style="width:auto;height:auto;max-width:385px;height:257px" id="img_view" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="img_navi_4">
+									<p class="img_expansion" style="display:none;top:60%;cursor:pointer"><img src="http://img.borogogo.co.kr/btn_img_view.png" alt="이미지확대" style="width:78px;height:78px;"></p>
+									
+								</div>
+							</td>
+						</tr>
+						<tr id="jwSlide_navi" style="width: 78px; height: 55px;">
+												<td class="img_s">
+														<a href="javascript:slide.view('1', '/tour/img1')">
+									<div style="text-align:center;background:#000000;width:78px;height:55px">						
+										<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" style="width: 78px; max-width: 78px; height: 55px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt="★오션투유리조트 속초설악비치 호텔앤콘도  썸네일1" id="img_navi_1" onmouseover="slide.navi_over('1');" onmouseout="slide.navi_over('1');" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+									</div>
+								</a>
+							</td>
+												<td class="img_s">
+														<a href="javascript:slide.view('2', '/tour/img1')">
+									<div style="text-align:center;background:#000000;width:78px;height:55px">						
+										<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" style="width: 78px; max-width: 78px; height: 55px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt="★오션투유리조트 속초설악비치 호텔앤콘도  썸네일2" id="img_navi_2" onmouseover="slide.navi_over('2');" onmouseout="slide.navi_over('2');" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+									</div>
+								</a>
+							</td>
+												<td class="img_s">
+														<a href="javascript:slide.view('3', '/tour/img1')">
+									<div style="text-align:center;background:#000000;width:78px;height:55px">						
+										<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" style="width: 78px; max-width: 78px; height: 55px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt="★오션투유리조트 속초설악비치 호텔앤콘도  썸네일3" id="img_navi_3" onmouseover="slide.navi_over('3');" onmouseout="slide.navi_over('3');" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+									</div>
+								</a>
+							</td>
+												<td class="img_s">
+														<a href="javascript:slide.view('4', '/tour/img1')">
+									<div style="text-align:center;background:#000000;width:78px;height:55px">						
+										<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" style="width: 78px; max-width: 78px; height: 55px; float: left; margin: 0px; opacity: 1; border: 0px solid rgb(180, 140, 80);" alt="★오션투유리조트 속초설악비치 호텔앤콘도  썸네일4" id="img_navi_4" onmouseover="slide.navi_over('4');" onmouseout="slide.navi_over('4');" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+									</div>
+								</a>
+							</td>
+												<td class="img_s">
+								<a href="#" style="cursor:pointer" id="img_more"></a><div class="info_gallery" style="z-index: 5;padding-top:0;height:100%;"><a href="#" style="cursor:pointer" id="img_more"><p class="point_txt_gallery" style="width:100%;height:100%;padding-top:18px">+더보기</p></a><a href="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" rel="gallery" title=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" style="display: none; width: 78px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt=""></a><a href="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" rel="gallery" title=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" style="display: none; width: 78px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt=""></a><a href="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" rel="gallery" title=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" style="display: none; width: 78px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt=""></a><a href="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" rel="gallery" title=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" style="display: none; width: 78px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt=""></a></div>						<a href="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_5.jpg" rel="gallery">
+									<div style="text-align:center;background:#000000;width:74px;height:55px">						
+										<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_5.jpg" style="width: 74px; max-width: 74px; height: 55px; float: left; margin: 0px; opacity: 0.5; border: 0px;" alt="★오션투유리조트 속초설악비치 호텔앤콘도  썸네일5" id="img_navi_5" onmouseover="slide.navi_over('5');" onmouseout="slide.navi_over('5');" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+									</div>
+								</a>
+							</td>
+											</tr>
+					</tbody></table>
+
+					<!--171019 버튼 제거-->
+					<!--<div id="jwSlide_left" class="jwSlide_btn" style="width:54px; text-align: left; position:absolute;left:0;top:35%;">
+						<a href="javascript:slide.view(3, 'tour/img1')" class="btn_link"><img src="http://img.borogogo.co.kr/btn_left.png" class="btn" alt="이전" style="margin:0;"></a>
+					</div>
+					<div id="jwSlide_right" class="jwSlide_btn" style="width:54px; text-align: left; position:absolute;right:0;top:35%;">
+						<a href="javascript:slide.view(5, 'tour/img1')" class="btn_link"><img src="http://img.borogogo.co.kr/btn_right.png" class="btn" alt="다음" style="margin:0;"></a>
+					</div>-->
+
+				</div>
+				<div class="right">
+					<table class="goods_info" style="table-layout:fixed">
+						<colgroup>
+							<col width="95">
+							<col width="90">
+							<col width="35">
+							<col width="310">
+						</colgroup>
+						<form name="keep_f" id="keep_f" method="post"></form>
+						<input type="hidden" name="encrypt" value="0">
+						<input type="hidden" name="mode" value="QhslUzdIOQ==">
+						<input type="hidden" name="userid" value="">
+						<input type="hidden" name="p_no" value="HE93">
+						<input type="hidden" name="r_no" id="r_no">
+						<input type="hidden" name="wish_id" id="wish_id" value="">
+						
+						
+						
+						<!--171019 border값 제거, 내용 수정, 별표 제거-->
+						<tbody>
+							
+						<tr class="pdtName"> 
+							<td class="contents" colspan="4" style="color: #000;font-weight: 600;text-align: left;font-size: 17px;">
+								[특1급] 베스트웨스턴프리미어구로[자체]
+							</td>
+						</tr>
+						<tr>
+							<td class="tit2">분류</td>
+							<td class="contents" colspan="3">특2급 <span class="add-txt">(총 객실 수: 56개)</span> </td>
+						</tr>
+						<tr>
+							<td class="tit2">이용시간</td>
+							<td colspan="3" class="contents">체크인 14:00 / 체크아웃 12:00</td>
+						</tr>
+						<tr>
+							<td class="tit2">주소</td>
+							<td colspan="3" class="contents">
+								구주소 : 서울 구로구 구로3동 1128-1 
+								<br>신주소 : 서울 구로구 디지털로32길 72 (구로동) 
+							</td>
+						</tr>
+						<tr>
+							<td class="tit2">홈페이지</td>
+							<td colspan="3" class="contents">
+								<a href="http://www.gurohotel.co.kr/" title="▶베스트웨스턴프리미어구로 홈페이지" target="_blank">http://www.gurohotel.co.kr/</a>
+
+							</td>
+						</tr>
+						<tr>
+							<td class="tit2" style="border-bottom:0px">부대시설</td>
+							<td colspan="3" class="contents" style="border-bottom:0px">편의점/슈퍼마켓</td>
+						</tr>
+						<!---->
+						<tr style="border-bottom:none;">
+							<td style="border-bottom:none;" colspan="4" class="contents">
+								<!--171019 마진 제거 스타일 변경 및 수정-->
+								<span class="snsBtn-box">
+									<a href="#" class="a1">URL복사</a>
+									<a href="#" class="a2">모바일 공유</a>
+									<a href="#" class="a3">찜하기</a>
+									<!--<a href="http://www.borogogo.co.kr/home/member/?dd=TBopVwFUO1AlDF5M&amp;brd=RhAl&amp;p_no=HE93&amp;abr=&amp;type=group" style="display: inline-block;width: 55px;height: 25px;line-height: 25px;font-size: 13px;color: #fff !important;background-color: #000;text-align:center">단체문의</a>
+									<a href="javascript:sharing.share_sns('mail', '', '')" title="메일공유"><img src="http://img.go.co.kr/sns_mail_s.gif" alt="메일공유"></a>
+									<a href="javascript:sharing.share_sns('facebook', '', 'HE93')" title="페이스북공유"><img src="http://img.go.co.kr/sns_fb_s.gif" alt="페이스북공유"></a>
+									<a href="javascript:sharing.share_sns('twitter', '★오션투유리조트 속초설악비치 호텔앤콘도 ', 'HE93')" title="트위터공유"><img src="http://img.go.co.kr/sns_twt_s.gif" alt="트위터공유"></a>
+									<a href="javascript:sharing.copy_url();" title="URL 복사"><img src="http://img.go.co.kr/icon_url.jpg"></a>
+									<a href="javascript:sharing.share_sns('mobile_share', '', '')" title="모바일 공유"><img src="http://img.go.co.kr/icon_mobile.jpg"></a>
+									
+									
+									<script type="text/javascript">
+										function wish_170619(wish_num,wish_mode) {
+											if(wish_mode == "mobile"){
+												if (wish_num == "1"){
+													var img_name = "http://img.go.co.kr/mobile/de_wish_icon.png"; //苑� 李� �섑듃
+													$("#wish_id").val("0");
+												} else {
+													var img_name = "http://img.go.co.kr/mobile/de_ch_icon.png"; // 鍮� �섑듃
+													$("#wish_id").val("1");			
+												}
+												$(".wishicon").attr("src", img_name);
+												$(".wishlink").attr("href", "javascript:utils.wish_new('"+$("#wish_id").val()+"','"+wish_mode+"')");
+											} else{			
+												if (wish_num == "1"){
+													var img_name = "http://img.go.co.kr/btn_zzim02.gif";
+													$("#wish_id").val("0");
+												} else {
+													var img_name = "http://img.go.co.kr/btn_zzim01.gif"; 
+													$("#wish_id").val("1");			
+												}			
+												$("#wishicon").attr("src", img_name);
+												$("#wishlink").attr("href", "javascript:wish_170619('"+$("#wish_id").val()+"','"+wish_mode+"')");
+											}
+
+
+											var string = $("#keep_f").serialize();
+											$.ajax({
+												url : "/home/member/state.php",
+												type: "post",
+												data: string,
+												success: function(e) {
+													alert(e);
+												}
+											});
+										}
+									</script>
+
+									<a id="wishlink" href="javascript:alert('로그인 후 이용가능합니다.');location.href='http://www.borogogo.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZOHzpCZhRwQC9QQ1tRKEwzQ3FVKRtfBkEwfDBJY2sFRxs='"><img id="wishicon" src="http://img.go.co.kr/btn_zzim01.gif" alt="찜하기"></a>
+									
+									<script type="text/javascript">
+									var user_flag = "";
+									</script>	-->					
+								</span>
+							</td>
+						</tr>
+					</tbody></table>
+
+
+				</div>
+			</div>
+			
+			<div id="rsv_wrapper" class="rsv_wrapper">
 	
-<!--171012 지역별 인기 숙소-->
-<div id="mainBox02_wrapper">
-	<div id="mainBox02">
-	
-	
-	<div class="localRecommend">
-		<div class="titleLocal">
-			<h3>지역별 인기 숙소</h3>
-			<ul class="local" id="local_tab">
-				<li class=""><a href="javascript:listing.locallist_ver2('S')" class="local_S on" title="서울">서울</a>
-					<div class="sGnbArea2" style="top:40px;">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'S', '중구');">중구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A2%85%EB%A1%9C%EA%B5%AC', 'S', '종로구');">종로구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%A7%88%ED%8F%AC%EA%B5%AC', 'S', '마포구');">마포구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%82%A8%EA%B5%AC', 'S', '강남구');">강남구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9A%A9%EC%82%B0%EA%B5%AC', 'S', '용산구');">용산구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC', 'S', '동대문구');">동대문구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC', 'S', '영등포구');">영등포구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%86%A1%ED%8C%8C%EA%B5%AC', 'S', '송파구');">송파구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EC%B4%88%EA%B5%AC', 'S', '서초구');">서초구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EB%8C%80%EB%AC%B8', 'S', '서대문');">서대문</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'S', '강서구');">강서구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%8F%99%EA%B5%AC', 'S', '강동구');">강동구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%B6%81%EA%B5%AC', 'S', '강북구');">강북구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%80%EC%95%85%EA%B5%AC', 'S', '관악구');">관악구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%8F%99%EA%B5%AC', 'S', '성동구');">성동구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%B6%81%EA%B5%AC', 'S', '성북구');">성북구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%91%EC%A7%84%EA%B5%AC', 'S', '광진구');">광진구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EB%9E%91%EA%B5%AC', 'S', '중랑구');">중랑구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B5%AC%EB%A1%9C%EA%B5%AC', 'S', '구로구');">구로구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9D%80%ED%8F%89%EA%B5%AC', 'S', '은평구');">은평구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B8%88%EC%B2%9C%EA%B5%AC', 'S', '금천구');">금천구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EC%9E%91%EA%B5%AC', 'S', '동작구');">동작구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%85%B8%EC%9B%90%EA%B5%AC', 'S', '노원구');">노원구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%96%91%EC%B2%9C%EA%B5%AC', 'S', '양천구');">양천구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%84%EB%B4%89%EA%B5%AC', 'S', '도봉구');">도봉구</a></li>
-												</ul>
+				<input type="hidden" name="change_val" id="change_val">
+
+				<!--171019 제거-->
+				<div id="reserveTitle" class="reserveTitle">실시간 요금정보/예약하기</div>
+				<!---->
+
+			<script type="text/javascript">
+				function all_pay_banner(mode) {
+					switch(mode) {
+						case "show":
+							$("#price_all_layer_pop").show();
+						break;
+						default:
+							$("#price_all_layer_pop").hide();
+							$(".price_mid").css("width","auto");
+							$(".price_mid").html("<p class='note_txt'>고코투어 보다 더 <strong>저렴한 요금을 발견</strong>하셨다면 <strong>신고</strong>해 주십시요.<br />고코투어 캐시로 그 <strong>차액을 전액 보상</strong>해 드립니다.</p><ul class='list_guide'><li><p>최저가로 보장 받은 예약건은 완전하게 이용이 완료되어야<br />그 차액을 보상 받을 수 있습니다.</p></li><li><p>최저가 보장제는 다음의 내용으로 진행 됩니다.</p><div class='list_guide_inner'><ul><li>1. 타 판매사이트의 판매가격이 고코보다 싸다면, 접수해 주세요.<ul><li>- 접수는 아래 신고하기로 접수하시면 됩니다.</li></ul></li><li>2. 접수시에는 타 판매사이트 최종 결제 진행방법을 안내해 주셔야합니다.<ul><li>- 판매처, 판매처의 URL 혹은 카테고리, 캡쳐 등</li><li>- 고코투어 관리자가 객관적으로 확인 가능하여야 합닌다.</li></ul></li><li>3. 담당자가 확인 후 고객님께 답변 메일을 발송합니다.</li><li>4. 시설 이용일 기준으로 3일(영업일) 이내에 그 차액을 고코투어캐쉬로 지급됩니다.</li></ul></div></li><li><p>아래의 조건과 부합되어야 합니다.</p><div class='list_guide_inner'><ul><li>1. 예약 상품과 동일기간, 동일시설, 동일객실, 동일인원인 상품이어야 합니다.</li><li>2. 예약 상품과 변경 및 취소 등의 조건이 동일하여야 합니다.</li><li>3. 타 판매처의 자체 할인금(추천인할인, 적립금차감)에 의한 할인 가격은 제외됩니다.</li></ul></div></li><li><p>다음의 상품은 최저가 보장에서 제외됩니다.</p><div class='list_guide_inner'><ul><li>1. 전일 또는 당일 예약상품은 불가합니다.(담당자 확인 불가)</li><li>2. 고코투어 담당자가 해당 상품의 예약이 가능 하여야 합니다.(불가한 경우, 보상불가)</li><li>3. 취소 또는 환불된 상품</li></ul></div></li></ul><div class='btn_decl'><a onclick='javascript:price_report();'>신고하기</a></div>");
+						break;
+					}
+				}
+			</script>
+			<!---<a href="javascript:all_pay_banner('show')" class="banner_price_all"><img src="http://img.go.co.kr/banner_price_all.jpg" alt="" /></a>-->
+			<!-- 2017-07-03 최저가 보상제 안내 레이어팝업 -->
+			<div class="price_all_layer_pop" style="display:none;z-index:9999999999" id="price_all_layer_pop">
+				<div class="price_all_layer_area">
+					<div class="price_top">
+						<img src="http://img.go.co.kr/price_all_pop_title.jpg" alt="">
+						<a href="javascript:all_pay_banner();" class="price_all_layer_pop_close"><img src="http://img.go.co.kr/price_all_pop_close.jpg" alt=""></a>
 					</div>
-				</li>		
-				<li class=""><a href="javascript:listing.locallist_ver2('K2')" class="local_K2" title="경기">경기</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B0%80%ED%8F%89%EA%B5%B0', 'K2', '가평군');">가평군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%ED%8F%89%EA%B5%B0', 'K2', '양평군');">양평군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%88%98%EC%9B%90%EC%8B%9C', 'K2', '수원시');">수원시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%AC%EC%B2%9C%EC%8B%9C', 'K2', '포천시');">포천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9A%A9%EC%9D%B8%EC%8B%9C', 'K2', '용인시');">용인시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%82%B0%EC%8B%9C', 'K2', '안산시');">안산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%B6%80%EC%B2%9C%EC%8B%9C', 'K2', '부천시');">부천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%96%91%EC%8B%9C', 'K2', '안양시');">안양시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%99%94%EC%84%B1%EC%8B%9C', 'K2', '화성시');">화성시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%82%A8%EC%96%91%EC%A3%BC', 'K2', '남양주');">남양주</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8C%8C%EC%A3%BC%EC%8B%9C', 'K2', '파주시');">파주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C', 'K2', '의정부시');">의정부시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%AC%EC%A3%BC%EC%8B%9C', 'K2', '여주시');">여주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%A0%EC%96%91%EC%8B%9C', 'K2', '고양시');">고양시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%84%B1%EB%82%A8%EC%8B%9C', 'K2', '성남시');">성남시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%8B%9C%ED%9D%A5%EC%8B%9C', 'K2', '시흥시');">시흥시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%89%ED%83%9D%EC%8B%9C', 'K2', '평택시');">평택시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%B0%ED%8F%AC%EC%8B%9C', 'K2', '군포시');">군포시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%EC%A3%BC%EC%8B%9C', 'K2', '양주시');">양주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%AC%EB%A6%AC%EC%8B%9C', 'K2', '구리시');">구리시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%B4%EC%B2%9C%EC%8B%9C', 'K2', '이천시');">이천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EB%AA%85%EC%8B%9C', 'K2', '광명시');">광명시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%84%B1%EC%8B%9C', 'K2', '안성시');">안성시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%98%A4%EC%82%B0%EC%8B%9C', 'K2', '오산시');">오산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B9%80%ED%8F%AC%EC%8B%9C', 'K2', '김포시');">김포시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%99%95%EC%8B%9C', 'K2', '의왕시');">의왕시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%BC%EC%B2%9C%EC%8B%9C', 'K2', '과천시');">과천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%B0%EC%B2%9C%EA%B5%B0', 'K2', '연천군');">연천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EC%A3%BC%EC%8B%9C', 'K2', '광주시');">광주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%8F%99%EB%91%90%EC%B2%9C%EC%8B%9C', 'K2', '동두천시');">동두천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%95%98%EB%82%A8%EC%8B%9C', 'K2', '하남시');">하남시</a></li>
-												</ul>
+					<div class="price_mid">
+						<p class="note_txt">
+							고코투어 보다 더 <strong>저렴한 요금을 발견</strong>하셨다면 <strong>신고</strong>해 주십시요.<br>
+							고코투어 캐시로 그 <strong>차액을 전액 보상</strong>해 드립니다.
+						</p>
+						<ul class="list_guide">
+							<li>
+								<p>
+									최저가로 보장 받은 예약건은 완전하게 이용이 완료되어야<br>
+									그 차액을 보상 받을 수 있습니다.
+								</p>
+							</li>
+							<li>
+								<p>최저가 보장제는 다음의 내용으로 진행 됩니다.</p>
+								<div class="list_guide_inner">
+									<ul>
+										<li>
+											1. 타 판매사이트의 판매가격이 고코보다 싸다면, 접수해 주세요.
+											<ul>
+												<li>- 접수는 아래 신고하기로 접수하시면 됩니다.</li>
+											</ul>
+										</li>
+										<li>
+											2. 접수시에는 타 판매사이트 최종 결제 진행방법을 안내해 주셔야합니다.
+											<ul>
+												<li>- 판매처, 판매처의 URL 혹은 카테고리, 캡쳐 등</li>
+												<li>- 고코투어 관리자가 객관적으로 확인 가능하여야 합닌다.</li>
+											</ul>
+										</li>
+										<li>3. 담당자가 확인 후 고객님께 답변 메일을 발송합니다.</li>
+										<li>4. 시설 이용일 기준으로 3일(영업일) 이내에 그 차액을 고코투어캐쉬로 지급됩니다.</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>아래의 조건과 부합되어야 합니다.</p>
+								<div class="list_guide_inner">
+									<ul>
+										<li>1. 예약 상품과 동일기간, 동일시설, 동일객실, 동일인원인 상품이어야 합니다.</li>
+										<li>2. 예약 상품과 변경 및 취소 등의 조건이 동일하여야 합니다.</li>
+										<li>3. 타 판매처의 자체 할인금(추천인할인, 적립금차감)에 의한 할인 가격은 제외됩니다.</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>다음의 상품은 최저가 보장에서 제외됩니다.</p>
+								<div class="list_guide_inner">
+									<ul>
+										<li>1. 전일 또는 당일 예약상품은 불가합니다.(담당자 확인 불가)</li>
+										<li>2. 고코투어 담당자가 해당 상품의 예약이 가능 하여야 합니다.(불가한 경우, 보상불가)</li>
+										<li>3. 취소 또는 환불된 상품</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="btn_decl">
+							<a onclick="javascript:price_report();" style="cursor:pointer">신고하기</a>
+						</div>
 					</div>
-				</li>				
-				<li><a href="javascript:listing.locallist_ver2('K')" class="local_K" title="강원">강원</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%8F%89%EC%B0%BD%EA%B5%B0', 'K', '평창군');">평창군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B0%95%EB%A6%89%EC%8B%9C', 'K', '강릉시');">강릉시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B6%98%EC%B2%9C%EC%8B%9C', 'K', '춘천시');">춘천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EC%96%91%EA%B5%B0', 'K', '양양군');">양양군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%8D%EC%B2%9C%EA%B5%B0', 'K', '홍천군');">홍천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%86%8D%EC%B4%88%EC%8B%9C', 'K', '속초시');">속초시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%9A%A1%EC%84%B1%EA%B5%B0', 'K', '횡성군');">횡성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'K', '고성군');">고성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9B%90%EC%A3%BC%EC%8B%9C', 'K', '원주시');">원주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%98%81%EC%9B%94%EA%B5%B0', 'K', '영월군');">영월군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%A0%95%EC%84%A0%EA%B5%B0', 'K', '정선군');">정선군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EB%8F%99%ED%95%B4%EC%8B%9C', 'K', '동해시');">동해시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9D%B8%EC%A0%9C%EA%B5%B0', 'K', '인제군');">인제군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%82%BC%EC%B2%99%EC%8B%9C', 'K', '삼척시');">삼척시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%94%EC%B2%9C%EA%B5%B0', 'K', '화천군');">화천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%83%9C%EB%B0%B1%EC%8B%9C', 'K', '태백시');">태백시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B2%A0%EC%9B%90%EA%B5%B0', 'K', '철원군');">철원군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EA%B5%AC%EA%B5%B0', 'K', '양구군');">양구군</a></li>
-												</ul>
+				</div>
+			</div>
+			<!-- // 2017-07-03 최저가 보상제 안내 레이어팝업 -->
+			<script type="text/javascript">
+				function price_report() {
+					$(".price_mid").css("width","500px");
+					$(".price_mid").html("<ul class='list_guide'><li><p>답변받을 이메일</p><div class='list_guide_inner'><input style='width:470px' name='email' /></div></li><li><li><p>연락처</p><div class='list_guide_inner'><input style='width:470px' name='report_phone' type='text' onkeyup=\"javascript:utils.checktype('number','report_phone')\" maxlength='11'  /></div></li><li><p>판매처, 판매처의 URL 혹은 카테고리</p><div class='list_guide_inner'><input style='width:470px;' name='shop' maxlength='500'/></div></il><li><p>신고내용</p><div class='list_guide_inner'><textarea id='memo' name='memo' style='width:100%;height:200px'></textarea></div></li><li><p>캡쳐이미지(선택)</p><div class='list_guide_inner'><input type='file' name='file'/></div></li></ul><div class='btn_decl'><a onclick='javascript:price_report_sub();' style='cursor:pointer'>신고하기</a></div>");
+				}
+				function price_report_sub() {
+					if($("input[name='email']").val() == "") {
+						alert("이메일을 입력해주세요");
+						$("input[name='email']").focus();
+						return false;
+					}
+					if($("input[name='report_phone']").val() == "") {
+						alert("연락처를 입력해주세요");
+						$("input[name='report_phone']").focus();
+						return false;
+					}
+					if($("input[name='report_phone']").val().length < 11) {
+						alert("연락처를 바르게 입력해주세요");
+						$("input[name='report_phone']").focus();
+						return false;
+					}
+					if($("#memo").val() == "") {
+						alert("신고 내용을 입력해주세요");
+						$("#memo").focus();
+						return false;
+					}
+					var form_val = new FormData();
+					form_val.append("mode", "price_report");
+					form_val.append("email", $("input[name='email']").val());
+					form_val.append("shop", $("input[name='shop']").val());
+					form_val.append("phone", $("input[name='report_phone']").val());
+					form_val.append("file", $("input[name='file']")[0].files[0]);
+					form_val.append("memo", $("#memo").val());
+					form_val.append("flag", "G");
+					form_val.append("device", "w");
+					form_val.append("pno", "");
+					form_val.append("uno", "");
+
+					$.ajax({
+						type	:	"POST",
+						url		:	"/home/brd/price_report_state.php",
+						enctype	:	"multipart/form-data",
+						//data	:	{"mode":"price_report", "email":$("input[name='email']").val(), "shop":$("input[name='shop']").val(), "file":$("input[name='file']")[0].files[0]},
+						data	:	form_val,
+						processData: false,
+						contentType: false,
+						success	:	function(val) {
+							var result = val.split("||");
+							if(result[0] == "SUCC") {
+								alert("확인 후 입력하신 이메일로 답변드리겠습니다.");
+								//$("#price_all_layer_pop").hide();
+								all_pay_banner();
+							} else if("file") {
+								alert(result[1]);
+							} else {
+								alert("등록실패");
+							}
+						}
+
+					})
+				}
+			</script>
+
+				<!---
+				sch_sdate
+				sch_edate
+				prev_night
+				room_cnt
+				adult
+				---->
+				<div class="clr"></div>
+				<form name="rsch_form" id="rsch_form" method="post">
+				<input type="hidden" name="find_pno" value="HE93">
+				<input type="hidden" name="jehu_channel" value="all">
+				<input type="hidden" name="prev_sang" value="">
+					<input type="hidden" name="prev_night" value="">
+					<input type="hidden" name="prev_roomcnt" value="">
+				<input type="hidden" name="abr_val" value="">
+				<input type="hidden" name="choice_sdate" value="2017-10-19" id="choice_sdate">
+				<input type="hidden" name="choice_edate" value="2017-10-20" id="choice_edate">
+				<input type="hidden" name="prev_night" value="" id="prev_night">
+				<input type="hidden" name="choice_person" id="choice_person" value="2">
+				</form>
+
+				<!---- 객실리스트 나오는 공간 ------>
+				<div id="room_result">
+			<!--- 외부 채널 추가 시 스크립트 수정 안하기위해 ---->
+
+
+			<form name="prev_form" id="prev_form">
+			<input type="hidden" name="base_ts" id="base_ts" value="1508338800">
+			<input type="hidden" name="prev_hseldate" id="prev_hseldate" value="2017-10-19">
+			<input type="hidden" name="prev_nseldate" id="prev_nseldate" value="2017-10-20">
+			<input type="hidden" name="prev_night" id="prev_night" value="1">
+			<input type="hidden" name="prev_roomcnt" id="prev_roomcnt" value="1">
+
+			<input type="hidden" name="prev_person" value="2">
+
+			</form>
+
+			<form name="rform" id="rform" method="post" action="/home/reservation2/?dd=WxAlVAFWP1ofDVxMDnE=&amp;p_no=HE93">
+			<input type="hidden" name="fval_s" id="fval_s" value="">
+			<input type="hidden" name="p_no" id="p_no" value="517">
+			<input type="hidden" name="gubun" id="gubun" value="R">
+			<input type="hidden" name="res_type2" id="res_type2" value="all">
+			<input type="hidden" name="abr_val" id="abr_val" value="">
+
+
+
+			<p style="clear:both;"></p>
+			<!--- 상품 테이블 ---->
+			<div class="rsv_top" id="rsv_sang" style="text-align:center;">
+
+				<table id="rsv_s_tab">
+					<colgroup>
+						<col width="655">
+						<col width="140">
+						<col width="159">
+					</colgroup>
+					<tbody>
+						<tr class="rsv_s_tabHead">
+
+							
+							<!--171019 달력 아이콘 변경 및 스타일제거 클래스 추가-->
+							<td style="position:relative">
+								<span style="position:absolute;left:10px">[2017.10.19 (목)]<img class="s-calIc" src="http://img.borogogo.co.kr/renew/i-cal.png" onclick="$('#cal_mode').val('list_detail_ad1');picker.set_pic_2month();"></span>상품선택
+							</td>	
+
+							<td>기준인원/최대인원</td>
+							<td style="position:relative">
+								<!---추가할인 레이어팝업-->
+								<div id="discount_pop" style="display:none;top:270px;z-index:999">
+									<div class="tit">회원 추가할인 안내<a href="javascript:util.basic_l_on('discount_pop')" title="닫기"><img src="http://img.borogogo.co.kr/btn_x2.jpg" alt="닫기" style="clear:both; float:right"></a></div>
+									<div class="text">
+										<p><b>1. 적립금 할인</b></p>
+										<p>
+											-  회원가입시 바로 사용 가능한 <span>30,000원 쿠폰팩이 지급</span>됩니다.<br>
+											- 로그인 후 결제시 <span>결제금액의 1%</span>를 적립금으로 돌려드립니다.
+										</p>
+										<p><br><b>2. 쿠폰 할인</b></p>
+										<p>
+											- <span> 회원에게만 할인쿠폰</span>이 제공됩니다.<br>
+											- 회원가입 후 다양한 쿠폰 혜택을 누리세요.
+										</p>
+									</div>
+								</div>
+								<!---171019 제가 추가할인 레이어팝업 끝-->
+								가격
+											
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="rsv_s_list_box2">
+					<table id="rsv_s_list">
+						<colgroup>
+						<col width="655">
+						<col width="140">
+						<col width="159">
+						</colgroup>
+						<tbody>
+						<style type="text/css">
+			  .expand-list {height: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; background: #f5f5f5; font-size: 15px; cursor: pointer; font-weight: 600;}
+			  .expand-list .c-red {color: red;}
+			  .expand-list .arrow {
+				position: relative; font-weight: 400;
+				-webkit-writing-mode: vertical-rl;
+				-moz-writing-mode: vertical-rl;
+				-ms-writing-mode: tb-rl;
+				-ms-writing-mode: vertical-rl;
+				writing-mode: vertical-rl;
+			  }
+				.packlist_s {display:none;}
+			</style>
+
+			<!--- 객실명, 인원, 금액 나오는 라인 ---->
+			<tr id="35734_tr" class="over_tr  " style="cursor:pointer;" onclick="room.show_detail('35734', 'y');">
+				<td class="pl15 left ss"><input type="radio" name="sang" value="35734" id="sang_35734"> 
+
+				<!--- 패키지 말머리 추가 ---->
+
+				 오션뷰 호텔 리노베이션  </td>
+				<td class="center ss">4인/7인</td>
+				<td class="center ss" style="width:159px;position:relative">
+					<!--171019 제거-->
+					<span class="price">94,000원~</span>
+				</td>
+			</tr>
+			<tr id="35734_detail" style="display:none">
+				<td colspan="3">
+
+							<div class="select_wrap"></div>
+						</td>
+			</tr>
+
+
+			<!--- 객실명, 인원, 금액 나오는 라인 ---->
+			<tr id="35735_tr" class="over_tr  " style="cursor:pointer;" onclick="room.show_detail('35735', 'y');">
+				<td class="pl15 left ss"><input type="radio" name="sang" value="35735" id="sang_35735"> 
+
+				<!--- 패키지 말머리 추가 ---->
+
+				 오션뷰 콘도 리노베이션  </td>
+				<td class="center ss">4인/7인</td>
+				<td class="center ss" style="width:159px;position:relative">
+					<span class="price">94,000원~</span>
+				</td>
+			</tr>
+			<tr id="35735_detail" style="display:none">
+				<td colspan="3">
+
+							<div class="select_wrap"></div>
+						</td>
+			</tr>
+
+
+			<!--- 객실명, 인원, 금액 나오는 라인 ---->
+			<tr id="5418_tr" class="over_tr  " style="cursor:pointer;" onclick="room.show_detail('5418', 'y');">
+				<td class="pl15 left ss"><input type="radio" name="sang" value="5418" id="sang_5418"> 
+
+				<!--- 패키지 말머리 추가 ---->
+
+				 오션뷰 콘도  </td>
+				<td class="center ss">4인/7인</td>
+				<td class="center ss" style="width:159px;position:relative">
+					<span class="price">74,000원~</span>
+				</td>
+			</tr>
+			<tr id="5418_detail" style="display:none">
+				<td colspan="3">
+
+							<div class="select_wrap"></div>
+						</td>
+			</tr>
+
+
+			<!--- 객실명, 인원, 금액 나오는 라인 ---->
+			<tr id="125447_tr" class="over_tr  " style="cursor:pointer;" onclick="room.show_detail('125447', 'y');">
+				<td class="pl15 left ss"><input type="radio" name="sang" value="125447" id="sang_125447"> 
+
+				<!--- 패키지 말머리 추가 ---->
+
+				 마운틴뷰 콘도 리노베이션  </td>
+				<td class="center ss">4인/7인</td>
+				<td class="center ss" style="width:159px;position:relative">
+					<span class="price">74,000원~</span>
+				</td>
+			</tr>
+			<tr id="125447_detail" style="display:none">
+				<td colspan="3">
+
+							<div class="select_wrap"></div>
+						</td>
+			</tr>
+
+
+			<!--- 객실명, 인원, 금액 나오는 라인 ---->
+			<tr id="2299_tr" class="over_tr  " style="cursor:pointer;" onclick="room.show_detail('2299', 'y');">
+				<td class="pl15 left ss"><input type="radio" name="sang" value="2299" id="sang_2299"> 
+
+				<!--- 패키지 말머리 추가 ---->
+
+				 마운틴뷰 콘도  </td>
+				<td class="center ss">4인/7인</td>
+				<td class="center ss" style="width:159px;position:relative">
+					<span class="price">64,000원~</span>
+				</td>
+			</tr>
+			<tr id="2299_detail" style="display:none">
+				<td colspan="3">
+
+							<div class="select_wrap"></div>
+						</td>
+			</tr>
+
+
+
+			<script>
+			$(function() {
+
+				$("#fold-list").on("click", function() {
+					if($("#fold-list").hasClass("on") == true) { 
+						// 펼치기
+						$(".packlist_s").hide();  
+						$("#fold-list").removeClass("on");  
+						$("#packlist_t").html("더보기<span class=\"arrow f-rotate-90\">&gt;</span></span>");
+
+						var cnt = $("#rsv_s_list").find(".tb_on").length;
+						if(cnt > 0) {
+							$("#rsv_s_list tr").removeClass("select");
+							$("#rsv_s_list tr[id$='_detail']").css("display", "none");
+							$("#rsv_s_list tr[id$='_detail'] #cal_box").html("");
+						}
+					} else { 
+						// 접기
+						$(".packlist_s").show();  
+						$("#fold-list").addClass("on");  
+						$("#packlist_t").html("접기<span class=\"arrow f-rotate-90\">&lt;</span></span>");
+					}
+				});
+
+				$(".gall img").click(function() {
+					var prev_id = $(this).parent().attr("id");
+					var id = prev_id.replace("gall", "layer");
+
+					utils.img_on("#"+id);
+
+
+					var $liList = $("#"+id+" .swiper_room .swiper-slide img");
+					var li_arr = $liList.map(function() {
+						return $(this).width();
+					});
+
+					var max_width = Math.max.apply(Math, li_arr);
+					$("#"+id).css("width", max_width+"px");
+
+					var b = ($(window).width() - $("#"+id).width()) / 2;
+					$("#"+id).css("left", b);
+
+					var chi_id = $(this).attr("id");
+					var id_cur = chi_id.replace("img_", "");
+
+					var swiper_room = new Swiper('#'+id+' .swiper_room', {
+						initialSlide: parseInt(id_cur),
+						loop:true,
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						autoHeight: true,
+						spaceBetween : 0,
+						onSlideChangeEnd: function() {
+							//$(".swiper_room .swiper-wrapper").css("height", $(".swiper_room .swiper-slide-active img").height()+"px");
+						},
+						touchEventsTarget: '#'+id+' .swiper_room'
+					});
+				});
+			});
+			function packlist_show() {
+				if($("#fold-list").hasClass("on") != true) { 
+					$(".packlist_s").show();  
+					$("#fold-list").addClass("on");  
+					$("#packlist_t").html("접기<span class=\"arrow f-rotate-90\">&lt;</span></span>");
+				}
+			}
+			</script>			</tbody>
+					</table>
+				</div>
+				<!--<script type="text/javascript">
+				$("#right_google_banner").html("<iframe id=\"right_google_banner_2\" src=\"http://www.borogogo.co.kr/home/banner/nuri_banner/right_banner.php?num=\" width=\"200px;\"height=\"700px\" frameborder=\"0\" ></iframe>");
+				$("#right_google_banner2").html("<iframe id=\"right_google_banner_1\" src='http://www.borogogo.co.kr/home/banner/nuri_banner/scollor_banner.php?num=&num2=' width=\"200px;\"height=\"700px\" frameborder=\"0\" style=\"left:51%;margin-left:504px\"></iframe>");
+				$("#right_google_banner3").html("<iframe id=\"right_google_banner_3\" class=\"google_banner\"  src='http://www.borogogo.co.kr/home/banner/nuri_banner/scollor_banner.php?num=&num2=' width=\"200px;\"height=\"700px\" frameborder=\"0\" style=\"left:51%;margin-left:504px\"></iframe>");
+				if(""=="1"){
+					$("#google_row1").html("<iframe  src=\"http://www.borogogo.co.kr/home/banner/nuri_banner/view1.php?num=\" width=\"740px;\"height=\"150px\" frameborder=\"0\" ></iframe>");
+					$("#google_row1").attr("style", "margin-top:40px");
+				}
+				if(""=="1"){
+					$("#google_row2").html("<iframe  src=\"http://www.borogogo.co.kr/home/banner/nuri_banner/view1.php?num=\" width=\"740px;\"height=\"150px\" frameborder=\"0\" ></iframe>");
+					$("#google_row2").attr("style", "margin-top:40px");
+				}
+			</script>--></div>
+			</form>
+
+
+
+			<script type="text/javascript">
+			var base_ts = '1508338800';
+
+
+			$(function() {
+
+				// 객실 없을 시 상품선택 줄 비노출
+
+			});
+
+			$("#infom_box").fadeIn();
+			$("#tab_scroll").removeClass("no_show");
+			$("#local_Recommend_top").show();
+			</script></div>
+			</div>
+			
+			
+			<!--201719 infom_box 추가-->
+			<div class="clr"></div>
+			<div class="infom_box">
+				<ul class="infom-tab clr bsLs" id="inf-tab1">
+					<li class="on"><a href="#inf-tab1">상품소개</a></li>
+					<li><a href="#inf-tab2">축제/관광지/맛집</a></li>
+					<li><a href="#inf-tab3">이용후기</a></li>
+					<li><a href="#inf-tab4">1:1문의</a></li>
+					<li><a href="#inf-tab5">자주묻는질문</a></li>
+				</ul>
+				
+				<div id="info_box1" style="clear:left;margin-bottom:50px">
+					<div class="detail_goods">
+						<p class="info_tit2">&nbsp;숙소공통사항</p>
+						<div class="info_txt2">
+							- 객실입실과 퇴실시간을 꼭 시켜주세요.<br>- 최대인원을 초과하여 입실 불가합니다.&nbsp;<br>- 1박 1객실당 수건은 5장 제공되며,사용한 수건 프론트 반납후 유상교체 가능합니다. <br>(5장 5,000원, 일부교체불가)<br>- 오션투유 패키지 구성 -&nbsp;조식/조개잡이/바베큐/불꽃놀이/속초얼라이브하트/전동바이크<br>
+						</div>
+						
+						<p class="info_tit2"> 기준인원 안내</p>
+						<div class="info_txt2">
+							- 기준인원 초과시 추가요금 발생됩니다.(기준4/최대7인)<br>(8세 이상 10,000원 발생)&nbsp;<br>- 침구추가시 1인세트 10,000원<br>- 추가요금은 현장지불입니다.<br>- 최대인원 초과시 입실 불가합니다.<br>- 체크인시 인원확인 후 입실 가능합니다.<br>
+						</div>
+						
+						<p class="info_tit2"> 오션투유리조트 한식당 "다연" 이용안내(조식 이용)</p>
+						<div class="info_txt2">
+							[한식당 위치]<br>- 오션투유리조트 내 1층<br>[운영시간 안내]<br>- 영업시간은 오전 07:30 부터 오후 08:00 까지 운영합니다.<br>- 조식은 오전 07:30 ~ 오전 10:00 까지만 운영됩니다.<br>[메뉴안내]<br>- 평일 : (선택메뉴) 우거지갈비탕,황태해장국, 광어미역국<br>- 주말(일요일 아침) 아메리칸 뷔페로 운영 <br>[가격]<br>- 단품 : 광어미역국12,000 원 / 우거지갈비탕8,000 원 / 황태해장국8,000 원<br>- 뷔페 : 성인 12,000 원 /소인 9,000 원 (소인 8세 미만)<br>
+						</div>
+						
+						<p class="info_tit2"> 바베큐장 이용안내</p>
+						<div class="info_txt2">
+							- 자리가 많지않아, 꼭 예약후 이용해주셔야합니다. (예약시간이 지난 후 입장시, 입장이 불가합니다.)<br>- 바베큐장은 날씨,계절등에 따라 운영이 불가할수 있으므로, 사전 이용여부 체크 부탁드립니다.<br>- 바베큐장 타임별 이용 요금은 30,000원 입니다.<br>- 바베큐장 이용시 테이블 + 그릴 + 숯 + 집게 +가위가 제공되며,별도 음식은 제공되지 않습니다.<br>- 바베큐장 마감시간은 24시까지 이용가능합니다.<br>- 바베큐장은 시간제로 4회에 걸쳐 진행되며, 이용시간은 아래와 같습니다.<br>
+						</div>
+						
+						<p class="info_tit2">이용 시간안내</p>
+						<div class="info_txt2">
+							- 1부-16:00~18:00 /2부-18:00~20:00 / 3부-20:00~22:00 <br>
+						</div>
+						
+						<p class="info_tit2"> 추가이용에 관한 문의는 사전 프론트 문의 바랍니다.</p>
+						<div class="info_txt2">
+							- 많은 사람들이 공동으로 사용하는 공간으로 주위 사람들에게 피해가 가는 행동은 자제바랍니다.<br>- 바베큐장 이용 후 다음 이용객을 위하여 깨끗하게 정리 바랍니다.<br>
+						</div>
+						
+						<!--171019 스타일 제거-->
+						<div class="info_box">
+						
+						<p class="info_tit">인사말</p>
+						
+						<span class="info_txt">
+							설악/속초/고성 위치!<br>
+							삼포해수욕장 바로 앞<br>
+							오션투유리조트<br>
+							<br>
+							- 설악/속초/고성 아우르는 최고의 리조트!  <br>
+							- 에메랄드 빛 삼포해변 1분거리!<br>
+							- 얕은 수심, 어린아이 위한 해수욕장!<br>
+							- 해변에서 조개잡이 가능<br>
+							  (조개잡이 물품 대여가능) <br>
+							- 속초, 설악 모든 해변과 근접! <br>
+							- 최대80%할인 , 특가할인<br>
+						</span>
+						<p class="info_tit1_2">단체 문의</p>
+
+						<div class="info_txt2">
+							오션투유콘도는 최대 1800명 까지 수용 가능한 대형콘도입니다.<br>
+							기업체/단체교육/워크샵/수학여행/수련회/세미나<br>
+							워크샵/가족모임/행사/MICE(마이스)/설명회/연회장<br>
+							컨벤션/학회/기업행사/디너쇼/전시회/컨퍼런스<br>
+							비지니스미팅/소규모모임/대규모모임<br>
+						</div>
+
+						<p class="info_tit1_2">견적문의</p>
+
+						<div class="info_txt2">
+							단체 상담 및 견적문의<br>
+							예약실1 : 02-6255-3155 <br>
+							예약실2 : 02-6255-3156
+						</div>
+							
+						<p class="info_tit">공통이벤트</p>
+						<span class="info_none">준비된 이벤트가 없습니다.</span>
+						<p class="info_tit">패키지 및 테마안내</p>
+						<span class="info_txt">[해수욕장숙소]삼포해수욕장 인근<br>[바다전망]동해바다 전망객실 보유<br></span>
+						<p class="info_tit">부대시설</p>
+						<div class="establishment_wrap establishment_wrap2">
+							<ul class="establishment_list establishment_list2">
+								<li class="breakfast">
+									<img src="http://img.go.co.kr/establishment_icon13.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>조식</p>
+								</li>
+								<li class="parking">
+									<img src="http://img.go.co.kr/establishment_icon9.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>주차장</p>
+								</li>
+								<li class="food">
+									<img src="http://img.go.co.kr/establishment_icon8.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>식당</p>
+								</li>
+								<li class="BBQ">
+									<img src="http://img.go.co.kr/establishment_icon12.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>공용 BBQ</p>
+								</li>
+								<li class="store">
+									<img src="http://img.go.co.kr/establishment_icon5.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>편의점</p>
+								</li>
+								<li class="publicwifi">
+									<img src="http://img.go.co.kr/establishment_icon15.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>와이파이</p>
+								</li>
+								<li class="cafe">
+									<img src="http://img.go.co.kr/establishment_icon6.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>카페</p>
+								</li>
+								<li class="restaurant">
+									<img src="http://img.go.co.kr/establishment_icon7.png" alt="" class="ebm_ico" style="width: 86px;">
+									<p>레스토랑</p>
+								</li>
+							</ul>
+						</div>
+								<p class="info_tit">추천여행지</p>
+								<span class="info_txt">
+									삼포해수욕장: 오션투유리조트로 앞으로 펼쳐지는 해수욕장은 푸른 동해에서도 가장 깨끗한 해수욕장 중 <br>
+									하나로 꼽힙니다. 잘 갖춰진 편의 시설과 깔끔한 민박단지로 구성되어 있습니다. 조개체험 가능합니다. <br>
+								</span>
+
+								<p class="info_tit">군부대</p>
+								<span class="info_txt">
+									22사단예하부대, 22사단, 율곡부대, 뇌종부대, 고성종합체육관, 22사단53연대, 22사단55연대, 22사단56연대,<br>
+									22사단정비대대, 22사단수색대대, 22사단53연대수색중대, 22사단55연대수색중대, 22사단56연대수색중대,<br>
+									22사단포병연대, 22사단53연대본부중대, 22사단55연대본부중대, 22사단56연대본부중대, 22사단신교대대,<br>
+									22사단신병교육대, 22사단훈련소, 율곡신병교육대, 22보병사단, 강원도고성22사단, 육군22사단, 22보병사단,<br>
+									강원도고성율곡부대, 강원도고성뇌종부대, 고성22사단, 고성율곡부대, 고성뇌종부대,율곡한울부대, 공병대, <br>
+									수색대, 화확대, 보수대, 의무대, 헌병대, 기무대, 수송대, 공병대대, 수색대대, 화확대대, 보수대대,의무대대,<br>
+									헌병대대, 기무대대, 수송대대, 56연대1대대, 56연대2대대, 56연대3대대, 율곡청룡, 율곡천마, 율곡불곰, <br>
+									278포병대대,279포병대대, 280포병대대, 639포병대대, 율곡십자성대대, 율곡승리대대, 율곡왕포대대,<br>
+									율곡쌍호, 율곡백호, 율곡비호, 율곡맹호, 55연대1대대, 55연대2대대, 55연대3대대, 연대본부, 쌍호수색중대,통신대대
+								</span>
+						</div>
+					</div>	
+
+
+				</div>
+				
+				<ul class="infom-tab clr bsLs" id="inf-tab2">
+					<li><a href="#inf-tab1">상품소개</a></li>
+					<li class="on"><a href="#inf-tab2">축제/관광지/맛집</a></li>
+					<li><a href="#inf-tab3">이용후기</a></li>
+					<li><a href="#inf-tab4">1:1문의</a></li>
+					<li><a href="#inf-tab5">자주묻는질문</a></li>
+				</ul>
+				<div id="info_box2" class="info_box2">
+					<div class="goods_gallery">
+					<h3>외관 및 내부</h3>
+					<ul>
+						<li onclick="img_click('in_img', '1', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">외관</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491976801_in1.jpg" alt="외관" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '2', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">외관</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491976806_in2.jpg" alt="외관" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '3', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">외관</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201005_in3.jpg" alt="외관" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '4', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">해변입구</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201011_in4.jpg" alt="해변입구" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '5', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">삼포해수욕장</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201011_in5.jpg" alt="삼포해수욕장" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '6', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">외관</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201012_in6.jpg" alt="외관" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '7', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">야경</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201012_in7.jpg" alt="야경" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '8', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">야경</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201012_in8.jpg" alt="야경" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('in_img', '9', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt"></span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1494814890_in12.jpg" alt="" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li></ul></div><div class="goods_gallery"><h3>객실사진</h3><ul>
+						<li onclick="img_click('out_img', '10', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">콘도</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201277_out1.jpg" alt="콘도" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '11', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">콘도</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201278_out2.jpg" alt="콘도" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '12', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">호텔</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201278_out3.jpg" alt="호텔" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '13', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">호텔</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201278_out4.jpg" alt="호텔" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '14', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">마운틴</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201278_out5.jpg" alt="마운틴" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '15', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">마운틴</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201279_out6.jpg" alt="마운틴" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '16', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">오션</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201279_out7.jpg" alt="오션" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('out_img', '17', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">오션</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201420_out8.jpg" alt="오션" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li></ul></div><div class="goods_gallery"><h3>부대시설 및 주변시설</h3><ul>
+						<li onclick="img_click('add_img', '18', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">로비</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201419_add1.jpg" alt="로비" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('add_img', '19', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">로비</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201419_add2.jpg" alt="로비" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('add_img', '20', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">로비</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201419_add3.jpg" alt="로비" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('add_img', '21', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">바베큐</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201420_add4.jpg" alt="바베큐" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('add_img', '22', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">연회장</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201420_add5.jpg" alt="연회장" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li>
+						<li onclick="img_click('add_img', '23', '517')" style="width:217px;padding-right:5px;margin-right:5px;text-align:center;background:#000000;cursor:pointer">
+							<div class="info" style="z-index: 10;">	<span class="txt">슈퍼마켓</span></div>
+							<img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201420_add6.jpg" alt="슈퍼마켓" style="width:auto;height:auto;max-width:222px;height:160px;" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+						</li></ul></div>
+					<!--171019 스타일 제거 클래스 추가 및 clr태그추가-->
+					<div class="clr"></div>
+					<div class="dtImgBox">
+						<img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947261_3.jpg" alt="상품소개이미지3" width="100%"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947269_4.jpg" alt="상품소개이미지4" width="100%"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947269_5.jpg" alt="상품소개이미지5" width="100%"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947284_6.jpg" alt="상품소개이미지6" width="100%"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947284_7.jpg" alt="상품소개이미지7" width="100%"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947284_8.jpg" alt="상품소개이미지8" width="100%"><img src="http://cache.go.co.kr/media/1000/file.go.co.kr/dimg/1497947289_9.jpg" alt="상품소개이미지9" width="100%"><br>
+						<iframe title="속초여행 오션투유콘도 (삼포해수욕장) 2박3일 후기" width="800" height="520" src="http://kakaotv.daum.net/embed/player/cliplink/302952892?service=daum_tistory" allowfullscreen="" frameborder="0" scrolling="no"></iframe>
+						<iframe title="속초여행 오션투유콘도 (삼포해수욕장) 2박3일 후기" width="800" height="520" src="http://kakaotv.daum.net/embed/player/cliplink/302952911?service=daum_tistory" allowfullscreen="" frameborder="0" scrolling="no"></iframe>
+						<p style="font-weight:bold;margin-top:20px;margin-bottom:20px;font-size:16px;"><a href="http://chldudwn22.tistory.com/64" target="_blank"><span style="color:#ff0000">[관련내용 자세히보기]</span> http://chldudwn22.tistory.com/64</a></p>
 					</div>
-				</li>				
-				<li><a href="javascript:listing.locallist_ver2('CN')" class="local_CN" title="충남">충남</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%83%9C%EC%95%88%EA%B5%B0', 'CN', '태안군');">태안군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%9C%EC%95%88%EC%8B%9C', 'CN', '천안시');">천안시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B3%B4%EB%A0%B9%EC%8B%9C', 'CN', '보령시');">보령시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%95%84%EC%82%B0%EC%8B%9C', 'CN', '아산시');">아산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%82%B0%EC%8B%9C', 'CN', '서산시');">서산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%B5%EC%A3%BC%EC%8B%9C', 'CN', '공주시');">공주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%98%88%EC%82%B0%EA%B5%B0', 'CN', '예산군');">예산군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%84%EB%A3%A1%EC%8B%9C', 'CN', '계룡시');">계룡시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B6%80%EC%97%AC%EA%B5%B0', 'CN', '부여군');">부여군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%B2%9C%EA%B5%B0', 'CN', '서천군');">서천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B8%88%EC%82%B0%EA%B5%B0', 'CN', '금산군');">금산군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%85%BC%EC%82%B0%EC%8B%9C', 'CN', '논산시');">논산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%99%8D%EC%84%B1%EA%B5%B0', 'CN', '홍성군');">홍성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%8B%B9%EC%A7%84%EA%B5%B0', 'CN', '당진군');">당진군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%97%B0%EA%B8%B0%EA%B5%B0', 'CN', '연기군');">연기군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%AD%EC%96%91%EA%B5%B0', 'CN', '청양군');">청양군</a></li>
-												</ul>
+				</div>
+				
+				
+				<ul class="infom-tab clr bsLs" id="inf-tab2">
+					<li><a href="#inf-tab1">상품소개</a></li>
+					<li class="on"><a href="#inf-tab2">축제/관광지/맛집</a></li>
+					<li><a href="#inf-tab3">이용후기</a></li>
+					<li><a href="#inf-tab4">1:1문의</a></li>
+					<li><a href="#inf-tab5">자주묻는질문</a></li>
+				</ul>
+				<div id="info_box5">
+					<p id="tour_radio" style="text-align:left">
+						<input type="radio" name="tt_select" value="all" id="info_all" checked=""><label for="info_all"> <span id="span_all" class="on info_span">전체보기</span></label>&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="tt_select" value="tour" id="info_tour"><label for="info_tour"> <span id="span_tour" class="info_span">관광지보기</span></label>&nbsp;&nbsp;&nbsp;
+							</p>
+					<table border="0" id="tour_taste" class="tour_taste" style="border-collapse:collapse">
+						<colgroup>
+							<col width="70">
+							<col width="170">
+							<col width="205">
+							<col width="250">
+							<col width="120">
+							<col width="95">
+							</colgroup>
+							<thead>
+							<tr>
+								<th height="35">유형</th>
+								<th>미리보기</th>
+								<th>명칭</th>
+								<th>주소</th>
+								<th>거리/기간</th>
+								<th></th>
+							</tr>
+							</thead>
+							<tbody>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '270')"><img src="http://file.go.co.kr/info_tour/upload/0.67061300 1272617877"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '270')">관악산</a></td>
+										<td style="text-align:left">서울 관악구 신원동</td>
+										<td style="text-align:left">2.5km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '270')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '1074')"><img src="http://file.go.co.kr/info_tour/upload/0.34352600 1291709254"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '1074')">보라매공원</a></td>
+										<td style="text-align:left">서울 동작구 신대방동 </td>
+										<td style="text-align:left">2.6km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '1074')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '1068')"><img src="http://file.go.co.kr/info_tour/upload/0.63518300 1291706823"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '1068')">약수암</a></td>
+										<td style="text-align:left">서울 동작구 상도동 </td>
+										<td style="text-align:left">4.0km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '1068')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '292')"><img src="http://file.go.co.kr/info_tour/upload/0.51327600 1272893228"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '292')">호압사</a></td>
+										<td style="text-align:left">서울 금천구 시흥2동</td>
+										<td style="text-align:left">4.1km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '292')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '304')"><img src="http://file.go.co.kr/info_tour/upload/0.68682100 1272870810"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '304')">관악산야외식물원</a></td>
+										<td style="text-align:left">서울 관악구 신림동</td>
+										<td style="text-align:left">5.0km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '304')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '1032')"><img src="http://file.go.co.kr/info_tour/upload/0.48739700 1291616085"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '1032')">63시티</a></td>
+										<td style="text-align:left">서울 영등포구 여의도동 </td>
+										<td style="text-align:left">5.4km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '1032')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '1003')"><img src="http://file.go.co.kr/info_tour/upload/0.25376200 1291364038"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '1003')">여의도한강공원</a></td>
+										<td style="text-align:left">서울 영등포구 여의도동 </td>
+										<td style="text-align:left">5.8km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '1003')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '1085')"><img src="http://file.go.co.kr/info_tour/upload/0.44068300 1291713215"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '1085')">용왕산 근린공원</a></td>
+										<td style="text-align:left">서울 양천구 목동 </td>
+										<td style="text-align:left">6.1km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '1085')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '284')"><img src="http://file.go.co.kr/info_tour/upload/0.53069900 1272855569"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '284')">궁동저수지(생태공원)</a></td>
+										<td style="text-align:left">서울 구로구 궁동</td>
+										<td style="text-align:left">6.1km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '284')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr>
+									<tr>
+										<td height="110" style="text-align:center">관광지</td>
+										<td style="text-align:left" class="photo"><a href="javascript:util.mapinfo_pop('tour', '72')"><img src="http://file.go.co.kr/info_tour/upload/0.75874600 1273113449"></a></td>
+										<td style="text-align:left"><a href="javascript:util.mapinfo_pop('tour', '72')">삼막사</a></td>
+										<td style="text-align:left">경기 안양시 만안구 석수동</td>
+										<td style="text-align:left">6.3km 이내</td>
+										<td><a href="javascript:util.mapinfo_pop('tour', '72')"><img src="http://img.go.co.kr/btn_detail.jpg" alt="자세히보기"></a></td>
+									</tr><tr>
+								<td colspan="6">
+								<div id="number" style="maring:0; margin-top:25px;width:910px;">
+				<img src="http://img.go.co.kr/btn_pre02.jpg" alt="첫 페이지">
+				<img src="http://img.go.co.kr/btn_pre01.jpg" alt="이전 페이지">
+				<span class="page_ov">1</span>
+				<a href="javascript:taste_list('2','');"><span class="page">2</span></a>
+				<a href="javascript:taste_list('3','');"><span class="page">3</span></a>
+				<a href="javascript:taste_list('4','');"><span class="page">4</span></a>
+				<a href="javascript:taste_list('5','');"><span class="page">5</span></a>
+				<a href="javascript:taste_list('6','');"><span class="page">6</span></a>
+				<a href="javascript:taste_list('7','');"><span class="page">7</span></a>
+				<a href="javascript:taste_list('8','');"><span class="page">8</span></a>
+				<a href="javascript:taste_list('9','');"><span class="page">9</span></a>
+				<a href="javascript:taste_list('10','');"><span class="page">10</span></a>
+				<a href="javascript:taste_list('2','');"><img src="http://img.go.co.kr/btn_next01.jpg" alt="다음 페이지"></a>
+				<a href="javascript:taste_list('12','');"><img src="http://img.go.co.kr/btn_next02.jpg" alt="끝 페이지"></a>
+				</div><!--number 끝-->
+								</td>
+							</tr></tbody>	</table>
+				</div>
+				
+				<ul class="infom-tab clr bsLs" id="inf-tab3">
+					<li><a href="#inf-tab1">상품소개</a></li>
+					<li><a href="#inf-tab2">축제/관광지/맛집</a></li>
+					<li class="on"><a href="#inf-tab3">이용후기</a></li>
+					<li><a href="#inf-tab4">1:1문의</a></li>
+					<li><a href="#inf-tab5">자주묻는질문</a></li>
+				</ul>
+				<!--171019 글쓰기 추가-->
+				<div class="res-container wrBt-box bsLs">
+					<a href="#" class="writeBtn">
+						<span class="s1">
+							실제 이용하신 분들만 이용후기 작성이 가능합니다.  여행을 준비하는 다른 분들을 위해 생생한 이용후기를 올려주세요!
+						</span>
+						<span class="s2">글쓰기</span>
+					</a>
+				</div>
+				<!--171019클래스 추가clr 및 추가내용-->
+				<div id="info_box8" class="clr">
+					<div id="review_box" class="review_box">
+						<div id="gv_review2">
+							<div id="review_list2">
+								<div class="list_box"><dl><dt></dt><dd><h3>좋은시간보냄^^</h3><p class="user_name">[종****]</p><div class="rv_star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"></div></dd></dl>
+								<div class="recommend_num">
+									<p class="date">2017.10.17</p>
+									<a href="javascript:brd.new_recomm_num('GkxzE20W', '4')" title="이용후기 추천"><img src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천"></a> <div class="number" id="recomm_4">0</div>
+								</div><p class="review_text prev" id="cont_4">하루 여유롭게 쉴 공간이 되어 넘 좋았습니당^^ 다음에 기회가 되면 또 가려구요. 여느 곳보다 친절하고 좋은 시설로 이용할 수 있어서 행복한 시간이 되었답니당. 언제든지 갈께염^^</p>
+							</div>
+							<div class="list_box"><dl><dt></dt><dd><h3>괜찮은편입니다</h3><p class="user_name">[김**]</p><div class="rv_star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"></div></dd></dl>
+							<div class="recommend_num">
+								<p class="date">2017.06.21</p>
+								<a href="javascript:brd.new_recomm_num('G0l2Gmc=', '5')" title="이용후기 추천"><img src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천"></a> <div class="number" id="recomm_5">0</div>
+							</div><p class="review_text prev" id="cont_5">좋았습니다 객실도 생각보다 깔끔하고 다만 룸서비스가 생각보다 비싸네요 맛은 나쁘지않아요 아아 객실청소해쥬시는 여사님들도 친절하시고 좋았습니다 너무 잘해주셨어요 ^^ 아 냉장고가 작은게 흠이긴 하네요</p>
+							</div><div class="list_box"><dl><dt></dt><dd><h3>괜찮은편입니다</h3><p class="user_name">[하**]</p><div class="rv_star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-off.png"></div></dd></dl>
+							<div class="recommend_num">
+								<p class="date">2017.06.14</p>
+								<a href="javascript:brd.new_recomm_num('G0l0Gm8=', '6')" title="이용후기 추천"><img src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천"></a> <div class="number" id="recomm_6">0</div>
+							</div><p class="review_text prev" id="cont_6">가격대에 비해서는 편안하고 좋습니다 
+		위치도 좋아 주변에 식당도 많고 방이 넓은편에 속하고
+		로비에 스타벅스가 같이 위치하고 있어 비지니스 개념으로도 좋을듯 합니다 이 위치에 있는 호텔로는 최적인듯합니다</p>
+							</div><div class="list_box"><dl><dt></dt><dd><h3>괜찮은편입니다</h3><p class="user_name">[하**]</p><div class="rv_star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-off.png"></div></dd></dl>
+							<div class="recommend_num">
+								<p class="date">2017.06.14</p>
+								<a href="javascript:brd.new_recomm_num('G0l0Gm4=', '7')" title="이용후기 추천"><img src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천"></a> <div class="number" id="recomm_7">0</div>
+							</div><p class="review_text prev" id="cont_7">가격대에 비해서는 편안하고 좋습니다 
+		위치도 좋아 주변에 식당도 많고 방이 넓은편에 속하고
+		로비에 스타벅스가 같이 위치하고 있어 비지니스 개념으로도 좋을듯 합니다 이 위치에 있는 호텔로는 최적인듯합니다</p>
+							</div><div class="list_box"><dl><dt></dt><dd><h3>괜찮았습니다</h3><p class="user_name">[김**]</p><div class="rv_star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"></div></dd></dl>
+							<div class="recommend_num">
+								<p class="date">2017.05.28</p>
+								<a href="javascript:brd.new_recomm_num('G0h5FW0=', '8')" title="이용후기 추천"><img src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천"></a> <div class="number" id="recomm_8">0</div>
+							</div><p class="review_text prev" id="cont_8">입실이 너무 늦은시간에 입실이 가능했지만 괜찮았습니다 생각보다 나쁘지않았어요 좋았습니다 친절하기도했구요 좋았습니다 아 단점은 용품이 조금 빈약했네요 그것만 배면 다 괜찮은것같네요 ^^</p>
+							</div>
+							<!--171019 스타일 제거-->
+							<div id="number">
+								<img src="http://img.go.co.kr/btn_pre02.jpg" alt="첫 페이지">
+								<img src="http://img.go.co.kr/btn_pre01.jpg" alt="이전 페이지">
+								<span class="page_ov">1</span>
+								<a href="javascript:brd.new_review_list('1433', '2', '', '');"><span class="page">2</span></a>
+								<a href="javascript:brd.new_review_list('1433', '3', '', '');"><span class="page">3</span></a>
+								<a href="javascript:brd.new_review_list('1433', '4', '', '');"><span class="page">4</span></a>
+								<a href="javascript:brd.new_review_list('1433', '5', '', '');"><span class="page">5</span></a>
+								<a href="javascript:brd.new_review_list('1433', '6', '', '');"><span class="page">6</span></a>
+								<a href="javascript:brd.new_review_list('1433', '7', '', '');"><span class="page">7</span></a>
+								<a href="javascript:brd.new_review_list('1433', '8', '', '');"><span class="page">8</span></a>
+								<a href="javascript:brd.new_review_list('1433', '2', '', '');"><img src="http://img.go.co.kr/btn_next01.jpg" alt="다음 페이지"></a>
+								<a href="javascript:brd.new_review_list('1433', '8', '', '');"><img src="http://img.go.co.kr/btn_next02.jpg" alt="끝 페이지"></a>
+								</div><!--number 끝-->
+								
+							</div>
+							
+						</div>
 					</div>
-				</li>				
-				<li><a href="javascript:listing.locallist_ver2('CB')" class="local_CB" title="충북">충북</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%8B%A8%EC%96%91%EA%B5%B0', 'CB', '단양군');">단양군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%A3%BC%EC%8B%9C', 'CB', '청주시');">청주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B6%A9%EC%A3%BC%EC%8B%9C', 'CB', '충주시');">충주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A0%9C%EC%B2%9C%EC%8B%9C', 'CB', '제천시');">제천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EA%B4%B4%EC%82%B0%EA%B5%B0', 'CB', '괴산군');">괴산군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%B3%B4%EC%9D%80%EA%B5%B0', 'CB', '보은군');">보은군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%9D%8C%EC%84%B1%EA%B5%B0', 'CB', '음성군');">음성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A7%84%EC%B2%9C%EA%B5%B0', 'CB', '진천군');">진천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%A5%EC%B2%9C%EA%B5%B0', 'CB', '옥천군');">옥천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%81%EB%8F%99%EA%B5%B0', 'CB', '영동군');">영동군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A6%9D%ED%8F%89%EA%B5%B0', 'CB', '증평군');">증평군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%9B%90%EA%B5%B0', 'CB', '청원군');">청원군</a></li>
-												</ul>
+				</div>
+
+				<ul class="infom-tab clr bsLs" id="inf-tab4">
+					<li><a href="#inf-tab1">상품소개</a></li>
+					<li><a href="#inf-tab2">축제/관광지/맛집</a></li>
+					<li><a href="#inf-tab3">이용후기</a></li>
+					<li class="on"><a href="#inf-tab4">1:1문의</a></li>
+					<li><a href="#inf-tab5">자주묻는질문</a></li>
+				</ul>
+				<!--171019 글쓰기 추가-->
+				<div class="res-container wrBt-box bsLs">
+					<a href="#" class="writeBtn">
+						<span class="s1">
+							궁금한 점이 있으시다면? 자주묻는질문 게시판을 먼저 확인해주세요.
+						</span>
+						<span class="s2">전체보기</span>
+					</a>
+				</div>
+				
+				<ul class="infom-tab clr bsLs" id="inf-tab5">
+					<li><a href="#inf-tab1">상품소개</a></li>
+					<li><a href="#inf-tab2">축제/관광지/맛집</a></li>
+					<li><a href="#inf-tab3">이용후기</a></li>
+					<li><a href="#inf-tab4">1:1문의</a></li>
+					<li class="on"><a href="#inf-tab5">자주묻는질문</a></li>
+				</ul>
+				<!--171019 글쓰기 추가-->
+				<div class="res-container wrBt-box bsLs">
+					<a href="#" class="writeBtn">
+						<span class="s1">
+							문의사항이 있으신가요? 궁금하신 질문을 올려주시면 담당자가 빠른 시간내에 친절하게 답변해드립니다!
+						</span>
+						<span class="s2">글쓰기</span>
+					</a>
+				</div>
+				
+				<!--171019 clr클래스 추가-->
+				<div id="info_box6" class="clr">
+					<div id="faq">
+						<table class="faq_t">
+							<colgroup>
+								<col width="100">
+								<col width="550">
+								<col width="90">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th align="center">유형</th>
+									<th align="center">질문</th>
+									<th align="center">작성자</th>
+								</tr>
+								<tr class="best">
+									<td align="center" style="font-weight:bold;">[BEST질문]</td>
+									<td class="tit tit_faq_cont6" id="bbsnum_558"><a href="javascript:brd.show_cont_review('faq_cont6', '558', 'BlueAD_nomal_faq')"><span class="question">Q.</span> 예약확정은 언제 되나요? (조회:65,070 / 평균:4 / 참여자:169)</a></td>
+									<td align="center">관리자</td>
+								</tr>
+								<td colspan="3" class="reply" style="padding-top:30px">
+								<p>
+									<strong>국내최대&nbsp;숙박할인예약&nbsp;GO.CO.kr&nbsp;고코투어&nbsp;입니다.&nbsp;</strong></p>
+								<p>
+									<br>
+									<br>
+									“고코투어”는&nbsp;실시간&nbsp;예약확정을&nbsp;원칙으로&nbsp;하며,</p>
+								<p>
+									이를 위해 각&nbsp;숙박시설에서&nbsp;저희 사이트에&nbsp;자신의 객실현황을&nbsp;등록하는&nbsp;형태로&nbsp;운영되고&nbsp;있습니다.&nbsp;<br>
+									&nbsp;</p>
+								<p>
+									하지만, 최근&nbsp;일부&nbsp;숙박시설에서&nbsp;위와 같은&nbsp;형태의&nbsp;운영방식에&nbsp;미숙하여&nbsp;당일&nbsp;숙박이&nbsp;마감&nbsp;되었음에도&nbsp;불구하고,</p>
+								<p>
+									마감처리를&nbsp;하지&nbsp;않거나,&nbsp;실시간으로&nbsp;정보를 갱신하지&nbsp;않아&nbsp;중복 및 초과예약이&nbsp;발생하여</p>
+								<p>
+									고객님들을 불편하게 하는 일이&nbsp;발생하고&nbsp;있습니다.&nbsp;<br>
+									&nbsp;</p>
+								<p>
+									이미&nbsp;판매의 형태가 정리 된&nbsp;대형 숙박시설의&nbsp;판매자분들은&nbsp;문제없이 저희 사이트를 통해 원활하게 객실을 판매하고 있으시지만,</p>
+								<p>
+									일부 소규모숙박시설,펜션등의&nbsp;사업주분들께서는 사이트 등록이 미숙하여 잘&nbsp;대응하지&nbsp;못하는&nbsp;경우가 발생하고 있어</p>
+								<p>
+									예약확정이&nbsp;늦어지거나,&nbsp;다수의&nbsp;사이트에&nbsp;동시&nbsp;판매&nbsp;하고&nbsp;있는&nbsp;등의&nbsp;이유로초과예약이&nbsp;접수&nbsp;되고있는 경우가 발생하고 있습니다.</p>
+								<p>
+									&nbsp;</p>
+								<p>
+									이렇게 갑자기 판매하려는 객실이 없어진 경우,</p>
+								<p>
+									당사에서는 어쩔 수 없이 객실마감에&nbsp;따른&nbsp;취소&nbsp;처리를 할 수 밖에 없는 실정이며,</p>
+								<p>
+									이 과정에서 불가피하게 고객님들에게 양해를 구해야 하는 상황이 발생하게 됩니다.<br>
+									&nbsp;</p>
+								<p>
+									당사는&nbsp;이러한&nbsp;업계의&nbsp;환경에서&nbsp;고객님들께&nbsp;보다&nbsp;빠른&nbsp;예약진행&nbsp;및&nbsp;확정을&nbsp;위해</p>
+								<p>
+									아래와&nbsp;같은&nbsp;원칙을&nbsp;가지고&nbsp;운영하고 있으니 참고하여&nbsp;주시길&nbsp;바랍니다.&nbsp;</p>
+								<p>
+									<br>
+									<br>
+									<strong>평일(월/화/수/목/금)&nbsp; </strong></p>
+								<p>
+									23시&nbsp;~&nbsp;09시30분 까지의&nbsp;주문 건&nbsp;:&nbsp;09시30분 부터&nbsp;순차적으로&nbsp;처리&nbsp;&nbsp;&nbsp;[전담인력&nbsp;배치]&nbsp;<br>
+									09시30분 ~&nbsp;23시&nbsp;까지의&nbsp;주문 건&nbsp;:&nbsp;주문시부터&nbsp;약 30분에서 최대 3시간 소요&nbsp;[전담인력&nbsp;배치]</p>
+								<p>
+									<br>
+									<strong>주말(토/일)</strong></p>
+								<p>
+									-&nbsp;<strong>주말은 당일 예약이 우선시 진행되며, 당일 이외의 예약건은 월요일 이후 처리됩니다.</strong></p>
+								<p>
+									23시&nbsp;~&nbsp;09시30분 까지의&nbsp;주문건&nbsp;:&nbsp;09시30분 부터&nbsp;순차적&nbsp;처리<br>
+									09시30분 ~ 23시&nbsp;까지의&nbsp;주문건&nbsp;:&nbsp;주문시점&nbsp;부터&nbsp;약 30분&nbsp;~&nbsp;최대 3시간&nbsp;소요&nbsp;<br>
+									&nbsp;</p>
+								<p>
+									&nbsp;</p>
+								<p>
+									당사는 인력 충원 및 현지시설 직원 파견, 서비스 개선 등 여러가지 방안을 통하여&nbsp;더 좋은 서비스를 제공하고자 노력하고 있으며,&nbsp;</p>
+								<p>
+									고객님들께서 자주&nbsp;찾으시는&nbsp;숙박시설에&nbsp;대하서는&nbsp;24시간&nbsp;실시간&nbsp;당일&nbsp;예약이&nbsp;가능하며, 업체수를 늘려가고 있습니다.</p>
+								<p>
+									&nbsp;</p>
+								<p>
+									고객&nbsp;여러분의&nbsp;큰&nbsp;사랑으로 해가 갈수록 더 많은고객분들께서 저희 사이트를 이용해 주시어</p>
+								<p>
+									저희 고코투어가 국내여행사 부문 1위(랭키닷컴 기준) 여행사가 되었습니다.</p>
+								<p>
+									이에 당사도 고객님들의 성원에 부응하고자 내부적으로 40여명의 고객센터 전문 상담원을 배치하였지만</p>
+								<p>
+									일부 시간대에는 여전히 전화 통화가 어려운 현실에 양해를 구합니다.</p>
+								<p>
+									&nbsp;</p>
+								<p>
+									이러한 경우</p>
+								<p>
+									"1:1 문의”를 통해 고객님의 연락처/이메일과 간략한 예약내역 및 원하는 질문을 남겨주시면,</p>
+								<p>
+									최대 1시간 이내에 저희가 연락 드리겠습니다.</p>
+								<div>
+									&nbsp;</div>
+								<p>
+									고객 여러분들께 더 많은 숙박시설을 보다 저렴한 가격으로 제공해 드리려는 것이 당사의 유일한 목표입니다.</p>
+								<p>
+									당사 뿐만 아니라 다른 대형 여행사들도 고객님들의 전화를 잘 못 받는다는 무책임한 변명은 하지 않겠습니다.</p>
+								<p>
+									지금은 다소 부족할 수 있겠지만 현재의 성장통을 극복하고</p>
+								<p>
+									고객님들에게 더 다가갈 수 있도록 애쓰고 있으니 지켜봐 주셨으면 합니다.</p>
+								<p>
+									&nbsp;</p>
+								<p>
+									진심으로 “고코투어는&nbsp;전화&nbsp;정말&nbsp;잘&nbsp;받아”,&nbsp;“정말&nbsp;친절해”&nbsp;라는칭찬의 말씀을&nbsp;듣고 싶습니다.</p>
+								<p>
+									그럴 수&nbsp;있도록&nbsp;더욱&nbsp;더&nbsp;노력하겠습니다.<br>
+									&nbsp;</p>
+								<p>
+									감사합니다.</p>
+
+								
+							</td>
+							</tbody>
+						</table>
 					</div>
-				</li>				
-				<li><a href="javascript:listing.locallist_ver2('JN')" class="local_JN" title="전남">전남</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%97%AC%EC%88%98%EC%8B%9C', 'JN', '여수시');">여수시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%88%9C%EC%B2%9C%EC%8B%9C', 'JN', '순천시');">순천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AA%A9%ED%8F%AC%EC%8B%9C', 'JN', '목포시');">목포시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B4%91%EC%96%91%EC%8B%9C', 'JN', '광양시');">광양시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B5%AC%EB%A1%80%EA%B5%B0', 'JN', '구례군');">구례군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%99%84%EB%8F%84%EA%B5%B0', 'JN', '완도군');">완도군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%B4%EB%82%A8%EA%B5%B0', 'JN', '해남군');">해남군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%82%98%EC%A3%BC%EC%8B%9C', 'JN', '나주시');">나주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EA%B4%91%EA%B5%B0', 'JN', '영광군');">영광군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EC%95%94%EA%B5%B0', 'JN', '영암군');">영암군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%EC%84%B1%EA%B5%B0', 'JN', '장성군');">장성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%8B%B4%EC%96%91%EA%B5%B0', 'JN', '담양군');">담양군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%ED%9D%A5%EA%B5%B0', 'JN', '장흥군');">장흥군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A0%ED%9D%A5%EA%B5%B0', 'JN', '고흥군');">고흥군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A1%EC%84%B1%EA%B5%B0', 'JN', '곡성군');">곡성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%99%94%EC%88%9C%EA%B5%B0', 'JN', '화순군');">화순군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%8B%A0%EC%95%88%EA%B5%B0', 'JN', '신안군');">신안군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%B3%B4%EC%84%B1%EA%B5%B0', 'JN', '보성군');">보성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B0%95%EC%A7%84%EA%B5%B0', 'JN', '강진군');">강진군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AC%B4%EC%95%88%EA%B5%B0', 'JN', '무안군');">무안군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%A7%84%EB%8F%84%EA%B5%B0', 'JN', '진도군');">진도군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%A8%ED%8F%89%EA%B5%B0', 'JN', '함평군');">함평군</a></li>
-												</ul>
-					</div>
-				</li>				
-				<li><a href="javascript:listing.locallist_ver2('JB')" class="local_JB" title="전북">전북</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%84%EC%A3%BC%EC%8B%9C', 'JB', '전주시');">전주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%B6%80%EC%95%88%EA%B5%B0', 'JB', '부안군');">부안군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B5%B0%EC%82%B0%EC%8B%9C', 'JB', '군산시');">군산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9D%B5%EC%82%B0%EC%8B%9C', 'JB', '익산시');">익산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%AC%B4%EC%A3%BC%EA%B5%B0', 'JB', '무주군');">무주군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%82%A8%EC%9B%90%EC%8B%9C', 'JB', '남원시');">남원시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%99%84%EC%A3%BC%EA%B5%B0', 'JB', '완주군');">완주군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%A5%EC%88%98%EA%B5%B0', 'JB', '장수군');">장수군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B3%A0%EC%B0%BD%EA%B5%B0', 'JB', '고창군');">고창군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A7%84%EC%95%88%EA%B5%B0', 'JB', '진안군');">진안군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%95%EC%9D%8D%EC%8B%9C', 'JB', '정읍시');">정읍시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B9%80%EC%A0%9C%EC%8B%9C', 'JB', '김제시');">김제시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%88%9C%EC%B0%BD%EA%B5%B0', 'JB', '순창군');">순창군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%84%EC%8B%A4%EA%B5%B0', 'JB', '임실군');">임실군</a></li>
-												</ul>
-					</div>
-				</li>				
-				<li><a href="javascript:listing.locallist_ver2('B')" class="local_B" title="부산">부산</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC', 'B', '해운대구');">해운대구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%80%EC%82%B0%EC%A7%84', 'B', '부산진');">부산진</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'B', '중구');">중구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'B', '동구');">동구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EB%9E%98%EA%B5%AC', 'B', '동래구');">동래구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%88%98%EC%98%81%EA%B5%AC', 'B', '수영구');">수영구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%97%B0%EC%A0%9C%EA%B5%AC', 'B', '연제구');">연제구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%EC%83%81%EA%B5%AC', 'B', '사상구');">사상구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'B', '서구');">서구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'B', '남구');">남구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%B0%EC%9E%A5%EA%B5%B0', 'B', '기장군');">기장군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'B', '북구');">북구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%ED%95%98%EA%B5%AC', 'B', '사하구');">사하구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%98%81%EB%8F%84%EA%B5%AC', 'B', '영도구');">영도구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'B', '강서구');">강서구</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%88%EC%A0%95%EA%B5%AC', 'B', '금정구');">금정구</a></li>
-												</ul>
-					</div>
-				</li>				
-				<li class=""><a href="javascript:listing.locallist_ver2('GN')" class="local_GN" title="경남">경남</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%A0%9C%EC%8B%9C', 'GN', '거제시');">거제시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%86%B5%EC%98%81%EC%8B%9C', 'GN', '통영시');">통영시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%82%A8%ED%95%B4%EA%B5%B0', 'GN', '남해군');">남해군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EC%9B%90%EC%8B%9C', 'GN', '창원시');">창원시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B9%80%ED%95%B4%EC%8B%9C', 'GN', '김해시');">김해시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%96%91%EC%82%B0%EC%8B%9C', 'GN', '양산시');">양산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%A7%84%EC%A3%BC%EC%8B%9C', 'GN', '진주시');">진주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%98%EB%8F%99%EA%B5%B0', 'GN', '하동군');">하동군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%B0%EC%B2%AD%EA%B5%B0', 'GN', '산청군');">산청군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EB%85%95%EA%B5%B0', 'GN', '창녕군');">창녕군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%AC%EC%B2%9C%EC%8B%9C', 'GN', '사천시');">사천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%B0%80%EC%96%91%EC%8B%9C', 'GN', '밀양시');">밀양시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'GN', '고성군');">고성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%B0%BD%EA%B5%B0', 'GN', '거창군');">거창군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%95%88%EA%B5%B0', 'GN', '함안군');">함안군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%9D%98%EB%A0%B9%EA%B5%B0', 'GN', '의령군');">의령군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%96%91%EA%B5%B0', 'GN', '함양군');">함양군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A9%EC%B2%9C%EA%B5%B0', 'GN', '합천군');">합천군</a></li>
-												</ul>
-					</div>
-				</li>	
-				<li><a href="javascript:listing.locallist_ver2('GB')" class="local_GB" title="경북">경북</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%A3%BC%EC%8B%9C', 'GB', '경주시');">경주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%ED%8F%AC%ED%95%AD%EC%8B%9C', 'GB', '포항시');">포항시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%AC%EB%AF%B8%EC%8B%9C', 'GB', '구미시');">구미시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EB%8D%95%EA%B5%B0', 'GB', '영덕군');">영덕군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%95%88%EB%8F%99%EC%8B%9C', 'GB', '안동시');">안동시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EC%A7%84%EA%B5%B0', 'GB', '울진군');">울진군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%A3%BC%EC%8B%9C', 'GB', '영주시');">영주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%AC%B8%EA%B2%BD%EC%8B%9C', 'GB', '문경시');">문경시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B9%80%EC%B2%9C%EC%8B%9C', 'GB', '김천시');">김천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%83%81%EC%A3%BC%EC%8B%9C', 'GB', '상주시');">상주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%82%B0%EC%8B%9C', 'GB', '경산시');">경산시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EB%8F%84%EA%B5%B0', 'GB', '청도군');">청도군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%B2%9C%EC%8B%9C', 'GB', '영천시');">영천시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B9%A0%EA%B3%A1%EA%B5%B0', 'GB', '칠곡군');">칠곡군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%84%B1%EC%A3%BC%EA%B5%B0', 'GB', '성주군');">성주군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9D%98%EC%84%B1%EA%B5%B0', 'GB', '의성군');">의성군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B3%A0%EB%A0%B9%EA%B5%B0', 'GB', '고령군');">고령군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EC%86%A1%EA%B5%B0', 'GB', '청송군');">청송군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%88%EC%B2%9C%EA%B5%B0', 'GB', '예천군');">예천군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EB%A6%89%EA%B5%B0', 'GB', '울릉군');">울릉군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%B0%EC%9C%84%EA%B5%B0', 'GB', '군위군');">군위군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%B4%89%ED%99%94%EA%B5%B0', 'GB', '봉화군');">봉화군</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%96%91%EA%B5%B0', 'GB', '영양군');">영양군</a></li>
-												</ul>
-					</div>
-				</li>	
-				<li><a href="javascript:listing.locallist_ver2('JJ')" class="local_JJ" title="제주">제주</a>
-					<div class="sGnbArea2" style="top:40px">
-						<ul>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%A0%9C%EC%A3%BC%EC%8B%9C', 'JJ', '제주시');">제주시</a></li>
-												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C', 'JJ', '서귀포시');">서귀포시</a></li>
-												</ul>
-					</div>
-				</li>
-			</ul>
+				</div>
+				
+				
+			</div>
 		</div>
-		<div class="local_list" style="clear: left; height: 290px; max-width: 676px; position: relative;">
-			<ul class="bjqs" style="height: 290px; width: 100%; display: block;">
-				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
-					<div class="photo">
-						<!--171012 고코추천 아이콘 삭제-->
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=GEZwGg'" style="cursor:pointer">
-							<span class="name">[특2급]▶베이튼호텔(Baition) </span>
-							<span class="localName">서울 중구 오장동</span>
-							<span class="price">57,200원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=GEZwGg"><img src="http://img.go.co.kr/S/list_main_011bn.jpg" width="676" height="285"></a>
-					</div>
-				</li><li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
-					<div class="photo">
-						
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=Gkd4'" style="cursor:pointer">
-							<span class="name">[특2급] ★라마다서울</span>
-							<span class="localName">서울 강남구 삼성동</span>
-							<span class="price">55,200원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=Gkd4"><img src="http://img.go.co.kr/S/list_main_01bn.jpg" width="676" height="285"></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
-					<div class="photo">
-						
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=H05y'" style="cursor:pointer">
-							<span class="name">[1급] ▶이태원크라운호텔</span>
-							<span class="localName">용산구 이태원동 </span>
-							<span class="price">31,680원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=H05y"><img src="http://img.go.co.kr/S/list_main_06bn.jpg" width="676" height="285"></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
-					<div class="photo">
-						
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=GEpzEA=='" style="cursor:pointer">
-							<span class="name">[특2급] ▶베스트웨스턴프리미어구로</span>
-							<span class="localName">서울 구로구 구로3동 </span>
-							<span class="price">90,000원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=GEpzEA=="><img src="http://img.go.co.kr/S/list_main_07bn.jpg" width="676" height="285"></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
-					<div class="photo">
-						
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=HU5y'" style="cursor:pointer">
-							<span class="name">[특2급] 프로비스타호텔</span>
-							<span class="localName">서울 서초구 서초1동</span>
-							<span class="price">74,300원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=HU5y"><img src="http://img.go.co.kr/S/list_main_08bn.jpg" width="676" height="285"></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
-					<div class="photo">
-						
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=GEp4Ew=='" style="cursor:pointer">
-							<span class="name">[관광호텔] 더디자이너스호텔홍대</span>
-							<span class="localName">서울 마포구 서교동 </span>
-							<span class="price">70,000원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=GEp4Ew=="><img src="http://img.go.co.kr/S/list_main_09bn.jpg" width="676" height="285"></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 290px; width: 100%; display: list-item;">
-					<div class="photo">
-						
-						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=HU5x'" style="cursor:pointer">
-							<span class="name">[레지던스] 역삼아르누보시티레지던스</span>
-							<span class="localName">서울 강남구 역삼동</span>
-							<span class="price">86,300원~</span>
-						</div>
-						<a href="http://borogogo.co.kr/home/view/?p_no=HU5x"><img src="http://img.go.co.kr/S/list_main_010bn.jpg" width="676" height="285"></a>
-					</div>
-				</li>
-			</ul>
-		<ul class="bjqs-controls v-centered"><li class="bjqs-prev"><a href="#" data-direction="previous" style="top: 41.2069%;"><img src="http://img.go.co.kr/btnPrevious.png" alt="이전"></a></li><li class="bjqs-next"><a href="#" data-direction="forward" style="top: 41.2069%;"><img src="http://img.go.co.kr/btnNext.png" alt="다음"></a></li></ul>
-			<ol class="bjqs-markers"><li class="active-marker"><a href="#">1</a></li><li class=""><a href="#">2</a></li><li class=""><a href="#">3</a></li><li class=""><a href="#">4</a></li><li class=""><a href="#">5</a></li><li class=""><a href="#">6</a></li><li class=""><a href="#">7</a></li></ol>
-		</div>		
+				
 	</div>
 
 		
-	<!---171012 추천 할인패키지 코딩변경---->
-	<div class="mainTicket" id="pack_list" style="height: 332px; max-width: 292px; position: relative;">
-		<div class="title">
-			<h3>추천 할인패키지</h3>
-			<ul class="bjqs" style="height: 332px; width: 100%; display: block;">
-				<li class="bjqs-slide" style="height: 332px; width: 100%; display: none;">
-					<div class="photo">
-						<a href="http://borogogo.co.kr/home/view/?p_no=G0dxEWYR">
-							<div class="d-fig">
-								<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1461647622_main1.jpg" width="240" height="190">
-							</div>
-						<p class="name">곤지암리조트[林패키지-화담숲2인]</p>
-						<p><span class="price">195,700원~</span></p></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 332px; width: 100%; display: none;">
-					<div class="photo">
-						<a href="http://borogogo.co.kr/home/view/?p_no=G0Z0G2cR">
-							<div class="d-fig">
-								<img src="http://file.go.co.kr/tour/img3/BS_main.jpg" width="240" height="190">
-							</div>
-						<p class="name">켄트호텔 광안리 by 켄싱턴 + 2인라운지PKG</p>
-						<p><span class="price">85,400원~</span></p></a>
-					</div>
-				</li>
-				<li class="bjqs-slide" style="height: 332px; width: 100%; display: list-item;">
-					<div class="photo">
-						<a href="http://borogogo.co.kr/home/view/?p_no=G0hy">
-							<div class="d-fig">
-								<img src="http://file.go.co.kr/tour/img3/GB_main.jpg" width="240" height="190">
-							</div>
-						<p class="name">대구프린스호텔 + 2인조식PKG</p>
-						<p><span class="price">99,000원~</span></p></a>
-					</div>
-				</li>
-			</ul>			
-		</div>
-		<ol class="bjqs-markers"><li class=""><a href="#">1</a></li><li class="active-marker"><a href="#">2</a></li><li class=""><a href="#">3</a></li></ol>
-	</div>
 	
 	
-	</div>
-</div>	
-	
-<!--171012 변경내용 별도 분리-->
-<div class="clr"></div>
-<div class="mainBox02_wrapper">
-	<div class="mainBox02 clr">
-	
-	
-		<!--171011 해외 지역별 인기 호텔 top: 80px 제거--->
-		<!--171012 지역별 인기 숙소 clr 클래스 추가-->
-		<div class="localRecommend_global">
-			<div class="titleLocal clr">
-				<h3>해외 지역별 인기 호텔</h3>
-				<ul class="local" id="local_tab_abr">
-					<li><a href="javascript:listing.locallist_abr_ver2('JP')" class="local_JP on" title="일본">일본</a>
-						<div class="sGnbArea2" style="">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%8F%84%EC%BF%84">도쿄</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%EC%82%AC%EC%B9%B4">오사카</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4">후쿠오카</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%82%BF%ED%8F%AC%EB%A1%9C">삿포로</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80">오키나와</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B5%90%ED%86%A0">교토</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B3%A0%EB%B2%A0">고베</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%82%98%EA%B3%A0%EC%95%BC">나고야</a></li>
-													</ul>
-						</div>
-					</li>				
-					<li><a href="javascript:listing.locallist_abr_ver2('HK')" class="local_HK" title="홍콩/중국">홍콩/중국</a>
-						<div class="sGnbArea2">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%ED%99%8D%EC%BD%A9">홍콩</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%A7%88%EC%B9%B4%EC%98%A4">마카오</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%B2%A0%EC%9D%B4%EC%A7%95">베이징</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%83%81%ED%95%98%EC%9D%B4">상하이</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%B9%AD%EB%8B%A4%EC%98%A4">칭다오</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EA%B4%91%EC%A0%80%EC%9A%B0">광저우</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%A0%EC%A0%84">선전</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%8B%A4%EB%A1%84">다롄</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%9C%EC%95%88">서안</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%98%8C%ED%83%80%EC%9D%B4">옌타이</a></li>
-													</ul>
-						</div>
-					</li>				
-					<li><a href="javascript:listing.locallist_abr_ver2('AS')" class="local_AS" title="아시아">아시아</a>
-						<div class="sGnbArea2">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%8B%B1%EA%B0%80%ED%8F%B4">싱가폴</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%B0%A9%EC%BD%95">방콕</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%B9%98%EC%95%99%EB%A7%88%EC%9D%B4">치앙마이</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%83%80%EC%9D%B4%ED%8E%98%EC%9D%B4">타이페이</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%A7%88%EB%8B%90%EB%9D%BC">마닐라</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%BF%A0%EC%95%8C%EB%9D%BC%EB%A3%B8%ED%94%84%EB%A5%B4">쿠알라룸프르</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%98%B8%EC%B9%98%EB%AF%BC">호치민</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%95%98%EB%85%B8%EC%9D%B4">하노이</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%9E%90%EC%B9%B4%EB%A5%B4%ED%83%80">자카르타</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%94%A8%EC%97%A0%EB%A6%BD">씨엠립</a></li>
-													</ul>
-						</div>
-					</li>				
-					<li><a href="javascript:listing.locallist_abr_ver2('EU')" class="local_EU" title="유럽">유럽</a>
-						<div class="sGnbArea2">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%8C%8C%EB%A6%AC">파리</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%B0%EB%8D%98">런던</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%A1%9C%EB%A7%88">로마</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9D%BC%ED%95%98">프라하</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%80%EB%9D%BC%EB%85%B8">밀라노</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98">바르셀로나</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%BC%EB%A0%8C%EC%B2%B4">피렌체</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84">베네치아</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9E%91%ED%81%AC%ED%91%B8%EB%A5%B4%ED%8A%B8">프랑크푸르트</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%AC%EC%8B%9C%EC%95%84">러시아</a></li>
-													</ul>
-						</div>
-					</li>				
-					<li><a href="javascript:listing.locallist_abr_ver2('US')" class="local_US" title="미주">미주</a>
-						<div class="sGnbArea2">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%98%B8%EB%86%80%EB%A3%B0%EB%A3%A8">호놀룰루</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%89%B4%EC%9A%95">뉴욕</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%9D%BC%EC%8A%A4%EB%B2%A0%EA%B0%80%EC%8A%A4">라스베가스</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4">로스앤젤레스</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%83%8C%ED%94%84%EB%9E%80%EC%8B%9C%EC%8A%A4%EC%BD%94">샌프란시스코</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%8B%9C%EC%B9%B4%EA%B3%A0">시카고</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%9B%8C%EC%8B%B1%ED%84%B4">워싱턴</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%B2%A4%EC%BF%A0%EB%B2%84">벤쿠버</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%86%A0%EB%A1%A0%ED%86%A0">토론토</a></li>
-													</ul>
-						</div>
-					</li>				
-					<li><a href="javascript:listing.locallist_abr_ver2('AU')" class="local_PA" title="남태평양">남태평양</a>
-						<div class="sGnbArea2">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EA%B4%8C">괌</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%82%AC%EC%9D%B4%ED%8C%90">사이판</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%8B%9C%EB%93%9C%EB%8B%88">시드니</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%A9%9C%EB%B2%84%EB%A5%B8">멜버른</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%98%A4%ED%81%B4%EB%9E%9C%EB%93%9C">오클랜드</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%81%AC%EB%9D%BC%EC%9D%B4%EC%8A%A4%ED%8A%B8%EC%B2%98%EC%B9%98">크라이스트처치</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%80%B8%EC%A6%88%ED%83%80%EC%9A%B4">퀸즈타운</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%BD%94%EB%A1%A4">코롤</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%82%9C%EB%94%94">난디</a></li>
-													</ul>
-						</div>
-					</li>				
-					<li><a href="javascript:listing.locallist_abr_ver2('AF')" class="local_AF" title="중동/아프리카">중동/아프리카</a>
-						<div class="sGnbArea2">
-							<ul>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EB%91%90%EB%B0%94%EC%9D%B4">두바이</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%95%84%EB%B6%80%EB%8B%A4%EB%B9%84">아부다비</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%9A%94%ED%95%98%EB%84%A4%EC%8A%A4%EB%B2%84%EA%B7%B8">요하네스버그</a></li>
-													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%BC%80%EC%9D%B4%ED%94%84%ED%83%80%EC%9A%B4">케이프타운</a></li>
-													</ul>
-						</div>
-					</li>
-				</ul>
-				<!--171012 더보기 위치 변경-->
-				<div class="btn"><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP">+ 더보기</a></div>	
-			</div>
-			<!--171012 리스트 지역베스트 이미지 삭제, _성급 텍스트 삭제-->
-			<div class="list" id="local_abr_list">
-				<ul class="photo">
-				<li>
-					<a href="http://borogogo.co.kr/home/view/?p_no=GE93FmwT&amp;abr=XQw1Rg=="><div class="label"></div>
-					<table cellpadding="0" cellspacing="0">
-						<tbody><tr>
-							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/5000000/4990000/4980700/4980630/4980630_1_b.jpg" width="100%" height="220"></td>
-						</tr>
-						<tr>
-							<td><p>[일본]리잔 시파크 호텔 탄차 ...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">40,800원~</p></td>
-						</tr>
-					</tbody></table></a>
-				</li>
-				<li class="m_l20">
-					<a href="http://borogogo.co.kr/home/view/?p_no=GEdxFGYW&amp;abr=XQw1Rg=="><div class="label"></div>
-					<table cellpadding="0" cellspacing="0">
-						<tbody><tr>
-							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/11000000/10410000/10409200/10409172/10409172_3_b.jpg" width="100%" height="220"></td>
-						</tr>
-						<tr>
-							<td><p>[일본]자탄 비치사이드 콘도미...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">34,900원~</p></td>
-						</tr>
-					</tbody></table></a>
-				</li>
-				<li class="m_l20">
-					<a href="http://borogogo.co.kr/home/view/?p_no=EUl0E2o=&amp;abr=XQw1Rg=="><div class="label"></div>
-					<table cellpadding="0" cellspacing="0">
-						<tbody><tr>
-							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/4000000/3590000/3580400/3580323/3580323_1_b.jpg" width="100%" height="220"></td>
-						</tr>
-						<tr>
-							<td><p>[일본]호텔 신사이바시 라이온...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">100,700원~</p></td>
-						</tr>
-					</tbody></table></a>
-				</li>
-				<li class="m_l20">
-					<a href="http://borogogo.co.kr/home/view/?p_no=GE93Em8f&amp;abr=XQw1Rg=="><div class="label"></div>
-					<table cellpadding="0" cellspacing="0">
-						<tbody><tr>
-							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/5000000/4970000/4960100/4960048/4960048_19_b.jpg" width="100%" height="220"></td>
-						</tr>
-						<tr>
-							<td><p>[일본]호텔 타이요</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-half.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">11,200원~</p></td>
-						</tr>
-					</tbody></table></a>
-				</li></ul>		
-			</div>
-		</div>
-	</div>
-
-</div>
-
-<!--171012 픽토그램추가-->
-<div class="pic-mySec ftfm-nt">
-	<ul class="ul1 clr">
-		<li><a href="#"><img src="http://img.borogogo.co.kr/renew/i_my_01.png" alt="아이콘"><span>나의 예약상태</span></a></li>
-		<li><a href="#"><img src="http://img.borogogo.co.kr/renew/i_my_02.png" alt="아이콘"><span>자주묻는질문</span></a></li>
-		<li><a href="#"><img src="http://img.borogogo.co.kr/renew/i_my_03.png" alt="아이콘"><span>예약변경/취소</span></a></li>
-		<li><a href="#"><img src="http://img.borogogo.co.kr/renew/i_my_04.png" alt="아이콘"><span>시설이용안내</span></a></li>
-		<li><a href="#"><img src="http://img.borogogo.co.kr/renew/i_my_05.png" alt="아이콘"><span>예약진행절차</span></a></li>
-		<li><a href="#"><img src="http://img.borogogo.co.kr/renew/i_my_06.png" alt="아이콘"><span>1:1문의/내역</span></a></li>
-	</ul>
-</div>
-
 <!--171012 푸터-->
 <div class="footer bsLs ftfm-nt">
 	<div class="f-top">
@@ -1545,8 +2040,6 @@
 		</div>
 	</div>
 </div>
-	
-	
 
 	
 </body>

@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 
 /* 초기화 */
 .rn-schBox input[type=text] {
@@ -15,63 +16,79 @@
 .i-sch.i-bad {width: 33px; background-position: -40px 0;}
 .i-sch.i-cal {width: 22px; background-position: -80px 0;}
 .i-sch.i-mag {width: 20px; background-position: -120px 0;}
+.i-sch.i-user {width: 20px; background-position: -160px 0;}
+
+.i-pic {position: relative; display: inline-block; vertical-align: middle; background: url(http://img.gaza82.co.kr/renew/m/i_sprt_01.png) no-repeat left center; height: 30px; background-size: 300px;}
+.i-pic.i-ht {width: 25px; background-position: 0 0;}
+.i-pic.i-mt {width: 25px; background-position: -45px 0;}
+.i-pic.i-ps {width: 25px; background-position: -90px 0;}
+.i-pic.i-ges {width: 31px; background-position: -135px 0;}
+.i-pic.i-gla {width: 26px; background-position: -180px 0;}
+.i-pic.i-tck {width: 34px; background-position: -225px 0;}
+
+
 
 
 /* 공통 css */
 .bsLs, .bsLs * {box-sizing: border-box; letter-spacing: -0.5px;}
 .mgl, .mg- {position: relative; display: inline-block; vertical-align: middle;}
-.ftfm-sq {font-family: "Nanum Square", "Nanum Gothic", sans-serif;}
+.ftfm-sq, .ftfm-sq * {font-family: "Nanum Square", "Nanum Gothic", sans-serif;}
+.ftfm-nt, .ftfm-nt * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.ftfm-ng, .ftfm-ng * {font-family: "Nanum Gothic", sans-serif;}
 
 /* 공통 박스너비 시작 */
-/*.rn-container {width: 1400px; margin: 0 auto;}*/
+/*.rn-container {}*/
 
 /* 푸터 */
-.footer {position: relative; width: 100%; background: #282828;}
-.footer .f-logo {width: 130px; margin: 15px 0;}
-.footer .mgl {margin: 0 10px; width: 1px; height: 15px; background: #fff; top: -1px;}
-.footer .f-top {width: 100%; height: 50px; padding-top: 12px; background: #212121;}
-.footer .cm-s, .footer .busInf {color: #fff; font-size: 15px;}
-.footer .f-policy a {color: #fff; font-size: 16px;}
-.footer .cm-s {width: 1002px; margin: 0 auto; text-align: center;}
-.footer .f-area {padding-bottom: 24px; line-height: 1.6; font-family: "Nanum Gothic", sans-serif;}
-.footer address .mgl {margin: 0 6px;}
-.footer address strong {font-size: 18px;}
-.footer .busInf {position: relative; display: inline-block; font-size: 13px; padding: 0px 5px; border: 1px solid #646464; margin-left: 10px;}
-.footer .busInf span {position: relative; top: -2px;font-family: "Nanum Gothic", sans-serif; font-size: 10px; font-weight: 700; margin-left: 5px;}
-.footer .f-certImg {margin-top: 5px;}
-.footer small.cm-s {display: block; margin-top: 10px;}
+.footer {position: relative; width: 100%; padding: 0 3% 50px; background: #ececec; text-align: left; border-top: 1px solid #d4d4d4;}
+.footer .f-logo {width: 100px; margin: 15px 0 12px;}
+.footer .f-top {width: 100%;}
+.footer .mgl {margin: 0 8px; width: 1px; height: 11px; background: #acacac; top: -1px;}
+.footer .cm-s, .footer .busInf {color: #969696; font-size: 12px;}
+.footer .f-policy a {position: relative; display: inline-block; margin-left: 2px; color: #969696; font-size: 12px; padding: 2px 5px; border: 1px solid #acacac;}
+.footer .f-policy a:first-child {margin-left: 0;}
+.footer .f-area {padding: 10px 0 20px; line-height: 1.6; font-family: "Nanum Gothic", sans-serif;}
+.footer .busInf span {position: relative; top: -1px;font-family: "Nanum Gothic", sans-serif; font-size: 10px; font-weight: 700; margin-left: 5px;}
+.footer small.cm-s {display: block; }
+
+@media (max-device-width: 320px) {
+	.block-320 {display: block;}
+}
 
 
 /* 달력 색상수정 */
 .sltCal-sec h3, .sltCal-sec .btn-a {background: #434343;}
 
+
 /* 리뉴얼 대문 */
 
-.rn-mdBox {position: relative; width: 100%; height: 926px; background: url(http://img.gaza82.co.kr/renew/m/maindoor_bg.jpg) center; background-size: cover;}
+.rn-mdBox {position: relative; width: 100%; padding-bottom: 285px; background: url(http://img.gaza82.co.kr/renew/m/maindoor_bg.jpg) center; background-size: cover;}
 .rn-mdBox .logo {position: absolute; width: 110px; left: 10px; top: 10px;}
-.rn-mdBox .md-txt {text-align: center; padding: 100px 0 25px;}
-.rn-mdBox .md-txt img {width: 213px;}
+.rn-mdBox .md-txt {text-align: center; padding: 100px 0 28px;}
+.rn-mdBox .md-txt img {width: 240px;}
 
 
-.rn-mdBox .rn-schBox {position: relative; margin: 0px 10px;}
-.rn-mdBox .rn-schBox > div {position: relative; background: #fff; height: 40px; margin-left: 2px; padding: 8px 12px 0 11px; cursor: pointer; border-radius: 4px; margin-top: 10px;}
-.rn-mdBox .rn-schBox > div .p1 {color: #4f4f4f; font-size: 15px;}
-.rn-mdBox .rn-schBox > div .p1 input, .rn-mdBox .rn-schBox > div .p1 .s-txt {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.rn-mdBox .rn-schBox > div .p1 input {position: relative; font-size: 15px; top: -1px; /* top: 4px; */}
-.rn-mdBox .rn-schBox > div .p1 .i-sch {float: right;}
-.rn-mdBox .rn-schBox > div .p1 .s-txt {display: inline-block; width: 124px;}
-.rn-mdBox .rn-schBox > div .p1 .sch-inp { background: none;}
-.rn-mdBox .rn-schBox > div .p1 .date-chk {font-size: 14px; width: 146px; background: none; cursor: pointer;}
-.ie8 .rn-mdBox .rn-schBox .cm-s {background-position: 140px center;}
+.rn-mdBox .rn-schBox {position: relative; padding: 0 3%;}
+.rn-mdBox .rn-schBox > div {position: relative; background: #fff; height: 38px; padding: 11px 12px 0 11px; cursor: pointer; border-radius: 4px; margin-top: 10px; float: left; width: 49%;}
+.rn-mdBox .rn-schBox .d1, .rn-mdBox .rn-schBox .d5 {width: 100%;}
 .rn-mdBox .rn-schBox .d1 {margin-top: 0;}
 .rn-mdBox .rn-schBox .d2 {}
 .rn-mdBox .rn-schBox .d3, .rn-mdBox .rn-schBox .d4 {}
 .rn-mdBox .rn-schBox .d3 {}
-.rn-mdBox .rn-schBox .d4 {}
-.rn-mdBox .rn-schBox .d5 {padding: 0;}
-.rn-mdBox .rn-schBox .d5 button {width: 100%; height: 100%; border: none; background: #292929; color: #fff; font-size: 20px; border-radius: 4px; text-indent: -10px; cursor: pointer;}
-.rn-mdBox .rn-schBox .d5 button img {margin-right: -7px;}
-.rn-mdBox .rn-schBox .d5 button:hover {background: #383838;}
+.rn-mdBox .rn-schBox .d4 {margin-left: 2%;}
+.rn-mdBox .rn-schBox .d5 {padding: 0; margin-top: 16px;}
+.rn-mdBox .rn-schBox > div .p1 {color: #4f4f4f; font-size: 15px;}
+.rn-mdBox .rn-schBox > div .p1 input
+, .rn-mdBox .rn-schBox > div .p1 .s-txt
+, .rn-mdBox .rn-schBox > div .p1 .sch-inp {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.rn-mdBox .rn-schBox > div .p1 input {position: relative; font-size: 15px; }
+.rn-mdBox .rn-schBox > div .p1 .sch-inp {background: none; width: 90%;}
+.rn-mdBox .rn-schBox > div .p1 .i-sch {position: relative; top: -7px; float: right;}
+.rn-mdBox .rn-schBox > div .p1 .s-txt {display: inline-block; vertical-align: middle; width: 72%;}
+.rn-mdBox .rn-schBox > div .p1 .date-chk {font-size: 14px; background: none; cursor: pointer; width: 81%;}
+.ie8 .rn-mdBox .rn-schBox .cm-s {background-position: 140px center;}
+.rn-mdBox .rn-schBox .d5 button {width: 100%; height: 44px; border: none; background: #484848; color: #fff; font-size: 15px; border-radius: 4px; text-indent: -10px; cursor: pointer;}
+.rn-mdBox .rn-schBox .d5 button img {margin-right: -6px; position: relative; top: -1px; width: 32px; vertical-align: middle;}
 .rn-mdBox .rn-schBox input[type=text]::-webkit-input-placeholder {color: #4f4f4f;}
 .rn-mdBox .rn-schBox input[type=text]::-moz-placeholder {color: #4f4f4f;}
 .rn-mdBox .rn-schBox input[type=text]:-ms-input-placeholder {color: #4f4f4f;}
@@ -80,12 +97,12 @@
 .rgOption {
 	position: absolute;
 	z-index: 1;
-	top: 54px;
+	top: 42px;
 	left: 0;
 	width: 100%;
 	background: #fff;
 	border-top: 3px solid #434343;
-	height: 186px;
+	height: 156px;
 	overflow: hidden;
 }
 .lt-ie10 .rgOption {overflow-y: auto; display: none;}
@@ -111,5 +128,125 @@
 	text-size-adjust: none;
 }
 .rn-mdBox .rn-schBox .ul1 > li {}
-.rn-mdBox .rn-schBox .ul1 > li a {display: block; font-size: 15px; padding: 3.5px 12px; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.rn-mdBox .rn-schBox .ul1 > li a {display: block; font-size: 14px; padding: 3.5px 12px; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #4f4f4f;}
 .rn-mdBox .rn-schBox .ul1 > li a:hover {background: #efefef;}
+
+/* 픽토그램 */
+.pic-box {position: relative; background: #2e373b; padding: 10px 0; text-align: center; font-size: 0;}
+.pic-box > a {position: relative; display: inline-block; color: #fff; text-align: center; padding: 0 2%;}
+.pic-box > a:nth-child(2), .pic-box > a:nth-child(3) {padding: 0 2.5%;}
+/*.pic-box > a:last-child {padding-right: 5%;}*/
+.pic-box > a .s1 {display: block; text-align: center; margin-top: 5px; font-size: 12px; font-family: "Nanum Gothic", sans-serif;}
+@media (max-device-width: 320px) {
+	.pic-box > a {padding: 0 1%;}
+	.pic-box > a:nth-child(2), .pic-box > a:nth-child(3) {padding: 0 1.5%;}
+}
+
+/* 공통 */
+.sec-outer {position: relative; letter-spacing: -0.5px; background: #ececec; padding-top: 10px;}
+.sec-outer > section {background: #fff; margin-top: 10px;}
+.sec-outer > section:first-child {margin-top: 0;}
+.cm-s-sec {position: relative; padding: 14px 3%;}
+/*.cm-s-sec .sec-inner {padding: 14px 3%; background: #fff;}*/
+.cm-s-sec h2 {font-size: 15px; font-family: "Nanum Square", "Nanum Gothic", sans-serif; color: #3f3f3f; text-align: left; font-weight: 700;}
+.cm-s-sec h2 img {position: relative; width: 14px; vertical-align: middle;}
+
+/* 핫한 국내 숙소 모음 */
+.cm-s-sec div[class*=Box-wrap] {position: relative; margin-top: 5px;}
+.cm-s-sec div[class*=Box-wrap] > div {position: relative;}
+
+.cm-s-sec .msBox-wrap > div .ul1 li a {position: relative;}
+.cm-s-sec .msBox-wrap > div .ul1 li a img {width: 100%;}
+.cm-s-sec .msBox-wrap .msBox-01 {}
+
+.hotTrv-sec h2 img {top: -1px;}
+
+/*--- bxSlider 재정의 ---*/
+.hotTrv-sec .bx-wrapper {position: relative; margin: 0 auto; border: none; width: 100%; box-shadow: none;}
+.hotTrv-sec .bx-wrapper .bx-loading {background: none;}
+.hotTrv-sec .bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.hotTrv-sec .bx-wrapper .bx-controls {}
+.hotTrv-sec .bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
+.hotTrv-sec .bx-wrapper .bx-controls-direction a {display: block;}
+.hotTrv-sec .bx-wrapper .bx-controls-direction a {background: none; width: 45px; height: 45px; top: 0; margin-top: 0; z-index: 1;}
+.hotTrv-sec .bx-wrapper .bx-prev {left: 20px;}
+.hotTrv-sec .bx-wrapper .bx-next {right: 20px;}
+.hotTrv-sec .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+, .hotTrv-sec .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {display: none;}
+.hotTrv-sec .bx-wrapper .bx-controls-direction {margin-top: -29.5px;}
+.hotTrv-sec .bx-wrapper .bx-controls-direction a {width: 60px; height: 59px;}
+.hotTrv-sec .bx-wrapper .bx-prev {left: 30px;}
+.hotTrv-sec .bx-wrapper .bx-next {right: 30px;}
+.hotTrv-sec .bx-wrapper .bx-pager {padding: 0; text-align: right; box-sizing: border-box;}
+.hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a {background: #fff; margin: 0 2px; width: 12px; height: 12px; border-radius: 50%;}
+.hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a:hover, .hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a.active
+, .hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #ff6c7b;}
+/*.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {}*/
+
+.hotTrv-sec .msBox-01 .bx-wrapper .bx-pager {bottom: 6px; text-align: right; padding-right: 5px;}
+.hotTrv-sec .msBox-01 .bx-wrapper .bx-pager.bx-default-pager a {width: 10px; height: 10px;}
+
+/*이벤트*/
+.evt-sec {position: relative; padding: 0;}
+.evt-sec .evtImg {width: 100%;}
+
+/* 테마별 국내 숙소 모음 */
+.themeTrv-sec {}
+.thImgBox-wrap {}
+.thImgBox-wrap > a {position: relative; display: block; margin-top: 5px;}
+.thImgBox-wrap > a:first-child {margin-top: 8px;}
+.thImgBox-wrap > a .themeImg {width: 100%;}
+.thImgBox-wrap > a .d1 {position: relative; width: 176px; height: 46px; box-sizing: border-box; border: 1px solid #d9d9d9; margin: 0px auto; top: -15px; background: #fff; text-align: center; padding-top: 5px; line-height: 1.4;}
+.thImgBox-wrap > a .d1 > p {letter-spacing: -0.5px;}
+.thImgBox-wrap > a .d1 .p0 {font-size: 12px; color: #7e7e7e;}
+.thImgBox-wrap > a .d1 .p1 {font-size: 14px; color: #353535; font-weight: 700;}
+
+
+
+.pkgTrv-sec h2 img {width: 20px; top: -2px;}
+.pkgImgBox-wrap .pkg-a {position: relative; margin-top: 8px;}
+.pkgImgBox-wrap .pkg-a em {position: absolute; top: 0; left: 20px; color: #fff; font-size: 13px; padding: 0 4px; height: 42px; line-height: 1.2; background: rgba(236, 53, 68, 0.8); text-align: center; box-sizing: border-box; padding-top: 8px;}
+
+
+
+/* 모바일 상세 페이지 수정 */
+#calender_number_w {padding: 0;}
+.calender_ch_w, .calender_ch_w h4 
+, #room_w .room_tx_w .room_tx_in, #room_w .room_tx_w .room_tx_in h4
+, #location_w, #location_w h4 
+, #room_w h3, .txt_forms {font-family: "Nanum Square", sans-serif; font-size: 16px;}
+.calender_ch_w 
+, #room_w .room_tx_w .room_tx_in
+, #location_w {border-top: 10px solid #f1f1f1;}
+#room_w h3 {padding: 20px 0 10px 12px;}
+.calender_ch_w {width: 100%; border-radius: 0; border-right: 0; border-left: 0; background: #3d3d3d;}
+.calender_ch_w .title, .calender_ch_w .date {color: #fff; font-family: "Nanum Square", "Nanum Gothic", sans-serif; font-weight: 700;}
+.calender_ch_day_o {position: absolute;}
+.calender_ch_day {margin-top: -54px; top: auto;}
+
+.pdt-name {color: #343434; line-height: 1.2; padding: 12px 5px; letter-spacing: -0.5px;}
+.pdt-name .p0 {}
+.pdt-name .p0 img {width: 14px;}
+.pdt-name em {font-weight: 500; font-size: 15px;}
+
+#info_product_btn_w .info_product_btn {background: #ff4157; border-radius: 0;}
+
+#info_img_wrpa .top_icon {top: 10px;}
+#info_img_wrpa .pay_back_icon {width: auto; margin-left: 10px;}
+#info_img_wrpa .de_share_icon, #info_img_wrpa .de_ch_icon {width: auto;}
+#info_img_wrpa .de_share_icon {margin-right: 10px;}
+#info_img_wrpa .de_share_icon img {width: 18px;}
+#info_img_wrpa .de_ch_icon {margin-right: 10px;}
+#info_img_wrpa .de_ch_icon img {width: 24px;}
+
+#room_w .room_tx_w .room_tx_in .establishment_wrap {padding: 0;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list {margin-left: -8px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li {height: 60px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li p {font-size: 11px;}
+
+.txt_forms {margin-top: 0; width: auto; padding: 0 2.5%;}
+.txt_forms .bg-g1 {display: block; background: #f4f4f4; padding: 8px 5px; word-break: keep-all; font-family: "Nanum Square", "Nanum Gothic", sans-serif;}
+
+.addr-box {margin-bottom: 6px;}
+.addr-box .p1 {padding-left: 12px; font-size: 14px;}
+.addr-box .p1 .s1 {background: #585858; color: #fff; padding: 0 2px 3px; display: inline-block; line-height: 1; margin-right: 3px;}

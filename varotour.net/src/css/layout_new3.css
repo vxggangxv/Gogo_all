@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+a {text-decoration: none; color:#000;}
+img {vertical-align: middle;}
+.clr {clear: both;}
+.t_col {color: #20a3f6;}
+.sch_colr {color: #b8b8b8;}
+
+.wrapper {width:100%; font-family: 'Noto Sans KR', sans-serif; margin:0 auto;}
+.header_wrap {width:100%; height:507px;
+			  background: url(http://img.storytrip.co.kr/renew/maindoorBg.jpg) no-repeat;}
+
+.header {width:950px; height:200px; margin:0 auto; position:relative;}
+
+.header .logo {position:absolute; top:0;}
+.header .login_wrap {float:right; margin-top:20px;}
+.header .login_wrap ul li {float:left; margin-left:50px; color:#fff;
+						   font-weight: 600; font-size:15px;}
+.header .login_wrap .login .log {width:135px; height:32px; background: #fff; color: #1956ae; 
+								 text-align: center; line-height: 32px; 
+								  border-radius: 4px; margin-top:-5px;}
+
+.header .header_text { padding-top:122px;}
+.header .header_text span {color:#fff; font-size:17px; font-weight: 300;}
+.header .header_text .t_titb {font-size:25px; font-weight: 600;}
+.header .header_text .t_sbt {font-size:20px; color:#bddff2; font-weight: 400;}
+.header .header_text strong {font-size:52px; font-weight: 800;}
+.header .header_text .t_link {font-size:15px; color: #bddff2; line-height: 50px;  font-weight: 400;}
+
+
+
+/* 숙소검색 */
+
+.search_box_wrap {width:950px; height:200px; margin:-150px auto; 
+				  background-color: #fff; border-bottom:2px solid #1b78c5;}
+
+.sch_wrap {position:relative;}
+.search_box .schtxt {width:680px; height:60px; border:2px solid #e0e0e0; 
+					border-radius: 4px; border-right:none;
+				    margin:40px 100px; outline: none; font-size:25px;
+					background: none; z-index: 99; display: inline-block; position:relative;}
+.search_box_wrap .sch_wrap .sch_t {font-family: 'Nanum Myeongjo', serif; color: #dedede; 
+								   position:absolute; top:72px; left:220px;
+								   font-size:25px;}
+.search_box .schbt {width:92px; height:64px; border:none; outline: none; 
+					margin-left:-110px; border-radius:4px; cursor: pointer; background:#f4f4f4;
+					border:2px solid #e0e0e0; border-left:none;}
+.search_box_wrap p {font-size:17px; color: #545353; font-weight: 600; 
+					text-align: center; margin-top:-15px; text-align: center;}
+
+
+/* 인기여행지 */
+.section {height:772px; margin:0 auto; }
+.best_city_wrap {margin-top:180px; background: #f8f9fa; width:100%; height:350px; 
+				 border-top:2px solid #dcdfe2;}
+
+.bst_city {width:950px;  margin:50px auto; }
+.bst_city h2 {font-size:25px; width:150px; letter-spacing: -3px;}
+.bst_city ul {margin-top:30px; }
+.bst_city ul li  {float:left; padding-right:17px;}
+
+
+/* 인기숙박시설 */
+.best_room_wrap {background: #eff0f2; width:100%; height:350px;
+				 border-top:2px solid #dcdfe2;}
+.best_room {width:950px;  margin:50px auto;}
+.best_room h2 {font-size:25px; width:150px;  letter-spacing: -3px;}
+.best_room ul {margin-top:30px;}
+.best_room ul li  {float:left; padding-right:17px;}
+
+/* 서비스이용 */
+
+.svc {width:100%; height:118px; background: #3b3d6a; margin-top:-66px;}
+.svc p {width:600px; height:80px; 
+	    margin:0 auto; padding-top:30px;} 
+
+/* 푸터 예약상태 질문 버튼 */
+
+.foot_btn {width:933px; height:89px; margin:0 auto;}
+.foot_btn ul li {float:left;}
+
+/* 푸터 */
+.footer_wrap {width:100%; height:447px; background: #161e26;
+			  color:#fff; margin:0 auto;}
+
+.f-top {width:950px; margin:0 auto; font-size:15px;}
+.f-top ul {margin-top:50px; margin-left:150px;}
+.f-top ul li {float:left; color: #3b3e40; font-weight: 400;}
+.f-top ul li span {color:#223340;}
+.f-top ul li a {color: #fff;}
+.f-top ul li .f-color {color:#f67e49;}
+
+.f-bottom .address {width:950px; height:50px; margin:20px auto;
+				   text-align: center; color:#4a5965; font-weight: 500; font-size:15px;}
+
+.f-bottom .address .f_add {font-size:15px; letter-spacing: -1px;}
+
+.f-bottom .address .f-bt {width:50px; height:30px; border:1px solid #68737c; 
+						  font-size:12px; color:#68737c; padding:1px 7px; line-height: 30px;}
+.f-bottom .f-info {width:1200px; margin:20px auto; text-align: center; color:#68737c;}
+.f-bottom .f-info ul li {float:left; margin-left:20px; font-weight: 700;}
+
+/* 푸터아이콘 */
+
+.f-icon {width:400px; margin:20px auto;}
+.f-icon ul li {float:left; margin-left:25px;}
+.copy {width:950px; margin:0 auto; text-align: center; 
+	   color: #4a5965; font-size: 15px; letter-spacing: -1px;}
