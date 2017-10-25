@@ -49,6 +49,11 @@
 /* 달력 색상수정 */
 .sltCal-sec h3, .sltCal-sec .btn-a {background: #e95791;}
 
+/* 상세 메뉴바 초기화 */
+#contents_mn2 {margin: 0 auto; float: none; width: auto; height: auto; text-align: inherit; background: none; border: none; font-size: inherit; }
+.nb-open-btn a i.bt {top: -1px; left: 8px; height: 23px;}
+
+
 /* 패키지선택 수정 */
 .pdtSlt-sec2 .part-1 h2 {background: #767575;}
 .pdtSlt-sec2 .part-2 {background: #616060;}
@@ -280,7 +285,7 @@ background-position: right 10px bottom 34px;}
 .rn-mdBox.cm-sch .rn-schBox {top: 10px;}
 .rn-mdBox.cm-sch .rn-schBox > div {height: 60px; padding: 5px 0 0 17px;}
 .rn-mdBox.cm-sch .rn-schBox > div .p1 {font-size: 18px; line-height: 1.2;}
-.rn-mdBox.cm-sch .rn-schBox > div .p1 input {font-size: 18px; top: -3px; position: relative;}
+.rn-mdBox.cm-sch .rn-schBox > div .p1 input {font-size: 18px; top: -3px; position: relative; width: 100%; padding-right: 10px;}
 .rn-mdBox.cm-sch .rn-schBox .d5 {width: 165px; padding: 0;}
 .rn-mdBox.cm-sch .rn-schBox .cm-s {background-position: right 10px bottom 24px;}
 .rn-mdBox.cm-sch .rgOption {
@@ -394,10 +399,13 @@ background-position: right 10px bottom 34px;}
 .content-sec .infom-tab > li.on a {background: #fff; font-weight: 500; border-bottom: 1px solid #fff;}
 
 
+.content-sec .review_write2 {float: none; margin: 0 auto; width: 954px; box-sizing: border-box; height: auto;}
+.content-sec #review_write2 .rv_textbox {width: 834px;}
+
 .content-sec #info_box2 {margin-top: 20px;}
 
 .content-sec .wrBt-box {border: 1px solid #dcdcdc; height: 40px; margin-bottom: 30px;}
-.content-sec .wrBt-box .writeBtn {display: block; color: #e95791; text-align: left; font-size: 14px; height: 100%; box-sizing: border-box; padding: 10px 20px 0;}
+.content-sec .wrBt-box .writeBtn {display: block; color: #e95791 !important; text-align: left; font-size: 14px; height: 100%; box-sizing: border-box; padding: 10px 20px 0; }
 .content-sec .wrBt-box .writeBtn .s2 {float: right; display: inline-block; width: 84px; height: 26px; border: 1px solid #e95791; border-radius: 12px; text-align: center; line-height: 25px; position: relative; top: -4px;}
 /*.content-sec #contents .wrBt-box .writeBtn:hover {color: #e95791;}*/
 .content-sec #number {margin-top: 25px;}

@@ -17,6 +17,8 @@ a:hover { text-decoration: none; color: #ff6600; }
 
 a:active { text-decoration: none; color: #ff6600; color: #ff6600; color: #ff6600; color: #ff6600; }
 
+.hidden {width:0; height:0; margin:0; padding:0; overflow:hidden; line-height:0; font-size:0; visibility:hidden; position:absolute; left:0; top:0}
+
 #wrapper { width: 100%; min-width: 320px; height: 100%; }
 
 #wrapper #payment { width: 100%; float: left; }

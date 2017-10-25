@@ -48,3 +48,6 @@ q:before, q:after {content :''}
 
 /* hidden_class */
 .hidden {width:0; height:0; margin:0; padding:0; overflow:hidden; line-height:0; font-size:0; visibility:hidden; position:absolute; left:0; top:0}
+
+.clr:before, .clr:after {content: ""; display: block;}
+.clr:after {clear: both;}

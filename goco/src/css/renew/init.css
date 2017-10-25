@@ -1,0 +1,21 @@
+/* 아이콘 */
+.c-ic {display: inline-block; background: url(http://img.go.co.kr/renew/rnSprImg.png) no-repeat left center;}
+.c-ic.i-mag {width: 24px; height: 23px; background-position: 0 0;}
+.c-ic.i-comp {width: 18px; height: 18px; background-position: -40px 0;}
+.c-ic.i-blChk {width: 12px; height: 9px; background-position: -80px 0;}
+.c-ic.i-rDnArr {width: 10px; height: 16px; background-position: -120px 0;}
+.c-ic.i-mapv, .c-ic.i-dArr, .c-ic.i-alg {height: 21px;}
+.c-ic.i-mapv {width: 20px; background-position: 0 -30px;}
+.c-ic.i-dArr {width: 16px; background-position: -40px -30px;}
+.c-ic.i-alg {width: 18px; background-position: -80px -30px;}
+.c-ic.i-gCal, .c-ic.i-gSpot, .c-ic.i-rArr, .c-ic.i-yChk {width: 32px; height: 32px;}
+.c-ic.i-gCal {background-position: 0 -60px;}
+.c-ic.i-gSpot {background-position: -40px -60px;}
+.c-ic.i-rArr {width: 28px; background-position: -80px -60px;}
+.c-ic.i-yChk {width: 14px; background-position: -120px -60px;}
+
+
+.rn-wrap {}
+
+/* 헤더영역 */
+.rn-header {}

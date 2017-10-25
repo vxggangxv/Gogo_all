@@ -916,7 +916,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 
 /*메인 컨텐츠*/
 #contents {position:relative; float:left; padding-bottom:40px; width:1002px; margin:auto; text-align:center; border-left:1px solid #b9b9b9; border-right:1px solid #b9b9b9; border-bottom:1px solid #b9b9b9; background-color:#fff; color:#717171; margin-top:24px}
-#contents a:link, a:visited {text-decoration:none; color:#000}
+#contents a:link {text-decoration:none; color:#000}
 #contents a:hover, a:active {text-decoration:none; color:#000}
 #contents .bullet {color:#0093d0; font-size:8px}
 #contents .map {text-align:center; margin:auto; margin-top:22px; margin-bottom:22px}
@@ -954,7 +954,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 
 /*상단 리뉴얼 관련*/
 #contents2 {float:left; width:998px; margin:auto; text-align:center; border-top:1px solid #b9b9b9; border-left:1px solid #b9b9b9; border-right:1px solid #b9b9b9; border-bottom:1px solid #b9b9b9; background-color:#fff; color:#717171; margin-top:24px}
-#contents2 a:link, a:visited {text-decoration:none; color:#000}
+#contents2 a:link {text-decoration:none; color:#000}
 #contents2 a:hover, a:active {text-decoration:none; color:#000}
 #contents2 .bullet {color:#0093d0; font-size:8px}
 #contents2 .map {text-align:center; margin:auto; margin-top:22px; margin-bottom:22px}
@@ -2513,7 +2513,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #wrapper #customer .qna_t .secret_form .ok a {float:left; display:block; margin-left:318px; width:60px; height:20px; border:1px solid #949494; text-align:center; color:#fff; background:#aaaaaa; line-height:1.6}
 #wrapper #customer .qna_t .secret_form .ok a:hover {color:#fff}
 
-#wrapper #customer .qna_notice {float:left; margin-bottom:30px; padding:15px; width:710px; border-radius:10px; border:#c8c8c8 1px solid; font-size:12px; line-height:1.8}
+#wrapper #customer .qna_notice {/* float:left;  */margin-bottom:30px; padding:15px; width:710px; border-radius:10px; border:#c8c8c8 1px solid; font-size:12px; line-height:1.8}
 #wrapper #customer .qna_notice span {color:#ff610a}
 
 #wrapper #customer .search {float:left; width:740px; height:34px; padding:10px 0 0 0; margin-top:10px}
@@ -2597,7 +2597,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #tab_scroll .contents_mn .box_reser {width:144px; height:45px; line-height:4; font-weight:600; font-size:14px; color:#fff; background-color:#ff610a}
 
 /*자주묻는질문-검색*/
-#wrapper #customer .search_box {float:left; margin:10px 0; padding:20px 0; width:728px; height:70px; margin-bottom:30px; border:6px solid #e0e0e0; text-align:center}
+#wrapper #customer .search_box {/* float:left;  */margin:10px 0; padding:20px 0; width:728px; height:70px; margin-bottom:30px; border:6px solid #e0e0e0; text-align:center}
 #wrapper #customer .search_box .tit {clear:both; margin-right:10px; line-height:2.5; font-size:14px; font-weight:600; color:#ff610a}
 #wrapper #customer .search_box .search_input {float:left; margin-left:180px; width:310px; height:33px; font-size:14px; padding-left:9px; border:1px solid #c0c0c0; color:#828284}
 #wrapper #customer .search_box .search_btn a {float:left; display:block; width:50px; height:35px; line-height:2.5; font-weight:600; color:#fff; background:#ff610a}
@@ -2618,10 +2618,10 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #wrapper #left_mn .quick_mn .b_r {border-right:1px solid #e0e0e0; border-left:none}
 
 /*고객센터-메인*/
-#wrapper #customer .info {float:left; position:relative; width:740px}
-#wrapper #customer .info .tab {float:left; padding-left:20px; width:717px; height:46px; font-size:17px; line-height:2.5; background:url(http://img.go.co.kr/customer_tabBG.jpg) no-repeat}
+#wrapper #customer .info {/* float:left;  */position:relative; width:740px}
+#wrapper #customer .info .tab {/* float:left;  */padding-left:20px; width:717px; height:46px; font-size:17px; line-height:2.5; background:url(http://img.go.co.kr/customer_tabBG.jpg) no-repeat}
 #wrapper #customer .info .tab span {font-weight:600; color:#ff610a}
-#wrapper #customer .info .container {float:left; padding:20px; width:700px; line-height:1.8}
+#wrapper #customer .info .container {/* float:left;  */padding:20px; width:700px; line-height:1.8}
 #wrapper #customer .info .container span {font-weight:600; color:#ff610a}
 
 #wrapper #customer .info .refund_t {position:absolute; right:0; top:410px; width:300px; background:#fff; border:1px solid #4d4d4d; font-size:11px; font-family:'돋움', Dotum, sans-serif}
@@ -2652,7 +2652,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #wrapper #membership .qna_notice span {color:#ff610a}
 
 /*자주묻는질문-카테고리 탭*/
-#wrapper #customer .category2 {margin:auto; margin-top:50px; width:440px}
+#wrapper #customer .category2 {overflow:hidden; margin:auto; margin-top:50px; width:440px}
 #wrapper #customer .category2 li a {float:left; display:block; cursor:pointer; line-height:2.2; margin-right:5px; width:80px; height:30px; border-radius:5px; border:1px solid #dedede; text-align:center}
 #wrapper #customer .category2 li a:hover {background:#ff610a; color:#fff; border:1px solid #ff610a;}
 #wrapper #customer .category2 .on a {background:#ff610a; color:#fff; border:1px solid #ff610a;}
@@ -2685,7 +2685,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #membership .reser_step02 .pop .underline {text-decoration:underline}
 
 /*고객센터-전화안내*/
-#call_notice {float:left; margin-bottom:20px; width:725px; height:174px; background:url(http://img.go.co.kr/customer_noticebnBG1.jpg) no-repeat; border:5px solid #cfcfcf}
+#call_notice {/* float:left;  */margin-bottom:20px; width:725px; height:174px; background:url(http://img.go.co.kr/customer_noticebnBG1.jpg) no-repeat; border:5px solid #cfcfcf}
 #call_notice .left {float:left; padding:15px 0 0 15px; width:475px; height:159px; text-align:left}
 #call_notice .left .title {padding-bottom:10px; font-weight:600; color:#ff610a; font-size:26px}
 #call_notice .left .faq a {float:left; display:block; margin-top:15px; width:110px; height:35px; border-radius:5px; background:#ff610a; letter-spacing:-0.3px; color:#fff; font-size:14px; line-height:2.4; font-weight:600; text-align:center}
@@ -4354,7 +4354,7 @@ width: 250px; line-height: normal; position: relative; top: 1px;}
 #popup_cardSimple .wrap .agree{text-align:left; color:#3f3f3f; padding:10px 15px; line-height:1.2; font-size:14px}
 #popup_cardSimple .wrap .agree_txt{padding:10px; background-color:#f9f9f9}
 #popup_cardSimple .wrap .view_detail {display: block;float: right;background: #fff;border: 1px solid #d2d2d2;text-align: center;width:80px;height:30px;line-height:30px;font-size:14px}
-#popup_cardSimple .wrap .view_detail a:link, a:visited {display: block;width:80px;height:30px;text-decoration: none;color: #3f3f3f;}
+#popup_cardSimple .wrap .view_detail a:link {display: block;width:80px;height:30px;text-decoration: none;color: #3f3f3f;}
 #popup_cardSimple .wrap .view_detail a:hover {display: block;width:80px;height:30px;background-color:#f9f9f9}
 
 #popup_cardSimple .wrap .Privacy_policy{width:100%; height:300px; background-color:#f9f9f9; font-size:11px; line-height:1.4; border:none; color:#838383}
@@ -4377,7 +4377,7 @@ width: 250px; line-height: normal; position: relative; top: 1px;}
 #popup_cardSimple2 .wrap2 .agree{text-align:left; color:#3f3f3f; padding:10px 15px; line-height:1.2; font-size:14px}
 #popup_cardSimple2 .wrap2 .agree_txt{padding:10px; background-color:#f9f9f9}
 #popup_cardSimple2 .wrap2 .view_detail {display: block;float: right;background: #fff;border: 1px solid #d2d2d2;text-align: center;width:80px;height:30px;line-height:30px;font-size:14px}
-#popup_cardSimple2 .wrap2 .view_detail a:link, a:visited {display: block;width:80px;height:30px;text-decoration: none;color: #3f3f3f;}
+#popup_cardSimple2 .wrap2 .view_detail a:link {display: block;width:80px;height:30px;text-decoration: none;color: #3f3f3f;}
 #popup_cardSimple2 .wrap2 .view_detail a:hover {display: block;width:80px;height:30px;background-color:#f9f9f9}
 #popup_cardSimple2 .wrap2 .Privacy_policy{width:100%; height:300px; background-color:#f9f9f9; font-size:11px; line-height:1.4; border:none; color:#838383}
 #popup_cardSimple2 .wrap2 .summary {font-size:13px; letter-spacing:-0.7px}

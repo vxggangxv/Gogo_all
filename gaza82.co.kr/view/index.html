@@ -470,7 +470,7 @@
 		</div>
 		<div class="mg-"></div>
 		
-		<button class="scrBtn" type="button"></button>
+		<button class="scrBtn" type="button" id="scrBtn"></button>
 	</div>
 
 
@@ -498,7 +498,11 @@
 				$('#rgSelect > .p1 .s-txt').text(thTxt);
 			});
 			
-			
+			// 메인이미지 버튼 클릭시
+			$("#scrBtn").on('click', function() {
+				var scrTop = $("#hotTrv-sec").offset().top;
+				$("html, body").stop().animate({scrollTop: scrTop},200);
+			});
 
 
 		});
@@ -532,7 +536,7 @@
 	
 	
 	<!--171016 Hot Travel 인기 숙소-->
-	<div class="hotTrv-sec cm-s-sec ftfm-sq">
+	<div class="hotTrv-sec cm-s-sec ftfm-sq" id="hotTrv-sec">
 		<p class="p-fig"><img src="http://img.gaza82.co.kr/renew/i_bulb.png" alt="핫"></p>
 		<span class="ttImg mainSprt"></span>
 		<div class="mg-"></div>

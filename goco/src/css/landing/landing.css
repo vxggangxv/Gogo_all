@@ -1,0 +1,65 @@
+/* reset start */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+img {width:100%;vertical-align:middle}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {font-size:100%;vertical-align:middle}
+label {vertical-align:middle;}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {width:100%;border-collapse:collapse;border-spacing:0}
+caption,legend {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+body {-webkit-text-size-adjust:none}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.2;font-family: "Nanum Gothic", sans-serif;color:#282828}
+a {color:#282828;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/* reset end */
+
+.wrapper {padding-bottom:72px;}
+.btn_wrap {position:fixed; left:0; bottom:0; width:100%; padding:10px; background-color:#fff; box-sizing:border-box;}
+.btn_wrap ul {display:table; width:100%;}
+.btn_wrap ul li {display:table-cell; width:50%; vertical-align:middle;}
+.btn_wrap ul li a {display:block; height:52px; color:#fff; font-weight:bold; font-size:16px; text-align:center; line-height:52px;}
+.btn_wrap ul li:first-child a {background-color:#e63b3b;}
+.btn_wrap ul li:last-child a {background-color:#e63b3b;}
+
+/* popup */
+.pop_layer {display:none; position:fixed; left:0; right:0; top:0; bottom:0; background-color:rgba(0,0,0,.5); }
+.pop_layer .pop_area {position:absolute; left:20px; right:20px; top:50%; padding:35px 0 10px; background-color:#fff; -webkit-transform:translateY(-50%); transform:translateY(-50%); }
+.pop_layer .pop_area .pop_title {display:block; margin:0 20px; padding-bottom:20px; border-bottom:1px solid #000; font-size:23px; text-align:center;}
+.pop_layer .pop_area .input_area {padding:20px 30px 12px; }
+.pop_layer .pop_area .input_area table tr th {font-weight:bold; font-size:14px; text-align:left; vertical-align:middle;}
+.pop_layer .pop_area .input_area table tr td {padding:5px 0; vertical-align:middle;}
+.pop_layer .pop_area .input_area table tr td input[type="text"], .pop_layer .pop_area .input_area table tr td input[type="password"] {height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box;}
+.pop_layer .pop_area .input_area table tr td .select_wrapper {position:relative;}
+.pop_layer .pop_area .input_area table tr td .select_wrapper:before {content:''; display:block; position:absolute; right:10px; top:50%; width:0; height:0; margin-top:-2px; border-top:5px solid transparent; border-bottom:5px solid #585858; border-right:5px solid transparent; border-left:5px solid transparent; -webkit-transform:rotate(180deg); transform:rotate(180deg);}
+.pop_layer .pop_area .input_area table tr td .select_wrapper select {width:100%; height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box; -webkit-appearance:none;border-radius:0}
+
+.pop_layer .pop_area .pop_btn {margin:0 10px;}
+.pop_layer .pop_area .pop_btn a {display:block; height:52px; background-color:#e63b3b; color:#fff; font-weight:bold; font-size:16px; text-align:center; line-height:52px;}
+.pop_layer .pop_area .pop_close {position:absolute; right:0; top:0; width:40px; height:40px; font-size:0; text-align:center; line-height:40px;}
+.pop_layer .pop_area .pop_close img {width:18px;}
+
+/* 주사위이벤트 관련 공지 170630 이현우 */
+.dice-wrap .visual-wrap {position:relative;}
+.dice-wrap .visual-wrap img {width:100%;}
+.dice-wrap .visual-wrap .btn-wrap {position:absolute; left:4.4%; right:4.4%; bottom:3%; overflow:hidden;}
+.dice-wrap .visual-wrap .btn-wrap a {float:left; width:49%;}
+.dice-wrap .visual-wrap .btn-wrap a:first-child {margin-right:1%;}
+.dice-wrap .visual-wrap .btn-wrap a:last-child {margin-left:1%;}
+
+/* 171012 팝업에 가격 노출 강혜준 */
+.pop_layer .pop_area .prc-box {position: relative; padding: 0px 30px 17px;}
+.pop_layer .pop_area .prc-box span {display: inline-block;}
+.pop_layer .pop_area .prc-box .s1 {font-size: 14px; color: #8f8f8f; font-weight: 700;}
+.pop_layer .pop_area .prc-box .s1 s {font-size: 15px;}
+.pop_layer .pop_area .prc-box {}
+.pop_layer .pop_area .prc-box .s2 {position: relative; top: -5px; float: right; font-weight: 700; font-size: 14px;}
+.pop_layer .pop_area .prc-box .s2 .c1 {color: #e63b3b; font-size: 20px; margin-right: 1px;}

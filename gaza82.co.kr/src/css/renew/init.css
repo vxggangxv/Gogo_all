@@ -116,7 +116,7 @@
 .rn-mdBox .rn-schBox input[type=text]::-moz-placeholder {color: #4f4f4f;}
 .rn-mdBox .rn-schBox input[type=text]:-ms-input-placeholder {color: #4f4f4f;}
 .rn-mdBox .rn-schBox input[type=text]:-moz-placeholder {color: #4f4f4f;}
-.rn-mdBox .scrBtn {position: absolute; bottom: 50px; left: 50%; margin-left: -25px; display: block; width: 50px; height: 49px; background: url(http://img.gaza82.co.kr/renew/i_wdArr.png); border: none; outline: none;}
+.rn-mdBox .scrBtn {position: absolute; bottom: 50px; left: 50%; margin-left: -25px; display: block; width: 50px; height: 49px; background: url(http://img.gaza82.co.kr/renew/i_wdArr.png); border: none; outline: none; cursor: pointer;}
 /*.rn-mdBox .rn-schBox .ul1 {position: absolute; width: 100%; left: 0; top: 84px; background: #fff; border: 1px solid #dcdcdc; border-top: 2px solid #e95791; overflow:auto; height: 150px;}*/
 .rgOption {
 	/*opacity: 0;

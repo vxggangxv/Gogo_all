@@ -3271,8 +3271,9 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 #pay_info_w .btn_pay a {display:block; margin:auto; width:50%; height:40px; border-radius:5px; background:#f05d29; font-weight:bold; letter-spacing:-1px; font-size:1.0em; color:#fff; line-height:2.4; text-align:center; margin-top:10px; margin-bottom:10px}
 
 /* clearfix값 */
+.row:before, .row:after,
 .clr:before, .clr:after{ content: ""; display: block; }
-.clr:after {display: block; clear: both;}
+.row:after, .clr:after {display: block; clear: both;}
 /* 내주변 지역검색 20160819 추가 */
 #search_titles .list_more_btn, #search_titles .bnr_recommend {width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
 #search_titles #room_recommend {border-top: 1px solid #d2d2d2;}
@@ -3986,7 +3987,7 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 #snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 1px solid rgba(0,0,0,.196);}
 #snsLogin p {width: 90%; margin: 0 auto;}
 /* 앱 이용권 UI변경_20170303_강혜준 */
-#calender_number_w .term {clear: both; text-align: right; font-size: 13px; position: relative;}
+/* #calender_number_w .term {clear: both; text-align: right; font-size: 13px; position: relative;}
 #tickets {clear: both;}
 #tickets * {font-family: "Nanum Gothic";}
 #tickets .fl {float: left;}
@@ -4003,7 +4004,7 @@ left: 50%; margin-left: -155px; background: #fff; border-radius: 6px;}
 background:url(http://img.go.co.kr/mobile/app_check_icon2.png) no-repeat 0 0;}
 #tickets .tit p.nth-1 input {position: absolute; left: -9999px; width: 0; height: 0;}
 #tickets li.on p.nth-1 label {background-position: -50px 0;}
-#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 100%; max-height: 63px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; vertical-align: top; /* top: 4px; */}
+#tickets .tit p.nth-1 span {display: inline-block; position: relative; width: 100%; max-height: 63px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; vertical-align: top;}
 #tickets .tit p {padding-left: 27px;}
 #tickets .tit p.nth-2 span {}
 #tickets .tit p.nth-2 {font-size: 12.4px;}
@@ -4011,7 +4012,7 @@ background:url(http://img.go.co.kr/mobile/app_check_icon2.png) no-repeat 0 0;}
 #tickets .prc {position: absolute; right: 10px; bottom: 10px;}
 #tickets .prc del {position: relative; font-size: 14px; color: #888; top: 5px;}
 #tickets .prc .per_sale, #tickets .prc .app_sale {display: inline-block; border: 1px solid #999; background: #fff; font-size: 10px; width: 44px; text-align: center;
-position: relative; top: 3px; margin-right: 2px; line-height: 1.4em; /* height: 14px; */}
+position: relative; top: 3px; margin-right: 2px; line-height: 1.4em;}
 #tickets .prc .per_sale {border-color: #ff5100; color: #ff5100;}
 #tickets .prc .app_sale {border-color: #3f74b6; color: #3f74b6;}
 #tickets .prc .origin_prc, #tickets .prc .app_prc {font-weight: 600; color: #ff5100;}
@@ -4019,10 +4020,9 @@ position: relative; top: 3px; margin-right: 2px; line-height: 1.4em; /* height: 
 
 #backDrop {position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 101; display: none;}
 #backDrop.on {display: block;}
-/* #tickets-list-bg{position: fixed; width: 100%;height: 100%; background: rgba(0,0,0,.696); box-sizing: border-box; z-index: 11; display: block;} */
 #tickets-list-bg {z-index: 11; display: block;}
 #tickets-list-bg.on {display: block;}
-#tickets-list {position: fixed; width: 100%; z-index: 101; /* overflow: hidden; */bottom: -462px; transition: all 0.8s;}
+#tickets-list {position: fixed; width: 100%; z-index: 101; bottom: -462px; transition: all 0.8s;}
 #tickets-list * {font-family: "Nanum Gothic";}
 #tickets-list.on {bottom: 60px;}
 #tickets-list .cls-box {display: block; width: 100%; height: 25px; z-index: 1; position: relative; top: 1px;}
@@ -4043,12 +4043,12 @@ background: #fff; margin-bottom: 10px;}
 .tl-items .tl-name h4 {font-size: 15px; text-align: center;}
 
 .item-number-wrap .item-number {float: left; position: relative; top: -1px;}
-.item-number-wrap .item-nb-outer {float: right; /* position: absolute; right: 8px; top: 50%; margin-top: -27px; */}
+.item-number-wrap .item-nb-outer {float: right;}
 .item-number {width: 61%;}
 .item-nb-outer {width: 110px;}
-.item-number .h-ctgr {position: relative; /* top: 5px; */ display: inline-block; font-weight: 600; padding-left: 8px;}
+.item-number .h-ctgr {position: relative; display: inline-block; font-weight: 600; padding-left: 8px;}
 .item-number p.nth-2, .itm-price {font-size: 13px; padding-left: 8px; color: #999; line-height: 1.3em;}
-.itm-price {color: #333; /* margin-top: 4px */; font-weight: 600;}
+.itm-price {color: #333; font-weight: 600;}
 .item-number p.nth-2 {letter-spacing: -1px;}
 .item-number .h-ctgr span {position: absolute; left: 0;}
 .tl-items .number-box {position: relative; top: 1px; height: 50px; display: inline-block; width: 108px; border: 1px solid #ddd; box-sizing: border-box; float: right;}
@@ -4059,15 +4059,15 @@ background: #fff; margin-bottom: 10px;}
 .number-box a.nb-right {border-left: 1px solid #ddd;}
 .number-box a:hover, .number-box a:active {color: #3f3f3f;}
 .number-box > div {width: 52px; border-left:1px solid #ddd; border-right:1px solid #ddd;}
-.number-box input {width: 52px; height: 100%; font-size: 16px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px; /* text-indent: 15px; */}
-.number-box input.on, .number-box input:active, .number-box input:focus {color: #f95c25;}
+.number-box input {width: 52px; height: 100%; font-size: 16px;color: #383838; background: #fff; font-weight: 600; letter-spacing: -1px; text-indent: 15px;}
+.number-box input.on, .number-box input:active, .number-box input:focus {color: #f95c25;} */
 /* .item-price {clear: both; text-align: right; font-size: 19px; margin: 3px 0 -6px;} */
 
-.list_btn_wrap {width: 100%; height: 53px; position: fixed; bottom: 0; background: #fff; padding-top: 7px; border-top: 1px solid #f3f3f3;}
-.list_btn_wrap a {display: block; text-align: center; width: 96%; margin: 0 auto; height: 45px; background: #f95c25; color: #fff; font-size: 17px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;}
+/* .list_btn_wrap {width: 100%; height: 53px; position: fixed; bottom: 0; background: #fff; padding-top: 7px; border-top: 1px solid #f3f3f3;}
+.list_btn_wrap a {display: block; text-align: center; width: 96%; margin: 0 auto; height: 45px; background: #f95c25; color: #fff; font-size: 17px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;} */
 
 /* 결제페이지 리뉴얼 */
-.pull-left {float: left;}
+/* .pull-left {float: left;}
 .pull-right {float: right;}
 #admission-pay {position: relative; width: 100%; margin-top: 46px;}
 #admission-pay .ui-input-text {position: relative; display: inline-block;}
@@ -4076,9 +4076,9 @@ background: #fff; margin-bottom: 10px;}
 border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 #admission-pay .division .pull-right {font-size: 12px; position: relative;}
 #admission-pay .fc-orange {color: #ff4800; letter-spacing: -1px;}
-#admission-pay .adm-contents {padding: 5px 10px; font-size: 14px;}
+#admission-pay .adm-contents {padding: 5px 10px; font-size: 14px;} */
 
-.item-info > div {position: relative; float: left;}
+/* .item-info > div {position: relative; float: left;}
 .item-info .d1 {width: 25%;}
 .item-info-img {width: 92%;}
 .item-info .d2 {width: 75%; top: -4px;}
@@ -4096,7 +4096,6 @@ border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 .user-info label {display: inline-block; width: 40%; text-indent: 2px;}
 .user-info > div {margin-bottom: 6px;}
 .user-info > div:last-child {margin-bottom: 0;}
-/* .user-info > div > .ui-input-text {position: relative; right: 2px; display: inline-block; width: 60%; } */
 .user-info input {position: relative; display: inline-block; right: -2px;	 width: 59%; height: 30px; border-radius: 6px; border: 1px solid #A5A5A5;
 text-indent: 5px; font-size: 13px;}
 
@@ -4115,17 +4114,17 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 .adm-total-price {border-top: 1px solid #e5e5e5;}
 .adm-total-price .pull-left, .adm-total-price .pull-right{color: #404040; font-size: 18px; font-weight: 600;}
 .adm-total-price .pull-left span {font-size: 15px;}
-.adm-total-price .pull-right {font-size: 19px; font-family: Helvetica, "NanumGothic", sans-serif;}
+.adm-total-price .pull-right {font-size: 19px; font-family: Helvetica, "NanumGothic", sans-serif;} */
 /*20170324_리스트변경_강혜준*/
-#search_list * {font-family: "Nanum Gothic";}
+/* #search_list * {font-family: "Nanum Gothic";}
 #search_list .info .title {line-height:1.8em; font-size: 14px; width: 215px;}
 #search_list .info .wra .icon{width: 47%; display: inline-block; text-indent: 0; position: relative; left: 10px;}
 #search_list .info .wra .price .lowprice {font-size: 1.3em;}
 @media (max-device-width: 359px) {#search_list .info .wra .icon{width: 39%;}}
 #list_price01 {float:left; width: auto; padding-right: 0; width: 130px;}
-#list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;}
+#list_price01 .type {color:#777; width:44px; font-size: 0.9em; padding-top: 3px; float: left;} */
 /* 찜상품 추가_170330_강혜준 */
-#mypage #box .my_middle0 {width:100%; height:auto; float:left;background-color:#fff;}
+/* #mypage #box .my_middle0 {width:100%; height:auto; float:left;background-color:#fff;}
 #mypage #box .my_middle0 .text_1{font-size:20px; color:#000;}
 #mypage #box .my_middle0 .text_2{font-size:16px;}
 #mypage #box .my_middle0 .text_2{font-size:16px;}
@@ -4133,21 +4132,21 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 #mypage #box .my_middle0 .my_box_1 a{border-right:1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
 #mypage #box .my_middle0 .my_box_2 a{border-right:0;border-bottom:1px solid #ececec; box-sizing: border-box;}
 #mypage #box .my_middle0 .my_box_3 a{border-right: 1px solid #ececec; border-bottom:1px solid #ececec; box-sizing: border-box;}
-#mypage #box .my_middle0 .my_box_4 a{border-right: 0; border-bottom:1px solid #ececec; box-sizing: border-box;}
+#mypage #box .my_middle0 .my_box_4 a{border-right: 0; border-bottom:1px solid #ececec; box-sizing: border-box;} */
 /* 하단 고정배너 추가_170406_강혜준 */
-.bottom_banner {position: fixed; bottom: 0;	width: 100%; z-index: 9999;}
-.bottom_banner img {width: 100%;}
+/* .bottom_banner {position: fixed; bottom: 0;	width: 100%; z-index: 9999;}
+.bottom_banner img {width: 100%;} */
 /* 20160419 모바일 앱설치 광고랜딩 */
-#app_ad {position:relative; width:device-width;}
+/* #app_ad {position:relative; width:device-width;}
 #app_ad img{display:block; }
 #app_ad .link_01{position:absolute; top:87%; left:3.3%; width:30%; height:10%; }
 #app_ad .link_02{position:absolute; top:87%; left:35%; width:30%; height:10%; }
-#app_ad .link_03{position:absolute; top:87%; left:66.5%; width:30%; height:10%; }
+#app_ad .link_03{position:absolute; top:87%; left:66.5%; width:30%; height:10%; } */
 /* 앱상세페이지_170425_강혜준 */
-.txt-ntc-i {margin-left: -11px; display: inline-block; margin-right: 3px; font-size: 38px; line-height: 0; top: 7px; position: relative;}
-.room-ntc, .room-cmn, .room-appb {display: inline-block; padding-left: 12px;}
+/* .txt-ntc-i {margin-left: -11px; display: inline-block; margin-right: 3px; font-size: 38px; line-height: 0; top: 7px; position: relative;}
+.room-ntc, .room-cmn, .room-appb {display: inline-block; padding-left: 12px;} */
 /* 앱 에약완료관련상품노출_170419_강혜준 */
-.more-box {position: relative;}
+/* .more-box {position: relative;}
 .more-box .row-th {color: #fff; height: 40px; background: #ff6000; font-size: 14px; background: #ff6000; text-align: center; line-height: 2.8em;}
 .more-box .list-box {}
 .more-box .list-box li {position: relative; padding: 5px; border-bottom: 1px solid #d5d5d5;}
@@ -4167,10 +4166,10 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 .more-box .lowprice {color: #f15a53; font-weight: 600; font-family: "Nanum Gothic"; letter-spacing: -2px;}
 .more-box .btn-wrap {position: relative; text-align: center; height: 36px; background: #f4f2f3; border-top: 1px solid #cacaca;}
 .more-box .btn-wrap .btn-a {display: block; width: 100%; height: 100%; color: #313131; font-size: 13px; font-weight: 600; line-height: 2.6em;}
-.more-box .btn-wrap .btn-a .gt {position: relative; top: -1px; font-size: 10px; color: #ff6000; font-family: "Nanum Gothic", "Malgun Gothic"; font-weight: 800;}
+.more-box .btn-wrap .btn-a .gt {position: relative; top: -1px; font-size: 10px; color: #ff6000; font-family: "Nanum Gothic", "Malgun Gothic"; font-weight: 800;} */
 
 /* 썸내일 로고 170428 이현우 */
-#info_img .thumbnail_logo {position:absolute; left:10px; top:6px; z-index:1;}
+/* #info_img .thumbnail_logo {position:absolute; left:10px; top:6px; z-index:1;}
 #info_img .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}
 #info_img_wrpa .thumbnail_logo {position:absolute; left:10px; top:42px; z-index:1;}
-#info_img_wrpa .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}
+#info_img_wrpa .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;} */
