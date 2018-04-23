@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]--> 
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]--> 
+<!--[if !IE]><!--> 
+<html lang="ko-KR"> 
+<!--<![endif]--> 
+<head> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+	<meta charset="UTF-8"> 
+	<title>고코 리뉴얼</title> 
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_goco.css" />
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css"> 
+ <!--<link rel="stylesheet" type="text/css" href="../../src/css/reset.css" /> 
+ <link rel="stylesheet" type="text/css" href="../../src/css/layout_new3.css" /> 
+ <link rel="stylesheet" href="../../src/css/totalweb.css">--> 
+
+ <!--폰트가지고 오기--> 
+ <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css"> 
+ <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css"> 
+ <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css"> 
+
+ <!--리뉴얼Css--> 
+ <link rel="stylesheet" type="text/css" href="../src/css/layout_new3.css" /> 
+
+ <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+
+ <!--리뉴얼 Js--> 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$('.schtxt').focus(function(){
+ 			if($(this).val()==""){
+ 				$('.schtxt').val(''); }
+ 			})
+ 		$('.schbt').click(function(){
+ 			if($('.schtxt').val()==""||$('.schtxt').val()==""){
+ 				alert('검색어를 입력해주세요.');
+ 				$('.schtxt').focus('');
+ 				$('.schtxt').val('');
+ 			}
+ 		})
+
+ 		$('.schtxt').focus(function(){
+ 			$('.sch_t').hide();
+ 		})
+ 	})
+ </script>	
+
+</head> 
+<body>
+
+	<div class="wrapper">
+
+		<!-- 헤더 -->
+		<div class="header_wrap">
+			<div class="header">
+				<h1 class="logo"><img src="http://img.storytrip.co.kr/renew/mainlogo.png" alt="storytrip"></h1>		
+				<div class="login_wrap">	
+					<ul class="login clr">
+						<li>고객센터</li>
+						<li>마이페이지</li>
+						<li>나의예약조회</li>
+						<li class="log">로그인하기</li>
+					</ul>
+				</div>	 
+				<div class="header_text">
+					<span><span class="t_titb">이주의 추천 숙소</span> <br> <strong>오션투유리조트</strong> <span class="t_sbt">강원도 고성군</span><br>
+					<a href="#" class="t_link">숙소에 대해 자세히 알아보기 	&nbsp;<img src="http://img.storytrip.co.kr/renew/main_arrow.png" alt=""></a></span>
+				</div>	 
+			</div>
+		</div>
+
+		<!-- 숙소검색 -->
+		<div class="search_box_wrap">
+
+			<div class="search_box">
+				<div class="sch_wrap">
+					<input type="text" value=" " name="searc_txt" class="schtxt">
+					<p class="sch_t"><span class="sch_colr">생각해둔 지역</span>이나 <span class="sch_colr">장소</span>를 검색해볼까요?</p>
+					<button class="schbt" type="button" tabindex="2" title="검색"> 
+						<span class="bt_ico"><img src="http://img.storytrip.co.kr/renew/search_b.png"></span> 
+					</button>
+
+				</div>
+			</div>
+
+			<p><span class="t_col">최대 80%할인</span>된 숙소가 여러분을 위해 준비되어 있습니다.</p>
+		</div>
+		
+
+
+		<!-- 인기여행지 -->	
+		<div class="section">
+			<div class="best_city_wrap">
+				<div class="bst_city">
+					<h2 class="t_col">인기여행지</h2>
+					<ul class="clr">
+						<li><a href="#"><img src="http://img.storytrip.co.kr/renew/city1.png" alt="서울"></a></li>
+						<li><a href="#"><img src="http://img.storytrip.co.kr/renew/city2.png" alt="부산"></a></li>
+						<li><a href="#"><img src="http://img.storytrip.co.kr/renew/city3.png" alt="제주도"></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 인기숙소 -->	
+			<div class="best_room_wrap">
+				<div class="best_room">
+					<h2 class="t_col">인기숙박시설</h2>
+					<ul class="clr">
+						<li><a href="#"><img src="http://img.storytrip.co.kr/renew/best1.png" alt="게스트하우스"></a></li>
+						<li><a href="#"><img src="http://img.storytrip.co.kr/renew/best2.png" alt="레지던스"></a></li>
+						<li><a href="#"><img src="http://img.storytrip.co.kr/renew/best3.png" alt="펜션"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 서비스이용 -->	
+		<div class="svc">
+			<p><img src="http://img.storytrip.co.kr/renew/svc_t.png" alt="서비스를 이용하는데 어려움이 있으신가요?"></p>
+		</div>
+		<!-- 푸터 -->		
+		<div class="footer_wrap">
+			<div class="foot_btn">
+				<ul class="clr">
+					<li><a href="#"><img src="http://img.storytrip.co.kr/renew/mainbtn.png" alt="나의 예약상태 확인하기"></a></li>
+					<li><a href="#"><img src="http://img.storytrip.co.kr/renew/mainbtn2.png" alt="자주묻는 질문 확인하기"></a></li>
+				</ul>
+			</div>
+
+			<div class="f-top">
+				<ul class="clr">
+					<li><a href="#">&nbsp;이용약관 </a>&nbsp;<span>|</span></li>
+					<li><a href="#">&nbsp; 개인정보처리방침 </a>&nbsp; <span>|</span></li>
+					<li><a href="#">&nbsp; 광고/입점/제휴문의 </a>&nbsp; <span>|</span></li>
+					<li><a href="#">&nbsp; 고객센터 <span class="f-color">&nbsp;(고객상담및빠른 객실문의 1666-1243)</span></a></li>
+				</ul>
+			</div>
+
+			<div class="f-bottom">
+				<div class="address">
+					<p>
+						<span>
+							대표이사 박준수 | 사업자등록번호 103-8-00576&nbsp; <a href="#"><span class="f-bt">&nbsp;사업자정보확인></span></a><br>
+							<span class="f_add">주소  서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br></span></span>
+						</div>
+						<div class="f-info">
+							<ul class="clr">
+								<li>통신판매업&nbsp;제2017-서울강남-01755호&nbsp;</li>
+								<li>여행업등록번호 제2017호29호&nbsp;</li>
+								<li>여행영업보증서&nbsp; 국내여행제100-000-201701885127호&nbsp;</li>
+								<li> 국외여행업등록번호 제2017-47호</li>
+							</ul>
+						</div>
+						<div class="f-icon">
+							<ul class="clr">
+								<li><a href="#"><img src="http://img.storytrip.co.kr/renew/footer_logo1.png"></a></li>
+								<li><a href="#"><img src="http://img.storytrip.co.kr/renew/footer_logo2.png"></a></li>
+								<li><img src="http://img.storytrip.co.kr/renew/footer_logo3.png"></li>
+								<li><img src="http://img.storytrip.co.kr/renew/footer_logo4.png"></li>
+								<li><a href="#"><img src="http://img.storytrip.co.kr/renew/footer_logo5.png"></a></li>
+							</ul>
+						</div>
+					</div>
+					<p class="copy">
+						copyright2016bySTORYTRIP.CO.KR co.,allrightsreserved.
+					</p>
+				</div>	
+			</div>
+		</body>
+		</html>     

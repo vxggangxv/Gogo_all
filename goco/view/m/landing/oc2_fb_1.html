@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>오션투유회원이벤트</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	
+	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/reset.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/m/landing/oc2_fb.css">-->
+	<link rel="stylesheet" href="../../../src/css/reset.css">
+	<link rel="stylesheet" href="../../../src/css/m/landing/oc2_fb.css">
+	
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!--171123 js파일 추가-->
+	<script src="http://static.go.co.kr/js/m/landing/oc2_fb.js"></script>
+	
+	
+	
+	
+</head>
+<body>
+	<h1 class="hidden">오션투유회원이벤트</h1>
+	<div id="event-wrap" class="oc2-fb-wrap">
+		<section class="evt-content">
+			<h2 class="hidden">오션투유리조트 11월~12월 회원특가 안내</h2>
+			<img class="db-gift" src="http://img.go.co.kr/mobile/oc2_fb/oc2_fb.jpg" alt="오션투유회원이벤트">
+		</section>
+		<div class="btn-area clr">
+			<a href="javascript:;" class="a1" onclick="$('#pop-sec, #rsv-pop').fadeIn('fast'); $(window).scrollTop(0);">예약하기</a>
+			<a href="tel:1600-1867" class="a2" onclick="$('#faq-wrap').fadeIn('fast'); $('#faq-wrap').prev().fadeIn('fast'); $(window).scrollTop(0);"><img src="http://img.go.co.kr/mobile/oc2_fb/i_callG.png" alt="전화하기"></a>
+		</div>
+		
+		
+		<!--예약팝업-->
+		<div class="dropDown-bg" id="pop-sec"></div>
+		<div class="rsv-pop" id="rsv-pop">
+			<h3>오션투유 리조트 회원 예약 <a href="javascript:;" class="a-i-x" onclick="$('.dropDown-bg, #rsv-pop').hide();"></a></h3>
+
+			<div class="d1 clr">
+				<p class="p-lbl">회원명</p>
+				<p class="p-txt">
+					<input type="text" class="type01" name="username" id="username">
+				</p>
+			</div>
+			<div class="d2 clr">
+				<p class="p-lbl">연락처</p>
+				<p class="p-txt">
+					<input type="text" class="type01" name="tel1" id="tel1" style="width:30%" numberonly="" maxlength="3">
+					<input type="text" class="type01" name="tel2" id="tel2" style="width:33%" numberonly="" maxlength="4">
+					<input type="text" class="type01" name="tel3" id="tel3" style="width:33%" numberonly="" maxlength="4">
+				</p>
+			</div>
+			<div class="d3 clr">
+				<p class="p-lbl">예약일자</p>
+				<p class="p-txt">
+					<input type="text" class="type02 hasDatepicker" placeholder="체크인" name="sdate" id="sdate" readonly="" style="width:48.5%">
+					<select name="night" id="night" class="type01" style="width:48.5%">
+						<option value="1">1박</option>
+						<option value="2">2박</option>
+						<option value="3">3박</option>
+					</select>
+				</p>
+			</div>
+			<div class="d4 clr">
+				<p class="p-lbl">객실선택</p>
+				<p class="p-txt" id="room_typediv">
+					<select name="room_type" id="room_type" class="type01" style="width:100%">
+						<option value="">객실선택</option>
+						<option value="2299">마운틴뷰 콘도</option>
+						<option value="5418">오션뷰 콘도</option>
+						<option value="35734">오션뷰 호텔 리노베이션</option>
+						<option value="35735">오션뷰 콘도 리노베이션</option>
+						<option value="125447">마운틴뷰 콘도 리노베이션</option>				
+					</select>
+				</p>
+			</div>
+			<div class="d5 clr">
+				<p class="p-lbl">객실수</p>
+				<p class="p-txt">
+					<select name="room_cnt" id="room_cnt" class="type01" style="width:50%">
+						<option value="1">1개</option>
+						<option value="2">2개</option>
+						<option value="3">3개</option>						
+					</select>
+				</p>
+			</div>
+			<div class="d5 clr" style="margin-bottom:15px">
+				<p class="p-lbl">이용인원</p>
+				<p class="p-txt">
+					<select name="person" id="person" class="type02" style="width:50%">
+							<option value="1">1명</option>
+							<option value="2">2명</option>
+							<option value="3">3명</option>
+							<option value="4" selected="">4명</option>
+							<option value="5">5명</option>
+							<option value="6">6명</option>
+							<option value="7">7명</option>
+					</select>
+				</p>
+			</div>
+			<span style="font-weight:bold;color:red">
+			* 1객실에 2인 조식이 무료 제공됩니다.
+			</span>
+			<div class="d6 clr">
+				<a href="#" class="a1" id="goreserve"><span id="final_txt">결제하기</span></a>
+			</div>
+		</div>
+		
+		<!--faq팝업-->
+		<div class="dropDown-bg"></div>
+		<section class="faq-wrap" id="faq-wrap">
+			<h3>자주묻는 질문 <a href="javascript:;" class="a-i-x a-x" onclick="$('#faq-wrap').hide(); $('#faq-wrap').prev().hide();"></a></h3>
+			
+			<div class="d-container">
+				<ul class="ul-faq">
+					<li>
+						<div class="f_q">
+							<span class="q_con">Q.</span>
+							<p>조식무료 숙박권은 언제까지 사용가능하나요?</p>
+						</div>
+						<div class="f_a">
+							<span class="a_con">A</span>
+							<p>2017년 12월 31일까지 사용 가능하며 선착순예약마감으로 주말 or 특정일인경우 여유있게 예약해주시면 감사하겠습니다.</p>
+						</div>
+					</li>
+					<li>
+						<div class="f_q">
+							<span class="q_con">Q.</span>
+							<p>조식은 구성이 어떻게 되나요?</p>
+						</div>
+						<div class="f_a">
+							<span class="a_con">A</span>
+							<p>토/일(공휴일) 아침식사는 25가지의 신선하고 다양한 프리미엄 메뉴와 샐러드가 있는 아메리칸 뷔페로 운영되며, 그 외 평일은 광어미역국/우거지갈비탕/황태해장국을 단품으로 이용하실수 있습니다.</p>
+						</div>
+					</li>
+					<li>
+						<div class="f_q">
+							<span class="q_con">Q.</span>
+							<p>객실 추가인원은 어떻게 하나요?</p>
+						</div>
+						<div class="f_a">
+							<span class="a_con">A</span>
+							<p>객실 기준인원은 4인이며, 최대 7명까지 투숙가능합니다. 초과인원은 인당 1만원으로 현장결제 하시면 됩니다.</p>
+						</div>
+					</li>
+					<li>
+						<div class="f_q">
+							<span class="q_con">Q.</span>
+							<p>조식은 추가인원은 어떻게 하나요?</p>
+						</div>
+						<div class="f_a">
+							<span class="a_con">A</span>
+							<p>1박(1객실)당 2분의 조식을 무료로 제공합니다. 초과인원은 인당 8000원으로 현장에서 결제해주시면 됩니다.</p>
+						</div>
+					</li>
+				</ul>
+				
+				<p class="p-ps">
+					통화량이 많아 전화연결이 어려울수 있습니다.<br>온라인으로 예약시 빠르고 편리하게 이용 가능합니다.
+				</p>
+			</div>
+			
+			<div class="d-bottom">
+				<a href="#" class="btn-a" onclick="$('#faq-wrap').hide(); $('#rsv-pop').fadeIn('fast');">온라인 예약</a>
+				<a href="tel:1600-1867" class="btn-a"><img src="http://img.go.co.kr/mobile/oc2_fb/i_callG.png" alt="전화하기"> 전화예약</a>
+			</div>
+			
+		</section>
+		
+	</div>
+	
+	
+</body>
+</html>

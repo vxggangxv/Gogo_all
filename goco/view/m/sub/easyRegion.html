@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <!--숫자인식,메일주소,지도상의 주소링크 막기-->
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170804092500" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+    <link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170804092500" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170804092500" type="text/css" />
+
+    <!-- 모든사이트 통합 css -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css" />
+<!--    <link rel="stylesheet" href="../../../src/css/totalmobile.css" type="text/css" />-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+</head>
+
+<body>
+
+    <div id="wrapper" data-role="page">
+        <div id="scroll_box">
+            <div id="headTitle"><span class="back"><a href="javascript:history.back(-1)"><img src="http://img.go.co.kr/mobile/btn_back.png" width="47" height="15" alt="뒤로"></a></span>지역검색</div>
+
+            <div id="local-list-w">
+                <ul class="local_tapm">
+                    <a href="#" onclick="change_gubun('local_s');">
+                        <li id="simple_chk" style="width:33%" class="on">간편지역</li>
+                    </a>
+                    <a href="#" onclick="change_gubun('local_g');">
+                        <li id="local_chk" style="width:33%" class="">상세지역</li>
+                    </a>
+                    <a href="#" onclick="change_gubun('subway_g');">
+                        <li id="subway_chk" style="width:33%">역주변</li>
+                    </a>
+                </ul>
+
+                <div class="local-btn-w">
+                    <div class="local-btn" onclick="location.href='/home/map/?dd=RB8wfDNf'"><img src="http://img.go.co.kr/mobile/location_icon.jpg" width="18px" style="margin-top:7px"> 현재 내 위치</div>
+                </div>
+                
+                <!--180302 레저/입장권 클릭시 간편검색-->
+                <div class="easyRegion-tickets">
+                    <table class="tb-er">
+                        <colgroup>
+                            <col class="nth-1">
+                            <col class="nth-2">
+                            <col class="nth-3">
+                            <col class="nth-4">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="on"><a href="#">서울/경기</a></td>
+                                <td><a href="#">제주</a></td>
+                                <td><a href="#">경기</a></td>
+                                <td><a href="#">강원</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">부산</a></td>
+                                <td><a href="#">경상</a></td>
+                                <td><a href="#">충청</a></td>
+                                <td><a href="#">전라</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--180302 끝-->
+                
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

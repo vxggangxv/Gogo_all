@@ -1,8 +1,9 @@
-/* 마진과 패딩의 초기화 */
+@charset "utf-8";
+
 a, abbr, acronym, address, 
 b, blockquote, big, body,
-center, caption, cite, code, command,
- dd, del, dfn, dl, div, dt, 
+caption, cite, code,
+dd, del, dfn, dl, div, dt, 
 em, embed,
 fieldset, footer, form, 
 h1, h2, h3, h4, h5, h6, header, hgroup, html,
@@ -14,37 +15,114 @@ q,
 s, samp, section, small, span, source, strike, strong, sub, sup,
 table, tbody, tfoot, thead, th, tr, 
 u, ul, 
-var { margin:0; padding:0}
+var,
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+{margin:0; padding:0}
 
-/* 헤더 폰트 사이즈 초기화 */
-h1,h2,h3,h4,h5,h6 {font-size:100% }
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {font-size:100%}
 
 
-/* 리스트의 스타일 제거 */
 ol, ul {list-style:none}
 
 
-/* 폰트 강조 특성 초기화 */
 address, caption, cite, code, dfn, em, 
 strong, th, var {font-style :normal; font-weight:normal}
 
 
-/* 테이블 스타일 초기화 */
 table {border-collapse:collapse; border-spacing:0}
 
 
-/* 이미지 및 필드셋에서 보더표시 초기화 */
 fieldset, img {border:0}
 
 img, input, button, select, textarea {margin:0; padding:0; vertical-align:middle}
 
 
-/* 캡션과 테이블헤더 텍스트 정렬 초기화 */
 caption, th {text-align:left }
 
 
-/* 인용구 표시 초기화 */
 q:before, q:after {content :''} 
 
+button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
+
+caption, legend{width:0; height:0; font-size:0; line-height:0; text-indent:-9999px; visibility:hidden;}
+label {cursor: pointer;}
+
+a {text-decoration: none;}
 /* hidden_class */
 .hidden {width:0; height:0; margin:0; padding:0; overflow:hidden; line-height:0; font-size:0; visibility:hidden; position:absolute; left:0; top:0}
+
+.clr:before, .clr:after, .cf:before, .cf:after {content: ""; display: block;}
+.clr:after, .cf:after {clear: both;}
+
+/* button */
+button[type=button] {cursor: pointer;}
+
+/* backDrop */
+#backDrop, .backDrop {position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: block;}
+#backDrop {display: none;}
+/* dropDown-bg */
+.dropDown-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+
+.appe-reset {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.appe-s-reset {
+	border: 1px solid #ddd; border-radius: 0; background: #fff;
+}
+
+
+/* a태그 아이콘 X버튼*/
+.a-i-x, .a-i-x2 {position: absolute; display: block; width: 20px; height: 20px; top: 10px; right: 10px;}
+.a-i-x:before, .a-i-x:after,
+.a-i-x2:before, .a-i-x2:after {content: ""; display: inline-block; position: absolute; width: 1px; height: 20px; background: #555;}
+.a-i-x2:before, .a-i-x2:after {width: 20px; height: 1px;}
+.a-i-x:before, .a-i-x2:before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.a-i-x:after, .a-i-x2:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);   
+}
+
+/* rArrow, lArrow 버튼 */
+.ic-lArrow:after, .ic-rArrow:after, .ic-bArrow:after {
+  position: relative; top: -2px;
+  content: ""; display: inline-block; width: 7px; height: 7px; border: 1px solid #898989;
+  -webkit-transform: rotate(-45deg); 
+  -ms-transform: rotate(-45deg); 
+  -o-transform: rotate(-45deg); 
+  transform: rotate(-45deg); 
+}
+.ic-lArrow:after {
+  border-right: 0; border-bottom: 0;
+  left: 2px;
+}
+.ic-rArrow:after {
+  border-top: 0; border-left: 0;
+  right: 2px;
+}
+.ic-bArrow:after {
+  border-top: 0; border-right: 0;
+  top: 2px; width: 8px; height: 8px;
+}
+.ie8 .ic-lArrow:after, .ie8 .ic-rArrow:after {
+  width: auto; height: auto; 
+  border: 0; left: 0; right: 0;
+}
+.ie8 .ic-lArrow:after {content: "◀";}
+.ie8 .ic-rArrow:after {content: "▶";}
+.ie8 .ic-bArrow:after {content: "▼";}

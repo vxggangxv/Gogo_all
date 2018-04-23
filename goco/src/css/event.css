@@ -1,3 +1,6 @@
+@charset "utf-8";
+@import ("http://go.co.kr/fonts/nanumsquare/nanumsquare.css");
+
 /* 도고, 리솜, 아산 랜딩*/
 #asan_sapa {float:left; padding-bottom:100px; width:100%; background:#fff; }
 
@@ -393,3 +396,65 @@
 #year_end .product_area .box ul li p.t04 {position:absolute; margin-top:-62px;  margin-left:20px; margin-bottom:25px; text-align:left; color:#ff4800; font-family:Tahoma;}
 #year_end .product_area .box ul li p.t04 strong {font-size:38px;  font-weight:200;}
 #year_end .product_area .box ul li p.t04 span {font-size:24px;}
+
+/* 메이스힐리조트 원투쓰리 이벤트 */
+/* 이벤트팝업 전체 공통 */
+.f-bdr {font-weight: 800;}
+.evt-area {float: right; margin-top: 30px; padding: 25px; width: 740px; min-height: 800px; background: #fff; border: 1px solid #dedede; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif; margin-bottom: 20px;}
+.evt-area .c-yellow {color: #fce37f;}
+.evt-area .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
+.evt-area .paging {margin-top: 15px;}
+.evt-area .paging > a {margin-left: 5px;}
+.evt-area .paging > a:first-child {margin-left: 0;}
+.evt-area .paging > a:first-child + a {margin-right: 20px;}
+
+/* 공통 */
+.mayhills-evt123 .cl-1 {color: #ffe49a;}
+.mayhills-evt123 .area-btn {margin-top: 30px; text-align: center;}
+.mayhills-evt123 .area-btn a {display: inline-block; background: #fff; width: 580px; height: 88px; font-size: 24px; box-sizing: border-box; color: #000; letter-spacing: 0;}
+.mayhills-evt123 .area-btn a:after {content: ""; display: inline-block; vertical-align: middle; height: 105%;}
+.mayhills-evt123 .area-btn a .rArrow:after {width: 12px; height: 12px; border-width: 2px; border-color: #fff; top: -1px;}
+
+/* 이벤트 안내 */
+.mayhills-evt123 {color: #282828;}
+.mayhills-evt123 .evt-top {background: #4f4c7b;}
+.mayhills-evt123 .evt-main {}
+.mayhills-evt123 .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #d6d8f7;}
+
+.mayhills-evt123 .box-result,
+.mayhills-evt123 .box-winnerList,
+.mayhills-evt123 .evt-main .tb-info {width: 680px; margin: 0 auto; border-top: 2px solid #501143; background: #fff; margin-top: 15px;}
+
+.mayhills-evt123 .evt-main .tb-info col.nth-1 {width: 24%;}
+.mayhills-evt123 .evt-main .tb-info col.nth-2 {width: 76%;}
+.mayhills-evt123 .evt-main .tb-info th,
+.mayhills-evt123 .evt-main .tb-info td {font-size: 20px; border: 1px solid #d4d4d4; padding:  16px; line-height: 1.3;}
+.mayhills-evt123 .evt-main .tb-info th {text-align: center;}
+.mayhills-evt123 .evt-main .tb-info td {padding-left: 20px;}
+.mayhills-evt123 .evt-main .area-btn a {background: #f24959; color: #fff;}
+
+.mayhills-evt123 .evt-main .evt-tit {color: #fff; font-size: 44px; background: #241941; text-align: center; padding: 32px 0;}
+.mayhills-evt123 .evt-main .evt-contents .area-price {background: #d22330; padding-bottom: 50px;}
+.mayhills-evt123 .evt-main .evt-contents .area-btn {}
+.mayhills-evt123 .evt-main .evt-contents .area-btn a {background: #fedd39; color: #3b3b3b;}
+.mayhills-evt123 .evt-main .evt-contents .area-btn a .rArrow:after {border-color: #3b3b3b;}
+
+/* 이벤트 당첨 */
+.mayhills-evt123 .box-winnerList,
+.mayhills-evt123 .box-result {text-align: center; padding-top: 10px; padding-bottom: 20px;}
+.mayhills-evt123 .box-winnerList .p-1,
+.mayhills-evt123 .box-result .p-1 {font-size: 38px; letter-spacing: -2px;}
+.mayhills-evt123 .box-result .p-1-2 {font-size: 32px;}
+.mayhills-evt123 .box-result .box-id {width: 596px; margin: 20px auto 0; border: 1px solid #c9c9c9; background: #f3f3f3; padding: 20px 0 18px;}
+.mayhills-evt123 .box-result .box-id .p-2 {font-size: 22px; line-height: 1.4;}
+.mayhills-evt123 .box-result .box-id .p-2 em, 
+.mayhills-evt123 .box-result .box-id .p-id {font-size: 28px; font-weight: 700;}
+.mayhills-evt123 .box-result .box-id .p-id {background: #fff; width: 415px; margin: 0 auto; padding: 12px 0; border: 1px solid #c9c9c9; margin-top: 10px;}
+
+.mayhills-evt123 .box-winnerList {padding-top: 20px;}
+.mayhills-evt123 .box-winnerList .p-1 {text-align: center;}
+.mayhills-evt123 .box-winnerList .winnerList {border: 1px solid #c9c9c9; width: 596px; margin: 20px auto;}
+.mayhills-evt123 .box-winnerList .winnerList > li {border-top: 1px solid #c9c9c9;}
+.mayhills-evt123 .box-winnerList .winnerList > li:first-child {border-top: 0;}
+.mayhills-evt123 .box-winnerList .winnerList > li > div {float: left; width: 50%; box-sizing: border-box; font-size: 20px; letter-spacing: -1px; padding: 8px 0;}
+.mayhills-evt123 .box-winnerList .winnerList > li > div:first-child {border-right: 1px solid #c9c9c9;}

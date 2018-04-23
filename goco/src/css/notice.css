@@ -1,0 +1,39 @@
+body {letter-spacing: -0.5px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+body, a {color: #494949;}
+
+.notice-wrap {position: relative; width: 800px; margin: 160px auto 0; text-align: center;}
+.notice-wrap .d1 {}
+.notice-wrap h1 {font-size: 40px;}
+.notice-wrap h1 .s1 {color: #f76f1e;}
+.notice-wrap .d-figure {margin-top: 30px; height: 178px; background: url(http://img.go.co.kr/notice/shadow_bg.png) no-repeat center bottom;}
+.notice-wrap .d1 > p {word-break: keep-all;}
+.notice-wrap .d1 .p0 {font-size: 20px; color: #969696; font-weight: 500;}
+.notice-wrap .d1 .p1 {font-size: 17px; margin-top: 20px;}
+.notice-wrap .d2 {background: #fff2f2; padding: 25px 0; margin-top: 35px;}
+.notice-wrap .d2 h2 {font-size: 30px; font-weight: 400; line-height: 1.4; font-weight: 500;}
+.notice-wrap .d2 h2 .s1 {font-size: 16px; display: block; color: #656565; font-weight: 400;}
+.notice-wrap .d2 .p1 {color: #f76f1e; font-size: 28px; margin-top: 12px;}
+.notice-wrap .footer {font-size: 13px; color: #9e9e9e; font-family: "Nanum Gothic", sans-serif; margin-top: 30px; letter-spacing: 0; padding-bottom: 5px;}
+.sm-block {display: block;}
+
+@media (max-width: 767px) {
+	.sm-block {display: inline;}
+	.xs-block {display: block;}
+	
+	.notice-wrap {width: 320px; margin-top: 30px;}
+	.notice-wrap h1 {font-size: 24px;}
+	.notice-wrap .d-figure {background-size: 320px; height: 150px; width: 320px; margin: 0 auto;}
+	.notice-wrap .d-figure > img {width: 224px;}
+	.notice-wrap .d1 .p0 {font-size: 15px;}
+	.notice-wrap .d1 .p1 {font-size: 14px; margin-top: 10px; line-height: 1.4;}
+	
+	.notice-wrap .d2 {padding: 10px; margin-top: 20px;}
+	.notice-wrap .d2 h2 {font-size: 20px;}
+	.notice-wrap .d2 h2 .s1 {font-size: 13px;}
+	.notice-wrap .d2 .p1 {font-size: 16px; margin-top: 5px;}
+	.notice-wrap .footer {font-size: 12.5px; margin-top: 15px;}
+}
+@media (max-width: 360px) {
+	.notice-wrap {width: 320px; margin-top: 40px;}
+	
+}

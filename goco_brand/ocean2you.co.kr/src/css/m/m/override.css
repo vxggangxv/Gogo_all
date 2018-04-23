@@ -1,0 +1,15 @@
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto; width: 300px;}
+.bx-wrapper .bx-viewport {}
+.bx-wrapper img {width: 300px;}
+/*.bx-wrapper .bx-pager {display: none;}*/
+.bx-wrapper .bx-caption {background: rgba(80, 80, 80, 0.55);}
+.bx-wrapper .bx-caption span {padding: 8px 10px; font-size: 13px;}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {bottom: -25px;}
+.bx-wrapper .bx-pager.bx-default-pager a {background: #aeaeae; margin: 0 3px;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {background: #2479F7;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0;}
+/* #slider-prev .bx-prev, #slider-next .bx-next {display: block; width: 16px; height: 36px;}
+.ss2-box .bx-viewport {background: none;} */
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/reset_custom.css">
+	
+    <style>
+        /*body {background: #d1c0a5;}*/
+        img {vertical-align: top; border: none;
+             width:100%;}
+        .wrap {width: 100%; padding-bottom:55px; background: #d1c0a5; position:relative;}
+        .wrap img {width:100%;}
+        .but {width:100%; font-size: 0; position:fixed; height:55px; z-index: 10; bottom:0; display:block;
+			 background:#d1c0a6;}
+		    .but.on {padding-top: 0;}
+        .but a {display: inline-block; background: #3b1e07; color: #fff; font-size: 17px; height: 55px; text-align: center; line-height: 55px;}
+
+        .but .l_bt {width: 29%;}
+        .but .r_bt {width: 70%; margin-left: 1%;}
+        .but .bt {width:100%; position:fixed; padding-bottom:55px;}
+
+        .but a .gt {font-family: "Nanum Gothic", sans-serif; position: relative; left: 5px; font-size: 12px; top: -1px;}
+
+        .bbqwrap {width:100%; background: #fff; position:fixed; bottom:0; height:280px;}
+        .bbqwrap > div {padding:10px 22px; box-sizing: border-box;}
+	    	.bbq {margin-top:10px;}
+        .bbqwrap span, .bbqwrap select {display: inline-block;}
+        .bbqwrap span {position: relative; font-size:16px; width: 80px; text-align: left; box-sizing: border-box; top: 8px;}
+        .bbqwrap h1 {text-align:center; font-size:17px; line-height:2; font-weight: bold; color:#333; background: #f2f2f2; height:35px; border-bottom: 1px solid #cfcfcf;}
+        .date {width: 65%; height: 35px; line-height: 35px; font-size:16px; cursor:pointer; float: right; text-indent: 10px;}
+		    input.date {border:1px solid #a4a4a4; box-sizing:border-box;}
+        .fixed-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none;}     
+        .i-x {position: absolute; right: 5px; top: 5px; width: 30px; height: 30px; display: block;}
+        .i-x:before, .i-x:after {content: ""; position: absolute; display: inline-block; width: 22px; height: 1px; background: #000; top: 12px; right: 0px;}
+        .i-x:before {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .i-x:after {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg); 
+            -o-transform: rotate(-45deg); 
+            transform: rotate(-45deg); 
+        }
+        
+        
+	</style>
+
+ 
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+	$(function() {
+		$(".bbqwrap, #but .bt").hide();
+	
+		$("#but").on('click', '.r_bt', function() {
+			$("#but .l_bt, #but .r_bt").hide();
+			$(".bbqwrap, #but .bt").show();
+			$("#but").addClass('on');
+		});
+        
+		$("#but .r_bt").on('click', function() {
+			$(".fixed-bg").fadeToggle();
+			$(".bbqwrap").slideToggle();
+			$("#but").removeClass('on');
+		});
+
+		$(".i-x").on('click', function() {
+			$(".fixed-bg").fadeToggle();
+			$(".bbqwrap").slideToggle();
+			$("#but").removeClass('on');
+			
+			$("#but .l_bt, #but .r_bt").show();
+			$("#but .bt").hide();
+		});
+
+	});
+</script>
+</head>
+
+<body>
+
+	<div class="wrap">
+		<img src="http://img.go.co.kr/landing/170928_oc2pkg/bbq_pkg.jpg" alt="바베큐 패키지">
+
+        <div class="fixed-bg">
+           
+            <div class="bbqwrap">
+                <h1>바베큐장 예약하기<a class="i-x" href="javascript:;"></a></h1>
+                <div class="bbq clr">
+                    <span>이용일</span>
+                    <input tpye="text" class="date">
+                  <!-- <select name="day" id="day" class="date"> <option value="all" selected="">2017-09-09</option></select> -->
+                </div>
+                <div class="bbq2 clr">
+                    <span>이용시간</span>
+                    <select name="day" id="day2" class="date"> <option value="all" selected="">1부</option></select>
+                </div>
+                <div class="bbq3 clr">
+                    <span>테이블수</span>
+                    <select name="day" id="day3" class="date"> <option value="all" selected="">1</option></select>
+                </div>
+            </div>
+            <!--bbqwrap-->
+        </div>
+
+		<div id="but" class="but">
+			<a href="#" class="l_bt">메인화면</a>
+            <a href="javascript:;" class="r_bt">바베큐장 예약하기<span class="gt">&gt;</span></a>
+			<a href="javascript:;" class="bt">결제하기</a>
+		</div>
+	</div>
+</body>
+</html>														

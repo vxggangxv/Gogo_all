@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*공통 css 묶음*/
+[class*="-sec"] h2, [class*="-sec"] h3 {color: #076ca0; font-weight: 500;}
+[class*="-sec"] h2 {font-size: 20px; border-bottom: 3px solid #076ca0;}
+[class*="-sec"] h2 strong {position: relative; top: 3px; display: inline-block; padding-bottom: 1px; background: #fff; padding-right: 6px; margin-bottom: -1px; letter-spacing: -1px;}
+[class*="-sec"] h3 {font-size: 17px; border-bottom: 2px solid #076ca0; padding-bottom: 10px;}
+[class*="-sec"] h3:before {content: "▶"; display: inline-block; position: relative; top: -2px; margin-right: 6px;font-size: 13px;}
+
+.table-box {position: relative; margin-bottom: 40px;}
+.table-u1 {/*display: table;*/ width: 100%;}
+.table-u1 li {position: relative; display: table-cell; vertical-align: middle; height: 35px; font-size: 14px; line-height: 1.2em; text-align: center; font-weight: 300; border-bottom: 1px solid #e2e2e2;}
+.table-u1 li.th {background: #f2f2f2;}
+.table-l1 {background: #F2F2F2;}
+
+/*영역시작*/
+.intro-sec {}
+.intro-sec h2 {margin-bottom: 10px;}
+.intro-sec .intro-img {margin-bottom: 15px;}
+.intro-sec p[class*="is-p"] {text-align: center; line-height: 1.2em;}
+.intro-sec .is-p1 {font-size: 20px; margin-bottom: 10px; font-weight: 300;}
+.intro-sec .is-p1 em {font-weight: 400;}
+.intro-sec .is-p2 {font-size: 15px; font-weight: 300; letter-spacing: -1px; margin-bottom: 40px;}
+
+.intro-sec .table-l1 {width: 110px;}
+.intro-sec .table-l2 {width: 190px;}
+
+.map-info-box {position: relative; height: 238px; background: #5D5D5D;}
+.map-info-box p {color: #fff; line-height: 1.25em; font-size: 14px; text-align: center;}
+.map-info-box p.nth-1 {padding: 15px 0 10px;}
+.map-info-box p.nth-2 {background: #1E1E1E; padding: 10px 0;}
+.map-info-box p.nth-3 {padding-top: 5px;}
+.map-info-box a.btn {display: block; margin: 0 auto; width: 184px; height: 32px; background: #fff; font-size: 14px; text-align: center; line-height: 2.5em; font-weight: 500;}
+.map-info-box a.btn.nth-1 {margin-top: 20px;}
+.map-info-box a.btn.nth-2 {margin-top: 12px;}
+
+.pyeong-sec {margin-top: 60px;}
+.pyeong-sec h2 {margin-bottom: 10px;}
+.bx-wrap {height: 196px; margin-bottom: 40px;}
+/* .ps-swiper-box .swiper-slide img {position: relative; top: -11px; width: 300px;}
+.ps-swiper-box .swiper-slide:before {content: ""; display: block; position: absolute; bottom: 0; font-size: 13px; height: 23px; line-height: 1.7em; font-weight: 300;}
+.ps-swiper-box .swiper-slide span {display: block; position: absolute; bottom: 0; font-size: 13px; height: 23px; line-height: 1.7em; font-weight: 300;} */
+
+.pyeong-sec .table-l1.th, .pyeong-sec .table-l1 {width: 110px;}
+.pyeong-sec .table-l2, .pyeong-sec .table-l3 {width: 95px;}
+.pyeong-sec .table-l2.th {width: 190px;}
+.pyeong-sec .table-u1 .bor-0 {border-bottom: 0;}
+.pyeong-sec .table-l2.th,
+.pyeong-sec .table-u1:last-child .table-l1, .pyeong-sec .table-u1:last-child .table-l2 {border-bottom: 1px solid #e2e2e2;}
+.pyeong-sec .table-box a.btn {display: block; position: absolute; left: 20px; top: 16px; width: 154px; height: 60px; padding-top: 14px; margin: 0 auto; font-size: 16px; line-height: 1.4em; letter-spacing: 0;}
+
+.question-sec h2 {padding-bottom: 10px;}
+.question-sec .table-box {margin-bottom: 20px;}
+.question-sec .table-l1 {width: 110px;}
+.question-sec .table-l2 {width: 190px; text-align: left;}
+.question-sec input[type="radio"] + label {vertical-align: middle; cursor: pointer;}
+.question-sec input {display: inline-block; margin-left: 15px;}
+.question-sec input.in-txt, .question-sec .table-l2 textarea {appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid #e2e2e2;}
+.question-sec input.in-txt {height: 22px; width: 158px; padding-left: 3px; font-size: 13px; color: #333; box-shadow: none; border-radius: 0; box-shadow: none;}
+.question-sec input.in-txt::-ms-input-placeholder { color: #aeaeae; }
+.question-sec input.in-txt::-webkit-input-placeholder { color: #aeaeae; } 
+.question-sec input.in-txt::-moz-placeholder { color: #aeaeae; } 
+.question-sec input.in-txt::-moz-placeholder { color: #aeaeae; }
+.question-sec .table-l2 textarea {padding: 3px; width: 155px; height: 124px; resize: none; margin-left: 15px; margin-top: 6px; margin-bottom: 4px; font-size: 12px; font-family: "Nanum Gothic", sans-serif;}
+.qs-p1 {height: 24px; width: 100%; text-align: center;}
+.qs-p1 a[class*="btn-"] {display: inline-block; width: 94px; height: 30px; font-size: 14px; line-height: 2em;}
+.qs-p1 a.btn-1 {}
+.qs-p1 a.btn-2 {margin-left: 10px; background: #E1E1E1;}

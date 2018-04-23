@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/reset_custom.css">
+	<style>
+		body {background: #f5e6cf;}
+		img {vertical-align: top; border: none; width:100%;}
+
+		.wrap {width: 100%; padding-bottom:55px; background: #f5e6cf; position:relative;}
+	    .wrap img {width:100%;}
+	    .but {width:100%; font-size:0; position:fixed; height:55px; z-index:10; bottom:0; display: block;
+			 background: #f5e6cf; padding-top: 5px;}
+		.but.on {padding-top: 0;}
+	    .but .l_bt, .r_bt{display: inline-block; background: #d69c65; color:#fff; font-size: 17px; height: 60px; text-align: center; line-height: 60px;}
+		.but .bt {display: inline-block; background: #2c7b9a; color:#fff; font-size: 17px; height: 60px; text-align: center; line-height: 60px;}
+		.but .l_bt {width: 29%;}
+		.but .r_bt {width: 70%; margin-left: 1%;}
+	    .but a .gt {font-family: "Nanum Gothic", sans-serif; position: relative; left: 5px; font-size: 12px; top: -1px;}
+        .but .bt {width:100%; position:relative; font-size:20px;}
+      
+        .seawrap {width:100%; height:100%; background: #fff; position:absolute; bottom:0; height:190px;}
+        .seawrap > div {padding:26px 5px; box-sizing: border-box;}
+        .seawrap span, .seawrap select {display: inline-block;}
+        .seawrap span {position: relative; font-size:18px; width: 95px; text-align: left; padding: 5px 5px; box-sizing: border-box; width:120px;}
+        .seawrap h1 {text-align:center; font-size:18px; font-weight: bold; color:#333; background: #f2f2f2; padding: 12px 20px; border-bottom: 2px #cfcfcf; border-bottom: 1px solid #cfcfcf;}
+        
+        .date {width: 55%; height: 30px; line-height: 50px; text-align:center; font-size:16px; cursor:pointer; float:right; }
+
+        .fixed-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none;}
+        
+        .i-x {position: absolute; right: 5px; top: 2px; width: 20px; height: 20px; display: block;}
+        .i-x:before, .i-x:after {content: ""; position: absolute; display: inline-block; width: 24px; height: 1px; background: #000; top: 21px; right: 0px;}
+        .i-x:before {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .i-x:after {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg); 
+            -o-transform: rotate(-45deg); 
+            transform: rotate(-45deg); 
+        }
+        
+	</style>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+	$(function() {
+		$(".seawrap, #but .bt").hide();
+	
+		$("#but").on('click', '.r_bt', function() {
+			$("#but .l_bt, #but .r_bt").hide();
+			$(".seawrap, #but .bt").show();
+			$("#but").addClass('on');
+		});
+        
+		$("#but .r_bt").on('click', function() {
+			$(".fixed-bg").fadeToggle();
+			$(".seawrap").slideToggle();
+			$("#but").removeClass('on');
+		});
+
+		$(".i-x").on('click', function() {
+			$(".fixed-bg").fadeToggle();
+			$(".seawrap").slideToggle();
+			$("#but").removeClass('on');
+			
+			$("#but .l_bt, #but .r_bt").show();
+			$("#but .bt").hide();
+		});
+
+	});
+</script>	
+	
+</head>
+<body>
+	<div class="wrap">
+		<img src="http://img.go.co.kr/landing/170928_oc2pkg/sea_pkg.jpg" alt="조개캐기 패키지">
+		
+          <div class="fixed-bg">
+            <div class="seawrap">
+                <h1>조개잡이 예약하기<a class="i-x" href="javascript:;"></a></h1>
+                <div class="sea clr">
+                    <span>예약개수</span>
+                    <select name="day" id="day" class="date"> <option value="all" selected="">1</option></select>
+                </div>
+	        </div>
+        </div>
+        
+        <div class="but" id="but">
+            <a href="#" class="l_bt">메인화면</a>
+            <a href="javascript:;" class="r_bt">조개패키지 예약하기 <span class="gt">&gt;</span></a>
+            <a href="javascript:;" class="bt">결제하기</a>
+        </div>
+    </div>
+</body>
+</html>

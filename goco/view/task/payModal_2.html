@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>*** NHN KCP Online Payment System Ver 7.0[HUB Version] ***</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/kcp_style.css">
+<!--	<link rel="stylesheet" type="text/css" href="../../src/css/kcp_style.css">-->
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://static.go.co.kr/js/policy_kcp/path/to/poly-checked.min.js?ver=20180208141552"></script>
+
+<!--
+	<script type="text/javascript" src="http://static.ocean2you.co.kr/js/common_ver2.js?ver=20180208141552"></script>
+	<script type="text/javascript" src="http://static.ocean2you.co.kr/js/all_common.js?ver=20180208141552"></script>
+-->
+	<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+	<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<!--[if lt IE 9]>
+ <script src="http://static.go.co.kr/js/policy_kcp/html5.js"></script>
+ <script src="http://static.go.co.kr/js/policy_kcp/js/respond.min.js"></script>
+ <![endif]-->
+	<script type="text/javascript">
+		$(function() {
+			window.resizeTo('400', '930');
+		});
+	</script>
+	<style>
+		label {
+			cursor: pointer
+		}
+	</style>
+	
+</head>
+
+<body style="position: relative;" oncontextmenu="return false" cz-shortcut-listen="true">
+
+
+	<form name="ssl_form" action="./return.php" method="post" id="ssl_form">
+
+		<!-- KCP 관련 셋팅 -->
+		<input type="hidden" name="card_pay_method" value="SSL">
+		<input type="hidden" name="pay_method" value="CARD">
+		<input type="hidden" name="ordr_idxx" value="cardform5272201802081415525443">
+		<input type="hidden" name="good_name" value="오션뷰 호텔 리노베이션">
+		<input type="hidden" name="good_mny" value="150000">
+		<input type="hidden" name="buyr_name" value="강혜준">
+		<input type="hidden" name="buyr_mail" value="vxggangxv@naver.com">
+		<input type="hidden" name="buyr_tel1" value="010123123">
+		<input type="hidden" name="buyr_tel2" value="010123123">
+		<input type="hidden" name="req_tx" value="pay">
+		<input type="hidden" name="currency" value="">
+		<input type="hidden" name="quotaopt" value="12">
+		<input type="hidden" name="event_sub" value="">
+		<div id="waper">
+			
+			<!--180208 결페창 해더-->
+			<header class="header">
+				<div class="hdArea cf">
+					<img src="http://img.go.co.kr/payModal/billgate_logo.png" alt="로고" class="logo">
+					<span class="s-flt-r f-bd">신용카드 결제</span>
+				</div>
+				<div class="pdtInfoArea">
+					<ul class="infoList cf">
+						<li><span class="s-tit">상품명</span><span class="s-txt">마운틴뷰 콘도</span></li>
+						<li><span class="s-tit">결제금액</span><span class="s-txt">54,000원</span></li>
+						<li><span class="s-tit">결제일시</span><span class="s-txt">2018-02-07</span></li>
+					</ul>
+				</div>
+			</header>
+
+			<div id="container">
+				<ul class="payBox">
+					<li class="card_choiceBox">
+						<p>카드선택</p>
+						<div class="selectbox">
+							<label></label>
+							<select name="card" id="card" class="card_choice">
+                        <option value="">선택</option>
+                        <option value="국민">국민</option>
+                        <option value="롯데">롯데</option>
+                        <option value="현대">현대</option>
+                        <option value="BC">BC</option>
+                        <option value="삼성">삼성</option>
+                        <option value="신한">신한</option>
+                        <option value="하나SK">하나SK</option>
+                        <option value="외환">외환</option>
+                        <option value="롯데">롯데</option>
+                        <option value="NH">NH</option>
+                        
+                        <option value="하나BC">하나BC</option> 
+                        <option value="씨티">씨티</option> 
+                        <option value="우리">우리</option> 
+                        <option value="광주">광주</option> 
+                        <option value="수협">수협</option> 
+                        <option value="전북">전북</option> 
+                        <option value="제주">제주</option> 
+                        <option value="KDB산은">KDB산은</option> 
+                        <option value="저축">저축</option> 
+                        <option value="신협">신협</option> 
+                        <option value="우체국">우체국</option> 
+                        <option value="MG새마을">MG새마을</option> 
+                        <option value="etc">그 외 카드</option>
+                    </select>
+						</div>
+					</li>
+					<li>
+						<p>카드번호</p>
+
+						<span class="card_number"><input type="tel" name="card1" id="card1" maxlength="4" onkeyup="util.checknum('card1', 'card2', '3');" value=""><input type="tel" name="card2" id="card2" maxlength="4" value="" onkeyup="util.checknum('card2', 'card3', '3');"><input type="tel" name="card3" id="card3" maxlength="4" onkeyup="util.checknum('card3', 'card4', '3');" value=""><input type="tel" name="card4" id="card4" maxlength="4" onkeyup="util.checknum('card4', 'cardpwd', '3');" value=""></span>
+
+
+
+					</li>
+					<li>
+						<p>비밀번호</p>
+						<span class="card_password">
+                    <input type="password" maxlength="2" name="cardpwd" id="cardpwd"> **(앞의 두자리)
+                </span>
+					</li>
+					<li>
+						<p>유효기간</p>
+						<div class="selectbox2">
+							<label>2017</label>
+							<select name="expiry_yy">
+                       <option value="17">2017</option>
+						<option value="18">2018</option>
+						<option value="19">2019</option>
+						<option value="20">2020</option>
+						<option value="21">2021</option>
+						<option value="22">2022</option>
+						<option value="23">2023</option>
+						<option value="24">2024</option>
+						<option value="25">2025</option>
+                    </select>
+						</div>
+						<span class="card_expiration">&nbsp;년 &nbsp;&nbsp;</span>
+						<div class="selectbox2">
+							<label>01</label>
+							<select name="expiry_mm">
+                      <option value="01" selected="">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+                    </select>
+						</div>
+						<span class="card_expiration">&nbsp;월</span>
+					</li>
+					<li>
+						<p>카드구분</p>
+						<span class="divide">
+                    <input type="radio" id="card_g1" name="card_gubun" checked="checked" value="1" class="poly-checked"><label for="card_g1" style="cursor:pointer">&nbsp;개인</label>&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="card_g2" name="card_gubun" value="2"><label for="card_g2" style="cursor:pointer">&nbsp;법인</label>
+                </span>
+					</li>
+					<li id="card_g1_tr">
+						<p>생년월일</p><span class="birth"><input type="tel" name="card_g1_num" maxlength="6" id="card_g1_num" onkeyup="util.checknum('card_g1_num', 'quota', '5');"></span></li>
+					<li id="card_g2_tr" style="display:none;">
+						<p>사업자번호</p><span class="birth"><input type="number" name="card_g2_num" maxlength="10" onkeyup="util.checknum('card_g2_num', 'quota', '9');"></span></li>
+
+					<li class="installment_wraper">
+						<p>할부선택</p>
+						<div class="selectbox3">
+							<label>일시불</label>
+							<select name="quota" class="installment" id="quota">
+                        <option value="00" selected="">일시불</option>
+                        <option value="02">2개월</option><option value="03">3개월</option><option value="04">4개월</option><option value="05">5개월</option><option value="06">6개월</option><option value="07">7개월</option><option value="08">8개월</option><option value="09">9개월</option><option value="10">10개월</option><option value="11">11개월</option><option value="12">12개월</option>                    </select>
+						</div>
+						<span class="red_pontTxt">법인카드는 할부적용 불가</span>
+					</li>
+				</ul>
+				<div class="payment_btn">
+					<input type="button" class="cancel" value="취소" onclick="window.close();">
+					<input type="button" class="payment" value="확인" onclick="jsf__pay_card(this.form);">
+				</div>
+			</div>
+			
+			<!--180208 결제창 푸터-->
+			<footer class="footer">
+				<div class="ftArea cf">
+					<img src="http://img.go.co.kr/payModal/galaxia_logo.png" alt="겔럭시아로고" class="fLogo">
+					<address>
+						고객센터 1566-0123 / center@billgate.net<br>
+						결제내역조회 www.billgate.net
+					</address>
+				</div>
+			</footer>
+		</div>
+		<!--waper-->
+
+
+	</form>
+
+	<div id="ready_wrap" style="POSITION:absolute;z-index:99999999999;display:none;width:100%;height:100%;top:0;left:0;background:#000000;opacity:0.7;border:1px solid #ff0000;text-align:center">
+		<div id="ready_img" style="z-index:99999999999;text-align:center;vertical-align:middle;">
+			<img src="http://img.go.co.kr/pay_loading.png" style="padding-top:250px">
+		</div>
+	</div>
+
+
+</body>
+
+</html>

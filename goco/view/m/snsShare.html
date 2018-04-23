@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170804092500" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170804092500" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170804092500" type="text/css" />
+
+	<!-- 모든사이트 통합 css -->
+<!--	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css" />-->
+	<link rel="stylesheet" href="../../../src/css/totalmobile.css" type="text/css" />
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+	<div id="wrapper" data-role="page">
+		<div id="scroll_box">
+			
+			<section class="pop-snsShare">
+				<header class="pop-top">
+					<em>공유하기</em>
+					<a href="javascript:;" onclick="$('.pop-snsShare, #overlay').hide();" class="a-i-x a-x"></a>
+				</header>
+				<div class="pop-main">
+					<ul class="list">
+						<li class="itm"><a href=""><img src="http://img.go.co.kr/mobile/sns/icon_kakao.png" alt="카카오톡">카카오톡으로 보내기</a></li>
+						<li class="itm"><a href=""><img src="http://img.go.co.kr/mobile/sns/icon_sms.png" alt="문자">문자메시지로 보내기</a></li>
+						<li class="itm"><a href=""><img src="http://img.go.co.kr/mobile/sns/icon_link.png" alt="링크">링크 복사하기</a></li>
+					</ul>
+				</div>
+			</section>
+			<script>
+				$(function() {
+					$("#overlay").click(function() {
+						$('.pop-snsShare, #overlay').hide();
+					});
+				});
+			</script>	
+		</div>
+	</div>
+
+	
+	<div id="overlay" style="background-color: rgb(0, 0, 0); opacity: 0.7; width: 100%; height: 3028px;"></div>
+</body>
+
+</html>

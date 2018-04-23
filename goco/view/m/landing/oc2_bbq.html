@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>오션투유 투숙 고객 대상 바베큐장 대여 할인</title>
+
+	<!--<meta http-equiv="Cache-Control" content="No-Cache">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="expire" content="-1">-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<!--- 검색시 달력에서 이용 ---->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery_ui.js"></script>
+
+	<!--- 달력 한글화 --->
+	<!-- Include Date Range Picker -->
+	<script type="text/javascript" src="http://static.go.co.kr/js/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/daterangepicker.css
+	">
+	<style src="http://code.jquery.com/jquery-1.11.2.min.js"></style>
+	<link rel="stylesheet" href="http://static.go.co.kr/css/landing/landing.css">
+	<!--<link rel="stylesheet" href="../../../src/css/landing/landing.css">-->
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<img src="http://img.go.co.kr/barbecue_foodticket/img_visual_freeEvent_option.jpg?ver=20171012102308" alt="">
+		<div class="btn_wrap">
+			<ul>
+				<li><a href="#" class="btn01">아메리칸 뷔페 신청하기</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 예약하기 -->
+	<div id="Reservation" class="pop_layer" style="display: none;">
+		<div class="pop_area">
+			<strong class="pop_title">아메리칸 뷔페 신청하기</strong>
+			<div style="font-size:13px;margin-left:20px;margin-top:5px">
+				<span style="color:red;">
+				* 접수안내<br>
+				- 무료1인이 포함된 인원을 선택하십시오.<br>
+				- 결제시 1인 조식 금액은 결제되지 않습니다.<br>
+				- 예약자 기준으로 1회 구매가능합니다.
+				</span>
+			</div>
+			<div class="input_area">
+				<form name="rform" id="rform" method="post" action="./event_pay.php?bbq_chk=Y">
+					<input type="hidden" name="userid" id="userid" value="">
+					<input type="hidden" name="p_no" id="p_no" value="517">
+					<input type="hidden" name="r_no" id="r_no" value="257712">
+					<input type="hidden" name="paygubun" id="paygubun" value="ticket">
+					<input type="hidden" name="options" value="breakfast_171011">
+					<input type="hidden" name="total_cnt" id="total_cnt" value="2">
+					<input type="hidden" name="type_gubun" id="type_gubun" value="3">
+
+					<table>
+						<colgroup>
+							<col style="width:*;">
+							<col style="width:140px;"> </colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">
+									<label for="sdate" class="lb_txt">조식날짜</label>
+								</th>
+								<td>
+									<div class="select_wrapper">
+										<input type="text" name="sdate" id="sdate" placeholder="날짜선택" style="width:100%" value="" readonly="" class="hasDatepicker">
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row">
+									<label for="ticket_num" class="lb_txt">조식 성인</label>
+									<input type="hidden" name="ticket_num[]" id="ticket_num0" value="47">
+								</th>
+								<td>
+									<div class="select_wrapper">
+										<select name="tcount[]" id="tcount0">
+																								<option value="0">0명</option>
+																								<option value="1">1명</option>
+																								<option value="2" selected="">2명</option>
+																								<option value="3">3명</option>
+																								<option value="4">4명</option>
+																								<option value="5">5명</option>
+																								<option value="6">6명</option>
+																								<option value="7">7명</option>
+																								<option value="8">8명</option>
+																								<option value="9">9명</option>
+																								<option value="10">10명</option>
+																							</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<label for="ticket_num" class="lb_txt">조식 소아</label>
+									<input type="hidden" name="ticket_num[]" id="ticket_num1" value="48">
+								</th>
+								<td>
+									<div class="select_wrapper">
+										<select name="tcount[]" id="tcount1">
+																								<option value="0">0명</option>
+																								<option value="1">1명</option>
+																								<option value="2">2명</option>
+																								<option value="3">3명</option>
+																								<option value="4">4명</option>
+																								<option value="5">5명</option>
+																								<option value="6">6명</option>
+																								<option value="7">7명</option>
+																								<option value="8">8명</option>
+																								<option value="9">9명</option>
+																								<option value="10">10명</option>
+																							</select>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row">
+									<label for="username" class="lb_txt">예약자명</label>
+								</th>
+								<td>
+									<input type="text" name="name" id="username" style="width:100%;" value="">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<label for="tel" class="lb_txt">연락처</label>
+								</th>
+								<td>
+									<input type="text" name="tel" id="tel" maxlength="13" style="width:100%;" value="">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<!--171012 결제금액 추가-->
+			<div class="prc-box clr">
+				<span class="s1">정상가 <s>24,000원</s></span>
+				<span class="s2">결제금액 <span class="c1">9,900</span>원</span>
+			</div>
+			<div class="pop_btn">
+				<a href="javascript:form_chk();">
+				아메리칸 뷔페 구매하기				</a>
+			</div>
+			<a href="#" class="pop_close"><img src="http://img.go.co.kr/barbecue/btn_pop_close.gif" alt=""></a>
+		</div>
+	</div>
+	<!-- // 예약하기 -->
+	<!-- 예약사항 조회 -->
+	<div id="Inquiry" class="pop_layer">
+		<div class="pop_area">
+			<strong class="pop_title">예약사항 조회</strong>
+			<div class="input_area">
+				<table>
+					<colgroup>
+						<col style="width:75px;">
+						<col style="width:*;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<label for="Inquiry_name" class="lb_txt">예약자명</label>
+							</th>
+							<td>
+								<input type="text" id="Inquiry_name" placeholder="홍길동" style="width:100%;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<label for="Inquiry_Phone" class="lb_txt">연락처</label>
+							</th>
+							<td>
+								<input type="text" id="Inquiry_Phone" placeholder="010-1234-5678" style="width:100%;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pop_btn">
+				<a href="#">결제하기</a>
+			</div>
+			<a href="#" class="pop_close"><img src="http://img.go.co.kr/barbecue/btn_pop_close.gif" alt=""></a>
+		</div>
+	</div>
+	<!-- // 예약사항조회 -->
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>상세피이지 로고 추가</title>
+
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css" />
+<!--    <link rel="stylesheet" type="text/css" href="../../../src/css/totalweb.css" />-->
+
+    <link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- 폰트어썸 추가 -->
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+	
+	<style>
+		/*임시 스타일*/
+		body {position: absolute; width: 100%; height: 100%;}
+		.noover {padding-top: 100px; width: 100%; height: 100%; background: #fff;}
+	</style>
+</head>
+<body>
+
+	<div id="wrapper" class="noover">
+		
+		<!--180226 clr 클래스 추가, 3만원 쿠폰받기 추가-->
+		<div id="reserveTitle" class="reserveTitle">실시간 요금정보/예약하기
+
+			<a href="javascript:;" class="pull-right coupon-3">
+				<img src="http://img.go.co.kr/coupon.jpg" alt="쿠폰"> <span>3만원 쿠폰받기</span> <img src="http://img.go.co.kr/pic_down.jpg" alt="다운">
+				<span class="triangle"></span>
+			</a>
+		</div>
+		
+	</div>
+	
+	<!--180226 3만원 쿠폰 리스트 팝업-->
+	<div class="wrap-pop" id="wrap-pop">
+		<div class="clr"></div>
+		<div class="backDropBg"></div>
+		
+		<div class="pop-cp3List clr">
+			<div class="header-pop">
+				<strong>3만원 쿠폰팩 쿠폰리스트</strong>
+				<a href="javascript:;" class="a-i-x a-x"></a>
+			</div>
+			<div class="main-pop">
+				<table class="cpTb">
+					<colgroup>
+						<col class="nth-1">
+						<col class="nth-2">
+						<col class="nth-3">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>쿠폰명</th>
+							<th>할인금액</th>
+							<th>할인대상</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="cl-1">앱정용 10,000원 쿠폰</span></td>
+							<td><span class="fz-15">10,000원 할인</span></td>
+							<td>150,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱전용 8,000원 쿠폰</span></td>
+							<td><span class="fz-15">8,000원 할인</span></td>
+							<td>110,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱전용 5,000원 쿠폰</span></td>
+							<td><span class="fz-15">5,000 원 할인</span></td>
+							<td>90,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱 첫결제 할인 쿠폰</span></td>
+							<td><span class="fz-15">5,000원 할인</span></td>
+							<td>80,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱전용 3,000원 쿠폰</span></td>
+							<td><span class="fz-15">3,000원 할인</span></td>
+							<td>60,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱전용 2,000원 쿠폰</span></td>
+							<td><span class="fz-15">2,000원 할인</span></td>
+							<td>30,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱전용 1,000원 쿠폰</span></td>
+							<td><span class="fz-15">1,000원 할인</span></td>
+							<td>20,000원 이상 구매시</td>
+						</tr>
+						<tr>
+							<td><span class="cl-1">앱전용 1,000원 쿠폰</span></td>
+							<td><span class="fz-15">1,000원 할인</span></td>
+							<td>1,100원 이상 구매시</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="area-btn">
+					<a href="">3만원 쿠폰팩 한번에 내려받기 <span class="arr"></span></a>
+				</div>
+				<div class="area-txt">
+					※ 쿠폰발급은 정해진 수량에 따라 선착순 마감될 수 있습니다.<br>
+					※ 발급완료된 쿠폰의 상세한 정보는 마이인포 > 할인쿠폰에서 확인가능 합니다.
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$(function() {
+
+				fixedPop(".coupon-3", ".pop-cp3List", ".pop-cp3List .a-x");
+
+			});
+
+			// 고정 레이어 팝업 띄우기
+			function fixedPop(op, itm, cls) {
+				var popOpen = $(op),
+					pop = $(itm),
+					popCls = $(cls),
+					popWrap = $("#wrap-pop");
+
+				popOpen.on("click", function() {
+					popWrap.css("z-index", "100");
+					var wd = pop.width();
+					var ht = pop.height();
+					pop.css({
+						display: "block",
+						position: "fixed",
+						left: "50%",
+						marginLeft: -wd/2,
+						top: "50%",
+						marginTop: -ht/2
+					});
+					$("body").css({
+						overflow: "hidden"
+					});
+					return false;
+				});
+
+				popCls.on("click", function() {
+					popWrap.css("z-index", "-1");
+					pop.css({
+						display: "none"
+					});
+					$("body").css({
+						overflow: "auto"
+					});
+				});
+
+			}
+		</script>
+	</div>
+	
+	
+</body>

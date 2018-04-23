@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+<meta http-equiv="Cache-Control" content="No-Cache"/>
+<meta http-equiv="Pragma" content="No-Cache"/>
+<meta http-equiv="expire" content="-1">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
+<link rel="apple-touch-icon" href="http://img.go.co.kr/mobile/icon.png" /> 
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170131152628" type="text/css"/>
+<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170131152628" type="text/css"/>
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170131152628" type="text/css"/>
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css"/>
+<meta name="robots" content="ALL" />
+<meta name="author" content="GO.CO.KR"/>
+<meta name="description" content=" 고코 GO.CO.KR"/>
+<meta name="keywords" content=" 고코 GO.CO.KR"/>
+<meta name="classification" content="고코 GO.CO.KR"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!--- 검색시 달력에서 이용 ---->
+<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--- 달력 한글화 --->
+<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+
+
+	<!-- Android icon -->
+	<!--<link rel="shortcut icon" href="http://img.go.co.kr/icon_goco128x128.ico" type="image/x-icon" />-->
+	<link rel="shortcut icon" href="http://img.go.co.kr/mobile/icon_goco72x72.png" type="image/x-icon" />
+	<!-- iPhone icon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="http://img.go.co.kr/mobile/icon_goco57x57.png" />
+	<!-- iPad icon -->
+	<link rel="apple-touch-icon" sizes="72x72" href="http://img.go.co.kr/mobile/icon_goco72x72.png" />
+	<!-- iPhone icon(Retina) -->
+	<link rel="apple-touch-icon" sizes="114x114" href="http://img.go.co.kr/mobile/icon_goco114x114.png" />
+	<!-- iPad icon(Retina) -->
+	<link rel="apple-touch-icon" sizes="144x144" href="http://img.go.co.kr/mobile/icon_goco144x144.png" />
+<script type="text/javascript">
+$( document ).on( "mobileinit", function() {
+  $.extend( $.mobile , {
+	autoInitializePage: false,
+  });
+});
+
+// iOS 10 버전에서 user-scalable=0 가 안먹음
+document.documentElement.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
+
+</script>
+
+<script>
+var burl = "go.co.kr";
+var agent = "M";
+
+/* 쿠키 60분 */
+var date = new Date(); 
+var minutes = 60; 
+date.setTime(date.getTime() + (minutes * 60 * 1000)); 
+</script>
+<!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>--->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20170131152628"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/common_ver2.js?ver=20170131152628"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/iscroll.js?ver=20170131152628"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="http://static.go.co.kr/js/jquery.raty.js"></script>
+
+<!--- 리스트페이지에서 쓸 스크립트---->
+<script type="text/javascript" src="http://static.go.co.kr/js/swiper.min.js?ver=20170131152628" ></script>
+<!--- 리스트페이지에서 쓸 스크립트---->
+
+<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+
+<script src="http://static.go.co.kr/js/bookmark.js?ver=1485843988"></script>
+
+<script language='javascript'>document.title = '모바일 고코투어';</script>
+</head>
+<body>
+	<div id="wrapper" data-role="page">
+		<div id="scroll_box">
+
+		<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+			<!--- 서브페이지 상단 -->
+			<div id="headTitle"><span class="back"><a href="javascript:history.back(-1)"><img src="http://img.go.co.kr/mobile/btn_back.png" width="47" height="15" alt="뒤로"></a></span>결제</div>
+		</div>
+		<div id="top_box_bottom" style="height: 46px;"></div>
+		<script>
+			$("#top_box_bottom").css("height", $("#top_box").height() + "px");
+		</script>
+
+
+		<form name="payform" id="payform" method="post" action="http://pay.go.co.kr/pay_total.php">
+			<input type="hidden" name="estring" value="eyJwX25vIjoiNTE3IiwiZ3VidW4iOiJSIiwicmVzX3R5cGUyIjoiYWxsIiwicm9vbV9jbnQiOiIxIiwiaHNlbGRhdGUiOiIyMDE3LTA5LTIzIiwibnNlbGRhdGUiOiIyMDE3LTA5LTI2IiwiYWJyX3ZhbCI6IiIsInBlcnNvbiI6IjIiLCJwZXJzb25fYyI6IiIsIm5pZ2h0IjoiMyIsInNhbmciOiIzNTczNSIsImJlZHR5cGUiOiJcdWNjYjRcdWQwNmNcdWM3NzhcdWMyZGMgXHVkNjA0XHVjOWMwXHViYzMwXHVjODE1IiwiZmluYWxfcHJpY2UiOiIzMDYwMDAiLCJub3JtYWxfcHJpY2UiOiI5OTAwMDAiLCJzaG93X3ByaWNlIjoiMzA2MDAwIiwicm9vbWNudF91cHBlciI6WyIzMDYwMDAiLCIzMDYwMDAiLCIzMDYwMDAiLCIwLjEiLCJOfE58TiIsIjJ8M3wzIl19"><input type="hidden" name="payid" value="Z28yMDE3MDkwODE2NTExNDcwNzcw"><input type="hidden" name="pid" value="go_home"><input type="hidden" name="ad1" value="X"><input type="hidden" name="ad2" value="X"><input type="hidden" name="mode" value="reserve_final"><input type="hidden" name="money" value="306,000"><input type="hidden" name="user_flag" value="M"><input type="hidden" name="res_type" value="G"><input type="hidden" name="userid" value="devtest1"><input type="hidden" name="mcinfo" value=""><input type="hidden" name="use_mile" value=""><input type="hidden" name="use_coupon" value=""><input type="hidden" name="coupon_price" value=""><input type="hidden" name="coupon_hidden" value=""><input type="hidden" name="mc_price" value=""><input type="hidden" name="hotel_name" value="★오션투유리조트 속초설악비치 호텔앤콘도 "><input type="hidden" name="pname" value="오션뷰 콘도 리노베이션"><input type="hidden" name="pnos" value="517"><input type="hidden" name="roomcnt_upper" value="Array"><input type="hidden" name="reserve_name" value="지하테스트"><input type="hidden" name="stayname" value="지하테스트"><input type="hidden" name="tel" value="010-7925-0214"><input type="hidden" name="tel1" value="010"><input type="hidden" name="tel2" value="7925"><input type="hidden" name="tel3" value="0214"><input type="hidden" name="email" value="ein214@naver.com"><input type="hidden" name="email1" value="ein214"><input type="hidden" name="email2" value="naver.com"><input type="hidden" name="memo" value=""><input type="hidden" name="pay_type" id="pay_type">
+
+			<input type="hidden" name="roomcnt_upper[]" value="306000">
+			<input type="hidden" name="roomcnt_upper[]" value="306000">
+			<input type="hidden" name="roomcnt_upper[]" value="306000">
+			<input type="hidden" name="roomcnt_upper[]" value="0.1">
+			<input type="hidden" name="roomcnt_upper[]" value="N|N|N">
+			<input type="hidden" name="roomcnt_upper[]" value="2|3|3">
+
+
+		</form>
+			
+		<!--<style>
+			.ocImgBox {position: relative; width: 100%;}
+			.ocImgBox .ig-1 {width: 100%;}	
+			.ocImgBox figure {width: 90%; margin: 10px auto -15px; padding-left: 15px; box-sizing: border-box;}
+			.ocImgBox .ig-2 {width: 190px;}	
+		</style>-->
+			
+		<!--170908오션투유결제선택이미지추가-->
+		<div class="ocImgBox">
+			<img class="ig-1" src="http://img.go.co.kr/event/event2468_2/oc2_img_01.jpg" alt="오션투유이미지">
+			<figure>
+				<img class="ig-2" src="http://img.go.co.kr/event/event2468_2/txt_pay.png" alt="결제방식을 선택해주세요">
+			</figure>
+		</div>
+			
+		<!--End-->
+
+		<div class="payway">
+			<ul>
+
+				<li>
+					<a href="#" id="cardform_mobile" class="paytype">
+						<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_card02.png" width="25"></span> &nbsp;신용카드(개인,법인)
+						<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" height="17"></span>
+						<table class="comment">
+							<colgroup>
+								<col width="5%">
+								<col width="95%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>-</th>
+									<td><span class="point"> 카드정보 입력만으로 결제</span> 가능</td>
+								</tr>
+								<tr>
+									<th>-</th>
+									<td>신용카드, 체크카드, 법인카드 결제가능</td>
+								</tr>
+							</tbody>
+						</table>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="card_mobile" class="paytype">
+						<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_card01.png" width="25"></span> &nbsp;신용카드(개인ISP인증,해외)
+						<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" height="17"></span>
+						<table class="comment">
+							<colgroup>
+								<col width="5%">
+								<col width="95%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>-</th>
+									<td>모바일 ISP 인증서 필요</td>
+								</tr>
+								<tr>
+									<th>-</th>
+									<td>30만원이상 공인인증서 필요</td>
+								</tr>
+							</tbody>
+						</table>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" id="hp_mobile" class="paytype">
+						<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_hp.png" width="25"></span> &nbsp;휴대폰결제
+						<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" height="17"></span>
+						<table class="comment">
+							<colgroup>
+								<col width="5%">
+								<col width="95%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>-</th>
+									<td>개인별 한도금액이 다를 수 있습니다.</td>
+								</tr>
+								<tr>
+									<th>-</th>
+									<td>한도초과시 이통사에 이용한도를 조정하세요.</td>
+								</tr>
+							</tbody>
+						</table>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="va_mobile" class="paytype">
+						<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_bank.png" width="25"></span> &nbsp;무통장입금(가상계좌)
+						<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" height="17"></span>
+						<table class="comment">
+							<colgroup>
+								<col width="5%">
+								<col width="95%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>-</th>
+									<td><span class="point">예약자자명과 입금자명이 동일</span>해야 합니다.</td>
+								</tr>
+								<tr>
+									<th>-</th>
+									<td><span class="point">입금 확인 후</span> 예약이 진행됩니다.</td>
+								</tr>
+							</tbody>
+						</table>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" id="payco" class="paytype" style="height:31px">
+						<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_p.png" width="25"></span> &nbsp;페이코
+						<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" style="position: relative; height:17px; top:4px;"></span>
+					</a>
+				</li>
+
+				<!-- 네이버페이로 결제 추가 -->
+				<li>
+					<a href="#" id="npay_mobile" class="paytype">
+						<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_npay.png" width="25"></span> &nbsp;네이버페이로 결제
+						<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" style="position: relative; height:17px; top:4px;"></span>
+
+						<table class="comment">
+							<colgroup>
+								<col width="5%">
+								<col width="95%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>-</th>
+									<td>비밀번호 입력만으로 간편하게 결제 가능</td>
+								</tr>
+								<tr>
+									<th>-</th>
+									<td>카드,&nbsp;계좌, 네이버페이 포인트 결제 가능</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</a>
+				</li>
+
+
+
+				<!---
+					<li>
+						<a href="#" id="spay" class="paytype" style="height:31px">
+							<span class="left_img"><img src="http://img.go.co.kr/mobile/icon_sp.png" width="25"></span>
+							&nbsp;삼성페이로 결제
+							<span class="right_img"><img src="http://img.go.co.kr/mobile/btn_more3.png" style="position: relative; height:17px; top:4px;"></span>
+						</a>
+					</li>
+					--->
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$(".paytype").click(function(e) {
+					e.preventDefault();
+					var id = $(this).attr("id");
+
+
+					$("#pay_type").val(id);
+
+					$("#payform").submit();
+				});
+			});
+		</script>
+
+		</div>
+	</div>
+</body>
+</html>

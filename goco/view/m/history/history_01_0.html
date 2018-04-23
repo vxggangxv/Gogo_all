@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<title>문서 제목</title>
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css" />
+	
+	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css">-->
+	<link rel="stylesheet" href="../../../src/css/m/history/history_m.css">
+	<link rel="stylesheet" href="../../../src/css/totalmobile.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>
+	<style>
+		.default {
+			bottom: 0;
+		}
+		.fixed {
+			bottom: -80px;
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="scroll_box">
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!-- 서브페이지 상단 -->
+				<div id="headTitle_box">
+					<div id="headTitle">
+						<span class="back"><a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a></span>
+						예약내역
+						<!--20170720변경내용_입장권등록아이콘추가-->
+						<a href="" class="i-tickets"><img src="http://img.go.co.kr/mobile/i_tickets.png" alt="입장권등록"></a>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="history-tab-01">
+					<ul class="clr">
+						<li class="on"><a href="./history_01_1.html">이용가능</a></li>
+						<li><a href="./history_01_2.html">이용완료</a></li>
+						<li><a href="./history_01_3.html">환불/취소</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="top_box_bottom" style="height: 80px;"></div>
+
+			<div class="history01-list">
+
+				
+				<!--변경내용170918 -->
+				<img src="http://img.go.co.kr/mobile/m_price_all_banner_fxd.jpg" style="width: 100%; height: 50px;" onclick="javascript:all_price();">
+				<div class="nb-wrap type02">
+					<div class="non-box">
+						<img src="http://img.go.co.kr/mobile/h_1.png" alt="느낌표">
+						<p class="p0">예약내역이 없습니다.</p>
+						<p class="p1" onclick="layer_show();">
+							구매하신 예약건이 보이지 않는다면,<br>
+							<span class="c-1">여기를 클릭</span>하여 확인하세요.
+						</p>
+					</div>
+					
+					<div class="non-btn-area"><a href="" class="regist">입장권 등록하기</a><a class="reserv" href="">예약하러 가기</a></div>
+				</div>
+			</div>
+			
+		
+			
+			<!--변경내용170918 -->
+			<div id="mypage">
+				<div id="box" class="type02">
+
+					<div class="my_middle0">
+						<ul>
+							<li class="my_box_1" onclick="location.href='http://m.go.co.kr/home/member/?dd=Sws5TzdVKg=='">
+								<a href="#">
+									<span class="text_1" style="color:#dc2c2c;">4건<br></span>
+									<span class="text_2">예약내역</span>
+								</a>
+							</li>
+							<li class="my_box_2" onclick="location.href='http://m.go.co.kr/home/member/?dd=RBcsRj9BO3w2F01eITZGLBQ='">
+								<a href="#">
+								  <span class="text_1" style="color:#dc2c2c;">1건<br></span>
+								  <span class="text_2">찜목록</span>
+								</a>
+							</li> 
+							<li class="my_box_3" onclick="location.href='http://m.go.co.kr/home/member/?dd=ShE1UzFIAU8pDVx2CCVRbA=='">
+								<a href="#">
+								  <span class="text_1" style="color:#dc2c2c;">2,078원<br></span>
+									<span class="text_2">적립금</span>
+								</a>
+							</li>
+							<li class="my_box_4" onclick="location.href='http://m.go.co.kr/home/member/?dd=ShE1UzFIAU8pDVx2CCVRbA=='">
+								<a href="#">
+									<span class="text_1" style="color:#dc2c2c;">0장<br></span>
+									<span class="text_2">할인쿠폰</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="my_middle type02">
+						<ul>                                  
+							<li class="my_box_4" onclick="location.href='http://m.go.co.kr/home/landing/?dd=TAglTSp5Kkw0H0Q='">
+								<a href="#">
+									<span class="text_3">고코투어 이벤트</span>
+									<span class="c-1">12개</span>
+								</a>
+							</li>
+							<li class="my_box_5" onclick="location.href='http://m.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl'">
+								 <a href="#">
+									 <span class="text_3">예약변경/예약취소<br></span>
+								 </a>
+							</li>                                         
+							<li class="my_box_6" onclick="location.href='http://m.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl'">
+								<a href="#">
+									<span class="text_3">1:1문의하기<br></span>
+								</a>
+							</li>  
+							<li class="my_box_5" onclick="">
+								 <a href="#">
+									 <span class="text_3">최근 본 시설<br></span>
+								 </a>
+							</li>                                 
+						</ul>
+					</div>
+
+					<div class="my_bottom type02">
+						<ul>
+							<li style="width: 100%; border-bottom: 1px solid #ececec; box-sizing: border-box; display: block; padding:8px 0 8px 0; background-color:#f1f1f1;"></li>
+							<li onclick="location.href='http://m.go.co.kr/home/landing/?dd=TwwpRjBCLQ=='">
+								<a href="#">친구에게 할인쿠폰 선물하세요 <img class="i_cp" src="http://img.go.co.kr/mobile/i_cp5000.png" alt="할인쿠폰"></a>
+							</li>
+							<li style="width: 100%; border-bottom: 1px solid #ececec; box-sizing: border-box; display: block; padding:28px 0 28px 0; background-color:#f1f1f1;">
+								<img src="http://img.go.co.kr/mobile/my_b_logo_4.png" width="100" alt="고코로고">
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>	
+			
+			
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/* ¸¶Áø°ú ÆÐµùÀÇ ÃÊ±âÈ­ */
+a, abbr, acronym, address, 
+b, blockquote, big, body,
+center, caption, cite, code, command,
+ dd, del, dfn, dl, div, dt, 
+em, embed,
+fieldset, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img,
+label, legend, li, 
+object, ol,
+p, pre, 
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, 
+u, ul, 
+var { margin:0; padding:0}
+
+/* Çì´õ ÆùÆ® »çÀÌÁî ÃÊ±âÈ­ */
+h1,h2,h3,h4,h5,h6 {font-size:100% }
+
+
+/* ¸®½ºÆ®ÀÇ ½ºÅ¸ÀÏ Á¦°Å */
+ol, ul {list-style:none}
+
+
+/* ÆùÆ® °­Á¶ Æ¯¼º ÃÊ±âÈ­ */
+address, caption, cite, code, dfn, em, 
+strong, th, var {font-style :normal; font-weight:normal}
+
+
+/* Å×ÀÌºí ½ºÅ¸ÀÏ ÃÊ±âÈ­ */
+table {border-collapse:collapse; border-spacing:0}
+
+
+/* ÀÌ¹ÌÁö ¹× ÇÊµå¼Â¿¡¼­ º¸´õÇ¥½Ã ÃÊ±âÈ­ */
+fieldset, img {border:0}
+
+img, input, button, select, textarea {margin:0; padding:0; vertical-align:middle}
+
+
+/* Ä¸¼Ç°ú Å×ÀÌºíÇì´õ ÅØ½ºÆ® Á¤·Ä ÃÊ±âÈ­ */
+caption, th {text-align:left }
+
+
+/* ÀÎ¿ë±¸ Ç¥½Ã ÃÊ±âÈ­ */
+q:before, q:after {content :''} 
+
+/* hidden_class */
+.hidden {width:0; height:0; margin:0; padding:0; overflow:hidden; line-height:0; font-size:0; visibility:hidden; position:absolute; left:0; top:0}
+
+.clr:before, .clr:after {content: ""; display: block;}
+.clr:after {clear: both;}

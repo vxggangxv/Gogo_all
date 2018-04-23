@@ -16,15 +16,32 @@
 .f-area .f-top .family-site .site li a:hover {font-weight:bold;}
 .f-area .f-bottom {overflow:hidden; position:relative; min-height:260px; padding-top:30px; border-top:1px solid #505050;}
 .f-area .f-bottom .f_logo {float:left;}
-.f-area .f-bottom .address {float:left; margin-left:40px;}
-.f-area .f-bottom .address p {margin-bottom:10px; font-size:13px;}
-.f-area .f-bottom .address p.copy {color:#7f7f7f; letter-spacing:-0.3px;}
-.f-area .f-bottom .address p.store {}
+.f-area .f-bottom .address {float:left; margin-left:40px; font-size: 14px; line-height: 1.5; letter-spacing: -0.2px;}
+.f-area .f-bottom .address p {}
+.f-area .f-bottom .address p.copy {color:#7f7f7f; letter-spacing:-0.3px; font-size: 13px; margin-top: 5px;}
+.f-area .f-bottom .address p.store {margin-top: 15px;}
 .f-area .f-bottom .address p.store > a {margin-left: 10px;}
 .f-area .f-bottom .address p.store > a:first-child {margin-left: 0;}
 .f-area .f-bottom .address p strong {color:#cdcdcd; font-size:15px;}
 .f-area .f-bottom .address p a {margin-left:5px; vertical-align:middle;}
 .f-area .f-bottom .address p span {color:#a3a3a3; vertical-align:middle;}
+
+.f-area .f-bottom .address .mgl {position: relative; width: 1px; height: 12px; background: #a9a9a9; margin: 0 8px; display: inline-block; top: -1px;}
+.f-area .f-bottom .cust-box {position: absolute; width: 266px; /* height: 109px; */ border: 1px solid #7f7f7f; right: 0; top: 55px; box-sizing: border-box; padding: 5px 8px; color: #a4a4a4; font-size: 16px; letter-spacing: -0.5px;}
+.f-area .f-bottom .cust-box .p-0 {font-size: 17px; font-weight: 700;}
+.f-area .f-bottom .cust-box .p-0 > img {position: relative; top: -1px; margin-right: 6px;}
+.f-area .f-bottom .cust-box .p-1 {color: #898989;}
+.f-area .f-bottom .cust-box .p-2 {}
+.f-area .f-bottom .cust-box .a-btn {position: absolute; top: 34px; right: 10px; width: 67px; height: 64px; background: #9c9c9c; font-size: 16px; color: #323232; display: block; text-align: center; padding-top: 14px; box-sizing: border-box; line-height: 1.3;}
+
+.f-area .f-bottom .four-list {position:absolute; right:0; bottom: 20px; font-size:0;}
+.f-area .f-bottom .four-list a, .f-area .f-bottom .four-list img {margin-left:10px;}
+
+
+/* 180221_메일->문의하기 변경건 디자인 수정_다솜 */
+.f-area .f-bottom .customer li.f_mail strong.con-type2 {display:inline-block; margin-top:15px; font-size:22px; letter-spacing:0;}
+
+/* 고코 관리자용 */
 .f-area .f-bottom .customer {float:right;}
 .f-area .f-bottom .customer li {width:190px; height:70px; margin-bottom:10px; padding:10px 0 0 84px;}
 .f-area .f-bottom .customer li.f_call {background:url('http://img.go.co.kr/f_ico_call.gif') no-repeat 20px 15px #414141;}
@@ -33,5 +50,9 @@
 .f-area .f-bottom .customer li strong {color:#a4a4a4;}
 .f-area .f-bottom .customer li.f_call strong {font-size:38px; line-height:35px; letter-spacing:-4px;}
 .f-area .f-bottom .customer li.f_mail strong {font-size:28px; line-height:30px; letter-spacing:-2px;}
-.f-area .f-bottom .four-list {position:absolute; right:0; bottom:0; font-size:0;}
-.f-area .f-bottom .four-list a, .f-area .f-bottom .four-list img {margin-left:10px;}
+
+
+/* @media (max-width: 767px) {
+	.f-area .f-bottom .customer,
+	.f-area .f-bottom .four-list {display: none;}
+} */

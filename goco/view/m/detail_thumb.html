@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>모바일 고코투어</title>
+
+	<meta http-equiv="Cache-Control" content="No-Cache">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="expire" content="-1">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
+	<link rel="apple-touch-icon" href="http://img.go.co.kr/mobile/icon.png">
+	<meta name="robots" content="ALL">
+	<meta name="author" content="GO.CO.KR">
+	<meta name="description" content="★오션투유리조트 속초설악비치 호탤앤콘도  ▤세금+봉사료포함▤강원도콘도예약.고성콘도할인.국내콘도 예약사이트 GO.CO.KR,숙박최대 80%할 고코 GO.CO.KR">
+	<meta name="keywords" content="★오션투유리조트 속초설악비치 호탤앤콘도  ▤세금+봉사료포함▤강원도콘도예약.고성콘도할인.국내콘도 예약사이트 GO.CO.KR,숙박최대 80%할 고코 GO.CO.KR">
+	<meta name="classification" content="고코 GO.CO.KR">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	
+	
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170823144812" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170823144812" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170823144812" type="text/css">
+
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
+	<!--<link rel="stylesheet" href="../../src/css/totalmobile.css" type="text/css">-->
+	
+	
+	<!--- 검색시 달력에서 이용 ---->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<!--- 달력 한글화 --->
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+
+
+
+
+	<!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>--->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/common_ver2.js?ver=20170823144812"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/iscroll.js?ver=20170823144812"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.cookie.js"></script>
+
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.raty.js"></script>
+
+	<!--- 리스트페이지에서 쓸 스크립트---->
+	<script type="text/javascript" src="http://static.go.co.kr/js/swiper.min.js?ver=20170823144812"></script>
+	<!--- 리스트페이지에서 쓸 스크립트---->
+
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+
+	<script src="http://static.go.co.kr/js/bookmark.js?ver=1503467292"></script>
+
+
+	<!--무시 css에 적용해둠-->
+	<style>
+		#thumbnail_banner {}
+		#thumbnail_banner .pTxt-box {position: absolute; width: 100%; text-align: center; line-height: 1.2; top:45px;}
+		#thumbnail_banner .pTxt-box > p {letter-spacing: -0.5px; font-weight: 600; font-family: "Noto Sans Kr", "Nanum Gothic", sans-serif;}
+		#thumbnail_banner .p0-1 {font-size: 19px; color: #444; letter-spacing: -1px;}
+		#thumbnail_banner .p0-2 {font-size: 28px; margin-top: 4px; color: #fff;}
+		#thumbnail_banner .p0-2 .c-1 {color: #FEEF00;}
+		@media (max-device-width: 320px) {
+			#thumbnail_banner .p0-1 {font-size: 17px;}
+			#thumbnail_banner .p0-2 {font-size: 25px; margin-top: 0;}
+		}
+		@media (min-width: 400px) {
+			#thumbnail_banner .p0-1 {font-size: 21px;}
+			#thumbnail_banner .p0-2 {font-size: 32px;}
+		}
+	</style>
+
+</head>
+
+<body onunload="">
+	<!--div id="app_banner" style="width:100%; height:54px; background-color:#0090e6; text-align:center">
+		<img src="http://img.go.co.kr/mobile/top_banner.jpg" alt="지금 앱 설치하고 회원가입하면 2,000원 적립! 결제금액 1% 적립!" height="54px" usemap="#app_banner" />
+		<map name="app_banner">
+			<area shape="rect" coords="280,0,320,54" href="javascript:util.closewin3('today', 'app_banner')" alt="닫기"  onfocus="this.blur()" onclick="this.blur()">
+			<area shape="rect" coords="0,0,280,54" href="https://play.google.com/store/apps/details?id=kr.co.go.travel.app&hl=ko" alt="앱설치하기"  onfocus="this.blur()" onclick="this.blur()">
+		</map>
+	</div-->
+
+	<div id="wrapper" data-role="page">
+		<div id="scroll_box">
+
+		
+		<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+							<!--- 서브페이지 상단 -->
+						
+<style>
+#location_w .location_info .location_info_txt .info_map {float:right; vertical-align: middle; } 
+#location_w .location_info .location_info_txt  img {margin-right:10px; float:right;} 
+
+#info_product_btn_w2{position:fixed; bottom:0; left:0; z-index:88888; display:table; width:100%; height:60px; border-top:1px solid #f3f3f3; background:#fff;}
+#info_product_btn_w2 .info_product_btn{ width:96%; height:45px; margin:auto; background:#f95c24; color:#fff; margin-top:7px; text-align:center; line-height:34pt; font-weight:600; font-size:1.063em; border-radius:3px; cursor:pointer;}
+
+</style>
+
+</div>
+<div id="top_box_bottom" style="height: 0px;"></div>
+<script>
+$("#top_box_bottom").css("height", $("#top_box").height()+"px");
+</script>
+
+<script type="text/javascript" src="http://static.go.co.kr/js/clipboard.min.js"></script>
+
+<input type="hidden" name="button_text" id="button_text" value="상품 선택하기">
+	<div id="scroll_box">
+		<!-- 상단 이미지 -->
+		<div id="info_img_wrpa">
+			
+			<!--- 이미지 슬라이드 --->
+			<div class="swiper-container swiper-container-horizontal swiper-container-android">
+				<div class="swiper-wrapper" style="transform: translate3d(-320px, 0px, 0px); transition-duration: 0ms;">
+					<div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-prev" data-swiper-slide-index="6">
+						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg?ver=20170919155938') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+						</div>
+					</div>						
+
+
+					<div class="swiper-slide swiper-slide-active" id="thumbnail_banner" data-swiper-slide-index="0">
+						<!--변경내용170926 -->
+						<div style="background: url('http://img.go.co.kr/mobile/thumb/cpPack.jpg') 100% 100%; background-size:cover;" class="l_price">
+							<div class="pTxt-box">
+								<p class="p0-1">★오션투유리조트 속초설악비치호텔앤 콘도</p>
+								<p class="p0-2">
+									고코투어앱으로 구매시
+									<br>
+									<span class="c-1">1만원 쿠폰팩</span> 즉시지급!
+								</p>
+							</div>
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+						</div>
+						<!---->
+					</div>
+					<script type="text/javascript">
+					$("#thumbnail_banner").click(function(e) {
+												button_count('290357', 'thumbnail_and');
+						
+						e.preventDefault();
+												callApp.exec(navigator.userAgent, 'http://app.go.co.kr/home/view/?p_no=G0dwEGsR');
+											});
+					</script>
+					
+										
+					<div class="swiper-slide" data-swiper-slide-index="1">
+						<div style="background:url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_TOP_IMG120170420130509.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+																				<input type="hidden" name="img_id" id="img_id_1" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="2">
+						<div style="background:url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_TOP_IMG220170420130532.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+																				<input type="hidden" name="img_id" id="img_id_2" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="3">
+						<div style="background:url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_TOP_IMG320170420130543.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+																				<input type="hidden" name="img_id" id="img_id_3" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="4">
+						<div style="background:url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_TOP_IMG420170420130552.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+																				<input type="hidden" name="img_id" id="img_id_4" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="5">
+						<div style="background:url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_TOP_IMG520170420130606.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+																				<input type="hidden" name="img_id" id="img_id_5" value="">
+						</div>
+					</div>
+															<div class="swiper-slide" data-swiper-slide-index="6">
+						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg?ver=20170919155938') 100% 100%; background-size:cover">
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+																				</div>
+					</div>
+
+					<div class="swiper-slide swiper-slide-duplicate" id="thumbnail_banner" data-swiper-slide-index="0">
+						<!-- 170823 배경 url변경 및 내용 추가 -->
+						<div style="background:url('http://img.go.co.kr/mobile/suggest_bg.jpg') 100% 100%; background-size:cover" class="l_price">
+							<div class="inTxt">
+								<p class="p1">여수해상케이블카</p>
+								<p class="p2">
+									<span class="s1">고코투어앱으로 구매하면</span>
+									<strong class="s2">10,000원 쿠폰팩 할인!</strong>
+								</p>
+							</div>					
+							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
+							<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="img_l_price"> 
+						</div>
+					</div>
+				</div>
+<!--				<div class="swiper-pagination"></div> -->
+				<!--<div class="thumbnail_logo"><img src="http://img.go.co.kr/mobile/m_thumbnail_logo.png" alt="고코투어" class="thumbnail_logo_img"></div>-->
+				<div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="transform: translate3d(34.8889px, 0px, 0px); transition-duration: 0ms; width: 34.8889px;"></div></div>
+				<div class="swiper-button-next" style="width:38px;height:38px"><img src="http://img.go.co.kr/mobile/btn_Next3.png" style="width:100%"></div>
+				<div class="swiper-button-prev" style="width:38px;height:38px"><img src="http://img.go.co.kr/mobile/btn_Prev3.png" style="width:100%"></div>
+				<input type="hidden" name="total_cnt" id="total_cnt" value="6">
+			</div>
+
+			<!--- 이전, 공유, 찜하기 상단라인 --->
+						<div class="top_icon" style="z-index:10">
+								<p class="pay_back_icon" style="padding:20px;margin-top:-20px;margin-left:-10px;" onclick="history.back();"><a href="#"><img src="http://img.go.co.kr/mobile/pay_back_icon.png" style="width:35px" alt="이전"></a></p>
+				
+				
+					<form name="keep_f" id="keep_f" method="post">
+					<input type="hidden" name="encrypt" value="0">
+					<input type="hidden" name="mode" value="QhslUzdIOQ==">
+					<input type="hidden" name="userid" value="">
+					<input type="hidden" name="p_no" value="G0dwEGsR">
+					<input type="hidden" name="r_no" id="r_no">
+					<input type="hidden" name="wish_id" id="wish_id" value="0">
+										</form>
+								<span class="de_ch_icon"><a href="javascript:alert('로그인 후 이용가능합니다');location.href='http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl2=aHR0cDovL20uZ28uY28ua3IvaG9tZS92aWV3Lz9wX25vPUcwZHdFR3NS'" class="wishlink"><img class="wishicon" src="http://img.go.co.kr/mobile/de_wish_icon.png" style="width:100%" alt="찜하기"><!--클릭후<img src="http://img.go.co.kr/mobile/de_wish_icon.png" style="width:100%">--></a></span>
+
+								<span class="de_share_icon"><a href="javascript:utils.on('#sns_layer');$('.rlist_btn').css({'z-index':'5'})"><img src="http://img.go.co.kr/mobile/de_share_icon.png" style="width:100%" alt="공유하기"></a></span>
+			</div>
+
+
+		</div>
+
+		<div id="headTitle_box">
+				<div id="headTitle" style="display: none; position: static; z-index: 0; border-bottom: none;">
+					<span class="back"><a href="javascript:history.back()"><img src="http://img.go.co.kr/mobile/btn_back.png" alt="뒤로" height="17"></a></span>
+					여수해상케이블카					<span id="wish"><a href="javascript:utils.wish_new('0','mobile');" class="wishlink"><img class="wishicon" src="http://img.go.co.kr/mobile/de_wish_icon.png" height="22" alt="찜하기"></a></span>
+										<style>
+					.bottom_banner {position: fixed; top: 46px;width: 100%; z-index: 9999; height:65px}
+					.bottom_banner img {width: 100%;}
+					</style>
+					<div class="bottom_banner" id="bottom_b_link" style="cursor:pointer;">
+						<img src="http://img.go.co.kr/mobile/bn_appdown06.png" alt="모바일앱무조건2000원할인">
+					</div>
+
+					<script type="text/javascript">
+						$(function() {
+							$("#bottom_b_link").click(function(e) {
+																button_count('290357', 'bbanner_and_coupon');
+								
+								e.preventDefault();
+																callApp.exec(navigator.userAgent, 'http://app.go.co.kr/home/view/?p_no=G0dwEGsR');
+															});
+						});
+						function all_price() {
+							$.cookie("all_price_banner", "none", {domain: 'go.co.kr', path : '/'});
+							location.href='http://m.go.co.kr/home/landing/?dd=SBIsfC5UN0AlIRkeTnc=&pno=G0dwEGsR';
+						}
+					</script>
+					<!-- <img src="http://img.go.co.kr/mobile/m_price_all_banner_fxd.jpg" class="m_price_all_banner_fxd" onclick="javascript:all_price();"> -->
+									</div>
+		</div>
+
+		<!-- 타이틀 -->
+		<div id="pruduct_tit_w" style="background:#ffffff">
+			<div class="pruduct_tit">
+				<span class="icon">&nbsp;</span>				<span class="tit">여수해상케이블카</span>
+			</div>
+		</div>
+		
+		
+<!--- 예약관련 전체 스크립트 --->
+<script type="text/javascript">
+/* 상세페이지 리뉴얼 */
+var booking_new = {
+	//객실불러오는 함수
+	find_room_mobile: function() {
+
+		/* 객실리스트 노출 시 검정색 배경 제거 20160919 */
+		$("#overlay").remove();
+		$("#top_box").css("z-index", "9999");
+
+		//$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;\"><p style=\"font-size:15px; line-height:3; color:#807f7f\"><span style=\"color:#ff610a\">실시간 요금 및 객실</span>을 불러오는 중입니다...</p><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"20%\"/><br/><br/><br/></div>");
+		$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;margin-top:10px;\"><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"30%\"/><br/><br/><br/></div>");
+		$.ajax({
+			url : "/home/reserve/roomlist.php",
+			type : "post",
+			data : $("#rsch_form").serialize(),
+			success: function(e) {
+				$(".product_info_w").html(e);
+				
+				/* 객실리스트 노출 시 검정색 배경 제거 20160919 */
+				$("#overlay").remove();
+				$("#top_box").css("z-index", "9999");
+				
+				if($(".room_li").length == "0") {										
+
+					//가능한 객실이 없을 경우
+					if($("#chk_single").val() == "Y") {
+						$(".product_info_w").html("<p id=\"no_room\" style=\"margin-top:15px;font-weight:bold;text-align:center;padding-top:15px;\">예약 가능한 상품이 없습니다.</p>");
+					} else {
+						$(".product_info_w").html("<p id=\"no_room\" style=\"margin-top:15px;font-weight:bold;text-align:center;padding-top:15px;\">예약 가능한 객실이 없습니다.</p>");
+					}
+					$("#room_num").text("");
+					//$(".rlist_btn").hide();
+					/*
+					$("#rlist_btn_txt").text("판매완료");
+					$("#rlist_btn_txt").css({"background":"#cccccc"});
+					$(".rlist_choice").addClass("no_room");					
+					*/
+					
+					if($(".product_info_w").hasClass("searching") == true) {
+						setTimeout(function() {
+							$("#rlist_close").click();
+							booking_new.new_cal();
+						}, 500);
+					}
+				} else {
+
+
+					var rent_chk = $("#rent_filter").val();
+					if(rent_chk != "" && $("#rent_chk").val() == "Y") {
+						$(".room_li").click(function() {
+							if($("input[name='sang']:checked").val() == "" || typeof $("input[name='sang']:checked").val() == "undefined") {
+								return;
+							} else {
+								$("#info_product_btn_w2").html("<div class=\"info_product_btn\" id=\"rlist_btn_txt\" onclick=\"rent_filter('"+rent_chk+"')\">객실 선택하기</div>");	
+							}
+						});
+
+						if(rent_chk == "1") {
+							var lentxt = "숙박";							
+							$(".room_num").removeClass("on");
+							$(".txt_or").removeClass("on");
+							$(".product_add_discount").removeClass("on");
+							$(".add_sale_icon2").removeClass("on");
+							$(".o_day_s").removeClass("on");
+
+						} else { 
+							var lentxt = "대실";
+							$(".room_num").addClass("on");
+							$(".txt_or").addClass("on");
+							$(".product_add_discount").addClass("on");
+							$(".add_sale_icon2").addClass("on");
+							$(".o_day_s").addClass("on");
+						}
+						$("#room_num").text("("+$(".room_li").length+"개 "+lentxt+"상품"+")");
+					} else {
+						$("#room_num").text("("+$(".room_li").length+"개 상품"+")");
+					}
+
+					$(".rlist_choice").removeClass("no_room");
+					$("#rlist_btn_txt").text($("#button_text").val());
+					$("#rlist_btn_txt").css({"background":"#f95c24"});
+
+
+				}
+
+				/*
+				$("#rlist_final > ul > li").each(function(i) {
+					var chk_id = $("#rlist_final > ul > li").eq(i).attr("id");
+					chk_id_sp = chk_id.split("_");
+					$("#rlist_final .info_box").eq(i).before("<input type=\"radio\" name=\"sang\" class=\"chk\" value=\""+$("#"+chk_id_sp[0]+"_hidden").val()+"\" id=\""+chk_id_sp[0]+"\" />");
+					$("#rlist_final .info_box").eq(i).wrap("<label for=\""+chk_id_sp[0]+"\">");
+				});
+				*/
+				//$(".rlist_choice").css({"bottom":"-"+$(".rlist_choice").height()+"px"});
+				$("#wrapper").bind("touchmove", function(e) { e.preventDefault(); });
+				myScroll3 = new IScroll('#test', { mouseWheel: false, click: true, bounce:false, preventDefault : false, tap:true});
+				
+				$("#rlist_final ul li").on('click, tap', function() {
+					var chk_id = $(this).attr("id");
+					var str_ex = chk_id.split("_li");
+					
+					// 썸네일 이미지 객실 이미지로 변경 -> 해당 객실 사진으로 이동만, 만약 해당 객실사진이 없을경우 슬라이드에 붙여서 거기로 이동
+					// 공통 변수
+					var room_id = $("#"+str_ex[0]+"_hidden").val();
+					var p_no = $("#find_pno").val();
+
+					// 익스피디아를 제외한 제휴 업체 이미지 처리하기 위한 변수
+					var total_img = $("#total_cnt").val();
+
+					// 익스피디아 이미지 처리하기 위해 필요한 변수
+					var jehu = $("#jehu").val();
+					var ex = str_ex[0].split("room");
+					var hotelid = $("#exhotel_"+ex[1]).val();
+					var room_name = $("#room_name"+ex[1]).val();
+					var rate_code = $("#"+str_ex[0]).val();
+					var rate = rate_code.split("||");
+
+					// view_total.php 의 img_arr 배열 안에 있는 room_id 가져오기
+					var img_array = new Array();
+					for(var j=0; j<total_img; j++){
+						img_array.push($("#img_id_"+j).val());
+					}
+
+					$.ajax({
+						url : "/home/reserve/state.php",
+						type : "post",
+						data : "mode=room_imgch&room_id="+room_id+"&p_no="+p_no+"&hotelid="+hotelid+"&rate_code="+rate[1]+"&room_name="+room_name+"&jehu="+jehu+"&img_array="+img_array,
+						success: function(e) {
+							if(e != "no"){
+								var swiper2 = new Swiper('.swiper-container', {
+									scrollbar: '.swiper-scrollbar',	// 스크롤
+									scrollbarHide: false,	// 스크롤 안할때도 스크롤바 숨기지 않음
+									uniqueNavElements: true,
+									observer: true,
+									loop:true,
+									nextButton: '.swiper-button-next',
+									prevButton: '.swiper-button-prev',
+
+									autoplayDisableOnInteraction: false,
+									paginationBulletRender: function (index, className) { 
+										return '<span class="' + className + '"></span>'; 
+									}
+								});					
+
+								if(jehu == "expedia" || jehu == "expedia_a"){
+									swiper2.appendSlide(e);	// 끝에 추가됨, 처음 슬라이드로 이동됨
+									swiper2.slidePrev(true, 300); // 처음의 전인 마지막으로 추가된 이미지로 이동
+									swiper2.update();
+								} else{
+									swiper2.slideTo(e, 300, true); // 해당 객실 이미지로 슬라이드 이동
+								}
+
+							} 
+						}
+					}); 
+
+				
+					if($(this).hasClass("no_avail") == true) {
+						alert("예약마감된 객실입니다.");
+					} else {
+						$("#"+str_ex[0]).prop("checked", true);
+					}
+				});
+			}, 		
+			beforeSend: function() {
+				/* 객실리스트 노출 시 검정색 배경 제거 20160919 */
+				$("#overlay").remove();
+				$("#top_box").css("z-index", "9999");
+
+				$("#room_num").text("");
+				//$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;\"><p style=\"font-size:15px; line-height:3; color:#807f7f\"><span style=\"color:#ff610a\">실시간 요금 및 객실</span>을 불러오는 중입니다...</p><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"20%\"/><br/><br/><br/></div>");
+				$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;margin-top:10px;\"><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"30%\"/><br/><br/><br/></div>");
+
+			}
+		});
+	},
+	
+	//예약하기 누른 후 동의하고 결제하기 레이어창
+	prev_login: function(add_val, login_mode) {
+		var chk_id = $("input[name='sang']:checked").attr("id");
+
+		$("#choice_sang").val($("input[name='sang']:checked").val());
+		$("#choice_sanginfo").val($("#"+chk_id+"_hiddeninfo").val());
+
+		$("#rsch_form").submit();
+
+		$("#overlay").bind("touchmove", function(e) { e.preventDefault(); });
+		myScroll5 = new IScroll('#pop_cont', { mouseWheel: false, click: true, bounce:false, preventDefault : false, tap:true});
+	},
+	
+	//조건수정
+	modify: function(fgubun, site) {
+		if(site == "expedia" || site == "expedia_a") {
+			$("#calender_number_w").toggle();
+		} else {
+			booking_new.new_cal();
+		}
+	},
+	
+	//신규달력 오픈
+	new_cal: function() {
+		if($("#calendar_w").hasClass("on") == true) {
+			$("#overlay").unbind("touchmove");
+
+			/* 추가했던 검정색 배경 제거*/
+			$("#overlay").remove();
+			$("#top_box").css("z-index", "9999");
+
+			$("#info_product_btn_w").show();
+			$("#calendar_w_btn_w").hide();
+
+			$("#calendar_w").removeClass("on");
+			$("#calendar_w").css({"bottom":"-1000px"});
+
+
+			
+		} else {
+			var arrPageSizes = ___getPageSize();
+			$("#calendar_w").css({"bottom":"60px"});
+			
+			/*검정색 배경추가*/
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+			$("#top_box").css("z-index", "5");
+
+			$.ajax({
+				url : "/home/reserve/cal.php",
+				type : "post",
+				data: $("#rsch_form").serialize(),
+				success: function(r) {				
+					$("#calendar_w").addClass("on");
+					$("#calendar_w").html(r);
+					$("#info_product_btn_w").hide();
+					$("#calendar_w_btn_w").show();
+					
+					if($("#chk_single").val() == "Y") {
+						$("#calbtn").text("이용일 선택 완료");
+					} else {
+
+						if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+							$("#calendar_w_btn_w").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_date('2');\">대실예약</a><a href=\"javascript:rent_date('1');\">숙박예약</a></p>");
+						} else {
+							$("#calbtn").text($("#night").val()+"박 선택 완료");
+						}
+					}
+
+					$("#overlay").bind("touchmove", function(event) { event.preventDefault(); });
+					$("#backDrop").bind("touchmove", function(e) { e.preventDefault(); });
+					$("#cal_subbox").bind("touchmove", function(e) { e.preventDefault(); });
+					myScroll4 = new IScroll('#cal_subbox', { mouseWheel: false, click: true, bounce:false, preventDefault : false, tap:true});
+				}
+			});
+
+					}
+	},
+	
+	//신규달력 선택
+	new_choice: function(date1, ts, single) {
+		//1. 체크인과 체크아웃 둘다 있는데 클릭 시 체크인만 선택체크 후 상단 텍스트 라인 체크아웃 날짜를 선택해주세요. 로 변경 
+		//버튼은 다시 선택완료 회색버튼으로 변경
+		//2. 체크인만 있을 경우에 클릭 시 체크아웃 클래스 추가 후 주황색 몇박 선택완료 버튼 으로 변경 
+		//체크인과 체크아웃 날짜 사이의 td들 주황색 클래스 처리
+		event.preventDefault();
+		//단품은 이용일 하나만 체크
+		if(single == "Y") {
+
+			//기존에 이용일 체크 되있던 날짜 해제 
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");
+			
+						/*
+			var today = $(".week_day_table").find(".today").parent().attr("id");
+			var today_str = today.replace("date_", "");
+
+			if(today_str == date1) {
+				alert("여수해상케이블카는 당일 구매가 불가한 상품입니다.");
+				var nday = "2017-09-18";
+				var nday_ts = "1505833200";
+				booking.new_choice(nday, nday_ts, "Y");
+			}	
+			*/
+						
+			$("#"+chin_id).removeClass("Pkg-w");
+			$("#"+chin_id+" > a > .Pkg-txt").remove();
+
+			//지금 누른 업체 이용일 표시
+			var chk_id = "date_"+date1;
+			$("#"+chk_id).addClass("Pkg-w");
+			$("#"+chk_id+" > a").prepend("<span class=\"Pkg-txt\">이용일</span>");
+			$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+			
+			/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+			/* 상단 타이틀 라인 수정*/
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");
+			chin_id = chin_id.replace("date_", "");
+
+			var week = new Array('일', '월', '화', '수', '목', '금', '토');
+			var yoil_chin = new Date(chin_id).getDay();
+
+			chin_str = chin_id.replace(/-/gi, ".");
+			ch_str = chin_str+" ("+week[yoil_chin]+")";
+			
+			$("#title_txt").text(ch_str);
+
+			$("#calbtn").text("이용일 선택 완료");
+			$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+			
+
+
+		} else {
+			var chin_len	= $(".week_day_table").find(".Check-in").length;		//체크인 날짜 여부 체크
+			var chout_len	= $(".week_day_table").find(".Check-out").length;		//체크아웃 날짜 여부 체크 
+			
+			//체크인와 체크아웃이 둘다 선택되어 있는 경우
+			if(chin_len == 1 && chout_len == 1) {
+				/*기존선택된 클래스들 초기화*/
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");		//체크인 날짜 아이디
+				var chout_id	= $(".week_day_table").find(".Check-out").attr("id");		//체크아웃 날짜 아이디
+
+				$("#"+chin_id).removeClass("Check-in");
+				$("#"+chout_id).removeClass("Check-out");			
+				$("#"+chin_id+" > a > .Check-in-txt").remove();
+				$("#"+chout_id+" > a > .Check-in-txt").remove();			
+				$(".week_day_table").find(".Check-ing").removeClass("Check-ing");
+
+				/* 지금 누른 업체 체크인 표시*/
+				var chk_id = "date_"+date1;
+				$("#"+chk_id).addClass("Check-in");
+				$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크인</span>");
+				$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+				
+				//하단 버튼 텍스트 변경 및 클래스명 변경
+				if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+					$("#calendar_w_btn_w").html("<div class=\"calendar_product_btn\" id=\"calbtn\" onclick=\"booking_new.date_apply();\">날짜선택</div>");
+				} else {
+					$("#calbtn").text("날짜선택");					
+				}
+				$("#calbtn").removeClass("calendar_product_btn").addClass("calendar_product_btn_n");
+
+				/* 상단 타이틀 라인 수정*/
+				$("#title_txt").text("체크아웃 날짜를 선택해주세요.");
+				
+				var today = $(".week_day_table").find(".today").parent().attr("id");
+				if($("#"+today+" > a > span").not(".Check-in-txt").hasClass(".today_ba") == false && today != "date_"+date1) {
+					$("#"+today+" > a > span").not(".Check-in-txt").addClass("today_ba");
+				}
+
+
+			} else if(chin_len == 1 && chout_len == 0) {
+			//체크인 선택되어 있고 체크아웃 없는 경우
+			//체크인만 누른 상태에서 이전날짜를 눌렀으면 체크인이 추가되어야 하고 아니면 체크아웃 처리
+				
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");
+				chin_id	 = chin_id.replace("date_", "");
+				chin_id  = chin_id.replace(/-/gi, "");
+				chin_id	= parseInt(chin_id);
+
+				var chk_id = date1.replace(/-/gi, "");
+				chk_id = parseInt(chk_id);
+				
+				if(chk_id < chin_id) {
+					//기존에 체크인 되있던 날짜 해제 
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");
+					$("#"+chin_id).removeClass("Check-in");
+					$("#"+chin_id+" > a > .Check-in-txt").remove();
+
+					//지금 누른 업체 체크인 표시
+					var chk_id = "date_"+date1;
+					$("#"+chk_id).addClass("Check-in");
+					$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크인</span>");
+					$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+
+					
+				} else if(chk_id > chin_id) {
+					
+						var basic_night = "";	
+						switch($("#jehu").val()) {
+							case "hottel":
+							case "pinspot":
+								basic_night = 1;
+								break;
+							
+							case "woori":
+							case "gpension":
+								basic_night = 6;
+								break;
+							
+							default:
+								basic_night = 15;
+								break;
+							
+
+						}
+
+						/* 숙박일수를 각 제휴사별로 제한하는 부분*/
+						var chin_id		= $(".week_day_table").find(".Check-in").attr("id");			
+						chin_id_chk = chin_id.replace("date_", "");
+						chout_id_chk = date1;
+
+						/* 날짜차이로 숙박일수 알아내기 */
+						var diff_chk = new Date(chout_id_chk) - new Date(chin_id_chk);
+						var currday_chk = 24*60*60*1000;
+						diff_chk = parseInt(diff_chk/currday_chk);
+						
+						var test = new Date(chin_id_chk);
+						test.setDate(test.getDate()+1);
+
+						
+						yy = test.getFullYear();
+						mm = test.getMonth() + 1; 
+						mm = (mm < 10) ? '0' + mm : mm;
+
+						dd = test.getDate(); 
+						dd = (dd < 10) ? '0' + dd : dd;
+						
+						var final_day = "date_"+yy+"-"+mm+"-"+dd;
+
+						if(diff_chk > basic_night) {
+							alert("해당상품은 "+basic_night+"박이상 예약불가능합니다.");
+
+							var chk_id = final_day;
+							$("#"+chk_id).addClass("Check-out");
+							$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크아웃</span>");
+							$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+							
+							/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+							/* 상단 타이틀 라인 수정*/
+							chk_id = chk_id.replace("date_", "");
+
+							var week = new Array('일', '월', '화', '수', '목', '금', '토');
+							var yoil_chin = new Date(chin_id_chk).getDay();
+							var yoil_chout = new Date(chk_id).getDay();
+							
+							chin_str = chin_id_chk.replace(/-/gi, ".");
+							chout_str = chk_id.replace(/-/gi, ".");
+
+							/* 날짜차이로 숙박일수 알아내기 */
+							var diff = new Date(chk_id) - new Date(chin_id_chk);
+							var currday = 24*60*60*1000;
+							diff = parseInt(diff/currday);
+
+							ch_str = chin_str+" ("+week[yoil_chin]+")~"+chout_str+" ("+week[yoil_chout]+") / "+diff+"박";
+							$("#title_txt").text(ch_str);
+
+
+							if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+								$("#calendar_w_btn_w").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_date('2');\">대실예약</a><a href=\"javascript:rent_date('1');\">숙박예약</a></p>");
+							} else {
+								$("#calbtn").text(diff+"박 선택 완료");
+							}
+
+							$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+							return;
+						}
+						/* 숙박일수를 각 제휴사별로 제한하는 부분*/
+
+
+
+
+					//지금 누른 업체 체크아웃 표시
+					var chk_id = "date_"+date1;
+					$("#"+chk_id).addClass("Check-out");
+					$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크아웃</span>");
+					$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+					
+					//체크인과 체크아웃 날짜 사이에 클래스 추가
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");				
+					$("#"+chin_id).nextUntil(".Check-out").addClass("Check-ing");
+
+					var chout_id	= $(".week_day_table").find(".Check-out").attr("id");
+					$("#"+chout_id).prevUntil(".Check-in").addClass("Check-ing");
+
+					//체크인 날짜의 tr id
+					//체크인과 체크아웃 날짜 사이에 한주이상 들어가있으면 클래스 처리가 안되니 추가작업 
+					var chin_tr = $("#"+chin_id).parent().attr("id");
+					var chout_tr = $("#"+chout_id).parent().attr("id");
+					chin_tr		= parseInt(chin_tr.replace("month_", ""));
+					chout_tr	= parseInt(chout_tr.replace("month_", ""));
+					if((chout_tr - chin_tr) > 1) {
+						for(var j = chin_tr+1; j < chout_tr; j++) {
+							if(j < 10) {
+								$("#month_0"+j+" td").addClass("Check-ing");
+							} else {
+								$("#month_"+j+" td").addClass("Check-ing");
+							}
+						}
+					}
+
+					/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+					/* 상단 타이틀 라인 수정*/
+					chin_id = chin_id.replace("date_", "");
+					chout_id = chout_id.replace("date_", "");
+
+					var week = new Array('일', '월', '화', '수', '목', '금', '토');
+					var yoil_chin = new Date(chin_id).getDay();
+					var yoil_chout = new Date(chout_id).getDay();
+
+					chin_str = chin_id.replace(/-/gi, ".");
+					chout_str = chout_id.replace(/-/gi, ".");
+
+					/* 날짜차이로 숙박일수 알아내기 */
+					var diff = new Date(chout_id) - new Date(chin_id);
+					var currday = 24*60*60*1000;
+					diff = parseInt(diff/currday);
+
+					ch_str = chin_str+" ("+week[yoil_chin]+")~"+chout_str+" ("+week[yoil_chout]+") / "+diff+"박";
+					$("#title_txt").text(ch_str);
+					
+					if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+						$("#calendar_w_btn_w").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_date('2');\">대실예약</a><a href=\"javascript:rent_date('1');\">숙박예약</a></p>");
+					} else {					
+						$("#calbtn").text(diff+"박 선택 완료");
+					}
+					$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+					
+
+				}
+			}
+		}
+	},
+	
+	date_apply: function() {		
+		var cla = $("#calbtn").attr("class");		
+
+		if(cla == "calendar_product_btn" || ($("#night").val() == 1 && $("#rent_chk").val() == "Y" && $("#rent_filter").val() != "")) {			
+			/* 이용권 일 때*/
+			if($("#chk_single").val() == "Y" || $("#sale_single").val() == "Y") {
+				var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");		//이용일 날짜 아이디
+				chin_id		= chin_id.replace("date_", "");
+				
+				$("input[name='hseldate']").val(chin_id);				
+				$("input[name='nseldate']").val(chin_id);
+				
+				var week = new Array('일', '월', '화', '수', '목', '금', '토');
+				var yoil_chin = new Date(chin_id).getDay();
+				var yoil_chout = new Date(chout_id).getDay();
+
+
+				chin_str = chin_id.replace(/-/gi, ".");
+				//$("#date_choide").text(chin_str);
+
+				$("#chdate_text").text(chin_str+" ("+week[yoil_chin]+")");
+
+			} else {
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");		//체크인 날짜 아이디
+				var chout_id	= $(".week_day_table").find(".Check-out").attr("id");		//체크아웃 날짜 아이디
+				
+				chin_id		= chin_id.replace("date_", "");
+				chout_id	= chout_id.replace("date_", "");
+
+				$("input[name='hseldate']").val(chin_id);
+				$("input[name='nseldate']").val(chout_id);
+
+				var week = new Array('일', '월', '화', '수', '목', '금', '토');
+				var yoil_chin = new Date(chin_id).getDay();
+				var yoil_chout = new Date(chout_id).getDay();
+
+				chin_str = chin_id.replace(/-/gi, ".");
+				chout_str = chout_id.replace(/-/gi, ".");
+
+				/* 날짜차이로 숙박일수 알아내기 */
+				var diff = new Date(chout_id) - new Date(chin_id);
+				var currday = 24*60*60*1000;
+				diff = parseInt(diff/currday);
+				
+				$("#night").val(diff);
+				//$("#date_choide").text(chin_str+"~"+chout_str);
+
+					$("#chin_text").text(chin_str+" ("+week[yoil_chin]+")");
+					$("#chout_text").text(chout_str+" ("+week[yoil_chout]+")");
+
+					// 체크인 날짜와 체크아웃 날짜 사이의 숙박일수 변경
+					$("#night_cnt").text(diff+"박");
+
+					// 객실 리스트에 노출되는 숙박일수 날짜 설정
+					$("#night_roomc").text(diff+" 기준");	
+			}
+			
+			booking_new.new_cal();
+			
+							single.choice();
+					
+
+		}
+
+	},
+	
+	ex_choice: function() {
+		booking_new.apply_info();
+	},
+	
+	person_calc: function(gubun) {
+		
+		if(gubun == "up") {
+			
+			var max_val = $("#max_choice").val();
+			//선택할 때 최대인원 제한 
+			if(parseInt($("input[name=person]").val()) < parseInt(max_val)){
+				var su2 = parseInt($("input[name=person]").val())+1;
+				$("input[name=person]").val(su2);
+			
+			} else {
+				alert("최대 "+parseInt(max_val)+"명까지 선택가능합니다.");
+				$("input[name=person]").val(max_val);
+			}
+			
+		} else if(gubun == "down") {
+			if($("input[name=person]").val() > "1"){
+				var su2 = parseInt($("input[name=person]").val())-1;
+				$("input[name=person]").val(su2);
+			} else {
+				alert("최소이용인원은 1명입니다.");
+				$("input[name=person]").val("1");
+			}
+		}
+
+		$("#person_num").text($("input[name=person]").val());
+	},
+	
+	apply_info: function() {
+		$(".product_info_w").addClass("searching");
+
+		var arrPageSizes = ___getPageSize();
+
+		var img_he = $("#info_img_wrpa").height();
+		var product_he = 110;
+		var total_he = parseInt(product_he) + parseInt(img_he);
+		total_he = parseInt($(window).height()) - total_he;
+
+		$(".info_product_list").css({"height": total_he+"px"});	// 객실리스트 노출되는 div 높이 수정
+		
+				single.choice();
+		
+		
+	}
+}
+
+$(function() {
+	/*  동의하고 결제하기 */ 
+	/*****************************20161021 마감시간 이후 작업관련******************************/
+	$("#pay_bt").click(function() {		
+		utils.out('#pop_pay_ag');
+		button_count('290357', 'simple');
+
+		$("#backDrop").toggleClass("on");
+		$("#tickets-list-bg, #tickets-list").toggleClass("on");
+		$("#single_box_bt").show();
+
+
+		if($("#jehu").val() == "" || $("#jehu").val() == "all") {
+			$.ajax({
+				url : "/home/reserve/state.php",
+				type : "post",
+				data : "mode=final_chk&pno=290357&seldate="+$("#hseldate2").val()+"",
+				success: function(data) {
+					var res = data.split("||");
+					if(res[0] == "no") {
+						alert(res[1]);
+						location.href=res[2];
+						return;
+					} else {
+									
+						$("#rsch_form").attr("action", "/home/reserve/preserve_nlogin.php?md=WQwlVQ==");
+						
+						booking_new.prev_login('', '');
+					}
+				}
+			});
+		} else {
+						
+			$("#rsch_form").attr("action", "/home/reserve/preserve_nlogin.php?md=WQwlVQ==");
+						
+			booking_new.prev_login('', '');
+		}
+	});
+	/*****************************20161021 마감시간 이후 작업관련******************************/
+
+});
+
+</script><script src="http://static.go.co.kr/js/admission_ticket_app.js?ver=20170919155938"></script>
+<form name="rsch_form" id="rsch_form" method="post">
+<input type="hidden" name="find_pno" id="find_pno" value="G0dwEGsR">
+<input type="hidden" name="jehu" id="jehu" value="varonet">
+<input name="hseldate" id="hseldate2" type="hidden" readonly="" value="2017-09-20">
+<input name="nseldate" id="nseldate2" type="hidden" readonly="" value="2017-09-30">
+<input name="ticket_mode" type="hidden" value="dates">
+<input name="night" id="night" type="hidden" value="1">
+<input name="chk_single" id="chk_single" type="hidden" value="Y">
+<input name="max_choice" id="max_choice" type="hidden" value="20">
+
+<input type="hidden" name="abr_val" value="">
+
+
+
+<style>
+.list_btn_wrap {position: relative; width: 100%; background: #f4f2f3;}
+.list_btn_wrap a {display: block; text-align: center; width: 96%; margin:0 auto; height: 54px; background: #f95c25; color: #fff; font-size: 19px; font-weight: 600; font-family: "NanumGothic", sans-serif; line-height: 2.8em; border-radius: 4px;}
+.list_btn_wrap {position: fixed; bottom: 0;}
+.calender_ch_pk_w .number_txt{float:left; font-weight:600; color:#222; font-size:0.938em; line-height:2.2; padding-left:5px}
+.calender_ch_pk_w .number_ch{float:right; height:32px; width:160px; border:1px solid #bbbbbb; background:#fff; padding:0 10px; cursor:pointer; border-radius: 0;}
+.calender_ch_pk_w .number_ch .txt{color:#666; font-size:0.938em; line-height:2.1; font-weight: 400 }
+</style>
+
+
+<div id="backDrop" class="backDrop"></div>
+	
+	<!--- 선택 상품 세부 리스트 나오는 영역 --->
+	<section id="tickets-list">
+		
+	
+	<div id="ticket_subbox"></div>
+
+	<!--- 금액과 함께 최종결제 버튼 나오는 영역 --->
+	<div id="single_box_bt"></div>
+
+		
+	</section>
+
+<!--- 구매하기 버튼 --->
+<div id="info_product_btn_w" class="hide_div">
+	<div class="info_product_btn" id="single_btn">구매하기</div>
+</div>
+
+
+
+
+<!-- 달력 인원수 수정 -->
+<div id="calender_number_w" style="display:none">	
+			<div class="calender_ch_pk_w">
+		<span class="number_txt">이용기간</span>
+		<span class="number_txt" style="text-align:right;float:right">
+			2017.09.20~2017.09.30		</span>
+	</div>	
+	</div>
+
+<!-- 추가 내용 -->
+<section id="tickets" style="border-top: 1px solid #ccc;">
+	<ul><input type="hidden" name="total_roomcnt" id="total_roomcnt" value="1">
+				<li class="clr">
+					<div class="fl tit">
+						<p class="nth-1">
+							<input type="checkbox" id="pdt_chk0" name="sang[]" value="125432">
+							<label for="pdt_chk0"></label>
+							<span>여수해상케이블카</span>
+						</p>
+						<p class="nth-2"><span>2017.09.20 ~ 2017.09.30</span></p>
+						<!---<p class="nth-3">최대 10장 구매가능</p>-->
+					</div>
+					<div class="fr prc clr"><p class="clr"><span class="fr"><del>7,000원</del></span></p><p class="clr"><span class="fr app_prc">6,200원</span></p>
+					</div>
+				</li></ul></section>
+
+<!-- 달력 ---->
+<div id="calendar_w" style="transition:all 0.5s ease;bottom:-500px"></div>
+
+<!--- 달력버튼 ---->
+<div id="calendar_w_btn_w" style="display:none">
+	<div class="calendar_product_btn" id="calbtn" onclick="booking_new.date_apply();">1박 선택 완료</div>
+	<!---<div class="calendar_product_btn_n">선택 완료</div>---->
+</div>
+</form>
+
+
+<!---  예약하기 전 동의 팝업, 날짜 최종확인용 ---->
+<div id="pay_bt">
+	<div id="pop_pay_ag" style="display:none;hegiht:300px;overflow: auto;">
+		<div class="closew">
+		<!--	<span class="close"><a href="javascript:utils.out('#pop_pay_ag');"><img width="30" alt="닫기" src="http://img.go.co.kr/mobile/menu_close.jpg"></a></span> -->
+		</div>
+		<div class="txt" id="pop_cont">
+			<p class="txt1"><!---님 ---->체크인 시간은<br><span class="pop_paya_co">8월 27일 (토) 14:00</span>입니다. </p>
+			<p class="txt2">
+				<span class="txt_icon">-</span><span class="txtts"> 선택하신 상품의 취소, 환불규정은 꼼꼼히 확인하셨나요?<br><br></span>
+				<span class="txt_icon">-</span><span class="txtts"> 환불 불가 상품은, 규정과 상관없이 취소, 변경, 환불이 절대 불가합니다.<br><br></span>
+				<span class="txt_icon">-</span><span class="txtts"> 미성년자는 보호자 동반시 투숙이 가능합니다.</span></p>
+		</div>
+		<div class="btn"><span class="bt"><a href="#">동의하고 결제하기</a></span></div>
+	</div>
+</div>
+
+
+
+
+<!--- 예약관련 전체 스크립트 ---->
+<script type="text/javascript">
+var single = {
+	choice: function() {
+		var target = "/home/reserve/state.php";
+		$.ajax({
+			url : target,
+			type:"post",
+			data: "mode=single_prolist&p_no=290357&hseldate="+$("#hseldate2").val(),
+			cache: false,
+			success: function(data) {		
+				$("#tickets").html(data);
+				$("#tickets > ul > li").on("click", function() {
+					$(this).toggleClass("on");
+					var isChk = $(this).find("input").prop("checked");
+					isChk = !isChk ;
+					$(this).find("input").prop("checked", isChk);					
+				});
+
+				$("#tickets .fl.tit .nth-1 label").on("click", function() {
+					$(this).closest("li").toggleClass("on");				
+				});
+
+
+			}
+		});
+	},
+	/*	
+	close: function() {
+		$("#tickets-list-bg").hide();
+		$("#info_product_btn_w").show();
+	},
+	*/
+	
+	final_calc: function() {
+
+		$.ajax({
+			url : "/home/reserve/state.php",
+			type : "post",
+			data: "mode=single_final_calc&"+$("#rsch_form").serialize(),
+			cache: false,
+			success: function(data) {				
+				$("#single_box_bt").html(data);
+			}
+		});
+	},
+	
+	up_down_bt: function(gubun, id, limit)  {
+		if(gubun == "down") {
+			if(parseInt($("#"+id).val()) > limit) {
+				var su2 = parseInt($("#"+id).val())-1;
+				$("#"+id).val(su2);				
+
+				single.final_calc();
+			} else {
+				alert("0매 이하 선택 불가능합니다.");
+				return false;
+			}
+		} else if(gubun == "up") {
+			if(parseInt($("#"+id).val()) < limit) {
+				var su2 = parseInt($("#"+id).val())+1;
+				$("#"+id).val(su2);
+				
+				single.final_calc();
+			} else {
+				alert("최대 "+limit+"매까지 구매가능합니다.\r대량 구매는 고코투어 고객센터(1666-1243)로 연락부탁드립니다.");
+
+				return false;
+			}
+		}
+
+		if(parseInt($("#"+id).val()) > 0) {
+			$("#"+id).addClass("on");
+		} else {
+			$("#"+id).removeClass("on");
+		}
+	}
+}
+
+
+$(function() {
+	//총 결제금액 눌렀을 때 
+	$("#single_box_bt").click(function() {
+		var per = 0;
+		$("input[id^='person_']").each(function(i) {
+			var id = $("input[id^='person_']").eq(i).attr("id");
+			per += parseInt($("input[id^='person_']").eq(i).val());
+		});
+
+		if(parseInt(per) < 1) {
+			alert("매수를 선택하세요.");
+			event.preventDefault();
+			return false;
+		}
+
+		$.ajax({
+			url : "/home/reserve/state.php",
+			data: "mode=popup_cont&"+$("#rsch_form").serialize(),
+			type: "post",
+			success: function(e) {
+				$("#pop_cont").html(e);
+
+				utils.on('#pop_pay_ag');
+
+				$("#overlay").bind("touchmove", function(e) { e.preventDefault(); });
+				myScroll5 = new IScroll('#pop_cont', { mouseWheel: false, click: true, bounce:false, preventDefault : false, tap:true});
+
+				$("#backDrop").toggleClass("on");
+				$("#tickets-list-bg, #tickets-list").toggleClass("on");
+				$("#single_box_bt").hide();
+
+								Call_bottom_tabbar('detail');
+				
+			}
+		});
+	});
+
+
+
+	$("#tickets").click(function(event){
+		var chk_val = $("input[name='sang[]']:checked").length;
+		var totalroomcnt = parseInt($("#total_roomcnt").val());
+
+		if(chk_val == 1 && totalroomcnt == 1) {
+			event.preventDefault();
+			$("#single_btn").trigger("click");			
+		}
+	}); 
+
+
+	$("#single_btn").click(function() {
+			
+			if(parseInt($("#total_roomcnt").val()) > 1) {
+				var chkid = $("input[name='sang[]']:checked").attr("id");
+				$("#"+chkid).prop("checked", true);
+				$("#"+chkid+" > .cir").addClass("on");
+			} else { 
+				$("input[name='sang[]']").prop("checked", true);
+				$("#tickets").find(".clr").addClass("on");	
+			}
+
+			var add_str = "";
+			$("input[name='sang[]']:checked").each(function(i) {
+				add_str += "&sang[]="+$("input[name='sang[]']:checked").eq(i).val();
+			});
+
+			if(add_str == "") {
+				$("input[name='sang[]']").prop("checked", true);
+				$("#tickets").find(".clr").addClass("on");	
+
+				$("input[name='sang[]']:checked").each(function(i) {
+					add_str += "&sang[]="+$("input[name='sang[]']:checked").eq(i).val();
+				});
+			}
+			
+			$.ajax({
+				url : "/home/reserve/state.php",
+				type : "post",
+				data: "mode=single_prolist_detail&p_no=290357&res_type2=varonet&hseldate="+$("#hseldate2").val()+add_str,
+				cache: false,
+				success: function(data) {
+					//$("#tickets-list-bg").show();
+					
+					$("#ticket_subbox").html(data);
+					$("#backDrop").toggleClass("on");
+					$("#tickets-list-bg, #tickets-list").toggleClass("on");
+					
+					$("#info_product_btn_w").hide();
+					
+					$("input[id^='person_']").on("click, tap", function() {
+						$(this).select();
+						/*
+						if(parseInt($(this).val()) < 1) {
+							$(this).val("");
+						}
+						*/
+
+	
+					});
+					
+					$("input[id^='person_']").on("keyup", function(e) {						
+						if(parseInt($(this).val()) > parseInt($("#_"+$(this).attr("id")+"_num").val())){		
+							alert("최대 "+parseInt($("#_"+$(this).attr("id")+"_num").val())+"매까지 구매가능합니다.");
+							$(this).val(parseInt($("#_"+$(this).attr("id")+"_num").val()));
+
+						} else if(parseInt($(this).val()) < 0){ 
+							alert("0매 이하로 구매할수 없습니다.");
+							$(this).val("0");
+						}
+						
+						/*
+						if($(this).val() == "") {
+							//$(this).val(0);
+						}
+						*/
+
+						if(parseInt($(this).val()) == 0 && $(this).val().length > 1) {
+							$(this).val(0);
+						}
+
+						single.final_calc();						
+					});
+
+
+					$("#tickets-list .cls-box a").on("click", function() {
+
+					event.preventDefault();
+					$("#backDrop").toggleClass("on");
+					$("#tickets-list-bg, #tickets-list").toggleClass("on");
+					$("#info_product_btn_w").show();
+
+					});
+
+					single.final_calc();
+
+					$("#backDrop").bind("touchmove", function(e) { e.preventDefault(); });
+					$("#wrap").bind("touchmove", function(e) { e.preventDefault(); });
+					$("#ticket_wrap").bind("touchmove", function(e) { e.preventDefault(); });
+					
+
+					myScroll3 = new IScroll('#ticket_wrap', { mouseWheel: true, click: true, bounce:false, preventDefault : false, tap:true});
+					
+					$("input[id^='person_']").number(true);				
+					
+				}
+			});
+			
+	});
+
+
+
+	// 2017-05-23 수정
+	/*
+	$("#single_btn").click(function() {
+		var chk_val = $("input[name='sang[]']:checked").length;
+		if(chk_val == 0) {
+			
+			alert("입장권을 선택해주세요.");
+			
+			
+			//$("#backDrop").toggleClass("on");
+			//$("#tickets-list-bg, #tickets-list").toggleClass("on");
+			
+			
+			event.preventDefault();
+						
+			return false;
+			
+
+		} else {
+			var add_str = "";
+			$("input[name='sang[]']:checked").each(function(i) {
+				add_str += "&sang[]="+$("input[name='sang[]']:checked").eq(i).val();
+			});
+
+			$.ajax({
+				url : "/home/reserve/state.php",
+				type : "post",
+				data: "mode=single_prolist_detail&p_no=290357&res_type2=varonet&hseldate="+$("#hseldate2").val()+add_str,
+				cache: false,
+				success: function(data) {
+					//$("#tickets-list-bg").show();
+					
+					$("#ticket_subbox").html(data);
+					$("#backDrop").toggleClass("on");
+					$("#tickets-list-bg, #tickets-list").toggleClass("on");
+					
+					$("#info_product_btn_w").hide();
+					
+					$("input[id^='person_']").on("click, tap", function() {
+						$(this).select();
+						
+						//if(parseInt($(this).val()) < 1) {
+						//	$(this).val("");
+						//}
+						
+
+				
+					});
+					
+					
+					$("input[id^='person_']").on("keyup", function(e) {						
+						if(parseInt($(this).val()) > parseInt($("#_"+$(this).attr("id")+"_num").val())){		
+							alert("최대 "+parseInt($("#_"+$(this).attr("id")+"_num").val())+"매까지 구매가능합니다.");
+							$(this).val(parseInt($("#_"+$(this).attr("id")+"_num").val()));
+
+						} else if(parseInt($(this).val()) < 0){ 
+							alert("0매 이하로 구매할수 없습니다.");
+							$(this).val("0");
+						}
+						
+						
+						//if($(this).val() == "") {
+							//$(this).val(0);
+						//}
+						
+
+						if(parseInt($(this).val()) == 0 && $(this).val().length > 1) {
+							$(this).val(0);
+						}
+
+						single.final_calc();						
+					});
+
+					
+					$("#tickets-list .cls-box a").on("click", function() {
+
+													event.preventDefault();
+							$("#backDrop").toggleClass("on");
+							$("#tickets-list-bg, #tickets-list").toggleClass("on");
+							$("#info_product_btn_w").show();
+											});
+
+					single.final_calc();
+
+					$("#backDrop").bind("touchmove", function(e) { e.preventDefault(); });
+					$("#wrap").bind("touchmove", function(e) { e.preventDefault(); });
+					$("#ticket_wrap").bind("touchmove", function(e) { e.preventDefault(); });
+					
+
+					myScroll3 = new IScroll('#ticket_wrap', { mouseWheel: true, click: true, bounce:false, preventDefault : false, tap:true});
+					
+					$("input[id^='person_']").number(true);				
+					
+				}
+			});
+		}
+	});
+	*/
+
+
+	$("input[id^='person_']").click(function() {
+		$(this).select();
+		if(parseInt($(this).val()) < 1) {
+			$(this).val("");
+		}
+	});
+
+	$("input[id^='person_']").keyup(function() {
+		if(parseInt($(this).val()) > 0) {
+			$(this).attr("id").addClass("on");
+		} else {
+			$(this).attr("id").removeClass("on");
+		}
+
+		if(parseInt($(this).val()) > parseInt($("#_"+$(this).attr("id")+"_num").val())){		
+			alert("최대 "+parseInt($("#_"+$(this).attr("id")+"_num").val())+"매까지 구매가능합니다.\r대량 구매는 고코투어 고객센터(1666-1243)로 연락부탁드립니다.");
+			$(this).val(parseInt($("#_"+$(this).attr("id")+"_num").val()));
+		} else if(parseInt($(this).val()) < 0){ 
+			alert("0매 이하로 구매할수 없습니다.");
+			$(this).val("0");
+		}
+		
+		if($(this).val() == "") {
+			//$(this).val(0);
+		}
+
+		single.final_calc();		
+	});	
+});
+
+function app_close(type) {
+	if(type == "room") {
+		$("#tickets-list .cls-box a").trigger("click");
+	} else { 
+		booking_new.new_cal();
+	}
+}
+</script>
+
+
+
+
+		<!--- 객실리스트 --->
+		<!--- 하단에 객실버튼을 이용하여 객실리스트가 열리는 경우 적용 ----->
+		<!--- 객실리스트 뿌리는 부분은 /reserve/searching.php ---->
+
+		
+		
+
+
+		<!-- 알립니다 -->
+
+
+				<div class="new_yeosu">
+			<div class="mid_area">
+				<div class="title_banner">
+					<strong>여수해상케이블카 패키지 출시!</strong><br>
+					<span>여수해상케이블카와 함께 다양한 여수의 즐길거리를 함께해보세요!</span>
+				</div>
+				<ul class="item_list">
+
+					
+							<li>
+								<a href="http://m.go.co.kr/home/view/?p_no=G0dzGmgT&amp;nopopup=Y">
+									<div class="img_area">
+										<img src="http://img.yeosucablecar.co.kr/pack_landing/lail.jpg" alt="">
+									</div>
+									<p class="line2">
+										[여수시] 레일바이크+<br>
+										여수해상케이블카
+									</p>
+									<div class="prc">
+										<span class="num">19,000원</span>
+										<em>15,200원</em>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://m.go.co.kr/home/view/?p_no=G0dzGmkW&amp;nopopup=Y">
+									<div class="img_area">
+										<img src="http://img.yeosucablecar.co.kr/pack_landing/teady.jpg" alt="">
+									</div>
+									<p class="line2">
+										[여수시] 테디베어+<br>
+										여수해상케이블카
+									</p>
+									<div class="prc">
+										<span class="num">19,000원</span>
+										<em>14,400원</em>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://m.go.co.kr/home/view/?p_no=G0dzGmgf&amp;nopopup=Y">
+									<div class="img_area">
+										<img src="http://img.yeosucablecar.co.kr/pack_landing/expcart.jpg" alt="">
+									</div>
+									<p class="line2">
+										[여수시] 엑스포카트+<br>
+										여수해상케이블카
+									</p>
+									<div class="prc">
+										<span class="num">34,000원</span>
+										<em>24,000원</em>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://m.go.co.kr/home/view/?p_no=G0dzGmge&amp;nopopup=Y">
+									<div class="img_area">
+										<img src="http://img.yeosucablecar.co.kr/pack_landing/ginicar.jpg" alt="">
+									</div>
+									<p class="line2">
+										[여수시] 지니카+<br>
+										여수해상케이블카
+									</p>
+									<div class="prc">
+										<span class="num">21,000원</span>
+										<em>18,300원</em>
+									</div>
+								</a>
+							</li>				</ul>
+			</div>
+		</div>
+		
+
+
+
+		
+		<!-- 숙소정보 -->
+		<div id="room_w">			
+								<h3><img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20170919155938" class="goco_tit_logo" style="height:32px"> 상품정보</h3>
+						<div class="room_ti_tx">
+				<div class="room_ti_tx_in">	
+					<h4>여수해상케이블카</h4>
+					<p>1.매표소 옆 무인발권기<br>
+2.모바일 티켓 교환클릭<br>
+3.휴대폰 바코드 스캔후 탑승권 출력<br>
+4.게이트에서 탑승권 제시 후 이용<br>
+★당일구매 후 당일사용 불가합니다.<br>
+<br>
+<br>
+<br>
+* 편도권 : 놀아정류장(돌산공원), 해야정류장(자산공원) 양 탑승장 중 1곳에서 편도탑승이 가능합니다.<br>
+* 왕복권 : 놀아정류장 및 해야정류장을 순서에 상관없이 왕복 탑승이 가능합니다.<br>
+★왕복권 이용시 편도 이용 후 반드시 하차 _하차 후 재 탑승 필수<br>
+★왕복권 이용시 편도 이용 후 재 탑승은 당일에만 가능(당일 편도 이용 후 다음날 편도이용 불가)</p>
+				</div>
+			</div>
+						<div class="room_tx_w">
+				<style>
+.demongp {word-break: break-all}
+</style>
+
+<div class="room_tx_in">	
+	<h4 class="room_title"><img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20170919155938" class="goco_tit_logo" style="margin-left:4%"> 기본사항</h4>
+	<div class="txt_forms">
+	
+	<p>
+		<!--- 체크인/체크아웃 --->
+				
+		<!--- 기본 등록 내용 ---->
+		★당일 구매 후 당일 사용 불가<br>
+★9월26일(화)는 기기점검으로 인하여 12시부터운행합니다.<br>
+<br>
+운영시간<br>
+일~금요일 - 오전 9시 ~ 오후 9시 30분 <br>
+토요일 - 오전 9시 ~ 오후 10시 30분<br>
+<br>
+강풍 및 우천 등, 기상상황에 따라 <br>
+케이블카가 미운행 될 수 있습니다. <br>
+<br>
+기상상황이 안좋을 때는 미리 현장문의 후 <br>
+이용하시기를 바랍니다. <br>
+<br>
+여수해상케이블카 현장 고객센터 : 02-2202-3435<br>
+<br>
+미운행시 티켓은 100% 환불해 드립니다. <br>
+다만, 세트권은 할인 된 요금이므로, <br>
+부분 환불시는 환불금액이 정상가격 또는 <br>
+단품가격보다 적을 수 있습니다. <br>
+<br>
+주차는 돌산공원 주차장을 이용하실수 있습니다.<br>
+자산(오동도) 쪽에서 이용하실 경우 <br>
+유료 공영주차장을 이용하시면 됩니다.<br>
+<br>
+혐오 또는 냄새로 인하여 다른 승객에게 <br>
+불쾌감을 줄 우려가 있는 물품은, 휴대가 금지됩니다. <br>
+<br>
+반려동물 탑승불가<br>
+(단, 장애인 보조견은 제외) <br>
+<br>
+크리스탈 캐빈 편도는 운영하지 않습니다. <br>
+<br>
+유모차, 휠체어는 크리스탈 캐빈에 탑승불가 합니다.<br>
+<br>
+★이용기간 : 2017.08.01 ~ 2017.09.30<br>
+★당일 구매 후 당일 사용 불가<br>
+	</p>
+	<br>
+	<br>
+	
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_01.jpg?ver=20170919155938" alt="" style="width:100%">
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_02.jpg?ver=20170919155938" alt="" style="width:100%">
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_03.jpg?ver=20170919155938" alt="" style="width:100%">
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_04.jpg?ver=20170919155938" alt="" style="width:100%">
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_05.jpg?ver=20170919155938" alt="" style="width:100%">
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_06.jpg?ver=20170919155938" alt="" style="width:100%">
+		<img src="http://img.go.co.kr/mobile/landing/brands_n/yeosucablecar_07.jpg?ver=20170919155938" alt="" style="width:100%">
+					</div>
+</div>
+
+
+
+
+<!-- 위치정보 -->
+<div id="location_w" style="width:99%; border-top: 1px solid #ddd;">
+	<h3><img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20170919155938" class="goco_tit_logo"> 위치정보</h3>
+	<div class="location_map">
+		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=H99UZ_ot69w1gIzMLe8Z"></script>
+<div id="map" style="width: 100%; height: 200px; position: relative; overflow: hidden; background: url(&quot;http://static.naver.net/maps/mantle/1x/pattern_1.png&quot;) 0px 0px repeat transparent;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0; cursor: url(&quot;http://static.naver.net/maps/mantle/1x/openhand.cur&quot;), default;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 0; user-select: none;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; user-select: none;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div style="position: absolute; top: -140px; left: 118px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; transform: translateZ(0px); opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/910/434/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 116px; left: -138px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; transform: translateZ(0px); opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/909/433/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 116px; left: 118px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; transform: translateZ(0px); opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/910/433/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -140px; left: -138px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; transform: translateZ(0px); opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/909/434/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -140px; left: 374px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; transform: translateZ(0px); opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/911/434/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 116px; left: 374px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; transform: translateZ(0px); opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/911/433/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 100;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 101;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 103;"><div title="" style="position: absolute; overflow: hidden; box-sizing: content-box !important; cursor: inherit; left: 148px; top: 67px; width: 22px; height: 33px;"><map name="nmarker-5EA946CF-8A43-463E-BFD8-5AC58C3B1B26"><area href="#" shape="poly" coords="11,0,9,0,6,1,4,2,2,4,0,8,0,12,1,14,2,16,5,19,5,20,6,23,8,26,9,30,9,34,13,34,13,30,14,26,16,23,17,20,17,19,20,16,21,14,22,12,22,12,22,8,20,4,18,2,16,1,13,0" style="display: block; cursor: pointer;"></map><img src="http://static.naver.net/maps/mantle/1x/marker-default.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; position: absolute; cursor: inherit; width: 22px; height: 33px; left: 0px; top: 0px;"><img src="http://static.naver.net/maps/mantle/1x/dot.gif" alt="" usemap="#nmarker-5EA946CF-8A43-463E-BFD8-5AC58C3B1B26" style="position: absolute; border: 0px; left: 0px; top: 0px; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; width: 22px; height: 33px;"></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 106;"></div></div></div><div style="position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background-color: rgb(255, 255, 255); z-index: 10000; opacity: 0.5;"></div></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; right: 0px;"><div style="border: 0px none; margin: -4px 0px 0px; padding: 0px; pointer-events: none; float: right; height: 21px;"><div style="position: relative; width: 52px; height: 14px; margin: 0px 12px 7px 2px; overflow: hidden; pointer-events: auto;"><span style="display:block;margin:0;padding:0 4px;text-align:center;font-size:10px;line-height:11px;font-family:Helvetica,AppleSDGothicNeo-Light,nanumgothic,NanumGothic,&quot;나눔고딕&quot;,Dotum,&quot;돋움&quot;,sans-serif;font-weight:bold;color:#000;text-shadow:-1px 0 rgba(255, 255, 255, 0.3), 0 1px rgba(255, 255, 255, 0.3), 1px 0 rgba(255, 255, 255, 0.3), 0 -1px rgba(255, 255, 255, 0.3);">200m</span><img src="http://static.naver.net/maps/mantle/1x/scale-normal-b.png" width="44" height="4" alt="" style="position:absolute;left:4px;;bottom:0;z-index:2;display:block;width:44px;height:4px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="http://static.naver.net/maps/mantle/1x/scale-normal-l.png" width="4" height="10" alt="" style="position:absolute;left:0;bottom:0;z-index:2;display:block;width:4px;height:10px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="http://static.naver.net/maps/mantle/1x/scale-normal-r.png" width="4" height="10" alt="" style="position:absolute;right:0;bottom:0;z-index:2;display:block;width:4px;height:10px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></div></div><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: right;"><a href="http://map.naver.com" target="_blank" style="display: block; width: 43px; height: 10px; overflow: hidden; margin: 0px 5px 7px 0px; pointer-events: auto;"><img src="http://static.naver.net/maps/mantle/1x/naver-normal.png" width="43" height="10" alt="NAVER" style="display:block;width:43px;height:10px;overflow:hidden;border:0 none;margin:0;padding:0;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></a></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; left: 0px;"><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: left; height: 21px;"><div class="map_copyright" style="margin: 0px; padding: 0px 0px 2px 10px; height: 19px; line-height: 19px; color: rgb(68, 68, 68); font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; clear: both; white-space: nowrap; pointer-events: none;"><div style="float: left;"><span style="white-space: pre; color: rgb(68, 68, 68);">© NAVER Corp.</span></div><a href="#" style="font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; line-height: 19px; margin: 0px 0px 0px 5px; padding: 0px; color: rgb(68, 68, 68); float: left; pointer-events: auto; text-decoration: underline; display: none;">더보기</a><div style="float: left;"><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; display: none; color: rgb(68, 68, 68);"> /OpenStreetMap</a></div></div></div></div><div style="border: 1px solid rgb(41, 41, 48); background: rgb(255, 255, 255); padding: 15px; color: rgb(51, 51, 51); position: absolute; font-size: 11px; line-height: 1.5; clear: both; display: none; max-width: 350px !important; max-height: 300px !important;"><h5 style="font-size: 12px; margin-top: 0px; margin-bottom: 10px;">지도 데이터</h5><a href="#" style="position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; font-size: 14px; line-height: 14px; display: block; overflow: hidden; color: rgb(68, 68, 68); text-decoration: none; font-weight: bold; text-align: center;">╳</a><div><span style="white-space: pre; color: rgb(68, 68, 68); float: left;">© NAVER Corp.</span><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; color: rgb(68, 68, 68); float: left; display: none;"> /OpenStreetMap</a></div></div></div>
+
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng('34.7305600', '127.7415720'),
+    zoom: 10,
+	draggable: false
+	
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng('34.7305600', '127.7415720'),
+    map: map
+});
+</script>
+
+	</div>
+
+	<!--- 텍스트넓이 수정해달라고 최팀장께 요청할것 --->
+	<div class="location_info">
+		<div class="location_info_txt">
+			<span class="info_txt_tit">[체험/축제] 여수해상케이블카</span><br>
+			<span class="info_txt_stit">주소:전남 여수시 돌산로 3600-1</span>
+			<span class="info_map"><a href="javascript:utils.on('#map_layer')">
+			<span class="info_btn"><img src="http://img.go.co.kr/mobile/btn_map.jpg" width="60px"></span></a></span>
+		</div>
+		<!--- 앱에서는 utils.on('#map_layer') 링크를 app_utils.locations(); 이걸로 추가할것 --->
+		<!--- 모바일에서는 모바일웹으로 연결하면 되지만 앱은 지도앱과 연동이 다되면 레이어 형식으로 오픈해야함 --->
+<!--				<div class="location_info_btn" onclick="javascript:app_utils.findway('34.7305600', '127.7415720')">
+			<span class="info_btn"><img src="http://img.go.co.kr/mobile/pruduct_map_icon.jpg" width="14px" style="margin-top:5px"> 길찾기</span>					
+	</div> -->
+	</div>
+</div>
+<style>
+/* 기본 테이블 스타일_170720_혜준 */
+.table-type01 {width: 100%; border-collapse: collapse;}
+.table-type01 th, .table-type01 td {width: 50%; border: 1px solid #c8c8c8; font-size: 14px; text-align: center; vertical-align: middle; height: 30px; color: #7b7b7b;
+    letter-spacing: -0.5px; font-weight: normal;}
+.table-type01 th {background: #e4e3e3;}
+</style>
+<div class="room_tx_in">	
+	<h4 class="room_title"><img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20170919155938" class="goco_tit_logo" style="margin-left:4%"> 환불안내</h4>
+	<div style="width:100%">
+	<div class="txt_forms">
+	<p>
+		※ 일부 상품에 한하여 공통규정 외의 규정이 적용되는 상품도 존재하오니, 예약전 필히 확인 부탁드립니다. <br>
+		※ 취소 및 환불 규정을 확인하지 못하여 발생하는 부분은 책임지지 않습니다.<br>
+		※ 영업일 기준 이므로, 비영업일 또는 17 시 이후 취소접수건은 익일영업일 기준으로 진행됩니다.<br>
+		* 티켓 사용여부 확인 후 취소/환불 처리
+* 이용기간 이후 취소 및 환불 불가	</p>
+	</div>
+	</div>
+</div>
+
+
+
+<!---
+<div class="room_tx_in">	
+	<h4>조식 정보</h4>
+	<p>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">가든 테라스 / 1층 / 06:00~10:30 (주중</span></br>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">06:00~11:00 (주말, 공휴일)</span></br>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">1인 31,900원(성인), 15,900원(어린이) 현장 결제</span>
+	</p>
+</div>
+<div class="room_tx_in">	
+	<h4>현장 추가 정보</h4>
+	<p>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">16세 미만 무료</span></br>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">2인 기준/ 최대 3인 or 성인2인 + 자녀 2인 가능 (침대 제공 안됨)</span></br>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">성인 1인 추가:44,000원 (침구/엑스트라베드 포함)</span></br>
+		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">현장결제및 고객센터 문의</span>
+	</p>
+</div>
+---->								<div class="room_tx_in">	
+					<h4 class="room_title"><img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20170919155938" class="goco_tit_logo" style="margin-left:4%"> 확인사항 및 기타문의</h4>
+					<div class="txt_forms">
+					<p>
+						<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">해당 금액은 세금, 봉사료가 포함된 금액입니다.</span><br>
+						<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">위의 정보는 업체 사정에 따라 변경될 수 있습니다. </span><br>
+											</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 고객센터 문의하기 배너 -->
+		<div id="q_quest"> 
+			<p>무엇을 도와드릴까요?</p>
+			<p>전문 상담원에게 물어보세요</p>
+			<p><a href="javascript:cus_on('#q_modal', 'on');">고코투어 빠른 문의하기</a></p>
+		</div>
+		<style type="text/css">
+			#q_modal ul li:nth-child(4) a:before {
+				background-position: center -475px;
+			}
+		</style>
+		<div id="q_modal" style="display:none;height:auto;padding-bottom:5px">
+			<h2>문의 하기<a href="javascript:cus_on('#q_modal', 'out');" class="q_clsBtn"></a></h2>
+			<ul>
+				<li><a href="http://m.go.co.kr/home/customer/?dd=Tx8x">자주묻는 질문</a></li>
+				<li><a href="http://m.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl&amp;p_no=G0dwEGsR&amp;abr=">1:1 문의하기</a></li>
+				<!-- 평일 9시~18시에만 카카오톡 항목 노출 그 외 1:1 문의하기 
+								<li><a href="kakaoplus://plusfriend/friend/@고코투어" target="_blank">카카오톡 문의</a></li>
+				 -->
+
+				<!-- 평일 09시~02시, 주말 공유일 09시 ~ 17시 항목 노출, 그 외 비노출 -->
+								<li><a href="javascript:cus_on('#q_notice', 'on');">전화 문의</a></li>
+								<li><a href="http://m.go.co.kr/home/customer/?dd=XgwpVzs=&amp;brd=RhAl&amp;p_no=G0dwEGsR&amp;abr=&amp;type=group">단체문의</a></li>
+			</ul>
+		</div>
+
+		<div id="q_notice" style="display:none;">
+			<h2>알림<a href="javascript:cus_on('#q_notice', 'out');" class="q_clsBtn"></a></h2>
+			<div>
+				<p>고코투어 고객센터로 전화 연결합니다</p>
+				<p>(상담시간: 평일 오전 9시 ~ 오후 2시
+						<br>주말공휴일 오전 9시 ~ 오후 5시)
+				</p>
+			</div>
+			<p><a href="javascript:cus_on('#q_notice', 'out');">취소</a><a href="tel:1666-1243">전화연결</a></p>
+		</div>
+		<!-- 카톡상담 
+		<div id="kaka_advice" style="padding:6px 0 20px 0;"> 
+			<span class="txt">더 궁금한 사항은 언제든지 문의주세요.</span><br/>
+			<span class="btn"><a href="kakaoplus://plusfriend/friend/@고코투어"><img src="http://img.go.co.kr/mobile/pruduct_ka_bt.png" width="90px" /></a></span>
+		</div>
+		-->
+
+
+
+
+<style>
+.img_t { font-size:0.813em; color:#fff; letter-spacing:1px; text-align:center; opacity:none; line-height:23px;vertical-align:middle; }
+.img_txt { position: absolute; bottom:30px; border-radius:80px; background-color: rgba(75,68,67,0.7); position:absolute; left:50%; transform:translate(-50%); padding: 0 20px; height:23px;text-align:center;color:#fff; text-overflow:ellipsis;white-space:nowrap;} 
+
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {background-image:none;opacity:1}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {background-image:none;text-align:right;opacity:1}
+.swiper-scrollbar-drag { background-color:#FFFFFF; }
+.swiper-container-horizontal>.swiper-scrollbar { background-color:rgba( 255, 255, 255, 0.5 ); margin-bottom:5px; height:3px} /* 흰색 바에 불투명도 */
+
+.swiper-container-horizontal>.swiper-pagination { bottom: 0.5;}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet {margin:0 4px;} 
+.swiper-pagination-bullet {background:#ffffff;width:10px;height:10px;opacity:0.5;}
+.swiper-pagination-bullet-active {background:#ff4300;opacity:1}
+
+.pop_snsShare{position:absolute; z-index:999; left:5%; top:20%; margin:auto; width:90%; border-radius:10px; background:#fff; color:#000; text-align:center; letter-spacing:-0.5px}
+.pop_snsShare .title{float:left; position:relative; width:100%; padding:10px 0; border-top-left-radius:10px; ; border-top-right-radius:10px; background:#f95c24; }
+.pop_snsShare .title p{padding-left:20px; font-size:1.125em; text-align:left; color:#fff;}
+.pop_snsShare .title .close{position:absolute; top:10px; right:15px}
+.pop_snsShare .iconBox{display:table; width:100%; padding:30px 0; border-bottom-left-radius:10px; ; border-bottom-right-radius:10px; background:#fff; letter-spacing:-1px}
+.pop_snsShare .iconBox .icon{display:table-cell; text-align:center}
+.pop_snsShare .iconBox .icon a{color:#3f3f3f; font-size:0.875em; letter-spacing:-1px}
+
+</style>
+
+
+<!--- 지도앱 레이어 --->
+<div class="pop_snsShare" style="display:none" id="map_layer">
+	<div class="title"><p>지도앱에서 길찾기 <span class="close"><a href="javascript:utils.out('#map_layer');"><img src="http://img.go.co.kr/mobile/btn_close2.png" width="25" height="25" alt="닫기"></a></span></p></div>
+	<div class="iconBox">
+		<span class="icon"><a href="http://map.daum.net/link/map/34.7305600,127.7415720" target="_blank"><img src="http://img.go.co.kr/mobile/icon_mapdaum1.png" width="45" height="45"><br>다음맵</a></span>
+		<span class="icon"><a href="http://map.naver.com/?x=127.7415720&amp;y=34.7305600&amp;enc=b64" target="_blank"><img src="http://img.go.co.kr/mobile/icon_mapnaver1.png" width="45" height="45"><br>네이버맵</a></span>
+		<span class="icon"><a href="https://www.google.co.kr/maps/@34.7305600,127.7415720,16z" target="_blank"><img src="http://img.go.co.kr/mobile/icon_mapgoole1.png" width="45" height="45"><br>구글맵</a></span>
+	</div>
+</div>
+<!--- 지도앱 레이어 --->
+
+<!--- 공유하기 레이어 --->
+<script type="text/javascript">
+	var do2_url = "http://www.go.co.kr";
+</script>
+	<script type="text/javascript">
+		function share_test() {
+			alert("사내테스트3");
+			var url = ""+do2_url+"/home/view/sns_click.php?p_no=G0dwEGsR&sns_val=facebook";
+			//var url = "http://app.ssenflower.co.kr/170622.php";
+			window.open(url, "test", "width=700,height=300");
+			//location.href=url;
+
+		}
+	</script>
+<div class="pop_snsShare" style="display:none" id="sns_layer">
+	<div class="title"><p>공유하기 <span class="close"><a href="javascript:utils.out('#sns_layer');$('.rlist_btn').css({'z-index':'99999'})"><img src="http://img.go.co.kr/mobile/btn_close2.png" width="25" height="25" alt="닫기"></a></span></p></div>
+	<div class="iconBox">
+		<span class="icon">
+			<a href="javascript:sharing.share_sns('kakao', '', 'G0dwEGsR')" id="send_kakao"><img src="http://img.go.co.kr/mobile/icon_snsKakao1.png" width="45" height="45"><br>카카오톡</a>
+		</span>
+		<!--
+		<span class="icon">
+			<a href="javascript:sharing.share_sns('facebook', '', 'G0dwEGsR')" class="share-button popup">
+			<img src="http://img.go.co.kr/mobile/icon_snsFacebook1.png" width="45" height="45"><br/>페이스북</a>
+		</span>
+		-->
+		<span class="icon">
+			<a href="javascript:sharing.share_sns('mobile_mail', '', '')"><img src="http://img.go.co.kr/mobile/icon_snsMail1.png" width="45" height="45"><br>이메일</a>
+		</span>
+		<span class="icon" id="send_sms">
+			<img src="http://img.go.co.kr/mobile/icon_snsSms1.png" width="45" height="45"><br>문자
+		</span>
+		<span class="icon"><a href="http://m.go.co.kr/home/customer/?dd=XgwpVzs=&amp;p_no=G0dwEGsR&amp;abr=&amp;brd=RhAl&amp;type=group"><img src="http://img.go.co.kr/mobile/icon_snsMail1.png" width="45" height="45"><br>단체문의</a></span>
+	</div>
+</div>
+	
+	<!--메일 공유하기 팝업-->
+	<div id="email_pop" style="top:50px">
+		<form name="sns_mform" id="sns_mform" method="post">
+		<input type="hidden" name="encrypt" value="0">
+		<input type="hidden" name="mode" value="WhAzfDNHN08=">
+		<input type="hidden" name="sns_sang" value="G0dwEGsR">
+		<input type="hidden" name="uflag" value="M">
+		<div id="email_pop_top">
+			<div id="title">메일 공유하기</div>
+			<a href="javascript:util.basic_l_on('email_pop')" class="pop_close2"><img src="http://img.go.co.kr/mobile/pop_close2.jpg" width="20" alt="닫기"></a>
+		</div>
+		<div id="emil_form">
+			<p class="email_pop_text">
+				친구 또는 지인에게 이 상품을 메일로 공유하실 수 있습니다.
+			</p>
+			<table style="margin-bottom:20px">
+				<colgroup>
+					<col width="34%">
+					<col width="66%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>친구 이메일</th>
+						<td align="center">
+							<input type="text" name="femail" id="femail" validation="yes" title="친구이메일">
+							<p>* 입력하신 메일주소는 마케팅 용도로 사용되지 <br>않습니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td align="center">
+							<textarea name="sns_cont" id="sns_cont" validation="yes" title="내용"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>이름(보내는이)</th>
+						<td align="center">
+							<input type="text" name="sname" id="sname" validation="yes" title="이름(보내는 이)">
+						</td>
+					</tr>
+					<tr>
+						<th>이메일(보내는이)</th>
+						<td align="center">
+							<input type="text" name="semail" id="semail" validation="yes" title="이메일(보내는 이)">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br><br><br><br>
+			<div style="text-align:center;">
+			<input type="checkbox" name="send_chk" id="send_chk" style="cursor:pointer;display: inline-block; width: 14px; height: 14px; border: 2px solid #bcbcbc;">&nbsp;<label for="send_chk" style="cursor:pointer">개인정보 수집 및 이용동의에 동의합니다.</label><br>
+			<a href="javascript:location.href='http://m.go.co.kr/home/policy/?dd=WQwpVT9FJ3wzC0o=&amp;type=email'"><span class="link">[개인정보 수집 및 이용동의]</span></a><br>					
+			</div>
+			<div id="btn_email">
+				<a href="javascript:check_fchk2('send_chk')" class="btn_send" title="보내기">보내기</a><a href="javascript:util.basic_l_on('email_pop')" class="btn_cancel" title="취소">취소</a>
+			</div>
+		</div>
+		</form>
+	</div>
+	
+
+<script type="text/javascript">
+
+function check_fchk2(id_chk) {
+	if($("#"+id_chk).is(":checked") == true){	
+		utils.inst_fchk('sns_mform', 'func', sharing.email_chk);
+		return false;	
+	} else {
+		alert("개인정보 수집 및 이용동의에 동의해주세요.");
+	}
+}
+</script>
+<style>
+/*메일,sns 공유하기*/
+#sms_pop{position:absolute; display:none; width:100%; height:100%; background-color:#ffffff; z-index:999;}
+#sms_pop_top{float:left; width:100%; height:45px; background-color:#f4f2f3;}
+#sms_pop_top #title{text-align:center; font-weight:bold; line-height:2.5; font-size:18px; color:#3f3f3f; text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
+#sms_pop_top .pop_close2{position:absolute; top:13px; right:10px}
+#sms_form{float:left; width:100%; background-color:#ffffff}
+#sms_form .sms_pop_text{float:left; font-size:13px; letter-spacing:-0.5px; margin:15px}
+#sms_form table{float:left; width:100%; border-top:1px solid #000000}
+#sms_form table th{text-align:left; font-size:13px; background-color:#f0f0f0; border-bottom:1px solid #d2d2d2; text-indent:10px}
+#sms_form table td{font-size:13px; border-bottom:1px solid #d2d2d2; padding:5px 0 5px 0}
+#sms_form table td p{font-size:11px; text-align:left; margin-left:10px;}
+#sms_form table td input{border:1px solid #d2d2d2; width:52px; height:25px;}
+#sms_pop #btn_email{width:100%; float:left;}
+#sms_pop #btn_email .btn_send{float:left; display:block; width:45%;
+height:47px; font-size:20px; margin-left:15px; margin-bottom:5px; margin-top:20px; font-weight:bold; border-radius:10px; line-height:2.5; background-color:#f15d28; color:#ffffff; text-align:center
+}
+#sms_pop #btn_email .btn_cancel{
+float:right; display:block; width:45%;
+height:47px; font-size:20px; margin-right:15px; margin-bottom:5px; margin-top:20px; font-weight:bold; border-radius:10px; line-height:2.5; background-color:#979797; color:#ffffff; text-align:center
+}
+</style>
+	
+
+
+<!-- 문자 공유하기 팝업 - 받는번호가 있어야하니까 -->
+<div id="sms_pop" style="top:0px">
+	<form name="sns_sform" id="sns_sform" method="post">
+	<input type="hidden" name="encrypt" value="0">
+	<input type="hidden" name="mode" value="WhsuRwFVM1A=">
+	<input type="hidden" name="sns_pno" value="G0dwEGsR">
+	<div id="sms_pop_top">
+		<div id="title">문자 공유하기</div>
+		<a href="#" class="pop_close2" id="send_sms_close"><img src="http://img.go.co.kr/mobile/pop_close2.jpg" width="20" alt="닫기"></a>
+	</div>
+	<div id="sms_form">
+		<p class="sms_pop_text">
+			친구 또는 지인에게 이 상품을 문자로 공유하실 수 있습니다.
+		</p>
+		<table>
+			<colgroup>
+				<col width="34%">
+				<col width="66%">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>받는 번호</th>
+					<td>
+						<input name="tel1" type="number" id="tel1" pattern="[0-9]*" style="margin-left:10px"> - 
+						<input name="tel2" type="number" id="tel2" pattern="[0-9]*"> - 
+						<input name="tel3" type="number" id="tel3" pattern="[0-9]*">
+
+						<p>* 입력하신 번호는 마케팅 용도로 사용되지 <br>않습니다.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="btn_email">
+			<a href="#" class="btn_send" title="보내기" id="sms_submit">보내기</a><a href="#" class="btn_cancel" title="취소" id="send_sms_close2">취소</a>
+		</div>
+	</div>
+	</form>
+</div>
+	
+
+
+<!--- 공유하기 레이어 --->
+
+<!--- 스크롤 내릴때 로고라인 숨기고 타이틀 고정 --->
+<script type="text/javascript">
+$(function() {
+	//안드로이드, chrome 브라우저에서만 복사가능, 아이폰은 불가
+	//복사가능 여부 세팅
+	var clipboardSupport = true; 
+	try {
+		$.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase());
+ 
+		var version = $.browser.version;
+		version = new Number(version.substring(0, version.indexOf(".")));
+ 
+		//모바일 접속인지 확인
+		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/Android/i))) {
+			//클립보드 복사기능이 될경우 (크롬 42+)
+			if ($.browser.chrome == true && version >= 42) {
+				clipboardSupport = true;
+			} else {
+				clipboardSupport = false;
+			}
+		}
+	} catch(e) {
+
+	}
+ 
+    var clipboard = new Clipboard('#copy_str');
+    clipboard.on('success', function(e) {
+        alert("주소가 복사되었습니다.\n\n원하는 곳에 붙여넣기 해주세요.");
+    });
+    clipboard.on('error', function(e) {
+        alert("접속중인 기기및 브라우저에서는\n클립보드 복사를 지원하지 않습니다.\n주소를 길게 누르면 복사하실 수 있습니다.");
+		$("#hidden_addr").show();
+    });
+
+	/* 디자인팀 확인 후 뺄거 제거 */
+	/* 혹시 몰라 타이틀 라인와 상세메뉴 라인을 둘다 나오게함*/
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		if(scrollTop > 100) {
+//			var btnTOP = $("#btnTOP").offset();
+			$("#head").hide();																									//로고라인
+//			$("#pruduct_tit_w").css({"position":"fixed", "top":"0px", "z-index":"5", "border-bottom":"1px solid #ccc"});		//타이틀라인
+			$("#headTitle").css({"position":"fixed", "top":"0px", "z-index":"5", "border-bottom":"1px solid #ccc", "display":"block"});		//타이틀라인
+
+//			if(scrollTop == btnTop){
+//				$("#btnTOP").hide();
+//			}
+		} else if(scrollTop < 100) {
+			$("#head").show();																			//로고라인
+//			$("#pruduct_tit_w").css({"position":"static", "z-index":"0", "border-bottom":"none"});		//타이틀라인
+			$("#headTitle").css({"position":"static", "z-index":"0", "border-bottom":"none" , "display":"none"});		//타이틀라인
+			
+		}
+	});
+
+	
+	/* 상단 슬라이드 */
+	var swiper = new Swiper('.swiper-container', {
+		scrollbar: '.swiper-scrollbar',	// 스크롤
+		scrollbarHide: false,	// 스크롤 안할때도 스크롤바 숨기지 않음
+		uniqueNavElements: true,
+		loop:true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+		autoplayDisableOnInteraction: false,
+        paginationBulletRender: function (index, className) { 
+            return '<span class="' + className + '"></span>'; 
+        }
+    });
+
+
+
+});
+
+function tab_on(id) {
+	$("#detail_tab1 li").each(function(e) {
+		var chk_id = $("#detail_tab1 li").eq(e).attr("id");
+		var str_ex = chk_id.split("_on");
+		$("#detail_tab1 li").eq(e).attr("id", str_ex[0]);
+	});
+	$("#detail_tab1 ."+id).attr("id", id+"_on");
+}
+
+// 고객센터 문의하기 배너
+function cus_on(obj, st) {
+	if(st == "on") {
+		if(obj == "#q_notice") {
+			$("#q_modal").hide();
+		} else { 
+			var arrPageSizes = ___getPageSize();
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+		}
+		$(obj).css({"z-index": 20 }).show();
+		$("#top_box").css("z-index", "5");
+	} else {
+		$("#overlay").slideUp(function(){ $("#overlay").remove(); });
+		$(obj).hide();
+		$("#top_box").css("z-index", "9999");
+		$("#topSearch").css("z-index", "9999");	
+	}
+}
+</script>
+
+
+
+<script type="text/javascript">
+
+
+</script>
+
+		
+	
+	</div>
+	<div id="loading2" style="display:none"> 
+   <p><img src="http://img.go.co.kr/mobile/loading20.gif" width="30"></p> 
+  </div>
+		
+	<div class="btmLogo" id="btmLogo"></div><!-- footer -->
+<div class="clr"></div>
+<div id="Footer" class="hide_div">
+	<ul class="f-menu">
+		<li><a href="http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uGUcHHS8NNVRxSy8TTQYIKUYpCWFTHxBHFDlwRyljGVASWFtcHB9QOkcqRn1MGBhJbRNnC28aZg1dSyElRz9SOx5yThkeU3AacxRu">로그인</a></li>
+		<li><a href="http://www.go.co.kr?ver=pc">PC버전</a></li>
+		<li><a href="http://m.go.co.kr/home/customer/?dd=QBA0UTE=">고객센터</a></li>
+		<li><a href="javascript:navi.move_home();" class="move_top">TOP <span>▲</span></a></li>
+	</ul>
+	<div class="f-area">
+		<ul class="policy">
+			<li><a href="http://m.go.co.kr/home/member/?dd=SwwhTTp5N00mEQ==">회사소개</a></li>
+			<li><a href="/home/policy/?dd=QxEpTQFWMVM=">이용약관</a></li>
+			<li class="privacy"><a href="/home/policy/?dd=WQwpVT9FJw==">개인정보처리방침</a></li>
+		</ul>
+		<ul class="customer">
+			<li><a href="tel:1666-1243" class="call">고객상담 1666-1243</a></li>
+			<li><a href="mailto:help@go.co.kr" class="mail">문의메일 : help@go.co.kr</a></li>
+		</ul>
+		<address>
+							<p>
+					<strong>(주)바로네트웍스</strong><br>
+					대표이사 : 전병권<br>
+					주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
+					사업자등록번호 : 215-87-85373<br>					통신판매업 : 제2017-서울강남-00561호<br>					여행업등록번호 : 제2017-07호<br>					여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>					국외여행업등록번호 : 제2017호-26호				</p>
+				<!--
+				<p>
+					<strong>(주)가자닷컴투어</strong><br>
+					대표이사 : 김영환<br>
+					주소 : 서울특별시 강남구 테헤란로82길 15, 13층(대치동, 디아이타워)<br>
+					사업자등록번호 : 220-88-92970<br>
+					통신판매업 : 제2014-서울강남-03546호<br>
+					여행업등록번호 : 제2015-02호
+				</p>-->
+						<p class="copy">Copyright 2015 by GO.CO.KR co., all right reserved.</p>
+		</address>
+	</div>
+</div>
+<!-- footer -->
+
+
+
+<!--하단 고정메뉴-->
+
+	<div id="btnTOP" class="hide_div" style="display:none;">
+	<a href="javascript:navi.move_home();" style="bottom:60px"><img src="http://img.go.co.kr/mobile/top.png"></a>
+	</div>
+
+
+<style>
+.default {
+    bottom: 0;
+}
+.fixed {
+    bottom: -80px;
+}
+</style>
+<script type="text/javascript">
+$(function() {	
+	var ost = 0;
+	$(window).scroll(function (){
+			});
+
+
+});
+// 고객센터 문의하기 배너
+function cus_on(obj, st) {
+	if(st == "on") {
+		if(obj == "#q_notice") {
+			$("#q_modal").hide();
+		} else { 
+			var arrPageSizes = ___getPageSize();
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+		}
+		$(obj).css({"z-index": 20 }).show();
+		$("#top_box").css("z-index", "5");
+	} else {
+		$("#overlay").slideUp(function(){ $("#overlay").remove(); });
+		$(obj).hide();
+		$("#top_box").css("z-index", "9999");
+		$("#topSearch").css("z-index", "9999");	
+	}
+}
+</script>
+
+
+<style>.fixed_to_top4 {position:fixed;top:0px;z-index:50;transition:all 0.5s ease; width:100%}
+.fixed_to_top5 {position:fixed;top:93px;z-index:50;width:100%;transition:all 0.5s ease}
+
+</style>
+
+<script type="text/javascript">
+
+$(function() {
+	var myScroll = null;
+	var myScroll2 = null;
+
+	$("#menu_bg #category").css("height",$(window).height());
+	
+	$("#menu_bg2 #mypage").css("height",$(window).height());
+	$("#menu_bg2 #mypage #box").css("min-height", $(window).height());
+	
+
+	$("#menu2").click(function() {
+		utils.menu_on("#menu_bg");
+		
+		$(window).bind("touchmove", function(e) { e.preventDefault(); });
+		myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+
+		
+	});
+
+	$("#allmenu").click(function() {
+		utils.menu_on("#menu_bg");
+		
+		$(window).bind("touchmove", function(e) { e.preventDefault(); });
+		myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+
+		$("#bottomMenu2").hide();
+		
+		//To. 선하
+		//20160811 신규 상세페이지
+		//왼쪽메뉴 열릴 때 아래 객실선택 버튼이 겹치기 때문에 숨기는거 
+		//			$("#info_product_btn_w").hide();
+			});
+
+	$("#rightmenu").click(function() {
+		utils.rmenu_on("#menu_bg2");
+	});
+
+	$("#menu_bg").on("swipeleft", function(e) {
+		utils.menu_out("#menu_bg");
+		$("#bottomMenu2").show();
+		
+		//To. 선하
+		//20160811 신규상세페이지
+		//반대로 메뉴 넣을때는 다시 보여줌
+		//			$("#info_product_btn_w").show();
+			});
+
+	$("#menu_bg2").on("swiperight", function(e) {
+		utils.rmenu_out("#menu_bg2");		
+	});
+	
+	//To. 선하
+	//20160811 신규 상세페이지
+	//view_total.php 페이지로 해당 소스 옮겼기 때문에 적용할땐 삭제 처리 
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		if(scrollTop > 100) {
+						$("#head").hide();
+			
+			//타이틀라인
+		} else if(scrollTop < 100) {
+						$("#head").show();
+			
+			
+		}
+	});
+
+});
+
+// 상세로 가는 스크립트
+var callApp = {
+    isIPHONE: false,
+    isIPAD: false,
+    isANDROID: false,
+    isCHROME: false,
+    scheme: '',
+    appStoreUrl: '',
+    init : function(who) {
+        this.isIPHONE = (navigator.userAgent.match('iPhone') != null || navigator.userAgent.match('iPod') != null);
+        this.isIPAD = (navigator.userAgent.match('iPad') != null);
+        this.isANDROID = (navigator.userAgent.match('Android') != null);
+        this.isCHROME = (navigator.userAgent.match('Chrome') != null);
+ 
+        if (this.isANDROID) {
+			            this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocokr://http://app.go.co.kr/home/view/?p_no=G0dwEGsR&back_move=Y&;package=kr.co.go.travel.app;end';
+			        } else if (this.isIPHONE || this.isIPAD) {
+			            this.scheme = 'gocokr://http://app.go.co.kr/home/view/?p_no=G0dwEGsR&back_move=Y&';
+			            this.appStoreUrl = 'https://itunes.apple.com/app/id1091429916';
+        }        
+    },
+    getIframe: function(id, url) {
+        var iframe = document.getElementById(id);
+        if (iframe !== null) {
+            iframe.parentNode.removeChild(iframe);
+        }
+        iframe = document.createElement('iframe');
+        iframe.id = id;
+        iframe.style.visibility = 'hidden';
+        iframe.style.display = 'none';
+        iframe.src = url;
+        return iframe;
+    },
+    exec: function(who, url) {
+        this.init(who);
+        if (this.isANDROID) { /* 안드로이드 */
+            location = this.scheme;                
+        } else if (this.isIPHONE || this.isIPAD) { /* IOS */
+            setTimeout(function() {
+                location = callApp.appStoreUrl;
+            }, 500);
+            var iframe = this.getIframe('callAppIframe', this.scheme);
+            document.body.appendChild(iframe);
+        } else { /* 그 외 단말기 */
+            location = url;
+        }
+    }
+}
+
+// 메인으로 가는 스크립트
+var callApp2 = {
+    isIPHONE: false,
+    isIPAD: false,
+    isANDROID: false,
+    isCHROME: false,
+    scheme: '',
+    appStoreUrl: '',
+    init : function(who) {
+        this.isIPHONE = (navigator.userAgent.match('iPhone') != null || navigator.userAgent.match('iPod') != null);
+        this.isIPAD = (navigator.userAgent.match('iPad') != null);
+        this.isANDROID = (navigator.userAgent.match('Android') != null);
+        this.isCHROME = (navigator.userAgent.match('Chrome') != null);
+ 
+        if (this.isANDROID) {
+				this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocomain://app.go.co.kr&app_move=Y;package=kr.co.go.travel.app;end';
+	           // this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocokr://app.go.co.kr&app_move=Y;package=kr.co.go.travel.app;end';
+        } else if (this.isIPHONE || this.isIPAD) {
+            this.scheme = 'gocokr://app.go.co.kr';
+            this.appStoreUrl = 'https://itunes.apple.com/app/id1091429916';
+        }        
+    },
+    getIframe: function(id, url) {
+        var iframe = document.getElementById(id);
+        if (iframe !== null) {
+            iframe.parentNode.removeChild(iframe);
+        }
+        iframe = document.createElement('iframe');
+        iframe.id = id;
+        iframe.style.visibility = 'hidden';
+        iframe.style.display = 'none';
+        iframe.src = url;
+        return iframe;
+    },
+    exec: function(who, url) {
+        this.init(who);
+        if (this.isANDROID) { /* 안드로이드 */
+            location = this.scheme;                
+        } else if (this.isIPHONE || this.isIPAD) { /* IOS */
+            setTimeout(function() {
+                location = callApp2.appStoreUrl;
+            }, 500);
+            var iframe = this.getIframe('callAppIframe', this.scheme);
+            document.body.appendChild(iframe);
+        } else { /* 그 외 단말기 */
+            location = url;
+        }
+    }
+}
+
+
+
+</script>
+
+<!---- 버튼 카운트 ----->
+<script type="text/javascript">
+function button_count(pno, bt_type) {
+	$.ajax({
+		url : "/home/reservation2/state.php",
+		type: "post",
+		data: "mode=bt_count&pno="+pno+"&bt_type="+bt_type+"&abr=",
+		success: function(e) {
+		
+		}
+	});
+}
+</script>
+
+<!--- 20160125 네이버 --->
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 --> 
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script> 
+<script type="text/javascript"> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_18af9ab0e3d6";
+if (!_nasa) var _nasa={};
+wcs.inflow("go.co.kr");
+wcs_do(_nasa);
+</script>
+
+<!--- 모바일 북마크 아이콘 설치 Start --->
+<script type="text/javascript">
+
+$(document).ready(function() {
+	// 브라우저 체크
+	var BMKAgt	= navigator.userAgent.toLowerCase();
+	if(BMKAgt.indexOf('naver')!=-1) {
+		//bookmark_setup('naver');
+	}
+});
+	function bookmark_setup(type) {
+	
+	var bk_url		= "http://www.go.co.kr/gocokr.php?pid=go_bookmark";
+	var bk_icon		= "http://img.go.co.kr/mobile/icon_goco114x114.png";
+	var bk_site		= "고코투어";
+	var bk_title	= "고코투어";
+	var bk_enname	= "GO.CO.KR";
+	
+	if(type == 'naver') {
+	// ajax로 설치요구 카운트 및 쿠키세팅 후 결과값 전달
+		$.ajax({
+			type	: "post",
+			url		: "/bookmark.php?type=ajax",
+			success	: function(data) {
+				
+				// 쿠키없는 경우 다운로드 진행
+				if(data == "Y" ) {
+					/*
+					if(type == 'naver') {
+						getBookmark_none(bk_url, bk_icon, bk_title, bk_enname);
+					} else if(type == 'logo') {
+						getBookmark(bk_url, bk_icon, bk_title, bk_enname);
+						location.href='http://m.go.co.kr/home/main/';
+					} else {
+						getBookmark(bk_url, bk_icon, bk_title, bk_enname);
+					}
+					*/
+					if(data == "Y" && navigator.userAgent.match('Android') != null) {     
+						getBookmark_none(bk_url, bk_icon, bk_title, bk_enname); 
+					} 
+
+				}
+			}
+		});	
+	} else {
+		
+		if($.cookie("bookmark_cookie") != "GO.CO.KR") { 
+			if(navigator.userAgent.match('Android') != null) {
+				var win = window.open('/bookmark.php');
+				setTimeout( function(){
+					win.close();
+				},100);
+			}
+		}
+	}
+	
+	// 페이지 덮고 있는 전체링크부분 제거
+	try	{
+		$('#bookmark_allrange').hide();
+	} catch (e) { }
+}
+
+function getBookmark(url, icon, title, enname) {
+	if(!url || !icon || !title || !enname) {
+		return;
+	}
+	// 아이콘 다운로드 URL
+	var BMKUrl	= "naversearchapp://addshortcut?url="+encodeURIComponent(url)+"&icon="+encodeURIComponent(icon)+"&title="+encodeURIComponent(title)+"&serviceCode="+encodeURIComponent(enname)+"&version=7";
+	var win = window.open(BMKUrl);
+	setTimeout( function(){
+		win.close();
+	},100);
+}
+function getBookmark_none(url, icon, title, enname) {
+	if(!url || !icon || !title || !enname) {
+		return;
+	}
+	// 아이콘 다운로드 URL
+	var BMKUrl	= "naversearchapp://addshortcut?url="+encodeURIComponent(url)+"&icon="+encodeURIComponent(icon)+"&title="+encodeURIComponent(title)+"&serviceCode="+encodeURIComponent(enname)+"&version=7";
+	location.href	= BMKUrl;
+}
+</script>
+
+<!--- 모바일 북마크 아이콘 설치 Start --->
+<script type="text/javascript">
+/*
+$(document).ready(function() {
+	Bookmark.onLayer({
+		mode : "live",
+		url : "http://m.go.co.kr",
+		icon : "http://img.go.co.kr/mobile/icon_goco114x114.png",
+		site : "고코투어",
+		title : "고코투어",
+		enname : "GO.CO.KR",
+		day:1
+	});
+});
+*/
+</script>
+
+<div id="bookmark_wrap" style="width:100%; height:50px; background-color:#6e6e6e; position:fixed; bottom:-100px; z-index:100000;">
+	<div id="bookmark_layer" style="width:100%; height:100%; margin:0 auto;">
+		<div style="width:15%; height:100%; float:left; margin:0;">
+			<img id="bookmark_icon" src="" style="margin:0; height:80%; margin:10%;">
+		</div>
+		<div style="width:10%; height:100%; float:left; margin:0; text-align:right; margin-top:3px;">
+			<span id="bookmark_time" style="font-size:30px; color:#ffffff;"></span>
+		</div>
+		<div style="width:60%; height:100%; float:left; margin:0;">
+			<p id="bookmark_text" style="font-size:10px; margin-top:10px; margin-left:5px; color:#ffffff;">초 후, <span id="bookmark_site"></span> 아이콘이 설치됩니다.<br> 원치 않으면 X를 클릭하세요.</p>
+		</div>
+		<div style="width:15%; height:100%; float:left; margin:0;">
+			<img src="http://img.go.co.kr/icon_close.png" style="margin:0; height:80%; margin:10%;" onclick="javascript:Bookmark.clear();">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+</div>
+		
+	</div>
+</body>
+<whale translate="no"></whale>
+
+</html>

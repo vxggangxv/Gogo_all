@@ -1,0 +1,112 @@
+/* info.css */
+ 
+html, body { height: 100%; }
+body { font-family: "Helvetica Neue" }
+p { margin: 0; }
+ 
+/*페이지 영역*/
+.page-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ 
+/*인포그래픽 영역*/
+#info-page .page-bg {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+ 
+#info-content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #111;
+    min-width: 600px;
+	/*right: -50%;*/
+    left: 50%;
+}
+ 
+/*차트 공통 영역*/
+.charts {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -300px;
+    overflow: hidden;
+}
+ 
+/*개별 차트 영역*/
+.chart {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 20px;
+    float: left;
+}
+ 
+.circle-outer,
+.circle-inner {
+    position: absolute;
+    width: 240px;
+    height: 120px;
+    overflow: hidden;
+}
+ 
+.circle-outer.top { top: 0; }
+.circle-outer.bottom { bottom: 0; }
+ 
+.circle-outer.top .circle-inner {
+    top: 100%;
+    transform-origin: 50% 0%;
+}
+.circle-outer.bottom .circle-inner {
+    bottom: 100%;
+    transform-origin: 50% 100%;
+}
+ 
+.circle-body {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+ 
+.circle-outer.top .circle-body { bottom: 0; }
+.circle-outer.bottom .circle-body { top: 0; }
+ 
+#water    .circle-body { background-color: #0078ff; }
+#sun      .circle-body { background-color: #ef6122; }
+#birds    .circle-body { background-color: #9a22ef; }
+/*#woods    .circle-body { background-color: #138600; }*/
+#sun    .circle-body { background-color: #fa6b0a; }
+ 
+.chart-content {
+	/*display: none;*/
+	box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-top: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.chart-content .text {
+    position: relative;
+    line-height: 1;
+}
+.chart-content .percent-number {
+    font-size: 50px;
+    font-weight: bold;
+}
+.chart-content .percent-symbol {
+    font-size: 30px;
+}

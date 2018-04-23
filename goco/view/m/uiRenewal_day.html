@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css"/>
+<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170130135557" type="text/css"/> -->
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css" type="text/css"/>
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"/> -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://static.go.co.kr/js/admission_ticket_app.js"></script>
+<!-- <script src="../../src/js/admission_ticket_app.js"></script> -->
+
+
+<style>
+	.calender_ch_pk_w .number_txt{float:left; font-weight:600; color:#222; font-size:0.938em; line-height:2.2; padding-left:5px}
+	.calender_ch_pk_w .number_ch{float:right; height:32px; width:160px; border:1px solid #bbbbbb; background:#fff; padding:0 10px; cursor:pointer; border-radius: 0;}
+	.calender_ch_pk_w .number_ch .txt{color:#666; font-size:0.938em; line-height:2.1; font-weight: 400 }
+</style>
+
+
+</head>
+
+
+
+<body>
+
+	<div id="scroll_box">
+
+		<div id="pruduct_tit_w" style="background:#ffffff">
+			<div class="pruduct_tit">
+				<span class="tit">휘닉스평창블루캐니언 이용권</span>
+			</div>
+		</div>
+
+		<div id="calender_number_w">
+	
+			<div class="calender_ch_pk_w" onclick="booking_new.new_cal()">
+				<span class="number_txt">이용일자</span>
+				<span class="number_ch">
+					<span class="txt"><span id="chdate_text">2017.03.04 (토)</span></span>
+					<span class="img"><img src="http://img.go.co.kr/mobile/detail_canlender_icon.jpg" width="20px"></span>
+				</span>
+				<!-- 추가 내용 -->
+				<!-- <div class="term">이용기간: 2017.01.02~2017.03.31</div> -->
+			</div>
+		</div>
+
+
+		
+
+		<!-- 추가 내용 -->
+		<section id="tickets">
+			<ul>
+				<li class="clr on">
+					<div class="fl tit">
+						<p class="nth-1">
+							<input type="checkbox" id="pdt_chk1" checked="checked">
+							<label for="pdt_chk1"></label>
+							<span>워터파크 종일권(09:00~21:00)</span>
+						</p>
+						<p class="nth-2">이용기간 : <span>2017.01.02~2017.03.31</span></p>
+						<!-- <p class="nth-3">최대 5장 구매가능</p> -->
+					</div>
+					<div class="fr prc clr">
+						<p class="clr"><!-- <span class="fl per_sale">53%할인</span> --><span class="fr"><del>85,000원</del></span></p>
+						<!-- <p class="clr"><span class="fr origin_prc">40,000원</span></p> -->
+						<p class="clr"><span class="fl app_sale">APP특가</span><span class="fr app_prc">38,000원</span></p>
+					</div>
+				</li>
+				<li class="clr">
+					<div class="fl tit">
+						<p class="nth-1">
+							<input type="checkbox" id="pdt_chk2">
+							<label for="pdt_chk2"></label>
+							<span>휘닉스 스노우파크 단일권(오후)</span>
+						</p>
+						<p class="nth-2">이용기간 : <span>12:30 ~ 16:30</span></p>
+						<!-- <p class="nth-3">최대 5장 구매가능</p> -->
+					</div>
+					<div class="fr prc clr">
+						<p class="clr"><!-- <span class="fl per_sale">53%할인</span> --><span class="fr"><del>85,000원</del></span></p>
+						<!-- <p class="clr"><span class="fr origin_prc">40,000원</span></p> -->
+						<p class="clr"><span class="fl app_sale">APP특가</span><span class="fr app_prc">38,000원</span></p>
+					</div>
+				</li>
+				<li class="clr">
+					<div class="fl tit">
+						<p class="nth-1">
+							<input type="checkbox" id="pdt_chk3">
+							<label for="pdt_chk3"></label>
+							<span>단일권(야간)</span>
+						</p>
+						<p class="nth-2">이용기간 : <span>18:30 ~ 22:30</span></p>
+						<!-- <p class="nth-3">최대 5장 구매가능</p> -->
+					</div>
+					<div class="fr prc clr">
+						<p class="clr"><!-- <span class="fl per_sale">53%할인</span> --><span class="fr"><del>85,000원</del></span></p>
+						<!-- <p class="clr"><span class="fr origin_prc">40,000원</span></p> -->
+						<p class="clr"><span class="fl app_sale">APP특가</span><span class="fr app_prc">38,000원</span></p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		
+		
+	</div>
+
+	<!-- 배경 백드랍 -->
+	<div id="backDrop" class="backDrop"></div>
+	<section id="tickets-list">
+		<div class="cls-box"><a  href=""></a></div>
+		<div class="tl-wrap">
+			<h2>휘닉스 스노우파크 리프트권</h2>
+			<h3>상품 선택하기<span>(1개상품)</span></h3>
+			<!-- 상품아이템 리스트 시작 -->
+			<div class="tl-outer">
+				<ul class="tl-items">
+					<li class="tl-name">
+						<h4>단일권(오전) 08:30~12:30</h4>
+					</li>
+					<li class="item-number-wrap clr">
+							<div class="item-number">
+								<p class="h-ctgr"><span>&#8226;</span> 성인(중학생 이상~)</p>
+							</div>
+							<div class="item-nb-outer clr">
+								<p class="number-box clr">
+									<a href="" class="nb-left">&#45;</a>
+									<input type="text" class="nb-txt" value="1">
+									<a href="" class="nb-right">&#43;</a>
+								</p>
+								<p class="item-price">40,000원</p>
+							</div>
+					</li>
+					<li class="item-number-wrap clr">
+							<div class="item-number">
+								<p class="h-ctgr"><span>&#8226;</span> 소인(36개월~초등학생)</p>
+							</div>
+							<div class="item-nb-outer clr">
+								<p class="number-box clr">
+									<a href="" class="nb-left">&#45;</a>
+									<input type="text" class="nb-txt" value="1">
+									<a href="" class="nb-right">&#43;</a>
+								</p>
+								<p class="item-price">20,000원</p>
+							</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 상품아이템 끝 -->
+
+		</div>
+	</section>
+
+	<div id="info_product_btn_w" class="hide_div" style="display: table;">
+		<!-- 아무것도 체크 안되어있을 때 -->
+		<!-- <div class="info_product_btn" id="single_btn">입장권을 선택해주세요</div> -->
+		<!-- 체크되어 있을 때 -->
+		<div class="info_product_btn" id="single_btn">구매하기</div>
+	</div>
+
+
+</body>
+</html>
+

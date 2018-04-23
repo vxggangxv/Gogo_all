@@ -196,14 +196,12 @@
 .hotTrv-sec .bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
 .hotTrv-sec .bx-wrapper .bx-controls-direction a {display: block;}
 .hotTrv-sec .bx-wrapper .bx-controls-direction a {background: none; width: 45px; height: 45px; top: 0; margin-top: 0; z-index: 1;}
-.hotTrv-sec .bx-wrapper .bx-prev {left: 20px;}
-.hotTrv-sec .bx-wrapper .bx-next {right: 20px;}
+.hotTrv-sec .bx-wrapper .bx-prev {left: 30px;}
+.hotTrv-sec .bx-wrapper .bx-next {right: 30px;}
 .hotTrv-sec .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
 , .hotTrv-sec .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {display: none;}
 .hotTrv-sec .bx-wrapper .bx-controls-direction {margin-top: -29.5px;}
 .hotTrv-sec .bx-wrapper .bx-controls-direction a {width: 60px; height: 59px;}
-.hotTrv-sec .bx-wrapper .bx-prev {left: 30px;}
-.hotTrv-sec .bx-wrapper .bx-next {right: 30px;}
 .hotTrv-sec .bx-wrapper .bx-pager {padding: 0; text-align: right; box-sizing: border-box;}
 .hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a {background: #fff; margin: 0 3px; width: 12px; height: 12px; border-radius: 50%;}
 .hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a:hover, .hotTrv-sec .bx-wrapper .bx-pager.bx-default-pager a.active

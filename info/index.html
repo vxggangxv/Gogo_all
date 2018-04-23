@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>인포그래픽</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/info.css">
+    <script src="js/modernizr.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!--<script src="js/jquery-ui-1.10.3.custom.min.js"></script>-->
+    <script src="js/init.js"></script>
+</head>
+ 
+<body>
+    <!--페이지 영역-->
+    <!--div#info-page.pagewrap-->
+    <div id="info-page" class="pagewrap">
+        
+        <!--배경 이미지-->
+        <!--img.page-bg-->    
+        <img src="images/bg.jpg" alt="" class="page-bg">
+        
+        <!--차트 영역-->
+        <!--div#info-content>div.charts-->
+        <div id="info-content">
+            <div class="charts">
+                <!--인포4-->
+                <div class="chart" id="sun">
+                    <div class="circle-outer top">
+                        <div class="circle-inner">
+                            <div class="circle-body"></div>
+                        </div>
+                    </div>
+					<!--
+                    <div class="circle-outer bottom">
+                        <div class="circle-inner">
+                            <div class="circle-body"></div>
+                        </div>
+                    </div>
+					-->
+                    <div class="chart-content">
+                        <img src="images/sun.png" alt="" class="icon">
+                        <p class="text">
+                            <span class="percent-number">55</span>
+                            <span class="percent-symbol">%</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+ 
+</body>
+ 
+</html>

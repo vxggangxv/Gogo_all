@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 body {color:#7b7b7b; font-size:1.000em; line-height:1.5; letter-spacing:-0.5px}
 input{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
 select{height:35px; color:#7b7b7b; font-size:0.875em; border:0}

@@ -1,0 +1,439 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>고코투어 객실관리</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="false">
+
+    <link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css?v=1494219320" type="text/css">
+    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">-->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/go/avgrund.css?v=1494219320" type="text/css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/go/Nwagon.css?v=1494219320" type="text/css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://static.go.co.kr/js/go/common.js"></script>
+
+     <link rel="stylesheet" href="../../src/css/go/layout.css" type="text/css"> 
+</head>
+
+<body>
+    <div id="headerW">
+        <div class="header">
+            <h1><a href="/"><img src="http://img.go.co.kr/go/logo.jpg"></a></h1>
+            <div class="snb">
+                <span class="user">테스트용</span>
+                <a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+            </div>
+        </div>
+    </div>
+    <div id="navW" style="z-index: 2; position: relative; top: 0px;">
+		<ul class="nav" style="height: 50px; top: 0px;">
+			<li>
+				<a href="reserve.php">판매기록</a>
+				<ul class="dep2-menu">
+					<li><a href="reserve.php">판매목록</a></li>
+					<!--li><a href="agency.php">대매사 판매목록</a></li-->
+					<li><a href="chkin1.php">투숙자 리스트</a></li>
+					<li><a href="etc.php">부대시설 현황</a></li>
+
+					<!--li><a href="chkin2.php">투숙자 현황</a></li-->
+				</ul>
+			</li>
+			<li>
+				<a href="sale.php">객실관리</a>
+				<ul class="dep2-menu">
+					<li><a href="sale.php">요금</a></li>
+					<li><a href="sale3.php">현황1</a></li>
+					<li><a href="sale2.php">현황2</a></li>
+					<li><a href="room.php">관리</a></li>
+				</ul>
+			</li>
+			<li class="on">
+				<a href="room_day.php">판매현황</a>
+			</li>
+			<li><a href="info.php">호텔정보</a></li>
+		</ul>
+    </div>
+    <div id="top_mar" style="z-index: 9999; display: none;"></div>
+
+    <div id="wrapper">
+		<div id="container" class="type2">
+			<div id="alert_info" style="width: 99%; position: relative; top: 0px; z-index: 2;"><span>현재 <strong>미확인</strong>된 예약이 <strong>4건</strong> 있습니다.</span> &nbsp; <span class="alert_btn2"><a href="reserve.php?u=1">미확인 리스트 보기 &gt;</a></span> &nbsp; <span class="alert_btn2"><a href="javascript:reserve.add_rsv()">현장 예약하기 &gt;</a></span><span class="alert_tel">시설담당자 : <strong>강태구 과장 &nbsp; | &nbsp;  070-4694-5803</strong> (24시간 통화가능)</span></div>
+
+			<script>
+				function doSubmit(e, k) {
+					$("#sdate").val(e);
+					$("#edate").val(k);
+
+					document.sform.submit();
+				}
+			</script>
+
+			<h3 style="clear: left;">판매채널일별</h3>
+			<form name="sform" id="sform" method="post">
+				<div class="input-daterange">
+					<input type="text" class="form-control input-sm input-pa hasDatepicker" id="sdate" name="sdate" value="2017-12-01" style="width:80px;">
+					<span class="add-on">to</span>
+					<input type="text" class="form-control input-sm input-pa hasDatepicker" id="edate" name="edate" value="2017-12-04" style="width:80px;">
+				</div>
+
+				<button type="button" class="btn m-t-xs" onclick="doSubmit('2017-12-04', '2017-12-04'); stat.days();">오늘</button>
+				<button type="button" class="btn m-t-xs" onclick="doSubmit('2017-12-03', '2017-12-03'); stat.days();">어제</button>
+				<button type="button" class="btn m-t-xs" onclick="doSubmit('2017-11-28', '2017-12-04'); stat.days();">7일</button>
+				<button type="button" class="btn m-t-xs" onclick="doSubmit('2017-11-05', '2017-12-04'); stat.days();">30일</button>
+				<button type="button" class="btn m-t-xs" onclick="doSubmit('2017-11-01', '2017-11-30'); stat.days();">지난달</button>
+				<button type="button" class="btn m-t-xs" onclick="doSubmit('2017-12-01', '2017-12-04'); stat.days();">이번달</button>
+				<button type="button" class="btn m-t-xs btn05" onclick="doSubmit($('#sdate').val(), $('#edate').val())" style="background: #3d5696; color: #fff;">조회</button>
+				<button type="button" class="btn m-t-xs" style="background: #3d5696; color: #fff;" onclick="reserve.add_rsv()">현장 예약하기</button>
+			</form>
+
+			<table class="board table-hover text-center">
+				<colgroup>
+					<col width="100">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="110">
+					<col width="120">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>날짜</th>
+						<th>자사</th>
+						<th>이벤트</th>
+						<th>비회원/워크인</th>
+						<th>회원</th>
+						<th>회원이벤트</th>
+						<th>오픈마켓</th>
+						<th>소셜</th>
+						<th>당일앱</th>
+						<th>해외OTA</th>
+						<th>폐쇄몰</th>
+						<th>여행사</th>
+						<th>계</th>
+					</tr>
+					<tr bgcolor="#ffffff">
+						<td>2017-12-01</td>
+						<td style="text-align: right;">1,183,000</td>
+						<td style="text-align: right;">3,185,200</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">444,000</td>
+						<td style="text-align: right;">79,000</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">267,000</td>
+						<td style="text-align: right;">220,455</td>
+						<td style="text-align: right;">94,400</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right; font-weight: bold;">5,473,055</td>
+					</tr>
+					<tr bgcolor="#ddeffb">
+						<td>2017-12-02</td>
+						<td style="text-align: right;">874,700</td>
+						<td style="text-align: right;">1,381,600</td>
+						<td style="text-align: right;">138,000</td>
+						<td style="text-align: right;">936,000</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">349,278</td>
+						<td style="text-align: right;">611,410</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right; font-weight: bold;">4,290,988</td>
+					</tr>
+					<tr bgcolor="#fbdede">
+						<td>2017-12-03</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">1,039,800</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right; font-weight: bold;">1,039,800</td>
+					</tr>
+					<tr bgcolor="#ffffff">
+						<td>2017-12-04</td>
+						<td style="text-align: right;">241,600</td>
+						<td style="text-align: right;">899,900</td>
+						<td style="text-align: right;">500,000</td>
+						<td style="text-align: right;">1,781,000</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">82,800</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">228,200</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right;">0</td>
+						<td style="text-align: right; font-weight: bold;">3,733,500</td>
+					</tr>
+					<tr>
+						<th>계</th>
+						<th style="text-align: right;">2,299,300</th>
+						<th style="text-align: right;">6,506,500</th>
+						<th style="text-align: right;">638,000</th>
+						<th style="text-align: right;">3,161,000</th>
+						<th style="text-align: right;">79,000</th>
+						<th style="text-align: right;">82,800</th>
+						<th style="text-align: right;">616,278</th>
+						<th style="text-align: right;">1,060,065</th>
+						<th style="text-align: right;">94,400</th>
+						<th style="text-align: right;">0</th>
+						<th style="text-align: right;">0</th>
+						<th style="text-align: right;">14,537,343</th>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+			<!-- 171204 시작 -->
+			<div class="clr"></div>
+			<div class="pay-wrap" id="pay-wrap">
+				<ul class="ul-tab clr">
+					<li class="on"><a href="javascript:;">오픈마켓</a></li>
+					<li><a href="javascript:;">소셜</a></li>
+					<li><a href="javascript:;">당일앱</a></li>
+					<li><a href="javascript:;">해외OTA</a></li>
+					<li><a href="javascript:;">폐쇄몰</a></li>
+					<li><a href="javascript:;">여행사</a></li>
+				</ul>
+				<ul class="ul-cont">
+					<li class="on">
+						<h3 style="clear: left;">오픈마켓</h3>
+						<table class="board table-hover text-center">
+							<tbody>
+								<tr>
+									<th style="width:100px;">날짜</th>
+									<th>옥션</th>
+									<th>계</th>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-01</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#ddeffb">
+									<td>2017-12-02</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#fbdede">
+									<td>2017-12-03</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-04</td>
+									<td style="text-align: right;">82,800</td>
+									<td style="text-align: right;">82,800</td>
+								</tr>
+								<tr>
+									<th>계</th>
+									<th style="text-align: right;">82,800</th>
+									<th style="text-align: right;">82,800</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li>
+						<h3 style="clear: left;">소셜</h3>
+						<table class="board table-hover text-center">
+							<tbody>
+								<tr>
+									<th style="width:100px;">날짜</th>
+									<th>쿠팡</th>
+									<th>위메이크프라이스</th>
+									<th>계</th>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-01</td>
+									<td style="text-align: right;">267,000</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">267,000</td>
+								</tr>
+								<tr bgcolor="#ddeffb">
+									<td>2017-12-02</td>
+									<td style="text-align: right;">258,990</td>
+									<td style="text-align: right;">90,288</td>
+									<td style="text-align: right;">349,278</td>
+								</tr>
+								<tr bgcolor="#fbdede">
+									<td>2017-12-03</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-04</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr>
+									<th>계</th>
+									<th style="text-align: right;">525,990</th>
+									<th style="text-align: right;">90,288</th>
+									<th style="text-align: right;">616,278</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li>
+						<h3 style="clear: left;">당일앱</h3>
+						<table class="board table-hover text-center">
+							<tbody>
+								<tr>
+									<th style="width:100px;">날짜</th>
+									<th>데일리호텔</th>
+									<th>호텔나우</th>
+									<th>호텔타임</th>
+									<th>호텔타임(여기어때)</th>
+									<th>야놀자</th>
+									<th>계</th>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-01</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">85,000</td>
+									<td style="text-align: right;">135,455</td>
+									<td style="text-align: right;">220,455</td>
+								</tr>
+								<tr bgcolor="#ddeffb">
+									<td>2017-12-02</td>
+									<td style="text-align: right;">89,000</td>
+									<td style="text-align: right;">94,455</td>
+									<td style="text-align: right;">297,500</td>
+									<td style="text-align: right;">85,000</td>
+									<td style="text-align: right;">45,455</td>
+									<td style="text-align: right;">611,410</td>
+								</tr>
+								<tr bgcolor="#fbdede">
+									<td>2017-12-03</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-04</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">228,200</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">228,200</td>
+								</tr>
+								<tr>
+									<th>계</th>
+									<th style="text-align: right;">89,000</th>
+									<th style="text-align: right;">322,655</th>
+									<th style="text-align: right;">297,500</th>
+									<th style="text-align: right;">170,000</th>
+									<th style="text-align: right;">180,910</th>
+									<th style="text-align: right;">1,060,065</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li>
+						<h3 style="clear: left;">해외OTA</h3>
+						<table class="board table-hover text-center">
+							<tbody>
+								<tr>
+									<th style="width:100px;">날짜</th>
+									<th>익스피디아</th>
+									<th>계</th>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-01</td>
+									<td style="text-align: right;">94,400</td>
+									<td style="text-align: right;">94,400</td>
+								</tr>
+								<tr bgcolor="#ddeffb">
+									<td>2017-12-02</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#fbdede">
+									<td>2017-12-03</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td>2017-12-04</td>
+									<td style="text-align: right;">0</td>
+									<td style="text-align: right;">0</td>
+								</tr>
+								<tr>
+									<th>계</th>
+									<th style="text-align: right;">94,400</th>
+									<th style="text-align: right;">94,400</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li>
+						<h3 style="clear: left;">폐쇄몰</h3>
+						<table class="board table-hover text-center">
+							<tbody>
+								<tr>
+									<th>통계가 존재하지 않습니다.</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li>
+						<h3 style="clear: left;">여행사</h3>
+						<table class="board table-hover text-center">
+							<tbody>
+								<tr>
+									<th>통계가 존재하지 않습니다.</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+				</ul>
+			</div>
+			
+			<script>
+				$("#pay-wrap .ul-tab > li").on('click',function() {
+					var idx = $(this).index();
+					$(this).addClass('on').siblings().removeClass('on');
+					$("#pay-wrap .ul-cont > li").eq(idx).addClass('on').siblings().removeClass('on');
+				});
+			</script>
+			<!-- 171204 끝-->
+
+
+			<div id="detail" style="background: #fff;position:fixed; display:none;"></div>
+
+		</div>
+
+    </div>
+
+</body>
+
+</html>

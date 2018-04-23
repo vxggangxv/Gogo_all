@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.m_wrapper,.m_wrapper * {font-family: "Nanum Gothic",'sans-serif';} 
+
+/* 헤더 */
+.m_wrapper {width:100%;}
+.header {position:relative; width:100%;}
+.m_header_wrap {width:100%; height:349px; background: url(http://img.varotour.net/mobile/20171016_renew/main_bg.png) no-repeat; background-size: 100%;}
+.header .logo {width:75px; position:absolute; top:15px; left:10px;}
+.header .logo img {width:100%;}
+.login_wrap {float:right;}
+.login_wrap ul { height:30px; margin:10px 15px;}
+.login_wrap ul li {float:left; padding-left:7px;}
+.login_wrap ul li a {font-size:12px; color:#fff; font-weight: 800; letter-spacing: -2px;}
+
+/* 메인 텍스트 */
+.header_text {font-size:16px; color:#fff; position:absolute; top:85px; left:10px; line-height: 28px; letter-spacing: -1px;}
+.header_text .t_titb {font-weight: 600;}
+.header_text .t_sbt {color: #bae7f6; font-size:12px; font-weight: 500;}
+.header_text .t_link {color: #fff; font-size:12px; line-height:40px; font-weight: 600;}
+.header_text .t_link img {vertical-align: middle;}
+.header_text strong {font-size:30px;}
+
+
+/* 숙소검색 */
+
+.search_box_wrap {width:94%; height:90px; position:absolute; top:285px; left:10px; background-color: #fff;  border-bottom:3px solid #1b78c5;}
+.search_box .schtxt {width:94%; height:35px; border:1px solid #e0e0e0; border-radius: 4px; margin:15px 10px; outline: none; font-size:25px; background: none; z-index: 99; display: inline-block; position:relative;}
+
+.search_box_wrap .sch_wrap .sch_t {font-family: 'Nanum Myeongjo', serif; color: #b8b8b8; position:absolute; top:25px; left:15px; font-size:12px; letter-spacing: 1px;}
+.search_box .schbt {border:none;  background: none; position:absolute; right:20px; top:22px; cursor: pointer; z-index: 99;}
+.search_box .schbt img {width:80%;}
+.sch_wrap {position:relative;}
+.search_box_wrap .search_text {font-size:11px; color: #545353; font-weight: 600; text-align: center; margin-top:-10px; text-align: center;}
+.t_col {color:#129cd8;}
+
+	
+/* 인기여행지 */
+	
+.section_wrap {width:100%; }
+.best_city_wrap {width:100%;  margin:0 auto; margin-top:70px; background: #f8f9fa; width:100%;  border-top:1px solid #dcdfe2;}
+.bst_city { margin:22px 10px; }
+.bst_city h2 {font-size:15px; font-weight: 800; letter-spacing: -2px;}
+.bst_city ul {margin-top:15px;}
+.bst_city ul li  {margin-top:5px;}
+.bst_city ul li img {width:100%;}
+	
+/* 인기숙박시설 */
+.best_room_wrap {width:100%; position:relative;  background: #f8f9fa; width:100%; border-top:1px solid #dcdfe2;}
+.best_room { margin:22px 10px;}
+.best_room h2 {font-size:15px; font-weight: 800; letter-spacing: -2px;}
+.best_room ul {margin-top:15px;}
+.best_room ul li  {margin-top:5px;}
+.best_room ul li  img {width:100%;}
+
+/* 서비스이용 */
+.svc {width:100%;}
+.svc p {padding:15px; background: #3b3d6a;} 
+.svc p img {width:100%;}
+	
+
+/* 예약 질문 버튼 */
+.foot_btn { width:100%;}
+.foot_btn ul {margin:0 10px;}
+.foot_btn ul li  {height:100px; text-align: center; padding-top:15px; letter-spacing: -1px;}
+.foot_btn ul li a { color:#fff; font-size:12px; font-weight: 700;}
+.foot_btn ul .btn1 {float:left; background: #ed7844; width:50%; height:40px;}
+.foot_btn ul .btn2 {float:right; background: #954eed; width:50%; height:40px;}
+	
+/* 푸터 */
+.footer_wrap {width:100%; padding-bottom: 5px; background: #161e26; color:#fff; margin-top:0px;}
+
+.f-top {width:300px; height:50px; margin:20px auto; font-size:12px;}
+.f-top ul {text-align: center; }
+.f-top ul li {display: inline-block; color: #3b3e40; font-weight: 400;}
+.f-top ul .last_txt {}
+.f-top ul li span {color:#3b3e40;}
+.f-top ul li a {color: #fff;}
+.f-top ul li .f-color {color:#f67e49;}
+
+.f-bottom .address {height:50px; margin:20px auto; text-align: center; color:#4a5965; font-weight: 500; font-size:13px;}
+.f-bottom .address .f_add {font-size:11px; letter-spacing: -1px;}
+.f-bottom .address .f-bt {width:50px; height:30px; border:1px solid #68737c; font-size:11px; color:#68737c; padding:1px 7px; line-height: 30px;}
+	
+.f-bottom .f-info {margin:20px auto;  text-align: center; color:#68737c;}
+.f-bottom .f-info ul li {margin-left:20px; font-weight: 700; font-size:12px;}
+	
+	
+/* 푸터아이콘 */
+
+.f-icon {width:255px; height:40px; margin:0 auto;}
+.f-icon ul {}
+.f-icon ul li {float:left; margin-left:10px; vertical-align: middle;}
+.f-icon ul li img {width:36px; height:35px;}
+
+.copy { margin:5px auto; text-align: center; color: #4a5965; font-size: 11px; letter-spacing: -1px;}
+
+/* 모바일 상세페이지 */
+
+/* 상단이미지부분 */
+.swiper-container-horizontal>.swiper-scrollbar {display: none;}
+.swiper-button-next,.swiper-button-prev {top:93%;}
+#info_img_wrpa .swiper-slide:after {display: none;}
+.top_title {border-bottom:none; padding:5px 0 5px 0; }
+.top_title span {font-size:16px; color: #484848; line-height:40px; margin-left:10px; text-align: left; font-weight: 600;}
+.swiper-slide .img_l_price,#info_img_wrpa .thumbnail_logo .thumbnail_logo_img {display: none;}
+#info_img_wrpa .img_txt {bottom:0; left:0; border-radius: 0; width:100%; height:38px;}
+#info_img_wrpa .img_t {line-height:37px; margin-left:-20px; }
+#info_img_wrpa .swiper-slide:after {display: none;}
+
+/* 이벤트배너 */
+.ev_bnt {width:100%; position:relative; border-bottom:1px solid #d2d2d2;}
+.ev_bnt img {width:100%;}
+
+/* 부대시설및 상세페이지 아이콘 */
+
+#room_w {background: #fff; margin:0 auto;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap {padding-top:0;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap li {padding-left:15px;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list2 { margin-left:40px;}
+
+/* 푸터부분수정 */
+
+.sub_svc p img {padding: 10px 0 5px 0;}
+.sub_footer_wrap 
+
+/* 체크인/체크아웃 */
+.calender_ch_w  {border: 1px solid #0877c7;}
+.calender_ch_w .calender_ch_checkin {border-right:1px solid #0877c7;}
+.calender_ch_day_o {border:1px solid #0877c7;}
+.calender_ch_w .title {color:#0877c7;}
+
+/*  리뉴얼 객실선택하기 버튼 색상변경	*/	
+
+#info_product_btn_w .info_product_btn {background: #0877c7;}
+#info_product_btn_w {background: #0877c7; border-top:1px solid #0877c7;}
+
+/* 이벤트배너 */
+
+.ev_bnt {height:none; border:none;}

@@ -1,0 +1,1611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<title>속초설악 삼포비치바이크 고성점</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="No-Cache">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta name="robots" content="ALL">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="classification" content="">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	
+	<link rel="shortcut icon" href="">
+	
+	<link rel="stylesheet" type="text/css" href="http://static.hotelgangneung.kr/css/reset.css">
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/jquery-ui.css">
+	<!-- 변경내용170824 메인슬라이드 기능 bxslider Css, Js 추가-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
+	<!-- 복사 사이트 통합사용 Css-->
+	<!--<link rel="stylesheet" type="text/css" href="http://static.hotelgangneung.kr/css/layout2.css">-->
+	<link rel="stylesheet" type="text/css" href="../../hotelgangneung.kr/src/css/layout2.css">
+	<!-- 고코 통합사용 Css-->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css" type="text/css">
+	<!-- 개별 Css 적용 -->
+	<!--<link rel="stylesheet" type="text/css" href="http://static.ocean2you-bike.co.kr/css/init.css">-->
+	<link rel="stylesheet" type="text/css" href="../src/css/init.css">
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	<!-- 변경내용170824 메인슬라이드 기능 bxslider Css, Js 추가-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	
+	<script type="text/javascript" src="http://static.hotelgangneung.kr/js/common.js?ver=20170824145330"></script>
+	
+	<script src="http://static.hotelgangneung.kr/js/datepicker_ko.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.hotelgangneung.kr/css/prettyPhoto.css?ver=20170824145330" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
+	<script src="http://static.hotelgangneung.kr/js/jquery.prettyPhoto.js?ver=20170824145330" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://static.hotelgangneung.kr/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="http://static.hotelgangneung.kr/js/swiper.min.js?ver=20170824145330"></script>
+	<script type="text/javascript" src="http://static.hotelgangneung.kr/js/jquery.number.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.hotelgangneung.kr/css/swiper.min.css?ver=20170824145330">
+	<script type="text/javascript" src="http://static.go.co.kr/js/jwSlide_ver2.js?ver=20170824145330"></script>
+	<script src="http://static.go.co.kr/js/select_product.js"></script>
+	<!--- 20170227 입장권 UI변경하며 추가  ---->
+
+	<script type="text/javascript">
+		$(function() {
+			slide.start2('tour/img1');
+		});
+	</script>
+	<script type="text/javascript">
+		function button_count(pno, bt_type) {
+			$.ajax({
+				url: "../reservation/state.php",
+				type: "post",
+				data: "mode=bt_count&pno=" + pno + "&bt_type=" + bt_type + "&abr=",
+				success: function(e) {
+
+				}
+			});
+		}
+
+		function go_scroll(id) {
+
+			var offset = $("#" + id).offset();
+			$('html, body').animate({
+				scrollTop: 7400
+			}, 300);
+
+			//$("#"+id+"2").css({"color":"#bc891c"});
+			//$(".main_sub").css({"color":""});
+
+		}
+	</script>
+</head>
+
+<!-- 버튼 카운트 -->
+
+<body cz-shortcut-listen="true" style="">
+
+	<style type="text/css">
+		#bannerTop {
+			position: relative;
+			width: 100%;
+			height: 80px;
+			background: #0090e5;
+			text-align: center
+		}
+		
+		#bannerTop .close {
+			position: absolute;
+			top: 0;
+			right: 0
+		}
+		
+		#bannerTop .contents {
+			position: absolute;
+			z-index: 9999;
+			top: 80px;
+			right: 0;
+			width: 100%;
+			height: 392px;
+			background: #fff;
+			border-bottom: 2px solid #003157;
+			text-align: center
+		}
+		
+		#bannerTop .btn {
+			position: relative;
+			margin: auto;
+			width: 1001px;
+			height: 80px
+		}
+		
+		#bannerTop .btn .detail {
+			position: absolute;
+			top: 50px;
+			right: 0;
+			z-index: 9
+		}
+		
+		#bannerTop .contents .shopLink {
+			margin: auto;
+			position: relative;
+			width: 1001px;
+			height: 392px;
+			background: url(http://img.go.co.kr/bn_app04_2.jpg) no-repeat
+		}
+		
+		#bannerTop .contents .shopLink .text {
+			position: absolute;
+			top: 100px;
+			left: 310px;
+			font-weight: 600;
+			font-size: 24px;
+			text-align: left;
+			line-height: 1.3;
+			letter-spacing: -1px
+		}
+		
+		#bannerTop .contents .shopLink .text span {
+			display: inline-block;
+			background: #fdff6c;
+			color: #ff4800;
+			text-decoration: underline;
+			font-size: 28px
+		}
+		
+		#bannerTop .contents .shopLink .download_btn {
+			position: absolute;
+			top: 285px;
+			left: 310px
+		}
+	</style>
+	<!--- 고코 앱설치배너 --->
+	<div id="bannerTop">
+		<div class="close">
+			<a href="javascript:utils.appbn('', 'bannerTop');" title="닫기"><img src="http://img.go.co.kr/bn_app05.jpg?ver=20170824145200"></a>
+		</div>
+		<div class="btn">
+			<div class="detail">
+
+				<a href="javascript:utils.app_layer_new('bannertop_layer', '');" title="자세히보기"><img src="http://img.go.co.kr/bn_app01.jpg?ver=20170824145200" id="bannertop_btn"></a>
+				<!---레이어팝업 노출시 버튼명 변경  <a href="" title="닫기"><img src="http://img.yeosucablecar.co.kr/bn_app02.jpg"></a>--->
+			</div>
+			<a href="javascript:utils.app_layer_new('bannertop_layer', '');" title="고코투어앱 혜택보기"><img src="http://img.go.co.kr/bn_app03.jpg?ver=20170824145200"></a>
+		</div>
+
+
+
+		<div class="contents" style="display:none;z-index:9999" id="bannertop_layer">
+			<div class="shopLink">
+				<div class="text">
+					고코투어앱 설치하고 <br>
+					<span>속초설악 삼포비치바이크 고성점 2,000원 즉시할인</span> 받으세요!
+				</div>
+				<div class="download_btn">
+					<a href="http://www.yeosucablecar.co.kr/_appclick.php?val=android" target="_blank"><img src="http://img.go.co.kr/bn_app_btn01.jpg?ver=20170824145200" alt="안드로이드 다운로드" style="margin-right:10px"></a>
+					<a href="http://www.yeosucablecar.co.kr/_appclick.php?val=ios" target="_blank"><img src="http://img.go.co.kr/bn_app_btn02.jpg?ver=20170824145200" alt="앱스토어 다운로드" style="margin-right:10px"></a>
+					<a href="http://www.yeosucablecar.co.kr/_appclick.php?val=one" target="_blank"><img src="http://img.go.co.kr/bn_app_btn03.jpg?ver=20170824145200" alt="원스토어 다운로드"></a>
+				</div>
+				<div class="detail" style="position:absolute;bottom:0;right:-110px">
+					<a href="javascript:utils.app_layer_new('bannertop_layer', '');" title="자세히보기"><img src="http://img.go.co.kr/bn_app01.jpg?ver=20170824145200" id="bannertop_btn2" style="display:none"></a>
+					<!---레이어팝업 노출시 버튼명 변경  <a href="" title="닫기"><img src="http://img.yeosucablecar.co.kr/bn_app02.jpg"></a>--->
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div id="header_wrap" style="height:90px">
+		<div id="header">
+
+			<!--
+		<ul class="top">
+					<li class="top_reservation"><a href="http://www.yeosucablecar.co.kr/member/?dd=RREnSjA=&rurl=QQo0U2QJcVQ3CQZQGy9QK0U/QSwbS0gMbkAxCDVRbw==">로그인 <img src="http://img.yeosucablecar.co.kr/top_reservation_icon.jpg"></a></li>
+				</ul>
+		-->
+
+			<div class="logo">
+				<p style="font-size:20px;color:#ffffff;font-weight:bold;padding-top:30px;float:left;text-align:center">
+					<a class="corp" href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR" style="color:#ffffff">속초설악 삼포비치바이크 고성점</a>
+				</p>
+
+				<a id="lowest-price_grnty-w" href="#"><img src="http://img.yeosucablecar.co.kr/lowest-price_grnty-w.jpg" style="position:absolute; top:8px; margin-left:12px;margin-top:18px"></a>
+
+				<a class="official" href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR"><img src="http://img.go.co.kr/logo_c_r_b.png" style="margin-top:18px"></a>
+				<span style="clear:left"></span>
+			</div>
+		</div>
+	</div>
+	<!-- gnb -->
+	<div id="gnb_wrap">
+		<div id="gnb">
+			<ul>
+				<li class="menu_on"><a href="http://www.yeosucablecar.co.kr" title="속초설악 삼포비치바이크 고성점">시설안내</a></li>
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR" title="실시간 구매">실시간 구매</a></li>
+
+
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR&amp;scoll_t=info_box2" title="요금/예약">갤러리</a></li>
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR&amp;scoll_t=how_come" title="요금/예약">오시는길</a></li>
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR&amp;scoll_t=info_box5" title="요금/예약">축제/관광지/맛집</a></li>
+
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZQGy9QK0U/QSwbS0gMbkAxCDVRbwxNWhsyVT9SN0wuURdNGn1wKVVrdzoafmIZfR4=" title="예약내역조회">예약내역조회</a></li>
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/customer/?dd=RAcfTzdVKnwmH1k=" title="고객센터">고객센터</a></li>
+
+				<li class="menu"><a href="http://www.yeosucablecar.co.kr/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZQGy9QK0U/QSwbS0gMbkAxCDVRbw==">로그인</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- gnb 끝 -->
+
+	<div style="position:absolute; top:300px; margin-right:650px;right:50%;z-index:9999">
+		<iframe id="ebiz_counter" src="http://www.yeosucablecar.co.kr/common/ebiz_counter.php" width="160" height="210" allowtransparency="true" frameborder="0" marginheight="0" marginwidth="0" scrolling="0" style="text-align:left;z-index:10;"></iframe>
+	</div>
+
+	<!-- wrapper -->
+	<div id="wrapper">
+		<!-- 변경내용170824 메인수정 -->
+		
+		<div id="container" class="oc2-bk">
+			<div class="mainBn">
+				<ul class="bxslider">
+				    <li><img src="http://img.ocean2you-bike.co.kr/mainBn_01.jpg" /></li>
+				    <li><img src="http://img.ocean2you-bike.co.kr/mainBn_02.jpg" /></li>
+				    <li><img src="http://img.ocean2you-bike.co.kr/mainBn_03.jpg" /></li>
+				</ul>
+				<div class="tit-box">
+					<p>속초설악</p>
+					<p class="f-bd">삼포비치바이크</p>
+					<p>고성점</p>
+					<a href="" class="btn-a">자세히보기</a>
+				</div>
+			</div>
+			
+			<ul class="link-tab clr">
+				<li class="nth-1"><a href="">이용요금<span class="rArr"></span></a></li>
+				<li class="nth-2"><a href="">이용안내<span class="rArr"></span></a></li>
+				<li class="nth-3"><a href="">오시는길<span class="rArr"></span></a></li>
+			</ul>
+			
+			<div class="link-bn clr">
+				<a href="" class="nth-1">
+					삼포해변 바로 앞<span class="italic">!</span><br>
+					<span class="f-bd">오션투유리조트 속초설악비치 호탤앤콘도</span>
+				</a>
+				<a href="" class="nth-2">
+					오션투유 조식뷔페<br>
+					<span class="f-bd">다연</span>
+				</a>
+			</div>
+			
+		</div>
+		<!-- 변경내용170824 메인 끝 -->
+		
+		
+		<script>
+			$(function() {
+				$('.bxslider').bxSlider({
+					auto:true,
+					autoControls: true,
+					speed: 500,
+					duration: 6000,
+					prevText: '<img src="https://www.nurifunding.co.kr/img/btn_prev.png" alt="다음">',
+					nextText: '<img src="https://www.nurifunding.co.kr/img/btn_next.png" alt="다음">',
+				});
+			});
+		</script>
+		
+		<br><br>
+		<!-- container 끝-->
+	</div>
+	<!-- wrapper끝-->
+	<style>
+		#quickMenu2 {
+			z-index: 99999;
+			position: fixed;
+			bottom: 70px;
+			left: 50%;
+			display: block;
+			width: 30px;
+			height: 45px;
+			font: 0/0 arial;
+			padding: 0;
+			margin-left: 559px;
+			outline: none;
+		}
+	</style>
+
+	<!-- 고코투어 페이지 끝 알리는 로고 -->
+	<div class="page_btnLogo" style="clear:both;z-index:-1"></div>
+
+	<style>
+		/*카드 무이자 혜택*/
+		
+		.lpop_wrap2 {
+			background-color: #fff
+		}
+		
+		.lpop_wrap2 .lpop_cont {
+			padding: 31px 30px 24px;
+			border: 2px solid #3d3e47
+		}
+		
+		.lpop_wrap2 .lpop_cont .h_area {
+			width: 377px;
+			height: 29px;
+			padding-top: 14px;
+			background-color: #7d818d;
+			text-align: center
+		}
+		
+		.lpop_wrap2 .btn_clse {
+			position: absolute;
+			top: 9px;
+			right: 9px;
+			width: 19px;
+			height: 19px;
+		}
+		
+		.lpop_wrap2 .cp_lst {
+			margin-top: 10px;
+			border-bottom: 1px solid #d5d9e0;
+			white-space: normal
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type {
+			margin-top: 15px;
+			border-bottom: 0
+		}
+		
+		.lpop_wrap2 .bg_line1,
+		.lpop_wrap2 .bg_line2 {
+			position: absolute;
+			left: 32px;
+			height: 1px;
+			background-color: #dedede
+		}
+		
+		.lpop_wrap2 .bg_line1 {
+			top: 237px;
+			width: 645px
+		}
+		
+		.lpop_wrap2 .bg_line2 {
+			top: 415px;
+			width: 410px
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type .scroll {
+			left: -1px;
+			*left: 0
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type .scroll>table {
+			border: 1px solid #dedede;
+			border-top: 0
+		}
+		
+		.lpop_wrap2 .cp_lst thead th {
+			height: 30px;
+			border-top: 1px solid #dedede;
+			background: #efefef;
+			color: #454545;
+			font-size: 11px;
+			letter-spacing: -1px;
+			text-align: center;
+			font-weight: 600
+		}
+		
+		.lpop_wrap2 .cp_lst tbody {
+			color: #333;
+			font-size: 11px;
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th {
+			padding: 9px 5px 8px 13px;
+			border-top: 1px solid #d5d9e0;
+			background: #fff;
+			color: #555;
+			font-weight: normal;
+			text-align: left;
+			line-height: 18px
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type tbody td {
+			border: 1px solid #dedede;
+			border-right: 0;
+			border-bottom: 0
+		}
+		
+		.lpop_wrap2 .cp_lst tbody>tr>td[colSpan="3"],
+		.lpop_wrap2 .cp_lst.card_type tbody>tr>td[colSpan="3"],
+		.lpop_wrap2 .cp_lst tbody>tr>td[colSpan="4"],
+		.lpop_wrap2 .cp_lst.card_type tbody>tr>td[colSpan="4"] {
+			border-left: 0
+		}
+		
+		.lpop_wrap2 .cp_lst tbody>tr>td[colSpan="3"],
+		.lpop_wrap2 .cp_lst.card_type tbody>tr>td[colSpan="3"],
+		.lpop_wrap2 .cp_lst tbody>tr>td[colSpan="4"],
+		.lpop_wrap2 .cp_lst.card_type tbody>tr>td[colSpan="4"],
+		.lpop_wrap2 .cp_lst tbody>tr>td[colSpan="3"] .frst th,
+		.lpop_wrap2 .cp_lst.card_type tbody>tr>td[colSpan="3"] .frst td,
+		.lpop_wrap2 .cp_lst tbody>tr>td[colSpan="4"] .frst th,
+		.lpop_wrap2 .cp_lst.card_type tbody>tr>td[colSpan="4"] .frst td {
+			border-top: 0
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type caption+thead+tbody>tr>td {
+			border-top: 0 none
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card {
+			padding: 0;
+			text-align: center;
+			vertical-align: middle
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type tbody th.card {
+			width: 135px;
+			padding: 0;
+			text-align: center;
+			vertical-align: middle
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card span {
+			display: inline-block;
+			overflow: hidden;
+			width: 86px;
+			height: 19px;
+			margin-left: 0;
+			background: url(http://img.go.co.kr/sp_creditcard.png ) no-repeat;
+			line-height: 100px;
+			vertical-align: middle
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .kb {
+			background-position: -300px -265px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .mg {
+			background-position: -300px -285px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .lt {
+			background-position: -300px -305px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .sh {
+			background-position: -300px -325px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .keb {
+			background-position: -300px -345px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .jc {
+			background-position: -300px -365px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .hn {
+			background-position: -300px -385px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .mc {
+			background-position: -300px -405px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .bc {
+			background-position: -390px -265px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .nh {
+			background-position: -390px -285px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .sam {
+			background-position: -390px -305px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .sinh {
+			background-position: -390px -325px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .wr {
+			background-position: -390px -345px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .jb {
+			background-position: -390px -365px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .hd {
+			background-position: -390px -385px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .vs {
+			background-position: -390px -405px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .kdb {
+			background-position: -480px -265px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .kj {
+			background-position: -480px -285px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .shb {
+			background-position: -480px -305px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .ct {
+			background-position: -480px -325px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .er {
+			background-position: -480px -345px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .jj {
+			background-position: -480px -365px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .jcb {
+			background-position: -480px -385px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody th.card .tmsh {
+			background-position: -480px -405px
+		}
+		
+		.lpop_wrap2 .cp_lst tbody td {
+			border-top: 1px solid #dedede;
+			color: #555;
+			text-align: center
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type tbody td {
+			border: 1px solid #dedede;
+			border-right: 0;
+			border-bottom: 0
+		}
+		
+		.lpop_wrap2 .cp_lst .frst th,
+		.lpop_wrap2 .cp_lst .frst td {
+			border-top: none
+		}
+		
+		.lpop_wrap2 .cp_lst tbody.td_type1 td {
+			!important;
+			text-align: left
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type tbody.td_type1 td {
+			padding: 10px 0 10px 0 !important;
+			line-height: 15px;
+			text-align: center
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type tbody.td_type1 .al1 {
+			width: 60px;
+			text-align: left;
+			padding: 10px 15px !important
+		}
+		
+		.lpop_wrap2 .cp_lst.card_type tbody.td_type1 .al2 {
+			width: 160px;
+			padding-left: 15px !important;
+			padding-right: 16px !important;
+			text-align: left
+		}
+		
+		.lpop_wrap2 .cp_lst .scroll {
+			overflow-y: scroll;
+			overflow-x: hidden;
+			position: relative;
+			height: 105px
+		}
+	</style>
+	<div id="loadcard" style="POSITION:absolute;z-index:99999999999;display:none;">
+		<div class="lpop_wrap2">
+			<div class="lpop_cont">
+				<h3>
+					<img src="http://img.go.co.kr/card_tit_0.gif" align="무이자 할부 혜택 안내"><br>
+					<span style="color:#666; margin-top:7px">- 기간 : 2017년 08월 1일 ~ 2017년 08월 31일</span>
+				</h3>
+				<a href="javascript:utils.out('#loadcard')" class="btn_clse"><img src="http://img.go.co.kr/btn_close_card.jpg"></a>
+
+				<table width="410" class="cp_lst card_type" border="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td colspan="3">
+								<div class="scroll" style="width: 410px; height: 315px;">
+
+
+									<div style="text-align:left; padding:10px 0;  border-top:1px solid #ddd; border-left:1px solid #ddd;  border-bottom:1px solid #ddd; background:#eee;width:410px">
+										<img src="http://img.go.co.kr/card_tit_1.gif" align="무이자할부">
+									</div>
+									<table width="410" border="0" cellspacing="0">
+										<tbody class="td_type1">
+
+											<tr>
+												<th class="card" scope="rowgroup"><span class="sam">삼성카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+											<tr>
+												<th class="card" scope="rowgroup"><span class="hd">현대카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+											<tr>
+												<th class="card" scope="rowgroup"><span class="kb">KB국민카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+											<tr>
+												<th class="card" scope="rowgroup"><span class="sh">신한카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+											<tr>
+												<th class="card" scope="rowgroup"><span class="lt">롯데카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+
+											<tr class="card">
+												<th class="card" scope="rowgroup"><span class="bc">비씨카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+											<tr>
+												<th class="card" scope="rowgroup"><span class="nh">NH농협카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+											<tr class="card">
+												<th class="card" scope="rowgroup"><span class="ct">씨티카드</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~3개월</td>
+											</tr>
+											<tr>
+												<th class="card" scope="rowgroup"><span class="hn">하나카드(하나SK+외환)</span></th>
+												<td class="al1">5만원 이상</td>
+												<td class="al2">2~5개월</td>
+											</tr>
+										</tbody>
+									</table>
+
+
+
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="bg_line2"></span>
+				<p style="margin-top:15px; color:#666; line-height:1.4">
+					*개인카드로 5만원 이상 결제시 적용<br> *신용카드사 정책 변경에 따라 변동 될 수 있음<br> *단,삼성카드의 경우 50만원 이상 결제 시 공인인증서 필요<br>
+				</p>
+
+			</div>
+		</div>
+	</div>
+	<style>
+		.list_wrap {
+			position: fixed;
+			bottom: 5px;
+			right: 60px;
+			z-index: 99999;
+		}
+		
+		.list_box {
+			position: relative;
+			float: left;
+		}
+		
+		.link_list {
+			background-color: #ffffff;
+			width: 200px;
+			height: 510px;
+			bottom: 25px;
+			border: 1px solid #dddddd;
+			position: absolute;
+			overflow-y: scroll;
+			display: none
+		}
+		
+		.link_list li {
+			padding: 2px;
+			padding-left: 10px;
+			border: none;
+			font-size: 9pt;
+			text-align: left;
+		}
+		
+		.link_button {
+			background-color: #ffffff;
+			border: 1px solid #dddddd;
+			position: relative;
+			width: 200px;
+			bottom: 0px;
+			cursor: pointer;
+			font-size: 9pt;
+			padding-top: 4px;
+			text-align: center;
+			height: 20px;
+			overflow-x: hidden;
+			white-space: nowrap;
+		}
+		
+		.red {
+			color: #ff0000;
+		}
+	</style>
+	<script>
+		function on_off_list(val) {
+			var state = $("#" + val).css("display");
+
+			$(".link_list").hide();
+
+			if (state == "none") {
+				$("." + val).show();
+			} else {
+				$("." + val).hide();
+			}
+		}
+
+		function off_list() {
+			$(".link_list").hide();
+		}
+	</script>
+	<div class="list_wrap">
+		<div style="float:left;margin-right:10px">※ 사내노출 </div>
+		<!-- 지역별 사이트 -->
+
+		<div class="list_box">
+			<div class="link_button" onclick="javascript:on_off_list('link_list');">===== 사이트선택 =====</div>
+			<div id="link_list" class="link_list" style="height:500px">
+				<ul>
+					<li>===== 숙박 =====</li>
+					<li class="red"><a href="http://thecshotel.b.go.co.kr" target="_blank">CS프리미어호텔안양 </a></li>
+					<li class="red"><a href="http://jeihouse.b.go.co.kr" target="_blank">J하우스펜션 </a></li>
+					<li class="red"><a href="http://osthotel.b.go.co.kr" target="_blank">OST호텔 </a></li>
+					<li class="red"><a href="http://srdesignhotel.b.go.co.kr" target="_blank">SR디자인호텔 </a></li>
+					<li class="red"><a href="http://srhotelseoul.b.go.co.kr" target="_blank">SR호텔서울(강서에스알호텔) </a></li>
+					<li class="red"><a href="http://suanbohotel.b.go.co.kr" target="_blank">THE 조선호텔 수안보 </a></li>
+					<li class="red"><a href="http://jejuwehotel.b.go.co.kr" target="_blank">we호텔 </a></li>
+					<li class="red"><a href="http://wjiwooresort.b.go.co.kr" target="_blank">W지우리조트 </a></li>
+					<li class="red"><a href="http://zatwo.b.go.co.kr" target="_blank">ZA-2 </a></li>
+					<li class="red"><a href="http://venueghotel.b.go.co.kr" target="_blank">[청계천앞]베뉴지호텔 </a></li>
+					<li class="red"><a href="http://gajodohouse.b.go.co.kr" target="_blank">가조도풀하우스 </a></li>
+					<li class="red"><a href="http://dreamspa.b.go.co.kr" target="_blank">가평 꿈에 스파 펜션 </a></li>
+					<li class="red"><a href="http://kpbaobao.b.go.co.kr" target="_blank">가평 바오바오 글램핑 펜션 </a></li>
+					<li class="red"><a href="http://innocentdeep.b.go.co.kr" target="_blank">가평 이노센트딥 풀빌라 </a></li>
+					<li class="red"><a href="http://harborhouse.b.go.co.kr" target="_blank">가평 하버하우스 풀빌라 </a></li>
+					<li class="red"><a href="http://aurnubocity.b.go.co.kr" target="_blank">강남아르누보시티 </a></li>
+					<li class="red"><a href="http://lamiacasafullvilla.b.go.co.kr" target="_blank">강릉 라미아까사 풀빌라 </a></li>
+					<li class="red"><a href="http://addirangs.b.go.co.kr" target="_blank">강릉 아띠랑스 펜션 </a></li>
+					<li><a href="http://www.hotelgangneung.kr" target="_blank">강릉관광호텔 </a></li>
+					<li class="red"><a href="http://gzdomfhotel.b.go.co.kr" target="_blank">거제돔가족호텔 </a></li>
+					<li class="red"><a href="http://gjradiancehotel.b.go.co.kr" target="_blank">거제래디언스호텔 </a></li>
+					<li class="red"><a href="http://hotelriviera.b.go.co.kr" target="_blank">거제리베라호텔 </a></li>
+					<li class="red"><a href="http://blueoneresort.b.go.co.kr" target="_blank">경주 블루원리조트 </a></li>
+					<li class="red"><a href="http://jackscamp.b.go.co.kr" target="_blank">경주 잭스캠프 글램핑 </a></li>
+					<li class="red"><a href="http://gyeonjuilsungcondo.b.go.co.kr" target="_blank">경주일성콘도 </a></li>
+					<li class="red"><a href="http://gghotel.b.go.co.kr" target="_blank">경주지지관광호텔 </a></li>
+					<li class="red"><a href="http://kolonhotelgyeonju.b.go.co.kr" target="_blank">경주코오롱호텔 </a></li>
+					<li class="red"><a href="http://hanokvillage.b.go.co.kr" target="_blank">경주한옥마을 황남관 </a></li>
+					<li class="red"><a href="http://gyungpobeach.b.go.co.kr" target="_blank">경포비치호텔 </a></li>
+					<li class="red"><a href="http://kpemerald.b.go.co.kr" target="_blank">경포에메랄드비치호텔 </a></li>
+					<li class="red"><a href="http://valleylove.b.go.co.kr" target="_blank">계곡사랑펜션 </a></li>
+					<li class="red"><a href="http://mibong.b.go.co.kr" target="_blank">고성금강산콘도 </a></li>
+					<li class="red"><a href="http://wellparkcity.b.go.co.kr" target="_blank">고창웰파크시티 힐링카운티 </a></li>
+					<li class="red"><a href="http://konjiamresort.b.go.co.kr" target="_blank">곤지암리조트 </a></li>
+					<li class="red"><a href="http://goldriverhotel.b.go.co.kr" target="_blank">골드리버호텔 </a></li>
+					<li class="red"><a href="http://goldfamiliycondo.b.go.co.kr" target="_blank">골드훼미리콘도 </a></li>
+					<li class="red"><a href="http://goldenseoul.b.go.co.kr" target="_blank">골든서울호텔 </a></li>
+					<li class="red"><a href="http://gchotel.b.go.co.kr" target="_blank">골든시티호텔 </a></li>
+					<li class="red"><a href="http://goldentulipmseoul.b.go.co.kr" target="_blank">골든튤립 엠 서울 호텔 </a></li>
+					<li class="red"><a href="http://hotellacky.b.go.co.kr" target="_blank">광양 락희호텔 </a></li>
+					<li class="red"><a href="http://dubaihotel.b.go.co.kr" target="_blank">광주 두바이 비즈니스 호텔 </a></li>
+					<li class="red"><a href="http://naksansuites.b.go.co.kr" target="_blank">교원스위트호텔낙산 </a></li>
+					<li class="red"><a href="http://hellofamily.b.go.co.kr" target="_blank">굿모닝가족호텔 </a></li>
+					<li class="red"><a href="http://hotelrest.b.go.co.kr" target="_blank">굿모닝레지던스호텔휴 </a></li>
+					<li class="red"><a href="http://seoulgrandhyatt.b.go.co.kr" target="_blank">그랜드 하얏트 서울 </a></li>
+					<li class="red"><a href="http://grandmerjeju.b.go.co.kr" target="_blank">그랜드메르호텔제주 </a></li>
+					<li class="red"><a href="http://graytone.b.go.co.kr" target="_blank">그레이톤둔산호텔 </a></li>
+					<li class="red"><a href="http://gloriaps.b.go.co.kr" target="_blank">글로리아펜션 </a></li>
+					<li class="red"><a href="http://khresort.b.go.co.kr" target="_blank">금호설악리조트 </a></li>
+					<li class="red"><a href="http://kumhojeju.b.go.co.kr" target="_blank">금호제주리조트 </a></li>
+					<li class="red"><a href="http://kumhoresort.b.go.co.kr" target="_blank">금호통영마리나리조트 </a></li>
+					<li class="red"><a href="http://kumhoresort.b.go.co.kr" target="_blank">금호화순리조트 </a></li>
+					<li class="red"><a href="http://casavilleshinchon.b.go.co.kr" target="_blank">까사빌신촌 </a></li>
+					<li class="red"><a href="http://narshahotel.b.go.co.kr" target="_blank">나르샤관광호텔 </a></li>
+					<li class="red"><a href="http://nabomresort.b.go.co.kr" target="_blank">나봄리조트(구)장수힐스리조트 </a></li>
+					<li class="red"><a href="http://navihotelresidence.b.go.co.kr" target="_blank">나비 호텔레지던스 </a></li>
+					<li class="red"><a href="http://navimotel.b.go.co.kr" target="_blank">나비모텔(구,브이모텔) </a></li>
+					<li class="red"><a href="http://ninebrickhotel.b.go.co.kr" target="_blank">나인브릭호텔 </a></li>
+					<li class="red"><a href="http://ninespavill.b.go.co.kr" target="_blank">나인스파빌 </a></li>
+					<li class="red"><a href="http://naksanbeach.b.go.co.kr" target="_blank">낙산비치호텔 </a></li>
+					<li class="red"><a href="http://airport.b.go.co.kr" target="_blank">낙산에어포트콘도 </a></li>
+					<li class="red"><a href="http://namiseom4.b.go.co.kr" target="_blank">남이섬사계절펜션 </a></li>
+					<li class="red"><a href="http://namiltte.b.go.co.kr" target="_blank">남일대리조트[호텔엘리너스] </a></li>
+					<li class="red"><a href="http://isilsungcondo.b.go.co.kr" target="_blank">남한강일성콘도 </a></li>
+					<li class="red"><a href="http://namhaeonetwo.b.go.co.kr" target="_blank">남해 1박2일 펜션 </a></li>
+					<li class="red"><a href="http://hotelnongshim.b.go.co.kr" target="_blank">농심호텔 </a></li>
+					<li class="red"><a href="http://nurihotel.b.go.co.kr" target="_blank">누리호텔 </a></li>
+					<li class="red"><a href="http://newdaeguhotel.b.go.co.kr" target="_blank">뉴대구호텔 </a></li>
+					<li class="red"><a href="http://newdonghae.b.go.co.kr" target="_blank">뉴동해관광호텔 </a></li>
+					<li class="red"><a href="http://neuraengigol.b.go.co.kr" target="_blank">느랭이골자연리조트 </a></li>
+					<li class="red"><a href="http://dadareumlab.b.go.co.kr" target="_blank">다다름게스트하우스 </a></li>
+					<li class="red"><a href="http://dwresort.b.go.co.kr" target="_blank">다우리조텔 </a></li>
+					<li class="red"><a href="http://danyanghotel.b.go.co.kr" target="_blank">단양관광호텔 </a></li>
+					<li class="red"><a href="http://dammora.b.go.co.kr" target="_blank">담모라리조트 </a></li>
+					<li class="red"><a href="http://daeguprincehotel.b.go.co.kr" target="_blank">대구프린스호텔 </a></li>
+					<li class="red"><a href="http://geojeresort.b.go.co.kr" target="_blank">대명리조트[거제마리나] </a></li>
+					<li class="red"><a href="http://daemyungresortgj.b.go.co.kr" target="_blank">대명리조트[경주] </a></li>
+					<li class="red"><a href="http://daemyungresort.b.go.co.kr" target="_blank">대명리조트[단양] </a></li>
+					<li class="red"><a href="http://daemyungresort.b.go.co.kr" target="_blank">대명리조트[델피노골프앤리조트](구:대명리조트설악) </a></li>
+					<li class="red"><a href="http://daemyungresortbs.b.go.co.kr" target="_blank">대명리조트[변산&amp;클라우드9] </a></li>
+					<li class="red"><a href="http://daemyungresortvp.b.go.co.kr" target="_blank">대명리조트[비발디파크] </a></li>
+					<li class="red"><a href="http://daemyungresortsb.b.go.co.kr" target="_blank">대명리조트[삼척쏠비치호텔&amp;리조트] </a></li>
+					<li class="red"><a href="http://daemyungresortsn.b.go.co.kr" target="_blank">대명리조트[소노펠리체] </a></li>
+					<li class="red"><a href="http://yydaemyungresort.b.go.co.kr" target="_blank">대명리조트[양양쏠비치라오텔] </a></li>
+					<li class="red"><a href="http://yysolbeach.b.go.co.kr" target="_blank">대명리조트[양양쏠비치리조트] </a></li>
+					<li class="red"><a href="http://mvlhotel.b.go.co.kr" target="_blank">대명리조트[엠블호텔여수] </a></li>
+					<li class="red"><a href="http://redsky.b.go.co.kr" target="_blank">대부도 레드스카이 펜션 </a></li>
+					<li class="red"><a href="http://daearesort.b.go.co.kr" target="_blank">대아울릉리조트 </a></li>
+					<li class="red"><a href="http://westopia.b.go.co.kr" target="_blank">대천웨스토피아리조트 </a></li>
+					<li class="red"><a href="http://zenithhotel.b.go.co.kr" target="_blank">대천제니스호텔 </a></li>
+					<li class="red"><a href="http://thepetel.b.go.co.kr" target="_blank">더 펫텔 </a></li>
+					<li class="red"><a href="http://hongdethedesignershotel.b.go.co.kr" target="_blank">더디자이너스호텔홍대 </a></li>
+					<li class="red"><a href="http://tstarhue.b.go.co.kr" target="_blank">더스타휴골프앤리조트 </a></li>
+					<li class="red"><a href="http://duzonhotel.b.go.co.kr" target="_blank">더존비즈니스호텔 </a></li>
+					<li class="red"><a href="http://thekhotel.b.go.co.kr" target="_blank">더케이경주호텔 </a></li>
+					<li class="red"><a href="http://thekfamiliyhotel.b.go.co.kr" target="_blank">더케이설악산가족호텔 </a></li>
+					<li class="red"><a href="http://thekei.b.go.co.kr" target="_blank">더케이지리산가족호텔 </a></li>
+					<li class="red"><a href="http://thecloudhotel.b.go.co.kr" target="_blank">더클라우드호텔 </a></li>
+					<li class="red"><a href="http://theclass300.b.go.co.kr" target="_blank">더클래스300호텔 </a></li>
+					<li class="red"><a href="http://hotelyj.b.go.co.kr" target="_blank">더호텔영종 </a></li>
+					<li class="red"><a href="http://thehyu.b.go.co.kr" target="_blank">더휴 </a></li>
+					<li class="red"><a href="http://dayshoteljejudo.b.go.co.kr" target="_blank">데이즈호텔서귀포오션 </a></li>
+					<li class="red"><a href="http://dogoglory.b.go.co.kr" target="_blank">도고글로리콘도 </a></li>
+					<li class="red"><a href="http://tovice.b.go.co.kr" target="_blank">도고토비스콘도[본관] </a></li>
+					<li class="red"><a href="http://doyahotel.b.go.co.kr" target="_blank">도야거제가족호텔 </a></li>
+					<li class="red"><a href="http://donnaekohill.b.go.co.kr" target="_blank">돈내코힐리조트 </a></li>
+					<li><a href="http://www.cistar.kr" target="_blank">동강시스타 </a></li>
+					<li class="red"><a href="http://dongbumhotel.b.go.co.kr" target="_blank">동부산관광호텔 </a></li>
+					<li class="red"><a href="http://mangsanggrand.b.go.co.kr" target="_blank">동해보양온천컨벤션호텔 </a></li>
+					<li class="red"><a href="http://dheastern.b.go.co.kr" target="_blank">동해이스턴관광호텔 </a></li>
+					<li class="red"><a href="http://dreamresort.b.go.co.kr" target="_blank">드림리조트 </a></li>
+					<li class="red"><a href="http://jejudereve.b.go.co.kr" target="_blank">드헤브제주 </a></li>
+					<li class="red"><a href="http://theislandblue.b.go.co.kr" target="_blank">디아일랜드블루호텔 </a></li>
+					<li class="red"><a href="http://theoceanresort.b.go.co.kr" target="_blank">디오션리조트 </a></li>
+					<li class="red"><a href="http://doceanresort.b.go.co.kr" target="_blank">디오션호텔 </a></li>
+					<li class="red"><a href="http://ramadagunsanhotel.b.go.co.kr" target="_blank">라마다군산호텔 </a></li>
+					<li class="red"><a href="http://ramadaseoul.b.go.co.kr" target="_blank">라마다서울 </a></li>
+					<li class="red"><a href="http://ramadadmseouldongdaemum.b.go.co.kr" target="_blank">라마다서울동대문 </a></li>
+					<li class="red"><a href="http://ramadasongdo.b.go.co.kr" target="_blank">라마다송도호텔 </a></li>
+					<li class="red"><a href="http://ramadaencoreseouldongdaemun.b.go.co.kr" target="_blank">라마다앙코르동대문 </a></li>
+					<li class="red"><a href="http://ramadaencoreeast.b.go.co.kr" target="_blank">라마다앙코르이스트 </a></li>
+					<li class="red"><a href="http://ramadajejuss.b.go.co.kr" target="_blank">라마다앙코르제주성산 </a></li>
+					<li class="red"><a href="http://ramadajeonju.b.go.co.kr" target="_blank">라마다전주호텔 </a></li>
+					<li class="red"><a href="http://labellehotel.b.go.co.kr" target="_blank">라베르호텔 </a></li>
+					<li class="red"><a href="http://lasania.b.go.co.kr" target="_blank">라사니아캐슬리조트 </a></li>
+					<li class="red"><a href="http://laterraceresort.b.go.co.kr" target="_blank">라테라스 리조트 </a></li>
+					<li class="red"><a href="http://lhills.b.go.co.kr" target="_blank">레이크힐스리조트안성 </a></li>
+					<li class="red"><a href="http://songnisanlakehills.b.go.co.kr" target="_blank">레이크힐스호텔속리산 </a></li>
+					<li class="red"><a href="http://legendhotel.b.go.co.kr" target="_blank">레전드호텔 </a></li>
+					<li class="red"><a href="http://residencethemoon.b.go.co.kr" target="_blank">레지던스더문 </a></li>
+					<li class="red"><a href="http://residencenu.b.go.co.kr" target="_blank">레지던스앤유 </a></li>
+					<li class="red"><a href="http://rosanahotel.b.go.co.kr" target="_blank">로사나부띠끄호텔 </a></li>
+					<li class="red"><a href="http://buyeolotteresort.b.go.co.kr" target="_blank">롯데부여리조트 </a></li>
+					<li class="red"><a href="http://uslottehotel.b.go.co.kr" target="_blank">롯데시티호텔울산 </a></li>
+					<li class="red"><a href="http://lottehotelbs.b.go.co.kr" target="_blank">롯데호텔부산 </a></li>
+					<li class="red"><a href="http://luceville.b.go.co.kr" target="_blank">루체빌리조트제주글램블루호텔 </a></li>
+					<li class="red"><a href="http://leedesignhotel.b.go.co.kr" target="_blank">리디자인부티크호텔 </a></li>
+					<li class="red"><a href="http://resomspa.b.go.co.kr" target="_blank">리솜스파캐슬 </a></li>
+					<li class="red"><a href="http://resom.b.go.co.kr" target="_blank">리솜오션캐슬 </a></li>
+					<li class="red"><a href="http://marinviewhotel.b.go.co.kr" target="_blank">마린뷰호텔 </a></li>
+					<li class="red"><a href="http://masanmhotel.b.go.co.kr" target="_blank">마산M관광호텔 </a></li>
+					<li class="red"><a href="http://maunaoceanresort.b.go.co.kr" target="_blank">마우나오션리조트 </a></li>
+					<li class="red"><a href="http://maumhotel.b.go.co.kr" target="_blank">마음호텔 </a></li>
+					<li class="red"><a href="http://mudbeach.b.go.co.kr" target="_blank">머드비치호텔 </a></li>
+					<li class="red"><a href="http://hotelmarigold.b.go.co.kr" target="_blank">메리골드호텔 </a></li>
+					<li class="red"><a href="http://mayplace.b.go.co.kr" target="_blank">메이플레이스동대문 </a></li>
+					<li><a href="http://www.mayhillsresort.kr" target="_blank">메이힐스리조트 </a></li>
+					<li class="red"><a href="http://metapension.b.go.co.kr" target="_blank">메타펜션 </a></li>
+					<li class="red"><a href="http://myoungsongresort.b.go.co.kr" target="_blank">명송리조트 </a></li>
+					<li class="red"><a href="http://modernplace.b.go.co.kr" target="_blank">모던플레이스펜션 </a></li>
+					<li class="red"><a href="http://moken.b.go.co.kr" target="_blank">모켄리조트 </a></li>
+					<li class="red"><a href="http://haenaruhotel.b.go.co.kr" target="_blank">모항해나루가족호텔 </a></li>
+					<li class="red"><a href="http://marinabayhotel.b.go.co.kr" target="_blank">목포마리나베이호텔 </a></li>
+					<li class="red"><a href="http://mondieuhoteljewju.b.go.co.kr" target="_blank">몽듀호텔 </a></li>
+					<li class="red"><a href="http://mgle.b.go.co.kr" target="_blank">문경새재리조트 </a></li>
+					<li class="red"><a href="http://vabiensuite.b.go.co.kr" target="_blank">바비엥스위트2 </a></li>
+					<li class="red"><a href="http://venikia.b.go.co.kr" target="_blank">베니키아더엠호텔 </a></li>
+					<li class="red"><a href="http://icbenikea.b.go.co.kr" target="_blank">베니키아바다의별호텔 </a></li>
+					<li class="red"><a href="http://swissrosen.b.go.co.kr" target="_blank">베니키아스위스로젠호텔 </a></li>
+					<li class="red"><a href="http://jejucrystal.b.go.co.kr" target="_blank">베니키아제주크리스탈호텔 </a></li>
+					<li class="red"><a href="http://yeouidopremier.b.go.co.kr" target="_blank">베니키아프리미어호텔여의도 </a></li>
+					<li class="red"><a href="http://mountainbada.b.go.co.kr" target="_blank">베니키아호텔산과바다대포항 </a></li>
+					<li class="red"><a href="http://jejubenikea.b.go.co.kr" target="_blank">베니키아호텔제주 </a></li>
+					<li class="red"><a href="http://bsbestwestern.b.go.co.kr" target="_blank">베스트 웨스턴 해운대 호텔 </a></li>
+					<li class="red"><a href="http://gunsanhotel.b.go.co.kr" target="_blank">베스트웨스턴군산호텔 </a></li>
+					<li class="red"><a href="http://hotelahill.b.go.co.kr" target="_blank">베스트웨스턴아리랑힐동대문 </a></li>
+					<li class="red"><a href="http://hotelpohang.b.go.co.kr" target="_blank">베스트웨스턴포항호텔 </a></li>
+					<li class="red"><a href="http://gurohotel.b.go.co.kr" target="_blank">베스트웨스턴프리미어구로 </a></li>
+					<li class="red"><a href="http://baitonseoulhotel.b.go.co.kr" target="_blank">베이튼호텔(Baiton) </a></li>
+					<li class="red"><a href="http://bayhillnfullvilla.b.go.co.kr" target="_blank">베이힐풀앤빌라 </a></li>
+					<li class="red"><a href="http://hwsspahotel.b.go.co.kr" target="_blank">부곡화왕산호텔 </a></li>
+					<li class="red"><a href="http://bsairtel.b.go.co.kr" target="_blank">부산 에어텔 </a></li>
+					<li class="red"><a href="http://kunohseacloud.b.go.co.kr" target="_blank">부산 해운대 씨클라우드호텔 </a></li>
+					<li class="red"><a href="http://gnbhotel.b.go.co.kr" target="_blank">부산GNB호텔(지엔비호텔) </a></li>
+					<li class="red"><a href="http://busanarpina.b.go.co.kr" target="_blank">부산관광공사아르피나 </a></li>
+					<li class="red"><a href="http://buyeo100je.b.go.co.kr" target="_blank">부여백제관광호텔 </a></li>
+					<li class="red"><a href="http://booyoungjejuhotel.b.go.co.kr" target="_blank">부영호텔&amp;리조트 </a></li>
+					<li class="red"><a href="http://boutique9gunja.b.go.co.kr" target="_blank">부티크나인호텔군자점 </a></li>
+					<li class="red"><a href="http://brownsuites.b.go.co.kr" target="_blank">브라운 스위트 서비스 레지던스 </a></li>
+					<li class="red"><a href="http://browndot.b.go.co.kr" target="_blank">브라운도트호텔광안리 </a></li>
+					<li class="red"><a href="http://breezebayhotel.b.go.co.kr" target="_blank">브리즈베이호텔 </a></li>
+					<li class="red"><a href="http://hotelblacksands.b.go.co.kr" target="_blank">블랙샌즈호텔 </a></li>
+					<li class="red"><a href="http://hotelblacksands.b.go.co.kr" target="_blank">블랙샌즈호텔 </a></li>
+					<li class="red"><a href="http://blessingin.b.go.co.kr" target="_blank">블레싱인서울 </a></li>
+					<li class="red"><a href="http://bluemauresort.b.go.co.kr" target="_blank">블루마우리조트 </a></li>
+					<li class="red"><a href="http://bluehawaii.b.go.co.kr" target="_blank">블루하와이리조트 </a></li>
+					<li class="red"><a href="http://vivaceresort.b.go.co.kr" target="_blank">비바체하동호리조트 </a></li>
+					<li class="red"><a href="http://vistacayhotel.b.go.co.kr" target="_blank">비스타케이월드컵 </a></li>
+					<li class="red"><a href="http://bnbeach.b.go.co.kr" target="_blank">비앤비치관광호텔 </a></li>
+					<li class="red"><a href="http://beachepalace.b.go.co.kr" target="_blank">비체팰리스 </a></li>
+					<li class="red"><a href="http://villadeaewol.b.go.co.kr" target="_blank">빌라드애월호텔 </a></li>
+					<li class="red"><a href="http://bilreresort.b.go.co.kr" target="_blank">빌레리조트 </a></li>
+					<li class="red"><a href="http://msjumunjinresort.b.go.co.kr" target="_blank">산과바다주문진리조트 </a></li>
+					<li class="red"><a href="http://slcps.b.go.co.kr" target="_blank">살림채펜션 </a></li>
+					<li class="red"><a href="http://stay.b.go.co.kr" target="_blank">상상마당춘천스테이호텔 </a></li>
+					<li class="red"><a href="http://saesum.b.go.co.kr" target="_blank">새섬리조트 </a></li>
+					<li class="red"><a href="http://shineville.b.go.co.kr" target="_blank">샤인빌럭셔리리조트 </a></li>
+					<li class="red"><a href="http://shangriahotel.b.go.co.kr" target="_blank">샹그리아비치관광호텔 </a></li>
+					<li class="red"><a href="http://aghouse.b.go.co.kr" target="_blank">서귀포 에이지하우스 펜션 </a></li>
+					<li class="red"><a href="http://jejusunpension.b.go.co.kr" target="_blank">서귀포 해돋는마을 펜션 </a></li>
+					<li class="red"><a href="http://summer3.b.go.co.kr" target="_blank">서머셋팰리스레지던스 </a></li>
+					<li class="red"><a href="http://servicedapartment.b.go.co.kr" target="_blank">서비스드아파트먼트 </a></li>
+					<li class="red"><a href="http://seoulresidence.b.go.co.kr" target="_blank">서울레지던스[역삼] </a></li>
+					<li class="red"><a href="http://parktel.b.go.co.kr" target="_blank">서울올림픽파크텔 </a></li>
+					<li class="red"><a href="http://sntree.b.go.co.kr" target="_blank">선녀와나무꾼 </a></li>
+					<li class="red"><a href="http://seollema.b.go.co.kr" target="_blank">설렘A </a></li>
+					<li class="red"><a href="http://kensington.b.go.co.kr" target="_blank">설악켄싱턴스타호텔 </a></li>
+					<li class="red"><a href="http://seorakpineresort.b.go.co.kr" target="_blank">설악파인리조트 </a></li>
+					<li class="red"><a href="http://seolak4u.b.go.co.kr" target="_blank">설악포유리조트 </a></li>
+					<li class="red"><a href="http://jejusumorum.b.go.co.kr" target="_blank">섬오름호텔 </a></li>
+					<li class="red"><a href="http://srhjm.b.go.co.kr" target="_blank">성산 썬라이즈호텔 </a></li>
+					<li class="red"><a href="http://chunchonsejong.b.go.co.kr" target="_blank">세종호텔춘천 </a></li>
+					<li class="red"><a href="http://centralcityhotel.b.go.co.kr" target="_blank">센트럴시티호텔 </a></li>
+					<li class="red"><a href="http://bssongdobeachhotel.b.go.co.kr" target="_blank">송도비치관광호텔 </a></li>
+					<li class="red"><a href="http://centralparkhotel.b.go.co.kr" target="_blank">송도센트럴파크호텔 </a></li>
+					<li class="red"><a href="http://songjunghotel.b.go.co.kr" target="_blank">송정호텔 </a></li>
+					<li class="red"><a href="http://suandsu.b.go.co.kr" target="_blank">수앤수호텔&amp;리조트 </a></li>
+					<li class="red"><a href="http://swmatehotel.b.go.co.kr" target="_blank">수원메이트호텔 </a></li>
+					<li class="red"><a href="http://schotel.b.go.co.kr" target="_blank">순천로얄호텔 </a></li>
+					<li class="red"><a href="http://suncheonshotle.b.go.co.kr" target="_blank">순천만S호텔 </a></li>
+					<li class="red"><a href="http://scvenezia.b.go.co.kr" target="_blank">순천베네치아관광호텔 </a></li>
+					<li class="red"><a href="http://forestelfpension.b.go.co.kr" target="_blank">숲속의요정펜션 </a></li>
+					<li class="red"><a href="http://icsheraton.b.go.co.kr" target="_blank">쉐라톤 그랜드 인천 호텔 </a></li>
+					<li class="red"><a href="http://swedenresort.b.go.co.kr" target="_blank">스웨덴리조트(호스텔) </a></li>
+					<li class="red"><a href="http://stanfordseoulhotel.b.go.co.kr" target="_blank">스탠포드호텔 </a></li>
+					<li class="red"><a href="http://haeundaestay7.b.go.co.kr" target="_blank">스테이세븐부산해운대 </a></li>
+					<li class="red"><a href="http://andantesparesort.b.go.co.kr" target="_blank">스파리조트안단테 </a></li>
+					<li class="red"><a href="http://signielseoul.b.go.co.kr" target="_blank">시그니엘서울 </a></li>
+					<li class="red"><a href="http://bscinemahouse.b.go.co.kr" target="_blank">시네마하우스 호텔 인 부산 </a></li>
+					<li class="red"><a href="http://season5pension.b.go.co.kr" target="_blank">시즌파이브 </a></li>
+					<li class="red"><a href="http://shillastayguro.b.go.co.kr" target="_blank">신라스테이 구로 </a></li>
+					<li class="red"><a href="http://shillastaymapo.b.go.co.kr" target="_blank">신라스테이 마포 </a></li>
+					<li class="red"><a href="http://yrhresort.b.go.co.kr" target="_blank">신세계영랑호리조트 </a></li>
+					<li class="red"><a href="http://syparkhotel.b.go.co.kr" target="_blank">신양파크호텔 </a></li>
+					<li class="red"><a href="http://jejusilkroadpension.b.go.co.kr" target="_blank">실크로드펜션 </a></li>
+					<li class="red"><a href="http://sunrisehotel.b.go.co.kr" target="_blank">썬라이즈호텔 섭지코지점 </a></li>
+					<li class="red"><a href="http://seaspovill.b.go.co.kr" target="_blank">씨스포빌리조트 </a></li>
+					<li class="red"><a href="http://seaes.b.go.co.kr" target="_blank">씨에스호텔 </a></li>
+					<li class="red"><a href="http://c1resort.b.go.co.kr" target="_blank">씨원리조트 </a></li>
+					<li class="red"><a href="http://arohahotel.b.go.co.kr" target="_blank">아로하 호텔 </a></li>
+					<li class="red"><a href="http://hotelarv.b.go.co.kr" target="_blank">아르누보시티레지던스 </a></li>
+					<li class="red"><a href="http://beautyjejuresort.b.go.co.kr" target="_blank">아름다운리조트 </a></li>
+					<li class="red"><a href="http://iparkcondo.b.go.co.kr" target="_blank">아이파크콘도미니엄 </a></li>
+					<li class="red"><a href="http://morninghaebeach.b.go.co.kr" target="_blank">아침해변펜션 </a></li>
+					<li class="red"><a href="http://aquapalace.b.go.co.kr" target="_blank">아쿠아펠리스 </a></li>
+					<li class="red"><a href="http://richellhotelandong.b.go.co.kr" target="_blank">안동리첼호텔 </a></li>
+					<li class="red"><a href="http://jejuaewolstay.b.go.co.kr" target="_blank">애월스테이호텔 </a></li>
+					<li class="red"><a href="http://appleresort.b.go.co.kr" target="_blank">애플리조트 </a></li>
+					<li class="red"><a href="http://pineresort.b.go.co.kr" target="_blank">양지파인리조트 </a></li>
+					<li class="red"><a href="http://treestar.b.go.co.kr" target="_blank">어린왕자의나무별 </a></li>
+					<li class="red"><a href="http://urbanplaces.b.go.co.kr" target="_blank">어반플레이스강남 </a></li>
+					<li class="red"><a href="http://avanhills.b.go.co.kr" target="_blank">어반힐스 </a></li>
+					<li class="red"><a href="http://edenvalley.b.go.co.kr" target="_blank">에덴밸리리조트 </a></li>
+					<li class="red"><a href="http://etoilepension.b.go.co.kr" target="_blank">에뜨왈 </a></li>
+					<li class="red"><a href="http://etierjeju.b.go.co.kr" target="_blank">에띠에리조트 </a></li>
+					<li class="red"><a href="http://ecogradhotel.b.go.co.kr" target="_blank">에코그라드순천호텔 </a></li>
+					<li class="red"><a href="http://eldoradoresort.b.go.co.kr" target="_blank">엘도라도리조트 </a></li>
+					<li class="red"><a href="http://eldishotel.b.go.co.kr" target="_blank">엘디스리젠트호텔 </a></li>
+					<li class="red"><a href="http://elroman.b.go.co.kr" target="_blank">엘로망펜션 </a></li>
+					<li class="red"><a href="http://elysiaboutique.b.go.co.kr" target="_blank">엘리시아 부티크호텔 </a></li>
+					<li class="red"><a href="http://mstaygggh.b.go.co.kr" target="_blank">엠스테이호텔기흥 </a></li>
+					<li class="red"><a href="http://mstaynaju.b.go.co.kr" target="_blank">엠스테이호텔나주 </a></li>
+					<li class="red"><a href="http://mstayjeju.b.go.co.kr" target="_blank">엠스테이호텔제주 </a></li>
+					<li class="red"><a href="http://cwmstaychangwon.b.go.co.kr" target="_blank">엠스테이호텔창원 </a></li>
+					<li class="red"><a href="http://mcamp.b.go.co.kr" target="_blank">엠캠프(MCAMP) </a></li>
+					<li class="red"><a href="http://yeosusea.b.go.co.kr" target="_blank">여수 바다향기 펜션 </a></li>
+					<li class="red"><a href="http://yeosujh.b.go.co.kr" target="_blank">여수 정현 펜션 </a></li>
+					<li class="red"><a href="http://hshotel.b.go.co.kr" target="_blank">여수HS관광호텔 </a></li>
+					<li class="red"><a href="http://romancesea.b.go.co.kr" target="_blank">여수낭만밤바다 </a></li>
+					<li class="red"><a href="http://lucielpool.b.go.co.kr" target="_blank">여수르시엘펜션 </a></li>
+					<li class="red"><a href="http://yeosubeach.b.go.co.kr" target="_blank">여수비치콘도 </a></li>
+					<li class="red"><a href="http://ysodongdo.b.go.co.kr" target="_blank">여수오동도호텔 </a></li>
+					<li class="red"><a href="http://ucastlehotel.b.go.co.kr" target="_blank">여수유캐슬호텔 </a></li>
+					<li class="red"><a href="http://sunvalleyhotel.b.go.co.kr" target="_blank">여주썬밸리호텔 </a></li>
+					<li class="red"><a href="http://yeoninsanspring.b.go.co.kr" target="_blank">연인산온천리조트 </a></li>
+					<li class="red"><a href="http://yeouncheon.b.go.co.kr" target="_blank">연천석장리미술관카라반 </a></li>
+					<li class="red"><a href="http://0sanhotel.b.go.co.kr" target="_blank">영산재한옥호텔 </a></li>
+					<li class="red"><a href="http://yjskyresort.b.go.co.kr" target="_blank">영종스카이리조트 </a></li>
+					<li class="red"><a href="http://seasiderailbike.b.go.co.kr" target="_blank">영종씨사이드레일바이크 이용권 </a></li>
+					<li class="red"><a href="http://greenyardhotel.b.go.co.kr" target="_blank">오색그린야드호텔 </a></li>
+					<li class="red"><a href="http://oceangrand.b.go.co.kr" target="_blank">오션그랜드호텔제주 </a></li>
+					<li class="red"><a href="http://obhotel.b.go.co.kr" target="_blank">오션베스트호텔 </a></li>
+					<li class="red"><a href="http://oceanvalleyresort.b.go.co.kr" target="_blank">오션벨리리조트 </a></li>
+					<li class="red"><a href="http://oceanviewresortel.b.go.co.kr" target="_blank">오션뷰리조텔 </a></li>
+					<li class="red"><a href="http://ocean4id.b.go.co.kr" target="_blank">오션사이드호텔 </a></li>
+					<li class="red"><a href="http://oceansuites.b.go.co.kr" target="_blank">오션스위츠제주호텔 </a></li>
+					<li class="red"><a href="http://oceanstay.b.go.co.kr" target="_blank">오션스테이 </a></li>
+					<li class="red"><a href="http://oceanclub.b.go.co.kr" target="_blank">오션클럽풀빌라 </a></li>
+					<li><a href="http://www.ocean2you.co.kr" target="_blank">오션투유리조트 설악비치 호탤앤콘도 </a></li>
+					<li class="red"><a href="http://5ncity.b.go.co.kr" target="_blank">오엔시티호텔 </a></li>
+					<li class="red"><a href="http://oakra.b.go.co.kr" target="_blank">오크라호텔 </a></li>
+					<li class="red"><a href="http://o2resort.b.go.co.kr" target="_blank">오투리조트 </a></li>
+					<li class="red"><a href="http://oygrand.b.go.co.kr" target="_blank">온양그랜드호텔 </a></li>
+					<li class="red"><a href="http://cheilhotel.b.go.co.kr" target="_blank">온양제일호텔 </a></li>
+					<li class="red"><a href="http://onwardps.b.go.co.kr" target="_blank">온워드 </a></li>
+					<li class="red"><a href="http://onenessresort.b.go.co.kr" target="_blank">완도 원네스리조트 </a></li>
+					<li class="red"><a href="http://wandohotel.b.go.co.kr" target="_blank">완도관광호텔 </a></li>
+					<li class="red"><a href="http://singalw.b.go.co.kr" target="_blank">용인신갈W호텔 </a></li>
+					<li class="red"><a href="http://yongpyong.b.go.co.kr" target="_blank">용평리조트 </a></li>
+					<li class="red"><a href="http://echosunhotel.b.go.co.kr" target="_blank">웨스틴조선호텔부산 </a></li>
+					<li class="red"><a href="http://hdsungwoo.b.go.co.kr" target="_blank">웰리힐리파크[현대성우리조트] </a></li>
+					<li class="red"><a href="http://withughhouse.b.go.co.kr" target="_blank">위드유 호텔 &amp; 게스트하우스 </a></li>
+					<li class="red"><a href="http://wzhotel.b.go.co.kr" target="_blank">위즈호텔 </a></li>
+					<li class="red"><a href="http://usunghotel.b.go.co.kr" target="_blank">유성호텔 </a></li>
+					<li class="red"><a href="http://tshome.b.go.co.kr" target="_blank">유어스호텔 </a></li>
+					<li class="red"><a href="http://hotelsunbeach.b.go.co.kr" target="_blank">이랜드파크 썬비치호텔 </a></li>
+					<li class="red"><a href="http://ibissuwon.b.go.co.kr" target="_blank">이비스 수원 앰배서더 </a></li>
+					<li class="red"><a href="http://e7ddm.b.go.co.kr" target="_blank">이세븐플레이스동대문 </a></li>
+					<li class="red"><a href="http://eastonbayhotel.b.go.co.kr" target="_blank">이스턴베이호텔 </a></li>
+					<li class="red"><a href="http://easternpark.b.go.co.kr" target="_blank">이스턴파크리조트 </a></li>
+					<li class="red"><a href="http://2ellhotel.b.go.co.kr" target="_blank">이엘호텔 </a></li>
+					<li class="red"><a href="http://theclassicheon.b.go.co.kr" target="_blank">이천 더클래스호텔 </a></li>
+					<li class="red"><a href="http://hotelcrown.b.go.co.kr" target="_blank">이태원크라운호텔 </a></li>
+					<li class="red"><a href="http://inthecity.b.go.co.kr" target="_blank">인더시티레지던스[역삼] </a></li>
+					<li class="red"><a href="http://crownhotel.b.go.co.kr" target="_blank">인사동크라운호텔 </a></li>
+					<li class="red"><a href="http://speedium.b.go.co.kr" target="_blank">인제스피디움호텔&amp;리조트 </a></li>
+					<li class="red"><a href="http://oceanview.b.go.co.kr" target="_blank">인천공항 호텔오션뷰 </a></li>
+					<li class="red"><a href="http://ictntresort.b.go.co.kr" target="_blank">인터콘티넨탈 알펜시아 평창 리조트 </a></li>
+					<li class="red"><a href="http://naturalsoop.b.go.co.kr" target="_blank">자연숲펜션 </a></li>
+					<li class="red"><a href="http://hotel24.b.go.co.kr" target="_blank">잠실 2.4호텔 </a></li>
+					<li class="red"><a href="http://jamsildelight.b.go.co.kr" target="_blank">잠실딜라이트호텔 </a></li>
+					<li class="red"><a href="http://jamping.b.go.co.kr" target="_blank">잼핑홀리데이파크 대부도점 </a></li>
+					<li class="red"><a href="http://zempingyi.b.go.co.kr" target="_blank">잼핑홀리데이파크 용인점 </a></li>
+					<li class="red"><a href="http://jjhotel.b.go.co.kr" target="_blank">전주관광호텔 </a></li>
+					<li class="red"><a href="http://jjboxhotel.b.go.co.kr" target="_blank">전주박스호텔 </a></li>
+					<li class="red"><a href="http://junjuedgarhotel.b.go.co.kr" target="_blank">전주에드가 </a></li>
+					<li class="red"><a href="http://jenurdo.b.go.co.kr" target="_blank">제너두둔내펜션형리조트 </a></li>
+					<li class="red"><a href="http://thesome.b.go.co.kr" target="_blank">제주 더썸펜션 </a></li>
+					<li class="red"><a href="http://jejushilla.b.go.co.kr" target="_blank">제주 신라 호텔 </a></li>
+					<li class="red"><a href="http://jejuseastay.b.go.co.kr" target="_blank">제주 씨스테이 호텔 </a></li>
+					<li class="red"><a href="http://jejuamabile.b.go.co.kr" target="_blank">제주 아마빌레 펜션 </a></li>
+					<li class="red"><a href="http://jejuedenhills.b.go.co.kr" target="_blank">제주 에덴힐스 펜션 </a></li>
+					<li class="red"><a href="http://storyole.b.go.co.kr" target="_blank">제주 이야기별방 펜션 </a></li>
+					<li class="red"><a href="http://jejukunwood.b.go.co.kr" target="_blank">제주 중문 통나무 펜션 &amp; 리조트 </a></li>
+					<li class="red"><a href="http://jejuskyground.b.go.co.kr" target="_blank">제주 하늘땅물벗 펜션 </a></li>
+					<li class="red"><a href="http://jejuhaejodae.b.go.co.kr" target="_blank">제주 해조대 펜션 </a></li>
+					<li class="red"><a href="http://glamblue.b.go.co.kr" target="_blank">제주글램블루호텔 </a></li>
+					<li class="red"><a href="http://jejudam.b.go.co.kr" target="_blank">제주담스파빌 </a></li>
+					<li class="red"><a href="http://jejudycondo.b.go.co.kr" target="_blank">제주동양콘도 </a></li>
+					<li class="red"><a href="http://jamping.b.go.co.kr" target="_blank">제주라온호텔앤리조트 </a></li>
+					<li class="red"><a href="http://roberohotel.b.go.co.kr" target="_blank">제주로베로호텔 </a></li>
+					<li class="red"><a href="http://jjmarevo.b.go.co.kr" target="_blank">제주마레보리조트 </a></li>
+					<li class="red"><a href="http://jejubali.b.go.co.kr" target="_blank">제주발리리조트 </a></li>
+					<li class="red"><a href="http://stfour.b.go.co.kr" target="_blank">제주세인트포골프&amp;리조트 </a></li>
+					<li class="red"><a href="http://stayinsongsan.b.go.co.kr" target="_blank">제주스테이인성산 </a></li>
+					<li class="red"><a href="http://springhill.b.go.co.kr" target="_blank">제주스프링힐리조트 </a></li>
+					<li class="red"><a href="http://jejusunresort.b.go.co.kr" target="_blank">제주썬호텔 </a></li>
+					<li class="red"><a href="http://jejuairporthotel.b.go.co.kr" target="_blank">제주에어포트호텔 </a></li>
+					<li class="red"><a href="http://oceanpalace.b.go.co.kr" target="_blank">제주오션팰리스호텔 </a></li>
+					<li class="red"><a href="http://unihoteljeju.b.go.co.kr" target="_blank">제주유니호텔 </a></li>
+					<li class="red"><a href="http://jeju2hwa.b.go.co.kr" target="_blank">제주이화호텔 </a></li>
+					<li class="red"><a href="http://jejuilsungbeach.b.go.co.kr" target="_blank">제주일성비치콘도 </a></li>
+					<li class="red"><a href="http://jejujungmunresort.b.go.co.kr" target="_blank">제주중문리조트 </a></li>
+					<li class="red"><a href="http://coopcityhotel.b.go.co.kr" target="_blank">제주코업시티호텔제주비치 </a></li>
+					<li class="red"><a href="http://jejupainresort.b.go.co.kr" target="_blank">제주파인힐리조트 </a></li>
+					<li class="red"><a href="http://jejuframe.b.go.co.kr" target="_blank">제주프레임스파빌 </a></li>
+					<li class="red"><a href="http://jejuonehotel.b.go.co.kr" target="_blank">제주하나호텔 </a></li>
+					<li class="red"><a href="http://jejuhawa2.b.go.co.kr" target="_blank">제주하와이호텔 </a></li>
+					<li class="red"><a href="http://jrejuoraresort.b.go.co.kr" target="_blank">제주항공우주호텔 </a></li>
+					<li class="red"><a href="http://thebluehill.b.go.co.kr" target="_blank">주문진블루힐 </a></li>
+					<li class="red"><a href="http://jmjhotel.b.go.co.kr" target="_blank">주문진호텔 </a></li>
+					<li class="red"><a href="http://juwangsanhotel.b.go.co.kr" target="_blank">주왕산온천관광호텔 </a></li>
+					<li class="red"><a href="http://sunrizehotel.b.go.co.kr" target="_blank">중문 썬라이즈호텔 </a></li>
+					<li class="red"><a href="http://jmbeach.b.go.co.kr" target="_blank">중문비치호텔 </a></li>
+					<li class="red"><a href="http://jungmunfamily.b.go.co.kr" target="_blank">중문훼미리리조트 </a></li>
+					<li class="red"><a href="http://jhgoldresort.b.go.co.kr" target="_blank">중흥골드스파리조트 </a></li>
+					<li class="red"><a href="http://spaland.b.go.co.kr" target="_blank">지리산온천랜드호텔&amp;리조트 </a></li>
+					<li class="red"><a href="http://jirisankhan.b.go.co.kr" target="_blank">지리산칸호텔 </a></li>
+					<li class="red"><a href="http://zi0.b.go.co.kr" target="_blank">지오리조트 </a></li>
+					<li class="red"><a href="http://redginsengspa.b.go.co.kr" target="_blank">진안홍삼스파빌 </a></li>
+					<li class="red"><a href="http://dongbanghotel.b.go.co.kr" target="_blank">진주 동방관광호텔 </a></li>
+					<li class="red"><a href="http://seohaean.b.go.co.kr" target="_blank">천리포서해안리조트 </a></li>
+					<li class="red"><a href="http://lackycj.b.go.co.kr" target="_blank">청주 락희호텔 </a></li>
+					<li class="red"><a href="http://miconos.b.go.co.kr" target="_blank">청주 미코노스 리조트 </a></li>
+					<li class="red"><a href="http://poolvillraon.b.go.co.kr" target="_blank">청평 풀빌라온(부티크호텔,수상레져) </a></li>
+					<li class="red"><a href="http://cpdsunsetcamp.b.go.co.kr" target="_blank">청포대카라반빌리지 </a></li>
+					<li class="red"><a href="http://cheongpungresort.b.go.co.kr" target="_blank">청풍리조트 </a></li>
+					<li class="red"><a href="http://jejukai.b.go.co.kr" target="_blank">카이리조트 </a></li>
+					<li class="red"><a href="http://redmilmo.b.go.co.kr" target="_blank">캠핑리조트빨강치마밀모 </a></li>
+					<li class="red"><a href="http://cfpesiontel.b.go.co.kr" target="_blank">커피펜션&amp;모텔 </a></li>
+					<li class="red"><a href="http://kturnresorthotel.b.go.co.kr" target="_blank">케이턴호텔&amp;리조트(구)비체리조트 </a></li>
+					<li class="red"><a href="http://khotel.b.go.co.kr" target="_blank">케이호텔[K-HOTEL] </a></li>
+					<li class="red"><a href="http://kensingtonresortbm.b.go.co.kr" target="_blank">켄싱턴리조트경주보문 </a></li>
+					<li class="red"><a href="http://kensingtonresortsgp.b.go.co.kr" target="_blank">켄싱턴리조트서귀포(구:제주풍림리조트) </a></li>
+					<li class="red"><a href="http://gskensingtonresort.b.go.co.kr" target="_blank">켄싱턴리조트설악비치 </a></li>
+					<li class="red"><a href="http://kensingtonresort.b.go.co.kr" target="_blank">켄싱턴리조트청평(구:청평풍림리조트) </a></li>
+					<li class="red"><a href="http://kensingtonresortchungju.b.go.co.kr" target="_blank">켄싱턴리조트충주 </a></li>
+					<li class="red"><a href="http://hadongkensing.b.go.co.kr" target="_blank">켄싱턴리조트하동 </a></li>
+					<li class="red"><a href="http://kensingtonjeju.b.go.co.kr" target="_blank">켄싱턴제주호텔 </a></li>
+					<li class="red"><a href="http://kenthotel.b.go.co.kr" target="_blank">켄트호텔 광안리 by 켄싱턴 </a></li>
+					<li class="red"><a href="http://koreanahotel.b.go.co.kr" target="_blank">코리아나호텔 </a></li>
+					<li class="red"><a href="http://bskomodo.b.go.co.kr" target="_blank">코모도부산호텔 </a></li>
+					<li class="red"><a href="http://commodorehotel.b.go.co.kr" target="_blank">코모도호텔경주 </a></li>
+					<li class="red"><a href="http://songdokomodo.b.go.co.kr" target="_blank">코모도호텔포항송도 </a></li>
+					<li class="red"><a href="http://seacloudhotelbs.b.go.co.kr" target="_blank">코오롱씨클라우드호텔 </a></li>
+					<li class="red"><a href="http://commajeju.b.go.co.kr" target="_blank">콤마앤스파리조트 </a></li>
+					<li class="red"><a href="http://ktalia.b.go.co.kr" target="_blank">탈리아[소백산풍기온천리조트] </a></li>
+					<li class="red"><a href="http://tamnastay.b.go.co.kr" target="_blank">탐라스테이호텔 </a></li>
+					<li class="red"><a href="http://goldenbeach.b.go.co.kr" target="_blank">태안 골든비치 펜션 </a></li>
+					<li class="red"><a href="http://iloveesea.b.go.co.kr" target="_blank">태안 바다가좋아 펜션 </a></li>
+					<li class="red"><a href="http://yeinpension.b.go.co.kr" target="_blank">태안 예인 펜션 </a></li>
+					<li class="red"><a href="http://wellbeingpension.b.go.co.kr" target="_blank">태안 웰빙산장 펜션 </a></li>
+					<li class="red"><a href="http://ritzcastle.b.go.co.kr" target="_blank">태안리츠캐슬리조트 </a></li>
+					<li class="red"><a href="http://tedinresort.b.go.co.kr" target="_blank">테딘패밀리리조트[객실 또는 PKG선택가능] </a></li>
+					<li class="red"><a href="http://technobelly.b.go.co.kr" target="_blank">테크노밸리 관광호텔 </a></li>
+					<li class="red"><a href="http://jejutoskana.b.go.co.kr" target="_blank">토스카나제주 </a></li>
+					<li class="red"><a href="http://djtoyokoinn.b.go.co.kr" target="_blank">토요코인대전 </a></li>
+					<li class="red"><a href="http://smtoyokoinn.b.go.co.kr" target="_blank">토요코인부산서면 </a></li>
+					<li class="red"><a href="http://bs1toyokoinn.b.go.co.kr" target="_blank">토요코인부산역1 </a></li>
+					<li class="red"><a href="http://toyokoinnb2.b.go.co.kr" target="_blank">토요코인부산역2 </a></li>
+					<li class="red"><a href="http://hud1toyokoinn.b.go.co.kr" target="_blank">토요코인해운대1 </a></li>
+					<li class="red"><a href="http://toyokoinnh2.b.go.co.kr" target="_blank">토요코인해운대2 </a></li>
+					<li class="red"><a href="http://pambeach.b.go.co.kr" target="_blank">통영베이&amp;팜비치 </a></li>
+					<li class="red"><a href="http://hwihotel.b.go.co.kr" target="_blank">통영하와이호텔 </a></li>
+					<li class="red"><a href="http://twoyhotel.b.go.co.kr" target="_blank">투와이호텔 </a></li>
+					<li class="red"><a href="http://paranas.b.go.co.kr" target="_blank">파라나스리조트 </a></li>
+					<li class="red"><a href="http://paradiseoceanhill.b.go.co.kr" target="_blank">파라다이스비치 </a></li>
+					<li class="red"><a href="http://paradisespacamping.b.go.co.kr" target="_blank">파라다이스스파도고카라반+파라다이스스파도고 이용권 </a></li>
+					<li class="red"><a href="http://busanparadisehotel.b.go.co.kr" target="_blank">파라다이스호텔 부산 </a></li>
+					<li class="red"><a href="http://jejupausein.b.go.co.kr" target="_blank">파우제 인 제주 </a></li>
+					<li class="red"><a href="http://pineridgeresort.b.go.co.kr" target="_blank">파인리즈리조트 </a></li>
+					<li class="red"><a href="http://pinebeachhotel.b.go.co.kr" target="_blank">파인비치호텔 </a></li>
+					<li class="red"><a href="http://sunshinehotel.b.go.co.kr" target="_blank">파크선샤인제주 </a></li>
+					<li class="red"><a href="http://paledecz.b.go.co.kr" target="_blank">팔레드시즈콘도 </a></li>
+					<li class="red"><a href="http://pampasresort.b.go.co.kr" target="_blank">팜파스리조트 </a></li>
+					<li class="red"><a href="http://iwantresort.b.go.co.kr" target="_blank">평창 아이원리조트 </a></li>
+					<li class="red"><a href="http://kensingtonflora.b.go.co.kr" target="_blank">평창켄싱턴플로라호텔 </a></li>
+					<li class="red"><a href="http://foreheal.b.go.co.kr" target="_blank">포레힐호텔 </a></li>
+					<li class="red"><a href="http://pose2don.b.go.co.kr" target="_blank">포세이돈카라반 </a></li>
+					<li class="red"><a href="http://philoshotel.b.go.co.kr" target="_blank">포항필로스호텔 </a></li>
+					<li class="red"><a href="http://sorangjeju.b.go.co.kr" target="_blank">풀빌라소랑 </a></li>
+					<li class="red"><a href="http://hotelpresident.b.go.co.kr" target="_blank">프레지던트호텔 </a></li>
+					<li class="red"><a href="http://friendhotel.b.go.co.kr" target="_blank">프렌드호텔 </a></li>
+					<li class="red"><a href="http://suprovista.b.go.co.kr" target="_blank">프로비스타호텔 </a></li>
+					<li class="red"><a href="http://jejuharmony.b.go.co.kr" target="_blank">하모니리조트 </a></li>
+					<li class="red"><a href="http://hibellyhotel.b.go.co.kr" target="_blank">하이밸리호텔 </a></li>
+					<li class="red"><a href="http://high1condo.b.go.co.kr" target="_blank">하이원 콘도 </a></li>
+					<li class="red"><a href="http://highcastle.b.go.co.kr" target="_blank">하이캐슬리조트 </a></li>
+					<li class="red"><a href="http://highclassnh.b.go.co.kr" target="_blank">하이클래스남해 </a></li>
+					<li class="red"><a href="http://hiclassjeju.b.go.co.kr" target="_blank">하이클래스제주 </a></li>
+					<li class="red"><a href="http://oakvalley.b.go.co.kr" target="_blank">한솔오크밸리리조트 </a></li>
+					<li class="red"><a href="http://odongjae.b.go.co.kr" target="_blank">한옥호텔오동재 </a></li>
+					<li class="red"><a href="http://hantanhotel.b.go.co.kr" target="_blank">한탄리버스파호텔 </a></li>
+					<li class="red"><a href="http://gjhanwharesort.b.go.co.kr" target="_blank">한화리조트[경주] </a></li>
+					<li class="red"><a href="http://hanhwar.b.go.co.kr" target="_blank">한화리조트[대천] </a></li>
+					<li class="red"><a href="http://hhresort.b.go.co.kr" target="_blank">한화리조트[백암] </a></li>
+					<li class="red"><a href="http://hhresort.b.go.co.kr" target="_blank">한화리조트[산정호수] </a></li>
+					<li class="red"><a href="http://hanwharesort.b.go.co.kr" target="_blank">한화리조트[쏘라노] </a></li>
+					<li class="red"><a href="http://hanwharesort.b.go.co.kr" target="_blank">한화리조트[해운대티볼리] </a></li>
+					<li class="red"><a href="http://haeundaegrandhotel.b.go.co.kr" target="_blank">해운대그랜드호텔 </a></li>
+					<li class="red"><a href="http://glorycondo.b.go.co.kr" target="_blank">해운대글로리콘도 </a></li>
+					<li class="red"><a href="http://liberohotel.b.go.co.kr" target="_blank">해운대리베로호텔 </a></li>
+					<li class="red"><a href="http://bestlouishamiltonhud.b.go.co.kr" target="_blank">해운대베스트루이스해밀턴호텔 </a></li>
+					<li class="red"><a href="http://busancentum.b.go.co.kr" target="_blank">해운대센텀호텔 </a></li>
+					<li class="red"><a href="http://aromamemory.b.go.co.kr" target="_blank">향기로운추억카라반 </a></li>
+					<li class="red"><a href="http://hyundairesidence.b.go.co.kr" target="_blank">현대 레지던스 서울 </a></li>
+					<li><a href="http://www.hyundaisoo.co" target="_blank">현대수콘도미니엄 </a></li>
+					<li class="red"><a href="http://hyunjinhotel.b.go.co.kr" target="_blank">현진관광호텔 </a></li>
+					<li class="red"><a href="http://hotelora.b.go.co.kr" target="_blank">호텔 오라 인천 </a></li>
+					<li class="red"><a href="http://gadenhotel.b.go.co.kr" target="_blank">호텔가덴 </a></li>
+					<li class="red"><a href="http://hotelniagara.b.go.co.kr" target="_blank">호텔나이아가라 </a></li>
+					<li class="red"><a href="http://thedesignersss.b.go.co.kr" target="_blank">호텔더디자이너스서울역 </a></li>
+					<li class="red"><a href="http://hotelthebornjeju.b.go.co.kr" target="_blank">호텔더본제주 </a></li>
+					<li class="red"><a href="http://hotelthesoomforest.b.go.co.kr" target="_blank">호텔더숨포레스트 </a></li>
+					<li class="red"><a href="http://hoteltheone.b.go.co.kr" target="_blank">호텔더원 </a></li>
+					<li class="red"><a href="http://seoulhoteldenim.b.go.co.kr" target="_blank">호텔데님 </a></li>
+					<li class="red"><a href="http://kimporar.b.go.co.kr" target="_blank">호텔라르김포 </a></li>
+					<li class="red"><a href="http://lucebridge.b.go.co.kr" target="_blank">호텔루체브릿지 </a></li>
+					<li class="red"><a href="http://lewin.b.go.co.kr" target="_blank">호텔르윈(구.전주코아리베라호텔) </a></li>
+					<li class="red"><a href="http://djshinan.b.go.co.kr" target="_blank">호텔리베라유성 </a></li>
+					<li class="red"><a href="http://matthieuyeosu.b.go.co.kr" target="_blank">호텔마띠유여수[여수관광호텔] </a></li>
+					<li class="red"><a href="http://hotelmaremons.b.go.co.kr" target="_blank">호텔마레몬스 </a></li>
+					<li class="red"><a href="http://mirandahotel.b.go.co.kr" target="_blank">호텔미란다이천 </a></li>
+					<li class="red"><a href="http://hotelbenhur.b.go.co.kr" target="_blank">호텔벤허 </a></li>
+					<li class="red"><a href="http://hotelvision.b.go.co.kr" target="_blank">호텔비젼 </a></li>
+					<li class="red"><a href="http://barevehotel.b.go.co.kr" target="_blank">호텔빠레브 </a></li>
+					<li class="red"><a href="http://hotelshalom.b.go.co.kr" target="_blank">호텔샬롬 </a></li>
+					<li class="red"><a href="http://hotelsquare.b.go.co.kr" target="_blank">호텔스퀘어안산(구,인터불고안산) </a></li>
+					<li class="red"><a href="http://cieldemer.b.go.co.kr" target="_blank">호텔씨엘드메르해운대 </a></li>
+					<li class="red"><a href="http://hotelaria.b.go.co.kr" target="_blank">호텔아리아 송도점 </a></li>
+					<li class="red"><a href="http://atriumthewhite.b.go.co.kr" target="_blank">호텔아트리움평창 </a></li>
+					<li class="red"><a href="http://wonjuinterburgo.b.go.co.kr" target="_blank">호텔인터불고원주 </a></li>
+					<li class="red"><a href="http://hotelinfiniseoul.b.go.co.kr" target="_blank">호텔인피니 </a></li>
+					<li class="red"><a href="http://hotelillua.b.go.co.kr" target="_blank">호텔일루아 </a></li>
+					<li class="red"><a href="http://karashy.b.go.co.kr" target="_blank">호텔카라쉬 </a></li>
+					<li class="red"><a href="http://hotelcapital.b.go.co.kr" target="_blank">호텔캐피탈 </a></li>
+					<li class="red"><a href="http://hotelcapital.b.go.co.kr" target="_blank">호텔캐피탈 </a></li>
+					<li class="red"><a href="http://hotelforetnampo.b.go.co.kr" target="_blank">호텔포레프리미어남포 </a></li>
+					<li class="red"><a href="http://prima.b.go.co.kr" target="_blank">호텔프리마 </a></li>
+					<li class="red"><a href="http://hyundaihotel.b.go.co.kr" target="_blank">호텔현대경주 </a></li>
+					<li class="red"><a href="http://hyundaihotelmokpo.b.go.co.kr" target="_blank">호텔현대목포 </a></li>
+					<li class="red"><a href="http://homershotel.b.go.co.kr" target="_blank">호텔호메르스 </a></li>
+					<li class="red"><a href="http://hotelhealing.b.go.co.kr" target="_blank">호텔힐링 </a></li>
+					<li class="red"><a href="http://alpensiaresort.b.go.co.kr" target="_blank">홀리데이 인 알펜시아 평창 스위트 </a></li>
+					<li class="red"><a href="http://jejuwhitehouse.b.go.co.kr" target="_blank">화이트 하우스 호텔 </a></li>
+					<li class="red"><a href="http://whitecube24.b.go.co.kr" target="_blank">화이트큐브24 </a></li>
+					<li class="red"><a href="http://phoenixpc.b.go.co.kr" target="_blank">휘닉스 평창 (구.보광휘닉스파크) </a></li>
+					<li class="red"><a href="http://whistlelark.b.go.co.kr" target="_blank">휘슬락호텔 </a></li>
+					<li class="red"><a href="http://hiddenbayhotel.b.go.co.kr" target="_blank">히든베이호텔 </a></li>
+					<li>===== 입장권 =====</li>
+					<li class="red"><a href="http://www.365safetown.co.kr" target="_blank">365세이프타운 </a></li>
+					<li class="red"><a href="http://www.gangwonmuseum.com" target="_blank">강원종합박물관 </a></li>
+					<li class="red"><a href="http://www.dukguwater.com" target="_blank">덕구온천 </a></li>
+					<li class="red"><a href="http://www.theoceansauna.com" target="_blank">디오션리조트사우나 </a></li>
+					<li class="red"><a href="http://www.theoceanwater.co.kr" target="_blank">디오션워터파크 </a></li>
+					<li><a href="http://www.blueonewater.com" target="_blank">블루원워터파크 </a></li>
+					<li class="red"><a href="http://www.blueonecart.com" target="_blank">블루원카트 </a></li>
+					<li class="red"><a href="http://www.bluecanyonwater.com" target="_blank">블루캐니언 </a></li>
+					<li><a href="http://www.seoulgrandpark.com" target="_blank">서울대공원 </a></li>
+					<li><a href="http://www.sinbukwater.com" target="_blank">신북온천 </a></li>
+					<li><a href="http://www.seelalawater.com" target="_blank">씨랄라워터파크 </a></li>
+					<li><a href="http://www.elybaden.co.kr" target="_blank">엘리바덴 </a></li>
+					<li class="red"><a href="http://www.elysiangangchon.com" target="_blank">엘리시안강촌 </a></li>
+					<li class="red"><a href="http://www.yeosuexpo.co.kr" target="_blank">여수엑스포 </a></li>
+					<li><a href="http://www.yeosucablecar.co.kr" target="_blank">여수해상케이블카 </a></li>
+					<li class="red"><a href="http://www.yeongjongrailbike.com" target="_blank">영종도레일바이크 </a></li>
+					<li class="red"><a href="http://www.jeonjurailbike.co.kr" target="_blank">전주레일바이크 </a></li>
+					<li class="red"><a href="http://paradisespa.b.go.co.kr" target="_blank">파라다이스스파도고 </a></li>
+					<li><a href="http://www.hotelmasterdaecheon.co.kr" target="_blank">호텔마스타대천 </a></li>
+					<li class="red"><a href="http://www.herotongtong.com" target="_blank">히어로통통 </a></li>
+					<li class="red"><a href="http://www.healingthemapark.co.kr" target="_blank">힐링테마파크 </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer-->
+	<div id="Footer">
+		<div class="f-area">
+			<div class="f-top">
+				<div class="link">
+					<!----<a href="http://www.yeosucablecar.co.kr/reservation/?dd=WxszRixQP1cpEUZ2Fy5FMQ==" title="예약방법">예약방법</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;---->
+					<a href="http://www.yeosucablecar.co.kr/view/?p_no=G0dwEGsR" title="구매하기">구매하기</a> &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://www.yeosucablecar.co.kr/privacy/?dd=SBkyRjtLO000" title="이용약관">이용약관</a> &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://www.yeosucablecar.co.kr/privacy/?dd=WQwpVT9FJw==" title="개인정보처리방침" class="privacy">개인정보처리방침</a>
+				</div>
+			</div>
+			<div class="f-bottom">
+				<div class="f-logo"><img src="http://img.go.co.kr/f_logo.gif?ver=20170824145200" alt=""></div>
+				<div class="add">
+					<p class="ft_text">
+						<strong>(주)바로네트웍스</strong><br> 대표이사 : 전병권<br> 주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br> 사업자등록번호 : 215-87-85373<br> 여행업등록번호 : 제2017-07호<br> 여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>
+					</p>
+					<p class="ft_text">
+						<strong>
+						오션투유리조트 설악비치 호탤앤콘도</strong><br> 주소 : 강원 고성군 죽왕면 삼포해변길 9, 1<br> 사업자등록번호 : 332-85-00016<br> 통신판매업 : 제 2009-4290040-30-2-0033호<br>
+					</p>
+					<p class="copy">Copyright 2016 OCEAN2YOU CONE. ALL RIGHTS RESERVED</p><br>
+				</div>
+				<ul class="customer">
+					<li class="f_call">
+						<p>고객상담 및 빠른객실문의</p>
+						<strong style="font-size:33px">1666-1243</strong>
+					</li>
+					<li class="f_mail">
+						<p>E-mail 문의</p>
+						<a href="mailto:help@go.co.kr"><strong style="font-size:21px">help@go.co.kr</strong></a>
+					</li>
+
+
+				</ul>
+				<div class="four-list">
+					<img src="http://img.go.co.kr/f_icon01.gif" border="0" alt="랭키닷컴1위"><img src="http://img.go.co.kr/f_icon02.gif" border="0" alt="관광업등록증"><img src="http://img.go.co.kr/f_icon03.gif" border="0" alt="서울보증보험"><img src="http://img.go.co.kr/f_icon04.gif" border="0" alt="신용카드결제"><img src="http://img.go.co.kr/f_icon05.gif" border="0" alt="휴대폰결제"><img src="http://img.go.co.kr/f_icon06.gif" alt="공정거래위원회">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+
+
+	<!-- top 버튼 -->
+	<div id="quickMenu2" style="z-index: 9999; display: none; position: static; border-bottom: none; bottom: 20px;">
+		<a href="javascript:move_home();">
+			<img src="http://img.go.co.kr/top_btn.png"></a>
+	</div>
+
+
+	<!-- 상단 고정 바 -->
+
+
+
+
+	<!-- 우측 앱 무료설치하기 배너 클릭 시 레이어 -->
+	<div id="app_pop_w" style="display:none;position:fixed;height:330px">
+		<div class="app_pop_title"><img src="http://img.go.co.kr/pop_title_app.jpg?ver=20170824145200"></div>
+		<div class="app_pop_close">
+			<a href="javascript:utils.out('#app_pop_w');"><img src="http://img.go.co.kr/soldout_close_btn.jpg"></a>
+		</div>
+		<div class="app_pop_img" style="margin: 0px 35px 10px 10px">
+			<img src="http://img.go.co.kr/app_qr.jpg">
+		</div>
+		<div class="app_pop_txt" style="margin-top:0px">
+			<p class="txt1" style="font-weight:bold;">앱으로 예약시&nbsp;<span class="txt1_F">최대 80%할인</span>&nbsp;가능!</p>
+			<p class="txt2">
+				<span style="font-weight:bold;font-size:17px">추가할인이 가능한 앱을 설치하여 예약해보세요.</span><br><br>
+				<span class="txt2_R">핸드폰번호를 입력하시면 <br><span class="txt2_F">앱 설치 URL을 문자</span>로 보내드립니다.
+				</span>
+			</p>
+		</div>
+		<div class="app_pop_num" style="margin-top:10px">
+			<input id="phone" name="phone" placeholder="휴대폰 번호 입력 (”-” 제외)" class="inputp" value="" style="width:235px" maxlength="11" type="text" onkeypress="if(event.keyCode == 13) { app_bn_submit(); }" onkeyup="util.checktype('number', 'phone')"> <span class="app_pop_btn" onclick="app_bn_submit()">전송</span>
+		</div>
+		<div class="app_pop_rtxt" style="height:40px">
+			<p class="app_pop_rtxt_txt">
+				* 문자로 발송드린 URL을 클릭하시면 앱설치가 가능한 설치페이지로 이동합니다.<br>
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+		});
+
+		$(function() {
+			$(window).scroll(function() {
+				var scrollTop = $(window).scrollTop();
+				if (scrollTop > 100) {
+					$("#quickMenu2").css({
+						"position": "fixed",
+						"bottom": "20px",
+						"z-index": "9999",
+						"display": "block"
+					}); //상단고정
+					$("#rt_app_banner").css("top", "70px");
+					$("body").find("#reservBtn").css("top", "290px");
+				} else if (scrollTop < 100) {
+					$("#quickMenu2").css({
+						"position": "static",
+						"border-bottom": "none",
+						"display": "none"
+					}); //상단고정
+					$("#rt_app_banner").css("top", "260px");
+					$("body").find("#reservBtn").css("top", "480px");
+				}
+
+				if (scrollTop > 230) {
+					$("#gnb_wrap2").css({
+						"position": "fixed",
+						"top": "0px",
+						"z-index": "499",
+						"display": "block"
+					}); //상단고정
+				} else if (scrollTop < 230) {
+					$("#gnb_wrap2").css({
+						"position": "static",
+						"border-bottom": "none",
+						"display": "none"
+					}); //상단고정
+				}
+
+
+				var list_totalh = "230";
+
+				if (scrollTop > list_totalh) {
+					$("#re_choice_fix").css({
+						"position": "fixed",
+						"top": "47px",
+						"z-index": "499",
+						"display": "block"
+					}); //상단고정
+				} else if (scrollTop < list_totalh) {
+					$("#re_choice_fix").css({
+						"position": "static",
+						"border-bottom": "none",
+						"display": "none"
+					}); //상단고정
+				}
+
+				// 나머지 우측배너 1개인 시설들
+				if (scrollTop <= 2250) {
+					$("#reservBtn2").hide();
+					$("#reservBtn3").show();
+				} else {
+					$("#reservBtn2").show();
+					$("#reservBtn3").hide();
+				}
+			});
+
+
+
+			$("#sch_edate2").datepicker({
+				dateFormat: "yy년 mm월 dd일",
+				showAnim: "slideDown",
+				dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+				changeMonth: true,
+				changeYear: true,
+				minDate: "1"
+			});
+			$("#sch_sdate2").datepicker({
+				dateFormat: "yy년 mm월 dd일",
+				showAnim: "slideDown",
+				dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+				minDate: "0",
+				changeMonth: true,
+				changeYear: true,
+				onSelect: function() {
+					$.ajax({
+						type: "post",
+						url: "./state.php",
+						data: "mode=nextdate&sdate=" + this.value,
+						success: function(data) {
+							var re = data.split("||");
+							$("#sch_edate").val(re[0]);
+							//$("#sch_edate").datepicker("option", "minDate", "+"+re[1]+"d");
+						}
+					});
+				}
+			});
+		});
+
+		function app_bn_submit() {
+			if ($("#phone").val() == "") {
+				alert("휴대폰 번호를 입력하세요.");
+				return;
+			}
+
+			$.ajax({
+				url: "../reservation/state.php",
+				data: "mode=app_sendsms&phone=" + $("#phone").val(),
+				type: "post",
+				success: function(e) {
+					alert(e);
+					utils.out('#app_pop_w');
+				}
+			});
+		}
+
+
+		function prev_find2() {
+			var seld = $("#sch_sdate2").val();
+			seld = seld.replace("년 ", "-");
+			seld = seld.replace("월 ", "-");
+			seld = seld.replace("일", "");
+
+			var room_cnt = $("#room_cnt2").val();
+			var night_cnt = $("#night_select2").val();
+
+			$.ajax({
+				url: "../reservation/state.php",
+				type: "post",
+				data: "mode=date_chk2&sel=" + seld + "&nval=" + night_cnt + "&rcnt=" + room_cnt,
+				cache: false,
+				success: function(data) {
+					var res = data.split("||");
+					$.cookie("night_cnt", night_cnt, {
+						domain: 'yeosucablecar.co.kr',
+						path: '/'
+					});
+					$.cookie("room_cnt", room_cnt, {
+						domain: 'yeosucablecar.co.kr',
+						path: '/'
+					});
+					$.cookie("save_sdate", res[0], {
+						domain: 'yeosucablecar.co.kr',
+						path: '/'
+					});
+					$.cookie("save_edate", res[1], {
+						domain: 'yeosucablecar.co.kr',
+						path: '/'
+					});
+					$.cookie("prev_adult", $("#adult2").val(), {
+						domain: 'yeosucablecar.co.kr',
+						path: '/'
+					});
+
+					// 상단바 고정 새로고침 안해도 변경되도록 수정 => 반대로
+
+					$("#room_cnt").val($("#room_cnt2").val());
+					$("#sch_sdate").val($("#sch_sdate2").val());
+					$("#sch_edate").val($("#sch_edate2").val());
+					$("#adult").val($("#adult2").val());
+					location.href = "http://www.yeosucablecar.co.kr/reservation/?dd=WxszRixQP1cpEUZ2TnE=&scoll_t=reservation_go";
+					//rch.find_room();
+				}
+			});
+		}
+
+		function move_hid(id, gubun, hid) {
+			if (gubun == "id") {
+				var val = $("#" + id);
+			} else {
+				var val = $("." + id);
+			}
+
+			var num = val.offset().top;
+
+			num = parseInt(num);
+
+			switch (id) {
+				case "how_come":
+				case "etc":
+				case "travel":
+					hid = 230;
+					break;
+				case "room_info":
+					hid = 150;
+					break;
+				case "info_box":
+					hid = 230;
+					break;
+				default:
+					hid = 113;
+			}
+
+			var final_hid = parseInt(num - hid);
+			$(window).scrollTop(final_hid);
+		}
+
+		function move_home() {
+			$(window).scrollTop(0);
+		}
+
+		function view_move(id) {
+			var offset = $("#" + id).offset();
+			if (id == "clam_map" || id == "alive_map" || id == "reservation_go") {
+				var tmp = parseInt(offset.top);
+			} else if (id == "infom_box") {
+				var tmp = parseInt(offset.top) - 40;
+			} else {
+				var tmp = parseInt(offset.top) - 200;
+			}
+			$('html, body').animate({
+				scrollTop: tmp
+			}, 300);
+		}
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<title>문서 제목</title>
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css" />
+	<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
+	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">-->
+	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">-->
+	<link rel="stylesheet" href="../../../src/css/m/history/history_m.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>
+	<style>
+		.default {
+			bottom: 0;
+		}
+		.fixed {
+			bottom: -80px;
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="scroll_box">
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!-- 서브페이지 상단 -->
+				<div id="headTitle_box">
+					<div id="headTitle">
+						<span class="back"><a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a></span>
+						예약내역
+						<!--20170720변경내용_입장권등록아이콘추가-->
+						<a href="" class="i-tickets"><img src="http://img.go.co.kr/mobile/i_tickets.png" alt="입장권등록"></a>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="history-tab-01">
+					<ul class="clr">
+						<li class="on"><a href="./history_01_1.html">이용가능</a></li>
+						<li><a href="./history_01_2.html">이용완료</a></li>
+						<li><a href="./history_01_3.html">환불/취소</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="top_box_bottom" style="height: 80px;"></div>
+
+			<div class="history01-list">
+
+				<div class="nb-wrap">
+					<div class="non-box">
+						<img src="http://img.go.co.kr/mobile/h_1.png" alt="느낌표">
+						<div class="non-box-ntcbox" onclick="layer_show();">
+							<strong>예약/구매 내용이 없습니다.</strong><br>
+							구매하신 예약건이 보이지 않는다면,<br>
+							<span>여기를 클릭</span>하여 확인하세요.
+						</div>
+						<p>레저 입장권과 다양한 숙박시설을<br>고코만의 특가로 예약해보세요!</p>
+					</div>
+					
+					<!--20170720변경내용_버튼 두개 변경-->
+					<div class="non-btn-area"><a href="" class="regist">입장권 등록하기</a><a class="reserv" href="">예약하러 가기</a></div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		
+		
+		<div class="btmLogo" id="btmLogo"></div>
+		<!--<div id="bottomMenu2" class="hide_div default">
+			<span class="btn"><a href="javascript:history.back();"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_prev.png" alt="이전" width="50" height="50"></a></span>
+			<span class="btn"><a href="http://m.go.co.kr/home/map/?dd=RB8wfDNf"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_map.png" alt="내주변" width="50" height="50"></a></span>
+			<span class="btn"><a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_home.png" alt="홈" width="50" height="50"></a></span>
+			<span class="btn"><a href="http://m.go.co.kr/home/member/?dd=Sws5TzdVKg=="><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_mybooking.png" alt="나의예약" width="50" height="50"></a></span>
+			<span class="btn"><a id="rightmenu" href="#"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_myinfo.png" alt="myinfo" width="50" height="50"></a></span>
+		</div>-->
+	</div>
+</body>
+
+</html>

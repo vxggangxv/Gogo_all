@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+/* 오션투유리조트 가로 사이즈 20170612 이동석 */
+#gnb li.menu {display:block; width:133px; float:left;}
+#gnb li.menu a{transition:0.3s; color:#c5c5c5; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li.menu a:hover{color:#f0cc7f; font-size:15px; line-height:2.8;  display:block;}
+#gnb li.menu_on {display:block; width:133px; float:left;}
+#gnb li.menu_on a{color:#f0cc7f; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li.menu_tit {display:block; width:310px !important; float:left;}
+#gnb li.menu_tit a{transition:0.3s; color:#c5c5c5; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li.menu_tit a:hover{color:#f0cc7f; font-size:15px; line-height:2.8;  display:block;}
+#gnb li.menu_tit_on{display:block; width:310px; float:left;}
+#gnb li.menu_tit_on a{color:#f0cc7f; font-size:15px; line-height:2.8;  font-weight:600; display:block;}
+#gnb li:nth-of-type(2) a{color:#c5c5c5; background-color:#171717; height: 47px;}
+
+#gnb2 ul {margin: auto; width: 1364px !important; text-align: center; height: 47px;}
+
+/* 오션투유 영상보기 추가 170705 이현우 */
+.sub_wrap .view_movie {display:inline-block; position:absolute; top:410px; right:25px; width:110px; border-radius:6px; padding:5px 0; background-color:#0090e6; text-align:center; color:#fff; letter-spacing:-1px; font-size:14px; line-height:16px;}
+.ocean_movie {position:fixed; left:0; right:0; top:0; bottom:0; z-index:99999; text-align:center; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0;}
+.ocean_movie:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
+.ocean_movie .movie_area {display:inline-block; margin-right:-4px; vertical-align:middle; position:relative; z-index:99999;}
+.ocean_movie .movie_area .close_movie {position:absolute; right:0; top:-38px;}
+
+.watch_movie {margin-top:10px;}
+
+
+.oc2you .link-bn {margin: -65px auto 90px; position: relative; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.oc2you .link-bn > a {display: block; float: left; height: 107px; color: #fff; line-height: 1.2; padding-top: 28px; box-sizing: border-box; font-weight: 300;}
+.oc2you .link-bn > a.nth-1 {width: 588px; margin-right: 7px; background: url(http://img.ocean2you.co.kr/banner/oc2_bike_bn.jpg) no-repeat; font-size: 20px;}
+.oc2you .link-bn > a.nth-2 {width: 385px; background: url(http://img.ocean2you.co.kr/banner/oc2_bf_bn.jpg) no-repeat; font-size: 20px;}
+.oc2you .link-bn > a .italic {font-style: italic;}
+.oc2you .link-bn > a .f-bd {font-size: 24px; font-weight: 400;}
+
+
+/*==오션투유 브검 패키지UI 작업 20170828 김은영==*/
+
+/*객실리스트*/
+
+.banner_price_all_list{width:954px;}
+.sltCal-sec2{width:600px;margin-left:-300px;}
+.sltCal-sec2 .cal-inner{float:none;margin:0 auto;}
+.nth4 a{color:#fff;display:block;width:280px;height:50px;font-size:16px;background:#424242;text-align:center;line-height:50px;}
+
+/*날짜선택*/
+#fare_date{width:954px;height:53px;line-height:53px;background:#e6e6e6;}
+.chkIn_date{float:left;margin-left:34px;}
+.chkIn_txt{display:inline-block;margin-right:10px;font-size:16px;font-weight:600;color:#7d7d7d;}
+.chkIn {width:174px;background:#fff url(http://img.go.co.kr/i-cal.jpg) no-repeat right;border:1px solid #7d7d7d;font-size:15px;padding-left:10px; line-height: 1;}
+.search_d_btb{margin-left:26px;}
+.choice_roomTxt{width:434px;font-size:16px;font-weight:600;text-indent:10px;margin-left:24px;}
+.change_roomBtn{margin-left:60px;}
+
+/*객실선택 클릭시 팝업*/
+.room_info{position:absolute;width:830px;height:522px;left:50%;top:50%;margin-top:-216px;margin-left:-415px;background:#fff;}
+.info_top{width:830px;height:60px;background:#ff7a2d;color:#fff;text-align:center;font-size:20px;line-height:60px;margin-bottom:17px;}
+.info_top img{display:inline-block;float:right;margin:15px 20px 0px 0px;cursor:pointer;}
+table.pop_room{width:811px;margin:0 auto;}
+table.pop_room th{height:50px;background:#5e5e5e;font-size:16px;color:#fff;font-weight:600;text-align:center;}
+table.pop_room td{height:63px;border-bottom:1px solid #dddddd;font-size:16px;font-weight:500;color:#313131;}
+table.pop_room td.left_td{text-align:left;padding-left:20px;}
+table.pop_room td.center_td{text-align:center;}
+table.pop_room td.center_td span{color:#ff4445;font-weight:600;}
+.pop_room_btnW{width:730px;height:42px;margin:0 auto;padding-top:10px;}
+.pop_room_btn{width:730px;height:42px;background:#ff7a2d;color:#fff;text-align:center;font-size:18px;font-weight:600;border:none;cursor:pointer;outline:none;}
+
+
+
+
+
+/*오션투유 패키지*/
+#package_box{width:1002px;height:auto;overflow:hidden;margin:40px 0px;}
+#package_box .package_banner{width:1000px;height:75px;background:#05467d;text-align:center;margin:0 auto;}
+#package_box .package_banner p{font-size:22px;color:#fff;font-weight:800;line-height:75px;}
+#package_box .package_banner p span{font-size:15px;font-weight:normal;}
+
+#package_box  ul.package_card{width:982px;margin:0 auto;padding-top:26px}
+#package_box  ul.package_card li{float:left;width:318px;border:1px solid #d4d4d4;border-bottom:2px solid #a6a6a6;cursor:pointer;}
+#package_box  ul.package_card li.package_card02{margin:0 10px;}
+#package_box  ul.package_card li p.package_img{width:304px;height:219px;margin:0 auto;padding:7px 0px 10px 0px;}
+#package_box  ul.package_card li p.package_img img{width:100%;}
+#package_box  ul.package_card li p.package_tit{font-size:20px;font-weight:800;color:#181818;}
+#package_box  ul.package_card li p.package_price{font-size:27px;font-weight:800;color:#ff2400;margin-bottom:14px;}
+#package_box  ul.package_card li p.package_price > span{font-size:22px;font-weight:700;color:#999;text-decoration:line-through;padding-right:15px;}

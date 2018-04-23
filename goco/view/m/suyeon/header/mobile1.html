@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html lang="ko" class="ui-mobile">
+<head>
+<meta charset="UTF-8">
+<title> 국내외여행, 호텔, 펜션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="expire" content="-1">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
+<link rel="apple-touch-icon" href="http://img.go.co.kr/mobile/icon.png"> 
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20171218102752" type="text/css">
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20171218102752" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20171218102752sss" type="text/css">
+<!-- 모든사이트 통합 css -->
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
+<!--<link rel="stylesheet" href="../../src/css/menu/totalmobile.css" type="text/css">-->
+<meta name="robots" content="NOINDEX, NOFOLLOW, NOARCHIVE">
+<meta name="author" content="GO.CO.KR">
+<meta name="description" content=" 고코 GO.CO.KR">
+<meta name="keywords" content=" 고코 GO.CO.KR">
+<meta name="classification" content="고코 GO.CO.KR">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+
+<!-- Android icon -->
+<!--<link rel="shortcut icon" href="http://img.go.co.kr/icon_goco128x128.ico" type="image/x-icon" />-->
+<link rel="shortcut icon" href="http://img.go.co.kr/mobile/icon_goco72x72.png" type="image/x-icon">
+<!-- iPhone icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="http://img.go.co.kr/mobile/icon_goco57x57.png">
+<!-- iPad icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="http://img.go.co.kr/mobile/icon_goco72x72.png">
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon" sizes="114x114" href="http://img.go.co.kr/mobile/icon_goco114x114.png">
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://img.go.co.kr/mobile/icon_goco144x144.png">
+<script type="text/javascript">
+$( document ).on( "mobileinit", function() {
+	$.extend( $.mobile , {
+		autoInitializePage: false,
+	});
+	
+	
+
+});
+</script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+var burl = "go.co.kr";
+var set_ver = "";
+var agent = "A";
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){		
+	
+	// 아이폰에만 해당하는 설정
+	var UserAgent = navigator.userAgent;
+	if(UserAgent.match(/iPhone|iPod|iPad/i) != null) {
+				$("#bottomMenu").show();
+				
+				/*
+		$("#menu_bg").css("top","20px");
+		$("#menu_bg2").css("padding-top","20px");
+
+		*/
+		
+		var user_flag = "ios";
+	} else {
+		var user_flag = "android";
+	}
+});
+
+var UserAgent = navigator.userAgent;
+if(UserAgent.match(/iPhone|iPod|iPad/i) != null) {
+	var user_flag = "ios";
+} else {
+	var user_flag = "android";
+}
+
+/* 쿠키 60분 */
+var date = new Date(); 
+var minutes = 120; 
+date.setTime(date.getTime() + (minutes * 60 * 1000)); 
+
+var load_img = "http://img.go.co.kr/icon_loading.gif";
+
+</script><script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20171218102752"></script><script type="text/javascript" src="http://static.go.co.kr/js/common_ver2.js?ver=20171218102752"></script><script type="text/javascript" src="http://static.go.co.kr/js/iscroll.js?ver=20171218102752"></script><script type="text/javascript" src="http://static.go.co.kr/js/jquery.cookie.js"></script><script type="text/javascript" src="http://static.go.co.kr/js/swiper.min.js?ver=20171218102752"></script><script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script><script type="text/javascript" src="http://static.go.co.kr/js/app_util.js?ver=20171218102752"></script></head>
+
+<!--- 상단 고정 스크립트 -->
+
+
+
+
+
+
+
+<!--- 리스트페이지에서 쓸 스크립트-->
+
+<!--- 리스트페이지에서 쓸 스크립트-->
+
+
+
+<!--- 어플통신전용 -->
+
+
+<body style="">
+	
+		<div id="wrapper" data-role="page">
+		<div id="menu_bg2" style="display:none;position:absolute;z-index:99999;top:0px;right:-270px">
+	<div id="mypage" style="height: 938px;">
+		<div id="box" class="type02" style="overflow-y: scroll; background-image: none; min-height: 938px;">
+				<div class="my_top" id="right_logout_top">
+            <div class="my_close">
+                <a href="javascript:utils.rmenu_out('#menu_bg2');$('#bottomMenu').show();$('#menu_bg2').removeClass('rm_op');" data-ajax="false">
+                    <img src="http://img.go.co.kr/mobile/my_close.png" width="26" alt="닫기">
+                </a>
+            </div>
+            <span>국내최대 할인숙박 예약</span><br>
+            <a href="http://app.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcUIwDgZOEW5AMQg1UW8WR0Qbb04/TzAMfxpMFCkoQCt0GmkEP35kBwVyYxs="><img src="http://img.go.co.kr/mobile/my_bt1.png" width="80" alt="로그인" height="28"></a>
+        </div>
+		<div class="my_middle0">
+            <ul>
+                <li class="my_box_1">
+                    <a href="#">
+                        <span class="text_1" style="color:#dc2c2c;">-<br></span>
+                        <span class="text_2">예약내역</span>
+                    </a>
+                </li>
+                <li class="my_box_2">
+					<a href="#">
+					  <span class="text_1" style="color:#dc2c2c;">-<br></span>
+					  <span class="text_2">찜목록</span>
+					</a>
+				</li> 
+                <li class="my_box_3">
+                     <a href="#">
+                       <span class="text_1" style="color:#dc2c2c;">-<br></span>
+                        <span class="text_2">적립금</span>
+                     </a>
+                </li> 
+                <li class="my_box_4">
+                    <a href="#">
+                        <span class="text_1" style="color:#dc2c2c;">-<br></span>
+                        <span class="text_2">할인쿠폰</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+				
+				<div class="my_middle type02">
+			<ul>                                  
+				<li class="my_box_4" onclick="location.href='http://app.go.co.kr/home/landing/?dd=TAglTSp5Kkw0H0Q='">
+					<a href="#">
+						<span class="text_3">고코투어 이벤트</span>
+						<span class="c-1">8개</span>
+					</a>
+				</li>
+				<li class="my_box_5" onclick="location.href='http://app.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl'">
+					 <a href="#">
+						 <span class="text_3">예약변경/예약취소<br></span>
+					 </a>
+				</li>                                         
+				<li class="my_box_6" onclick="location.href='http://app.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl'">
+					<a href="#">
+						<span class="text_3">1:1문의하기<br></span>
+					</a>
+				</li>  
+				<li class="my_box_5" onclick="location.href='http://app.go.co.kr/home/member/?dd=WxsjRjBSAUUhHUFF'">
+					 <a href="#">
+						 <span class="text_3">최근 본 시설<br></span>
+					 </a>
+				</li>                                 
+			</ul>
+		</div>
+		
+		<div class="my_bottom type02">
+			<ul>
+				<li style="width: 100%; border-bottom: 1px solid #ececec; box-sizing: border-box; display: block; padding:8px 0 8px 0; background-color:#f1f1f1;"></li>
+								<li onclick="alert('로그인 후 이용가능합니다.');location.href='http://app.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl2=aHR0cDovL2FwcC5nby5jby5rci9ob21lL2xhbmRpbmcvP2RkPVR3d3BSakJDTFE9PQ=='">
+					<a href="#">친구에게 할인쿠폰 보내기 <img class="i_cp" src="http://img.go.co.kr/mobile/i_cp5000.png" alt="할인쿠폰"></a>
+				</li>
+								<li style="width: 100%; border-bottom: 1px solid #ececec; box-sizing: border-box; display: block; padding:28px 0 28px 0; background-color:#f1f1f1;">
+					<img src="http://img.go.co.kr/mobile/my_b_logo_4.png" width="100" alt="고코로고">
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+$(function() {	
+	var cookie_mid = $.cookie("mid");
+	if(typeof cookie_mid != "undefined" && cookie_mid != "" && cookie_mid != null && cookie_mid.length > 0) {
+		if($("#menu_bg2").find("#right_login_top").length == 0) {
+				// 상세랑 로그인페이지는 안드로이드에서 무한로딩 걸려서 안되게 막음
+									location.reload();
+						}
+	}
+});
+</script>
+<div id="menu_bg" style="display:none;position:absolute;z-index:99999;">
+	<!---<div id="menu_box2" style="width:270px">--->
+		
+		<div id="category" style="background: rgb(255, 255, 255); height: 938px;">
+			<div id="box">
+				<div class="header">
+												<span class="back"><a href="javascript:utils.menu_out('#menu_bg');$('#top_box').show();$('#menu_bg').removeClass('lm_op');$('#wrapper').unbind('touchmove');" data-ajax="false"><img width="47" height="15" alt="이전" src="http://img.go.co.kr/mobile/btn_back.png"></a></span>					전체 카테고리
+
+				</div>
+				<div class="title"><p>국내숙박</p></div>
+				<table class="select">
+					<colgroup>
+						<col width="33%">
+						<col width="33%">
+						<col width="33%">
+					</colgroup>
+					<tbody><tr class="lineBottom" id="loca1">
+						<td class="lineRight locas" id="lloca_S" onclick="leftm.sub_open('loca1', 'S')"><a href="#">서울</a></td>
+						<td class="lineRight locas" id="lloca_K2" onclick="leftm.sub_open('loca1', 'K2')"><a href="#">경기</a></td>
+						<td class="lineRight locas" id="lloca_K" onclick="leftm.sub_open('loca1', 'K')"><a href="#">강원</a></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="p_none" id="loca1_sub">
+							<div style="display:none" id="loca1_sub_div">
+							</div>
+						</td>
+					</tr>
+					<tr class="lineBottom" id="loca2">
+						<td class="lineRight locas" id="lloca_CN" onclick="leftm.sub_open('loca2', 'CN')"><a href="#">충남</a></td>
+						<td class="lineRight locas" id="lloca_CB" onclick="leftm.sub_open('loca2', 'CB')"><a href="#">충북</a></td>
+						<td class="locas" id="lloca_GN" onclick="leftm.sub_open('loca2', 'GN')"><a href="#">경남</a></td>
+					</tr>
+					<tr><td colspan="3" class="p_none" id="loca2_sub"><div style="display:none" id="loca2_sub_div"></div></td></tr>
+					<tr class="lineBottom" id="loca3">
+						<td class="lineRight locas" id="lloca_GB" onclick="leftm.sub_open('loca3', 'GB')"><a href="#">경북</a></td>
+						<td class="lineRight locas" id="lloca_JN" onclick="leftm.sub_open('loca3', 'JN')"><a href="#">전남</a></td>
+						<td class="locas" id="lloca_JB" onclick="leftm.sub_open('loca3', 'JB')"><a href="#">전북</a></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="p_none" id="loca3_sub"><div style="display:none" id="loca3_sub_div"></div></td>
+					</tr>
+					<tr class="lineBottom" id="loca4">
+						<td class="lineRight locas" id="lloca_B" onclick="leftm.sub_open('loca4', 'B')"><a href="#">부산</a></td>
+						<td class="lineRight locas" id="lloca_JJ" onclick="leftm.sub_open('loca4', 'JJ')"><a href="#">제주</a></td>
+						<td class="locas" id="lloca_DG" onclick="leftm.sub_open('loca4', 'DG')"><a href="#">대구</a></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="p_none" id="loca4_sub"><div style="display:none" id="loca4_sub_div"></div></td>
+					</tr>
+					<tr class="lineBottom" id="loca5">
+						<td class="lineRight locas" id="lloca_IC" onclick="leftm.sub_open('loca5', 'IC')"><a href="#">인천</a></td>
+						<td class="lineRight locas" id="lloca_US" onclick="leftm.sub_open('loca5', 'US')"><a href="#">울산</a></td>
+						<td class="locas" id="lloca_DJ" onclick="leftm.sub_open('loca5', 'DJ')"><a href="#">대전</a></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="p_none" id="loca5_sub"><div style="display:none" id="loca5_sub_div"></div></td>
+					</tr>
+					<tr id="loca6">
+						<td class="lineRight locas" id="lloca_KJ" onclick="leftm.sub_open('loca6', 'KJ')"><a href="#">광주</a></td>
+						<td class="lineRight locas" id="lloca_SJ" onclick="leftm.sub_open('loca6', 'SJ')"><a href="#">세종</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="p_none" id="loca6_sub"><div style="display:none" id="loca6_sub_div"></div></td>
+					</tr>
+				</tbody></table>
+				<div class="title"><p>입장권</p></div>
+				<table class="select">
+					<colgroup>
+						<col width="50%">
+						<col width="50%">
+					</colgroup>
+					<tbody><tr class="lineBottom">
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMyEQ==&amp;ttype=eg==">워터파크/스파</a></td>
+						<td><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMyEQ==&amp;ttype=ZQ==">레저/스포츠</a></td>
+					</tr>
+					<tr>
+						<td class="lineRight"><a href="javascript:alert('상품 준비중입니다.')">관광지</a></td>
+						<td></td>
+					</tr>
+				</tbody></table>
+
+				<div class="title"><p>해외숙박</p></div>
+				<table class="select">
+					<colgroup>
+						<col width="33%">
+						<col width="33%">
+						<col width="33%">
+					</colgroup>
+					<tbody><tr class="lineBottom">
+						<td class="lineRight"><a href="javascript:searching.local_click_menu('global', 'JP', '', '일본', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP');">일본</a></td>
+						<td class="lineRight"><a href="javascript:searching.local_click_menu('global', 'CH', '', '홍콩/중국', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH');">홍콩/중국</a></td>
+						<td class="lineRight"><a href="javascript:searching.local_click_menu('global', 'AS', '', '동남아', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS');">동남아</a></td>
+					</tr>
+					<tr class="lineBottom">
+						<td class="lineRight"><a href="javascript:searching.local_click_menu('global', 'EU', '', '유럽', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU');">유럽</a></td>
+						<td class="lineRight"><a href="javascript:searching.local_click_menu('global', 'US', '', '미주', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US');">미주</a></td>
+						<td><a href="javascript:searching.local_click_menu('global', 'AU', '', '남태평양', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU');">남태평양</a></td>
+					</tr>
+					<tr class="lineBottom">
+						<td class="lineRight"><a href="javascript:searching.local_click_menu('global', 'AF', '', '중동/아프리카', '/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF');">중동/아프리카</a></td>
+						<td class="lineRight"></td>
+						<td></td>
+					</tr>
+				</tbody></table>
+				<!----
+				<div class="title"><p>숙박+워터파크/레저/할인패키지</p></div>
+				<table class="select">
+					<colgroup>
+						<col width="33%">
+						<col width="33%">
+						<col width="33%">
+					</colgroup>
+					<tr class="lineBottom">
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=S">서울</a></td>
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=B">부산</a></td>
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=JN">전남</a></td>
+					</tr>
+					<tr class="lineBottom">
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=K">강원</a></td>
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=GN">경남</a></td>
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=GB">경북</a></td>
+					</tr>
+					<tr>
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=CN">충남</a></td>
+						<td class="lineRight"><a href="http://app.go.co.kr/home/main/?dd=WhcuRDJDAVMrGQ==&loca=CB">충북</a></td>
+						<td></td>
+					</tr>
+				</table>
+				---->
+				
+				<!---
+				<ul class="menu">
+									<li onclick="location.href='http://app.go.co.kr/home/member/?dd=Sws5TzdVKg=='"><a href="#">마이페이지<img src="http://img.go.co.kr/mobile/btn_more.png" width="12" height="20" alt="보러
+					가기" style="float:right; margin-right:10px"/></a></li>
+									<li onclick="location.href='http://app.go.co.kr/home/member/?dd=Sws5TzdVKg=='"><a href="#">예약/구매조회<img src="http://img.go.co.kr/mobile/btn_more.png" width="12" height="20" alt="보러가기" style="float:right; margin-right:10px"/></a></li>
+					<li onclick="location.href='http://app.go.co.kr/home/customer/?dd=QBA0UTE='"><a href="#">고객센터<img src="http://img.go.co.kr/mobile/btn_more.png" width="12" height="20" alt="보러가기" style="float:right; margin-right:10px"/></a></li>
+					<li onclick="location.href='http://app.go.co.kr/home/customer/?dd=Tx8x&call=a'"><a href="#">전화상담<img src="http://img.go.co.kr/mobile/btn_more.png" width="12" height="20" alt="보러가기" style="float:right; margin-right:10px"/></a></li>
+					
+
+										<li onclick="location.href='http://app.go.co.kr/home/member/?dd=ShYrSjBAMQ=='"><a href="#">회원정보관리 1<img src="http://img.go.co.kr/mobile/btn_more.png" width="12" height="20" alt="보러가기" style="float:right; margin-right:10px"/></a></li>
+					
+
+					
+
+					
+				</ul>
+				--->
+				<div style="clear:left;height:6%"></div>
+
+			</div>
+		</div>
+	<!---</div>--->
+</div>
+
+
+<div id="pop_call" style="display:none">
+	<div class="close"><a href="javascript:utils.out('#pop_call')"><img src="http://img.go.co.kr/mobile/menu_close.jpg" alt="닫기"></a></div>
+	<p class="title">현재 고객센터 통화량이 많아<br>
+	연결이 지연될 수 있습니다.</p><br>
+	고객센터<br> <b>자주묻는질문</b> 또는 <b>1:1문의 게시판</b>을 <br>
+	먼저 이용해 주시기를 부탁드립니다.
+	<div class="btn" style="margin:10px 0"><a href="http://app.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl">1:1문의</a></div>
+	<div class="btn" style="margin:10px 0"><a href="http://app.go.co.kr/home/customer/?dd=Tx8x">자주묻는질문</a></div>
+	<div class="line"></div>
+	<p><b>점심시간 12:00~13:00</b><br>＊1:1문의를 통해서 상담을 부탁드립니다.</p>
+	<p class="txt"></p>
+	<div class="cancel"><a href="javascript:utils.out('#pop_call')">취소</a></div>
+	<div class="call"><a href="tel:1666-1243">통화</a></div>
+</div>
+
+<script type="text/javascript">
+var leftm = {
+	sub_open: function(loca_line, loca) {
+		//$(".r_on").stop().slideUp('100');
+		
+
+		if($("#lloca_"+loca).hasClass("on") == true) {
+			//alert('ss');
+			$("#lloca_"+loca).removeClass("on");
+			//$("#"+loca_line+"_sub div").stop().slideUp('100');
+			$("#"+loca_line+"_sub div").fadeOut();
+			$("#"+loca_line+"_sub div").html('');
+			$("#"+loca_line+"_sub div").removeClass("r_on");
+
+			
+		} else {
+			$(".r_on").each(function(e) {
+				var vid = $(this).eq(e).attr("id");
+				$("#"+vid).removeClass("r_on");
+				$(".locas").removeClass("on");	
+				if(vid != loca_line+"_sub_div") {
+					$("#"+vid).fadeOut();
+					$("#"+vid).html('');
+					
+				} 
+				
+			});		
+			
+			
+			//alert("lloca_"+loca);
+			
+			$.ajax({
+				url : "http://app.go.co.kr/home/main/state.php",
+				data: "mode=left_menu&loca="+loca,
+				type: "post",
+				success: function(e) {
+					$("#lloca_"+loca).addClass("on");		
+					$("#"+loca_line+"_sub div").html(e);
+					//$("#"+loca_line+"_sub div").stop().slideDown('100');
+					$("#"+loca_line+"_sub div").fadeIn();
+					$("#"+loca_line+"_sub div").addClass("r_on");
+					
+				
+					
+					
+					
+				}
+			});
+		}
+
+		//myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+		//myScroll.refresh();
+	}
+}
+</script>
+		<div id="scroll_box">
+		
+				<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!--- 서브페이지 상단 -->
+				
+<script src="http://static.go.co.kr/js/jquery.lazyload.min.js"></script>
+<!--swiper.min.js 추가-->
+	<script src="http://static.go.co.kr/js/jquery.touchSwipe.min.js"></script>
+<!--- 임시 적용할 때 빼야함 --->
+<style>
+#top_sea_w #city_choice5 {width:50%;}
+	#top_sea_w #city_choice5 .btn {padding-left:5px; text-align:left;}
+	#top_sea_w #city_choice5 .btn a {display:block;}
+	#top_sea_w #city_choice5 .btn a #city_1_choice {display:block; margin-right:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+	#top_sea_w #city_choice5 .btn a .txt_o {top:0; right:0; float:none;}
+	#top_sea_w #search_list_top5 {width:50%;}
+	#top_sea_w #search_list_top5 .searchBtn {right:10px;}
+	#search_list .photo {padding: 5px 0 0 5px;}
+	#search_list .photo .recommend {width: 105px;}
+	#search_list .info .title {width: 210px;}
+	#list_price01 {width: 125px;}
+	#search_list .summary {height:27px;margin-left: 5px;text-indent: 5px;width: 97%;}
+</style>
+<!-- 변경내용_170818, 메인 화면 제외 리스트부분에서만 별도변경 -->
+<style>
+	#menu .on a {color: #fff;}
+	#menu {border-bottom-color: #e65b1d; padding-bottom: 1px;}
+</style>
+<!--171218_수정-->
+<div id="menu" style="background:#ff8434">
+	<span class="text"><a href="/home/main/">국내숙박</a></span>
+	<span class="text on"><a href="/home/main/?dd=WhcuRDJDAVMyEQ==">레저/입장권</a></span>
+	<span class="text"><a href="/home/main/?dd=RB8pTQFIO1QfH0pb">공연/전시</a></span>
+		<span class="text"><a href="/home/main/?dd=WhcuRDJDAVMyEXdIHDI=">해외입장권</a></span>
+	</div>
+
+
+
+<input type="hidden" id="cal_layer_mode" value="sub_single">
+<input type="hidden" id="local_layer_mode" value="sub">
+<input type="hidden" id="local_layer_gubun" value="inter_div">
+
+
+<input type="hidden" name="stat_mode" id="stat_mode" value="single_list">
+<input type="hidden" name="hpaging" id="hpaging" value="2">
+
+<form name="sub_sform" id="sub_sform" method="post">
+<input type="hidden" name="h_loca" id="city_1" value="">
+<input type="hidden" name="h_ttype" value="">
+<input type="hidden" name="local_txt" id="local_txt" value="">
+<input type="hidden" name="sub_loca" id="city_2" value="">
+<input type="hidden" name="sub_sdate" id="check_in" value="2017-12-18">
+<input type="hidden" name="sub_edate" id="check_out" value="2017-12-19">
+<input type="hidden" name="to_sel" id="to_sel" value="all">
+<input type="hidden" name="fgubun2" id="fgubun2" value="">
+<input type="hidden" name="chk_single" value="Y">
+
+
+
+<div id="top_sea_w">
+	<!--<div id="city_choice5" onclick="javascript:location.href='/home/search/?dd=RR85Rix5MkwjH0R2ECVU&gubun=inter_div&prev_city1='+$('#city_1').val()+'&prev_city2='+$('#city_2').val()+'&single=on&prev_sdate='+$('#check_in').val()+'&prev_edate='+$('#check_out').val()+''"><div class="btn"><a href="#"><span id="city_1_choice">전국 전체</span> <span class="txt_o">▼</span></a></div></div> -->
+	<div id="city_choice5"><div class="btn"><a href="#"><span id="city_1_choice">전국 전체</span> <span class="txt_o">▼</span></a></div></div> 
+	<div id="search_list_top5">
+		<input name="sub_keyword" class="int" id="sub_keyword" type="text" onkeypress="if(event.keyCode == 13) { keyword_search();return false; }" placeholder="지역/시설명/상품명" value="" autocomplete="off"><a href="javascript:keyword_search();" title="빠른검색"><img src="http://img.go.co.kr/mobile/main_search_icon.png" height="20" class="searchBtn"></a>
+	</div>
+</div>
+
+<div id="searchMore">
+	<div class="left1" style="width:20%;"><span class="result">검색결과 <b id="spa_totalcnt">575</b></span></div>
+	<div class="room1" id="pclass_tap" onclick="javascript:$('#ttype_small').toggle();" style="width:52%;"><p><span>전체</span></p></div>
+<!--171218_수정-->
+	<div class="select_room_layer" id="ttype_small" style="display:block">
+		<p class="r_title">상품유형</p>
+			<table class="etc_choice">
+				<tbody>
+					<tr class="line">
+						<td class="on ons  line2" id="sttype_all"><a href="#">전체</a></td>
+						<td class="off line2" id="sttype_water"><a href="#">워터파크</a></td>
+						<td class="off" id="sttype_thema"><a href="#">테마파크</a></td>				
+					</tr>
+					<tr class="line">
+						<td class="off line2" id="sttype_kids"><a href="#">키즈</a></td>
+						<td class="off line2" id="sttype_ticket"><a href="#">입장권</a></td>
+						<td class="off" id="sttype_leports"><a href="#">레포츠</a></td>				
+					</tr>
+					<tr class="line">
+						<td class="off line2" id="sttype_festival"><a href="#">체험/축제</a></td>
+						<td class="off line2" id="sttype_show"><a href="#">공연/전시</a></td>
+						<td class="off" id="sttype_country"><a href="#">해외</a></td>
+					</tr>
+				</tbody>
+			</table>
+	
+
+	<div class="btn">
+		<div class="cancel"><a href="javascript:$('#ttype_small').toggle();">취소</a></div>
+		<div class="search"><a href="#">검색하기</a></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	//적용 클릭 시
+	$(".search").click(function(e) {
+		e.preventDefault();
+		$('#ttype_small').toggle();
+
+		
+				var tmp_str = new Array("all", "spa", "sport", "ski", "edu", "travel");
+		
+		var sttype_str = [];		
+		for(var z=0; z<tmp_str.length; z++) {
+			if($("#sttype_"+tmp_str[z]).hasClass("on") == true) { 
+				sttype_str.push(tmp_str[z]);
+			}
+		}		
+
+		var ttype_str = [];		
+		for(var z=0; z<tmp_str.length; z++) {
+			if($("#ttype_"+tmp_str[z]).hasClass("on") == true) { 
+				ttype_str.push(tmp_str[z]);
+			}
+		}
+
+		// 필터옵션
+		var rtmp_str = new Array("share", "rent", "sleep");
+		var rtype_str = [];		
+		for(var z=0; z<rtmp_str.length; z++) {
+			if($("#rtype_"+rtmp_str[z]).hasClass("on") == true) { 
+				rtype_str.push(rtmp_str[z]);
+			}
+		}
+
+		$.cookie("rtype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+		$.cookie("rtype_arr", rtype_str, {domain: 'go.co.kr', path : '/'});
+
+		$.cookie("ttype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+		$.cookie("ttype_arr", ttype_str, {domain: 'go.co.kr', path : '/'});
+
+		$.cookie("sttype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+		$.cookie("sttype_arr", sttype_str, {domain: 'go.co.kr', path : '/'});
+
+									listing.main_list_scroll('1', '', 'new');
+						});
+
+	$("td[id^='ttype']").click(function(e) {
+		e.preventDefault();
+
+				var id = $(this).attr("id");
+		var id_str = id.split("ttype_");
+
+		if(id == "ttype_all") {
+			$("td[id^='ttype']").removeClass("on");
+			$("td[id^='ttype']").addClass("off");
+			
+			if($(this).hasClass("on") == true) {
+				$(this).addClass("off");
+				$(this).removeClass("on");
+			} else {
+				$(this).addClass("on");
+				$(this).removeClass("off");
+			}
+			$("#sub_sform").find("input[name='ttype_arr[]']").remove();
+
+		} else {
+			$("#ttype_all").removeClass("on");
+			$("#ttype_all").addClass("off");
+
+			if($(this).hasClass("on") == true) {
+				$(this).removeClass("on");
+				$(this).addClass("off");
+			} else {
+				$(this).addClass("on");
+				$(this).removeClass("off");
+			}
+		}
+
+		if($(this).hasClass("ons") == false) {
+			$(this).addClass("ons");
+			$("<input/>").attr({type:"hidden", name:"ttype_arr[]"}).val(id_str[1]).appendTo($("#sub_sform"));
+		} else {
+			$(this).removeClass("ons");
+			$("#sub_sform").find("input[value='"+id_str[1]+"']").remove();
+
+			// 모든 타입 체크 해제 시 전체 부분 체크
+			var t = 0;
+			var tmp_str = new Array("all", "hotel", "motel", "residance", "resort", "pension", "guest", "youth", "single", "caravan", "glamping", "campingsite");
+			for(var z=0; z<tmp_str.length; z++) {
+				if($("#ttype_"+tmp_str[z]).hasClass("on") == true) { 
+					t+=1;
+				}
+			}
+			
+			if(t == 0){
+				$("td[id^='ttype']").removeClass("on");
+				$("td[id^='ttype']").addClass("off");
+				$("#ttype_all").addClass("on");
+				$("#ttype_all").removeClass("off");
+			}
+		}
+		
+	});	
+
+	// 입장권
+	$("td[id^='sttype']").click(function(e) {
+
+		e.preventDefault();
+
+				var id = $(this).attr("id");
+		var id_str = id.split("sttype_");
+
+		if(id == "sttype_all") {
+			$("td[id^='sttype']").removeClass("on");
+			$("td[id^='sttype']").addClass("off");
+			
+			if($(this).hasClass("on") == true) {
+				$(this).addClass("off");
+				$(this).removeClass("on");
+			} else {
+				$(this).addClass("on");
+				$(this).removeClass("off");
+			}
+			$("#sub_sform").find("input[name='sttype_arr[]']").remove();
+
+		} else {
+			$("#sttype_all").removeClass("on");
+			$("#sttype_all").addClass("off");
+
+			if($(this).hasClass("on") == true) {
+				$(this).removeClass("on");
+				$(this).addClass("off");
+			} else {
+				$(this).addClass("on");
+				$(this).removeClass("off");
+			}
+		}
+
+
+		if($(this).hasClass("ons") == false) {
+			$(this).addClass("ons");
+			$("<input/>").attr({type:"hidden", name:"sttype_arr[]"}).val(id_str[1]).appendTo($("#sub_sform"));
+		} else {
+			$(this).removeClass("ons");
+			$("#sub_sform").find("input[value='"+id_str[1]+"']").remove();
+			
+			// 모든 타입 체크 해제 시 전체 부분 체크
+			var t = 0;
+			var tmp_str = new Array("all", "spa", "sport", "ski", "edu", "travel");
+		
+			for(var z=0; z<tmp_str.length; z++) {
+				if($("#sttype_"+tmp_str[z]).hasClass("on") == true) { 
+					t+=1;
+				}
+			}
+			
+			if(t == 0){
+				$("td[id^='sttype']").removeClass("on");
+				$("td[id^='sttype']").addClass("off");
+				$("#sttype_all").addClass("on");
+				$("#sttype_all").removeClass("off");
+			}
+		}
+	});	
+
+
+	// 필터옵션
+	$("td[id^='rtype']").click(function(e) {
+		e.preventDefault();
+
+		var id = $(this).attr("id");
+		var id_str = id.split("rtype_");
+
+
+		if($(this).hasClass("on") == true) {
+			$(this).removeClass("on");
+			$(this).addClass("off");
+		} else {
+			$(this).addClass("on");
+			$(this).removeClass("off");
+		}
+
+		if($(this).hasClass("ons") == false) {
+			$(this).addClass("ons");
+			$("<input/>").attr({type:"hidden", name:"rtype_arr[]"}).val(id_str[1]).appendTo($("#sub_sform"));
+		} else {
+			$(this).removeClass("ons");
+			$("#sub_sform").find("input[value='"+id_str[1]+"']").remove();
+		}
+	});	
+
+	//필터옵션 초기화
+	if($.cookie("rtype_arr") != "" && $.cookie("rtype_arr") != null && $.cookie("rtype_arr") != "null") {		
+		$("#sub_sform").find("input[name='prev_rtype_arr[]']").remove();
+		var ttype_ex = $.cookie("rtype_arr").split(",");
+		for(i = 0; i < ttype_ex.length; i++) {
+			$("<input/>").attr({type:"hidden", name:"prev_rtype_arr[]"}).val(ttype_ex[i]).appendTo($("#sub_sform"));
+			$("#rtype_"+ttype_ex[i]).removeClass("off");
+			$("#rtype_"+ttype_ex[i]).addClass("on");
+			$("#rtype_"+ttype_ex[i]).addClass("ons");
+		}
+	}
+
+});
+</script>
+	<div class="right1" style="width:26%;">
+		<select name="search_type" onchange="listing.main_list_scroll('1', this.value, 'new')" class="select01">
+			<option value="view_num" selected="">인기순</option>
+			<option value="min_price">낮은가격</option>
+			<option value="max_price">높은가격</option>
+		</select>
+	</div>
+</div>
+<style>
+	#menu .on a {color: #fff;}
+	#menu {border-bottom-color: #e65b1d; padding-bottom: 1px;}
+	.zone_nav {background:#000}
+</style>
+
+
+<!--- 상단 고정 위한 부분 --->
+</form></div>
+<div id="top_box_bottom" style="height: 118px;"></div>
+<script>
+if(user_flag == "ios") {
+		//$("#top_box_bottom").css("height", ($("#top_box").height()+20)+"px");
+	$("#top_box_bottom").css("height", $("#top_box").height()+"px");
+	} else {
+	$("#top_box_bottom").css("height", $("#top_box").height()+"px");
+}
+</script>
+
+
+<script type="text/javascript">
+	function ttype_write(value) {
+		if(value != "") {
+			var arr = value.split("||");
+			if(arr.length > 1) {
+				$("#pclass_tap").html("<p><span>"+arr[0]+" 외 "+(arr.length-1)+" 개</span></p>");
+			} else {
+				$("#pclass_tap").html("<p><span>"+arr[0]+"</span></p>");
+			}
+		} else {
+			$("#pclass_tap").html("<p><span>전체</span></p>");
+		}
+	}
+</script>
+<div id="search_results">
+	<div id="search_titles">
+		<!--- 리스트 노출영역 --->
+		<div id="scroll_main" style="min-height:200px" class="hide_div"><script>tab_click('', '303094');</script><script>tab_click('0', '290357');</script><script>var tab_cnt = '303094';</script><script>basetab_show('0')</script><script>$(window).scroll(function(){tab_chk2('0', '290357')});</script><script>$(window).scroll(function(){tab_chk2('', '303094')});</script><script>basetab_show('1')</script><script>$(window).scroll(function(){tab_chk2('1', '293989')});</script><script>$(window).scroll(function(){tab_chk2('0', '300805')});</script><script>$(window).scroll(function(){tab_chk2('1', '290109')});</script><script>$(window).scroll(function(){tab_chk2('0', '301654')});</script><script>$(window).scroll(function(){tab_chk2('1', '272140')});</script><script>$(window).scroll(function(){tab_chk2('0', '301571')});</script><script>$(window).scroll(function(){tab_chk2('1', '302516')});</script><script>$(window).scroll(function(){tab_chk2('3', '302131')});</script><script>$(window).scroll(function(){tab_chk2('2', '302132')});</script><script>$(window).scroll(function(){tab_chk2('0', '301821')});</script><script>$(window).scroll(function(){tab_chk2('', '303096')});</script><script>basetab_show('0')</script><script>$(window).scroll(function(){tab_chk2('0', '273132')});</script><script>$(window).scroll(function(){tab_chk2('3', '290407')});</script><script>$(window).scroll(function(){tab_chk2('0', '302316')});</script><script>$(window).scroll(function(){tab_chk2('1', '287644')});</script><script>$(window).scroll(function(){tab_chk2('2', '303269')});</script><script>$(window).scroll(function(){tab_chk2('0', '301602')});</script><script>$(window).scroll(function(){tab_chk2('', '302947')});</script><script>basetab_show('')</script><script>$(window).scroll(function(){tab_chk2('', '303076')});</script><script>basetab_show('0')</script><script>$(window).scroll(function(){tab_chk2('0', '300817')});</script><script>$(window).scroll(function(){tab_chk2('1', '35076')});</script><script>$(window).scroll(function(){tab_chk2('0', '293968')});</script><script>$(window).scroll(function(){tab_chk2('1', '272139')});</script><script>$(window).scroll(function(){tab_chk2('0', '302497')});</script><script>$(window).scroll(function(){tab_chk2('1', '303166')});</script><script>ttype_write('전체');</script><div id="search_list" style="padding-bottom:0"><div id="test_slide_290357">
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwEGsR&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290357" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170420130456.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">여수해상케이블카</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>전남 여수시 돌산로 3600-1</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">6,200원</strong>
+						</div>
+					</div>
+					</div><div id="test_slide_303094" class="303094||Array||575">
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zE2cS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303094" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171123184559.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">휘닉스평창 1718 시즌 리프트권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li></li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">34,500원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dzGmYf&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_293989" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170710153452.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">리솜스파캐슬 골드시즌이용권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>충남 예산군 덕산면 사동리 361</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">14,400원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5wG24T&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_300805" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170901102720.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">블루원 워터파크 입장권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경북 경주시 보불로 391</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">15,600원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwF2wV&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290423" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170501114810.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">거제씨월드 입장권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경남 거제시 일운면 지세포해안로 15</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">11,500원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEmwe&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302128" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171018142618.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">경주 프로방스빛축제</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경북 경주시 천북남로 101</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">7,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEmwR&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302127" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171024103306.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">키덜트뮤지엄</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경북 경주시 북군동 57-24</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">4,300원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEmwf&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302129" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171018142201.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">경주 힐링테마파크</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경북 경주시 천북남로 101</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">7,800원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwEm4f&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290109" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170411171957.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">덕구온천 스파월드 이용권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경북 울진군 북면 덕구온천로 924</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">7,600원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFWsS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301654" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/3995558606.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[부산/연극] 수상한 흥신소2</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>부산 중구 남포동2가 25-10</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">13,800원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwEGwS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290324" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170418202345.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">블루캐니언 이용권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 평창군 봉평면 태기로 174</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">17,800원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0lyEmoW&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_272140" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1452825661_main1.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대명비발디]스키월드[리프트+장비렌탈]PKG</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 홍천군 서면 팔봉리 1290-14</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">29,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFmkX&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301571" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/956302854.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[홍대/콘서트] 윤형빈 소극장</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 마포구 서교동 364-31</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">9,800원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yFm8Q&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302516" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/641759907.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[충북/제천] 해브나인 힐링스파 종일 공통 1인권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>충북 제천시 백운면 금봉로 365 리솜포레스트</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">28,900원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEm0X&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302131" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171018144340.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">365세이프타운+자연사박물관</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 태백시 평화길 15(장성동)</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">12,700원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEm0W&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302130" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171018144314.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">365세이프타운</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 태백시 평화길 15(장성동)</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">12,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEm0U&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302132" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171017151349.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">강원종합박물관</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 삼척시 신기면 신기리 375-4</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">5,300원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xG2wX&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301821" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/1072630165.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[부산/연극] 맞짱연인</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>부산 중구 광복동1가 59-1 </li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">9,800원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFmkS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301574" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/1232886410.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/연극] 작업의정석1탄</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 동숭동 1-61 순위아트홀 1관</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">9,800원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwF2YS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290484" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170516175905.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">엑스포 지니카 이용권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>전남 여수시 오동도로 111</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">8,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFmgf&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301569" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/3851397911.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/연극] 옥탑방 고양이</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 동숭동 1-97 틴틴홀</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">14,000원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEG8e&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302318" style="background:url(http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/9ed35ac7-5be6-4079-a52a-61307b98c9d6.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[부산] 벡스코 상상체험 키즈월드 시즌6 실내썰매 : 2017.12.16 오픈</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>부산 해운대구 APEC로 30</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">12,900원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xGmgR&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301967" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/3852170620.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/연극] 극적인하룻밤</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 동숭동 1-60</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">9,900원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zE2cQ&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303096" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171123205027.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">곤지암 탑스키 렌탈샵</div>
+							<div class="guide">
+								<ul>
+									<li></li><li></li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">8,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0lzEm0U&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_273132" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1490158838_main1.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">아산레일바이크</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>충남 아산시 도고면 신언리 142-1</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">14,900원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwF24R&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290407" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170427131925.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">서울대공원 리프트PKG</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경기 과천시 막계동 366-6</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">3,800원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEG8Q&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302316" style="background:url(http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/4e634be0-76aa-43c6-9e43-18b6e31ec42b.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[부산] 벡스코 레이싱 키즈월드 룰루랄라 시즌2</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>부산 해운대구 APEC로 30</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">11,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFWoS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301644" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/1017340631.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/공포연극] 에스(S.) </div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 동숭동 128-5 키득키득아트홀</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">10,000원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xEWYT&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301285" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170927122236.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">아산스파비스 종일권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>충남 아산시 음봉면 아산온천로157번길 67</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">24,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0Z3FWoS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_287644" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170209140533.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">히어로 스튜디오 입장권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경남 통영시 산양읍 담안길 240</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">4,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zEWgf&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303269" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/2800679877.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[부천] 웅진플레이도시 스노우파크 4계절 눈썰매 1타임권(12월권)</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경기 부천시 상동 572-1</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">15,900원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEGwQ&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302326" style="background:url(http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/0471bd3c-d9f1-4023-9a1f-0fa407a3ff32.JPG) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">딸기가 좋아 : 분당점</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>경기 성남시 분당구 금곡동 192</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">7,500원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFW4U&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301602" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/4000426385.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/공포연극] 최면</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 동숭동 50-23 지하1층 피가로아트홀</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">9,900원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yGmoR&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302947" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171116104004.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">씨랄라 워터파크&amp;스파</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 영등포구 문래동 164 영등포 SK지더스뷰 지하2층</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">14,900원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zE2kQ&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303076" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20171123102748.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">(상인점) 12월 엘리바덴 이용권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>대구 달서구 상인동 1558</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">8,500원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5wG28R&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_300817" style="background:url(http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/66628af3-da51-4187-ba46-549831b6fa2c.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">곤충파충류 체험전</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 용산구 용산동1가 8</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">10,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=GktwFGg=&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_35076" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1442364875_main1.png) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">대명 홍천오션월드종일권[실내락커]</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 홍천군 서면 팔봉리 1290-14</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">24,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dzGmge&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_293968" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170706102156.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">여수해상케이블카+지니카</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>전남 여수시 돌산로 3600-1</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">18,300원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEmYX&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302181" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/1206368090.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/연극] 한뼘사이</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 명륜2가 21-10</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">4,900원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0dwEGcV&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_290393" style="background:url(http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170425173509.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">영종씨사이드레일바이크 이용권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>인천 중구 중산동 136-12</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">19,200원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFWoT&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301645" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/3152491563.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/연극] 오마이갓</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 동숭동 1-153 봄날아트홀 2관</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">7,000원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zEmkf&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303179" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/757999624.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[용산] 드래곤힐스파 주말/공휴일 주간 1인권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 용산구 한강로3가 40-946</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">11,200원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=G0lyEm0f&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_272139" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1452825518_main1.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대명비발디]스키월드리프트할인권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>강원 홍천군 서면 팔봉리 1290-14</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">29,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yF2cR&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302497" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/2594367133.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[광주/연극] 찌질하지만 로맨틱하게</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>광주 동구 금남로1가 15-10</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">18,000원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFWwe&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301628" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/3851021954.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[홍대/연극] 당신이주인공</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 마포구 서교동 338-39</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">12,000원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zEWgS&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303264" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/3259756140.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[광주/기아챔피언스필드] 브릭 플레이그라운드 전시회</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>광주 북구 임동 316</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">7,000원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xGm8T&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301915" style="background:url(http://cache.go.co.kr/media/1000/ticketsuda.com/upfiles/product/1497161665.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">[대학로/연극]  !요절복통 코믹로맨스</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>서울 종로구 명륜1가 36-1</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">11,800원 </strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5xFm0f&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_301539" style="background:url(http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/1706423e-6266-4cc5-a0af-93ae051b923e.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">수안보 온천랜드 입장권</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>충청북도 충주시 수안보면 온천리 291-1(주정산로 32)</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">4,000원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5yEGkQ&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_302376" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1509517144_main1.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">해운대글로리콘도 해수온천사우나</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>부산 해운대구 우1동 628-5</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">5,500원</strong>
+						</div>
+					</div>
+					
+							<div class="zone_recommend" onclick="/home/view/?p_no=Gk5zEmgQ&amp;sub_sdate=2017-12-18&amp;sub_edate=2017-12-19" id="product_303166" style="background:url(http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/a8a20051-597f-4a33-a1e0-819b23a9d2cb.jpg) no-repeat 0 0;background-size: cover;"><img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="" class="lowPrc"><div class="store_info">
+							<div class="category"><span>입장권</span></div>
+							<div class="store_name" style="">진안투어패스 + 홍삼스파 패키지</div>
+							<div class="guide">
+								<ul>
+									<li></li><li>전북 진안군 진안읍 단양리 744</li></ul>
+							</div>
+						</div>
+						<div class="money">
+							<strong class="prc" style="font-size:1.300em">24,400원</strong>
+						</div>
+					</div>
+					<input type="hidden" name="cnt1" value="51"></div><table></table></div><script>$('#spa_totalcnt').text('575');</script></div>
+
+		<p style="height:20px;clear:left"></p><p>
+	</p></div>
+</div>
+
+<p style="height:20px;clear:left"></p><p>
+</p><div id="loading2_box" style="display:none">
+	<p class="loading2" style="text-align:center;width:100%;float:left;"><img src="http://img.go.co.kr/mobile/icon_loading.gif" width="20%" style="margin:30px 0"></p>
+</div>
+
+<!--- 달력 밑으로 이동 --->
+<a href="javascript:picker.new_cal()" id="cal-date" style="bottom:20px">
+	<img src="http://img.go.co.kr/mobile/i_calOrange.png" alt="날짜">
+	<span class="date-txt" id="sdate_choice">12.18 (월)</span>
+</a>
+
+
+<script text="text/javascript">
+var save_scroll = [];
+var base_height = $("#top_box").height();
+
+
+$(function() {
+	//지역버튼 클릭 시 링크처리
+	$("#city_choice5").click(function() {
+		var base_link = "/home/search/?dd=RR85Rix5MkwjH0R2ECVU&gubun=inter_div&prev_sdate="+$("#check_in").val()+"&prev_edate="+$("#check_out").val()+"&page_chk=single&single=on";
+				base_link += "&simple=off&prev_city1="+$("#city_1").val()+"&prev_city2="+$("#city_2").val();
+		
+		location.href= base_link;
+	});
+
+	var week = new Array('일', '월', '화', '수', '목', '금', '토');
+	var cnt_a = parseInt(0);
+	
+/* 저장 날짜 세팅 */
+	if($.cookie("save_sdate") != "" && $.cookie("save_sdate") != null && $.cookie("save_sdate") != "null") {
+		var todaydt = "20171218";
+		todaydt = parseInt(todaydt);
+		var cookiedt = $.cookie("save_sdate").replace(/-/gi, "");
+		cookiedt = parseInt(cookiedt);
+
+		if(cookiedt >= todaydt) {
+							$("#check_in").val($.cookie("save_sdate"));
+				$("#check_out").val($.cookie("save_edate"));
+
+				$("#chin_date").val($.cookie("save_sdate"));
+				$("#chout_date").val($.cookie("save_edate"));
+				
+				var yoil_chin = new Date($("#check_in").val()).getDay();
+				var yoil_chout = new Date($("#check_out").val()).getDay();
+
+				var str_sdate = $("#check_in").val().split("-");
+				var str_edate = $("#check_out").val().split("-");
+				var str_make = str_sdate[1]+"."+str_sdate[2]+" ("+week[yoil_chin]+")";
+				$("#sdate_choice").text(str_make);
+				
+				
+				var str_make_chin = str_sdate[1]+"-"+str_sdate[2]+" ("+week[yoil_chin]+")";
+				var str_make_chout = str_edate[1]+"-"+str_edate[2]+" ("+week[yoil_chout]+")";
+				$("#chin_choice").text(str_make_chin);
+				$("#chout_choice").text(str_make_chout);
+					}
+	}
+
+	$.cookie("save_sdate", $("#check_in").val(), {domain: 'go.co.kr', path : '/', expires: date});
+	$.cookie("save_edate", $("#check_out").val(), {domain: 'go.co.kr', path : '/', expires: date});
+	
+	// 모바일, 앱 메인페이지의 10월 테마 랜딩페이지 클릭 시 지역 쿠키로 굽기
+	
+		//지역 초기화 및 쿠키
+	var city_str = "";
+	if($.cookie("save_city_1_single") != "" && $.cookie("save_city_1_single") != null && $.cookie("save_city_1_single") != "null") {		
+		$("#city_1").val($.cookie("save_city_1_single"));
+		$("#city1_prev").val($.cookie("save_city_1_txt_single"));
+		var citysave = "on";
+		city_str = $.cookie("save_city_1_txt_single");
+		$("#save_city").text(city_str);
+	}
+
+	if($.cookie("save_sub_loca_single") != "" && $.cookie("save_sub_loca_single") != null && $.cookie("save_sub_loca_single") != "null") {		
+		$("#city_2").val($.cookie("save_sub_loca_single"));
+		var city2save = "on";
+		city_str += " "+$.cookie("save_sub_loca_single");
+	}
+	
+	if(city_str != "" && typeof city_str != "undefined") {
+		if("" != "on") {
+			$("#city_1_choice").text(city_str);
+		}
+	}
+	
+	//숙박유형 초기화
+	if($.cookie("sttype_arr") != "" && $.cookie("sttype_arr") != null && $.cookie("sttype_arr") != "null") {		
+		var ttype_ex = $.cookie("sttype_arr").split(",");
+		for(i = 0; i < ttype_ex.length; i++) {
+			$("<input/>").attr({type:"hidden", name:"sttype_arr[]"}).val(ttype_ex[i]).appendTo($("#sub_sform"));
+			$("#sttype_"+ttype_ex[i]).removeClass("off");
+			$("#sttype_"+ttype_ex[i]).addClass("on");
+			$("#sttype_"+ttype_ex[i]).addClass("ons");
+		}
+	}
+
+	var ttype_str = [];
+	$("input[name^='sttype_arr[]']").each(function(i) {
+		ttype_str.push($("input[name^='sttype_arr[]']").eq(i).val());
+	});
+	$.cookie("sttype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+	$.cookie("sttype_arr", ttype_str, {domain: 'go.co.kr', path : '/', expires: date});
+	
+	var bmax = "50";
+	var bmax_1 = parseInt(bmax-1);
+
+	var currentlyLoading = false;
+	var triggerPxFromBottom = 500;
+	
+	var ost = 0;
+
+	$(window).scroll(function () {	
+		if($("#area_search_list3").hasClass("a_on") == false) {
+			var remainingPx = $(document).height() - $(window).scrollTop() - $(window).height();
+			// If no pixels remaining to be scrolled
+			if ((remainingPx <= triggerPxFromBottom) && currentlyLoading == false && $("#scroll_main").hasClass("loading_on") == false) {
+				var cnt_val		= $("input[name^='cnt']").last().val();
+				var paging_id	= $("input[name^='cnt']").last().attr("name");
+				var search_type = $("input[name^='search_type_']").last().val();
+				var pading = paging_id.split("cnt");
+				var pg2 = parseInt(pading[1]);
+				var pg = parseInt(pg2+1);
+				
+				if(cnt_val > bmax_1 && pg > 1) {
+					listing.main_list_scroll(pg, search_type, 'continue');
+				} 
+			} 
+		}
+		
+		/*
+		var cOst = $(this).scrollTop();
+		if(cOst < ost) {
+			Call_bottom_tabbar('y');
+		} else {
+			if(cOst > 0) {
+				Call_bottom_tabbar('n');
+			} 
+		}
+		ost = cOst;
+		*/
+
+
+		/* 스크롤 내릴 때 메뉴숨김 */
+		if($(window).scrollTop() < 100){
+			$("#menu").show();
+		} else {
+			$("#menu").hide();
+		}
+
+		for(var aa = 0; aa < save_scroll.length; aa++) {
+			var hi_chk = $("#product_"+save_scroll[aa]).offset().top;
+			console.log(hi_chk);
+			console.log(base_height);
+			
+			if($(window).scrollTop() > hi_chk) {
+				tab_chk(aa);
+			}
+			/*
+			if(hi_chk <= base_height) {
+				tab_chk(aa);
+			}
+			*/
+		}
+	});
+
+			listing.main_list_scroll('1', 'view_num', 'new');
+	
+});
+</script>
+<script>
+
+function keyword_search() {
+	if($("#sub_keyword").val() == "") {
+		listing.main_list_scroll('1', 'view_num', 'new');
+	} else {
+		$.cookie("rtype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+		$.cookie("ttype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+		$.cookie("sttype_arr", null, {domain: 'go.co.kr', path : '/', expires:-1});
+		location.href = "http://app.go.co.kr/home/main/?dd=RB8pTQFKN1A0IVtMHzJANg==&hotel_detail="+$("#sub_keyword").val();
+	}
+
+}
+
+$(function() {
+	$("#btn_text").click(function() {
+		keyword_search();
+	});
+});
+
+//jQuery를 이용한 방법
+$(window).bind("pageshow", function(event) {     
+    //back 이벤트 일 경우
+    if (event.originalEvent && event.originalEvent.persisted) {        
+		location.reload();		
+    }     
+});
+
+function basetab_show(val){
+	switch(val) {
+		case "best":
+			$(".zone_nav > ul > li").removeClass("on");
+			$("#zone_tab").addClass("on");
+			$("#zone_tab").show();
+			$("#zone_tab").attr("onclick","javascript:tab_location('','0')");
+		break;
+		default:
+			$(".zone_nav > ul > li").removeClass("on");
+			$("#zone_tab"+val).addClass("on");
+		break;
+	}
+}
+function tab_chk2(val, num) {
+		if(val == "best") {
+			var top = $("#best_"+num).offset().top;
+		} else {
+			var top = $("#product_"+num).offset().top;
+		}
+
+		if(val == 0 && $("#zone_tab").css("display")=="none") {
+		top = 0;
+		} else {
+
+		//if(val != 0) {
+			top = top - 200;
+		}
+	switch(val) {
+		case "best":
+			if($(window).scrollTop() >= top) {
+				$(".zone_nav > ul > li").removeClass("on");
+				$("#zone_tab").addClass("on");
+				$("#zone_tab").show();
+			}
+		break;
+		default:
+			if($(window).scrollTop() >= top) {
+				$(".zone_nav > ul > li").removeClass("on");
+				$("#zone_tab"+val).addClass("on");
+			} else if ($(window).scrollTop() == $(document).height() - $(window).height() && val == tab_cnt) {
+				if(val != "0") {
+					$(".zone_nav > ul > li").removeClass("on");
+					//$(".zone_tab_last").addClass("on");
+					$("#zone_tab"+val).addClass("on");
+				}
+			}
+		break;
+	}
+}
+function tab_click(no, p_no) {
+	$("#zone_tab"+no).attr("onclick","javascript:tab_location('"+no+"','"+p_no+"')");
+}
+function tab_location(no, p_no, chk) {
+	//alert($("#product_"+p_no).offset().top);//4771//5346
+	//alert($(document).height() - $(window).height());//4921//4976
+
+	if(p_no != 0) {
+		var p_no_sub = "_"+p_no;
+	} else {
+		var p_no_sub = p_no;
+	}
+
+	if($("#product"+p_no_sub).length > 0) {
+		var p_top = $("#product"+p_no_sub).offset().top;
+		chk = "";
+	} else {
+		var p_top = $(document).height() - $(window).height();
+	}
+	//p_top = p_top - 180;
+	if(no == 0 && $("#zone_tab").css("display")!="none") {
+		//p_top = p_top + 50;
+		p_top = p_top - 140;
+	} else {
+		if(no != 0) {
+			p_top = p_top - 140;
+		} else {
+			if(no == 0 && $("#zone_tab").css("display")=="none") {
+				p_top = p_top - 180;
+			} else {
+				p_top = p_top - 100;
+			}
+		}
+	}
+	if(p_no == 0) {
+		p_top = 0;
+	}
+	$(".zone_nav > ul > li").removeClass("on");
+	$("#zone_tab"+no).addClass("on");
+	//alert(p_top);
+	$(window).scrollTop(p_top);
+	//if($("#product"+p_no_sub).length == 0 || (($(document).height() - $(window).height()) - $("#product"+p_no_sub).offset().top) < 400) {
+	if($("#product"+p_no_sub).length == 0) {
+		//if(no != tab_cnt && p_no != 0) {
+		//if(p_no != 0 && chk != 'second') {
+		if(p_no != 0) {
+			setTimeout(
+				function() {
+					tab_location(no, p_no, "second");
+				}, 2000
+			);
+		}
+	}
+}
+
+function tab_chk(val) {
+	/*var cur_tab = $(".zone_nav").find(".on").attr("id");
+	cur_tab = cur_tab.replace("zone_tab", "");
+	cur_tab = parseInt(cur_tab);
+	
+	val = parseInt(val);
+	if(cur_tab != val) {
+		$(".zone_nav > ul > li").removeClass("on");
+		$("#zone_tab"+val).addClass("on");
+	}*/
+}
+
+function scroll_chk(val) {
+	save_scroll.push(val);
+}
+</script>
+<input type="hidden" id="city1_prev" value="전국">
+<input type="hidden" id="city1_temp">
+<input type="hidden" id="city1_temp_txt">
+
+<input type="hidden" id="city2_temp">
+
+
+
+
+<input type="hidden" name="chin_date" id="chin_date" value="2017-12-18">
+<input type="hidden" name="chout_date" id="chout_date" value="2017-12-19">
+<div id="layer_calender" style="display:none;position:absolute;top:0;left:0;background:#ffffff">
+	<div id="headTitle_pop" style="z-index:9999">
+		날짜선택
+	</div>
+	
+	<div id="daySelect">
+		<div class="checkin on" id="chin_title">
+			<a href="javascript:navigate.move_slow('checkin_cal', 'id')">
+			체크인
+			<div class="day"><span id="chin_choice">12-18 (월)</span> <img src="http://img.go.co.kr/mobile/icon_reserInfo.png"></div>
+			</a>
+		</div>
+		<div class="checkout" id="chout_title">
+			<a href="javascript:navigate.move_slow('checkout_cal', 'id')">
+			체크아웃
+			<div class="day"><span id="chout_choice">12-19 (화)</span> <img src="http://img.go.co.kr/mobile/icon_reserInfo.png"></div>
+			</a>
+		</div>
+	</div>
+
+	<div id="daySelect_calendar">
+		<div id="checkin_cal">
+			
+		</div>
+		
+		<div id="checkout_cal">
+			
+		</div>
+
+		<div class="notice">원하시는 날짜의 객실이 없거나, 30일 이후 날짜의 예약을 원하시면 고객센터로 직접 문의주세요. 친절하고 신속하게 도와드리겠습니다. <p><a href="tel:1666-1243">고객센터 1666-1243</a></p></div>
+	</div>
+	
+	<div style="clear:left;height:50px"></div>
+	<div id="pay_btn3" style="bottom:50px"><a href="javascript:searching.new_choice_select();">적용하기</a></div>
+	
+
+
+</div>
+
+<script type="text/javascript">
+$(function() {
+	$(window).scroll(function() {
+		var sc_h = $(window).scrollTop();
+		var chin_height = $("#checkin_cal").scrollTop();
+		var chout_height = $("#checkout_cal").scrollTop();
+		
+		var b_height = $(window).height()/2 - 180;
+		if(sc_h < b_height) {
+			$("#chin_title").addClass("on");
+			$("#chout_title").removeClass("on");
+		} else {
+			$("#chout_title").addClass("on");
+			$("#chin_title").removeClass("on");
+		}
+	});
+
+	
+});
+
+
+</script>
+<div id="popup_btn2" style="display:none;">
+	<div class="closew">
+	<span class="close"><img width="30" alt="닫기" onclick="javascript:utils.out('#popup_btn2');" src="http://img.go.co.kr/mobile/menu_close.jpg"></span>
+	</div>
+	<div class="txt" style="width:75%">
+		<p class="txt1">방문 날짜 확인<br></p>
+		<p class="txt2">
+		<span class="txt2_color"> 
+									2017.12.18 (월) ~ 2017.12.19 (화) <br>
+						</span>
+		<span class="txt2"> 방문하실 날짜가 맞나요?</span></p>
+	</div>
+	<div class="pobtn">
+		<a href="#" id="change_date"><div class="leftbtn">날짜 변경하기</div></a>
+		<a href="http://app.go.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;sdate=&amp;edate="><div class="rightbtn">예</div></a>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	$("#change_date").click(function(e) {
+		e.preventDefault();
+		utils.out("#popup_btn2");
+		picker.new_cal();
+	});
+});
+</script>
+
+
+<div id="layer_local" style="display:none;position:absolute;top:0;left:0;background:#ffffff">
+	<div id="local-list-w">
+		<div id="headTitle">지역검색</div>
+		<div class="local-btn-w">
+			<div class="local-btn" onclick="app_utils.locations();"><img src="http://img.go.co.kr/mobile/location_icon.jpg" width="18px" style="margin-top:7px"> 현재 내 위치</div>
+		</div>
+
+
+	<div id="localList4">
+		<div id="inter_div" style="display:block" class="sub_div">
+			<div class="localBig_wrap" id="local1">
+				<ul class="localBig">
+					<li id="sloca_all" onclick="$('#city1_temp').val('');$('#city1_prev').val('전국');"><a href="#">전국</a></li>
+					<!--<li id="sloca_all" onclick="$('#city1_temp').val('');$('#city1_prev').val('전국');searching.local_click_sub('', '', 'all')"><a href="#">전국</a></li>--->
+					
+					<!--- 이건 앱에서만 --->
+										<li id="sloca_K2"><a href="#">경기</a></li>
+					<li id="sloca_K"><a href="#">강원</a></li>
+					<li id="sloca_CN"><a href="#">충남</a></li>
+					<li id="sloca_CB"><a href="#">충북</a></li>
+					<li id="sloca_GN"><a href="#">경남</a></li>
+					<li id="sloca_GB"><a href="#">경북</a></li>
+					<li id="sloca_JN"><a href="#">전남</a></li>
+					<li id="sloca_JB"><a href="#">전북</a></li>
+									</ul>
+			</div>
+			<div class="localSmall_wrap" id="local2">
+				<ul class="localSmall"></ul>
+			</div>
+		</div>
+		<div id="global_div" style="display:none" class="sub_div">
+			<div class="localBig_wrap" id="local3">
+				<ul class="localBig">
+				<li id="sloca_abr_all"><a href="#">해외전체</a></li>
+					<li id="sloca_abr_JP"><a href="#">일본</a></li><li id="sloca_abr_CH"><a href="#">홍콩/중국</a></li><li id="sloca_abr_AS"><a href="#">동남아</a></li><li id="sloca_abr_EU"><a href="#">유럽</a></li><li id="sloca_abr_US"><a href="#">미주</a></li><li id="sloca_abr_AU"><a href="#">남태평양</a></li><li id="sloca_abr_AF"><a href="#">중동/아프리카</a></li>				</ul>
+			</div>
+			<div class="localSmall_wrap" id="local4">
+				<ul class="localSmall"></ul>
+			</div>
+		</div>
+	</div>
+
+	<!---<div id="pay_btn5"><a href="#">검색하기</a></div>--->
+	</div>
+</div>
+
+
+<script type="text/javascript">
+$(function() {
+	$(".localBig li").click(function(e) {
+		e.preventDefault();
+		$(".localBig li").removeClass("on");
+		$(".localBig li").children("img").remove();
+		var id = $(this).attr("id");
+		var val = $(this).children("a").text();
+		var parent_div = $(this).parent("ul").parent("div").parent("div").attr("id");
+
+		searching.local_click_ver2(id, val, parent_div);		
+	});
+
+
+	$("#pay_btn5").click(function(e) {
+		e.preventDefault();
+		searching.local_click_apply();
+	});
+});
+</script><form name="calc_form" id="calc_form">
+<input type="hidden" name="nchin_date" id="nchin_date" value="2017-12-18">
+<input type="hidden" name="nchout_date" id="nchout_date" value="2017-12-19">
+<input type="hidden" name="night" id="night" value="1">
+</form>
+
+<!----<div id="layer_calender" style="display:none;position:absolute;top:0;left:0;background:#ffffff;">--->
+	<!-- 달력 --->
+	<div id="calendar_w" style="transition:all 0.5s ease;bottom:-500px;min-height:380px"><div class="calendar_product_tit">
+	<div class="calendar_product_tit_txt" id="title_txt">2017.12.18 (월) <!-- 체크인 날짜를 선택해 주세요. --></div>
+	<div class="closew">
+		<span class="close"><a href="javascript:picker.new_cal();"><img alt="닫기" src="http://img.go.co.kr/mobile/menu_close.jpg" width="28"></a></span>
+	</div>
+</div>
+<div id="cal_subbox_wrap">
+	<!--- 요일 나오는 라인 ---->
+	<div class="week_day">
+		<table class="week_day_table" align="center" border="0">
+		<colgroup>
+			<col width="13.4%">
+			<col width="13.4%">
+			<col width="13.4%">
+			<col width="13.4%">
+			<col width="13.4%">
+			<col width="13.4%">
+			<col width="13.4%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="font_red">일</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+				<th>토</th>
+			</tr>
+		</thead>
+		</table>
+	</div>
+
+	<div id="cal_subbox" class="calendar_product_list_w" style="height:380px">
+	
+	<!--- 내부스크롤 위해 사이에 div 추가 ---->
+	<div style="float:left;width:100%">
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2017년 12월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_00"><td class="day_none" id="ndate_2017-12-17"><a class="font_gray">17</a></td><td class="Pkg-w" id="date_2017-12-18" onclick="picker.new_choice('2017-12-18', '1513522800', 'Y')"><a href="#" class=""><span class="Pkg-txt">이용일</span>18</a></td><td id="ndate_2017-12-19" onclick="picker.new_choice('2017-12-19', '1513609200', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2017-12-20" onclick="picker.new_choice('2017-12-20', '1513695600', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2017-12-21" onclick="picker.new_choice('2017-12-21', '1513782000', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2017-12-22" onclick="picker.new_choice('2017-12-22', '1513868400', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2017-12-23" onclick="picker.new_choice('2017-12-23', '1513954800', 'Y')"><a href="#" class="">23</a></td></tr><tr id="month_01"><td id="ndate_2017-12-24" onclick="picker.new_choice('2017-12-24', '1514041200', 'Y')"><a href="#" class="font_red">24</a></td><td id="ndate_2017-12-25" onclick="picker.new_choice('2017-12-25', '1514127600', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2017-12-26" onclick="picker.new_choice('2017-12-26', '1514214000', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2017-12-27" onclick="picker.new_choice('2017-12-27', '1514300400', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2017-12-28" onclick="picker.new_choice('2017-12-28', '1514386800', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2017-12-29" onclick="picker.new_choice('2017-12-29', '1514473200', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2017-12-30" onclick="picker.new_choice('2017-12-30', '1514559600', 'Y')"><a href="#" class="">30</a></td></tr><tr id="month_02"><td id="ndate_2017-12-31" onclick="picker.new_choice('2017-12-31', '1514646000', 'Y')"><a href="#" class="font_red">31</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 01월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_10"><td style="background:none"></td><td id="ndate_2018-01-01" onclick="picker.new_choice('2018-01-01', '1514732400', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-01-02" onclick="picker.new_choice('2018-01-02', '1514818800', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-01-03" onclick="picker.new_choice('2018-01-03', '1514905200', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-01-04" onclick="picker.new_choice('2018-01-04', '1514991600', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-01-05" onclick="picker.new_choice('2018-01-05', '1515078000', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-01-06" onclick="picker.new_choice('2018-01-06', '1515164400', 'Y')"><a href="#" class="">06</a></td></tr><tr id="month_11"><td id="ndate_2018-01-07" onclick="picker.new_choice('2018-01-07', '1515250800', 'Y')"><a href="#" class="font_red">07</a></td><td id="ndate_2018-01-08" onclick="picker.new_choice('2018-01-08', '1515337200', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-01-09" onclick="picker.new_choice('2018-01-09', '1515423600', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-01-10" onclick="picker.new_choice('2018-01-10', '1515510000', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-01-11" onclick="picker.new_choice('2018-01-11', '1515596400', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-01-12" onclick="picker.new_choice('2018-01-12', '1515682800', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-01-13" onclick="picker.new_choice('2018-01-13', '1515769200', 'Y')"><a href="#" class="">13</a></td></tr><tr id="month_12"><td id="ndate_2018-01-14" onclick="picker.new_choice('2018-01-14', '1515855600', 'Y')"><a href="#" class="font_red">14</a></td><td id="ndate_2018-01-15" onclick="picker.new_choice('2018-01-15', '1515942000', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-01-16" onclick="picker.new_choice('2018-01-16', '1516028400', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-01-17" onclick="picker.new_choice('2018-01-17', '1516114800', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-01-18" onclick="picker.new_choice('2018-01-18', '1516201200', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-01-19" onclick="picker.new_choice('2018-01-19', '1516287600', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-01-20" onclick="picker.new_choice('2018-01-20', '1516374000', 'Y')"><a href="#" class="">20</a></td></tr><tr id="month_13"><td id="ndate_2018-01-21" onclick="picker.new_choice('2018-01-21', '1516460400', 'Y')"><a href="#" class="font_red">21</a></td><td id="ndate_2018-01-22" onclick="picker.new_choice('2018-01-22', '1516546800', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-01-23" onclick="picker.new_choice('2018-01-23', '1516633200', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-01-24" onclick="picker.new_choice('2018-01-24', '1516719600', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-01-25" onclick="picker.new_choice('2018-01-25', '1516806000', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-01-26" onclick="picker.new_choice('2018-01-26', '1516892400', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-01-27" onclick="picker.new_choice('2018-01-27', '1516978800', 'Y')"><a href="#" class="">27</a></td></tr><tr id="month_14"><td id="ndate_2018-01-28" onclick="picker.new_choice('2018-01-28', '1517065200', 'Y')"><a href="#" class="font_red">28</a></td><td id="ndate_2018-01-29" onclick="picker.new_choice('2018-01-29', '1517151600', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-01-30" onclick="picker.new_choice('2018-01-30', '1517238000', 'Y')"><a href="#" class="">30</a></td><td id="ndate_2018-01-31" onclick="picker.new_choice('2018-01-31', '1517324400', 'Y')"><a href="#" class="">31</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 02월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_20"><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-02-01" onclick="picker.new_choice('2018-02-01', '1517410800', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-02-02" onclick="picker.new_choice('2018-02-02', '1517497200', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-02-03" onclick="picker.new_choice('2018-02-03', '1517583600', 'Y')"><a href="#" class="">03</a></td></tr><tr id="month_21"><td id="ndate_2018-02-04" onclick="picker.new_choice('2018-02-04', '1517670000', 'Y')"><a href="#" class="font_red">04</a></td><td id="ndate_2018-02-05" onclick="picker.new_choice('2018-02-05', '1517756400', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-02-06" onclick="picker.new_choice('2018-02-06', '1517842800', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-02-07" onclick="picker.new_choice('2018-02-07', '1517929200', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-02-08" onclick="picker.new_choice('2018-02-08', '1518015600', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-02-09" onclick="picker.new_choice('2018-02-09', '1518102000', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-02-10" onclick="picker.new_choice('2018-02-10', '1518188400', 'Y')"><a href="#" class="">10</a></td></tr><tr id="month_22"><td id="ndate_2018-02-11" onclick="picker.new_choice('2018-02-11', '1518274800', 'Y')"><a href="#" class="font_red">11</a></td><td id="ndate_2018-02-12" onclick="picker.new_choice('2018-02-12', '1518361200', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-02-13" onclick="picker.new_choice('2018-02-13', '1518447600', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-02-14" onclick="picker.new_choice('2018-02-14', '1518534000', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-02-15" onclick="picker.new_choice('2018-02-15', '1518620400', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-02-16" onclick="picker.new_choice('2018-02-16', '1518706800', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-02-17" onclick="picker.new_choice('2018-02-17', '1518793200', 'Y')"><a href="#" class="">17</a></td></tr><tr id="month_23"><td id="ndate_2018-02-18" onclick="picker.new_choice('2018-02-18', '1518879600', 'Y')"><a href="#" class="font_red">18</a></td><td id="ndate_2018-02-19" onclick="picker.new_choice('2018-02-19', '1518966000', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-02-20" onclick="picker.new_choice('2018-02-20', '1519052400', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-02-21" onclick="picker.new_choice('2018-02-21', '1519138800', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-02-22" onclick="picker.new_choice('2018-02-22', '1519225200', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-02-23" onclick="picker.new_choice('2018-02-23', '1519311600', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-02-24" onclick="picker.new_choice('2018-02-24', '1519398000', 'Y')"><a href="#" class="">24</a></td></tr><tr id="month_24"><td id="ndate_2018-02-25" onclick="picker.new_choice('2018-02-25', '1519484400', 'Y')"><a href="#" class="font_red">25</a></td><td id="ndate_2018-02-26" onclick="picker.new_choice('2018-02-26', '1519570800', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-02-27" onclick="picker.new_choice('2018-02-27', '1519657200', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-02-28" onclick="picker.new_choice('2018-02-28', '1519743600', 'Y')"><a href="#" class="">28</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 03월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_30"><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-03-01" onclick="picker.new_choice('2018-03-01', '1519830000', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-03-02" onclick="picker.new_choice('2018-03-02', '1519916400', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-03-03" onclick="picker.new_choice('2018-03-03', '1520002800', 'Y')"><a href="#" class="">03</a></td></tr><tr id="month_31"><td id="ndate_2018-03-04" onclick="picker.new_choice('2018-03-04', '1520089200', 'Y')"><a href="#" class="font_red">04</a></td><td id="ndate_2018-03-05" onclick="picker.new_choice('2018-03-05', '1520175600', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-03-06" onclick="picker.new_choice('2018-03-06', '1520262000', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-03-07" onclick="picker.new_choice('2018-03-07', '1520348400', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-03-08" onclick="picker.new_choice('2018-03-08', '1520434800', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-03-09" onclick="picker.new_choice('2018-03-09', '1520521200', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-03-10" onclick="picker.new_choice('2018-03-10', '1520607600', 'Y')"><a href="#" class="">10</a></td></tr><tr id="month_32"><td id="ndate_2018-03-11" onclick="picker.new_choice('2018-03-11', '1520694000', 'Y')"><a href="#" class="font_red">11</a></td><td id="ndate_2018-03-12" onclick="picker.new_choice('2018-03-12', '1520780400', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-03-13" onclick="picker.new_choice('2018-03-13', '1520866800', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-03-14" onclick="picker.new_choice('2018-03-14', '1520953200', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-03-15" onclick="picker.new_choice('2018-03-15', '1521039600', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-03-16" onclick="picker.new_choice('2018-03-16', '1521126000', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-03-17" onclick="picker.new_choice('2018-03-17', '1521212400', 'Y')"><a href="#" class="">17</a></td></tr><tr id="month_33"><td id="ndate_2018-03-18" onclick="picker.new_choice('2018-03-18', '1521298800', 'Y')"><a href="#" class="font_red">18</a></td><td id="ndate_2018-03-19" onclick="picker.new_choice('2018-03-19', '1521385200', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-03-20" onclick="picker.new_choice('2018-03-20', '1521471600', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-03-21" onclick="picker.new_choice('2018-03-21', '1521558000', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-03-22" onclick="picker.new_choice('2018-03-22', '1521644400', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-03-23" onclick="picker.new_choice('2018-03-23', '1521730800', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-03-24" onclick="picker.new_choice('2018-03-24', '1521817200', 'Y')"><a href="#" class="">24</a></td></tr><tr id="month_34"><td id="ndate_2018-03-25" onclick="picker.new_choice('2018-03-25', '1521903600', 'Y')"><a href="#" class="font_red">25</a></td><td id="ndate_2018-03-26" onclick="picker.new_choice('2018-03-26', '1521990000', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-03-27" onclick="picker.new_choice('2018-03-27', '1522076400', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-03-28" onclick="picker.new_choice('2018-03-28', '1522162800', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2018-03-29" onclick="picker.new_choice('2018-03-29', '1522249200', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-03-30" onclick="picker.new_choice('2018-03-30', '1522335600', 'Y')"><a href="#" class="">30</a></td><td id="ndate_2018-03-31" onclick="picker.new_choice('2018-03-31', '1522422000', 'Y')"><a href="#" class="">31</a></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 04월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_40"><td id="ndate_2018-04-01" onclick="picker.new_choice('2018-04-01', '1522508400', 'Y')"><a href="#" class="font_red">01</a></td><td id="ndate_2018-04-02" onclick="picker.new_choice('2018-04-02', '1522594800', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-04-03" onclick="picker.new_choice('2018-04-03', '1522681200', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-04-04" onclick="picker.new_choice('2018-04-04', '1522767600', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-04-05" onclick="picker.new_choice('2018-04-05', '1522854000', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-04-06" onclick="picker.new_choice('2018-04-06', '1522940400', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-04-07" onclick="picker.new_choice('2018-04-07', '1523026800', 'Y')"><a href="#" class="">07</a></td></tr><tr id="month_41"><td id="ndate_2018-04-08" onclick="picker.new_choice('2018-04-08', '1523113200', 'Y')"><a href="#" class="font_red">08</a></td><td id="ndate_2018-04-09" onclick="picker.new_choice('2018-04-09', '1523199600', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-04-10" onclick="picker.new_choice('2018-04-10', '1523286000', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-04-11" onclick="picker.new_choice('2018-04-11', '1523372400', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-04-12" onclick="picker.new_choice('2018-04-12', '1523458800', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-04-13" onclick="picker.new_choice('2018-04-13', '1523545200', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-04-14" onclick="picker.new_choice('2018-04-14', '1523631600', 'Y')"><a href="#" class="">14</a></td></tr><tr id="month_42"><td id="ndate_2018-04-15" onclick="picker.new_choice('2018-04-15', '1523718000', 'Y')"><a href="#" class="font_red">15</a></td><td id="ndate_2018-04-16" onclick="picker.new_choice('2018-04-16', '1523804400', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-04-17" onclick="picker.new_choice('2018-04-17', '1523890800', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-04-18" onclick="picker.new_choice('2018-04-18', '1523977200', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-04-19" onclick="picker.new_choice('2018-04-19', '1524063600', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-04-20" onclick="picker.new_choice('2018-04-20', '1524150000', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-04-21" onclick="picker.new_choice('2018-04-21', '1524236400', 'Y')"><a href="#" class="">21</a></td></tr><tr id="month_43"><td id="ndate_2018-04-22" onclick="picker.new_choice('2018-04-22', '1524322800', 'Y')"><a href="#" class="font_red">22</a></td><td id="ndate_2018-04-23" onclick="picker.new_choice('2018-04-23', '1524409200', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-04-24" onclick="picker.new_choice('2018-04-24', '1524495600', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-04-25" onclick="picker.new_choice('2018-04-25', '1524582000', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-04-26" onclick="picker.new_choice('2018-04-26', '1524668400', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-04-27" onclick="picker.new_choice('2018-04-27', '1524754800', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-04-28" onclick="picker.new_choice('2018-04-28', '1524841200', 'Y')"><a href="#" class="">28</a></td></tr><tr id="month_44"><td id="ndate_2018-04-29" onclick="picker.new_choice('2018-04-29', '1524927600', 'Y')"><a href="#" class="font_red">29</a></td><td id="ndate_2018-04-30" onclick="picker.new_choice('2018-04-30', '1525014000', 'Y')"><a href="#" class="">30</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 05월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_50"><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-05-01" onclick="picker.new_choice('2018-05-01', '1525100400', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-05-02" onclick="picker.new_choice('2018-05-02', '1525186800', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-05-03" onclick="picker.new_choice('2018-05-03', '1525273200', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-05-04" onclick="picker.new_choice('2018-05-04', '1525359600', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-05-05" onclick="picker.new_choice('2018-05-05', '1525446000', 'Y')"><a href="#" class="">05</a></td></tr><tr id="month_51"><td id="ndate_2018-05-06" onclick="picker.new_choice('2018-05-06', '1525532400', 'Y')"><a href="#" class="font_red">06</a></td><td id="ndate_2018-05-07" onclick="picker.new_choice('2018-05-07', '1525618800', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-05-08" onclick="picker.new_choice('2018-05-08', '1525705200', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-05-09" onclick="picker.new_choice('2018-05-09', '1525791600', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-05-10" onclick="picker.new_choice('2018-05-10', '1525878000', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-05-11" onclick="picker.new_choice('2018-05-11', '1525964400', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-05-12" onclick="picker.new_choice('2018-05-12', '1526050800', 'Y')"><a href="#" class="">12</a></td></tr><tr id="month_52"><td id="ndate_2018-05-13" onclick="picker.new_choice('2018-05-13', '1526137200', 'Y')"><a href="#" class="font_red">13</a></td><td id="ndate_2018-05-14" onclick="picker.new_choice('2018-05-14', '1526223600', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-05-15" onclick="picker.new_choice('2018-05-15', '1526310000', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-05-16" onclick="picker.new_choice('2018-05-16', '1526396400', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-05-17" onclick="picker.new_choice('2018-05-17', '1526482800', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-05-18" onclick="picker.new_choice('2018-05-18', '1526569200', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-05-19" onclick="picker.new_choice('2018-05-19', '1526655600', 'Y')"><a href="#" class="">19</a></td></tr><tr id="month_53"><td id="ndate_2018-05-20" onclick="picker.new_choice('2018-05-20', '1526742000', 'Y')"><a href="#" class="font_red">20</a></td><td id="ndate_2018-05-21" onclick="picker.new_choice('2018-05-21', '1526828400', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-05-22" onclick="picker.new_choice('2018-05-22', '1526914800', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-05-23" onclick="picker.new_choice('2018-05-23', '1527001200', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-05-24" onclick="picker.new_choice('2018-05-24', '1527087600', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-05-25" onclick="picker.new_choice('2018-05-25', '1527174000', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-05-26" onclick="picker.new_choice('2018-05-26', '1527260400', 'Y')"><a href="#" class="">26</a></td></tr><tr id="month_54"><td id="ndate_2018-05-27" onclick="picker.new_choice('2018-05-27', '1527346800', 'Y')"><a href="#" class="font_red">27</a></td><td id="ndate_2018-05-28" onclick="picker.new_choice('2018-05-28', '1527433200', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2018-05-29" onclick="picker.new_choice('2018-05-29', '1527519600', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-05-30" onclick="picker.new_choice('2018-05-30', '1527606000', 'Y')"><a href="#" class="">30</a></td><td id="ndate_2018-05-31" onclick="picker.new_choice('2018-05-31', '1527692400', 'Y')"><a href="#" class="">31</a></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 06월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_60"><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-06-01" onclick="picker.new_choice('2018-06-01', '1527778800', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-06-02" onclick="picker.new_choice('2018-06-02', '1527865200', 'Y')"><a href="#" class="">02</a></td></tr><tr id="month_61"><td id="ndate_2018-06-03" onclick="picker.new_choice('2018-06-03', '1527951600', 'Y')"><a href="#" class="font_red">03</a></td><td id="ndate_2018-06-04" onclick="picker.new_choice('2018-06-04', '1528038000', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-06-05" onclick="picker.new_choice('2018-06-05', '1528124400', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-06-06" onclick="picker.new_choice('2018-06-06', '1528210800', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-06-07" onclick="picker.new_choice('2018-06-07', '1528297200', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-06-08" onclick="picker.new_choice('2018-06-08', '1528383600', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-06-09" onclick="picker.new_choice('2018-06-09', '1528470000', 'Y')"><a href="#" class="">09</a></td></tr><tr id="month_62"><td id="ndate_2018-06-10" onclick="picker.new_choice('2018-06-10', '1528556400', 'Y')"><a href="#" class="font_red">10</a></td><td id="ndate_2018-06-11" onclick="picker.new_choice('2018-06-11', '1528642800', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-06-12" onclick="picker.new_choice('2018-06-12', '1528729200', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-06-13" onclick="picker.new_choice('2018-06-13', '1528815600', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-06-14" onclick="picker.new_choice('2018-06-14', '1528902000', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-06-15" onclick="picker.new_choice('2018-06-15', '1528988400', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-06-16" onclick="picker.new_choice('2018-06-16', '1529074800', 'Y')"><a href="#" class="">16</a></td></tr><tr id="month_63"><td id="ndate_2018-06-17" onclick="picker.new_choice('2018-06-17', '1529161200', 'Y')"><a href="#" class="font_red">17</a></td><td id="ndate_2018-06-18" onclick="picker.new_choice('2018-06-18', '1529247600', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-06-19" onclick="picker.new_choice('2018-06-19', '1529334000', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-06-20" onclick="picker.new_choice('2018-06-20', '1529420400', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-06-21" onclick="picker.new_choice('2018-06-21', '1529506800', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-06-22" onclick="picker.new_choice('2018-06-22', '1529593200', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-06-23" onclick="picker.new_choice('2018-06-23', '1529679600', 'Y')"><a href="#" class="">23</a></td></tr><tr id="month_64"><td id="ndate_2018-06-24" onclick="picker.new_choice('2018-06-24', '1529766000', 'Y')"><a href="#" class="font_red">24</a></td><td id="ndate_2018-06-25" onclick="picker.new_choice('2018-06-25', '1529852400', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-06-26" onclick="picker.new_choice('2018-06-26', '1529938800', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-06-27" onclick="picker.new_choice('2018-06-27', '1530025200', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-06-28" onclick="picker.new_choice('2018-06-28', '1530111600', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2018-06-29" onclick="picker.new_choice('2018-06-29', '1530198000', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-06-30" onclick="picker.new_choice('2018-06-30', '1530284400', 'Y')"><a href="#" class="">30</a></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 07월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_70"><td id="ndate_2018-07-01" onclick="picker.new_choice('2018-07-01', '1530370800', 'Y')"><a href="#" class="font_red">01</a></td><td id="ndate_2018-07-02" onclick="picker.new_choice('2018-07-02', '1530457200', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-07-03" onclick="picker.new_choice('2018-07-03', '1530543600', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-07-04" onclick="picker.new_choice('2018-07-04', '1530630000', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-07-05" onclick="picker.new_choice('2018-07-05', '1530716400', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-07-06" onclick="picker.new_choice('2018-07-06', '1530802800', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-07-07" onclick="picker.new_choice('2018-07-07', '1530889200', 'Y')"><a href="#" class="">07</a></td></tr><tr id="month_71"><td id="ndate_2018-07-08" onclick="picker.new_choice('2018-07-08', '1530975600', 'Y')"><a href="#" class="font_red">08</a></td><td id="ndate_2018-07-09" onclick="picker.new_choice('2018-07-09', '1531062000', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-07-10" onclick="picker.new_choice('2018-07-10', '1531148400', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-07-11" onclick="picker.new_choice('2018-07-11', '1531234800', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-07-12" onclick="picker.new_choice('2018-07-12', '1531321200', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-07-13" onclick="picker.new_choice('2018-07-13', '1531407600', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-07-14" onclick="picker.new_choice('2018-07-14', '1531494000', 'Y')"><a href="#" class="">14</a></td></tr><tr id="month_72"><td id="ndate_2018-07-15" onclick="picker.new_choice('2018-07-15', '1531580400', 'Y')"><a href="#" class="font_red">15</a></td><td id="ndate_2018-07-16" onclick="picker.new_choice('2018-07-16', '1531666800', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-07-17" onclick="picker.new_choice('2018-07-17', '1531753200', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-07-18" onclick="picker.new_choice('2018-07-18', '1531839600', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-07-19" onclick="picker.new_choice('2018-07-19', '1531926000', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-07-20" onclick="picker.new_choice('2018-07-20', '1532012400', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-07-21" onclick="picker.new_choice('2018-07-21', '1532098800', 'Y')"><a href="#" class="">21</a></td></tr><tr id="month_73"><td id="ndate_2018-07-22" onclick="picker.new_choice('2018-07-22', '1532185200', 'Y')"><a href="#" class="font_red">22</a></td><td id="ndate_2018-07-23" onclick="picker.new_choice('2018-07-23', '1532271600', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-07-24" onclick="picker.new_choice('2018-07-24', '1532358000', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-07-25" onclick="picker.new_choice('2018-07-25', '1532444400', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-07-26" onclick="picker.new_choice('2018-07-26', '1532530800', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-07-27" onclick="picker.new_choice('2018-07-27', '1532617200', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-07-28" onclick="picker.new_choice('2018-07-28', '1532703600', 'Y')"><a href="#" class="">28</a></td></tr><tr id="month_74"><td id="ndate_2018-07-29" onclick="picker.new_choice('2018-07-29', '1532790000', 'Y')"><a href="#" class="font_red">29</a></td><td id="ndate_2018-07-30" onclick="picker.new_choice('2018-07-30', '1532876400', 'Y')"><a href="#" class="">30</a></td><td id="ndate_2018-07-31" onclick="picker.new_choice('2018-07-31', '1532962800', 'Y')"><a href="#" class="">31</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 08월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_80"><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-08-01" onclick="picker.new_choice('2018-08-01', '1533049200', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-08-02" onclick="picker.new_choice('2018-08-02', '1533135600', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-08-03" onclick="picker.new_choice('2018-08-03', '1533222000', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-08-04" onclick="picker.new_choice('2018-08-04', '1533308400', 'Y')"><a href="#" class="">04</a></td></tr><tr id="month_81"><td id="ndate_2018-08-05" onclick="picker.new_choice('2018-08-05', '1533394800', 'Y')"><a href="#" class="font_red">05</a></td><td id="ndate_2018-08-06" onclick="picker.new_choice('2018-08-06', '1533481200', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-08-07" onclick="picker.new_choice('2018-08-07', '1533567600', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-08-08" onclick="picker.new_choice('2018-08-08', '1533654000', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-08-09" onclick="picker.new_choice('2018-08-09', '1533740400', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-08-10" onclick="picker.new_choice('2018-08-10', '1533826800', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-08-11" onclick="picker.new_choice('2018-08-11', '1533913200', 'Y')"><a href="#" class="">11</a></td></tr><tr id="month_82"><td id="ndate_2018-08-12" onclick="picker.new_choice('2018-08-12', '1533999600', 'Y')"><a href="#" class="font_red">12</a></td><td id="ndate_2018-08-13" onclick="picker.new_choice('2018-08-13', '1534086000', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-08-14" onclick="picker.new_choice('2018-08-14', '1534172400', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-08-15" onclick="picker.new_choice('2018-08-15', '1534258800', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-08-16" onclick="picker.new_choice('2018-08-16', '1534345200', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-08-17" onclick="picker.new_choice('2018-08-17', '1534431600', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-08-18" onclick="picker.new_choice('2018-08-18', '1534518000', 'Y')"><a href="#" class="">18</a></td></tr><tr id="month_83"><td id="ndate_2018-08-19" onclick="picker.new_choice('2018-08-19', '1534604400', 'Y')"><a href="#" class="font_red">19</a></td><td id="ndate_2018-08-20" onclick="picker.new_choice('2018-08-20', '1534690800', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-08-21" onclick="picker.new_choice('2018-08-21', '1534777200', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-08-22" onclick="picker.new_choice('2018-08-22', '1534863600', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-08-23" onclick="picker.new_choice('2018-08-23', '1534950000', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-08-24" onclick="picker.new_choice('2018-08-24', '1535036400', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-08-25" onclick="picker.new_choice('2018-08-25', '1535122800', 'Y')"><a href="#" class="">25</a></td></tr><tr id="month_84"><td id="ndate_2018-08-26" onclick="picker.new_choice('2018-08-26', '1535209200', 'Y')"><a href="#" class="font_red">26</a></td><td id="ndate_2018-08-27" onclick="picker.new_choice('2018-08-27', '1535295600', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-08-28" onclick="picker.new_choice('2018-08-28', '1535382000', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2018-08-29" onclick="picker.new_choice('2018-08-29', '1535468400', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-08-30" onclick="picker.new_choice('2018-08-30', '1535554800', 'Y')"><a href="#" class="">30</a></td><td id="ndate_2018-08-31" onclick="picker.new_choice('2018-08-31', '1535641200', 'Y')"><a href="#" class="">31</a></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 09월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_90"><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-09-01" onclick="picker.new_choice('2018-09-01', '1535727600', 'Y')"><a href="#" class="">01</a></td></tr><tr id="month_91"><td id="ndate_2018-09-02" onclick="picker.new_choice('2018-09-02', '1535814000', 'Y')"><a href="#" class="font_red">02</a></td><td id="ndate_2018-09-03" onclick="picker.new_choice('2018-09-03', '1535900400', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-09-04" onclick="picker.new_choice('2018-09-04', '1535986800', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-09-05" onclick="picker.new_choice('2018-09-05', '1536073200', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-09-06" onclick="picker.new_choice('2018-09-06', '1536159600', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-09-07" onclick="picker.new_choice('2018-09-07', '1536246000', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-09-08" onclick="picker.new_choice('2018-09-08', '1536332400', 'Y')"><a href="#" class="">08</a></td></tr><tr id="month_92"><td id="ndate_2018-09-09" onclick="picker.new_choice('2018-09-09', '1536418800', 'Y')"><a href="#" class="font_red">09</a></td><td id="ndate_2018-09-10" onclick="picker.new_choice('2018-09-10', '1536505200', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-09-11" onclick="picker.new_choice('2018-09-11', '1536591600', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-09-12" onclick="picker.new_choice('2018-09-12', '1536678000', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-09-13" onclick="picker.new_choice('2018-09-13', '1536764400', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-09-14" onclick="picker.new_choice('2018-09-14', '1536850800', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-09-15" onclick="picker.new_choice('2018-09-15', '1536937200', 'Y')"><a href="#" class="">15</a></td></tr><tr id="month_93"><td id="ndate_2018-09-16" onclick="picker.new_choice('2018-09-16', '1537023600', 'Y')"><a href="#" class="font_red">16</a></td><td id="ndate_2018-09-17" onclick="picker.new_choice('2018-09-17', '1537110000', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-09-18" onclick="picker.new_choice('2018-09-18', '1537196400', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-09-19" onclick="picker.new_choice('2018-09-19', '1537282800', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-09-20" onclick="picker.new_choice('2018-09-20', '1537369200', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-09-21" onclick="picker.new_choice('2018-09-21', '1537455600', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-09-22" onclick="picker.new_choice('2018-09-22', '1537542000', 'Y')"><a href="#" class="">22</a></td></tr><tr id="month_94"><td id="ndate_2018-09-23" onclick="picker.new_choice('2018-09-23', '1537628400', 'Y')"><a href="#" class="font_red">23</a></td><td id="ndate_2018-09-24" onclick="picker.new_choice('2018-09-24', '1537714800', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-09-25" onclick="picker.new_choice('2018-09-25', '1537801200', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-09-26" onclick="picker.new_choice('2018-09-26', '1537887600', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-09-27" onclick="picker.new_choice('2018-09-27', '1537974000', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-09-28" onclick="picker.new_choice('2018-09-28', '1538060400', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2018-09-29" onclick="picker.new_choice('2018-09-29', '1538146800', 'Y')"><a href="#" class="">29</a></td></tr><tr id="month_95"><td id="ndate_2018-09-30" onclick="picker.new_choice('2018-09-30', '1538233200', 'Y')"><a href="#" class="font_red">30</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 10월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_100"><td style="background:none"></td><td id="ndate_2018-10-01" onclick="picker.new_choice('2018-10-01', '1538319600', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-10-02" onclick="picker.new_choice('2018-10-02', '1538406000', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-10-03" onclick="picker.new_choice('2018-10-03', '1538492400', 'Y')"><a href="#" class="">03</a></td><td id="ndate_2018-10-04" onclick="picker.new_choice('2018-10-04', '1538578800', 'Y')"><a href="#" class="">04</a></td><td id="ndate_2018-10-05" onclick="picker.new_choice('2018-10-05', '1538665200', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-10-06" onclick="picker.new_choice('2018-10-06', '1538751600', 'Y')"><a href="#" class="">06</a></td></tr><tr id="month_101"><td id="ndate_2018-10-07" onclick="picker.new_choice('2018-10-07', '1538838000', 'Y')"><a href="#" class="font_red">07</a></td><td id="ndate_2018-10-08" onclick="picker.new_choice('2018-10-08', '1538924400', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-10-09" onclick="picker.new_choice('2018-10-09', '1539010800', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-10-10" onclick="picker.new_choice('2018-10-10', '1539097200', 'Y')"><a href="#" class="">10</a></td><td id="ndate_2018-10-11" onclick="picker.new_choice('2018-10-11', '1539183600', 'Y')"><a href="#" class="">11</a></td><td id="ndate_2018-10-12" onclick="picker.new_choice('2018-10-12', '1539270000', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-10-13" onclick="picker.new_choice('2018-10-13', '1539356400', 'Y')"><a href="#" class="">13</a></td></tr><tr id="month_102"><td id="ndate_2018-10-14" onclick="picker.new_choice('2018-10-14', '1539442800', 'Y')"><a href="#" class="font_red">14</a></td><td id="ndate_2018-10-15" onclick="picker.new_choice('2018-10-15', '1539529200', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-10-16" onclick="picker.new_choice('2018-10-16', '1539615600', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-10-17" onclick="picker.new_choice('2018-10-17', '1539702000', 'Y')"><a href="#" class="">17</a></td><td id="ndate_2018-10-18" onclick="picker.new_choice('2018-10-18', '1539788400', 'Y')"><a href="#" class="">18</a></td><td id="ndate_2018-10-19" onclick="picker.new_choice('2018-10-19', '1539874800', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-10-20" onclick="picker.new_choice('2018-10-20', '1539961200', 'Y')"><a href="#" class="">20</a></td></tr><tr id="month_103"><td id="ndate_2018-10-21" onclick="picker.new_choice('2018-10-21', '1540047600', 'Y')"><a href="#" class="font_red">21</a></td><td id="ndate_2018-10-22" onclick="picker.new_choice('2018-10-22', '1540134000', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-10-23" onclick="picker.new_choice('2018-10-23', '1540220400', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-10-24" onclick="picker.new_choice('2018-10-24', '1540306800', 'Y')"><a href="#" class="">24</a></td><td id="ndate_2018-10-25" onclick="picker.new_choice('2018-10-25', '1540393200', 'Y')"><a href="#" class="">25</a></td><td id="ndate_2018-10-26" onclick="picker.new_choice('2018-10-26', '1540479600', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-10-27" onclick="picker.new_choice('2018-10-27', '1540566000', 'Y')"><a href="#" class="">27</a></td></tr><tr id="month_104"><td id="ndate_2018-10-28" onclick="picker.new_choice('2018-10-28', '1540652400', 'Y')"><a href="#" class="font_red">28</a></td><td id="ndate_2018-10-29" onclick="picker.new_choice('2018-10-29', '1540738800', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-10-30" onclick="picker.new_choice('2018-10-30', '1540825200', 'Y')"><a href="#" class="">30</a></td><td id="ndate_2018-10-31" onclick="picker.new_choice('2018-10-31', '1540911600', 'Y')"><a href="#" class="">31</a></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				<div class="calendar_product_list" style="margin-bottom:10px">
+			<div class="month">2018년 11월</div>
+			<table class="week_day_table" align="center" border="0">
+				<colgroup>
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+					<col width="13.4%">
+				</colgroup>
+				<tbody>
+				<tr id="month_110"><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td style="background:none"></td><td id="ndate_2018-11-01" onclick="picker.new_choice('2018-11-01', '1540998000', 'Y')"><a href="#" class="">01</a></td><td id="ndate_2018-11-02" onclick="picker.new_choice('2018-11-02', '1541084400', 'Y')"><a href="#" class="">02</a></td><td id="ndate_2018-11-03" onclick="picker.new_choice('2018-11-03', '1541170800', 'Y')"><a href="#" class="">03</a></td></tr><tr id="month_111"><td id="ndate_2018-11-04" onclick="picker.new_choice('2018-11-04', '1541257200', 'Y')"><a href="#" class="font_red">04</a></td><td id="ndate_2018-11-05" onclick="picker.new_choice('2018-11-05', '1541343600', 'Y')"><a href="#" class="">05</a></td><td id="ndate_2018-11-06" onclick="picker.new_choice('2018-11-06', '1541430000', 'Y')"><a href="#" class="">06</a></td><td id="ndate_2018-11-07" onclick="picker.new_choice('2018-11-07', '1541516400', 'Y')"><a href="#" class="">07</a></td><td id="ndate_2018-11-08" onclick="picker.new_choice('2018-11-08', '1541602800', 'Y')"><a href="#" class="">08</a></td><td id="ndate_2018-11-09" onclick="picker.new_choice('2018-11-09', '1541689200', 'Y')"><a href="#" class="">09</a></td><td id="ndate_2018-11-10" onclick="picker.new_choice('2018-11-10', '1541775600', 'Y')"><a href="#" class="">10</a></td></tr><tr id="month_112"><td id="ndate_2018-11-11" onclick="picker.new_choice('2018-11-11', '1541862000', 'Y')"><a href="#" class="font_red">11</a></td><td id="ndate_2018-11-12" onclick="picker.new_choice('2018-11-12', '1541948400', 'Y')"><a href="#" class="">12</a></td><td id="ndate_2018-11-13" onclick="picker.new_choice('2018-11-13', '1542034800', 'Y')"><a href="#" class="">13</a></td><td id="ndate_2018-11-14" onclick="picker.new_choice('2018-11-14', '1542121200', 'Y')"><a href="#" class="">14</a></td><td id="ndate_2018-11-15" onclick="picker.new_choice('2018-11-15', '1542207600', 'Y')"><a href="#" class="">15</a></td><td id="ndate_2018-11-16" onclick="picker.new_choice('2018-11-16', '1542294000', 'Y')"><a href="#" class="">16</a></td><td id="ndate_2018-11-17" onclick="picker.new_choice('2018-11-17', '1542380400', 'Y')"><a href="#" class="">17</a></td></tr><tr id="month_113"><td id="ndate_2018-11-18" onclick="picker.new_choice('2018-11-18', '1542466800', 'Y')"><a href="#" class="font_red">18</a></td><td id="ndate_2018-11-19" onclick="picker.new_choice('2018-11-19', '1542553200', 'Y')"><a href="#" class="">19</a></td><td id="ndate_2018-11-20" onclick="picker.new_choice('2018-11-20', '1542639600', 'Y')"><a href="#" class="">20</a></td><td id="ndate_2018-11-21" onclick="picker.new_choice('2018-11-21', '1542726000', 'Y')"><a href="#" class="">21</a></td><td id="ndate_2018-11-22" onclick="picker.new_choice('2018-11-22', '1542812400', 'Y')"><a href="#" class="">22</a></td><td id="ndate_2018-11-23" onclick="picker.new_choice('2018-11-23', '1542898800', 'Y')"><a href="#" class="">23</a></td><td id="ndate_2018-11-24" onclick="picker.new_choice('2018-11-24', '1542985200', 'Y')"><a href="#" class="">24</a></td></tr><tr id="month_114"><td id="ndate_2018-11-25" onclick="picker.new_choice('2018-11-25', '1543071600', 'Y')"><a href="#" class="font_red">25</a></td><td id="ndate_2018-11-26" onclick="picker.new_choice('2018-11-26', '1543158000', 'Y')"><a href="#" class="">26</a></td><td id="ndate_2018-11-27" onclick="picker.new_choice('2018-11-27', '1543244400', 'Y')"><a href="#" class="">27</a></td><td id="ndate_2018-11-28" onclick="picker.new_choice('2018-11-28', '1543330800', 'Y')"><a href="#" class="">28</a></td><td id="ndate_2018-11-29" onclick="picker.new_choice('2018-11-29', '1543417200', 'Y')"><a href="#" class="">29</a></td><td id="ndate_2018-11-30" onclick="picker.new_choice('2018-11-30', '1543503600', 'Y')"><a href="#" class="">30</a></td><td style="background:none"></td></tr>				</tbody>
+			</table>
+		</div>
+				
+	</div>
+
+	</div>
+</div></div>
+
+	<!--- 달력버튼 --->
+	<div id="calendar_w_btn_w" style="display:none">
+				<div class="calendar_product_btn" id="calbtn" onclick="picker.date_apply();">이용일 선택 완료</div> 
+			</div>
+<!---</div>--->
+<script type="text/javascript">
+var pre_load_val = "N";
+var picker = {
+	pre_load: function() {
+
+		$.ajax({
+			url : "/home/common/cal_search.php",
+			type : "post",
+			data: "cal_mode="+$("#cal_layer_mode").val()+"&"+$("#calc_form").serialize(),
+			success: function(r) {
+				$("#calendar_w").html(r);
+				pre_load_val = "Y";
+
+				
+			}
+		});
+	}, 
+//신규달력 오픈
+	new_cal: function() {
+		var cal_layer_mode = $("#cal_layer_mode").val();
+		
+		switch(cal_layer_mode) {
+			case "sub":			
+			case "map":
+			case "main":
+			case "sub_subway":
+				if($("#nchin_date").val() != $("#check_in").val()) {
+					pre_load_val = "N";
+				}
+				$("#nchin_date").val($("#check_in").val());
+				$("#nchout_date").val($("#check_out").val());
+				break;
+			
+			case "day_popup":
+				if($("#nchin_date").val() != $("#prev_sdate").val()) {
+					pre_load_val = "N";
+				}
+				$("#nchin_date").val($("#prev_sdate").val());
+				$("#nchout_date").val($("#prev_edate").val());
+				break;
+			
+			case "sub_single":
+				if($("#nchin_date").val() != $("#check_in").val()) {
+					pre_load_val = "N";
+				}
+				$("#nchin_date").val($("#check_in").val());
+				break;
+
+			case "day_popup_single":			
+				if($("#nchin_date").val() != $("#prev_sdate").val()) {
+					pre_load_val = "N";
+				}
+				$("#nchin_date").val($("#prev_sdate").val());
+				break;
+		}
+
+		if($("#calendar_w").hasClass("on") == true) {
+			$("#overlay").unbind("touchmove");
+			$(".calendar_product_tit").unbind("touchmove");
+			$(".week_day").unbind("touchmove");
+
+			/* 추가했던 검정색 배경 제거*/
+			$("#overlay").remove();
+			$("#top_box").css("z-index", "9999");
+			
+			$("#layer_calender").removeClass("layer_on");
+			$("#calendar_w").removeClass("on");
+			$("#calendar_w").css({"bottom":"-1000px"});
+			$("#calendar_w_btn_w").hide();
+
+			if($("#btnTOP").hasClass("on") == true) {
+				$("#btnTOP").show();
+			}
+		} else {
+			var arrPageSizes = ___getPageSize();
+			
+			
+			/*검정색 배경추가*/
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+			$("#top_box").css("z-index", "5");
+
+			if(pre_load_val == "N") {
+				$.ajax({
+					url : "/home/common/cal_search.php",
+					type : "post",
+					data: "cal_mode="+$("#cal_layer_mode").val()+"&"+$("#calc_form").serialize(),
+					success: function(r) {
+						if($("#btnTOP").hasClass("on") == true) {
+							$("#btnTOP").hide();
+						}
+						$("#layer_calender").addClass("layer_on");
+						$("#calendar_w").addClass("on");
+						$("#calendar_w").html(r);
+
+						$("#calendar_w").css({"bottom":"60px"});
+						
+						var hi_calc = $(window).height() - ($(window).height() * 0.35);
+						$("#cal_subbox").css("height", hi_calc+"px");
+						$("#calendar_w_btn_w").show();
+						
+						if($("#chk_single").val() == "Y") {
+							$("#calbtn").text("이용일 선택 완료");
+						} else {
+							$("#calbtn").text($("#night").val()+"박 선택 완료");
+						}
+						
+
+						$("#overlay").bind("touchmove", function(event) { event.preventDefault(); });
+						$(".calendar_product_tit").bind("touchmove", function(event) { event.preventDefault(); });
+						$(".week_day").bind("touchmove", function(event) { event.preventDefault(); });
+
+						myScroll5 = new IScroll('#cal_subbox', { mouseWheel: false, click: true, bounce:true, preventDefault : false, tap:true});
+					}
+				});
+			} else {
+				if($("#btnTOP").hasClass("on") == true) {
+					$("#btnTOP").hide();
+				}
+
+				$("#calendar_w").css({"bottom":"60px"});
+
+				$("#layer_calender").addClass("layer_on");
+				$("#calendar_w").addClass("on");
+
+				var hi_calc = $(window).height() - ($(window).height() * 0.35);
+				$("#cal_subbox").css("height", hi_calc+"px");
+				$("#calendar_w_btn_w").show();
+				
+				if($("#chk_single").val() == "Y") {
+					$("#calbtn").text("이용일 선택 완료");
+				} else {
+					$("#calbtn").text($("#night").val()+"박 선택 완료");
+				}
+				
+
+				$("#overlay").bind("touchmove", function(event) { event.preventDefault(); });
+				$(".calendar_product_tit").bind("touchmove", function(event) { event.preventDefault(); });
+				$(".week_day").bind("touchmove", function(event) { event.preventDefault(); });
+
+				myScroll5 = new IScroll('#cal_subbox', { mouseWheel: false, click: true, bounce:true, preventDefault : false, tap:true});
+
+
+			}
+
+		}
+	},
+	
+	//신규달력 선택
+	new_choice: function(date1, ts, single) {
+		//1. 체크인과 체크아웃 둘다 있는데 클릭 시 체크인만 선택체크 후 상단 텍스트 라인 체크아웃 날짜를 선택해주세요. 로 변경 
+		//버튼은 다시 선택완료 회색버튼으로 변경
+		//2. 체크인만 있을 경우에 클릭 시 체크아웃 클래스 추가 후 주황색 몇박 선택완료 버튼 으로 변경 
+		//체크인과 체크아웃 날짜 사이의 td들 주황색 클래스 처리
+		
+		//단품은 이용일 하나만 체크
+		if(single == "Y") {
+
+			//기존에 이용일 체크 되있던 날짜 해제 
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");
+			$("#"+chin_id).removeClass("Pkg-w");
+			$("#"+chin_id+" > a > .Pkg-txt").remove();
+
+			//지금 누른 업체 이용일 표시
+			var chk_id = "ndate_"+date1;
+			$("#"+chk_id).addClass("Pkg-w");
+			$("#"+chk_id+" > a").prepend("<span class=\"Pkg-txt\">이용일</span>");
+			$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+			
+			/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+			/* 상단 타이틀 라인 수정*/
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");
+			chin_id = chin_id.replace("ndate_", "");
+
+			var week = new Array('일', '월', '화', '수', '목', '금', '토');
+			var yoil_chin = new Date(chin_id).getDay();
+
+			chin_str = chin_id.replace(/-/gi, ".");
+			ch_str = chin_str+" ("+week[yoil_chin]+")";
+			
+			$("#title_txt").text(ch_str);
+
+			$("#calbtn").text("이용일 선택 완료");
+			$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+			
+
+
+		} else {
+			var chin_len	= $(".week_day_table").find(".Check-in").length;		//체크인 날짜 여부 체크
+			var chout_len	= $(".week_day_table").find(".Check-out").length;		//체크아웃 날짜 여부 체크 
+			
+			//체크인와 체크아웃이 둘다 선택되어 있는 경우
+			if((chin_len == 1 && chout_len == 1) || (chin_len == 0 && chout_len == 0)) {
+				/*기존선택된 클래스들 초기화*/
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");		//체크인 날짜 아이디
+				var chout_id	= $(".week_day_table").find(".Check-out").attr("id");		//체크아웃 날짜 아이디
+				
+				$("#"+chin_id).removeClass("Check-in");
+				$("#"+chout_id).removeClass("Check-out");
+
+				$("#"+chin_id+" > a > .Check-in-txt").remove();
+				$("#"+chout_id+" > a > .Check-in-txt").remove();			
+				$(".week_day_table").find(".Check-ing").removeClass("Check-ing");
+
+				/* 지금 누른 업체 체크인 표시*/
+				var chk_id = "ndate_"+date1;
+				$("#"+chk_id).addClass("Check-in");
+				$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크인</span>");
+				$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+				
+				//하단 버튼 텍스트 변경 및 클래스명 변경
+				$("#calbtn").html("<div class=\"calendar_product_btn\" id=\"calbtn\" onclick=\"picker.date_apply();\">날짜선택</div>");
+				$("#calbtn").removeClass("calendar_product_btn").addClass("calendar_product_btn_n");
+
+				/* 상단 타이틀 라인 수정*/
+				$("#title_txt").text("체크아웃 날짜를 선택해주세요.");
+				
+				var today = $(".week_day_table").find(".today").parent().attr("id");
+				if($("#"+today+" > a > span").not(".Check-in-txt").hasClass(".today_ba") == false && today != "ndate_"+date1) {
+					$("#"+today+" > a > span").not(".Check-in-txt").addClass("today_ba");
+				}
+
+
+			} else if(chin_len == 1 && chout_len == 0) {
+			//체크인 선택되어 있고 체크아웃 없는 경우
+			//체크인만 누른 상태에서 이전날짜를 눌렀으면 체크인이 추가되어야 하고 아니면 체크아웃 처리
+				
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");
+				chin_id	 = chin_id.replace("ndate_", "");
+				chin_id  = chin_id.replace(/-/gi, "");
+				chin_id	= parseInt(chin_id);
+
+				var chk_id = date1.replace(/-/gi, "");
+				chk_id = parseInt(chk_id);
+
+				if(chk_id < chin_id) {
+					//기존에 체크인 되있던 날짜 해제 
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");
+					$("#"+chin_id).removeClass("Check-in");
+					$("#"+chin_id+" > a > .Check-in-txt").remove();
+
+					//지금 누른 업체 체크인 표시
+					var chk_id = "ndate_"+date1;
+					$("#"+chk_id).addClass("Check-in");
+					$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크인</span>");
+					$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+
+					
+				} else if(chk_id > chin_id) {
+					
+					/* 숙박일수를 각 제휴사별로 제한하는 부분*/
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");			
+					chin_id_chk = chin_id.replace("ndate_", "");
+					chout_id_chk = date1;
+
+					/* 날짜차이로 숙박일수 알아내기 */
+					var diff_chk = new Date(chout_id_chk) - new Date(chin_id_chk);
+					var currday_chk = 24*60*60*1000;
+					diff_chk = parseInt(diff_chk/currday_chk);
+						
+					var test = new Date(chin_id_chk);
+					test.setDate(test.getDate()+1);
+	
+					yy = test.getFullYear();
+					mm = test.getMonth() + 1; 
+					mm = (mm < 10) ? '0' + mm : mm;
+
+					dd = test.getDate(); 
+					dd = (dd < 10) ? '0' + dd : dd;
+						
+					var final_day = "ndate_"+yy+"-"+mm+"-"+dd;
+
+					//지금 누른 업체 체크아웃 표시
+					var chk_id = "ndate_"+date1;
+					$("#"+chk_id).addClass("Check-out");
+					$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크아웃</span>");
+					$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+					
+					//체크인과 체크아웃 날짜 사이에 클래스 추가
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");				
+					$("#"+chin_id).nextUntil(".Check-out").addClass("Check-ing");
+
+					var chout_id	= $(".week_day_table").find(".Check-out").attr("id");
+					$("#"+chout_id).prevUntil(".Check-in").addClass("Check-ing");
+
+					//체크인 날짜의 tr id
+					//체크인과 체크아웃 날짜 사이에 한주이상 들어가있으면 클래스 처리가 안되니 추가작업 
+					var chin_tr = $("#"+chin_id).parent().attr("id");
+					var chout_tr = $("#"+chout_id).parent().attr("id");
+					chin_tr		= parseInt(chin_tr.replace("month_", ""));
+					chout_tr	= parseInt(chout_tr.replace("month_", ""));
+					if((chout_tr - chin_tr) > 1) {
+						for(var j = chin_tr+1; j < chout_tr; j++) {
+							if(j < 10) {
+								$("#month_0"+j+" td").addClass("Check-ing");
+							} else {
+								$("#month_"+j+" td").addClass("Check-ing");
+							}
+						}
+					}
+
+					/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+					/* 상단 타이틀 라인 수정*/
+					chin_id = chin_id.replace("ndate_", "");
+					chout_id = chout_id.replace("ndate_", "");
+
+					var week = new Array('일', '월', '화', '수', '목', '금', '토');
+					var yoil_chin = new Date(chin_id).getDay();
+					var yoil_chout = new Date(chout_id).getDay();
+
+					chin_str = chin_id.replace(/-/gi, ".");
+					chout_str = chout_id.replace(/-/gi, ".");
+
+					/* 날짜차이로 숙박일수 알아내기 */
+					var diff = new Date(chout_id) - new Date(chin_id);
+					var currday = 24*60*60*1000;
+					diff = parseInt(diff/currday);
+
+					ch_str = chin_str+" ("+week[yoil_chin]+")~"+chout_str+" ("+week[yoil_chout]+") / "+diff+"박";
+					$("#title_txt").text(ch_str);
+					
+					$("#calbtn").text(diff+"박 선택 완료");
+					$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+				}
+			}
+		}
+	},
+	
+	date_apply: function() {		
+		var cla			= $("#calbtn").attr("class");
+		var clachk		= "N";
+		var layer_mode	= $("#cal_layer_mode").val();
+		
+		pre_load_val = "N";
+
+		/* 이용권 일 때*/
+		if($("#cal_layer_mode").val() == "sub_single" || $("#cal_layer_mode").val() == "day_popup_single") {
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");		//이용일 날짜 아이디
+			chin_id		= chin_id.replace("ndate_", "");
+			
+			$("#check_in").val(chin_id);				
+			$("#check_out").val(chin_id);
+			
+			var week = new Array('일', '월', '화', '수', '목', '금', '토');
+			var yoil_chin = new Date(chin_id).getDay();
+			var yoil_chout = new Date(chout_id).getDay();
+
+
+			chin_str = chin_id.replace(/-/gi, ".");
+
+			$("#chdate_text").text(chin_str+" ("+week[yoil_chin]+")");
+
+			$.cookie("save_sdate_single", $("#check_in").val(), {domain: 'go.co.kr', path : '/', expires: date});
+
+		} else {
+			var chin_id		= $(".week_day_table").find(".Check-in").attr("id");		//체크인 날짜 아이디
+			var chout_id	= $(".week_day_table").find(".Check-out").attr("id");		//체크아웃 날짜 아이디
+			
+			chin_id		= chin_id.replace("ndate_", "");
+			chout_id	= chout_id.replace("ndate_", "");
+
+			$("#check_in").val(chin_id);
+			$("#check_out").val(chout_id);
+
+			var week = new Array('일', '월', '화', '수', '목', '금', '토');
+			var yoil_chin = new Date(chin_id).getDay();
+			var yoil_chout = new Date(chout_id).getDay();
+
+			chin_str = chin_id.replace(/-/gi, ".");
+			chout_str = chout_id.replace(/-/gi, ".");
+
+			/* 날짜차이로 숙박일수 알아내기 */
+			var diff	= new Date(chout_id) - new Date(chin_id);
+			var currday = 24*60*60*1000;
+			diff = parseInt(diff/currday);			
+			
+
+			$.cookie("save_sdate", $("#check_in").val(), {domain: 'go.co.kr', path : '/', expires: date});
+			$.cookie("save_edate", $("#check_out").val(), {domain: 'go.co.kr', path : '/', expires: date});
+		}		
+		
+		switch(layer_mode) {
+			case "sub":
+				picker.new_cal();
+				var ci  = chin_str.split(".");
+				var co = chout_str.split(".");
+				
+				var final_str = ci[1]+"."+ci[2]+"~"+co[1]+"."+co[2];
+
+				$("#sdate_choice").text(final_str);
+								listing.main_list_scroll('1', '', 'new');
+				
+
+				break;
+
+			case "sub_single":
+				picker.new_cal();
+
+				var ci  = chin_str.split(".");				
+				var week = new Array('일', '월', '화', '수', '목', '금', '토');
+				var yoil_chin = new Date(chin_id).getDay();
+				var final_str = ci[1]+"."+ci[2]+" ("+week[yoil_chin]+")";
+				
+				$("#sdate_choice").text(final_str);
+				listing.main_list_scroll('1', '', 'new');				
+				break;
+			
+			case "sub_subway":
+				picker.new_cal();
+
+				var ci  = chin_str.split(".");
+				var co = chout_str.split(".");
+				
+				var final_str = ci[1]+"."+ci[2]+"~"+co[1]+"."+co[2];
+
+				$("#sdate_choice").text(final_str);
+				subway_list('1', 'distance', 'new');
+				break;
+
+			case "map":
+				picker.new_cal();
+				var ci  = chin_str.split(".");
+				var co = chout_str.split(".");
+				
+				var final_str = ci[1]+"."+ci[2]+"~"+co[1]+"."+co[2];
+
+				$("#sdate_choice").text(final_str);
+
+				$("#dist1").val("");
+				$("#dist2").val("");
+				$("#dist_first").val("");
+				$("#empty_bt").show();
+
+				listing.main_list_scroll('1', $("#sort").val(), 'new');
+				break;
+			
+			case "main":
+				$("#sdate_choice").text(chin_id);
+				picker.new_cal();
+
+				//$("#sub_sform").submit();
+				break;
+			
+			case "day_popup":
+			case "day_popup_single":
+								if($("#tab_choice").val() == "local_s") {
+					location.href="&sdate="+chin_id+"&edate="+chout_id+"&simple=on&simple_loca="+$("#simple_city1").val()+"&simple_sub_loca="+$("#simple_city2").val();
+				} else {
+					location.href="&sdate="+chin_id+"&edate="+chout_id;
+				}				
+								break;
+		}
+
+	}
+}
+
+$(function() {
+	picker.pre_load();
+});
+</script>	</div>
+	<div id="loading2" style="display:none"> 
+		<p><img src="http://img.go.co.kr/mobile/loading20.gif" width="30"></p> 
+	</div>
+
+
+	
+<!--- wrapper 끝 -->
+
+<div class="btmLogo" id="btmLogo" style="display: block;"></div>
+</div>
+
+
+
+<div id="btnTOP" class="hide_div" style="display:none"><a href="javascript:navi.move_home();" style="bottom:20px;width:46px"><img src="http://img.go.co.kr/mobile/top.png"></a></div>
+
+
+
+<script type="text/javascript">
+$(function() {
+	
+	$(window).scroll(function () {
+		var bbst, limitTop = 150;
+		bbst	= $(".hseldate_calender").css("border-bottom-style");
+		if(bbst == "none") {
+			limitTop	= 150;
+		} else {
+			limitTop	= 950;
+		}
+			
+				if($("#layer_local").hasClass("layer_on") == false && $("#layer_calender").hasClass("layer_on") == false) {
+			if($(window).scrollTop() > limitTop){
+				$("#btnTOP").show();
+				$("#btnTOP").addClass("on");
+				$("#btnBACK").show();
+			} else {
+				$("#btnTOP").hide();
+				$("#btnTOP").removeClass("on");
+				$("#btnBACK").hide();
+			}
+		}
+			});
+
+	/*20160829*/
+	/*어플팀 김대현 요청 사내아이피에서만 하단 메뉴 숨기는 스크립트 - 테스트 단계라 사내아이피에서만 추가*/
+	
+	/*상세페이지고 안드로이드 일때만 a가 아닌 디테일로 호출 */
+	/*상세페이지이고 아이폰 일때는 d로 처리 */
+			if($("#layer_calender").hasClass("layer_on") == false) {
+			Call_bottom_tabbar('a');
+		} 
+	
+	/*
+		Call_bottom_tabbar('a');
+		*/
+
+	
+	
+
+	$("#btn_back").click(function(e) {
+		e.preventDefault;
+
+		var res = document.referrer;
+		location.href = res;
+	});
+
+});
+
+
+function rmenu_op() {
+	
+	if($("#menu_bg").hasClass("lm_op") == true) {
+		$("#menu_bg").removeClass("lm_op");
+		utils.menu_out("#menu_bg");
+			}
+	if($("#menu_bg2").hasClass("rm_op") == true) {
+		$("#menu_bg2").removeClass("rm_op");
+		utils.rmenu_out2('#menu_bg2');
+		$('#top_box').show();
+	} else {
+		$("#menu_bg2").addClass("rm_op");
+		$(window).scrollTop(0);
+		utils.rmenu_on("#menu_bg2");
+	}
+
+
+}
+
+function Call_bottom_tabbar(show) {
+
+	if($("#menu_bg2").hasClass("rm_op") == false && $("#menu_bg").hasClass("lm_op") == false) {
+		if(user_flag == "ios") {
+					} else {
+						if(window.gokoapp && ("bottom_menu_event" in window.gokoapp)){  
+				if(window.gokoapp.bottom_menu_event != null) { 
+					window.gokoapp.bottom_menu_event(show);
+				}
+			}		
+		}
+	}
+
+}
+</script>
+
+
+<style>.fixed_to_top4 {position:fixed;top:0px;z-index:50;transition:all 0.5s ease; width:100%}
+.fixed_to_top5 {position:fixed;top:45px;z-index:50;width:100%;transition:all 0.5s ease;}
+</style>
+
+<script type="text/javascript">
+
+$(function() {
+	var myScroll = null;
+	var myScroll2 = null;
+	
+		if(user_flag == "ios") {
+		$("#menu_bg #category").css("height",$(window).height() - 85);
+	} else {
+		$("#menu_bg #category").css("height",$(window).height());
+	}
+		
+	$("#menu_bg2 #mypage").css("height",$(window).height());
+	$("#menu_bg2 #mypage #box").css("min-height", $(window).height());
+	
+
+	$("#menu2").click(function() {
+		utils.menu_on("#menu_bg");
+		
+		$("#wrapper").bind("touchmove", function(e) { e.preventDefault(); });
+		myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+		
+	});
+
+	$("#allmenu").click(function() {
+		
+		if($("#menu_bg").hasClass("lm_op") == false) {
+			$("#menu_bg").addClass("lm_op");
+			utils.menu_on("#menu_bg");
+			
+			$("#wrapper").bind("touchmove", function(e) { e.preventDefault(); });
+			myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+
+			//$("#bottomMenu").hide();
+
+			//To. 선하
+			//20160811 신규 상세페이지
+			//왼쪽메뉴 열릴 때 아래 객실선택 버튼이 겹치기 때문에 숨기는거 
+					} else {
+			$("#menu_bg").removeClass("lm_op");
+
+		}
+	});
+
+	$("#rightmenu").click(function() {
+		$("#menu_bg2").addClass("rm_op");
+		utils.rmenu_on("#menu_bg2");
+	});
+
+	$("#menu_bg").on("swipeleft", function(e) {
+		$("#menu_bg").removeClass("lm_op");
+		utils.menu_out("#menu_bg");
+		//$("#bottomMenu").show();
+
+		//To. 선하
+		//20160811 신규상세페이지
+		//반대로 메뉴 넣을때는 다시 보여줌
+			});
+
+	$("#menu_bg2").on("swiperight", function(e) {
+		$("#menu_bg2").removeClass("rm_op");
+		utils.rmenu_out2("#menu_bg2");		
+		
+	});
+
+
+
+});
+
+</script>
+
+<!---- 버튼 카운트 ----->
+<script type="text/javascript">
+function button_count(pno, bt_type) {
+	$.ajax({
+		url : "/home/reservation2/state.php",
+		type: "post",
+		data: "mode=bt_count&pno="+pno+"&bt_type="+bt_type+"&abr=",
+		success: function(e) {
+		
+		}
+	});
+}
+
+function prev_login() {
+	$("#rform").attr("action", "http://www.go.co.kr/home/reservation2/preserve_login.php?md=WQwlVQ==&add_val=app");
+	$("#rform").submit();
+}
+
+function top_box(gubun) {
+	if(gubun == "on") {
+		$("#top_box").show();
+	} else if(gubun == "out") {
+		$("#top_box").hide();
+	}
+}
+
+
+</script>
+
+<!--
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script> 
+<script type="text/javascript"> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_18af9ab0e3d6";
+if (!_nasa) var _nasa={};
+wcs.inflow("go.co.kr");
+wcs_do(_nasa);
+</script>
+-->
+
+
+
+
+</body></html>

@@ -1,3 +1,16 @@
+@charset "utf-8";
+
+.c-white {color: #fff;}
+.f-bd {font-weight: 700;}
+/*.cl-1 {color: #ff6000;}
+.cl-2 {color: #ffc600;}
+.cl-3 {color: #d91a2e;}*/
+
+.cmGc .header-evt {position: relative; width: 100%; height: 45px; background: #f4f2f3; line-height: 45px; text-align: center; letter-spacing: -1px; border-bottom: 1px solid #d2d2d2;}
+.cmGc .header-evt .a-x {width: 45px; height: 45px; top: 0; right: 0;}
+.cmGc .header-evt .a-x:before, .header-evt .a-x:after {width: 22px; height: 1px; top: 22px; left: 12px;}
+.cmGc figure {margin: 0 auto;}
+.cmGc figure img {width: 100%;}
 
 /* 20161223 연말초특가 */
 #special_price_161223 {position:relative; width:device-width;}
@@ -13,4 +26,128 @@
 ul li img{font-align:center; width:100%; }
 ul .btn{width: 100%; background:#fff; text-align:center; margin:0 auto; }
 ul .btn img{width: 60%; padding-bottom: 20px; }
-/* 2017.02.16 모바일 앱설치안내-바우처확인  */
+
+/* 171031 3만원 쿠폰팩 이벤트 */
+#event-wrap {position: relative; width: 100%; margin: 0 auto; color:#282828; font-family: 'Nanum Gothic', sans-serif; font-size:14px; line-height: 1.5; box-sizing: border-box;}
+
+.evt30000 {}
+.evt30000 .evt-content {position: relative;}
+.evt30000 .evt-content > img {width: 100%;}
+
+.fail-recomm {border-top: 1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; padding: 8px 10px; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; font-weight: 500;}
+.fail-recomm .i-spot {width: 22px; margin-right: 3px; vertical-align: middle; position: relative; top: -2px;}
+.fail-recomm .s1 {color: #fa6b0a;}
+
+/*180212 제주 탭 변경*/
+.jeju-tab.type-2 {position: relative; padding-left: 2.5%; padding-right: 2.5%; margin: 0 auto; background: #010206;}
+.jeju-tab.type-2 > a {display: block; width: 32%; float: left;}
+.jeju-tab.type-2 > a {margin-left: 2%;}
+.jeju-tab.type-2 > a:first-child {margin-left: 0;}
+
+/*180302 리뷰작성시 3,000원 쿠폰발급*/
+.evt-cp3 {font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif;}
+.evt-cp3 .main {position: relative; width: 100%;}
+.evt-cp3 .main .area-part {padding: 35px 0 30px;}
+.evt-cp3 .main .area-part > p {color: #241916; line-height: 1.5; text-align: center; letter-spacing: -1px;}
+.evt-cp3 .main .area-part .p-1 {font-size: 14px;}
+.evt-cp3 .main .area-part .p-2 {font-size: 16px;}
+.evt-cp3 .main .area-part .p-3 {font-size: 15px;}
+.evt-cp3 .main .area-part .cl-1 {color: #fdf06e;}
+.evt-cp3 .main .area-part .bor-b {border-bottom: 1px solid #241916	;}
+.evt-cp3 .main .area-1 {background: #fdf0cc url(http://img.go.co.kr/mobile/landing/180302_rvCp3/rvCpBg_1.jpg) no-repeat top center; background-size: cover;}
+.evt-cp3 .main .area-1 figure {width: 94%; width: 315px; margin-bottom: 10px;}
+.evt-cp3 .main .area-2 {background: #f6f6f6;}
+.evt-cp3 .main .area-2 figure {width: 94%; margin-bottom: 10px; width: 315px;}
+.evt-cp3 .main .area-3 {background: #3f4657;}
+.evt-cp3 .main .area-3 {padding: 20px 0;}
+.evt-cp3 .main .d-line {position: relative; width: 100%; margin-top: 10px; margin-bottom: -5px;}
+.evt-cp3 .main .s-line {display: block; height: 1px; width: 298px; background: #353b49; margin: 0 auto;}
+.evt-cp3 .main .d-line:before, .evt-cp3 .main .d-line:after {position: absolute; content: ""; top: -5px; display: block; background: #f6f6f6; width: 10px; height: 10px; border-radius: 50%;}
+.evt-cp3 .main .d-line:before {left: -5px;}
+.evt-cp3 .main .d-line:after {right: -5px;}
+
+.evt-cp3 .main .area-btn {text-align: center; margin-top: 10px;}
+.evt-cp3 .main .area-3 .area-btn {margin-top: 20px;}
+.evt-cp3 .main .area-btn .a-btn {position: relative; display: inline-block; width: 300px; height: 50px; text-align: center; color: #fff; font-size: 16px; border-radius: 4px; box-sizing: border-box; font-weight: 700; letter-spacing: -0.5px;}
+.evt-cp3 .main .area-btn .a-btn:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+.evt-cp3 .main .area-btn .a-btn > img {position: relative; top: -2px; left: 1px; width: 22px; vertical-align: middle;}
+.evt-cp3 .main .area-btn .a-btn.bg-1 {background: #ff6000;}
+.evt-cp3 .main .area-btn .a-btn.bg-2 {background: #ffc600; color: #272727; border: 1px solid #d0d0d0;}
+.evt-cp3 .main .area-btn .a-btn.bg-3 {background: #d91a2e;}
+
+/* 이벤트 신청하기 */
+.evt-name {background: #394052;}
+.evt-area-apply {position: relative; width: 100%; padding-bottom: 100px;}
+.evt-area-apply .ig-1 {width: 100%;}
+.evt-area-apply .txt-box {position: relative; margin-top: -30px;}
+.evt-area-apply .p0 {position: relative; padding: 0 10px 0 20px; color: #fff; letter-spacing: -1px; line-height: 1.3; word-break: keep-all; font-size: 14px;}
+@media (max-device-width: 320px) {
+	.evt-area-apply .p0 {font-size: 13px;}
+}
+.evt-area-apply .p0 .i-dot {position: absolute; left: 11px; top: 5px; display: inline-block; width: 3px; height: 3px; background: #4ddcff;}
+.evt-area-apply .btn-a {position: fixed; bottom: 0; left: 0; background-color:#ff6600; width: 100%; display: block; text-align: center; height: 60px; color: #fff; font-size: 16px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.evt-area-apply .btn-a:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+
+/* 메이스힐리조트 원투쓰리 이벤트 */
+/* 이벤트팝업 전체 공통 */
+.f-bdr {font-weight: 800;}
+.evt-area {padding-top: 25px; width: 100%; min-height: 800px; background: #fff; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif;}
+.evt-area .c-yellow {color: #fce37f;}
+.evt-area .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
+.evt-area .evt-main {text-align: center;}
+.evt-area .paging {margin-top: 15px;}
+.evt-area .paging > a {margin-left: 0px;}
+.evt-area .paging > a:first-child {margin-left: 0;}
+.evt-area .paging > a:first-child + a {margin-right: 20px;}
+
+/* 공통 */
+.mayhills-evt123 .cl-1 {color: #ffe49a;}
+.mayhills-evt123 .area-btn {margin-top: 30px; text-align: center;}
+.mayhills-evt123 .area-btn a {display: inline-block; background: #fff; width: 580px; height: 88px; font-size: 24px; box-sizing: border-box; color: #000; letter-spacing: 0;}
+.mayhills-evt123 .area-btn a:after {content: ""; display: inline-block; vertical-align: middle; height: 105%;}
+.mayhills-evt123 .area-btn a .rArrow:after {width: 12px; height: 12px; border-width: 2px; border-color: #fff; top: -1px;}
+
+/* 이벤트 안내 */
+.mayhills-evt123 {color: #282828;}
+.mayhills-evt123 .evt-top {background: #4f4c7b;}
+.mayhills-evt123 .evt-main {}
+.mayhills-evt123 .evt-main .evt-visual {padding-top: 30px; padding-bottom: 55px; background: #d6d8f7;}
+.mayhills-evt123 .evt-main .evt-visual img.txtResult {width: 310px;}
+
+.mayhills-evt123 .box-result,
+.mayhills-evt123 .box-winnerList,
+.mayhills-evt123 .evt-main .tb-info {width: 310px; margin: 0 auto; border-top: 2px solid #501143; background: #fff; margin-top: 15px;}
+.mayhills-evt123 .evt-main .tb-info col.nth-1 {width: 24%;}
+.mayhills-evt123 .evt-main .tb-info col.nth-2 {width: 76%;}
+.mayhills-evt123 .evt-main .tb-info th,
+.mayhills-evt123 .evt-main .tb-info td {font-size: 20px; border: 1px solid #d4d4d4; padding:  16px; line-height: 1.3;}
+.mayhills-evt123 .evt-main .tb-info th {text-align: center;}
+.mayhills-evt123 .evt-main .tb-info td {padding-left: 20px;}
+.mayhills-evt123 .evt-main .area-btn a {background: #f24959; color: #fff;}
+
+.mayhills-evt123 .evt-main .evt-tit {color: #fff; font-size: 44px; background: #241941; text-align: center; padding: 32px 0;}
+.mayhills-evt123 .evt-main .evt-contents .area-price {background: #d22330; padding-bottom: 50px;}
+.mayhills-evt123 .evt-main .evt-contents .area-btn {}
+.mayhills-evt123 .evt-main .evt-contents .area-btn a {background: #fedd39; color: #3b3b3b;}
+.mayhills-evt123 .evt-main .evt-contents .area-btn a .rArrow:after {border-color: #3b3b3b;}
+
+/* 이벤트 당첨 */
+.mayhills-evt123 .box-winnerList,
+.mayhills-evt123 .box-result {text-align: center; padding-top: 10px; padding-bottom: 10px;}
+.mayhills-evt123 .box-result img.resultWin {width: 240px;}
+.mayhills-evt123 .box-result img.resultFail {width: 120px;}
+.mayhills-evt123 .box-winnerList .p-1,
+.mayhills-evt123 .box-result .p-1 {font-size: 16px; letter-spacing: -2px;}
+.mayhills-evt123 .box-result .p-1-2 {font-size: 15px; letter-spacing: -2px;}
+.mayhills-evt123 .box-result .box-id {width: 90%; margin: 10px auto 0; border: 1px solid #c9c9c9; background: #f3f3f3; padding: 10px 0 8px;}
+.mayhills-evt123 .box-result .box-id .p-2 {font-size: 14px; line-height: 1.4;}
+.mayhills-evt123 .box-result .box-id .p-2 em,
+.mayhills-evt123 .box-result .box-id .p-id {font-size: 15px; font-weight: 700;}
+.mayhills-evt123 .box-result .box-id .p-id {background: #fff; width: 70%; margin: 0 auto; padding: 5px 0; border: 1px solid #c9c9c9; margin-top: 10px;}
+
+.mayhills-evt123 .box-winnerList .p-1 {text-align: center;}
+.mayhills-evt123 .box-winnerList .winnerList {border: 1px solid #c9c9c9; width: 90%; margin: 10px auto;}
+.mayhills-evt123 .box-winnerList .winnerList > li {border-top: 1px solid #c9c9c9;}
+.mayhills-evt123 .box-winnerList .winnerList > li:first-child {border-top: 0;}
+.mayhills-evt123 .box-winnerList .winnerList > li > div {float: left; width: 50%; box-sizing: border-box; font-size: 12px; letter-spacing: -1px; padding: 8px 0;}
+.mayhills-evt123 .box-winnerList .winnerList > li > div:first-child {border-right: 1px solid #c9c9c9;}

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+<head>
+	<title>오션투유 판매기록</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="No-Cache">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="false">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="오션투유">
+	<meta property="og:description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 판매기록 GO.CO.KR 오션투유">
+	<meta property="og:image" content="http://img.go.co.kr/tournspa.ico?ver=20170125183914">
+	<meta property="og:url" content="http://www.go.co.kr">
+
+	<meta name="author" content="GO.CO.KR 오션투유">
+	<meta name="description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 판매기록 GO.CO.KR 오션투유">
+	<meta name="classification" content="GO.CO.KR 오션투유">
+	<meta name="keywords" content="판매기록 GO.CO.KR 오션투유">
+
+	<link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css?v=1516775098" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css?v=1516775098" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/task/room_layout.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/own/common.js?ver=20180124152458"></script>
+
+</head>
+
+<body cz-shortcut-listen="true">
+	<div id="headerW">
+		<div class="header">
+			<h1><a href="/"><img src="http://img.go.co.kr/go/logo_ocean.jpg"></a></h1>
+			<div class="snb">
+				<span class="user">오션투유</span>
+				<a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav-bar" style="z-index: 3; position: relative; top: 0px;">
+		<ul class="nav" style="height: 50px; top: 0px;">
+			<li>
+				<a href="reserve.php">판매기록</a>
+				<ul class="dep2-menu">
+					<li><a href="reserve.php">판매목록</a></li>
+					<li><a href="reserve.php?e=Y">이벤트 판매목록</a></li>
+					<li><a href="chkin1.php">투숙자 리스트</a></li>
+					<li><a href="etc.php">부대시설 현황</a></li>
+				</ul>
+			</li>
+			<li class="on">
+				<a href="sale1.php">객실관리</a>
+				<ul class="dep2-menu">
+					<li><a href="sale1.php">요금</a></li>
+					<li><a href="sale3.php">현황</a></li>
+					<li><a href="room.php">관리</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="room_day.php">판매현황</a>
+				<ul class="dep2-menu">
+					<li><a href="room_day.php">객실 일별</a></li>
+					<li><a href="room_month.php">객실 월별</a></li>
+
+					<li><a href="agency_day.php">판매채널 일별(결제)</a></li>
+					<li><a href="agency_month.php">판매채널 월별(결제)</a></li>
+					<li><a href="agency_day.php?a=1">판매채널 일별(투숙)</a></li>
+					<li><a href="agency_month.php?a=1">판매채널 월별(투숙)</a></li>
+
+					<li><a href="etc_day.php">부대시설 일별</a></li>
+					<li><a href="etc_month.php">부대시설 월별</a></li>
+				</ul>
+			</li>
+			<li><a href="info.php">호텔정보</a></li>
+		</ul>
+	</div>
+
+	<div id="top_mar" style="z-index: 9999; display: none;"></div>
+
+	<div id="wrapper">
+		<!--180124 type2 클래스 제거-->
+		<div id="container">
+			<!--180124 width:99% 제거-->
+			<div id="alert_info" style="position: relative; top: 0px; z-index: 2;">
+				<span>모든 예약건수가 확인되었습니다.</span> &nbsp; <span class="alert_btn2"><a href="javascript:reserve.add_rsv()">현장 예약하기 &gt;</a></span>
+				<span class="alert_tel">시설담당자 : <strong>임우석 차장 &nbsp; | &nbsp; 010-8817-1634 </strong> (24시간 통화가능)</span>
+			</div>
+			
+			<!--180124 게시글4개 노출 그 이상은 스크롤-->
+			<div class="clr"></div>
+			<div class="hotPostsArea">
+				<table class="hpTable">
+					<colgroup>
+						<col class="nth-1">
+						<col class="nth-2">
+						<col class="nth-3">
+						<col class="nth-4">
+						<col class="nth-5">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>43332112</td>
+							<!--180124 윈도우팝업 새창으로 열기-->
+							<td class="ta-left"><a href="javascript: window.open('winPop.html', '_blank', 'width=1300,height=720')" class="td-a">제목 입력 내용</a></td>
+							<td>작성자6</td>
+							<td>2017/12/25</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>43332111</td>
+							<td class="ta-left"><a href="" class="td-a">제목 입력 내용<span class="fc-1">[4]</span></a></td>
+							<td>작성자6</td>
+							<td>2017/12/25</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>43332111</td>
+							<td class="ta-left"><a href="" class="td-a">제목 입력 내용</a></td>
+							<td>작성자6</td>
+							<td>2017/12/25</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>4333221</td>
+							<td class="ta-left"><a href="" class="td-a">제목 입력 내용</a></td>
+							<td>작성자6</td>
+							<td>2017/12/25</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>4333221</td>
+							<td class="ta-left"><a href="" class="td-a">제목 입력 내용</a></td>
+							<td>작성자6</td>
+							<td>2017/12/25</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>4333221</td>
+							<td class="ta-left"><a href="" class="td-a">제목 입력 내용</a></td>
+							<td>작성자6</td>
+							<td>2017/12/25</td>
+							<td>14</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--끝-->
+			
+			<!--180124 padding-top: 60px 제거-->
+			<div class="current" style="clear: left;">
+				<a href="sale1.php?syear=2017&amp;smonth=12&amp;r=&amp;z=&amp;v="><span class="btn">◀</span></a>
+				<span class="mo">2018년 &nbsp;1월</span>
+				<a href="sale1.php?syear=2018&amp;smonth=02&amp;r=&amp;z=&amp;v="><span class="btn">▶</span></a>
+			</div>
+			<p style="float:right">
+				<button type="button" class="btn m-t-xs" style="background: #3d5696; color: #fff;" onclick="page.layer(&quot;event&quot;, &quot;&quot;)">이벤트 객실관리</button>
+				<button type="button" class="btn m-t-xs" style="background: #3d5696; color: #fff;" onclick="page.layer(&quot;soldout&quot;, &quot;&quot;)">이벤트 객실마감</button>
+				<button type="button" class="btn m-t-xs" style="background: #3d5696; color: #fff;" onclick="reserve.add_rsv()">현장 예약하기</button>
+			</p>
+			
+			
+		</div>
+
+		
+	</div>
+</body>
+
+</html>

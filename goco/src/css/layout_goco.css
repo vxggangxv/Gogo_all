@@ -3,8 +3,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 input, select, option, textarea { font-family: Nanum Gothic, 나눔고딕, NanumGothicWeb, 맑은 고딕, Malgun Gothic, 돋움, Dotum, sans-serif; font-size: 12px; color: #000; }
 
-.hidden {width:0; height:0; margin:0; padding:0; overflow:hidden; line-height:0; font-size:0; visibility:hidden; position:absolute; left:0; top:0}
-
 #review_t .link a:link, #review_t .link a:visited { text-decoration: none; color: #0299d8; font-size: 11px; }
 
 #review_t .link a:hover, #review_t .link a:active { text-decoration: none; color: #0299d8; font-size: 11px; }
@@ -5869,7 +5867,7 @@ ul.bjqs-controls.v-centered li.bjqs-prev a { left: 0; }
 
 #reser_pop2 .voucher_t .bg .ment { margin: auto; width: 690px; height: 54px; margin-top: 20px; font-size: 13px; line-height: 1.6; letter-spacing: -0.8px; color: #2f2e2e; text-align: center; background: url(http://img.go.co.kr/mail_voucher_011.jpg) no-repeat; }
 
-#headerWrap { position: relative; margin: auto; width: 1064px; height: 100px; }
+#headerWrap { position: relative; margin: auto; width: 1100px; height: 100px; }
 
 #headerWrap .header { width: 100%; }
 
@@ -5881,6 +5879,12 @@ ul.bjqs-controls.v-centered li.bjqs-prev a { left: 0; }
 
 #headerWrap .header .searchBox { float: left; margin-left: 70px; margin-top: 25px; width: 447px; height: 45px; letter-spacing: -0.3px; background: url(http://img.go.co.kr/search_inputBG.png) no-repeat; }
 
+#headerWrap .header .searchBox .select, 
+#headerWrap .header .searchBox .searchInput,
+#headerWrap .header .searchBox > a {float: left; position: relative;}
+#headerWrap .header .searchBox .select, 
+#headerWrap .header .searchBox .searchInput {top: 13px;}
+
 #headerWrap .header .searchBox .select { margin-left: 15px; }
 
 #headerWrap .header .searchBox .select a { color: #6d6d6d; }
@@ -5889,7 +5893,7 @@ ul.bjqs-controls.v-centered li.bjqs-prev a { left: 0; }
 
 #headerWrap .header .searchBox .searchInput { margin-left: 15px; width: 220px; height: 31px; }
 
-#headerWrap .header .searchBox .searchInput .search_keyword { outline: none; display: inline-block; width: 220px; border: 0 none; letter-spacing: -0.3px; font-size: 13px; color: #656565; }
+#headerWrap .header .searchBox .searchInput .search_keyword { outline: none; display: inline-block; width: 220px; border: 0 none; letter-spacing: -0.3px; font-size: 13px; color: #656565; /* position: relative; top: 8px; */}
 
 #headerWrap .header .menu { float: right; margin-top: 40px; }
 
@@ -7956,29 +7960,49 @@ table.prize_list tbody th { width: 150px; padding: 10px; font-weight: bold; text
 .mainBox02_wrapper .mainBox02 {position: relative; margin: auto; width: 1002px;}
 
 .mainBox02_wrapper .mainBox02 .localRecommend { float: left; margin-bottom: 70px; width: 676px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal { position: relative; float: left; width: 676px; border-bottom: 3px solid #6d3916; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal h3 { float: left; padding-bottom: 10px; font-size: 20px; font-weight: 800; color: #383431; letter-spacing: -1px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local { float: right; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local > li { float: left; width: 43px; height: 40px; line-height: 39px; text-align: center; background: #fff; color: #595858; font-size: 15px; font-weight: 600; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local > li > a { float: left; width: 43px; height: 40px; line-height: 39px; color: #595858; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local > li > a:hover { float: left; width: 43px; height: 40px; line-height: 39px; background: #6d3916; color: #fff; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local .on { float: left; width: 43px; height: 40px; line-height: 39px; background: #6d3916; color: #fff; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local .sGnbArea2 { display: none; position: absolute; top: 40px; z-index: 9; width: 126px; background-color: #fff; border: 1px solid #dadada; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local .sGnbArea2 ul li a { float: left; display: block; font-size: 13px; width: 63px; height: 30px; line-height: 30px; font-weight: 400; color: #595858; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local .sGnbArea2 ul li a:hover { display: block; background: #dadada; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .titleLocal .local .on2 .sGnbArea2 { display: block; }
 
 .mainBox02_wrapper .mainBox02 .localRecommend .photo { position: relative; float: left; width: 676px; height: 285px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .icon { position: absolute; top: 0; left: 15px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .slideBtn { position: absolute; top: 10px; right: 15px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .prevBtn { position: absolute; top: 100px; left: 15px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .nextBtn { position: absolute; top: 100px; right: 15px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .txtBox { position: absolute; bottom: 0; width: 676px; height: 45px; box-sizing: border-box; border: 1px solid #dfdddf; background: #fff; opacity: 0.9; filter: alpha(opacity=88); }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .txtBox .name { padding-left: 10px; font-size: 16px; font-weight: 800; line-height: 40px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .txtBox .localName { font-size: 14px; color: #595858; font-weight: 600; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend .photo .txtBox .price { float: right; padding-right: 10px; font-size: 20px; font-weight: 800; color: #fa6b0a; line-height: 40px; }
 
 .mainBox02_wrapper .mainBox02 .localRecommend .photo table a:hover { border: 1px solid #6d3916; }
+
 
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global {position: relative; width: 1002px; margin: 0 auto;}
@@ -7989,40 +8013,63 @@ table.prize_list tbody th { width: 150px; padding: 10px; font-weight: bold; text
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local { margin: auto; width: 700px; }
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local > li { float: left; width: 100px; height: 40px; line-height: 39px; text-align: center; color: #595858; font-size: 15px; font-weight: 600; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local > li > a {display: block; width: 100%; height: 100%; line-height: 39px; color: #595858; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local > li > a:hover {background: #6d3916; color: #fff; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local .on {background: #6d3916; color: #fff; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local .sGnbArea2 { display: none; position: absolute; top: 82px; z-index: 9; width: 98px; background-color: #fff; border: 1px solid #6d3916; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local .sGnbArea2 ul li a { float: left; display: block; font-size: 13px; width: 98px; height: 30px; line-height: 30px; font-weight: 400; color: #595858; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local .sGnbArea2 ul li a:hover { display: block; background: #dadada; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local .on2 .sGnbArea2 { display: block; }
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list {padding-bottom: 40px; width: 1002px; margin: 0 auto;}
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .btn { float: left; width: 100%; padding: 10px 0; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .btn a { float: right; display: block; margin-right: 25px; width: 72px; height: 23px; background: url(http://img.go.co.kr/btn_mainLocal_more.png) no-repeat; background-position: 100% 0; text-indent: -99999px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .btn a:hover { float: right; display: block; margin-right: 25px; width: 72px; height: 23px; background: url(http://img.go.co.kr/btn_mainLocal_more.png) no-repeat; background-position: 100% 100%; text-indent: -99999px; }
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo { clear: both; margin: auto; width: 955px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li { position: relative; float: left; width: 220px; background: #fff; border: 1px solid #d3d3d3; box-sizing: border-box; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li:hover { border: 1px solid #ff610a; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li .label { position: absolute; right: 5px; top: 5px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo .m_l20 { margin-left: 25px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo p { padding: 5px; font-weight: 800; font-size: 14px; line-height: 14px; }
+
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo .price { padding: 0 5px 5px; font-weight: 600; color: #f97821; }
 
 .mainBox02_wrapper .mainBox02 .mainLanding { float: right; margin-bottom: 70px; width: 292px; }
+
 .mainBox02_wrapper .mainBox02 .mainLanding .photo { position: relative; width: 292px; height: 285px; }
+
 .mainBox02_wrapper .mainBox02 .mainLanding .photo .txtBox { position: absolute; bottom: 0; width: 292px; height: 45px; text-align: center; line-height: 40px; box-sizing: border-box; border: 1px solid #dfdddf; background: #fff; opacity: 0.9; filter: alpha(opacity=88); }
 
 .mainBox02_wrapper .mainBox02 .mainTicket { float: right; margin-bottom: 70px; width: 292px; }
+
 .mainBox02_wrapper .mainBox02 .mainTicket .title { float: left; width: 292px; }
+
 .mainBox02_wrapper .mainBox02 .mainTicket .title h3 { float: left; padding-bottom: 10px; font-size: 20px; font-weight: 800; color: #383431; letter-spacing: -1px; }
+
 .mainBox02_wrapper .mainBox02 .mainTicket .title .slideBtn { float: right; }
 
 .mainBox02_wrapper .mainBox02 .mainTicket .photo { position: relative; float: left; padding-top: 25px; width: 292px; height: 263px; background: #f97821; text-align: center; }
+
 .mainBox02_wrapper .mainBox02 .mainTicket .photo a { color: #fff; }
+
 .mainBox02_wrapper .mainBox02 .mainTicket .photo .name { padding-top: 10px; line-height: 20px; font-size: 14px; font-weight: 800; }
+
 .mainBox02_wrapper .mainBox02 .mainTicket .photo .price { color: #fff; font-size: 22px; font-weight: 800; }
 
 .mainBox02_wrapper .mainBox02 .themeRoom {margin: 0 auto; width: 1002px; }

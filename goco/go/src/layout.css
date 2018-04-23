@@ -47,7 +47,9 @@ textarea[readonly] {
 
 /** layout **/
 #wrapper{position:relative; min-width: 1450px; width:100%; margin-top:20px; letter-spacing:-0.5px; padding-bottom:60px; floaT:left }
-#wrapper #container{margin:auto; width:1450px; }
+#wrapper #container{margin: 0 auto;  width:1450px; /* margin-left: 20px; */}
+#wrapper #container.type2 {width: auto; margin-left: 20px;}
+/* #wrapper #agency {margin-left: 20px;} */
 
 h3{floaT:left; font-size:18px; font-weight:bold; margin-top:30px; margin-bottom:15px}
 h3 .stxt{font-size:12px; color:#717171; margin-left:6px; font-weight:300}
@@ -167,7 +169,8 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #loginW{position:relative; width:100%; }
 #loginW .login{margin:auto; width:880px}
 #loginW .login h1{text-align:center; margin-top:120px}
-#loginW .login .box{width:860px; border:10px solid #e5e5e5; height:310px; margin-top:50px; background:#fff}
+#loginW .login h1.join {text-align:center; margin-top:30px}
+#loginW .login .box{width:860px; border:10px solid #e5e5e5; height:310px; margin-top:40px; background:#fff}
 #loginW .login .box .left{float:left}
 #loginW .login .box .left p{text-align:center; font-size:30px; font-weight:bold; width:330px; margin-top:75px; margin-bottom:20px; letter-spacing:-0.5px;}
 #loginW .login .box .left .loginD_btn{width:232px; height:48px; border:none; color: #f85d04; font-size:16px; font-weight:bold; cursor: pointer; text-align:center; line-height:2.9; background:url(http://img.go.co.kr/go/login_btn2.jpg); letter-spacing:-1px; margin-left:45px}

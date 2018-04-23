@@ -1,0 +1,377 @@
+<html lang="ko">
+
+<head>
+	<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta http-equiv="Cache-Control" content="No-Cache">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="expire" content="-1">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/common_ver2.js?ver=20170809165103"></script>
+	<script>
+		var base_url = "go.co.kr";
+		var burl = "go.co.kr";
+	</script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20170809165103"></script>
+	<!--- 검색시 달력에서 이용 ---->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery_ui.js"></script>
+	<!--- 달력 한글화 --->
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+	<!-- Include Date Range Picker -->
+	<script type="text/javascript" src="http://static.go.co.kr/js/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/daterangepicker.css">
+	<style src="http://code.jquery.com/jquery-1.11.2.min.js"></style>
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/mobile_layout_event.css?ver=20170809165103">
+
+</head>
+
+<body>
+	<div class="wrap_reservation-mobile" style="height:auto">
+		<div class="title">
+			<span>오션투유리조트</span> 모바일 간편예약
+		</div>
+		<div class="contents">
+			<form action="" method="">
+				<div class="labelStyle">
+					<label for="date">예약 날짜</label>
+				</div>
+				<div class="inputStyle-date">
+					<input type="text" name="sdate" id="sdate" value="" readonly="" class="hasDatepicker"> ~
+					<input type="text" name="edate" id="edate" value="" readonly="">
+				</div>
+				<!--변경내용170809 객실명 추가-->
+				<div class="labelStyle">
+					<label for="room_name">객실 명</label>
+				</div>
+				<div class="inputStyle" style="text-align:left" id="room_cntdiv">
+					<select name="room_name" id="room_name" style="width:180px">
+							<option value="">리노베이션 오션</option>
+							<option value="">일반 마운틴뷰</option>
+						</select>
+				</div>
+				<div class="labelStyle">
+					<label for="room">객실 개수</label>
+				</div>
+				<div class="inputStyle" style="text-align:left" id="room_cntdiv">
+					<select name="room_cnt" id="room_cnt" style="width:180px">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+				</div>
+				<div class="labelStyle">
+					<label for="name">고객명</label>
+				</div>
+				<div class="inputStyle">
+					<input type="text" name="username" id="username" value="">
+				</div>
+				<div class="labelStyle">
+					<label for="call">연락처</label>
+				</div>
+				<div class="inputStyle">
+					<input type="text" name="tel1" id="tel1" numberonly="true" value=""> -
+					<input type="text" name="tel2" id="tel2" numberonly="true" value=""> -
+					<input type="text" name="tel3" id="tel3" numberonly="true" value="">
+				</div>
+				<div class="labelStyle">
+					<label for="person">인원</label>
+				</div>
+				<div class="inputStyle" style="text-align:left">
+					<select name="person" id="person" style="width:180px">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4" selected="">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+				</div>
+				<div class="labelStyle">
+					<label for="mail">이메일</label>
+				</div>
+				<div class="inputStyle">
+					<input type="text" name="email1" id="email1" value=""> @ <input type="text" name="email2" id="email2" value="">
+				</div>
+				<!--변경내용170809 삭제-->
+				<!--<div class="labelStyle">
+					객실명
+				</div>
+				<div class="inputStyle">
+					<input type="text" value="마운틴뷰 콘도" readonly="">
+				</div>-->
+				<!--변경내용170809 내용변경-->
+				<div class="guide" style="margin-bottom:120px;text-align:left">
+					<span style="color:red;">
+							* 취소 시, 결제금액은 고코투어 적립금으로 전환됩니다.<br>
+							* 제공객실 : 리노베이션 오션뷰 콘도(호텔)<br>
+							※단, 이벤트 객실은 신청순서에 따른 선착순 배정이며,<br>
+							&nbsp;&nbsp;&nbsp;이후 마운틴 뷰 콘도로 배정 됩니다.<br>
+						</span>
+				</div>
+				<p style="height:100px">
+				</p>
+				<div class="button" id="goreserve"><button type="button" style="position:fixed;bottom:0px;height:75px;font-size:20px">제세공과금 및 봉사료 결제하기</button></div>
+			</form>
+		</div>
+	</div>
+
+
+	<form name="rform" id="rform" method="post" action="./event_pay.php">
+		<input type="hidden" name="name" id="r_name">
+		<input type="hidden" name="sdate" id="r_sdate">
+		<input type="hidden" name="edate" id="r_edate">
+		<input type="hidden" name="roomcnt" id="r_roomcnt">
+		<input type="hidden" name="person" id="r_person">
+		<input type="hidden" name="tel" id="r_tel">
+		<input type="hidden" name="email" id="r_email">
+		<input type="hidden" name="p_no" value="517">
+		<input type="hidden" name="options" value="13579_170518">
+		<input type="hidden" name="userid" id="userid" value="">
+	</form>
+	<!--
+<form name="rform" id="rform" method="post">
+<input type="hidden" name="r_name" id="r_name" />
+<input type="hidden" name="r_sdate" id="r_sdate" />
+<input type="hidden" name="r_edate" id="r_edate" />
+<input type="hidden" name="r_roomcnt" id="r_roomcnt" />
+<input type="hidden" name="r_person" id="r_person" />
+<input type="hidden" name="r_tel" id="r_tel" />
+<input type="hidden" name="r_email" id="r_email" />
+<input type="hidden" name="p_no" value="517" />
+<input type="hidden" name="options" value="13579_170518" />
+</form>
+-->
+
+	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	<script charset="UTF-8" type="text/javascript" src="http://s1.daumcdn.net/svc/attach/U03/cssjs/postcode/1495012223804/170517.js"></script>
+	<script type="text/javascript">
+		function datereload() {
+			$.ajax({
+				url: "./state.php",
+				type: "post",
+				data: "mode=event_chkdate&p_no=517&room_type=2299",
+				success: function(e) {
+
+					var tmp = e.split("|");
+					var disabledDays = new Array();
+					for (var j = 0; j < tmp.length; j++) {
+						disabledDays.push(tmp[j]);
+					}
+
+					$("#sdate").datepicker({
+						dateFormat: "yy-mm-dd",
+						showAnim: "slideDown",
+						dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+						minDate: 0,
+						maxDate: "2017-07-25",
+						changeMonth: true,
+						changeYear: true,
+						beforeShowDay: function(date) { &
+							nbsp; & nbsp; & nbsp; & nbsp;
+							var m = date.getMonth(),
+								d = date.getDate(),
+								y = date.getFullYear(); &
+							nbsp; & nbsp; & nbsp; & nbsp;
+							for (i = 0; i < disabledDays.length; i++) { &
+								nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp;
+								if ($.inArray(y + '-' + (m + 1) + '-' + d, disabledDays) != -1) { &
+									nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp;
+									return [false]; &
+									nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp;
+								} &
+								nbsp; & nbsp; & nbsp; & nbsp;
+							} &
+							nbsp; & nbsp; & nbsp; & nbsp;
+							return [true];
+						},
+						onSelect: function() {
+							$.ajax({
+								type: "post",
+								url: "./state.php",
+								data: "mode=nextdate&sdate=" + this.value,
+								success: function(data) {
+									var re = data.split("||");
+									$("#edate").val(re[0]);
+									$("#edate").datepicker("option", "minDate", "+" + re[1] + "d");
+
+								}
+							});
+						},
+						onClose: function(selectedDate) {
+							$("#edate").datepicker("option", "maxDate", selectedDate);
+						}
+					});
+				}
+			});
+		}
+
+		function roomcnt_chk(sdate, p_no) {
+
+			$.ajax({
+				type: "post",
+				url: "./state.php",
+				data: "mode=event_roomchk&sdate=" + sdate + "&p_no=" + p_no,
+				success: function(data) {
+					$("#room_cntdiv").html(data);
+				}
+			});
+		}
+
+		// 특정일 선택막기
+		function disableAllTheseDays(date) { &
+			nbsp; & nbsp; & nbsp; & nbsp;
+			var m = date.getMonth(),
+				d = date.getDate(),
+				y = date.getFullYear(); &
+			nbsp; & nbsp; & nbsp; & nbsp;
+			for (i = 0; i < disabledDays.length; i++) { &
+				nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp;
+				if ($.inArray(y + '-' + (m + 1) + '-' + d, disabledDays) != -1) { &
+					nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp;
+					return [false]; &
+					nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp;
+				} &
+				nbsp; & nbsp; & nbsp; & nbsp;
+			} &
+			nbsp; & nbsp; & nbsp; & nbsp;
+			return [true];
+		}
+
+		$(function() {
+			datereload();
+
+			/*
+	$("#edate").datepicker({
+		dateFormat:"yy-mm-dd",
+		showAnim:"slideDown",
+		dayNamesMin:["일","월","화","수","목","금","토"],
+		minDate: 0,
+		changeMonth: true,
+		changeYear: true
+	});
+
+	$("#sdate").datepicker({
+		dateFormat:"yy-mm-dd",
+		showAnim:"slideDown",
+		dayNamesMin:["일","월","화","수","목","금","토"],
+		minDate: 0,
+		maxDate: "2017-07-25",
+		changeMonth: true,
+		changeYear: true,
+		beforeShowDay: disableAllTheseDays,
+		onSelect: function() {
+			$.ajax({
+				type: "post",
+				url: "./state.php",
+				data: "mode=nextdate&sdate="+this.value,
+				success: function(data) {
+					var re = data.split("||");
+					$("#edate").val(re[0]);
+					$("#edate").datepicker("option", "minDate", "+"+re[1]+"d");
+				}
+			});
+		},
+		onClose: function( selectedDate ) {    
+			$("#edate").datepicker( "option", "maxDate", selectedDate );
+		}   
+	});*/
+
+			$("#goreserve").click(function() {
+
+				if (!$("#sdate").val()) {
+					alert("예약하실 날짜를 선택해주세요.");
+					$("#sdate").focus();
+					return;
+				}
+
+				if (!$("#username").val()) {
+					alert("성함을 입력해주세요.");
+					$("#username").focus();
+					return;
+				}
+
+				if (!$("#tel1").val()) {
+					alert("연락처를 입력해주세요.");
+					$("#tel1").focus();
+					return;
+				}
+
+				if (!$("#tel2").val()) {
+					alert("연락처를 입력해주세요.");
+					$("#tel2").focus();
+					return;
+				}
+
+				if (!$("#tel3").val()) {
+					alert("연락처를 입력해주세요.");
+					$("#tel3").focus();
+					return;
+				}
+
+				if (!$("#email1").val()) {
+					alert("이메일을 입력해주세요.");
+					$("#email1").focus();
+					return;
+				}
+
+				if (!$("#email2").val()) {
+					alert("이메일을 입력해주세요.");
+					$("#email2").focus();
+					return;
+				}
+
+
+				var tel = $("#tel1").val() + "-" + $("#tel2").val() + "-" + $("#tel3").val();
+				var email = $("#email1").val() + "@" + $("#email2").val();
+
+				$("#r_name").val($("#username").val());
+				$("#r_sdate").val($("#sdate").val());
+				$("#r_edate").val($("#edate").val());
+				$("#r_roomcnt").val($("#room_cnt").val());
+				$("#r_person").val($("#person").val());
+				$("#r_email").val(email);
+				$("#r_tel").val(tel);
+
+
+				$("#rform").submit();
+				clickcount('reserve');
+			});
+
+			$(document).on("keyup", "input:text[numberOnly]", function() {
+				$(this).val($(this).val().replace(/[^0-9]/gi, ""));
+			});
+		});
+
+		function clickcount(str) {
+			$.ajax({
+				url: "./state.php",
+				type: "post",
+				data: "mode=oceane_click&p_no=517&t_gubun=" + str + "&options=13579_170518",
+				success: function(e) {
+
+				}
+			});
+		}
+	</script>
+
+	<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+</body>
+<whale translate="no"></whale>
+
+</html>

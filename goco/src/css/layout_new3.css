@@ -2,10 +2,10 @@
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 
-body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.5px; background-color:#fff}
+body {font-family: 'Nanum Gothic', '나눔고딕', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.5px; background-color:#fff}
 a:link, a:visited {text-decoration:none; color:#000}
 a:hover, a:active {text-decoration:none; color:#000}
-input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
+input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
 
 /*최상단 배너*/
 #bannerTop {position:relative; width:100%; height:80px; background:#0090e5; text-align:center}
@@ -22,7 +22,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #top .link {width:1002px; height:40px; margin:auto; padding:12px 0}
 
 #top2 {width:100%; padding-top:7px; height:30px; color:#4b4b4c; background:#fff; border-bottom:1px solid #e2e2e2}
-#top2 .link {margin:auto; width:1002px; font-size:12px}
+#top2 .link {margin:auto; width:1010px; font-size:12px}
 #top2 .link a {color:#4b4b4c}
 #top2 .link a:hover {color:#fd5a0d}
 #top2 .price a {color:#fff}
@@ -599,7 +599,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #wrapper #shop_wrap .info .info_t {width:430px}
 #wrapper #shop_wrap .info .info_t th {letter-spacing:-0.1px; height:30px; font-size:11px; font-family:Dotum,'돋움'; text-align:left}
 #wrapper #shop_wrap .info .info_t td {letter-spacing:-0.1px; height:30px; font-size:12px; font-family:Dotum,'돋움'; text-align:left}
-#wrapper #shop_wrap .info .info_t .name {padding-bottom:30px; font-size:18px; font-weight:600; font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic'}
+#wrapper #shop_wrap .info .info_t .name {padding-bottom:30px; font-size:18px; font-weight:600; font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', sans-serif;}
 #wrapper #shop_wrap .info .info_t .price {font-family:Tahoma; color:#737479; font-weight:bold; font-size:20px}
 #wrapper #shop_wrap .info .info_t .discount {font-family:Tahoma; color:#ff0000; font-weight:bold; font-size:20px}
 #wrapper #shop_wrap .info .info_t .line {border-bottom:1px solid #dedede}
@@ -1315,20 +1315,20 @@ input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'Nanu
 #popup_alert2 .alert_t td {height:25px}
 #popup_alert2 .alert_t th {height:25px; font-weight:600}
 
-#popup_alert3 {z-index:1000; float:left; width:509px; margin:auto; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'}
+#popup_alert3 {z-index:1000; float:left; width:509px; margin:auto; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
 
 #popup_alert3 .alert_wrap .alert_t {margin:auto; width:509px; background-color:#f4f3f3}
 #popup_alert3 .alert_wrap .alert_t th {font-weight:600}
 #popup_alert3 .alert_wrap .notice {padding:30px 0; background:#fff; text-align:center}
 
-#popup_alert3 {z-index:1000; float:left; width:509px; margin:auto; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'}
+#popup_alert3 {z-index:1000; float:left; width:509px; margin:auto; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
 
 #popup_alert3 .alert_wrap .alert_t {margin:auto; width:509px; background-color:#f4f3f3}
 #popup_alert3 .alert_wrap .alert_t th {font-weight:600}
 #popup_alert3 .alert_wrap .notice {padding:30px 0; background:#fff; text-align:center}
 
 /*footer*/
-#footer {clear:both; float:left; width:100%; height:130px; background-color:#fff; line-height:1.7}
+#footer {clear:both; float:left; width:100%; background-color:#fff; line-height:1.7}
 #footer .wrap {width:1002px; margin:auto}
 #footer .wrap .escro {float:left; width:402px; padding-top:7px}
 #footer .wrap .txt {float:left; width:500px; font-size:11px; color:#7f7f7f; padding-top:10px}
@@ -1677,7 +1677,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 
 
 /*웹사이트 개선 2차*/
-#rsv_wrapper {clear:both; float:left; margin-top:20px; margin-left:25px; width:954px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'}
+#rsv_wrapper {clear:both; float:left; margin-top:20px; margin-left:25px; width:954px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
 #rsv_wrapper .price  {padding-left:10px; color:#ff4445; font-weight:bold; font-size:16px; letter-spacing:-0.3px; }
 #rsv_wrapper .pl15 {padding-left:15px}
 #rsv_wrapper .left {text-align:left}
@@ -1702,7 +1702,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 
 
 #cal_wrap2 .cal_section {float:left; width:384px; height:100%; min-height:520px; text-align:left; font-size:11px; font-family:Dotum,'돋움'; color:#747c84}
-#cal_wrap2 .cal_section .step_01{padding-top:15px; padding-left:10px; width:374px; height:35px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic'; background-color:#ff7a2d; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
+#cal_wrap2 .cal_section .step_01{padding-top:15px; padding-left:10px; width:374px; height:35px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; background-color:#ff7a2d; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
 #cal_wrap2 .cal_section .date {margin:auto; padding-top:15px; width:373px; height:35px; position:relative; margin-bottom:10px; text-align:center}
 #cal_wrap2 .cal_section .date .month {font-family:Tahoma; font-weight:bold; font-size:22px; color:#4f4f4f; text-align:center}
 #cal_wrap2 .cal_section .date .left{position:absolute; left:0px; font-size:22px}
@@ -1718,11 +1718,11 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #cal_wrap2 .cal_section .calendar .pric_ok_ov{background-color:#fcd9db}
 #cal_wrap2 .cal_section .calendar .pric_normal_ov{background-color:#e0fafd}
 #cal_wrap2 .cal_section .calendar .pric_ok_ov2{background-color:#fff600; color:#006b77}
-#cal_wrap2 .cal_section .calendar .pric_normal_ov2{background-color:#fff600; color:#006b77}
+#cal_wrap2 .cal_section .calendar .pric_normal_ov2{background-color:#fff600 !important; color:#006b77}
 #cal_wrap2 .cal_section .c-note{margin:auto; width:373px; line-height:1.2; letter-spacing:-1px}
 
 #cal_wrap2 .cal_section_solo {float:left; width:660px; min-height:520px; text-align:left; font-size:11px; font-family:Dotum,'돋움'; color:#747c84}
-#cal_wrap2 .cal_section_solo .step_01{padding-top:15px; padding-left:10px; width:660px; height:35px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; background-color:#ff7a2d; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
+#cal_wrap2 .cal_section_solo .step_01{padding-top:15px; padding-left:10px; width:660px; height:35px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; background-color:#ff7a2d; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
 #cal_wrap2 .cal_section_solo .date {margin:auto; padding-top:15px; width:373px; height:35px; position:relative; margin-bottom:10px; text-align:center}
 #cal_wrap2 .cal_section_solo .date .month {font-family:Tahoma; font-weight:bold; font-size:22px; color:#4f4f4f; text-align:center}
 #cal_wrap2 .cal_section_solo .date .left{position:absolute; left:0px; font-size:22px}
@@ -1743,7 +1743,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #cal_wrap2 .cal_section_solo .c-note img{margin-right:2px}
 
 #cal_wrap2 .cal_day2 {float:left; width:280px; text-align:left; font-size:12px; font-family:Dotum,'돋움'; color:#747c84}
-#cal_wrap2 .cal_day2 .step_02{padding-top:15px; padding-left:10px; width:270px; height:35px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; background-color:#ec5700; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
+#cal_wrap2 .cal_day2 .step_02{padding-top:15px; padding-left:10px; width:270px; height:35px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; background-color:#ec5700; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
 #cal_wrap2 .cal_day2 .room_info2{width:280px;padding:0}
 #cal_wrap2 .cal_day2 .room_info2 table{width:100%;}
 #cal_wrap2 .cal_day2 .room_info2 table th{padding-left:10px}
@@ -1767,7 +1767,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 *:first-child+html .checkbox .chk{position:absolute; z-index:1; opacity:0}
 
 #cal_wrap2 .cal_result {float:left; width:279px; text-align:left; font-size:12px; font-family:Dotum,'돋움'; color:#747c84}
-#cal_wrap2 .cal_result .step_03{padding-top:15px; padding-left:10px; width:273px; height:35px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; background-color:#bf2d00; border-right:1px solid #bf2d00; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
+#cal_wrap2 .cal_result .step_03{padding-top:15px; padding-left:10px; width:273px; height:35px; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; background-color:#bf2d00; border-right:1px solid #bf2d00; font-weight:600; color:#ffffff; font-size:17px; letter-spacing:-1px}
 #cal_wrap2 .cal_result .ccheck_table {margin:auto; margin-top:15px; width:245px; padding:10px}
 #cal_wrap2 .cal_result .ccheck_table td {padding-left:5px; letter-spacing:-0.3px}
 #cal_wrap2 .cal_result .price{margin:auto; margin-top:10px; padding-top:5px; width:246px; height:50px; letter-spacing:-0.5px; text-align:center; background-color:#ffffff; border:2px solid #d1d5db; font-weight:bold; font-size:11px;}
@@ -1776,9 +1776,9 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #cal_wrap2 .cal_result .btn{margin:auto; margin-top:10px; margin-bottom:30px; width:260px;float:none}
 #cal_wrap2 .pkg_sale_text{text-align:center; letter-spacing:-0.5px}
 #cal_wrap2 .pkg_sale_text span{font-weight:bold; color:#ff1200}
-#cal_wrap2 .price_text{text-align:center; margin-top:5px; letter-spacing:-0.5px;  font-size:11px; font-family:Dotum,'돋움'; color: #888}
+#cal_wrap2 .price_text{text-align:center; margin-top:5px; letter-spacing:-0.5px;  font-size:11px; font-family:Dotum,'돋움', sans-serif; color: #888}
 
-#cal_wrap2 .cal_result .allprice {margin:auto; margin-top:10px; padding:5px 0 10px 0; width:244px; letter-spacing:-0.5px; font-weight:600; font-size:14px; text-align:center; background-color:#ffffff; border:3px solid #d1d5db; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic'; color:#222}
+#cal_wrap2 .cal_result .allprice {margin:auto; margin-top:10px; padding:5px 0 10px 0; width:244px; letter-spacing:-0.5px; font-weight:600; font-size:14px; text-align:center; background-color:#ffffff; border:3px solid #d1d5db; font-family: '나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; color:#222}
 #cal_wrap2 .cal_result .allprice .summary {font-size:12px; font-weight:400}
 #cal_wrap2 .cal_result .allprice .num {vertical-align:-2px; font-weight:800; font-size:25px; color:#ff1200; letter-spacing:-1px}
 #cal_wrap2 .cal_result .allprice .won {font-size:16px}
@@ -3471,7 +3471,7 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 #reser_pop2 .voucher_t .bg {float:left; margin-left:9px; width:717px; text-align:left; background:url(http://img.go.co.kr/mail_voucher_03.jpg) repeat-y}
 #reser_pop2 .voucher_t .bg .reserInfo {margin:auto; width:690px; height:115px;text-align:left; background:url(http://img.go.co.kr/mail_voucher_04.jpg) no-repeat; font-size:12px; color:#461c03}
 #reser_pop2 .voucher_t .bg .reserInfo .tit {padding-left:20px; font-weight:bold}
-#reser_pop2 .voucher_t .bg .reserInfo2 {margin:auto; width:690px; margin-top:20px; text-align:left; border:1px solid #d5d5d5; font-size:12px; color:#461c03; line-height:1.6}
+#reser_pop2 .voucher_t .bg .reserInfo2 {margin:auto; width:690px; /*margin-top: 20px;*/ text-align:left; border:1px solid #d5d5d5; font-size:12px; color:#461c03; line-height:1.6}
 #reser_pop2 .voucher_t .bg .reserInfo2 th {width:125px; padding-left:5px; border-right:1px solid #d5d5d5; border-bottom:1px solid #d5d5d5; background-color:#edecea}
 #reser_pop2 .voucher_t .bg .reserInfo2 td {width:465px; padding:5px; border-bottom:1px solid #d5d5d5}
 #reser_pop2 .voucher_t .bg .notice {margin:auto; margin-top:20px; width:690px; text-align:left; color:#bd4301; line-height:1.6; font-size:12px}
@@ -3484,10 +3484,11 @@ background:url(http://img.go.co.kr/checkbox_img.gif) no-repeat 0 0;background-si
 /*메인 개선 201512*/
 option {font-size:13px}
 
-#headerWrap{position:relative; margin:auto; width:1002px; height:100px}
+#headerWrap{position:relative; margin:auto; width:1010px; height:100px}
 
 #headerWrap .header{width:100%}
-#headerWrap .header .logo {float:left; margin-top:18px}
+#headerWrap .header .logo {position: relative; float:left; margin-top:16px; width: 155px;}
+#headerWrap .header .logo > a > img {/* width: 100%; */}
 #headerWrap .header .bn_top {position:relative; float:right; margin-top:14px}
 #headerWrap .header .bn_top .btn {position:absolute; bottom:0; right:0; width:29px; height:15px; z-index:999}
 
@@ -3611,20 +3612,19 @@ width: 250px; line-height: normal; position: relative; top: 1px;}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .total h3 {font-size:18px; line-height:20px; font-weight:800; color:#6d3916}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .total .comment {margin-top:20px; letter-spacing:-0.3px; color:#595858; font-size:13px}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country {width:117px; height:30px; font-weight:800; font-size:13px; line-height:30px}
-#gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country a {display:block; width:117px; height:30px; color:#383431; line-height:30px}
+#gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country a {display:none; width:117px; height:30px; color:#383431; line-height:30px}
 #gnbWrap .gnb #gnb_sub_globalTotal .globalTotal_t .country a:hover {background:#dadada;}
-
-#gnbWrap .gnb .all .subMenu .totalWrap {margin:0 auto; width:1002px; padding:20px 0; border-left:1px solid #dfdddf; border-right:1px solid #dfdddf; background:#fff}
-#gnbWrap .gnb .all .subMenu .totalWrap .totalTxt {float:left; padding:10px 0; border-bottom:2px solid #414141; width:1002px; height:40px; background:#ffede3; font-weight:800; color:#6d3916; font-size:18px; text-align:center}
-#gnbWrap .gnb .all .subMenu .totalWrap .totalMenu {margin:0 auto; width:1002px; color:#414141; text-align:center; letter-spacing:-0.3px}
+#gnbWrap .gnb .all .subMenu .totalWrap {padding:20px 0; margin: 0 auto; width:1002px; border-left:1px solid #dfdddf; border-right:1px solid #dfdddf; background: #fff;}
+#gnbWrap .gnb .all .subMenu .totalWrap .totalTxt {float:left; padding: 10px 0; border-bottom:2px solid #414141; width:1002px; height:40px; background:#ffede3; font-weight:800; color:#6d3916; font-size:18px; text-align:center}
+#gnbWrap .gnb .all .subMenu .totalWrap .totalMenu {margin:0 auto; width:1002px; color:#414141; text-align:center; letter-spacing:-0.3px;}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu h4 {float:left; width:160px; font-weight:800; font-size:15px; letter-spacing:-1px; text-align:center}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu h4 a:hover {color:#f37720}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .customer a {float:left; width:160px; color:#e45713; font-weight:800; font-size:15px; letter-spacing:-1px; text-align:center}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .customer a:hover {color:#f37720}
-#gnbWrap .gnb .all .subMenu .totalWrap .totalMenu td {width:160px}
+/*#gnbWrap .gnb .all .subMenu .totalWrap .totalMenu td {width:160px; border: 1px solid blue;}*/
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .line_r {border-right:1px solid #dfdddf}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .spotList {float:left; width:160px}
-#gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .spotList dt {float:left; width:160px; text-align:center; font-size:14px; line-height:24px; font-weight:400}
+#gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .spotList dt {float:left; width:160px; /* text-align:center; */ font-size:14px; line-height:24px; font-weight:400;}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .spotList dt a:hover {text-decoration:underline; color:#f37720}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .spotList_local {float:left; width:160px}
 #gnbWrap .gnb .all .subMenu .totalWrap .totalMenu .spotList_local dt {float:left; padding-left:20px; width:140px; text-align:left; font-size:14px; line-height:24px; font-weight:400}
@@ -4858,7 +4858,7 @@ font-size: 15px; font-weight: 600; border-left: 1px solid #343434;}
 /* 선택자 */
 .select_search{position:relative; line-height:normal; display:inline-block; *display:inline; vertical-align:middle; background:#fff; *zoom:1;}
 .select_search *{ margin:0; padding:0; cursor:pointer; font-size:13px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif;}
-.select_search .myValue{position:relative; z-index:2; left:0; top:0; border:1px solid #d2d2d2; color:#666; line-height:19px; _line-height:normal; text-align:left; overflow:visible; background:transparent;}
+.select_search .myValue{position:relative; z-index:2; left:0; top:0; border:1px solid #d2d2d2; color:#666; line-height:19px; line-height:normal; text-align:left; overflow:visible; background:transparent;}
 .select_search .myValue.selected{ font-weight:normal;}
 .select_search.server_open .myValue,
 .select_search .myValue.outLine{ border:1px solid #999;}
@@ -4919,3 +4919,4 @@ table.prize_list td {width: 350px; padding: 10px; vertical-align: top; border-bo
 
 /* 썸네일 로고 170428 이현우 */
 #imgview_box .thumbnail_logo {position:absolute; left:15px; top:55px; width:80px !important; height:39px !important;}
+

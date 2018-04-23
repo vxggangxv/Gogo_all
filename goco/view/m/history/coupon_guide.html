@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>문서 제목</title>
+
+    <link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css" />
+    <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css" />
+    <!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
+    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">-->
+    <link rel="stylesheet" href="../../../src/css/m/history/history_m.css">
+    <link rel="stylesheet" href="../../../src/css/totalmobile.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!--<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>-->
+	<style>
+		.coupon-guide {position: fixed; z-index: 6; width: 300px; height: 208px; top: 50%; margin-top: -104px; left: 50%; margin-left: -150px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px;}
+		.coupon-guide * {letter-spacing: -0.5px; color: #303030;}
+		.coupon-guide h2 {height: 42px; font-size: 15px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
+		.coupon-guide .clsBtn {position: absolute; right: 12px;	top: 10px; display: inline-block; width: 18px; height: 18px;
+		background: url("http://img.go.co.kr/x_btn.png") no-repeat; background-size: 18px;
+		}
+		.coupon-guide > p {font-size: 14px; line-height: 1.5em; text-align: center; box-sizing: border-box; padding: 0 20px;}
+		.coupon-guide > p.nth-1 {margin-top: 25px; margin-bottom: -4px; letter-spacing: -1px;}
+		.coupon-guide > p.nth-2 {color: #ff610a; font-weight: 600; margin-top: 12px;}
+		.coupon-guide > p.nth-3 {margin-top: 20px;}
+		.coupon-guide > p.nth-3 a {display: inline-block; height: 45px; border-radius: 4px; border: 1px solid #d6d6d6; color: #403a3a; font-weight: 600; line-height: 3em; font-size: 15px;}
+		.coupon-guide > p.nth-3 .a-1 {
+			width: 35%;
+			margin-right: 20px;
+			background: #ffffff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+		}
+		.coupon-guide > p.nth-3 .a-2 {background: #ff610a; color: #fff; width: 55%;}
+	</style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="scroll_box">
+            
+            
+
+            <div class="layer-pop-bg" id="layer-pop-bg">
+                <!--조회-->
+                <div class="coupon-guide">
+                    <h2>앱 전용 할인쿠폰 안내<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#layer-pop-bg').hide();"></a></h2>
+                    <p class="nth-1">앱 결제 전용 5,000원 할인 쿠폰이 있습니다.</p>
+                    <p class="nth-2">앱에서 구매하시겠습니까?</p>
+					<p class="nth-3"><a class="a-1" href="#">아니오</a><a class="a-2" href="#">앱에서 구매</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

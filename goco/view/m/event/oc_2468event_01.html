@@ -1,0 +1,210 @@
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="expire" content="-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!-- 폰트어썸 CDN -->
+<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+<!-- jquery라이브러리 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/mobile_layout_event.css?ver=20170512142806">
+	<!--변경내용170809 css수정-->
+	<style type="text/css">
+		* {margin:0; padding:0;}
+		.wrap_information{width:100%;}
+		.wrap_information .request_btn{position:fixed; left:0; bottom:0; width:100%; height:auto; padding:10px 0; background-color:#ffffff; border-top:1px solid #dedede;}
+		.wrap_information .request_btn .btn_wrap {overflow: hidden; padding: 0 10px;} 
+		.wrap_information .request_btn a {width: 49.5%; height: 60px; padding: 0; border: 1px solid #e0e0e0; box-sizing: border-box;float:left} 
+		.wrap_information .request_btn a:nth-child(2) {margin:0 0.5%;}
+		.wrap_information .ticket{background-color:#f57c3a;}
+		.wrap_information .mobile{background-color:#23a9db;}
+		.wrap_information .qna{background-color:#3a6af5;}
+		.wrap_information .inquiry{/*background-color:#783af5;*/background-color: #3A6AF5;}
+		.wrap_information .callcenter{background-color:#3a6af5; text-align:center; line-height: 1 !important;}
+		.wrap_information .request_btn a div {display:table; width:100%; height:100%; color:#fff;}
+		.wrap_information .request_btn a div p {display:table-cell; width:100%; font-size:14px; text-align:center; line-height:1.3; vertical-align:middle;}
+		.wrap_information .request_btn a div p span {padding:0; font-weight:bold; font-size:17px;}
+		.wrap_information .request_btn a div p span.callnumber {font-size:14px;}
+		.wrap_information .callcenter .s1{color:#fff60c; font-style:normal;}
+		.pop_layer {position:fixed; left:0; top:0; right:0; bottom:0; background-color:rgba(0,0,0,.7);}
+		.pop_layer .pop_area {position:absolute; left:20px; right:20px; top:50%; border-radius:3px; background-color:#fff; -webkit-transform:translateY(-50%); transform:translateY(-50%); text-align:center;}
+		.pop_layer .pop_area .title {display:block; margin:50px 0 40px; color:#282828; font-size:20px;}
+		.pop_layer .pop_area .sec {padding:0 20px;}
+		.pop_layer .pop_area .sec ul li {display:table; width:100%; margin-top:5px;}
+		.pop_layer .pop_area .sec ul li:first-child {margin-top:0;}
+		.pop_layer .pop_area .sec ul li .lb_txt {display:table-cell; width:65px; color:#454545; font-weight:bold; text-align:left; vertical-align:middle;}
+		.pop_layer .pop_area .sec ul li div {display:table-cell; vertical-align:middle;}
+		.pop_layer .pop_area .sec ul li div input[type="text"] {height:30px; padding:5px; border:1px solid #bfbfbf; border-radius:2px; font-size:12px;
+			-webkit-appearance:none; appearance:none;}
+		.pop_layer .pop_area .sec table {width:100%; table-layout:fixed;}
+		.pop_layer .pop_area .sec table th {padding:10px 0; color:#454545; font-size:14px; text-align:left; vertical-align:top;}
+		.pop_layer .pop_area .sec table td {padding:10px 0; color:#454545; font-size:14px; text-align:center; vertical-align:top;}
+		.pop_layer .pop_area .p_btn {margin-top:40px; display:block; height:50px; border-radius:0 0 3px 3px; background-color:#c35ef8; color:#fff; font-weight:bold; font-size:16px; line-height:50px;}
+		.pop_layer .pop_area .pop_close {position:absolute; right:10px; top:10px;}
+		.pop_layer .pop_area .pop_close img {width:18px; height:18px;}
+	</style>
+<!-- 2017-05-22 -->
+</head>
+<!-- 2017-05-22 -->
+	<body><div class="wrap_information">
+		<!--변경내용170809 이미지 경로 변경-->
+		<img src="http://img.go.co.kr/mobile/landing/20170809_ocean2you-freeticket/landing_m.jpg" style="width:100%">
+		<br><br>
+		<div class="request_btn">
+			<div class="btn_wrap">
+				<!--변경내용170809 숙박상품권삭제 및 전화연결수정-->
+				<a class="mobile" href="http://m.go.co.kr/home/landing/ocean_event_reserve.php?gubun=13579_170518">
+					<div>
+						<p>모바일로 실시간<br><span>예약하기</span></p>
+					</div>
+				</a>
+				<a class="inquiry" href="tel:1600-1867">
+					<div>
+						<p>예약실 전화연결<br><span>1600-1867</span></p>
+					</div>
+				</a>
+			</div>
+		</div>
+		</div>
+		<!-- 예약사항 조회 -->
+		<div id="inquiry" class="pop_layer" style="display:none;">
+			<div class="pop_area">
+				<strong class="title">오션투유리조트<br>예약사항 조회</strong>
+				<div class="sec">
+					<ul>
+						<li>
+							<label for="username" class="lb_txt">예약자명</label>
+							<div>
+								<input type="text" placeholder="성함을 입력해주세요." name="username" id="username" style="width:100%;">
+							</div>
+						</li>
+						<li>
+							<label for="tel" class="lb_txt">연락처</label>
+							<div>
+								<input type="text" placeholder="연락처를 입력해주세요." name="tel" id="tel" style="width:100%;" maxlength="13">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<a href="javascript:reserve_chk();" class="p_btn">조회하기</a>
+				<a href="#" class="pop_close"><img src="http://img.go.co.kr/mobile/landing/20170512_ocean2you-freeticket/pop_btn_close.gif" alt=""></a>
+			</div>
+		</div>
+		<!-- // 예약사항 조회 -->
+		<!-- 예약사항 조회 안내 -->
+		<div class="pop_layer" id="reserve_list_div" style="display:none;">
+			<div class="pop_area">
+				<strong class="title">오션투유리조트<br>예약사항 조회안내</strong>
+				<div class="sec" id="reserve_list">
+				</div>
+				<a href="javascript:$('.pop_close').trigger('click');" class="p_btn">닫기</a>
+				<a href="#" class="pop_close"><img src="http://img.go.co.kr/mobile/landing/20170512_ocean2you-freeticket/pop_btn_close.gif" alt=""></a>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.go.co.kr/js/common_ver2.js?ver=20170809164050"></script>
+		<style src="http://code.jquery.com/jquery-1.11.2.min.js"></style>
+		<script type="text/javascript">
+			$(function() {
+				$('.inquiry').click(function(){
+					$('#inquiry').show();
+					clickcount('reserve_confirm');
+					return false;
+				});
+				$('.pop_close').click(function(){
+					$(this).parents('.pop_layer').hide();
+				});
+
+				$("#tel").keyup(function(event) {
+					event = event || window.event;
+					var _val = this.value.trim();
+					this.value = auto_hypen(_val);
+				});
+
+				$("#callcenter").click(function() {
+					clickcount('faq');
+				});
+			});
+
+			function reserve_chk() {
+
+				var username = $("#username").val();
+				var tel = $("#tel").val();
+
+				if(username == "") { 
+					alert("예약자명을 입력해주세요.");
+					$("#username").focus();
+					return false;
+				}
+
+				if(tel == "") { 
+					alert("연락처를 입력해주세요.");
+					$("#tel").focus();
+					return false;
+				}
+
+				$.ajax({
+					url: "./state.php",
+					type: "post",
+					data: "mode=event_reserveinfo&username="+username+"&tel="+tel+"&p_no=517",
+					success: function(e) {
+						if(e == "N") {
+							alert("일치하는 예약건이 없습니다.");
+						} else { 
+							$(".sec").html(e);
+							$("#inquiry").hide();
+							$("#reserve_list_div").show();
+						}
+					}
+				});
+			}
+
+			function auto_hypen(str) { 
+				str = str.replace(/[^0-9]/g, '');
+				var tmp = '';
+				if( str.length < 4){
+					return str;
+				}else if(str.length < 7){
+					tmp += str.substr(0, 3);
+					tmp += '-';
+					tmp += str.substr(3);
+					return tmp;
+				}else if(str.length < 11){
+					tmp += str.substr(0, 3);
+					tmp += '-';
+					tmp += str.substr(3, 3);
+					tmp += '-';
+					tmp += str.substr(6);
+					return tmp;
+				}else{				
+					tmp += str.substr(0, 3);
+					tmp += '-';
+					tmp += str.substr(3, 4);
+					tmp += '-';
+					tmp += str.substr(7);
+					return tmp;
+				}
+				return str;
+			}
+
+			function clickcount(str) {
+				$.ajax({
+					url: "./state.php",
+					type: "post",
+					data: "mode=oceane_click&p_no=517&t_gubun="+str+"&options=13579_170518",
+					success: function(e) {
+
+					}
+				});
+			}
+
+
+		</script>
+
+	</body>
+<!-- 2017-05-22 -->
+</html>

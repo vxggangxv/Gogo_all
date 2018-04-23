@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>상세피이지 로고 추가</title>
+
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css">
+
+	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css?ver=20170201165300" />
+
+	<!-- 폰트어썸 추가 -->
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<style>
+		/* 임시 값 */
+		body {height: 3000px;}
+	</style>
+
+
+</head>
+<body>
+	
+	<!-- 오션바이트배너170821 작업-->
+	<style>
+		/* 오션바이크배너 */
+		.ocBikeBn {position: fixed; left: 50%; margin-left: 514px;
+			/* top: 50%; margin-top: -76px; */
+			top: 280px;
+			z-index: 1;}
+	</style>
+	<script>
+		$(function() {
+			$("#ocBikeBn").hide();
+			$(window).scroll(function () {
+				var scr = $(window).scrollTop();
+				var t1 = $(".info1").offset().top;
+
+				if (scr < t1) {
+					$("#ocBikeBn").fadeOut();
+				}
+				if (scr >= t1) {
+					$("#ocBikeBn").fadeIn();
+				}
+				//위치 확인
+				//console.log(scr + " , " + t1);
+
+			});
+		});
+	</script>
+
+
+
+	<div class="ocBikeBn" id="ocBikeBn">
+		<a href=""><img src="http://img.go.co.kr/banner/ocBikeBn.jpg" alt="씽씽달려보자전동바이크예약하기"></a>
+	</div>
+	<!-- 오션바이트배너 작업-->
+
+	<div id="wrapper" class="noover">
+
+		<table summary="" border="0" width="100%" cellpadding="0" cellspacing="0" id="contents_mn2" class="info1">
+			<tbody>
+				<tr>
+					<td class="box_ov" onclick="navigate.move_hid('info_box1','id','topSearch');box_on('info1_td')" style="cursor:pointer">상품소개</td>
+					<td class="box" onclick="navigate.move_hid('info_box2','id','topSearch');box_on('info2_td')" style="cursor:pointer">갤러리</td>
+					<td class="box" onclick="navigate.move_hid('info_box4','id','topSearch');box_on('info4_td')" style="cursor:pointer">오시는길</td><td class="box" onclick="navigate.move_hid('info_box5','id','topSearch');box_on('info5_td')" style="cursor:pointer">축제/관광지/맛집</td><td class="box" onclick="navigate.move_hid('info_box8','id','topSearch');box_on('info8_td')" style="cursor:pointer">이용후기</td><td class="box" onclick="navigate.move_hid('info_box7','id','topSearch');box_on('info7_td')" style="cursor:pointer">1:1 문의</td>
+					<td class="box" onclick="navigate.move_hid('info_box6','id','topSearch');box_on('info6_td')" style="cursor:pointer">자주묻는질문</td>
+					<td onclick="navigate.move_hid('fare_section','id','topSearch')" style="cursor:pointer"><img src="http://img.go.co.kr/btn_booking.png" alt="예약하기"></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+</body>
+</html>

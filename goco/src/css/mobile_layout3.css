@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {color:#7b7b7b; font-size:1.000em; line-height:1.5; letter-spacing:-0.5px}
 input{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
-select{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
+/*select{height:35px; color:#7b7b7b; font-size:0.875em; border:0}*/
 textarea{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
 
 a:link, a:visited {text-decoration:none; color:#3f3f3f}
@@ -2529,7 +2529,7 @@ background:#12b4c1; text-align:center;  z-index:5}
 #search_list_top2 .select_room_layer .btn .cancel a{display:block; color:#ff8434; box-sizing:border-box}
 #search_list_top2 .select_room_layer .btn .search a{display:block; color:#fff}
 
-#search_titles .select_room_layer {position:absolute; right:0; top:30px; z-index:9; width:100%; padding:10px 0; background:#f4f2f3}
+#search_titles .select_room_layer {position:absolute; right:0; top:30px; z-index:9; width:100%; padding:10px 0; background:#f4f2f3;}
 #search_titles .select_room_layer .etc_choice {clear:both; margin:auto; width:96%; background:#fff; border:1px solid #d2d2d2}
 #search_titles .select_room_layer .etc_choice td {width:33.33333%; padding-top:20px; font-size:0.875em; text-align:center; height:30px}
 #search_titles .select_room_layer .etc_choice .line {border-bottom:1px solid #d2d2d2}
@@ -2580,13 +2580,13 @@ background-color:#ff8a00; letter-spacing:-0.5px; font-weight:bold; font-size:1.0
 
 #daySelect_calendar table{width:100%; margin-bottom:10px; background-color:#ffffff}
 #daySelect_calendar table th {height:25px; line-height:25px; color:#ffffff; text-align:center; padding:0; font-size:0.875em}
-#daySelect_calendar table td {height:35px; line-height:35px; background-color:#fff; border:1px solid #eaeaea; font-weight:bold; text-align:center; font-size:0.938em}
+#daySelect_calendar table td {height:35px; line-height:35px; background-color:#fff; border:1px solid #eaeaea; font-weight:bold !important; text-align:center; font-size:0.938em}
 #daySelect_calendar table td a{display:block; height:35px; line-height:35px; color:#3f3f3f}
 #daySelect_calendar table td a.font_red{color:#ee0000}
 #daySelect_calendar table td a.font_gray3{color:#cbcbcb; font-weight:normal}
 #daySelect_calendar table .gray_bg2{background:#9b9a9a; font-weight:normal}
-#daySelect_calendar table td.red_bg{background-color:#e96362}
-#daySelect_calendar table td.red_bg .font_white{color:#ffffff}
+#daySelect_calendar table td.red_bg{background-color:#e96362 !important;}
+#daySelect_calendar table td.red_bg .font_white{color:#ffffff !important;}
 
 #daySelect_calendar .notice {clear:both; margin:auto; width:96%; padding:10px 0 100px 0; font-size:0.750em; color:#565555;  letter-spacing:-1px}
 #daySelect_calendar .notice p a {color:#aa5718; font-weight:bold}
@@ -2835,13 +2835,13 @@ text-indent:8px;
 #daySelect_calendar1 .month .btn_right {position:absolute; right:0; top:20px}
 #daySelect_calendar1 table{width:100%; margin-bottom:10px; background-color:#ffffff}
 #daySelect_calendar1 table th {height:25px; line-height:25px; color:#ffffff; text-align:center; padding:0; font-size:0.875em}
-#daySelect_calendar1 table td {height:35px; line-height:35px; background-color:#fff; border:1px solid #eaeaea; font-weight:bold; text-align:center; font-size:0.938em}
+#daySelect_calendar1 table td {height:35px; line-height:35px; background-color:#fff; border:1px solid #eaeaea; font-weight:bold !important; text-align:center; font-size:0.938em}
 #daySelect_calendar1 table td a{display:block; height:35px; line-height:35px; color:#3f3f3f}
 #daySelect_calendar1 table td a.font_red{color:#ee0000}
 #daySelect_calendar1 table td a.font_gray3{color:#cbcbcb; font-weight:normal}
 #daySelect_calendar1 table .gray_bg2{background:#9b9a9a; font-weight:normal}
-#daySelect_calendar1 table td.red_bg{background-color:#e96362}
-#daySelect_calendar1 table td.red_bg .font_white{color:#ffffff}
+#daySelect_calendar1 table td.red_bg{background-color:#e96362 !important;}
+#daySelect_calendar1 table td.red_bg .font_white{color:#ffffff !important;}
 
 /*메인배너*/
 .main_bn{width:100%; text-align:center; display:inline-block}
@@ -3353,10 +3353,10 @@ color:#2a7fe8; border:1px solid #2a7fe8; letter-spacing:-1.2px; margin-top:2px; 
 #calendar_w .week_day_table th:first-child, .week_day_table td:first-child{border-left:none}
 #calendar_w .week_day_table th:last-child, .week_day_table td:last-child{border-right:none}
 
-#calendar_w .calendar_product_list .week_day_table td.Check-in{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-left-radius:10px; border-bottom-left-radius:10px}
+#calendar_w .calendar_product_list .week_day_table td.Check-in{color:#fff; background:#f96527 !important; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-left-radius:10px; border-bottom-left-radius:10px}
 #calendar_w .calendar_product_list .week_day_table td.Check-in a{color:#fff; line-height:0.7}
 #calendar_w .calendar_product_list .week_day_table td.Check-in a .Check-in-txt{font-size:0.750em; display:block; margin-top:6px}
-#calendar_w .calendar_product_list .week_day_table td.Check-out{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-right-radius:10px; border-bottom-right-radius:10px}
+#calendar_w .calendar_product_list .week_day_table td.Check-out{color:#fff; background:#f96527 !important; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-right-radius:10px; border-bottom-right-radius:10px}
 #calendar_w .calendar_product_list .week_day_table td.Check-out a{color:#fff;  line-height:0.7}
 #calendar_w .calendar_product_list .week_day_table td.Check-out a .Check-in-txt{font-size:0.750em; display:block; margin-top:6px}
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-radius:10px}
@@ -4173,3 +4173,141 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 #info_img .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;}
 #info_img_wrpa .thumbnail_logo {position:absolute; left:10px; top:42px; z-index:1;}
 #info_img_wrpa .thumbnail_logo .thumbnail_logo_img {width:61px; height:27px;} */
+
+
+/* 20171211_생일쿠폰정책 변경 및 입력폼 수정 수연 */
+
+#my_modify_w {
+	float: none;
+}
+
+#my_modify_w .my_modify_tbl {
+	width: 100%;
+	table-layout: fixed;
+}
+
+#my_modify_w .my_modify_tbl tbody tr {
+	border-bottom: 1px solid #eaeaea;
+}
+
+#my_modify_w .my_modify_tbl tbody tr.no_line {
+	border-bottom: 0;
+}
+
+#my_modify_w .my_modify_tbl tbody tr th {
+	padding: 10px;
+	font-size: 16px;
+	color: #464646;
+	text-align: left;
+}
+
+#my_modify_w .my_modify_tbl tbody tr th label {
+	display: block;
+}
+
+#my_modify_w .my_modify_tbl tbody tr td {
+	padding: 10px;
+	color: #3f3f3f;
+	font-size: 16px;
+}
+
+#my_modify_w .my_modify_tbl td div {
+	display: table;
+	width: 100%;
+}
+
+#my_modify_w .my_modify_tbl td div input[type="text"],
+.my_modify_tbl td div input[type="password"] {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#my_modify_w .my_modify_tbl td div span.md_txt {
+	display: table-cell;
+	width: 20px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 13px;
+}
+
+#my_modify_w .my_modify_tbl tbody tr input[type="text"] {
+	height: 36px;
+	padding: 5px;
+	border: 1px solid #e6e6e6;
+	border-radius: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+	color: #3f3f3f;
+}
+
+#my_modify_w .my_modify_tbl tbody input::-webkit-input-placeholder {
+	color: #969696;
+}
+#my_modify_w .my_modify_tbl tbody .place_txt::-webkit-input-placeholder {color: #050505;}
+#my_modify_w .add_day {
+	padding: 10px;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #f8f8f8;
+	color: #3f3f3f;
+	font-size: 12px;
+	text-align: center;
+}
+
+#my_modify_w .add_day img {
+	width: 16px;
+	vertical-align: middle;
+}
+
+#my_modify_w .my_modify_btns {
+	overflow: hidden;
+	padding: 10px;
+}
+
+#my_modify_w .my_modify_btns a {
+	float: left;
+	width: 49%;
+	height: 43px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 43px;
+}
+
+#my_modify_w .my_modify_btns a.modify {
+	margin-right: 1%;
+	background-color: #f95c24;
+}
+
+#my_modify_w .my_modify_btns a.logout {
+	margin-left: 1%;
+	background-color: #878787;
+}
+
+#my_modify_w p.out {
+	float: right;
+	margin: 10px 10px 0 0;
+	width: 100px;
+	height: 35px;
+	border-radius: 3px;
+	color: #464646;
+	border: 1px solid #cacaca;
+	font-size: 13px;
+	text-align: center;
+	line-height: 35px;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+#my_modify_w .my_modify_tbl tr td .div_wr {clear: both; vertical-align: middle;}
+#my_modify_w .my_modify_tbl tr td .div_wr .number {width: 75%; display: table-cell; float: left;}
+#my_modify_w .my_modify_tbl tr td .div_wr .adjust {width: 23%; float: left; margin-left: 2%; border-radius: 2px; height: 32px; margin-top: 0.5%; border: 1px solid #cacaca; background: #fafafa; cursor: pointer;}
+#my_modify_w .my_modify_tbl tr td .in_txt {color: #a6a6a6; font-size: 12px; letter-spacing: -1.5; display: block; padding-top: 4px;}
+#my_modify_w .my_modify_tbl tr td .in_txt img {vertical-align: middle;}
+#my_modify_w .my_modify_tbl tbody tr .day_inp {padding: 3px 10px 5px 10px;}
+
+/* 180109 1대1문의 추가 수연 */
+
+#top_box #headTitle_box #headTitle .m_inquire {position: absolute; right: 10px; top: 0px; vertical-align: middle; font-size: 15px; font-family: "Nanum Gothic",sans-serif; letter-spacing: -1; font-weight: 600;}
+#top_box #headTitle_box #headTitle .m_inquire img { vertical-align: middle; width: 23px; margin-right: 5px;}

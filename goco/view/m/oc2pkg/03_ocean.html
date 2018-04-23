@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/reset_custom.css">
+	<style>
+		body {background: #8abef8;}
+		img {vertical-align: top; border: none; width:100%;}
+
+		.wrap {width: 100%; padding-bottom:55px;  background: #8abef8; position:relative;}
+	    .wrap img {width:100%;}
+	    .but {width:100%; font-size:0; position:fixed; height:55px; z-index:10; bottom:0; display: block; background: #8abef8; padding-top: 5px;}
+		.but.on {padding-top: 0;}
+	    .but a {display: inline-block; background: #124883; color:#fff; font-size: 17px; height: 60px; text-align: center; line-height: 60px;}
+		.but .l_bt {width: 29%;}
+		.but .r_bt {width: 70%; margin-left: 1%;}
+        .but .bt {width:100%; position:relative; font-size:22px; height:70px;}
+	    .but a .gt {font-family: "Nanum Gothic", sans-serif; position: relative; left: 5px; font-size: 12px; top: -1px;}
+        
+        .bikewrap {width:100%; height:100%; background: #fff; position:absolute; bottom:0; height:250px;}
+        .bikewrap > div {padding:0px 10px; box-sizing: border-box;}
+        .bikewrap span, .bikewrap select {display: inline-block;}
+        .bikewrap span {position: relative; font-size:16px; width: 130px; text-align: left;  box-sizing: border-box; padding-top:10px;}
+        .bikewrap h1 {text-align:center; font-size:17px; line-height:2; font-weight: bold; color:#333; background: #f2f2f2; height:40px; border-bottom: 1px solid #cfcfcf;}
+        .bikewrap .bik {margin-top:24px;}  
+        .date {width: 55%; height: 40px; line-height: 50px; font-size:16px; cursor:pointer; float:right;}
+
+        .fixed-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none;}
+        
+        .i-x {position: absolute; right: 5px; top: 5px; width: 30px; height: 20px; display: block;}
+        .i-x:before, .i-x:after {content: ""; position: absolute; display: inline-block; width: 25px; height: 1px; background: #000; top: 17px; right: 0px;}
+        .i-x:before {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .i-x:after {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg); 
+            -o-transform: rotate(-45deg); 
+            transform: rotate(-45deg); 
+        }
+        
+	</style>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+	$(function() {
+		$(".bikewrap, #but .bt").hide();
+	
+		$("#but").on('click', '.r_bt', function() {
+			$("#but .l_bt, #but .r_bt").hide();
+			$(".bikewrap, #but .bt").show();
+			$("#but").addClass('on');
+		});
+        
+		$("#but .r_bt").on('click', function() {
+			$(".fixed-bg").fadeToggle();
+			$(".bikewrap").slideToggle();
+			$("#but").removeClass('on');
+		});
+
+		$(".i-x").on('click', function() {
+			$(".fixed-bg").fadeToggle();
+			$(".bikewrap").slideToggle();
+			$("#but").removeClass('on');
+			
+			$("#but .l_bt, #but .r_bt").show();
+			$("#but .bt").hide();
+		});
+
+	});
+</script>	
+	
+</head>
+<body>
+	<div class="wrap">
+		<img src="http://img.go.co.kr/landing/170928_oc2pkg/bike_pkg.jpg" alt="전동바이크 패키지">
+		
+        <div class="fixed-bg">
+            <div class="bikewrap">
+                <h1>전동바이크 예약하기<a class="i-x" href="javascript:;"></a></h1>
+                <div class="bik clr">
+                    <span>이용시간</span>
+                    <select name="day" id="day" class="date"> <option value="all" selected="">1시간</option></select>
+                </div>
+                <div class="bik clr">
+                    <span>대수</span>
+                    <select name="day" id="day2" class="date"> <option value="all" selected="">1부</option></select>
+                </div>
+            </div>
+	</div>
+	<div class="but" id="but">
+		<a href="" class="l_bt">메인화면</a>
+		<a href="javascript:;" class="r_bt">전동바이크패키지 예약하기 <span class="gt">&gt;</span></a>
+        <a href="javascript:;" class="bt">결제하기</a>
+		</div>
+
+</body>
+</html>

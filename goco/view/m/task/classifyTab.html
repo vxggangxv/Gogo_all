@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta http-equiv="Cache-Control" content="No-Cache" />
+	<meta http-equiv="Pragma" content="No-Cache" />
+	<meta http-equiv="expire" content="-1">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
+	<link rel="apple-touch-icon" href="http://img.go.co.kr/mobile/icon.png" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170804092500" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170804092500" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170804092500" type="text/css" />
+
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css" />
+<!--	<link rel="stylesheet" href="../../../src/css/totalmobile.css" type="text/css" />-->
+
+	<meta name="robots" content="ALL" />
+	<meta name="author" content="GO.CO.KR" />
+	<meta name="description" content=" 고코 GO.CO.KR" />
+	<meta name="keywords" content=" 고코 GO.CO.KR" />
+	<meta name="classification" content="고코 GO.CO.KR" />
+
+
+	<!--- 검색시 달력에서 이용 ---->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css" />
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<!--- 달력 한글화 --->
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+
+
+	<!-- Android icon -->
+	<!--<link rel="shortcut icon" href="http://img.go.co.kr/icon_goco128x128.ico" type="image/x-icon" />-->
+	<link rel="shortcut icon" href="http://img.go.co.kr/mobile/icon_goco72x72.png" type="image/x-icon" />
+	<!-- iPhone icon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="http://img.go.co.kr/mobile/icon_goco57x57.png" />
+	<!-- iPad icon -->
+	<link rel="apple-touch-icon" sizes="72x72" href="http://img.go.co.kr/mobile/icon_goco72x72.png" />
+	<!-- iPhone icon(Retina) -->
+	<link rel="apple-touch-icon" sizes="114x114" href="http://img.go.co.kr/mobile/icon_goco114x114.png" />
+	<!-- iPad icon(Retina) -->
+	<link rel="apple-touch-icon" sizes="144x144" href="http://img.go.co.kr/mobile/icon_goco144x144.png" />
+	
+	<!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>--->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/common_ver2.js?ver=20170804092500"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/iscroll.js?ver=20170804092500"></script>
+
+
+	<!--- 리스트페이지에서 쓸 스크립트---->
+	<script type="text/javascript" src="http://static.go.co.kr/js/swiper.min.js?ver=20170804092500"></script>
+	<!--- 리스트페이지에서 쓸 스크립트---->
+
+
+</head>
+
+<body onunload="">
+
+	<div id="wrapper" data-role="page">
+		
+		<div id="scroll_box">
+
+			<!-- 2017-08-04 -->
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!--- 서브페이지 상단 --->
+
+				<!-- 변경내용_170818, 메인 화면 제외 리스트부분에서만 별도변경 -->
+				<style>
+					#menu .on a {color: #fff;}
+					#menu {border-bottom-color: #e65b1d; padding-bottom: 1px;}
+				</style>
+				<div id="menu" style="background:#ff8434">
+					<span class="text on"><a href="/home/main/">국내숙박</a></span>
+					<span class="text"><a href="/home/main/?dd=WhcuRDJDAVMyEQ==">입장권</a></span>
+					<span class="text"><a href="/home/main/?dd=RB8pTQFIO1QfH0pb">해외숙박</a></span>
+					<span class="text"><a href="/home/main/?dd=WhcuRDJDAVMyEXdIHDI=">해외입장권</a></span>
+				</div>
+
+				<input type="hidden" id="cal_layer_mode" value="sub" />
+				<input type="hidden" id="local_layer_mode" value="sub" />
+				<input type="hidden" id="local_layer_gubun" value="inter_div" />
+				<input type="hidden" id="local_change" />
+
+
+				<input type="hidden" name="stat_mode" id="stat_mode" value="mlisting" />
+				<input type="hidden" name="hpaging" id="hpaging" value="2" />
+
+				<form name="sub_sform" id="sub_sform" method="post">
+					<input type="hidden" name="h_loca" id="city_1" value="all" />
+					<input type="hidden" name="h_ttype" value="" />
+					<input type="hidden" name="local_txt" id="local_txt" value="전국" />
+					<input type="hidden" name="sub_loca" id="city_2" value="" />
+
+					<input type="hidden" name="sub_sdate" id="check_in" value="2017-08-04" />
+					<input type="hidden" name="sub_edate" id="check_out" value="2017-08-05" />
+					<input type="hidden" name="to_sel" id="to_sel" value="all" />
+
+					<style type="text/css">
+						#top_sea_w {padding: 8px 0;}
+						#top_sea_w, #top_sea_w #city_choice5, #top_sea_w #city_choice5 .btn
+						, #top_sea_w #search_list_top5, #top_sea_w #search_list_top5 .int {height: 26px;}
+						#top_sea_w #city_choice5 {width:55%;}
+						#top_sea_w #city_choice5 .btn {line-height: 25px;}
+						#top_sea_w #search_list_top5 .int {box-sizing: border-box; padding-bottom: 2px;}
+						#top_sea_w #city_choice5 .btn a {display:block;}
+						#top_sea_w #city_choice5 .btn a .txt_o {top:0; right:0; float:none;}
+						#top_sea_w #search_list_top5 {width:45%; position: relative;}
+						#top_sea_w #search_list_top5 .searchBtn {right: 9px; top: 4px;}
+						#top_sea_w #city_choice5 .btn a #city_1_choice {display:block; margin-right:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+						#search_list .photo {padding: 5px 0 0 5px;}
+						#search_list .photo .recommend {width: 105px;}
+						#search_list .info .title {width: 210px;}
+						#list_price01 {width: 125px;}
+						#search_list .summary {height:27px;margin-left: 5px;text-indent: 5px;width: 97%;}
+						
+						#searchMore, #searchMore .right0 .select01, #searchMore .right1 .select01 {color: #262626;}
+						#searchMore {background: #f6f6f6; border-bottom: 1px solid #b4b4b4;}
+						#searchMore .left1 .result {font-size: 11.5px;}
+						#searchMore .room1 {background: transparent;}
+						#searchMore .room1, #searchMore .right0, #searchMore .right1 {border-left-color: #b4b4b4;}
+						#searchMore .left1, #searchMore .room1, #searchMore .right0 {border-right-color: transparent;}
+						#searchMore .room1 p, #searchMore .right0 .select01
+						, #searchMore .right1 .select01 {background: transparent url("http://img.go.co.kr/mobile/i_down_arrow2.png") 90% 13px no-repeat; 
+							background-size: 11px; width: 100%; padding-left: 10%;}
+						#searchMore .right0 .select01, #searchMore .right1 .select01 {left: 0;}
+						#searchMore .left1 {width: 26%;}
+						#searchMore .room1, #searchMore .right0 {width: 25.5%;}
+						#searchMore .right1 {width: 21%;}
+						#searchMore .room1 p {box-sizing: border-box; padding-left: 14%;}
+						@media (min-device-width: 320px) {
+							#searchMore .room1 p {padding-left: 12%;}
+						}
+					</style>
+					<div id="top_sea_w">
+						<div id="city_choice5" onclick="javascript:location.href='/home/search/?dd=RR85Rix5MkwjH0R2ECVU&amp;gubun=inter_div&amp;prev_city1='+$('#city_1').val()+'&amp;prev_city2='+$('#city_2').val()+''"><div class="btn"><a href="#"><span id="city_1_choice">경기 포천/동두천/연천/의정부/양주</span> <span class="txt_o">▼</span></a></div></div>
+						<div id="search_list_top5">
+							<input name="sub_keyword" class="int" id="sub_keyword" type="text" onkeypress="if(event.keyCode == 13) { keyword_search();return false; }" placeholder="지역/숙소/여행지명" value="" autocomplete="off"><a href="javascript:keyword_search();" title="빠른검색"><img src="http://img.go.co.kr/mobile/main_search_icon.png" height="20" class="searchBtn"></a>
+						</div>
+					</div>
+					
+				
+					<!--180202 레저/입장권 클릭 시-->
+<!--
+					<div class="classifyArea">
+						<ul class="classifyTab type-2 clr" id="classifyTab">
+							<li class="on"><a href="javascript:;">전체</a></li>
+							<li><a href="javascript:;">워터파크</a></li>
+							<li><a href="javascript:;">테마파크</a></li>
+							<li><a href="javascript:;">키즈</a></li>
+							<li><a href="javascript:;">입장권</a></li>
+							<li><a href="javascript:;">레포츠</a></li>
+							<li><a href="javascript:;">체험/축제</a></li>
+						</ul>
+					</div>
+-->
+					
+					<!--180202 국내숙박, 해외숙박 클릭 시-->
+					<div class="classifyArea">
+						<ul class="classifyTab clr" id="classifyTab">
+							<li class="on"><a href="javascript:;">전체</a></li>
+							<li><a href="javascript:;">호텔</a></li>
+							<li><a href="javascript:;">모텔</a></li>
+							<li><a href="javascript:;">리조트/콘도</a></li>
+							<li><a href="javascript:;">레지던스</a></li>
+							<li><a href="javascript:;">게스트하우스</a></li>
+							<li><a href="javascript:;">펜션</a></li>
+							<li><a href="javascript:;">유스호스텔</a></li>
+						</ul>
+					</div>
+					
+					<script>
+						function classifyTab(itm) {
+							//	자동너비화
+							var $itmChild = $(itm).children('li');
+							var itmWd = 0;
+							$.each($itmChild, function(index, item) {
+								for(var i = 0; i < $itmChild.length; i++ ) {
+									itmWd += $(item).eq(i).width();
+								}
+							});
+							//	console.log(itmWd);
+							$(itm).width(itmWd);
+							
+							//	클릭이벤트
+							$(itm).children('li').on('click', function() {
+								var $itmLi = $(itm).children('li')
+								var  idx = $(this).index();
+								//	console.log(idx);
+								$itmLi.eq(idx).addClass('on').siblings().removeClass('on');
+								var itmLeft = $itmLi.eq(idx).position().left ;
+								//	console.log(itmLeft);
+								var scrLeft = (itmLeft / $itmLi.length) * (itmWd / 100) ;
+								//	console.log(scrLeft);
+								$(itm).closest('div').stop().animate({scrollLeft: scrLeft}, 200);
+							});
+							
+						}
+						
+						classifyTab('#classifyTab');
+					</script>
+					<!--끝-->
+
+			</div>
+				
+
+			
+
+</body>
+
+</html>

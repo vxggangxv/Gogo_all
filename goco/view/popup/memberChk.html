@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>상세피이지 로고 추가</title>
+
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" />
+    <!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css" />-->
+    <link rel="stylesheet" type="text/css" href="../../../src/css/totalweb.css" />
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+	
+</head>
+<body>
+
+	<!-- 입장권 등록 레이어팝업 -->
+	<div class="layer-pop-bg" id="memberChk-pop-bg">
+		
+		<div class="memberChk step-1">
+			<h2>예약자 정보 확인<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#memberChk-pop-bg').hide();"></a></h2>
+			<div class="d-cont">
+				<p class="p-top">
+					예약자명이 <span class="s-name">“지하test11111”</span>님이 맞습니까?<br>
+					시설 이용을 위한 정확한 이름이 필요합니다.
+				</p>
+				<div class="d-mid">
+					<p class="p-name">
+						<span class="s-lbl">예약자</span><span class="s-txt">지하test1111</span>
+					</p>
+					<p class="p-num">
+						<span class="s-lbl">연락처</span><span class="s-txt">010-5858-5758</span>
+					</p>
+					<p class="p-mail">
+						<span class="s-lbl">이메일</span><span class="s-txt">wo5758@ebiznetworks.co.kr</span>
+					</p>
+				</div>
+				<p class="area-btn">
+					<a href="#" class="a-1">수정하기</a>
+					<a href="#" class="a-2">결제하기</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- step-2-->
+		<div class="memberChk step-2">
+			<h2>예약자 정보 수정<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#memberChk-pop-bg').hide();"></a></h2>
+			<div class="d-cont">
+				<p class="p-top">
+					수정하실 예약자 정보를 정확히 입력해주세요.
+				</p>
+				<div class="d-mid">
+					<p class="p-name">
+						<span class="s-lbl">예약자</span><input type="text" class="in-txt">
+					</p>
+					<p class="p-num">
+						<span class="s-lbl">연락처</span><input type="text" class="in-num">
+						<span class="mg-"></span>
+						<input type="text" class="in-num">
+						<span class="mg-"></span>
+						<input type="text" class="in-num">
+					</p>
+					<p class="p-mail">
+						<span class="s-lbl">이메일</span><input type="text" class="in-txt">
+					</p>
+				</div>
+				<p class="area-btn">
+					<a href="#" class="a-1">수정하기</a>
+				</p>
+			</div>
+		</div>
+		
+		<!-- step-3-->
+		<div class="memberChk step-3">
+			<h2>예약자 정보 안내 및 결제하기<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#memberChk-pop-bg').hide();"></a></h2>
+			<div class="d-cont">
+				<p class="p-top">
+					예약자 정보가 수정되었습니다.<br>
+					아래 예약자 정보로 결제를 진행하시겠습니까?
+				</p>
+				<div class="d-mid">
+					<p class="p-name">
+						<span class="s-lbl">예약자</span><span class="s-txt">지하test1111</span>
+					</p>
+					<p class="p-num">
+						<span class="s-lbl">연락처</span><span class="s-txt">010-5858-5758</span>
+					</p>
+					<p class="p-mail">
+						<span class="s-lbl">이메일</span><span class="s-txt">wo5758@ebiznetworks.co.kr</span>
+					</p>
+				</div>
+				<p class="area-btn">
+					<a href="#" class="a-1">결제하기</a>
+					<a href="#" class="a-2">수정하기</a>
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script>
+		$(function() {
+			
+			$(".memberChk.step-1").show();
+			
+		});
+	</script>
+	
+</body>

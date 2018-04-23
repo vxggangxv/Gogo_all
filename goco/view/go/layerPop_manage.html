@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+<head>
+	<title>오션투유 판매기록</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="No-Cache">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="false">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="오션투유">
+	<meta property="og:description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 판매기록 GO.CO.KR 오션투유">
+	<meta property="og:image" content="http://img.go.co.kr/tournspa.ico?ver=20170125183914">
+	<meta property="og:url" content="http://www.go.co.kr">
+
+	<meta name="author" content="GO.CO.KR 오션투유">
+	<meta name="description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 판매기록 GO.CO.KR 오션투유">
+	<meta name="classification" content="GO.CO.KR 오션투유">
+	<meta name="keywords" content="판매기록 GO.CO.KR 오션투유">
+
+	<link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css?v=1516775098" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css?v=1516775098" type="text/css">
+	
+<!--	<link rel="stylesheet" href="../../src/css/go/reset.css" type="text/css">-->
+	
+	<link rel="stylesheet" href="http://static.go.co.kr/css/task/room_layout.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	
+<!--	<link rel="stylesheet" href="../../src/css/go/layout.css" type="text/css">-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/own/common.js?ver=20180124152458"></script>
+	
+
+</head>
+
+<body>
+	<div id="headerW">
+		<div class="header">
+			<h1><a href="/"><img src="http://img.go.co.kr/go/logo_ocean.jpg"></a></h1>
+			<div class="snb">
+				<span class="user">오션투유</span>
+				<a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav-bar" style="z-index: 3; position: relative; top: 0px;">
+		<ul class="nav" style="height: 50px; top: 0px;">
+			<li class="">
+				<a href="reserve.php">판매기록</a>
+				<ul class="dep2-menu">
+					<li><a href="reserve.php">판매목록</a></li>
+					<li><a href="reserve.php?e=Y">이벤트 판매목록</a></li>
+					<li><a href="chkin1.php">투숙자 리스트</a></li>
+					<li><a href="etc.php">부대시설 현황</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="sale1.php">객실관리</a>
+				<ul class="dep2-menu">
+					<li><a href="sale1.php">요금</a></li>
+					<li><a href="sale3.php">현황</a></li>
+					<li><a href="room.php">관리</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="room_day.php">판매현황</a>
+				<ul class="dep2-menu">
+					<li><a href="room_day.php">객실 일별</a></li>
+					<li><a href="room_month.php">객실 월별</a></li>
+
+					<li><a href="agency_day.php">판매채널 일별(결제)</a></li>
+					<li><a href="agency_month.php">판매채널 월별(결제)</a></li>
+					<li><a href="agency_day.php?a=1">판매채널 일별(투숙)</a></li>
+					<li><a href="agency_month.php?a=1">판매채널 월별(투숙)</a></li>
+
+					<li><a href="etc_day.php">부대시설 일별</a></li>
+					<li><a href="etc_month.php">부대시설 월별</a></li>
+				</ul>
+			</li>
+			<li><a href="info.php">호텔정보</a></li>
+		</ul>
+	</div>
+
+	<div id="top_mar" style="z-index: 9999; display: none;"></div>
+
+	<div id="wrapper">
+		<div id="container">
+		
+		</div>
+	</div>
+	<!--180404 팝업 wrapper-->
+	<div class="wrap-pop show">
+		<div class="backDropBg"></div>
+		
+		<!-- step-1 -->
+		<div class="pop-manage pop-manage-1 on">
+			<div class="pop-header clr">
+				<a href="javascript:;" class="btn-cls">
+					<span class="a-i-x2 a-x"></span>
+					창닫기
+				</a>
+			</div>
+			<div class="pop-main">
+				<img src="http://img.go.co.kr/go/layerPop/manage/companyLogos.jpg" alt="" class="logos">
+				<hr class="sun w344">
+				<p class="nth-1 fz-18 ta-center">
+					정말 많은 판매처 관리에 힘들지 않나요?<br>
+					요금등록하랴, 주문건 관리하랴, 로그인도 들락날락<br>
+					직원들의 불만과 컴퓨터가 터지려 하지않나요?
+				</p>
+				<p class="nth-2 fz-25 c-f01700 fwe-700 ta-center">
+					혹, 너무 큰 번거로움에 방치하고 계시지는 않나요?
+				</p>
+				<p class="nth-3 fz-21 ta-center">
+					고코투어에 맡기십시오!!<br>
+					신청만 하십시오. 고고관리자 하나를 통해 모든 관리가 가능합니다.
+				</p>
+				<p class="area-btn ta-center">
+					<a class="mr-1 type-1" href="#" onclick="$(this).closest('.pop-manage').hide(); $('.pop-manage-2-1').addClass('on');">상담신청</a>
+					<a class="type-1" href="#" onclick="$(this).closest('.pop-manage').hide(); $('.pop-manage-2-2').addClass('on');">바로신청</a>
+				</p>
+			</div>
+		</div>
+		<!-- step-2-1: 상담신청 -->
+		<div class="pop-manage pop-manage-2-1">
+			<div class="pop-header clr">
+				<a href="javascript:;" class="btn-cls">
+					<span class="a-i-x2 a-x"></span>
+					창닫기
+				</a>
+			</div>
+			<div class="pop-main">
+				<p class="nth-1 fz-25 c-f01700 fwe-700 ta-center">
+					통합관리 상담신청 접수
+				</p>
+				<p class="nth-2 fz-18 ta-center">
+					아래와 같이 담당자명과 연락처를 기입해 주시면<br>
+					확인 후 빠르게 안내해 드리겠습니다.
+				</p>
+				<div class="box-form">
+					<ul class="form-list">
+						<li class="form-itm">
+							<label for="">시설명</label><input type="text" class="inp-1 reset">
+						</li>
+						<li class="form-itm">
+							<label for="">담당자</label><input type="text" class="inp-1 reset">
+						</li>
+						<li class="form-itm">
+							<label for="">연락처</label><input type="text" class="inp-1 reset">
+						</li>
+					</ul>
+				</div>
+				<p class="area-btn ta-center">
+					<a class="mr-1 type-1" href="#" onclick="$(this).closest('.wrap-pop').hide();">상담신청</a>
+				</p>
+			</div>
+		</div>
+		<!-- step-2-2: 바로신청-->
+		<div class="pop-manage pop-manage-2-2">
+			<div class="pop-header clr">
+				<a href="javascript:;" class="btn-cls">
+					<span class="a-i-x2 a-x"></span>
+					창닫기
+				</a>
+			</div>
+			<div class="pop-main">
+				<p class="nth-1 fz-25 c-f01700 fwe-700">
+					상품판매 협약서
+				</p>
+				<p class="fz-16">
+					하하투어(이하 "갑"이라 한다.) 와 (주)바로네트웍스(이하 "을"이라 한다.)는 <br><br>
+
+					“을”이 "갑"을 대신하여, <br>
+					익스피디아, 아고다, 부킹닷컴, 쿠팡, 위메프, 티몬, 11번가, 지마켓, 옥션, 데일리호텔, 호텔타임(여기어때), <br>
+					호텔나우(야놀자), 세일투나잇, 네이버예약, 에어B&amp;B 등에 "갑"의 상품을 판매진행하는 것을 협약한다.<br><br>
+
+					"을"이 "갑"을 대신하여 판매대행을 하는 범위는 다음과 같다.<br><br>
+
+					1. 대매판매사 상품관리<br>
+					2. 대매판매사 요금관리<br>
+					3. 대매판매사에서 발생한 고객응대<br>
+					4. 대매판매건의 정산대행<br><br>
+
+					"갑"과 "을"은 본 협약을 증명하기위하여 2부를 작성하여, "갑"과 "을"의 기기명날인 후, 각 1부씩 보관한다.<br><br>
+
+					2018년 3월 15일
+				</p>
+				<div class="box-form cf">
+					<div class="box-1">
+						<table class="tb-1">
+							<colgroup>
+								<col class="nth-1">
+								<col class="nth-2">
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>[ 갑 ]</td>
+									<td>신라호텔</td>
+								</tr>
+								<tr>
+									<td>회사명</td>
+									<td><input type="text" class="inp-1 reset"></td>
+								</tr>
+								<tr>
+									<td>사업자번호</td>
+									<td><input type="text" class="inp-1 reset"></td>
+								</tr>
+								<tr>
+									<td class="va-top">주소</td>
+									<td>
+										<input type="text" class="inp-1 reset">
+										<div class="mt"></div>
+										<input type="text" class="inp-1 reset">
+									</td>
+								</tr>
+								<tr>
+									<td>대표자</td>
+									<td><input type="text" class="inp-1 reset"></td>
+								</tr>
+								<tr>
+									<td>신청자</td>
+									<td><input type="text" class="inp-1 reset"></td>
+								</tr>
+								<tr>
+									<td class="va-top">서명란</td>
+									<td>
+										<div class="sp_sign" id="signature-pad">
+											<div class="signature-pad-body">
+												<p>여기에 서명해 주세요</p>
+												<p>
+													<canvas></canvas>
+												</p>
+											</div>
+											<div class="signature-pad-footer">
+												<input class="reset btn-reset" type="button" data-action="clear" value="다시 쓰기">
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="box-2">
+						<table class="tb-1">
+							<colgroup>
+								<col class="nth-1">
+								<col class="nth-2">
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>[ 을 ]</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>회사명</td>
+									<td>바로네트웍스</td>
+								</tr>
+								<tr>
+									<td>사업자번호</td>
+									<td>215-87-85373</td>
+								</tr>
+								<tr>
+									<td class="va-top">주소</td>
+									<td>서울시 강남구 테헤란로 82길 15,<br>3층 (대치동, 디아이타워)</td>
+								</tr>
+								<tr>
+									<td>대표자</td>
+									<td>전병권</td>
+								</tr>
+								<tr>
+									<td>담당자</td>
+									<td>이채린 <img class="stamp" src="http://img.go.co.kr/go/layerPop/manage/stamp.png" alt="도장"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<p class="area-btn ta-center">
+					<a class="mr-1 type-1" href="#" onclick="$(this).closest('.wrap-pop').hide();">작성완료</a>
+				</p>
+			</div>
+			
+		</div>
+	</div>
+	<!--사인패드 script-->
+	<script src="http://static.onbiz.co.kr/js/m/sign/signature_pad.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/go/layerPop/signPad.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/go/layerPop/layerPop.js"></script>
+<!--	<script type="text/javascript" src="../../src/js/go/layerPop/layerPop.js"></script>-->
+	<!-- End -->
+	
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<title>문서 제목</title>
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170201154748" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170201154748" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170201154748" type="text/css" />
+	<!-- <link rel="stylesheet" href="../../src/css/mobile_layout3_tmp.css" type="text/css"> -->
+	<!--<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3_tmp.css" type="text/css">-->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">
+	<!--<link rel="stylesheet" href="../../src/css/history/history_m.css">-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<script src="http://static.go.co.kr/js/m/history/history_m.js"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="scroll_box">
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!-- 서브페이지 상단 -->
+				<div id="headTitle_box">
+					<div id="headTitle">
+						<span class="back">
+							<a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a>
+						</span>환불 계좌입력
+						<a id="h-phone"><img src="http://img.go.co.kr/mobile/history_phone.png" alt="전화문의"></a>
+					</div>
+				</div>
+				<!-- 변경내용 시작 -->
+				<div class="clr"></div>
+				<div class="history-tab-01 tab-02">
+					<ul class="clr">
+						<li class="on"><a href="./history_02_1.html">예약정보</a></li>
+						<li class=""><a href="./history_02_2.html">시설정보</a></li>
+						<li class=""><a href="./history_02_3.html">지도</a></li>
+						<li class=""><a href="./history_02_4.html">주변관광지</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="top_box_bottom" style="height: 80px;"></div>
+
+			<div class="history02-info info_02 clr">
+				<ul class="form cancel_wr">
+					<li class="c_tit_t">환불 받을 계좌 정보를 입력하세요.</li>
+
+					<li class="c_tit_txt">
+						<table class="cancel_table table_02">
+							<tbody>
+								<tr class="first_tr">
+									<th>계좌주명</th>
+									<td><input type="text" name="name" placeholder=" ex)홍길동" class="can_bx"></td>
+								</tr>
+								
+								<tr>
+									<th>은행</th>
+									<td>
+										<div class="bank_box">
+											<select name="bank" class="bank_box2 ">
+											<option value class="bank_box_txt">선택하세요.</option>
+											<option value class="bank_box_txt">선택02</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<th>계좌번호</th>
+									<td><input type="text" name="name" placeholder="  ㅡ 없이 입력하세요." class="can_box can_bx"></td>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+				</ul>
+				<ul class="info02_bottom">
+					<li class="info02_tit">
+						환불 처리 결과를 받을 이메일을 입력하세요.
+					</li>
+					<li>
+						<input type="text" name="name" placeholder="  ex) goco@mail.com" class="mail_box"></td>
+					</li>
+					<li>
+						<p>※본인 명의의 계좌만입력이 가능합니다.</p>
+						<p>※계좌번호는 '-'없이 숫자만 입력해주세요.</p>
+						<p class="t_red">※CMS코드,MMF계좌,MMT계좌,퇴직연금계좌로의 환불은 불가합니다.</p>
+						<p>※(금,토,일)신청 시 월요일 오후 6~8시,공휴일 신청 시 익일 오후 6~8시 사이 환불 금액이 입금됩니다.</p>
+					</li>
+				</ul>
+				<div class="bottom_bt_wr clr">
+					<ul class="clr">
+						<li class="left_bt"><a href="#">입력완료</a></li>
+						<li class="right_bt"><a href="#">입력취소</a></li>
+					</ul>
+				</div>
+
+		</div>
+	</div>
+</body>
+</html>

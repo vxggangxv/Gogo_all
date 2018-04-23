@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>상세피이지 로고 추가</title>
+
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" />
+    <!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css" />-->
+    <link rel="stylesheet" type="text/css" href="../../src/css/totalweb.css" />
+
+    <link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- 폰트어썸 추가 -->
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+    <!-- ie9이하 input꾸미기, nth-child 셀렉터 작동, html5, 미디어쿼리 작동 -->
+    <!--[if lt IE 9]>
+	      <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+		.coupon-guide {position: fixed; z-index: 6; width: 430px; height: 272px; top: 50%; margin-top: -136px; left: 50%; margin-left: -215px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px;}
+		.coupon-guide * {letter-spacing: -0.5px; color: #303030;}
+		.coupon-guide h2 {height: 62px; font-size: 22px; color: #fff; font-weight: 400; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
+		.coupon-guide .clsBtn {position: absolute; right: 20px; top: 16px;   display: inline-block; width: 22px; height: 22px;
+			background: url("http://img.go.co.kr/x_btn.png") no-repeat;
+		}
+		.coupon-guide > p {font-size: 20px; line-height: 1.5em; text-align: center; box-sizing: border-box; padding: 0 20px;}
+		/*.coupon-guide > p.nth-1, .coupon-guide > p.nth-2 {font-weight: 600;}*/
+		.coupon-guide > p.nth-1 {margin-top: 40px;}
+		.coupon-guide > p.nth-2 {color: #ff610a; margin-top: 10px;}
+		.coupon-guide > p.nth-3 {margin-top: 22px;}
+		.coupon-guide > p.nth-3 a {display: inline-block; width: 128px; height: 40px; border-radius: 4px; border: 1px solid #d6d6d6; color: #403a3a; line-height: 2.2em; font-size: 18px;}
+		.coupon-guide > p.nth-3 .a-1 {
+			margin-right: 20px;
+			background: #ffffff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */}
+		.coupon-guide > p.nth-3 .a-2 {background: #ff610a; color: #fff;}
+    </style> 
+
+</head>
+
+<body>
+    
+        
+
+    <!-- 예약내역 레이어팝업 -->
+    <div class="layer-pop-bg" id="layer-pop-bg">
+        <!--조회-->
+        <div class="coupon-guide">
+            <h2>앱 전용 할인쿠폰 안내<a href="javascript: void(0)" class="clsBtn" onclick="$(this).closest('#layer-pop-bg').hide();"></a></h2>
+            <p class="nth-1">앱 결제 전용 5,000원 할인 쿠폰이 있습니다.</p>
+            <p class="nth-2">앱에서 구매하시겠습니까?</p>
+            <p class="nth-3"><a class="a-1" href="#">아니오</a><a class="a-2" href="#">앱에서 구매</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

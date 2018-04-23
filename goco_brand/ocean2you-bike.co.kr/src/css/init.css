@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto; border: none; width: 1000px; box-shadow: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.bx-wrapper .bx-controls-direction {display: none;}
+.bx-controls {position: absolute; width: 100%; bottom: 30px;}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {right: 28px; top: 0;}
+/*.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {position: absolute;}*/
+.bx-wrapper .bx-controls-auto .bx-start
+, .bx-wrapper .bx-controls-auto .bx-stop {position: relative; top: 1px; left: 0; background: url(http://img.ocean2you-bike.co.kr/controls.png) no-repeat; height: 12px;}
+.bx-wrapper .bx-controls-auto .bx-start, .bx-wrapper .bx-controls-auto .bx-start.active {width: 10px; background-position: 0 0;}
+.bx-wrapper .bx-controls-auto .bx-start:hover {background-position: -30px 0;}
+.bx-wrapper .bx-controls-auto .bx-stop, .bx-wrapper .bx-controls-auto .bx-stop.active {width: 8px; background-position: -15px 0;}
+.bx-wrapper .bx-controls-auto .bx-stop:hover {background-position: -45px 0;}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {text-align: right; width: 916px; position: absolute; top: 0.5px; padding-top: 0;}
+.bx-wrapper .bx-pager.bx-default-pager a {background: #fff; width: 12px; height: 12px; margin: 0 4px; 
+	border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover .bx-stop:before, .bx-wrapper .bx-controls-auto .bx-stop:hover .bx-stop:after {background: #4A91Cf;}
+.bx-wrapper .bx-pager.bx-default-pager a:focus {background: #fff;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {background: #4A91Cf;}
+
+
+.oc2-bk {width: 1000px;}
+.oc2-bk .mainBn {position: relative; margin-top: 30px;}
+.oc2-bk .mainBn .tit-box {position: absolute; top: 138px; left: 40px; padding: 40px 20px 30px; 
+	font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; font-size: 44px; text-align: left; background: url(http://img.ocean2you-bike.co.kr/rgba_01.png) repeat; color: #fff;
+	line-height: 1.25; letter-spacing: -0.5px;
+}
+.oc2-bk .mainBn .tit-box > p {font-weight: 300;}
+.oc2-bk .mainBn .tit-box > p.f-bd {font-weight: 600;}
+.oc2-bk .mainBn .tit-box .btn-a{font-size: 20px; padding: 9px 28px; border: 2px solid #fff; color: #fff; display: inline-block; margin-top: 20px;}
+
+.oc2-bk .link-tab {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.oc2-bk .link-tab > li {float: left; width: 33.33%; margin-top: 12px; border: 1px solid #d2d2d2; border-left: none; box-sizing: border-box;}
+.oc2-bk .link-tab > li:first-child {border: 1px solid #d2d2d2;}
+.oc2-bk .link-tab > li > a {position: relative; display: block; font-size: 22px; width: 100%; padding: 16px 0; font-weight: 500;}
+.oc2-bk .link-tab > li > a:before {content: ""; display: inline-block; background: url(http://img.ocean2you-bike.co.kr/icon.png) no-repeat 0 -1px; width: 50px; height: 50px; position: absolute;}
+.oc2-bk .link-tab > li.nth-1 a:before {width: 42px; height: 35px; left: 50%; margin-left: -85px; top: 50%; margin-top: -17.5px;}
+.oc2-bk .link-tab > li.nth-2 a:before {background-position: -50px -1px; width: 27px; height: 36px; left: 50%; margin-left: -70px; top: 50%; margin-top: -18px;}
+.oc2-bk .link-tab > li.nth-3 a:before {background-position: -100px -1px; width: 25px; height: 36px; left: 50%; margin-left: -70px; top: 50%; margin-top: -18px;}
+.oc2-bk .link-tab > li > a .rArr {background: url(http://img.ocean2you-bike.co.kr/icon.png) no-repeat -150px 0; display: inline-block; width: 10px; height: 12px; position: absolute; right: 30px; top: 50%; margin-top: -4px;}
+
+.oc2-bk .link-bn {margin-top: 15px; position: relative; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.oc2-bk .link-bn > a {display: block; float: left; height: 107px; color: #fff; line-height: 1.2; padding-top: 28px; box-sizing: border-box; font-weight: 300;}
+.oc2-bk .link-bn > a.nth-1 {width: 637px; margin-right: 16px; background: url(http://img.ocean2you-bike.co.kr/oc2_bn.jpg) no-repeat; font-size: 20px;}
+.oc2-bk .link-bn > a.nth-2 {width: 327px; background: url(http://img.ocean2you-bike.co.kr/oc2_bf_bn.jpg) no-repeat; font-size: 20px;}
+.oc2-bk .link-bn > a .italic {font-style: italic;}
+.oc2-bk .link-bn > a .f-bd {font-size: 24px; font-weight: 400;}

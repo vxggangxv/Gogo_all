@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+
+<html lang="ko" class="ui-mobile"> 
+<!--<![endif]--> 
+<head>
+<meta charset="UTF-8">
+<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 VAROTOUR.NET </title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="expire" content="-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
+<link rel="apple-touch-icon" href="http://img.varotour.net/mobile/icon.png"> 
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20171016112600" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+<link rel="stylesheet" href="http://static.varotour.net/css/moblie_reset.css?ver=20171016112600" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css?ver=20171016112600" type="text/css">
+
+<!-- 모든사이트 통합 css -->
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css?ver=20171016112600" type="text/css">
+<meta name="robots" content="ALL">
+<meta name="author" content="VAROTOUR.NET">
+<meta name="description" content=" 바로투어 VAROTOUR.NET">
+<meta name="keywords" content=" 바로투어 VAROTOUR.NET">
+<meta name="classification" content="바로투어 VAROTOUR.NET">
+  <!--리뉴얼css--> 
+<link rel="stylesheet" href="http://static.varotour.net/css/mobile_layout3.css" type="text/css"/> 
+  
+  <!--폰트가지고 오기--> 
+ <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css"> 
+ <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css"> 
+ <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css"> 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!--- 검색시 달력에서 이용 -->
+<link rel="stylesheet" href="http://static.varotour.net/css/jquery-ui.css">
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--- 달력 한글화 -->
+<script type="text/javascript" src="http://static.varotour.net/js/datepicker_ko.js"></script>
+
+
+<!-- Android icon -->
+<!--<link rel="shortcut icon" href="http://img.varotour.net/icon_goco128x128.ico" type="image/x-icon" />-->
+<link rel="shortcut icon" href="http://img.varotour.net/mobile/icon_goco72x72.png" type="image/x-icon">
+<!-- iPhone icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="http://img.varotour.net/mobile/icon_goco57x57.png">
+<!-- iPad icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="http://img.varotour.net/mobile/icon_goco72x72.png">
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon" sizes="114x114" href="http://img.varotour.net/mobile/icon_goco114x114.png">
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://img.varotour.net/mobile/icon_goco144x144.png">
+
+<script type="text/javascript">
+$( document ).on( "mobileinit", function() {
+  $.extend( $.mobile , {
+	autoInitializePage: false,
+  });
+});
+
+// iOS 10 버전에서 user-scalable=0 가 안먹음
+document.documentElement.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
+
+</script>
+
+<script>
+
+var burl = "varotour.net";
+var agent = "W";
+var do2_url = "http://www.varotour.net";
+/* 쿠키 60분 */
+var date = new Date(); 
+var minutes = 120; 
+date.setTime(date.getTime() + (minutes * 60 * 1000)); 
+</script>
+<!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>-->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20171016112600"></script>
+<script type="text/javascript" src="http://static.varotour.net/js/common_ver2.js?ver=20171016112600"></script>
+<script type="text/javascript" src="http://static.varotour.net/js/iscroll.js?ver=20171016112600"></script>
+<script type="text/javascript" src="http://static.varotour.net/js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="http://static.varotour.net/js/jquery.raty.js"></script>
+
+<!--- 리스트페이지에서 쓸 스크립트-->
+<script type="text/javascript" src="http://static.varotour.net/js/swiper.min.js?ver=20171016112600"></script>
+<!--- 리스트페이지에서 쓸 스크립트-->
+
+<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+
+<script src="http://static.go.co.kr/js/bookmark.js?ver=1508120760"></script>
+</head>
+
+<!-- 검색창 -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.schtxt').focus(function(){
+			if($(this).val()==""){
+				$('.schtxt').val(''); 
+			}
+					
+	})
+	$('.schbt').click(function(){
+			if($.trim($('.schtxt').val())==""){
+			   alert('검색어를 입력해주세요.');
+			 $('.schtxt').focus('');
+			 $('.schtxt').val('');
+		    }
+	})	
+	$('.schtxt').focus(function(){
+			$('.sch_t').hide();
+	})
+})
+</script>	
+
+
+
+<body>
+<div class="m_wrapper">
+<!-- 헤더 -->
+	<div class="m_header_wrap">
+		<div class="header">
+			<h1 class="logo"><img src="http://img.varotour.net/mobile/20171016_renew/main_logo.png" alt="varotour"></h1>		
+			<div class="login_wrap">	
+				<ul class="login clr">
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">나의예약조회</a></li>
+					<li><a href="#">로그인하기</a></li>
+				</ul>
+			 </div>	 
+			<div class="header_text">
+				<span><span class="t_titb">이주의 추천 숙소</span> <br> <strong>오션투유리조트</strong><br><span class="t_sbt">강원도 고성군</span><br>
+				<a href="#" class="t_link">숙소에 대해 자세히 알아보기 	&nbsp;<img src="http://img.varotour.net/mobile/20171016_renew/main_arrow.png"></a></span>
+			</div>	 
+		</div>
+	</div>
+<!-- 숙소검색 -->
+	<div class="search_box_wrap">
+		<div class="search_box">
+			  <div class="sch_wrap">
+				<form method="post" action="" name="frm">
+					<input type="text" value=" " name="searc_txt" class="schtxt"></input>
+						<p class="sch_t">생각해둔 지역이나 장소를 검색해볼까요?</p>
+							<button class="schbt" type="button" tabindex="2" title="검색"> 
+							<span class="bt_ico"><img src="http://img.varotour.net/mobile/20171016_renew/searc_icon.png"></span> 
+							</button>
+					</form>
+				</div>
+		   </div>
+		<p class="search_text"><span class="t_col">최대 80%할인</span>된 숙소가 여러분을 위해 준비되어 있습니다.</p>
+	</div>
+	
+<div class="section_wrap">	
+<!-- 인기여행지 -->	
+		<div class="best_city_wrap">
+	  		<div class="bst_city">
+		 		<h2 class="t_col">인기여행지</h2>
+				<ul class="clr">
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/m_city.png" alt="서울"></a></li>
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/m_city2.png" alt="부산"></a></li>
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/m_city3.png" alt="제주도"></a></li>
+				</ul>
+			</div>
+		</div>
+<!-- 인기숙소 -->	
+		<div class="best_room_wrap">
+			<div class="best_room">
+			 <h2 class="t_col">인기숙박시설</h2>
+				<ul class="clr">
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/m_best.png" alt="게스트하우스"></a></li>
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/m_best2.png" alt="레지던스"></a></li>
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/m_best3.png" alt="펜션"></a></li>
+				</ul>
+			</div>
+		</div>
+</div>	
+<!-- 서비스이용 -->	
+	<div class="svc">
+		<p><img src="http://img.varotour.net/mobile/20171016_renew/m_svc.png" alt="서비스를 이용하는데 어려움이 있으신가요?"></p>
+	</div>
+<!-- 푸터 -->		
+	<div class="footer_wrap">
+		<div class="foot_btn">
+		  <ul class="clr">
+			  <li class="btn1"><a href="#">나의 예약상태 확인하기 ></a></li>
+			  <li class="btn2"><a href="#">자주 묻는 질문 확인하기 ></a></li>
+			</ul>
+		</div>
+
+		<div class="f-top">
+			<ul class="clr">
+				<li><a href="#">&nbsp;이용약관 </a>&nbsp;<span>|</span></li>
+				<li><a href="#">&nbsp;개인정보처리방침 </a></li>
+				<li class="last_txt"><a href="#">&nbsp;고객센터 <span class="f-color">&nbsp;(고객상담및빠른 객실문의 1666-1243)</span></a></li>
+			</ul>
+		</div>
+
+		<div class="f-bottom">
+			<div class="address">
+				<p>
+				<span>
+				대표이사 박준수 | 사업자등록번호 103-87-00576&nbsp;<br> <a href="#"><span class="f-bt">&nbsp;사업자정보확인></span></a><br>
+				<span class="f_add">주소  서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br></span></span>
+			</div>
+
+			<div class="f-info">
+			   <ul class="clr">
+					 <li>통신판매업&nbsp;제2017-서울강남-01755호&nbsp;</li>
+					 <li>여행업등록번호 제2017호29호&nbsp;</li>
+					 <li>여행영업보증서&nbsp; 국내여행제100-000-201701885127호&nbsp;</li>
+					 <li> 국외여행업등록번호 제2017-47호</li>
+				</ul>
+			</div>
+
+			<div class="f-icon">
+			  <ul class="clr">
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/f_icon1.png"></a></li>
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/f_icon2.png"></a></li>
+					<li><img src="http://img.varotour.net/mobile/20171016_renew/f_icon3.png"></li>
+					<li><img src="http://img.varotour.net/mobile/20171016_renew/f_icon4.png"></li>
+					<li><a href="#"><img src="http://img.varotour.net/mobile/20171016_renew/f_icon5.png"></a></li>
+			  </ul>
+			</div>
+		</div>
+			<p class="copy">
+				copyright2016bySTORYTRIP.CO.KR co.,allrightsreserved.
+			</p>
+	</div>	
+</div>
+</body>
+</html>     
