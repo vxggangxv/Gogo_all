@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(http://go.co.kr/fonts/nanumsquare/nanumsquare.css);
 
 .c-white {color: #fff;}
 .f-bd {font-weight: 700;}
@@ -74,3 +75,72 @@ ul .btn img{width: 60%; padding-bottom: 20px; }
 .evt-cp3 .main .area-btn .a-btn.bg-1 {background: #ff6000;}
 .evt-cp3 .main .area-btn .a-btn.bg-2 {background: #ffc600; color: #272727; border: 1px solid #d0d0d0;}
 .evt-cp3 .main .area-btn .a-btn.bg-3 {background: #d91a2e;}
+
+/* 이벤트 신청하기 */
+.evt-name {background: #394052;}
+.evt-area-apply {position: relative; width: 100%; padding-bottom: 100px;}
+.evt-area-apply .ig-1 {width: 100%;}
+.evt-area-apply .txt-box {position: relative; margin-top: -30px;}
+.evt-area-apply .p0 {position: relative; padding: 0 10px 0 20px; color: #fff; letter-spacing: -1px; line-height: 1.3; word-break: keep-all; font-size: 14px;}
+@media (max-device-width: 320px) {
+	.evt-area-apply .p0 {font-size: 13px;}
+}
+.evt-area-apply .p0 .i-dot {position: absolute; left: 11px; top: 5px; display: inline-block; width: 3px; height: 3px; background: #4ddcff;}
+.evt-area-apply .btn-a {position: fixed; bottom: 0; left: 0; background-color:#ff6600; width: 100%; display: block; text-align: center; height: 60px; color: #fff; font-size: 16px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.evt-area-apply .btn-a:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+
+/* 이벤트페이지 전체 공통 */
+.f-bdr {font-weight: 800;}
+.colr-1 {color: #fce37f;}
+.colr-2 {color: #ffe49a;}
+
+.evt-area {padding-top: 25px; width: 100%; min-height: 800px; background: #fff; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif;}
+
+.evt-outer {color: #282828;}
+.evt-outer .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
+.evt-outer .evt-main {text-align: center;}
+.evt-outer .evt-main .evt-visual {padding-top: 30px; padding-bottom: 55px; background: #d6d8f7;}
+.evt-outer .evt-main .evt-visual img.txtResult {width: 310px;}
+
+.evt-outer .box-result,
+.evt-outer .box-winnerList {width: 310px; margin: 0 auto; border-top: 2px solid #501143; background: #fff; margin-top: 10px;}
+
+/* 이벤트 당첨 */
+.evt-outer .box-winnerList,
+.evt-outer .box-result {text-align: center; padding-top: 10px; padding-bottom: 10px;}
+.evt-outer .box-result img.resultWin {width: 240px;}
+.evt-outer .box-result img.resultFail {width: 110px;}
+.evt-outer .box-winnerList .p-1,
+.evt-outer .box-result .p-1 {font-size: 16px; letter-spacing: -2px;}
+.evt-outer .box-result .p-1-2 {font-size: 15px; letter-spacing: -2px;}
+.evt-outer .box-result .box-id {width: 90%; margin: 10px auto 0; border: 1px solid #c9c9c9; background: #f3f3f3; padding: 10px 0 8px;}
+.evt-outer .box-result .box-id .p-2 {font-size: 14px; line-height: 1.4;}
+.evt-outer .box-result .box-id .p-2 em,
+.evt-outer .box-result .box-id .p-id {font-size: 15px; font-weight: 700;}
+.evt-outer .box-result .box-id .p-id {background: #fff; width: 70%; margin: 0 auto; padding: 5px 0; border: 1px solid #c9c9c9; margin-top: 10px;}
+
+.evt-outer .box-winnerList .p-1 {text-align: center;}
+.evt-outer .box-winnerList .winnerList {border: 1px solid #c9c9c9; width: 90%; margin: 10px auto;}
+.evt-outer .box-winnerList .winnerList > li {border-top: 1px solid #c9c9c9;}
+.evt-outer .box-winnerList .winnerList > li:first-child {border-top: 0;}
+.evt-outer .box-winnerList .winnerList > li > div {float: left; width: 50%; box-sizing: border-box; font-size: 12px; letter-spacing: -1px; padding: 8px 0;}
+.evt-outer .box-winnerList .winnerList > li > div:first-child {border-right: 1px solid #c9c9c9;}
+.evt-outer .area-btn {margin-top: 30px; text-align: center;}
+.evt-outer .area-btn a {display: inline-block; background: #fff; width: 580px; height: 88px; font-size: 24px; box-sizing: border-box; color: #000; letter-spacing: 0;}
+.evt-outer .area-btn a:after {content: ""; display: inline-block; vertical-align: middle; height: 105%;}
+.evt-outer .area-btn a .rArrow:after {width: 12px; height: 12px; border-width: 2px; border-color: #fff; top: -1px;}
+
+.evt-area .paging {margin-top: 15px;}
+.evt-area .paging > a {margin-left: 0px;}
+.evt-area .paging > a:first-child {margin-left: 0;}
+.evt-area .paging > a:first-child + a {margin-right: 20px;}
+
+/* 메이스힐리조트 원투쓰리 이벤트 */
+
+/* 이벤트 안내 */
+.mayhills-evt123 .evt-top {background: #4f4c7b;}
+.mayhills-evt123 .evt-main {}
+.mayhills-evt123 .evt-main .evt-visual {padding-top: 30px; padding-bottom: 55px; background: #d6d8f7;}
+
+/* BS콘도 칙칙폭폭이벤트 */
+.bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 35px;}

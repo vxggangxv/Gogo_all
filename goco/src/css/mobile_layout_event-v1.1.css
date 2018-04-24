@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-
+@import url(http://go.co.kr/fonts/nanumsquare/nanumsquare.css);
 
 body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.1px; position: relative; margin:0 auto;}
 a:link, a:visited {text-decoration:none; color:#000}
@@ -285,3 +285,150 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 /* 180122 1:1문의하기 수정 수연 */
 .bscond_wrap .bs-box .tel_txt {text-align: center; padding-top: 10px; font-size: 13px;}
 .bscond_wrap .bs-box .tel_txt .txt_bold {font-weight: bold;}
+
+
+/* 이벤트 신청하기 공통 */
+.evt-area-apply {position: relative; width: 100%; padding-bottom: 80px; font-family: "NanumSquare", sans-serif;}
+.evt-area-apply.evt-name {background: #394052;}
+.evt-area-apply .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 14px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
+.evt-area-apply .ig-1 {width: 100%;}
+.evt-area-apply .txt-box {position: relative; padding: 18px 0;}
+.evt-area-apply .p0 {position: relative; padding: 0 10px 0 20px; color: #fff; letter-spacing: -0.5px; line-height: 1.3; word-break: keep-all; font-size: 13px; margin-top: 5px;}
+.evt-area-apply .p0:first-child {margin-top: 0;}
+@media (max-device-width: 320px) {
+	.evt-area-apply .p0 {font-size: 13px;}
+}
+.evt-area-apply .p0 .i-dot {position: absolute; left: 11px; top: 6px; display: inline-block; width: 3px; height: 3px; background: #fff; border-radius: 50%;}
+.evt-area-apply .btn-a {position: fixed; bottom: 0; left: 0; background-color:#ff6600; width: 100%; display: block; text-align: center; height: 60px; color: #fff; font-size: 16px;}
+.evt-area-apply .btn-a:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+
+/* 이벤트페이지 전체 공통 */
+.f-bd {font-weight: 700;}
+.f-bdr {font-weight: 800;}
+.colr-1 {color: #fce37f;}
+.colr-2 {color: #ffe49a;}
+.colr-3 {color: #180075;}
+
+.evt-area {width: 100%; min-width: 320px; min-height: 800px; background: #fff; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif;}
+
+.evt-outer {color: #282828;}
+.evt-outer img.max-wd {width: 100%;}
+.evt-outer .evt-top {background: #3B2150; text-align: center; color: #fff; font-size: 13px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
+@media (min-width: 400px) {
+	.evt-outer .evt-top br {display: none;}
+}
+.evt-outer .evt-main {text-align: center;}
+.evt-outer .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
+.evt-outer .evt-main .evt-visual img.txtResult {width: 310px;}
+.evt-outer .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 303px; margin: 0 auto; background: url(http://img.go.co.kr/event/mayhills/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.evt-outer .evt-main .evt-visual div.txtResult span.name {display: inline-block; font-size: 18px; font-weight: 700; position: absolute; top: 27px; width: 172px; height: 26px; left: 50px; text-align: center;}
+.evt-outer .evt-main .evt-visual > p {width: 100%; max-width: 320px; margin: 10px auto 0; font-size: 13px; word-break: keep-all;}
+.evt-outer .evt-main .evt-visual .p-row-1 {}
+.evt-outer .evt-main .evt-visual .p-row-2 {background: #C0C3F2; padding: 6px 0; font-size: 12px; letter-spacing: -1px;}
+
+.evt-outer .box-result,
+.evt-outer .box-winnerList {width: 310px; margin: 0 auto; border-top: 2px solid #501143; background: #fff; margin-top: 15px;}
+
+.evt-outer .evt-main .evt-tit {color: #fff; font-size: 20px; background: #241941; text-align: center; padding: 16px 0;}
+.evt-outer .box-faq {background: #fff; text-align: left;}
+.evt-outer .box-faq img.txtFaq {width: 160px; display: block; margin: 0 auto; padding: 15px 0 5px;}
+
+.evt-outer .box-faq {position: relative; padding-bottom: 30px;}
+.evt-outer .box-faq .ig-1 {width: 100%;}
+.evt-outer .box-faq .faq-ul {position: relative; width: 96%; margin: 0px auto;}
+.evt-outer .box-faq .faq-ul > li {position: relative; border-top: 1px solid #bababa;}
+.evt-outer .box-faq .faq-ul li:first-child {border-top: 0;}
+.evt-outer .box-faq .faq-ul > li:last-child {border-bottom: 1px solid #bababa;}
+.evt-outer .box-faq .faq-ul > li > div{position: relative; letter-spacing: -0.2px; /*min-height: 49px;*/ box-sizing: border-box; word-break: keep-all; cursor: pointer;}
+.evt-outer .box-faq .faq-ul > li > div.faq-q {padding: 10px 17px 10px 25px;}
+.evt-outer .box-faq .faq-ul > li > div.faq-a {padding: 10px 5px 10px 5px;}
+.evt-outer .box-faq .faq-q {color: #393939;}
+.evt-outer .box-faq .faq-q .i-x, .evt-outer .box-faq .faq-q .i-dArr {float: right; display: inline-block; position: relative; top: -4px; right: -22px;}
+.evt-outer .box-faq .faq-q .i-x:before, .evt-outer .box-faq .faq-q .i-x:after {content: ""; width: 12px; height: 1px; background: #393939; position: relative; display: none;}
+.evt-outer .box-faq .faq-q .i-x:before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.evt-outer .box-faq .faq-q .i-x:after {
+	left: -12px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.evt-outer .box-faq .faq-q .i-dArr {
+	top: 3px; right: -8px;
+	width: 7px; height: 7px;
+	border: 1px solid #393939;
+	border-right: none; border-top: none;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.evt-outer .box-faq .faq-q.on {color: #f24959;}
+.evt-outer .box-faq .faq-q.on .i-dArr {display: none;}
+.evt-outer .box-faq .faq-q.on .i-x:before, .evt-outer .box-faq .faq-q.on .i-x:after {display: inline-block; background: #f24959;}
+.evt-outer .box-faq .faq-a {display: none; border-top: 1px solid #bababa; color: #2f2f2f; line-height: 1.25;}
+.evt-outer .box-faq .faq-a.on {display: block;}
+.evt-outer .box-faq .faq-q:before, .evt-outer .box-faq .faq-a:before {content: ""; display: inline-block; position: absolute; left: 5px; top: 9px; font-weight: 600; font-family: Arial , sans-serif;}
+.evt-outer .box-faq .faq-q:before {content: "Q."; /*color: #005aff;*/}
+.evt-outer .box-faq .area-btn {margin-top: 20px;}
+.evt-outer .box-faq .area-btn a {background: #4f4c7b; width: 260px; color: #fff; height: 46px; font-size: 16px;}
+.evt-outer .box-faq .area-btn a .rArrow:after {width: 7px; height: 7px; border-width: 1px; top: -1;}
+
+.evt-outer .evt-bottom {}
+.evt-outer .evt-bottom {position: relative; height: 65px; background: #80598e;}
+.evt-outer .evt-bottom .fixed-btn {text-align: center; background: #fff; padding: 8px 0; position: fixed; left: 0; bottom: 0; width: 100%;}
+.evt-outer .evt-bottom .fixed-btn > a {display: inline-block; width: 46%; height: 46px; vertical-align: middle; color: #fff; font-size: 13px; line-height: 1.2; box-sizing: border-box;}
+.evt-outer .evt-bottom .fixed-btn > a .fz-1 {font-size: 15px;}
+.evt-outer .evt-bottom .fixed-btn > a:first-child {margin-right: 1%; background: #f24959; padding-top: 8px;}
+.evt-outer .evt-bottom .fixed-btn > a:first-child + a {background: #3a7edb; padding-top: 15px;}
+.evt-outer .area-btn {margin-top: 30px; text-align: center;}
+.evt-outer .area-btn a {display: inline-block; background: #fff; width: 290px; height: 56px; font-size: 18px; box-sizing: border-box; color: #000; letter-spacing: 0;}
+.evt-outer .area-btn a:after {content: ""; display: inline-block; vertical-align: middle; height: 105%;}
+.evt-outer .area-btn a .rArrow:after {width: 12px; height: 12px; border-width: 2px; border-color: #fff; top: -1px;}
+
+.evt-area .paging {margin-top: 15px;}
+.evt-area .paging > a {margin-left: 0px;}
+.evt-area .paging > a:first-child {margin-left: 0;}
+.evt-area .paging > a:first-child + a {margin-right: 20px;}
+
+/* 메이스힐리조트 원투쓰리 이벤트 */
+
+/* 메이힐스 이벤트 안내 */
+.mayhills-evt123 {}
+.mayhills-evt123 .evt-top {background: #4f4c7b;}
+.mayhills-evt123 .evt-main {}
+.mayhills-evt123 .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
+
+/* 메이힐스 신청하기 */
+.apply-mayhills .evt-top,
+.apply-mayhills {background: #3B2150;}
+.apply-mayhills .btn-a {background: #FF4052;}
+
+/* BS콘도 칙칙폭폭이벤트 */
+.bscondo-evt7788 {}
+.bscondo-evt7788 .colr-1 {color: #fbef2b;}
+.bscondo-evt7788 .colr-2 {color: #fbef2b;}
+.bscondo-evt7788 .colr-3 {color: #1b1575;}
+.bscondo-evt7788 .evt-top,
+.evt-area-apply.apply-bscondo .evt-top {background: #1c1a1b;}
+.bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 20px;}
+.bscondo-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 270px; margin: 0 auto; background: url(http://img.go.co.kr/event/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.bscondo-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 8px; left: 75px;}
+.bscondo-evt7788 .evt-main .evt-visual .p-row-2 {background: #debf4a; border-top: 1px solid #74a47e; border-bottom: 1px solid #74a47e;}
+.apply-bscondo .btn-a,
+.bscondo-evt7788 .evt-main .evt-tit {background: #252525;}
+.bscondo-evt7788 .box-faq .faq-q.on {color: #01a29d;}
+.bscondo-evt7788 .box-faq .faq-q.on .i-x:before, .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
+.bscondo-evt7788 .box-faq .area-btn a,
+.bscondo-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
+.bscondo-evt7788 .evt-bottom {background: #c4b07e;}
+
+/* BS콘도 신청하기 */
+.apply-bscondo {background: #fce39e;}
+.apply-bscondo .p0 .i-dot {background: #2d2d2d;}
+.apply-bscondo .txt-box .p0 {color: #2d2d2d;}
