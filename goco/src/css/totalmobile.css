@@ -4,6 +4,7 @@
 .f-bd {font-weight: 700;}
 .thColor {color: #ff6a00}
 
+/*#headTitle {font-family: "Nanum Gothic", sans-serif;}*/
 #headTitle #h-phone {position: absolute; top: 15px; right: 10px; width: 17px; height: 16px; cursor: pointer;}
 
 #reserInfo_title .reserInfo_title_txt {color: #7b7b7b;}
@@ -1152,8 +1153,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #qna.type02 .view {border-top-color: #ff6900;}
 #qna.type02 .view .input_line {width: 100%;}
 /* 20180214_리셋+수정_다솜 */
+#qna.type02 .view th, #qna.type02 .view td {position: relative;}
 #qna.type02 .view tr:first-child td + td + td {display:none;}
 #qna.type02 .view .input_line .select_box, #qna.type02 .view .input_box .select02 {-webkit-appearance:none; text-indent:0;}
+#qna.type02 .view .input_line .select_box {-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; height: 32px;}
 #qna.type02 .view .input_line1 {font-size:12px;}
 #qna.type02 .view .input_line1, #qna.type02 .view .input_line .select_box, #qna.type02 .view .input_box .select02 {background: #fff url(http://img.go.co.kr/mobile/i_dArrBl.png) right 6px center no-repeat; background-size: 10px;}
 #qna.type02 .view input {border-radius:0;}
@@ -2165,3 +2168,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .pop-snsShare .pop-main .list .itm:first-child {border-top: 0;}
 .pop-snsShare .pop-main .list .itm a img {width: 35px; vertical-align: middle; margin-right: 12px;}
 .pop-snsShare .pop-main .list .itm a {display: block; font-size: 13px;}
+
+/* faq 배너 */
+.faqBn {clear: both;}
+.faqBn a {width: 100%; display: block; background: #ffd800; color: #000; height: 38px; font-size: 16px; font-weight: 700; text-align: center; line-height: 38px; letter-spacing: -1.5px; font-family: "Nanum Gothic", sans-serif;}
+.faqBn a .colr-1 {color: #ff4800;}
+
+/* 무료숙박권 1대1 문의 수정 */
+#qna.faq-brand .view {}
+#qna.faq-brand .input_line1 {margin-bottom: 0;}
+#qna.faq-brand .view textarea {letter-spacing: -1px; word-break: keep-all; padding: 5px; font-size: 12px; line-height: 1.5;}
+#qna.faq-brand .select_txt {
+/*	-webkit-appearance: none; -moz-appearance: none; appearance: none;*/
+	border: 1px solid #dadada; color: #7b7b7b;
+	width: 100%; letter-spacing: -1.5px; font-family: "Nanum Gothic", sans-serif; height: 35px;
+}

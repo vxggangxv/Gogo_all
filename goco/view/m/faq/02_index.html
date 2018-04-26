@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css" type="text/css" />
+
+	<link rel="stylesheet" href="../../../src/css/faq_m-v1.1.css">
+
+	<!-- 모든사이트 통합 css -->
+<!--	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css" />-->
+	<link rel="stylesheet" href="../../../src/css/totalmobile.css" type="text/css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper" data-role="page">
+		<div id="scroll_box">
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<div id="headTitle_box">
+					<div id="headTitle">
+						<span class="back">
+							<a href="javascript:history.back();"><img src="http://img.mayhillsresort.kr/mobile/btn_back.png" height="17" alt="뒤로"></a>
+						</span> 무료숙박권 관련 1:1 문의
+					</div>
+				</div>
+			</div>
+			<div id="top_box_bottom" style="height: 46px;"></div>			
+			
+			
+			<!-- 180425 무료숙박권 1대1 문의 클래스 추가-->
+			<div id="qna" class="type02 faq-brand">
+				<form name="wform" id="wform" method="post" action="state.php" onsubmit="">
+					<input type="hidden" name="uid" value="devtest1">
+					<input type="hidden" name="brd" value="RhAl">
+					<input type="hidden" name="category2" value="G">
+					<input type="hidden" name="is_login" id="is_login" value="Y">
+					<input type="hidden" name="mode" value="one_write">
+					<!-- 추가 -->
+					<input type="hidden" name="mobile_review" value="mobile_review">
+					<!-- -->
+
+
+					<table class="view">
+						<colgroup>
+							<col width="20%">
+							<col width="30%">
+							<col width="20%">
+							<col width="30%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>제목</th>
+								<td colspan="3">
+									<select class="select_txt" style="cursor:Pointer">
+										<option value="">오션투유리조트 무료숙박권 관련 문의드려요.</option>
+										<option value="">도고BS콘도 무료숙박권 관련 문의드려요</option>
+										<option value="">메이힐스리조트 무료숙박권 관련 문의드려요</option>
+										<option value="">연호리조트 무료숙박권 관련 문의드려요</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>작성자명</th>
+								<td colspan="3">
+									<div class="input_row" id="">
+										<span class="input_box">
+												<input type="text" id="name" name="name" class="int" maxlength="41" value="" title="작성자명">
+											</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>휴대폰</th>
+								<td colspan="3">
+									<!--170918 style width추가-->
+									<input type="text" style="border:1px solid #c8c8c8;padding-left:5px; width:26%;" numberonly="true" maxlength="3" size="5" id="phone1" name="phone1" value="010"> -
+									<input type="text" style="border:1px solid #c8c8c8;padding-left:5px; width:26%;" numberonly="true" maxlength="4" size="5" id="phone2" name="phone2" value=""> -
+									<input type="text" style="border:1px solid #c8c8c8;padding-left:5px; width:26%;" numberonly="true" maxlength="4" size="5" id="phone3" name="phone3" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>이메일</th>
+								<td colspan="3">
+									<div class="input_row" id="">
+										<span class="input_box">
+												<input type="text" id="email" name="email" class="int" maxlength="41" value="" title="이메일">
+											</span>
+									</div>
+								</td>
+							</tr>
+							<input type="hidden" name="passwd" value="e10adc3949ba59abbe56e057f20f883e" id="passwd">
+							<tr>
+								<!--170918 td-1 클래스추가 및 변경-->
+								<td colspan="4" class="td-1">
+									<div class="text" id="">
+										<textarea name="contents" id="contents" style="width:100%; height:150px" value="" placeholder="안녕하세요. 고코투어입니다.
+본 문의처는 무료숙박권 이벤트와 관련된 문의만 요청가능합니다.
+문의에 대한 답변은 고코투어 사이트의 마이페이지 / 나의 문의내역에서 확인해 주세요.
+감사합니다." class="placeholder"></textarea>
+									</div>
+									<div class="btn_write">
+										<span class="ok-2"><a href="javascript:reseve_write();">문의</a></span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+
+			</div>
+			<!-- // -->
+			
+		</div>
+	</div>
+
+			
+
+</body>
+
+</html>
