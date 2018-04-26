@@ -5,7 +5,7 @@
 
 
 /* faq 불러오기 */
-/*@import url(http://static.go.co.kr/css/faq-v1.1.css);*/
+@import url(http://static.go.co.kr/css/faq-v1.1.css);
 
 body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.1px; }
 /*a:link, a:visited {text-decoration:none; color:#000}
