@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.c-white {color: #fff;}
+.f-bd {font-weight: 700;}
+/*.cl-1 {color: #ff6000;}
+.cl-2 {color: #ffc600;}
+.cl-3 {color: #d91a2e;}*/
+
+
+
+/* 180424_연호리조트 삼삼구 이벤트 당첨자 발표_다솜 */
+.yeonho339-wrap {position:relative; width:100%; margin:0 auto; padding:0;}
+.yeonho339-wrap img {display:block; width:100%; margin:0 auto; padding:0; text-align:center;}
+.yeonho339-wrap .f-bd {font-style:normal;}
+.yeonho339-winner {padding:0 15px 30px; background:#97d2d5}
+.yeonho339-winner .evt-winner {max-width:360px; margin:0 auto; margin-top:10px; padding:5px 20px 13px; text-align:center; border-top:2px solid #501143; background:#fff}
+.yeonho339-winner .evt-winner .win-box {}
+.yeonho339-winner .evt-winner .win-box .win-txt {font-size:16px; color:#282929}
+.yeonho339-winner .evt-winner .win-box .lose-txt {font-size:16px; font-weight:bold; color:#282929}
+.yeonho339-winner .evt-winner .win-box .user-id-box {margin-top:15px; padding:8px 0; text-align:center; border:1px solid #c9c9c9; background:#f3f3f3} 
+.yeonho339-winner .evt-winner .win-box .user-id-box .user-txt {font-size:13px; line-height:1.2em; color:#232323}
+.yeonho339-winner .evt-winner .win-box .user-id-box .user-txt span {display:block; font-size:11px; line-height:1.2em;}
+.yeonho339-winner .evt-winner .win-box .user-id-box .user-id-txt {box-sizing:border-box; width:202px; height:30px; margin:0 auto; margin-top:7px; font-size:14px; font-weight:bold; line-height:28px; color:#232323; border:1px solid #c9c9c9; background:#fff} 
+.evt-winner .winner-list-box .winner-tit {margin-bottom:14px; font-size:17px; color:#282929}
+.evt-winner .winner-list-box .winner-list {width:100%; box-sizing:border-box; margin:0 auto; border-top:1px solid #d1d1d1; border-left:1px solid #d1d1d1;}
+.evt-winner .winner-list-box .winner-list:before, .evt-winner .winner-list-box .winner-list:after {content:''; clear:both; display:block}
+.evt-winner .winner-list-box .winner-list li {float:left; box-sizing:border-box; width:50%; height:25px; font-size:12px; line-height:24px; color:#232323; border:1px solid #d1d1d1; border-top:0; border-left:0;}
+.evt-winner .winner-list-box .paging a {position:relative; display:inline-block; width:22px; height:auto}
+.evt-winner .winner-list-box .paging a:nth-child(2), .evt-winner .winner-list-box .paging a:nth-child(3) {width:14px;}
+
+
+
+/* 180424_오션투유 친구사이 이벤트 당첨자 발표_다솜 */
+.ocean-friend-wrap {position:relative; width:100%; margin:0 auto; padding:0;}
+.ocean-friend-wrap img {display:block; width:100%; margin:0 auto; padding:0; text-align:center;}
+.ocean-friend-wrap .f-bd {font-style:normal;}
+.ocean-friend-wrap .friend-winner {padding:0 15px 30px; background:#bde6ff}
+.ocean-friend-wrap .friend-winner .evt-winner {max-width:360px; margin:0 auto; margin-top:10px; padding:5px 20px 13px; text-align:center; border-top:2px solid #501143; background:#fff}
+.ocean-friend-wrap .friend-winner .evt-winner .win-box {}
+.ocean-friend-wrap .friend-winner .evt-winner .win-box .win-txt {font-size:16px; color:#282929}
+.ocean-friend-wrap .friend-winner .evt-winner .win-box .lose-txt {font-size:16px; font-weight:bold; color:#282929}
+.ocean-friend-wrap .friend-winner .evt-winner .win-box .user-id-box {margin-top:15px; padding:8px 0; text-align:center; border:1px solid #c9c9c9; background:#f3f3f3} 
+.ocean-friend-wrap .friend-winner .evt-winner .win-box .user-id-box .user-txt {font-size:13px; line-height:1.2em; color:#232323}
+.ocean-friend-wrap .friend-winner .evt-winner .win-box .user-id-box .user-txt span {display:block; font-size:11px; line-height:1.2em;}
+.ocean-friend-wrap .friend-winner .evt-winner .win-box .user-id-box .user-id-txt {box-sizing:border-box; width:202px; height:30px; margin:0 auto; margin-top:7px; font-size:14px; font-weight:bold; line-height:28px; color:#232323; border:1px solid #c9c9c9; background:#fff} 
+.ocean-friend-wrap .evt-winner .winner-list-box .winner-tit {margin-bottom:14px; font-size:17px; color:#282929}
+.ocean-friend-wrap .evt-winner .winner-list-box .winner-list {width:100%; box-sizing:border-box; margin:0 auto; border-top:1px solid #d1d1d1; border-left:1px solid #d1d1d1;}
+.ocean-friend-wrap .evt-winner .winner-list-box .winner-list:before, .evt-winner .winner-list-box .winner-list:after {content:''; clear:both; display:block}
+.ocean-friend-wrap .evt-winner .winner-list-box .winner-list li {float:left; box-sizing:border-box; width:50%; height:25px; font-size:12px; line-height:24px; color:#232323; border:1px solid #d1d1d1; border-top:0; border-left:0;}
+.ocean-friend-wrap .evt-winner .winner-list-box .paging a {position:relative; display:inline-block; width:22px; height:auto}
+.ocean-friend-wrap .evt-winner .winner-list-box .paging a:nth-child(2), .evt-winner .winner-list-box .paging a:nth-child(3) {width:14px;}

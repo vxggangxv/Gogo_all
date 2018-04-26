@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* FAQ 해더 색상 */
+.faqWrap .faq-main,
+.faqWrap {border-color: #33c19b !important;}
+.faqWrap .ul1 > li .d2:before,
+.faqWrap .ul1 > li .d1.on .s-tit:after,
+.faqWrap h2 {background: #33c19b!important;}
+.faqWrap .ul1 > li .d1:hover,
+.faqWrap .ul1 > li .d1.on {color: #33c19b!important;}

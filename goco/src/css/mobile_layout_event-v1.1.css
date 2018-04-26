@@ -314,8 +314,9 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer {color: #282828;}
 .evt-outer img.max-wd {width: 100%;}
 .evt-outer .evt-top {background: #3B2150; text-align: center; color: #fff; font-size: 13px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
-@media (min-width: 400px) {
-	.evt-outer .evt-top br {display: none;}
+.evt-outer .evt-top br {display: none;}
+@media (max-width: 400px) {
+	.evt-outer .evt-top {font-size: 10px;}
 }
 .evt-outer .evt-main {text-align: center;}
 .evt-outer .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
@@ -380,7 +381,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer .box-faq .area-btn a .rArrow:after {width: 7px; height: 7px; border-width: 1px; top: -1;}
 
 .evt-outer .evt-bottom {}
-.evt-outer .evt-bottom {position: relative; height: 65px; background: #80598e;}
+.evt-outer .evt-bottom {position: relative; height: 62px;}
 .evt-outer .evt-bottom .fixed-btn {text-align: center; background: #fff; padding: 8px 0; position: fixed; left: 0; bottom: 0; width: 100%;}
 .evt-outer .evt-bottom .fixed-btn > a {display: inline-block; width: 46%; height: 46px; vertical-align: middle; color: #fff; font-size: 13px; line-height: 1.2; box-sizing: border-box;}
 .evt-outer .evt-bottom .fixed-btn > a .fz-1 {font-size: 15px;}
@@ -415,7 +416,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .bscondo-evt7788 .colr-2 {color: #fbef2b;}
 .bscondo-evt7788 .colr-3 {color: #1b1575;}
 .bscondo-evt7788 .evt-top,
-.evt-area-apply.apply-bscondo .evt-top {background: #1c1a1b;}
+.apply-bscondo .evt-top {background: #1c1a1b;}
 .bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 20px;}
 .bscondo-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 270px; margin: 0 auto; background: url(http://img.go.co.kr/event/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .bscondo-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 8px; left: 75px;}
@@ -430,5 +431,44 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 
 /* BS콘도 신청하기 */
 .apply-bscondo {background: #fce39e;}
-.apply-bscondo .p0 .i-dot {background: #2d2d2d;}
+.apply-bscondo .p0 .i-dot {background: #252525;}
 .apply-bscondo .txt-box .p0 {color: #2d2d2d;}
+
+/* 연호리조트 */
+.yeonho-evt7788 {}
+.yeonho-evt7788 .colr-1 {color: #fbef2b;}
+.yeonho-evt7788 .colr-2 {color: #fbef2b;}
+.yeonho-evt7788 .colr-3 {color: #fbef2b;}
+.yeonho-evt7788 .evt-top {background: #005B6E;}
+.yeonho-evt7788 .evt-main .evt-visual {background: #7bcacf; padding-top: 10px;}
+.yeonho-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/yeonho/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.yeonho-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 29px; left: 60px;}
+.yeonho-evt7788 .evt-main .evt-visual .p-row-2 {background: #6DBFCB; border-top: 1px solid #5bb5c3; border-bottom: 1px solid #5bb5c3;}
+.yeonho-evt7788 .evt-main .evt-tit {background: #005B6E;}
+.apply-yeonho .btn-a,
+.apply-yeonho .evt-top {background: #13548a;}
+.yeonho-evt7788 .box-faq .faq-q.on {color: #01a29d;}
+.yeonho-evt7788 .box-faq .faq-q.on .i-x:before, .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
+.yeonho-evt7788 .box-faq .area-btn a,
+.yeonho-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
+.yeonho-evt7788 .evt-bottom {background: #c4b07e;}
+.evt-area-apply.apply-yeonho .txt-box {background: #d9d3d0;}
+
+.apply-yeonho .p0 .i-dot {background: #252525;}
+.apply-yeonho .txt-box .p0 {color: #252525;}
+
+/* 오션투유 7942이벤트 */
+.ocean-evt7942 {}
+.ocean-evt7942 .colr-3 {color: #4237ff;}
+.ocean-evt7942 .evt-top {background: #2684cc;}
+.ocean-evt7942 .evt-main {}
+.ocean-evt7942 .evt-main .evt-visual {background: #BEE6FF;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}
+.ocean-evt7942 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
+.ocean-evt7942 .evt-main .evt-tit {background: #243b71;}
+
+.apply-ocean .evt-top {background: #243b71;}
+.apply-ocean {background: #172340;}
+.apply-ocean .btn-a {background: #FF4052;}
+

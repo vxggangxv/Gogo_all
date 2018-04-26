@@ -52,8 +52,8 @@
 	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css?ver=20170522094223" type="text/css">
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170522094223">
 
-<!--	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css">-->
-	<link rel="stylesheet" type="text/css" href="../../../src/css/event.css">
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event-v1.1.css">
+<!--	<link rel="stylesheet" type="text/css" href="../../../src/css/event-v1.1.css">	-->
 	
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css?ver=20170522094223" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
 
@@ -552,36 +552,7 @@
 		</div>
 	</div>
 
-	<!---우측 퀵메뉴--->
-	<div id="quickMenu" class="quick_on">
-		<div class="ment">
-			<p class="logo">고코투어</p>
-			<!--- 회원 --->
-			<p>똑띠빙 님<br>반갑습니다!</p>
-			<p>적립금 <span class="point">2,000</span>원</p>
-			<p>찜목록 <span class="point">0</span>건</p>
-			<p>진행중인 예약내역<br><span class="point">0</span>건</p>
-			<a href="http://www.go.co.kr/home/member/?dd=Sws5TzdVKg==" title="마이페이지"><img src="http://img.go.co.kr/btn_quickMenu_mypage.png" style="margin-bottom:10px" alt="마이페이지"></a>
-		</div>
-		<div class="viewGoods">
-			<p class="title">최근 본 상품<span class="point">(0)</span></p>
-			<div id="recent_box">
-				<p class="noimg">최근 본 상품이<br>없습니다.</p>
-			</div>
-		</div>
-		<div class="menu">
-			<p><a href="http://www.go.co.kr/home/customer/" title="고객센터">고객센터</a></p>
-			<p><a href="http://www.go.co.kr/home/customer/" title="예약진행절차">예약진행절차</a></p>
-			<p><a href="http://www.go.co.kr/home/member/?dd=RAcfTDBDAVQyF1xM&amp;brd=RhAlfD1HMEAlEg==" title="예약변경/취소">예약변경/취소</a></p>
-			<p><a href="http://www.go.co.kr/home/customer/" title="시설이용안내">시설이용안내</a></p>
-			<p><a href="http://www.go.co.kr/home/member/?dd=RAcfTDBD" title="1:1문의/내역">1:1문의/내역</a></p>
-			<p><a href="http://www.go.co.kr/home/customer/?dd=Tx8x" title="자주묻는질문">자주묻는질문</a></p>
-		</div>
-		<div class="btn">
-			<a href="javascript:utils.quick_slide()" title="퀵메뉴"><img src="http://img.go.co.kr/btn_quickMenu_close.jpg" id="bt_img"></a>
-			<a href="javascript:navigate.move_home();" title="위로"><img src="http://img.go.co.kr/btn_quickMenu_top.jpg"></a>
-		</div>
-	</div>
+	
 
 	<div id="top2" class="noover">
 		<div class="link">
@@ -1951,13 +1922,80 @@
 		</script>
 		
 		<!-- 180423 이벤트페이지 수정-->
-		<div class="evt-area yeonho-evt-369">
-			<div class="evt-outer">
-				<div class="evt-top">본 이벤트는 <span class="c-yellow">고코투어가 주관</span>하고 <span class="c-yellow">메이힐스 리조트</span>가 협찬하는 이벤트입니다.</div>
+		<div class="evt-area">
+			<div class="evt-outer yeonho-evt7788">
 				<div class="evt-main">
-					<div class="evt-visual">
-						<img src="http://img.go.co.kr/event/mayhills/txt_guide.jpg" alt="이벤트안내">
+					<div class="evt-visual result">
+						<img class="txtResult" src="http://img.go.co.kr/event/yeonho/txt_result.jpg" alt="이벤트안내">
+						<div class="box-result">
+							<!-- 당첨됐을 때-->
+							<img class="resultWin" src="http://img.go.co.kr/event/mayhills/result_win.jpg" alt="축하합니다">
+							<p class="p-1"><span class="f-bd">무료 숙박권 이벤트</span>에 당첨되셨습니다!</p>
+							
+							<!-- 당첨되지 않았을 떄 -->
+<!--
+							<img class="resultFail" src="http://img.go.co.kr/event/mayhills/result_fail.jpg" alt="축하합니다">
+							<p class="p-1-2 f-bd">회원님은 당첨되지 않으셨습니다.</p>
+-->
+							
+							<div class="box-id">
+								<p class="p-2">
+									<em>회원님 아이디</em><br>
+									회원님은 일반 회원 입니다.
+								</p>
+								<p class="p-id">devtest1</p>
+							</div>
+						</div>
+						<div class="box-winnerList">
+							<p class="p-1 f-bd">이벤트 당첨자 명단</p>
+							<ul class="winnerList">
+								<li class="cf">
+									<div>de********t1</div>
+									<div>dl********om(네이버)</div>
+								</li>
+								<li class="cf">
+									<div>de********t1</div>
+									<div>dl********om(네이버)</div>
+								</li>
+								<li class="cf">
+									<div>de********t1</div>
+									<div>dl********om(네이버)</div>
+								</li>
+								<li class="cf">
+									<div>de********t1</div>
+									<div>dl********om(네이버)</div>
+								</li>
+								<li class="cf">
+									<div>de********t1</div>
+									<div>dl********om(네이버)</div>
+								</li>
+								<li class="cf">
+									<div>de********t1</div>
+									<div>dl********om(네이버)</div>
+								</li>
+							</ul>
+							<div class="paging">
+								<a href=""><img alt="첫 페이지" src="http://img.go.co.kr/btn_pre02.jpg"></a>
+								<a href=""><img alt="이전 페이지" src="http://img.go.co.kr/btn_pre01.jpg"></a>
+								<a href=""><img alt="다음 페이지" src="http://img.go.co.kr/btn_next01.jpg"></a>
+								<a href=""><img alt="끝 페이지" src="http://img.go.co.kr/btn_next02.jpg"></a>
+							</div>
+						</div>
 					</div>
+					
+<!--
+					<div class="evt-contents">
+						<div class="evt-tit">메이힐스 리조트 안내</div>
+						<img src="http://img.go.co.kr/event/yeonho/common/main.jpg" alt="메이힐스리조트">
+						<img src="http://img.go.co.kr/event/yeonho/guide_01.jpg" alt="메이힐스리조트안내">
+
+						<div class="evt-tit">메이힐스 리조트 요금안내</div>
+						<div class="area-price">
+							<img src="http://img.go.co.kr/event/yeonho/guide_02.jpg" alt="요금안내">
+							<div class="area-btn"><a href=""><span class="f-bdr">당첨자 발표 확인</span>하러 가기 <span class="ic-rArrow rArrow"></span></a></div>
+						</div>
+					</div>
+-->
 				</div>
 			</div>
 		</div>
@@ -2352,64 +2390,7 @@
 			$(".link_list").hide();
 		}
 	</script>
-	<div class="list_wrap">
-		<div style="float:left;margin-right:10px">※ 사내노출 </div>
-		<!-- 지역별 사이트 -->
-
-		<div class="list_box">
-			<div class="link_button" onclick="javascript:on_off_list('link_list');">===== 사이트선택 =====</div>
-			<div id="link_list" class="link_list">
-				<ul>
-					<li class="red"><a href="http://www.gazagogo.co.kr" target="_blank">가자고고 </a></li>
-					<li><a href="http://www.gaza82.co.kr" target="_blank">가자닷컴투어 (gaza82.co.kr)</a></li>
-					<li class="red"><a href="http://www.gaza82.com" target="_blank">가자닷컴투어 (gaza82.com)</a></li>
-					<li class="red"><a href="http://www.tripgogo.co.kr" target="_blank">고고트립 </a></li>
-					<li><a href="http://www.go.co.kr" target="_blank">고코투어 </a></li>
-					<li class="red"><a href="http://www.gleetour.co.kr" target="_blank">글리투어 </a></li>
-					<li class="red"><a href="http://www.dagaja.co.kr" target="_blank">다가자 </a></li>
-					<li><a href="http://www.didimtour.co.kr" target="_blank">디딤투어 </a></li>
-					<li class="red"><a href="http://www.mitour.co.kr" target="_blank">미투어 </a></li>
-					<li class="red"><a href="http://www.varogaza.co.kr" target="_blank">바로가자 </a></li>
-					<li><a href="http://www.borogogo.co.kr" target="_blank">바로고고 </a></li>
-					<li class="red"><a href="http://www.varowa.co.kr" target="_blank">바로와 </a></li>
-					<li class="red"><a href="http://www.varotour.net" target="_blank">바로투어 </a></li>
-					<li class="red"><a href="http://www.varopass.co.kr" target="_blank">바로패스 </a></li>
-					<li class="red"><a href="http://www.shinetour.co.kr" target="_blank">샤인투어 </a></li>
-					<li class="red"><a href="http://www.storytrip.co.kr" target="_blank">스토리트립 </a></li>
-					<li class="red"><a href="http://www.sinnatour.co.kr" target="_blank">신나투어 </a></li>
-					<li class="red"><a href="http://www.sogoodtrip.com" target="_blank">쏘굿여행 </a></li>
-					<li><a href="http://www.oudigo.co.kr" target="_blank">어디고 </a></li>
-					<li class="red"><a href="http://www.alwaystour.co.kr" target="_blank">얼웨이즈투어 </a></li>
-					<li class="red"><a href="http://www.everydaytour.net" target="_blank">에브리데이투어 </a></li>
-					<li class="red"><a href="http://www.everywheretour.co.kr" target="_blank">에브리웨어투어 </a></li>
-					<li class="red"><a href="http://www.journeyday.co.kr" target="_blank">여행가는날 </a></li>
-					<li class="red"><a href="http://www.tourjoa.co.kr" target="_blank">여행조아 </a></li>
-					<li class="red"><a href="http://www.todaygaza.co.kr" target="_blank">오늘가자 </a></li>
-					<li><a href="http://www.allgotour.co.kr" target="_blank">올고투어 </a></li>
-					<li class="red"><a href="http://www.watour.co.kr" target="_blank">와투어 </a></li>
-					<li class="red"><a href="http://www.wetrip.co.kr" target="_blank">우리여행 </a></li>
-					<li class="red"><a href="http://www.infotour.co.kr" target="_blank">인포투어 </a></li>
-					<li class="red"><a href="http://www.choicetour.net" target="_blank">초이스투어 </a></li>
-					<li><a href="http://www.todaygo.co.kr" target="_blank">투데이고 </a></li>
-					<li><a href="http://www.todotour.co.kr" target="_blank">투두투어 </a></li>
-					<li class="red"><a href="http://www.tourgirl.co.kr" target="_blank">투어걸 </a></li>
-					<li><a href="http://www.tourgosu.co.kr" target="_blank">투어고수 </a></li>
-					<li class="red"><a href="http://www.tourgoco.co.kr" target="_blank">투어고코 </a></li>
-					<li class="red"><a href="http://www.tournow.co.kr" target="_blank">투어나우 </a></li>
-					<li><a href="http://www.toursoon.co.kr" target="_blank">투어순 </a></li>
-					<li><a href="http://www.tournspa.co.kr" target="_blank">투어앤스파 </a></li>
-					<li class="red"><a href="http://www.touronna.co.kr" target="_blank">투어온나 </a></li>
-					<li><a href="http://www.trip25.co.kr" target="_blank">트립25 </a></li>
-					<li class="red"><a href="http://www.triptime.co.kr" target="_blank">트립타임 </a></li>
-					<li class="red"><a href="http://www.firsttrip.co.kr" target="_blank">퍼스트트립 </a></li>
-					<li class="red"><a href="http://www.placetour.co.kr" target="_blank">플레이스투어 </a></li>
-					<li class="red"><a href="http://www.hotplan.co.kr" target="_blank">핫플랜 </a></li>
-					<li><a href="http://www.hyutour.co.kr" target="_blank">휴투어 </a></li>
-					<li class="red"><a href="http://www.healingtrip.co.kr" target="_blank">힐링트립 </a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	
 
 
 	<!--- 탑버튼 추가 --->

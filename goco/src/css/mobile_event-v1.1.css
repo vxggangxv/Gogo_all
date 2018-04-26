@@ -94,12 +94,12 @@ ul .btn img{width: 60%; padding-bottom: 20px; }
 .colr-1 {color: #fce37f;}
 .colr-2 {color: #ffe49a;}
 
-.evt-area {padding-top: 25px; width: 100%; min-height: 800px; background: #fff; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif;}
+.evt-area {width: 100%; min-height: 800px; background: #fff; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif;}
 
 .evt-outer {color: #282828;}
-.evt-outer .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
+.evt-outer .evt-top {/*background: #4f4c7b;*/ text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
 .evt-outer .evt-main {text-align: center;}
-.evt-outer .evt-main .evt-visual {padding-top: 30px; padding-bottom: 55px; background: #d6d8f7;}
+.evt-outer .evt-main .evt-visual {/*padding-top: 30px; padding-bottom: 55px; background: #d6d8f7;*/}
 .evt-outer .evt-main .evt-visual img.txtResult {width: 310px;}
 
 .evt-outer .box-result,
@@ -143,4 +143,10 @@ ul .btn img{width: 60%; padding-bottom: 20px; }
 .mayhills-evt123 .evt-main .evt-visual {padding-top: 30px; padding-bottom: 55px; background: #d6d8f7;}
 
 /* BS콘도 칙칙폭폭이벤트 */
-.bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 35px;}
+.bscondo-evt7788 .evt-main .evt-visual {padding-top: 35px; padding-bottom: 55px; background: #f7ca4b;}
+
+/* 연호리조트 3399이벤트 */
+.yeonho-evt7788 .evt-main .evt-visual {padding-top: 15px; padding-bottom: 55px; background: #90D7DB;}
+
+/* 오션투유 7942이벤트 */
+.ocean-evt7942 .evt-main .evt-visual {padding-top: 15px; padding-bottom: 55px; background: #BEE6FF;}

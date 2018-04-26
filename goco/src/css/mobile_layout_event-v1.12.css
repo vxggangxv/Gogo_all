@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.1px; position: relative; margin:0 auto;}
+a:link, a:visited {text-decoration:none; color:#000}
+a:hover, a:active {text-decoration:none; color:#000}
+input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
+ul,li {list-style: none;}
+
+.hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
+.clr:before, .clr:after {content: ""; display: block;}
+.clr:after {clear: both;}
+
+
+
+/* 이벤트 신청하기 공통 */ 
+.evt-area-apply {position: relative; width: 100%; padding-bottom: 80px; font-family: "NanumSquare", sans-serif;} 
+.evt-area-apply.evt-name {background: #394052;} 
+.evt-area-apply .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 14px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;} 
+.evt-area-apply .ig-1 {width: 100%;} 
+.evt-area-apply .txt-box {position: relative; padding: 18px 0;} 
+.evt-area-apply .p0 {position: relative; padding: 0 10px 0 20px; color: #fff; letter-spacing: -0.5px; line-height: 1.3; word-break: keep-all; font-size: 13px; margin-top: 5px;} 
+.evt-area-apply .p0:first-child {margin-top: 0;} 
+.evt-area-apply .p0 .i-dot {position: absolute; left: 11px; top: 6px; display: inline-block; width: 3px; height: 3px; background: #fff; border-radius: 50%;} 
+.evt-area-apply .btn-a {position: fixed; bottom: 0; left: 0; background-color:#ff6600; width: 100%; display: block; text-align: center; height: 60px; color: #fff; font-size: 16px;} 
+.evt-area-apply .btn-a:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+
+
+/* 180424_연호리조트 삼삼구 이벤트_다솜 */
+.yeonho339-evt {position:relative; width:100%; margin:0 auto; padding:0;}
+.yeonho339-evt img {display:block; width:100%; margin:0 auto; padding:0;}
+.yeonho339-evt .bd {font-style:normal; font-weight:bold;}
+.yeonho339-evt .evt-info.mb {margin-bottom: 60px} 
+
+.yeonho339-evt .evt-top {position: relative; padding:7px 0 8px; text-align:center; background:#005b6e}
+.yeonho339-evt .evt-top .top-tit {margin:0; font-size:22px; font-weight:normal; color:#fff}
+.yeonho339-evt .evt-top .top-txt {margin:0; font-size:10px; font-weight:bold; color:#fff}
+.yeonho339-evt .evt-top .top-txt span {color:#fbef2b}
+
+.yeonho339-evt .evt-visual {position:relative; width:100%; margin:0 auto; text-align:center; background:#7acacf;}
+.yeonho339-evt .evt-visual .visual-area {position:relative; max-width:360px; margin:0 auto;}
+.yeonho339-evt .user-name-txt {position:absolute; display:block; box-sizing:border-box; width:186px; height:32px; top:32px; left:72px; margin:0; padding:0 10px; font-size:20px; line-height:30px; text-align:center; font-weight:bold; color:#282828;}
+.yeonho339-evt .visal-txt-box {position:relative; padding:5px 0 20px;}
+.yeonho339-evt .visal-txt-box p {margin:0; word-break: keep-all}
+.yeonho339-evt .visal-txt-box .p-1 {padding-bottom:13px; font-size:12px; color:#414141}
+.yeonho339-evt .visal-txt-box .p-1 span {font-weight:bold; color:#fff000;}
+.yeonho339-evt .visal-txt-box .p-2 {position:relative; width:100%; padding:7px 0; font-size:11px; color:#3b3b3b; background:url(http://img.go.co.kr/mobile/event/yeonho/bg_main_visual_txt.jpg) no-repeat center center; background-size:100% auto;}
+
+.yeonho339-evt .evt-faq {position:relative; padding:0 9px; text-align:center; border-top:1px solid #c8c8c8}
+.yeonho339-evt .evt-faq .faq-tit {position:relative; width:191px; padding:22px 0 20px; margin:0 auto; text-align:center;}
+.yeonho339-evt .evt-faq .faq-tit img {width:100%;}
+.yeonho339-evt .evt-faq .faq-ul {margin:0 auto; padding:0; text-align:left}
+.yeonho339-evt .evt-faq .faq-ul li {box-sizing: border-box; border-bottom:2px solid #ccc}
+.yeonho339-evt .evt-faq .faq-ul li .faq-q {position:relative; box-sizing: border-box; display:table; width:100%; padding:11px 27px 11px 8px;}
+.yeonho339-evt .evt-faq .faq-ul li .faq-q span {display:table-cell}
+.yeonho339-evt .evt-faq .faq-ul li .faq-q .faq-q-txt {font-size:13px; word-break:keep-all; color:#232323}
+.yeonho339-evt .evt-faq .faq-ul li .faq-q .num {width:32px; font-size:14px; font-weight:bold; color:#232323}
+.yeonho339-evt .evt-faq .faq-ul li .faq-a {padding:10px 12px; font-size:12px; word-break:keep-all}
+.yeonho339-evt .evt-faq .faq-ul .ic-bArrow {position:absolute; width:13px; height:12px; top:50%; right:7px; margin-top:-6px;}
+.yeonho339-evt .evt-faq .faq-ul .ic-bArrow:after {content: ""; display: inline-block; position: relative; width:7px; height:7px; top:-5px; right:-2px; border: 1px solid #ccc; border-top: 0; border-right: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.yeonho339-evt .evt-faq .faq-ul li.on .num, .yeonho339-evt .evt-faq .faq-ul li.on .faq-q-txt  {font-weight:bold; color:#00a19b;}
+.yeonho339-evt .evt-faq .faq-ul li.on .faq-a {border-top:2px solid #e4e4e4}
+.yeonho339-evt .evt-faq .faq-ul li.on .ic-bArrow:after {top: -2px; border-color:#00a19b; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);}
+.yeonho339-evt .evt-faq .btn-faq {display:inline-block; margin:20px auto 18px; width:238px; height:40px; text-align:center; border-radius:4px; background:#005b6e;}
+.yeonho339-evt .evt-faq .btn-faq span {font-size:13px; line-height:40px; color:#fff; }
+.yeonho339-evt .evt-faq .btn-faq span:after {content:''; display: inline-block; position: relative; width:5px; height:5px; top:-1px; margin-left:6px; border: 1px solid #fff; border-top: 0; border-left: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+.yeonho339-evt .btn-area {position:fixed; left:0; bottom:0; width:100%; height:auto; padding:10px 0; text-align:center; background:#fff; border-top:1px solid #a4a4a4;}
+.yeonho339-evt .btn-area .btn-box {padding: 0 10px;}
+.yeonho339-evt .btn-area .btn-box a {float:right; box-sizing: border-box; width:48.3%; height:40px; padding:0; font-size:13px; font-weight:bold; color:#fff} 
+.yeonho339-evt .btn-area .btn-box a:first-child {float:left; margin-right:10px;}
+.yeonho339-evt .btn-area .btn-box .mobile { padding:6px 0; line-height:13px; background:#005b6e;}
+.yeonho339-evt .btn-area .btn-box .mobile span {display:block; font-size:11px; font-weight:normal}
+.yeonho339-evt .btn-area .btn-box .inquiry {line-height:40px; background:#3a7edb;}
+
+/* 연호리조트 삼삼구 이벤트 신청하기 */
+.yeonho339-evt .evt-area-apply .evt-top {padding:7px 0 8px; background:#13548a}
+.yeonho339-evt .evt-area-apply .evt-top .top-txt span {color:#fbef2b}   
+.yeonho339-evt .evt-name {background: #d9d3d0;} 
+.yeonho339-evt .evt-area-apply .p0 {color: #2f2f2f;} 
+.yeonho339-evt .evt-area-apply .p0 .i-dot {background: #2f2f2f;} 
+.yeonho339-evt .evt-area-apply .btn-a { background-color:#13548a;} 
+
+/* 180424_오션투유리조트 친구사이 이벤트_다솜 */
+.ocean-friend-evt {position:relative; width:100%; margin:0 auto; padding:0;}
+.ocean-friend-evt img {display:block; width:100%; margin:0 auto; padding:0;}
+.ocean-friend-evt .bd {font-style:normal; font-weight:bold;}
+.ocean-friend-evt .evt-info.mb {margin-bottom: 60px} 
+
+.ocean-friend-evt .evt-top {position: relative; padding:7px 0 8px; text-align:center; background:#243b71}
+.ocean-friend-evt .evt-top .top-tit {margin:0; font-size:22px; font-weight:normal; color:#fff}
+.ocean-friend-evt .evt-top .top-txt {margin:0; font-size:10px; font-weight:bold; color:#fff}
+.ocean-friend-evt .evt-top .top-txt span {color:#fce37f}
+
+.ocean-friend-evt .evt-visual {position:relative; width:100%; margin:0 auto; text-align:center; background:#bde6ff;}
+.ocean-friend-evt .evt-visual .visual-area {position:relative; max-width:360px; margin:0 auto;}
+.ocean-friend-evt .user-name-txt {position:absolute; display:block; box-sizing:border-box; width:203px; height:32px; top:32px; left:56px; margin:0; padding:0 10px; font-size:20px; line-height:30px; text-align:center; font-weight:bold; color:#282828;}
+.ocean-friend-evt .visal-txt-box {position:relative; padding:5px 0 20px;}
+.ocean-friend-evt .visal-txt-box p {margin:0; word-break: keep-all}
+.ocean-friend-evt .visal-txt-box .p-1 {padding-bottom:13px; font-size:12px; color:#414141}
+.ocean-friend-evt .visal-txt-box .p-1 span {font-weight:bold; color:#9844ff;}
+.ocean-friend-evt .visal-txt-box .p-2 {position:relative; width:100%; padding:7px 0; font-size:11px; color:#3b3b3b; background:url(http://img.go.co.kr/mobile/event/ocean/friend/bg_main_visual_txt.jpg) no-repeat center center; background-size:100% auto;}
+
+.ocean-friend-evt .evt-faq {position:relative; padding:0 9px; text-align:center; border-top:1px solid #c8c8c8}
+.ocean-friend-evt .evt-faq .faq-tit {position:relative; width:191px; padding:22px 0 20px; margin:0 auto; text-align:center;}
+.ocean-friend-evt .evt-faq .faq-tit img {width:100%;}
+.ocean-friend-evt .evt-faq .faq-ul {margin:0 auto; padding:0; text-align:left}
+.ocean-friend-evt .evt-faq .faq-ul li {box-sizing: border-box; border-bottom:2px solid #ccc}
+.ocean-friend-evt .evt-faq .faq-ul li .faq-q {position:relative; box-sizing: border-box; display:table; width:100%; padding:11px 27px 11px 8px;}
+.ocean-friend-evt .evt-faq .faq-ul li .faq-q span {display:table-cell}
+.ocean-friend-evt .evt-faq .faq-ul li .faq-q .faq-q-txt {font-size:13px; word-break:keep-all; color:#232323}
+.ocean-friend-evt .evt-faq .faq-ul li .faq-q .num {width:32px; font-size:14px; font-weight:bold; color:#232323}
+.ocean-friend-evt .evt-faq .faq-ul li .faq-a {padding:10px 12px; font-size:12px; word-break:keep-all}
+.ocean-friend-evt .evt-faq .faq-ul .ic-bArrow {position:absolute; width:13px; height:12px; top:50%; right:7px; margin-top:-6px;}
+.ocean-friend-evt .evt-faq .faq-ul .ic-bArrow:after {content: ""; display: inline-block; position: relative; width:7px; height:7px; top:-5px; right:-2px; border: 1px solid #ccc; border-top: 0; border-right: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.ocean-friend-evt .evt-faq .faq-ul li.on .num, .ocean-friend-evt .evt-faq .faq-ul li.on .faq-q-txt  {font-weight:bold; color:#f24959;}
+.ocean-friend-evt .evt-faq .faq-ul li.on .faq-a {border-top:2px solid #e4e4e4}
+.ocean-friend-evt .evt-faq .faq-ul li.on .ic-bArrow:after {top: -2px; border-color:#f24959; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);}
+.ocean-friend-evt .evt-faq .btn-faq {display:inline-block; margin:20px auto 18px; width:238px; height:40px; text-align:center; border-radius:4px; background:#2b8de7;}
+.ocean-friend-evt .evt-faq .btn-faq span {font-size:13px; line-height:40px; color:#fff; }
+.ocean-friend-evt .evt-faq .btn-faq span:after {content:''; display: inline-block; position: relative; width:5px; height:5px; top:-1px; margin-left:6px; border: 1px solid #fff; border-top: 0; border-left: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+.ocean-friend-evt .btn-area {position:fixed; left:0; bottom:0; width:100%; height:auto; padding:10px 0; text-align:center; background:#fff; border-top:1px solid #a4a4a4;}
+.ocean-friend-evt .btn-area .btn-box {padding: 0 10px;}
+.ocean-friend-evt .btn-area .btn-box a {float:right; box-sizing: border-box; width:48.3%; height:40px; padding:0; font-size:13px; font-weight:bold; color:#fff} 
+.ocean-friend-evt .btn-area .btn-box a:first-child {float:left; margin-right:10px;}
+.ocean-friend-evt .btn-area .btn-box .mobile { padding:6px 0; line-height:13px; background:#f24959;}
+.ocean-friend-evt .btn-area .btn-box .mobile span {display:block; font-size:11px; font-weight:normal}
+.ocean-friend-evt .btn-area .btn-box .inquiry {line-height:40px; background:#3a7edb;}
+
+/* 오션투유리조트 친구사이 이벤트 신청하기 */
+.ocean-friend-evt .evt-area-apply .evt-top {padding:7px 0 8px; background:#243b71}
+.ocean-friend-evt .evt-area-apply .evt-top .top-txt span {color:#fce37f}   
+.ocean-friend-evt .evt-name {background: #172340;} 
+.ocean-friend-evt .evt-area-apply .p0 {color: #fff;} 
+.ocean-friend-evt .evt-area-apply .p0 .i-dot {background: #fff;} 
+.ocean-friend-evt .evt-area-apply .btn-a { background-color:#ff4052;} 
+
+@media (max-device-width: 320px) {
+    .evt-area-apply .p0 {font-size: 13px;} 
+
+    /* 180424_연호리조트 삼삼구 이벤트_다솜 */
+    .yeonho339-evt .visal-txt-box .p-2 {font-size:10px;}
+    .yeonho339-evt .user-name-txt {width:167px; height: 28px; top: 28px; left: 63px; line-height: 28px;}
+
+    /* 180424_오션투유리조트 친구사이 이벤트_다솜 */
+    .ocean-friend-evt .visal-txt-box .p-2 {font-size:10px;}
+    .ocean-friend-evt .user-name-txt {width: 180px; height: 28px; top: 28px; left: 50px; line-height: 28px;}
+}

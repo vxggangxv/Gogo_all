@@ -406,8 +406,8 @@
 .evt-area {float: right; margin-top: 30px; padding: 25px; width: 740px; min-height: 800px; background: #fff; border: 1px solid #dedede; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif; margin-bottom: 20px;}
 
 .evt-outer {color: #282828;}
-.evt-outer .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
-.evt-outer .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #d6d8f7;}
+.evt-outer .evt-top {/*background: #4f4c7b;*/ text-align: center; color: #fff; font-size: 18px; padding: 10px 0;}
+.evt-outer .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; /*background: #d6d8f7;*/}
 .evt-outer .box-result,
 .evt-outer .box-winnerList,
 .evt-outer .evt-main .tb-info {width: 680px; margin: 0 auto; border-top: 2px solid #501143; background: #fff; margin-top: 15px;}
@@ -482,7 +482,7 @@
 .mayhills-evt123 {}
 .mayhills-evt123 .evt-top {background: #4f4c7b;}
 .mayhills-evt123 .evt-main {}
-.mayhills-evt123 .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #d6d8f7;}
+.mayhills-evt123 .evt-visual {background: #d6d8f7;}
 
 /* BS콘도 칙칙폭폭이벤트 */
 .bscondo-evt7788 {}
@@ -491,5 +491,28 @@
 .bscondo-evt7788 .colr-3 {color: #1b1575;}
 .bscondo-evt7788 .evt-top,
 .bscondo-evt7788 .evt-main .area-btn a {background: #1c1a1b;}
-.bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 20px;}
+.bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b;}
 .bscondo-evt7788 .evt-main .evt-tit {background: #252525;}
+
+/* 연호리조트 339이벤트 */
+.yeonho-evt7788 {}
+.yeonho-evt7788 .colr-1 {color: #fbef2b;}
+.yeonho-evt7788 .colr-2 {color: #fbef2b;}
+.yeonho-evt7788 .evt-top {background: #005B6E;}
+.yeonho-evt7788 .evt-main .area-btn a {background: #005b6e;}
+.yeonho-evt7788 .evt-main .evt-visual {background: #97D2D6;}
+.yeonho-evt7788 .evt-main .evt-visual.result {background: #90d7db;}
+.yeonho-evt7788 .evt-main .evt-tit {background: #005B6E;}
+
+/* 오션투유 7942이벤트 */
+.ocean-evt7942 {}
+.ocean-evt7942 .colr-3 {color: #4237ff;}
+.ocean-evt7942 .evt-top {background: #2684cc;}
+.ocean-evt7942 .evt-main {}
+.ocean-evt7942 .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #BEE6FF;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}
+.ocean-evt7942 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
+.ocean-evt7942 .evt-main .evt-tit {background: #243b71;}
+
+
