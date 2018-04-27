@@ -1,0 +1,3568 @@
+<!DOCTYPE html>
+<html lang="ko" class="ui-mobile">
+<head>
+	<!-- <base href="http://m.mayhillsresort.kr/home/view/?p_no=Gkl4"> -->
+	<meta charset="UTF-8">
+	<title>정선 메이힐스리조트</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
+	<link rel="apple-touch-icon" href="http://img.mayhillsresort.kr/mobile/icon.png"> 
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/swiper.min.css?ver=20180427093851" type="text/css">
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/moblie_reset.css?ver=20180427093851" type="text/css">
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/mobile_layout3.css?ver=20180427093851" type="text/css">
+	<!-- <link rel="stylesheet" href="http://static.yeosucablecar.co.kr/css/mobile_layout_common.css?ver=20180427093851" type="text/css"/> -->
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css?ver=20180427093851" type="text/css">
+	<meta name="robots" content="ALL">
+	<meta name="author" content="MAYHILLSRESORT">
+	<meta name="description" content="메이힐스리조트  SITE_NAME_short MAYHILLSRESORT">
+	<meta name="keywords" content="메이힐스리조트  SITE_NAME_short MAYHILLSRESORT">
+	<meta name="classification" content="SITE_NAME_short MAYHILLSRESORT">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<!--- 검색시 달력에서 이용 ---->
+	<link rel="stylesheet" href="http://static.mayhillsresort.kr/css/jquery-ui.css">
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--- 달력 한글화 --->
+<script type="text/javascript" src="http://static.mayhillsresort.kr/js/datepicker_ko.js"></script>
+<!-- Android icon -->
+<!--<link rel="shortcut icon" href="http://img.mayhillsresort.kr/icon_goco128x128.ico" type="image/x-icon" />-->
+<link rel="shortcut icon" href="http://img.mayhillsresort.kr/mobile/icon_goco72x72.png?ver=20180427093851" type="image/x-icon">
+<!-- iPhone icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="http://img.mayhillsresort.kr/mobile/icon_goco57x57.png?ver=20180427093851">
+<!-- iPad icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="http://img.mayhillsresort.kr/mobile/icon_goco72x72.png?ver=20180427093851">
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon" sizes="114x114" href="http://img.mayhillsresort.kr/mobile/icon_goco114x114.png?ver=20180427093851">
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://img.mayhillsresort.kr/mobile/icon_goco144x144.png?ver=20180427093851">
+<script type="text/javascript">
+	$( document ).on( "mobileinit", function() {
+		$.extend( $.mobile , {
+			autoInitializePage: false,
+		});
+	});
+
+// iOS 10 버전에서 user-scalable=0 가 안먹음
+document.documentElement.addEventListener('touchstart', function (event) {
+	if (event.touches.length > 1) {
+		event.preventDefault();
+	}
+}, false);
+
+</script>
+
+<script>
+	var burl = "mayhillsresort.kr";
+	var agent = "M";
+
+	/* 쿠키 60분 */
+	var date = new Date(); 
+	var minutes = 60; 
+	date.setTime(date.getTime() + (minutes * 60 * 1000)); 
+</script>
+<!---<script type="text/javascript" src="http://static.hotelgangneung.kr/js/jquery.history.js"></script>--->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/all_common.js?ver=20180427093851"></script>
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/common_ver2.js?ver=20180427093851"></script>
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/iscroll.js?ver=20180427093851"></script>
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/jquery.raty.js"></script>
+
+<!--- 리스트페이지에서 쓸 스크립트---->
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/swiper.min.js?ver=20180427093851"></script>
+<!--- 리스트페이지에서 쓸 스크립트---->
+
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/jquery.number.min.js"></script>
+<style>
+#headTitle2 {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	background-color: #f4f2f3;
+	font-weight: bold;
+	line-height: 45px;
+	font-size: 1.000em;
+	color: #3f3f3f;
+	text-align: center;
+	letter-spacing: -1px;
+	border-bottom: 1px solid #d2d2d2;
+}
+</style>
+<script language="javascript">document.title = '정선 메이힐스리조트';</script>
+</head>
+<body onunload="" style="">
+
+	<style>
+	.myButton {
+		padding-top:2px;
+		padding-bottom:2px;
+		padding-left:2px;
+		padding-right:2px;
+		color:white;
+		background:#2b66bc;
+		text-align:center;
+		text-decoration:none;
+		border-radius:2px;
+		border:1px solid #1476ba;
+		box-shadow:1px 1px 1px #62615f;
+		cursor:pointer
+	}
+
+	.mbt_col_red {background:#e24b04;border:1px solid #bb3c00;box-shadow:1px 1px 1px #bb3c00}
+</style>
+<div style="z-index:99999;width:100%;text-align:right">
+	<input type="button" value="PC버전" onclick="location.href='http://www.mayhillsresort.kr'" class="myButton">
+</div>
+
+
+
+
+<div id="wrapper" data-role="page">
+	<div id="scroll_box">
+		<div id="headTitle_box2">
+			<div id="headTitle2">
+				<p style="padding-left:7px;width:50%;text-align:left"><a href="http://m.mayhillsresort.kr" style="font-size:0.8em;font-weight:bold;">정선 메이힐스리조트</a></p>
+								<!---
+				<a href="#">
+					<img src="http://img.mayhillsresort.kr/logo_b.png" style="float:left; padding-left:7px;">
+				</a>
+				--->
+				<a href="#">
+					<img src="http://img.go.co.kr/logo_c_r_w.png" style="float:right; padding-right:4px;">
+				</a>
+			</div>
+						<style type="text/css">
+				#detail_tab {margin-top:50px;}
+			</style>
+			<script type="text/javascript">
+			function all_price() {
+				$.cookie("all_price_banner", "none", {domain: 'mayhillsresort.kr', path : '/'});
+				location.href='http://m.mayhillsresort.kr/home/landing/?dd=SBIsfC5UN0AlIRkeTnc=&pno=Gkl4';
+			}	
+			</script>
+			<img src="http://img.go.co.kr/mobile/m_price_all_banner_fxd.jpg" onclick="javascript:all_price();" id="price_report_banner" style="width: 100%;height: 50px;margin-top:0px;">
+			
+			<div id="gnb2M">
+				<ul>
+				
+								<li class="menu" onclick="move_hid('room_infogo','id','gnb2M_sub');">시설안내</li>
+				<li class="menu" onclick="move_hid('location_w','id','gnb2M_sub');">오시는길</li>
+				<li class="menu" onclick="move_hid('travel_etc','id','gnb2M_sub');">주변여행지</li>
+				<!-- <li class="menu_reserv" onclick="javascript:$('.rlist_btn').trigger('click');">예약하기</li> -->
+				<li class="menu_reserv" onclick="move_hid('product_title','id','gnb2M_sub');">예약하기</li>
+			</ul>
+		</div>
+	</div> 
+	<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!--- 서브페이지 상단 --->
+		
+
+
+				
+<style>
+#location_w .location_info .location_info_txt .info_map {float:right; vertical-align: middle; } 
+#location_w .location_info .location_info_txt  img {margin-right:10px; float:right;} 
+#headTitle2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 45px;
+    background-color: #f4f2f3;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 1.000em;
+    color: #3f3f3f;
+    text-align: center;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #d2d2d2;
+}
+#info_img_wrpa .img_txt{
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>
+
+</div>
+<div id="top_box_bottom" style="height: 0px;"></div>
+<script>
+$("#top_box_bottom").css("height", $("#top_box").height()+"px");
+</script>
+
+<!--
+<script type="text/javascript" src="http://static.hotelgangneung.kr/js/clipboard.min.js"></script>
+-->
+
+<input type="hidden" name="button_text" id="button_text" value="객실 선택하기">
+
+
+<div id="scroll_box">
+	<!-- 상단 이미지 -->
+	<div id="info_img_wrpa">
+		<!-- <img src="http://img.yeosucablecar.co.kr/lowest-price_grnty-m.jpg" alt="고코투어" id="lowest-price_grnty-m" style="position:absolute; top:8px; right:8px; z-index:2;"> -->
+
+			<!--- 이미지 슬라이드 --->
+			<div class="swiper-container swiper-container-horizontal swiper-container-android">
+				<div class="swiper-wrapper" style="transform: translate3d(-409px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="32" style="width: 409px;">
+						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg?ver=20180427093851') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						</div>
+					</div>	
+															
+					<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1504058945_in1.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_1" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1504058946_in2.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_2" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="2" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347367_in3.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_3" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="3" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347367_in4.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_4" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="4" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347368_in5.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_5" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="5" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347368_in6.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_6" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="6" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347368_in7.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_7" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="7" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1477976857_in8.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_8" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="8" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.15550100 1271312685') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_9" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="9" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.18197700 1271312685') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_10" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="10" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.20798800 1271312685') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_11" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="11" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491192711_in12.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_12" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="12" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1486348123_1.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">26평_오크</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_13" value="1663">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="13" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1486348157_1.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">32평_메이플</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_14" value="1664">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="14" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1486348200_1.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">42평_파인</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_15" value="4075">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="15" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/1486348093_1.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">21평_윌로우</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_16" value="4371">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="16" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/0.01235200 1360814986.467') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">45평_주니어스위트</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_17" value="10923">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="17" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/0.50634600 1360814988.517') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">52평_슈페리어스위트</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_18" value="10924">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="18" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/0.00489600 1360814994.568') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">58평_패밀리스위트</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_19" value="10925">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="19" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img2/0.11044800 1360814999.138') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">64평_메이힐스스위트</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_20" value="10926">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="20" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347552_add1.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">커피숍/미니펍</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_21" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="21" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486348020_add2.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">레스토랑</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_22" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="22" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1512115512_add3.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">렌탈샵</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_23" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="23" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.85142400 1271313081') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">야외 행사장/족구장</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_24" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="24" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.87043300 1271313081') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">어린이 놀이터</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_25" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="25" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347552_add6.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">편의점</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_26" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="26" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.91060300 1271313081') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">당구장</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_27" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="27" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1512115512_add8.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">노래방</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_28" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="28" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347552_add9.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">사우나</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_29" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="29" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/0.96649700 1271313081') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">찜질방</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_30" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="30" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347552_add11.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">휘트니스 센터</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_31" value="">
+						</div>
+					</div>
+										
+					<div class="swiper-slide" data-swiper-slide-index="31" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1486347553_add12.jpg') 100% 100%; background-size:cover">
+						<div align="center" class="img_txt"><p class="img_t">한우전문점/고우</p></div>
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_32" value="">
+						</div>
+					</div>
+										<div class="swiper-slide" data-swiper-slide-index="32" style="width: 409px;">
+						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg?ver=20180427093851') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						</div>
+					</div>
+
+				<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 409px;">
+						<div style="background:url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1504058945_in1.jpg') 100% 100%; background-size:cover">
+							<img src="http://img.mayhillsresort.kr/mobile/dummy_img.png" width="100%">
+						<input type="hidden" name="img_id" id="img_id_1" value="">
+						</div>
+					</div></div>
+					<!--				<div class="swiper-pagination"></div> -->
+				<div class="thumbnail_logo" style="top:6px">
+					<img src="http://img.go.co.kr/mobile/m_thumbnail_logo.png" alt="고코투어" class="thumbnail_logo_img">
+					<!-- 180425 이벤트안내버튼 추가 -->
+					<a class="mFaq-a" href="#"><span><img src="http://img.ocean2you.co.kr/renew/m_icon.png">이벤트 안내</span></a>
+				</div>
+				<div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="transform: translate3d(11.4571px, 0px, 0px); transition-duration: 0ms; width: 11.4571px;"></div></div>
+				<div class="swiper-button-next" style="width:38px;height:38px"><img src="http://img.mayhillsresort.kr/mobile/btn_Next3.png" style="width:100%"></div>
+				<div class="swiper-button-prev" style="width:38px;height:38px"><img src="http://img.mayhillsresort.kr/mobile/btn_Prev3.png" style="width:100%"></div>
+				<input type="hidden" name="total_cnt" id="total_cnt" value="32">
+			</div>
+
+			<!--- 이전, 공유, 찜하기 상단라인 --->
+						<div class="top_icon" style="z-index:10">
+				<!--
+								<p class="pay_back_icon" style="padding:20px;margin-top:-20px;margin-left:-10px;" onclick="history.back();"><a href="#"><img src="http://img.mayhillsresort.kr/mobile/pay_back_icon.png" style="width:35px" alt="이전"></a></p>
+							-->
+
+
+							<form name="keep_f" id="keep_f" method="post">
+								<input type="hidden" name="encrypt" value="0">
+								<input type="hidden" name="mode" value="QhslUzdIOQ==">
+								<input type="hidden" name="userid" value="">
+								<input type="hidden" name="p_no" value="Gkl4">
+								<input type="hidden" name="r_no" id="r_no">
+								<input type="hidden" name="wish_id" id="wish_id" value="0">
+							</form>
+				<!--
+									<span class="de_ch_icon"><a href="javascript:alert('로그인 후 이용가능합니다');location.href='http://m.mayhillsresort.kr/home/member/?dd=RREnSjA=&rurl2=aHR0cDovL20ubWF5aGlsbHNyZXNvcnQua3IvaG9tZS92aWV3Lz9wX25vPUdrbDQ='" class="wishlink"><img class="wishicon" src="http://img.mayhillsresort.kr/mobile/de_wish_icon.png" style="width:100%" alt="찜하기"></a></span>
+				
+				<span class="de_share_icon"><a href="javascript:utils.on('#sns_layer');$('.rlist_btn').css({'z-index':'5'})"><img src="http://img.mayhillsresort.kr/mobile/de_share_icon.png" style="width:100%" alt="공유하기"></a></span>
+			-->
+		</div>
+
+
+	</div>
+		<!--
+		<div id="headTitle_box">
+				<div id="headTitle2"  style="display:none;">
+				<span class="back"><a href="javascript:history.back()"><img src="http://img.mayhillsresort.kr/mobile/btn_back.png" alt="뒤로" height="17"></a></span>
+					메이힐스리조트					<span id="wish"><a href="javascript:utils.wish_new('0','mobile');" class="wishlink" ><img class="wishicon" src="http://img.mayhillsresort.kr/mobile/de_ch_icon.png" height="22"  alt="찜하기"></a></span>
+				</div>
+		</div>
+	-->
+
+	<!-- 타이틀 -->
+	<div id="pruduct_tit_w" style="background:#ffffff">
+		<div class="pruduct_tit">
+			<span class="icon"><img src="http://img.mayhillsresort.kr/mobile/icon_resort.png" height="17px"> </span>											<span class="tit">메이힐스리조트</span>
+		</div>
+	</div>
+
+	<form name="rsch_form" id="rsch_form" method="post">
+		<input type="hidden" name="find_pno" id="find_pno" value="Gkl4">
+		<input type="hidden" name="jehu" id="jehu" value="all">
+		<input name="hseldate" id="hseldate2" type="hidden" readonly="" value="2018-04-27">
+		<input name="nseldate" id="nseldate2" type="hidden" readonly="" value="2018-04-28">
+		<input name="prev_person" id="prev_person" type="hidden" value="2">
+		<input name="choice_sang" id="choice_sang" type="hidden">
+		<input name="choice_sanginfo" id="choice_sanginfo" type="hidden">
+		<input name="night" id="night" type="hidden" value="1">
+
+
+		<input name="max_choice" id="max_choice" type="hidden" value="20">
+		<input type="hidden" name="rent_filter" id="rent_filter" value="">
+		<input type="hidden" name="rent_chk" id="rent_chk" value="N"> 
+
+		<!-- 조건수정 -->
+<!-- 인원선택 부분 주석(언제 다시 생길지 모르니 일단 주석) ---> 
+<!-- 인원선택 정책은 일단 각 방의 기준인원이 있으니 그걸로 기본값을 넘기고 결제입력단에서 수정 --->
+<!-- 각 이용권들 단품과 숙박상품 분리 --->
+
+<!-- 달력 인원수 수정 -->
+<div id="calender_number_w">
+	
+
+	<!-- 체크인/체크아웃-->
+	<div class="calender_ch_w">
+		<div class="calender_ch_checkin" onclick="booking_new.new_cal()">
+			<div class="title">체크인</div>
+			<div class="date"><span id="chin_text">2018.04.27 (금)</span></div>
+		</div>
+		<div class="calender_ch_checkout" onclick="booking_new.new_cal()">
+			<div class="title">체크아웃</div>
+			<div class="date"><span id="chout_text">2018.04.28 (토)</span></div>
+		</div>
+	</div>
+	<div class="calender_ch_day">
+		<div class="calender_ch_day_o"><span id="night_cnt">1박</span></div>
+	</div>
+
+	
+	
+</div>
+
+<!-- 달력 --->
+<div id="calendar_w" style="transition:all 0.5s ease;bottom:-500px"></div>
+
+<!--- 달력버튼 --->
+<div id="calendar_w_btn_w" style="display:none">
+	<!---<div class="calendar_product_btn" id="calbtn" onclick="booking_new.date_apply();">1박 선택 완료</div>--->
+	<div class="calendar_product_btn" id="calbtn" onclick="booking_new.date_apply();">예약하기</div>
+	<!---<div class="calendar_product_btn_n">선택 완료</div>--->
+</div>
+
+<style>
+#product_title {
+    margin-left: 4%;
+    padding: 20px 0 20px 0;
+    font-weight: 600;
+    color: #3f3f3f;
+    font-size: 1.125em;
+}
+</style>
+<!--
+<div style="width:99%; float:left; letter-spacing:-0.7px; margin-bottom:10px">
+	<h3 id="product_title"><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px">  객실정보</h3>
+-->
+
+<input type="hidden" name="change_val" id="change_val">
+<input type="hidden" id="loading_txt" value="">
+
+
+<input type="hidden" name="find_pno" value="Gkl4">
+<input type="hidden" name="prev_sang" value="">
+<input type="hidden" name="prev_night" id="prev_night" value="1">
+<input type="hidden" name="prev_roomcnt" value="">
+<input type="hidden" name="abr_val" value="">
+<input type="hidden" name="pno_sub" id="pno_sub" value="378">
+<input type="hidden" name="adult[]" id="adult" value="2">
+</form>
+
+<!--이용날짜 및 이용정보
+<input name="hseldate" id="hseldate2" type="hidden" readonly="" value="2018.04.27">
+<input name="nseldate" id="nseldate2" type="hidden" readonly="" value="2018.04.28">
+
+<div id="pro_list_title2" style="clear:left;"></div>
+<table id="product_info">
+	<colgroup>
+		<col width="25%" />
+		<col width="75%" />
+	</colgroup>
+<tbody>
+
+<tr>
+	<td colspan="2" height="35" class="product_info_title">
+	<img src="http://img.mayhillsresort.kr/mobile/logo_dtl_b.png" class="goco_tit_logo">
+		1. 이용 날짜 및 이용정보
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<table id="reserve_table">
+			<colgroup>
+				<col width="51%">
+				<col width="49%">
+			</colgroup>
+			<tbody>
+				<tr>
+					<td height="50" style="border-right:2px solid #d2d2d2; ">
+												<div>
+							<a class="in_out" id="hseldate_bt" href="javascript:navigate.move2('pro_list_title2', 'id');booking.sch_calender('2018-04-27', 'hseldate', 'open');booking.sch_calender('2018-04-28', 'nseldate', 'open')">
+							<span id="date_choide" class="hseldate2" style="float:left;padding-top:7px">2018.04.27~04.28</span>
+							</a>
+						</div>
+											</td>
+
+					<td height="50" >
+						<div>
+							<a href="#" id="addbox_bt">
+							<span style="float:left;padding-top:7px" class="hseldate3" id="addbox_text">인원 <span id="p1">2</span>인</span>
+							<img width="23" style="margin: 5px 7px;  float:right" src="http://img.mayhillsresort.kr/mobile/icon_number_r.jpg?ver=20180427093851">
+							</a>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" class="calendar" style="border-bottom:none">
+												<div class="hseldate_calender" style="display:none"></div>
+						<div class="nseldate_calender" style="display:none"></div>
+											</td>
+				</tr>
+
+				<tr width="100%">
+					<td colspan="2">
+						<div id="addbox" style="display:none;border-top:1px solid #d2d2d2;padding:5px 0">
+						<table>
+							<tr style="border-bottom:none">								
+								<td height="50">	
+									<div style="float:left">
+										<p class="personnel" style="margin-left:7px; margin-right:3px;">객실수</p> 
+										<div class="input_line" style="width: 47px; float: left;">
+											<select name="room_cnt" class="select_box" id="room_cnt" onchange="booking.find_room()">
+																						<option value="1" >1</option>
+																						<option value="2" >2</option>
+																						<option value="3" >3</option>
+																						<option value="4" >4</option>
+																						<option value="5" >5</option>
+																						<option value="6" >6</option>
+																						<option value="7" >7</option>
+																						<option value="8" >8</option>
+																						<option value="9" >9</option>
+																						<option value="10" >10</option>
+																						<option value="11" >11</option>
+																						<option value="12" >12</option>
+																						<option value="13" >13</option>
+																						<option value="14" >14</option>
+																						<option value="15" >15</option>
+																						<option value="16" >16</option>
+																						<option value="17" >17</option>
+																						<option value="18" >18</option>
+																						<option value="19" >19</option>
+																						<option value="20" >20</option>
+															
+											</select>
+										</div>
+									</div>
+
+									<div id="cbox_1" class="cbox2" style="float:left">
+										<div id="person_box1" class="pb">
+											<p class="personnel" style="margin-left:3px; margin-right:3px;">인원</p> 
+											<div class="input_line" style="float:left; width:47px">
+												<select class="select_box" name="adult[]" id="adult1" onchange="booking.find_room();navigate.move2('pro_list_title2', 'id');addbox_select2();">
+													<option value="1" >1</option><option value="2" selected>2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option>												</select>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						</div>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</td>
+</tr>
+</tbody>
+</table>
+</form>-->
+
+<!---- 객실리스트 나오는 공간 ------>
+<div id="pro_list_title" style="clear:left;"></div>
+<table id="product_info">
+	<colgroup>
+		<col width="25%">
+		<col width="75%">
+	</colgroup>
+	<tbody>
+		<tr id="product_title">
+			<td colspan="2" id="room_result" style="" class="r_on"><!--룸선택-->
+				<form name="rform" id="rform" method="post" action="/home/reservation2/?dd=WxAlVAFWP1ofDVxMDnE=">
+					<!-- <form name="rform" id="rform" method="post" action="http://m.mayhillsresort.kr/home/reserve/?dd=WR85fC1SO1Nx&p_no=Gkl4"> -->
+						<input type="hidden" name="p_no" id="p_no" value="378">
+						<input type="hidden" name="gubun" id="gubun" value="R">
+						<input type="hidden" name="res_type2" id="res_type2" value="all">
+						<input type="hidden" name="room_cnt" value="1">
+						<input type="hidden" name="hseldate" value="2018-04-27">
+						<input type="hidden" name="nseldate" value="2018-04-28">
+
+						<input type="hidden" name="abr_val" id="abr_val" value="">
+
+						<input type="hidden" name="person" value="2">
+						<input type="hidden" name="person_c" value="">
+
+						<input type="hidden" name="night" value="1">
+
+						<table id="product_info">
+							<colgroup>
+								<col width="25%">
+								<col width="75%">
+							</colgroup>
+							<tbody>
+
+								<tr>
+									<td colspan="2"><a href="#" class="app_gobt"><img src="http://img.go.co.kr/mobile//bn_appdown03.png?ver=20180427093852" width="100%" alt="모바일앱구매시2천원할인"></a></td>
+								</tr>
+								<tr>
+									<td colspan="2" height="60" style="background:#f5f5f5" onclick="alert('예약마감된 객실입니다.');">
+										<div class="radio_box">
+											<input type="radio" id="4371_room" name="sang" class="chk man" value="4371" disabled=""> 
+											<!-- <input type="hidden" name="4371_room_hiddeninfo" id="4371_room_hiddeninfo" value="eyJpZCI6IjQzNzEiLCJ2YWx1ZSI6IjQzNzEiLCJiYWNrZ3JvdW5kIjoic3R5bGU9XCJiYWNrZ3JvdW5kOiNmNWY1ZjVcIiIsIm9uY2xpY2siOiJvbmNsaWNrPVwiYWxlcnQoJ1x1YzYwOFx1YzU3ZFx1YjljOFx1YWMxMFx1YjQxYyBcdWFjMWRcdWMyZTRcdWM3ODVcdWIyYzhcdWIyZTQuJyk7XCIiLCJkaXNhYmxlZCI6IiBkaXNhYmxlZCIsInJvb21fbmFtZSI6IjIxXHVkM2M5X1x1YzcwY1x1Yjg1Y1x1YzZiMCIsImVuZF9zdHIiOiIgPHNwYW4gY2xhc3M9J2VuZF9zdHInIHN0eWxlPSdmb250LXdlaWdodDpib2xkO2NvbG9yOiNmZjAwMDAnPlswNFwvMjcgXHViOWNjXHVjMmU0XTxcL3NwYW4+Iiwicl9ubyI6IjQzNzEiLCJybWluX251bSI6IjQiLCJybWF4X251bSI6IjUiLCJ3X3ByaWNlIjo3MjQwMCwibl9wcmljZSI6IjIwMDAwMCIsImRpc2NvdW50IjpudWxsLCJhcHBfcHJpY2UiOjcwNDAwLCJjbGFfYWRkIjoiIG1hbiIsInBfbm8iOiIzNzgifQ=="/> -->
+											<label for="4371_room">
+												<div class="room_info_title">
+													<p class="font_black20" id="4371_rname">
+
+						<!--- 패키지 말머리 추가 --->
+												
+						21평_윌로우  <span class="end_str" style="font-weight:bold;color:#ff0000">[04/27 만실]</span></p>
+						<p>
+							<span class="person">기준4인/최대5인</span>
+						</p>
+						<div class="price">
+							<del>200,000원</del>							<span class="font_b_black20">72,400원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">69,400원</div>
+						</a>
+					</div>
+								<input type="hidden" name="4371_room_pnosub" id="4371_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 4371_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="1663_room" name="sang" class="chk" value="1663"> 
+			<!-- <input type="hidden" name="1663_room_hiddeninfo" id="1663_room_hiddeninfo" value="eyJpZCI6IjE2NjMiLCJ2YWx1ZSI6IjE2NjMiLCJiYWNrZ3JvdW5kIjoiIiwib25jbGljayI6IiIsImRpc2FibGVkIjoiIiwicm9vbV9uYW1lIjoiMjZcdWQzYzlfXHVjNjI0XHVkMDZjIiwiZW5kX3N0ciI6IiIsInJfbm8iOiIxNjYzIiwicm1pbl9udW0iOiI0Iiwicm1heF9udW0iOiI2Iiwid19wcmljZSI6Nzg0MDAsIm5fcHJpY2UiOiIyNTAwMDAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjo3NjQwMCwiY2xhX2FkZCI6IiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="1663_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="1663_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						26평_오크 </p>
+						<p>
+							<span class="person">기준4인/최대6인</span>
+						</p>
+						<div class="price">
+							<del>250,000원</del>							<span class="font_b_black20">78,400원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">75,400원</div>
+						</a>
+					</div>
+								<input type="hidden" name="1663_room_pnosub" id="1663_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 1663_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60" style="background:#f5f5f5" onclick="alert('예약마감된 객실입니다.');">
+		<div class="radio_box">
+			<input type="radio" id="420697_room" name="sang" class="chk man" value="420697" disabled=""> 
+			<!-- <input type="hidden" name="420697_room_hiddeninfo" id="420697_room_hiddeninfo" value="eyJpZCI6IjQyMDY5NyIsInZhbHVlIjoiNDIwNjk3IiwiYmFja2dyb3VuZCI6InN0eWxlPVwiYmFja2dyb3VuZDojZjVmNWY1XCIiLCJvbmNsaWNrIjoib25jbGljaz1cImFsZXJ0KCdcdWM2MDhcdWM1N2RcdWI5YzhcdWFjMTBcdWI0MWMgXHVhYzFkXHVjMmU0XHVjNzg1XHViMmM4XHViMmU0LicpO1wiIiwiZGlzYWJsZWQiOiIgZGlzYWJsZWQiLCJyb29tX25hbWUiOiIyMVx1ZDNjOV9cdWM3MGNcdWI4NWNcdWM2YjAgWzJcdWM3NzhcdWMyYTRcdWQzMGNcdWQzMjhcdWQwYTRcdWM5YzBdIiwiZW5kX3N0ciI6IiA8c3BhbiBjbGFzcz0nZW5kX3N0cicgc3R5bGU9J2ZvbnQtd2VpZ2h0OmJvbGQ7Y29sb3I6I2ZmMDAwMCc+WzA0XC8yNyBcdWI5Y2NcdWMyZTRdPFwvc3Bhbj4iLCJyX25vIjoiNDIwNjk3Iiwicm1pbl9udW0iOiI0Iiwicm1heF9udW0iOiI1Iiwid19wcmljZSI6ODQ1MDAsIm5fcHJpY2UiOiIyMDAwMDAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjo4MjUwMCwiY2xhX2FkZCI6IiBtYW4iLCJwX25vIjoiMzc4In0="/> -->
+			<label for="420697_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="420697_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						21평_윌로우 [2인스파패키지]  <span class="end_str" style="font-weight:bold;color:#ff0000">[04/27 만실]</span></p>
+						<p>
+							<span class="person">기준4인/최대5인</span>
+						</p>
+						<div class="price">
+							<del>200,000원</del>							<span class="font_b_black20">84,500원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">81,500원</div>
+						</a>
+					</div>
+								<input type="hidden" name="420697_room_pnosub" id="420697_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 420697_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="386078_room" name="sang" class="chk" value="386078"> 
+			<!-- <input type="hidden" name="386078_room_hiddeninfo" id="386078_room_hiddeninfo" value="eyJpZCI6IjM4NjA3OCIsInZhbHVlIjoiMzg2MDc4IiwiYmFja2dyb3VuZCI6IiIsIm9uY2xpY2siOiIiLCJkaXNhYmxlZCI6IiIsInJvb21fbmFtZSI6IjI2XHVkM2M5X1x1YzYyNFx1ZDA2YyBbMlx1Yzc3OFx1YzJhNFx1ZDMwY1x1ZDMyOFx1ZDBhNFx1YzljMF0iLCJlbmRfc3RyIjoiIiwicl9ubyI6IjM4NjA3OCIsInJtaW5fbnVtIjoiNCIsInJtYXhfbnVtIjoiNiIsIndfcHJpY2UiOjkwNTAwLCJuX3ByaWNlIjoiMjUwMDAwIiwiZGlzY291bnQiOm51bGwsImFwcF9wcmljZSI6ODg1MDAsImNsYV9hZGQiOiIiLCJwX25vIjoiMzc4In0="/> -->
+			<label for="386078_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="386078_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						26평_오크 [2인스파패키지] </p>
+						<p>
+							<span class="person">기준4인/최대6인</span>
+						</p>
+						<div class="price">
+							<del>250,000원</del>							<span class="font_b_black20">90,500원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">85,500원</div>
+						</a>
+					</div>
+								<input type="hidden" name="386078_room_pnosub" id="386078_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 386078_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="1664_room" name="sang" class="chk" value="1664"> 
+			<!-- <input type="hidden" name="1664_room_hiddeninfo" id="1664_room_hiddeninfo" value="eyJpZCI6IjE2NjQiLCJ2YWx1ZSI6IjE2NjQiLCJiYWNrZ3JvdW5kIjoiIiwib25jbGljayI6IiIsImRpc2FibGVkIjoiIiwicm9vbV9uYW1lIjoiMzJcdWQzYzlfXHViYTU0XHVjNzc0XHVkNTBjIiwiZW5kX3N0ciI6IiIsInJfbm8iOiIxNjY0Iiwicm1pbl9udW0iOiI1Iiwicm1heF9udW0iOiI3Iiwid19wcmljZSI6MTAyNjAwLCJuX3ByaWNlIjoiMzAwMDAwIiwiZGlzY291bnQiOm51bGwsImFwcF9wcmljZSI6MTAwNjAwLCJjbGFfYWRkIjoiIiwicF9ubyI6IjM3OCJ9"/> -->
+			<label for="1664_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="1664_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						32평_메이플 </p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+							<del>300,000원</del>							<span class="font_b_black20">102,600원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">97,600원</div>
+						</a>
+					</div>
+								<input type="hidden" name="1664_room_pnosub" id="1664_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 1664_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60" style="background:#f5f5f5" onclick="alert('예약마감된 객실입니다.');">
+		<div class="radio_box">
+			<input type="radio" id="4075_room" name="sang" class="chk man" value="4075" disabled=""> 
+			<!-- <input type="hidden" name="4075_room_hiddeninfo" id="4075_room_hiddeninfo" value="eyJpZCI6IjQwNzUiLCJ2YWx1ZSI6IjQwNzUiLCJiYWNrZ3JvdW5kIjoic3R5bGU9XCJiYWNrZ3JvdW5kOiNmNWY1ZjVcIiIsIm9uY2xpY2siOiJvbmNsaWNrPVwiYWxlcnQoJ1x1YzYwOFx1YzU3ZFx1YjljOFx1YWMxMFx1YjQxYyBcdWFjMWRcdWMyZTRcdWM3ODVcdWIyYzhcdWIyZTQuJyk7XCIiLCJkaXNhYmxlZCI6IiBkaXNhYmxlZCIsInJvb21fbmFtZSI6IjQyXHVkM2M5X1x1ZDMwY1x1Yzc3OCIsImVuZF9zdHIiOiIgPHNwYW4gY2xhc3M9J2VuZF9zdHInIHN0eWxlPSdmb250LXdlaWdodDpib2xkO2NvbG9yOiNmZjAwMDAnPlswNFwvMjcgXHViOWNjXHVjMmU0XTxcL3NwYW4+Iiwicl9ubyI6IjQwNzUiLCJybWluX251bSI6IjUiLCJybWF4X251bSI6IjciLCJ3X3ByaWNlIjoxMDg2MDAsIm5fcHJpY2UiOiIzNTAwMDAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjoxMDY2MDAsImNsYV9hZGQiOiIgbWFuIiwicF9ubyI6IjM3OCJ9"/> -->
+			<label for="4075_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="4075_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						42평_파인  <span class="end_str" style="font-weight:bold;color:#ff0000">[04/27 만실]</span></p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+							<del>350,000원</del>							<span class="font_b_black20">108,600원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">103,600원</div>
+						</a>
+					</div>
+								<input type="hidden" name="4075_room_pnosub" id="4075_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 4075_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="386079_room" name="sang" class="chk" value="386079"> 
+			<!-- <input type="hidden" name="386079_room_hiddeninfo" id="386079_room_hiddeninfo" value="eyJpZCI6IjM4NjA3OSIsInZhbHVlIjoiMzg2MDc5IiwiYmFja2dyb3VuZCI6IiIsIm9uY2xpY2siOiIiLCJkaXNhYmxlZCI6IiIsInJvb21fbmFtZSI6IjMyXHVkM2M5X1x1YmE1NFx1Yzc3NFx1ZDUwYyBbMlx1Yzc3OFx1YzJhNFx1ZDMwY1x1ZDMyOFx1ZDBhNFx1YzljMF0iLCJlbmRfc3RyIjoiIiwicl9ubyI6IjM4NjA3OSIsInJtaW5fbnVtIjoiNSIsInJtYXhfbnVtIjoiNyIsIndfcHJpY2UiOjExNDcwMCwibl9wcmljZSI6IjMwMDAwMCIsImRpc2NvdW50IjpudWxsLCJhcHBfcHJpY2UiOjExMjcwMCwiY2xhX2FkZCI6IiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="386079_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="386079_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						32평_메이플 [2인스파패키지] </p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+							<del>300,000원</del>							<span class="font_b_black20">114,700원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">106,700원</div>
+						</a>
+					</div>
+								<input type="hidden" name="386079_room_pnosub" id="386079_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 386079_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60" style="background:#f5f5f5" onclick="alert('예약마감된 객실입니다.');">
+		<div class="radio_box">
+			<input type="radio" id="420698_room" name="sang" class="chk man" value="420698" disabled=""> 
+			<!-- <input type="hidden" name="420698_room_hiddeninfo" id="420698_room_hiddeninfo" value="eyJpZCI6IjQyMDY5OCIsInZhbHVlIjoiNDIwNjk4IiwiYmFja2dyb3VuZCI6InN0eWxlPVwiYmFja2dyb3VuZDojZjVmNWY1XCIiLCJvbmNsaWNrIjoib25jbGljaz1cImFsZXJ0KCdcdWM2MDhcdWM1N2RcdWI5YzhcdWFjMTBcdWI0MWMgXHVhYzFkXHVjMmU0XHVjNzg1XHViMmM4XHViMmU0LicpO1wiIiwiZGlzYWJsZWQiOiIgZGlzYWJsZWQiLCJyb29tX25hbWUiOiI0Mlx1ZDNjOV9cdWQzMGNcdWM3NzggWzJcdWM3NzhcdWMyYTRcdWQzMGNcdWQzMjhcdWQwYTRcdWM5YzBdIiwiZW5kX3N0ciI6IiA8c3BhbiBjbGFzcz0nZW5kX3N0cicgc3R5bGU9J2ZvbnQtd2VpZ2h0OmJvbGQ7Y29sb3I6I2ZmMDAwMCc+WzA0XC8yNyBcdWI5Y2NcdWMyZTRdPFwvc3Bhbj4iLCJyX25vIjoiNDIwNjk4Iiwicm1pbl9udW0iOiI1Iiwicm1heF9udW0iOiI3Iiwid19wcmljZSI6MTIwNzAwLCJuX3ByaWNlIjoiMzUwMDAwIiwiZGlzY291bnQiOm51bGwsImFwcF9wcmljZSI6MTE4NzAwLCJjbGFfYWRkIjoiIG1hbiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="420698_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="420698_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						42평_파인 [2인스파패키지]  <span class="end_str" style="font-weight:bold;color:#ff0000">[04/27 만실]</span></p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+							<del>350,000원</del>							<span class="font_b_black20">120,700원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">112,700원</div>
+						</a>
+					</div>
+								<input type="hidden" name="420698_room_pnosub" id="420698_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 420698_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="10923_room" name="sang" class="chk" value="10923"> 
+			<!-- <input type="hidden" name="10923_room_hiddeninfo" id="10923_room_hiddeninfo" value="eyJpZCI6IjEwOTIzIiwidmFsdWUiOiIxMDkyMyIsImJhY2tncm91bmQiOiIiLCJvbmNsaWNrIjoiIiwiZGlzYWJsZWQiOiIiLCJyb29tX25hbWUiOiI0NVx1ZDNjOV9cdWM4ZmNcdWIyYzhcdWM1YjRcdWMyYTRcdWM3MDRcdWQyYjgiLCJlbmRfc3RyIjoiIiwicl9ubyI6IjEwOTIzIiwicm1pbl9udW0iOiI1Iiwicm1heF9udW0iOiI3Iiwid19wcmljZSI6MTIwNzAwLCJuX3ByaWNlIjoiMCIsImRpc2NvdW50IjpudWxsLCJhcHBfcHJpY2UiOjExODcwMCwiY2xhX2FkZCI6IiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="10923_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="10923_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						45평_주니어스위트 </p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">120,700원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">112,700원</div>
+						</a>
+					</div>
+								<input type="hidden" name="10923_room_pnosub" id="10923_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 10923_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="10924_room" name="sang" class="chk" value="10924"> 
+			<!-- <input type="hidden" name="10924_room_hiddeninfo" id="10924_room_hiddeninfo" value="eyJpZCI6IjEwOTI0IiwidmFsdWUiOiIxMDkyNCIsImJhY2tncm91bmQiOiIiLCJvbmNsaWNrIjoiIiwiZGlzYWJsZWQiOiIiLCJyb29tX25hbWUiOiI1Mlx1ZDNjOV9cdWMyODhcdWQzOThcdWI5YWNcdWM1YjRcdWMyYTRcdWM3MDRcdWQyYjgiLCJlbmRfc3RyIjoiIiwicl9ubyI6IjEwOTI0Iiwicm1pbl9udW0iOiI1Iiwicm1heF9udW0iOiI3Iiwid19wcmljZSI6MTMyODAwLCJuX3ByaWNlIjoiMCIsImRpc2NvdW50IjpudWxsLCJhcHBfcHJpY2UiOjEzMDgwMCwiY2xhX2FkZCI6IiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="10924_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="10924_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						52평_슈페리어스위트 </p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">132,800원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">124,800원</div>
+						</a>
+					</div>
+								<input type="hidden" name="10924_room_pnosub" id="10924_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 10924_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="386080_room" name="sang" class="chk" value="386080"> 
+			<!-- <input type="hidden" name="386080_room_hiddeninfo" id="386080_room_hiddeninfo" value="eyJpZCI6IjM4NjA4MCIsInZhbHVlIjoiMzg2MDgwIiwiYmFja2dyb3VuZCI6IiIsIm9uY2xpY2siOiIiLCJkaXNhYmxlZCI6IiIsInJvb21fbmFtZSI6IjQ1XHVkM2M5X1x1YzhmY1x1YjJjOFx1YzViNFx1YzJhNFx1YzcwNFx1ZDJiOCBbMlx1Yzc3OFx1YzJhNFx1ZDMwY1x1ZDMyOFx1ZDBhNFx1YzljMF0iLCJlbmRfc3RyIjoiIiwicl9ubyI6IjM4NjA4MCIsInJtaW5fbnVtIjoiNSIsInJtYXhfbnVtIjoiNyIsIndfcHJpY2UiOjEzMjgwMCwibl9wcmljZSI6IjAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjoxMzA4MDAsImNsYV9hZGQiOiIiLCJwX25vIjoiMzc4In0="/> -->
+			<label for="386080_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="386080_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						45평_주니어스위트 [2인스파패키지] </p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">132,800원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">124,800원</div>
+						</a>
+					</div>
+								<input type="hidden" name="386080_room_pnosub" id="386080_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 386080_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="386081_room" name="sang" class="chk" value="386081"> 
+			<!-- <input type="hidden" name="386081_room_hiddeninfo" id="386081_room_hiddeninfo" value="eyJpZCI6IjM4NjA4MSIsInZhbHVlIjoiMzg2MDgxIiwiYmFja2dyb3VuZCI6IiIsIm9uY2xpY2siOiIiLCJkaXNhYmxlZCI6IiIsInJvb21fbmFtZSI6IjUyXHVkM2M5X1x1YzI4OFx1ZDM5OFx1YjlhY1x1YzViNFx1YzJhNFx1YzcwNFx1ZDJiOCBbMlx1Yzc3OFx1YzJhNFx1ZDMwY1x1ZDMyOFx1ZDBhNFx1YzljMF0iLCJlbmRfc3RyIjoiIiwicl9ubyI6IjM4NjA4MSIsInJtaW5fbnVtIjoiNSIsInJtYXhfbnVtIjoiNyIsIndfcHJpY2UiOjE0NDkwMCwibl9wcmljZSI6IjAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjoxNDI5MDAsImNsYV9hZGQiOiIiLCJwX25vIjoiMzc4In0="/> -->
+			<label for="386081_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="386081_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						52평_슈페리어스위트 [2인스파패키지] </p>
+						<p>
+							<span class="person">기준5인/최대7인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">144,900원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">136,900원</div>
+						</a>
+					</div>
+								<input type="hidden" name="386081_room_pnosub" id="386081_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 386081_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="10925_room" name="sang" class="chk" value="10925"> 
+			<!-- <input type="hidden" name="10925_room_hiddeninfo" id="10925_room_hiddeninfo" value="eyJpZCI6IjEwOTI1IiwidmFsdWUiOiIxMDkyNSIsImJhY2tncm91bmQiOiIiLCJvbmNsaWNrIjoiIiwiZGlzYWJsZWQiOiIiLCJyb29tX25hbWUiOiI1OFx1ZDNjOV9cdWQzMjhcdWJjMDBcdWI5YWNcdWMyYTRcdWM3MDRcdWQyYjgiLCJlbmRfc3RyIjoiIiwicl9ubyI6IjEwOTI1Iiwicm1pbl9udW0iOiI2Iiwicm1heF9udW0iOiI4Iiwid19wcmljZSI6MTU2OTAwLCJuX3ByaWNlIjoiMCIsImRpc2NvdW50IjpudWxsLCJhcHBfcHJpY2UiOjE1NDkwMCwiY2xhX2FkZCI6IiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="10925_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="10925_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						58평_패밀리스위트 </p>
+						<p>
+							<span class="person">기준6인/최대8인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">156,900원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">146,900원</div>
+						</a>
+					</div>
+								<input type="hidden" name="10925_room_pnosub" id="10925_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 10925_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="386082_room" name="sang" class="chk" value="386082"> 
+			<!-- <input type="hidden" name="386082_room_hiddeninfo" id="386082_room_hiddeninfo" value="eyJpZCI6IjM4NjA4MiIsInZhbHVlIjoiMzg2MDgyIiwiYmFja2dyb3VuZCI6IiIsIm9uY2xpY2siOiIiLCJkaXNhYmxlZCI6IiIsInJvb21fbmFtZSI6IjU4XHVkM2M5X1x1ZDMyOFx1YmMwMFx1YjlhY1x1YzJhNFx1YzcwNFx1ZDJiOCBbMlx1Yzc3OFx1YzJhNFx1ZDMwY1x1ZDMyOFx1ZDBhNFx1YzljMF0iLCJlbmRfc3RyIjoiIiwicl9ubyI6IjM4NjA4MiIsInJtaW5fbnVtIjoiNiIsInJtYXhfbnVtIjoiOCIsIndfcHJpY2UiOjE2OTAwMCwibl9wcmljZSI6IjAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjoxNjcwMDAsImNsYV9hZGQiOiIiLCJwX25vIjoiMzc4In0="/> -->
+			<label for="386082_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="386082_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						58평_패밀리스위트 [2인스파패키지] </p>
+						<p>
+							<span class="person">기준6인/최대8인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">169,000원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">159,000원</div>
+						</a>
+					</div>
+								<input type="hidden" name="386082_room_pnosub" id="386082_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 386082_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="10926_room" name="sang" class="chk" value="10926"> 
+			<!-- <input type="hidden" name="10926_room_hiddeninfo" id="10926_room_hiddeninfo" value="eyJpZCI6IjEwOTI2IiwidmFsdWUiOiIxMDkyNiIsImJhY2tncm91bmQiOiIiLCJvbmNsaWNrIjoiIiwiZGlzYWJsZWQiOiIiLCJyb29tX25hbWUiOiI2NFx1ZDNjOV9cdWJhNTRcdWM3NzRcdWQ3OTBcdWMyYTRcdWMyYTRcdWM3MDRcdWQyYjgiLCJlbmRfc3RyIjoiIiwicl9ubyI6IjEwOTI2Iiwicm1pbl9udW0iOiI3Iiwicm1heF9udW0iOiI5Iiwid19wcmljZSI6MTgxMTAwLCJuX3ByaWNlIjoiMCIsImRpc2NvdW50IjpudWxsLCJhcHBfcHJpY2UiOjE3OTEwMCwiY2xhX2FkZCI6IiIsInBfbm8iOiIzNzgifQ=="/> -->
+			<label for="10926_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="10926_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						64평_메이힐스스위트 </p>
+						<p>
+							<span class="person">기준7인/최대9인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">181,100원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">171,100원</div>
+						</a>
+					</div>
+								<input type="hidden" name="10926_room_pnosub" id="10926_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 10926_room_info" style="display:none"></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" height="60">
+		<div class="radio_box">
+			<input type="radio" id="386083_room" name="sang" class="chk" value="386083"> 
+			<!-- <input type="hidden" name="386083_room_hiddeninfo" id="386083_room_hiddeninfo" value="eyJpZCI6IjM4NjA4MyIsInZhbHVlIjoiMzg2MDgzIiwiYmFja2dyb3VuZCI6IiIsIm9uY2xpY2siOiIiLCJkaXNhYmxlZCI6IiIsInJvb21fbmFtZSI6IjY0XHVkM2M5X1x1YmE1NFx1Yzc3NFx1ZDc5MFx1YzJhNFx1YzJhNFx1YzcwNFx1ZDJiOCBbMlx1Yzc3OFx1YzJhNFx1ZDMwY1x1ZDMyOFx1ZDBhNFx1YzljMF0iLCJlbmRfc3RyIjoiIiwicl9ubyI6IjM4NjA4MyIsInJtaW5fbnVtIjoiNyIsInJtYXhfbnVtIjoiOSIsIndfcHJpY2UiOjE5MzIwMCwibl9wcmljZSI6IjAiLCJkaXNjb3VudCI6bnVsbCwiYXBwX3ByaWNlIjoxOTEyMDAsImNsYV9hZGQiOiIiLCJwX25vIjoiMzc4In0="/> -->
+			<label for="386083_room">
+				<div class="room_info_title">
+					<p class="font_black20" id="386083_rname">
+						
+						<!--- 패키지 말머리 추가 --->
+												
+						64평_메이힐스스위트 [2인스파패키지] </p>
+						<p>
+							<span class="person">기준7인/최대9인</span>
+						</p>
+						<div class="price">
+														<span class="font_b_black20">193,200원</span>
+						</div>
+					</div>
+										<div class="app_discount app_gobt">
+						<a href="#">
+							<div class="icon">모바일앱특가</div>
+							<div class="discount">183,200원</div>
+						</a>
+					</div>
+								<input type="hidden" name="386083_room_pnosub" id="386083_room_pnosub" value="378">
+			</label>
+		</div>						
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border:0">
+		<div class="room_info_box 386083_room_info" style="display:none"></div>
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+
+<script text="text/javascript">
+$(function() {
+	$("input[name='sang']").click(function() {
+		
+		var id = $(this).attr("id");
+		var id_str = id+"_info";
+		var id_arr = id+"arrow";
+				
+		
+		$(".room_info_box").html("");
+		if($("#res_type2").val() == "pinspot") {
+			$(".hidden_info").attr("disabled", true);
+		}
+		
+		if($("#"+id).hasClass("man") == true) {
+			alert("예약마감된 객실입니다.");
+			return;
+		} else {
+			if($("."+id_str).hasClass("r_on2") == true) {
+				
+				$("."+id_str).html("");
+				$("."+id_str).removeClass("r_on2");
+				$("."+id_str).stop().slideUp('500');
+				$("."+id_arr).attr("src", "http://img.mayhillsresort.kr/mobile/btn_arrow_bottom.jpg");
+			
+			} else if($("."+id_str).hasClass("r_on2") == false) {
+				
+				$(".r_on2").stop().slideUp('500');
+				$(".r_on2").removeClass("r_on2");
+
+				if($("#res_type2").val() == "pinspot") {
+
+					$("#sang_"+id+"_hidden").attr("disabled", false);
+				}
+					
+				$(".bbs_arrow").attr("src", "http://img.mayhillsresort.kr/mobile/btn_arrow_bottom.jpg");
+				$("."+id_str).addClass("r_on2");
+
+				var string1 = $("#rform").serialize();
+				var string2 = $("#prev_form").serialize();
+
+				$.ajax({
+					url : "/home/reservation2/rnew_cal_info.php",
+					type : "post",
+					data: string1+"&"+string2,
+					success: function(data) {
+						$("."+id_str).html(data);
+						$("."+id_str).stop().slideDown('500');
+						$("."+id_arr).attr("src", "http://img.mayhillsresort.kr/mobile/btn_arrow_top.jpg");
+						if($.cookie("all_price_banner") != "none") {
+							$(window).scrollTop($("#"+id).offset().top - 90);
+						} else {
+							$(window).scrollTop($("#"+id).offset().top - 40);
+						}
+						// 선택 시 시설명 굵게 170106
+						$(".font_black20").css("font-weight", "");
+						var rname_tmp = id.replace("room", "rname");
+						$("#"+rname_tmp).css("font-weight", "bold");
+					}
+				});			
+			}
+		}
+	});
+
+	$(".app_gobt").click(function(e) {
+		e.preventDefault();
+				callApp.exec(navigator.userAgent, 'http://app.go.co.kr/home/view/?p_no=Gkl4&back_move=Y&');
+			});
+});
+
+
+$("#infom_box").fadeIn();
+
+
+
+</script></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<script type="text/javascript">
+$(function() {
+	booking.find_room();
+	$("#addbox_bt").click(function(e){
+		e.preventDefault();
+		
+		if($(".hseldate_calender").hasClass("c_on")) {
+			booking.sch_calender($("input[name='hseldate']").val(), 'hseldate', 'close');
+			booking.sch_calender($("input[name='nseldate']").val(), 'nseldate', 'close');
+		}
+		$("#addbox").toggle();
+	});
+
+	$("#p1").text($("#adult1").val());
+	$("#p2").text($("#child1").val());
+	
+
+});
+
+function addbox_select2() {
+	var str = "인원 "+$("#adult1").val()+"인";
+	$("#addbox_text").text(str);
+}
+</script>
+</div>
+
+
+
+
+
+
+
+<!---  예약하기 전 동의 팝업, 날짜 최종확인용 --->
+<div id="pay_bt">
+	<div id="pop_pay_ag" style="display:none;hegiht:300px;overflow: auto;">
+		<div id="pay_bt2">
+		<div class="closew">
+			<!--	<span class="close"><a href="javascript:utils.out('#pop_pay_ag');"><img width="30" alt="닫기" src="http://img.go.co.kr/mobile/menu_close.jpg"></a></span> -->
+		</div>
+		<div class="txt" id="pop_cont">
+			<p class="txt1"><!---님 --->체크인 시간은<br><span class="pop_paya_co">8월 27일 (토) 14:00</span>입니다. </p>
+			<p class="txt2">
+				<span class="txt_icon">-</span><span class="txtts"> 선택하신 상품의 취소, 환불규정은 꼼꼼히 확인하셨나요?<br><br></span>
+				<span class="txt_icon">-</span><span class="txtts"> 환불 불가 상품은, 규정과 상관없이 취소, 변경, 환불이 절대 불가합니다.<br><br></span>
+				<span class="txt_icon">-</span><span class="txtts"> 미성년자는 보호자 동반시 투숙이 가능합니다.</span></p>
+		</div>
+		<div class="btn"><span class="bt"><a href="#">동의하고 결제하기</a></span></div>
+		</div>
+		<!-- 추가 -->
+		<div class="btn_app" id="app_gobt"> <span class="bt"><a href="#">앱 설치하고 더 저렴하게 예약하기</a></span></div>
+	</div>
+</div>
+
+
+
+
+<!--- 예약관련 전체 스크립트 --->
+<script type="text/javascript">
+/* 상세페이지 리뉴얼 */
+var booking_new = {
+	//객실불러오는 함수
+	find_room_mobile: function() {
+
+		/* 객실리스트 노출 시 검정색 배경 제거 20160919 */
+		$("#overlay").remove();
+		$("#top_box").css("z-index", "9999");
+
+		//$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;\"><p style=\"font-size:15px; line-height:3; color:#807f7f\"><span style=\"color:#ff610a\">실시간 요금 및 객실</span>을 불러오는 중입니다...</p><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"20%\"/><br/><br/><br/></div>");
+		$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;margin-top:10px;\"><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"30%\"/><br/><br/><br/></div>");
+		$.ajax({
+			url : "/home/reserve/roomlist.php",
+			type : "post",
+			data : $("#rsch_form").serialize(),
+			success: function(e) {
+				$(".product_info_w").html(e);
+				
+				/* 객실리스트 노출 시 검정색 배경 제거 20160919 */
+				$("#overlay").remove();
+				$("#top_box").css("z-index", "9999");
+				
+				if($(".room_li").length == "0") {										
+					//가능한 객실이 없을 경우
+					if($("#chk_single").val() == "Y") {
+						$(".product_info_w").html("<p id=\"no_room\" style=\"margin-top:15px;font-weight:bold;text-align:center;padding-top:15px;\">예약 가능한 상품이 없습니다.</p>");
+					} else {
+						$(".product_info_w").html("<p id=\"no_room\" style=\"margin-top:15px;font-weight:bold;text-align:center;padding-top:15px;\">예약 가능한 객실이 없습니다.</p>");
+					}
+					$("#room_num").text("");
+					//$(".rlist_btn").hide();
+					/*
+					$("#rlist_btn_txt").text("판매완료");
+					$("#rlist_btn_txt").css({"background":"#cccccc"});
+					$(".rlist_choice").addClass("no_room");					
+					*/
+					
+					if($(".product_info_w").hasClass("searching") == true) {
+						setTimeout(function() {
+							$("#rlist_close").click();
+							booking_new.new_cal();
+						}, 500);
+					}
+
+				} else {
+
+
+					var rent_chk = $("#rent_filter").val();
+					if(rent_chk != "" && $("#rent_chk").val() == "Y") {
+						$(".room_li").click(function() {
+							if($("input[name='sang']:checked").val() == "" || typeof $("input[name='sang']:checked").val() == "undefined") {
+								return;
+							} else {
+								$("#info_product_btn_w2").html("<div class=\"info_product_btn\" id=\"rlist_btn_txt\" onclick=\"rent_filter('"+rent_chk+"')\">객실 선택하기</div>");	
+							}
+						});
+
+						if(rent_chk == "1") {
+							var lentxt = "숙박";							
+							$(".room_num").removeClass("on");
+							$(".txt_or").removeClass("on");
+							$(".product_add_discount").removeClass("on");
+							$(".add_sale_icon2").removeClass("on");
+							$(".o_day_s").removeClass("on");
+
+						} else { 
+							var lentxt = "대실";
+							$(".room_num").addClass("on");
+							$(".txt_or").addClass("on");
+							$(".product_add_discount").addClass("on");
+							$(".add_sale_icon2").addClass("on");
+							$(".o_day_s").addClass("on");
+						}
+						$("#room_num").text("("+$(".room_li").length+"개 "+lentxt+"상품"+")");
+					} else {
+						$("#room_num").text("("+$(".room_li").length+"개 상품"+")");
+					}
+
+					$(".rlist_choice").removeClass("no_room");
+					$("#rlist_btn_txt").text($("#button_text").val());
+					$("#rlist_btn_txt").css({"background":"#f95c24"});
+
+
+				}
+
+				/*
+				$("#rlist_final > ul > li").each(function(i) {
+					var chk_id = $("#rlist_final > ul > li").eq(i).attr("id");
+					chk_id_sp = chk_id.split("_");
+					$("#rlist_final .info_box").eq(i).before("<input type=\"radio\" name=\"sang\" class=\"chk\" value=\""+$("#"+chk_id_sp[0]+"_hidden").val()+"\" id=\""+chk_id_sp[0]+"\" />");
+					$("#rlist_final .info_box").eq(i).wrap("<label for=\""+chk_id_sp[0]+"\">");
+				});
+				*/
+				//$(".rlist_choice").css({"bottom":"-"+$(".rlist_choice").height()+"px"});
+				
+				$("#wrapper").bind("touchmove", function(e) { e.preventDefault(); });
+				myScroll3 = new IScroll('#test', { mouseWheel: false, click: true, bounce:false, preventDefault : false, tap:true});
+
+				$("#rlist_final ul li").on('click, tap', function() {
+					var chk_id = $(this).attr("id");
+					var str_ex = chk_id.split("_li");
+					
+					// 썸네일 이미지 객실 이미지로 변경 -> 해당 객실 사진으로 이동만, 만약 해당 객실사진이 없을경우 슬라이드에 붙여서 거기로 이동
+					// 공통 변수
+					var room_id = $("#"+str_ex[0]+"_hidden").val();
+					var p_no = $("#find_pno").val();
+
+					// 익스피디아를 제외한 제휴 업체 이미지 처리하기 위한 변수
+					var total_img = $("#total_cnt").val();
+
+					// 익스피디아 이미지 처리하기 위해 필요한 변수
+					var jehu = $("#jehu").val();
+					var ex = str_ex[0].split("room");
+					var hotelid = $("#exhotel_"+ex[1]).val();
+					var room_name = $("#room_name"+ex[1]).val();
+					var rate_code = $("#"+str_ex[0]).val();
+					var rate = rate_code.split("||");
+
+					// view_total.php 의 img_arr 배열 안에 있는 room_id 가져오기
+					var img_array = new Array();
+					for(var j=0; j<total_img; j++){
+						img_array.push($("#img_id_"+j).val());
+					}
+
+					$.ajax({
+						url : "/home/reserve/state.php",
+						type : "post",
+						data : "mode=room_imgch&room_id="+room_id+"&p_no="+p_no+"&hotelid="+hotelid+"&rate_code="+rate[1]+"&room_name="+room_name+"&jehu="+jehu+"&img_array="+img_array,
+						success: function(e) {
+							if(e != "no"){
+								var swiper2 = new Swiper('.swiper-container', {
+									scrollbar: '.swiper-scrollbar',	// 스크롤
+									scrollbarHide: false,	// 스크롤 안할때도 스크롤바 숨기지 않음
+									uniqueNavElements: true,
+									observer: true,
+									loop:true,
+									nextButton: '.swiper-button-next',
+									prevButton: '.swiper-button-prev',
+
+									autoplayDisableOnInteraction: false,
+									paginationBulletRender: function (index, className) { 
+										return '<span class="' + className + '"></span>'; 
+									}
+								});					
+
+								if(jehu == "expedia" || jehu == "expedia_a"){
+									swiper2.appendSlide(e);	// 끝에 추가됨, 처음 슬라이드로 이동됨
+									swiper2.slidePrev(true, 300); // 처음의 전인 마지막으로 추가된 이미지로 이동
+									swiper2.update();
+								} else{
+									swiper2.slideTo(e, 300, true); // 해당 객실 이미지로 슬라이드 이동
+								}
+
+							} 
+						}
+					}); 
+
+				
+					if($(this).hasClass("no_avail") == true) {
+						alert("예약마감된 객실입니다.");
+					} else {
+						$("#"+str_ex[0]).prop("checked", true);
+					}
+				});
+			}, 		
+			beforeSend: function() {
+				/* 객실리스트 노출 시 검정색 배경 제거 20160919 */
+				$("#overlay").remove();
+				$("#top_box").css("z-index", "9999");
+
+				//$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;\"><p style=\"font-size:15px; line-height:3; color:#807f7f\"><span style=\"color:#ff610a\">실시간 요금 및 객실</span>을 불러오는 중입니다...</p><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"20%\"/><br/><br/><br/></div>");
+				$(".product_info_w").html("<div id=\"loading_div\" style=\"text-align:center;width:100%;margin-bottom:50px;margin-top:10px;\"><img src=\"http://img."+base_url+"/mobile/icon_loading.gif\" alt=\"loading\" width=\"30%\"/><br/><br/><br/></div>");
+
+			}
+		});
+	},
+	
+	//예약하기 누른 후 동의하고 결제하기 레이어창
+	prev_login: function(add_val, login_mode) {
+		var chk_id = $("input[name='sang']:checked").attr("id");
+
+
+		$("#choice_sang").val($("input[name='sang']:checked").val());
+		$("#choice_sanginfo").val($("#"+chk_id+"_hiddeninfo").val());
+
+		$("#rsch_form").submit();
+
+		$("#overlay").bind("touchmove", function(e) { e.preventDefault(); });
+		myScroll3 = new IScroll('#pop_cont', { mouseWheel: true, click: true, bounce:false, preventDefault : false, tap:true});
+	},
+	
+	//조건수정
+	modify: function(fgubun, site) {
+		if(site == "expedia" || site == "expedia_a") {
+			$("#calender_number_w").toggle();
+		} else {
+			booking_new.new_cal();
+		}
+	},
+	
+	//신규달력 오픈
+	new_cal: function() {
+		if($("#calendar_w").hasClass("on") == true) {
+			$("#overlay").unbind("touchmove");
+
+			/* 추가했던 검정색 배경 제거*/
+			$("#overlay").remove();
+			$("#top_box").css("z-index", "9999");
+
+			$("#info_product_btn_w").show();
+			$("#calendar_w_btn_w").hide();
+
+			$("#calendar_w").removeClass("on");
+			$("#calendar_w").css({"bottom":"-1000px"});
+
+
+		} else {
+			var arrPageSizes = ___getPageSize();
+			$("#calendar_w").css({"bottom":"60px"});
+			
+			/*검정색 배경추가*/
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+			$("#top_box").css("z-index", "5");
+
+			$.ajax({
+				url : "/home/reserve/cal.php",
+				type : "post",
+				data: $("#rsch_form").serialize(),
+				success: function(r) {				
+					$("#calendar_w").addClass("on");
+					$("#calendar_w").html(r);
+					$("#info_product_btn_w").hide();
+					$("#calendar_w_btn_w").show();
+					
+
+					if($("#chk_single").val() == "Y") {
+						//$("#calbtn").text("이용일 선택 완료");
+					} else {
+
+						if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+							$("#calendar_w_btn_w").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_date('2');\">대실예약</a><a href=\"javascript:rent_date('1');\">숙박예약</a></p>");
+						} else {
+							//$("#calbtn").text($("#night").val()+"박 선택 완료");
+						}
+					}
+
+					$("#overlay").bind("touchmove", function(e) { e.preventDefault(); });
+					myScroll4 = new IScroll('#cal_subbox', { mouseWheel: false, click: true, bounce:false});
+				}
+			});
+		}
+	},
+	
+	//신규달력 선택
+	new_choice: function(date1, ts, single) {
+		//1. 체크인과 체크아웃 둘다 있는데 클릭 시 체크인만 선택체크 후 상단 텍스트 라인 체크아웃 날짜를 선택해주세요. 로 변경 
+		//버튼은 다시 선택완료 회색버튼으로 변경
+		//2. 체크인만 있을 경우에 클릭 시 체크아웃 클래스 추가 후 주황색 몇박 선택완료 버튼 으로 변경 
+		//체크인과 체크아웃 날짜 사이의 td들 주황색 클래스 처리
+		
+		//단품은 이용일 하나만 체크
+		if(single == "Y") {
+
+			//기존에 이용일 체크 되있던 날짜 해제 
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");
+			
+						
+			$("#"+chin_id).removeClass("Pkg-w");
+			$("#"+chin_id+" > a > .Pkg-txt").remove();
+
+			//지금 누른 업체 이용일 표시
+			var chk_id = "date_"+date1;
+			$("#"+chk_id).addClass("Pkg-w");
+			$("#"+chk_id+" > a").prepend("<span class=\"Pkg-txt\">이용일</span>");
+			$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+			
+			/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+			/* 상단 타이틀 라인 수정*/
+			var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");
+			chin_id = chin_id.replace("date_", "");
+
+			var week = new Array('일', '월', '화', '수', '목', '금', '토');
+			var yoil_chin = new Date(chin_id).getDay();
+
+			chin_str = chin_id.replace(/-/gi, ".");
+			ch_str = chin_str+" ("+week[yoil_chin]+")";
+			
+			$("#title_txt").text(ch_str);
+
+			//$("#calbtn").text("이용일 선택 완료");
+			$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+			
+
+
+		} else {
+			var chin_len	= $(".week_day_table").find(".Check-in").length;		//체크인 날짜 여부 체크
+			var chout_len	= $(".week_day_table").find(".Check-out").length;		//체크아웃 날짜 여부 체크 
+			
+			//체크인와 체크아웃이 둘다 선택되어 있는 경우
+			if(chin_len == 1 && chout_len == 1) {
+				/*기존선택된 클래스들 초기화*/
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");		//체크인 날짜 아이디
+				var chout_id	= $(".week_day_table").find(".Check-out").attr("id");		//체크아웃 날짜 아이디
+
+				$("#"+chin_id).removeClass("Check-in");
+				$("#"+chout_id).removeClass("Check-out");			
+				$("#"+chin_id+" > a > .Check-in-txt").remove();
+				$("#"+chout_id+" > a > .Check-in-txt").remove();			
+				$(".week_day_table").find(".Check-ing").removeClass("Check-ing");
+
+				/* 지금 누른 업체 체크인 표시*/
+				var chk_id = "date_"+date1;
+				$("#"+chk_id).addClass("Check-in");
+				$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크인</span>");
+				$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+				
+				//하단 버튼 텍스트 변경 및 클래스명 변경
+				/*
+				if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+					$("#calendar_w_btn_w").html("<div class=\"calendar_product_btn\" id=\"calbtn\" onclick=\"booking_new.date_apply();\">날짜선택</div>");
+				} else {
+					$("#calbtn").text("날짜선택");					
+				}
+				$("#calbtn").removeClass("calendar_product_btn").addClass("calendar_product_btn_n");
+				*/
+
+				/* 상단 타이틀 라인 수정*/
+				$("#title_txt").text("체크아웃 날짜를 선택해주세요.");
+				
+				var today = $(".week_day_table").find(".today").parent().attr("id");
+				if($("#"+today+" > a > span").not(".Check-in-txt").hasClass(".today_ba") == false && today != "date_"+date1) {
+					$("#"+today+" > a > span").not(".Check-in-txt").addClass("today_ba");
+				}
+
+
+			} else if(chin_len == 1 && chout_len == 0) {
+			//체크인 선택되어 있고 체크아웃 없는 경우
+			//체크인만 누른 상태에서 이전날짜를 눌렀으면 체크인이 추가되어야 하고 아니면 체크아웃 처리
+				
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");
+				chin_id	 = chin_id.replace("date_", "");
+				chin_id  = chin_id.replace(/-/gi, "");
+				chin_id	= parseInt(chin_id);
+
+				var chk_id = date1.replace(/-/gi, "");
+				chk_id = parseInt(chk_id);
+				
+				if(chk_id < chin_id) {
+					//기존에 체크인 되있던 날짜 해제 
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");
+					$("#"+chin_id).removeClass("Check-in");
+					$("#"+chin_id+" > a > .Check-in-txt").remove();
+
+					//지금 누른 업체 체크인 표시
+					var chk_id = "date_"+date1;
+					$("#"+chk_id).addClass("Check-in");
+					$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크인</span>");
+					$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+
+					
+				} else if(chk_id > chin_id) {
+					
+						var basic_night = "";	
+						switch($("#jehu").val()) {
+							case "hottel":
+							case "pinspot":
+								basic_night = 1;
+								break;
+							
+							case "woori":
+							case "gpension":
+								basic_night = 6;
+								break;
+							
+							default:
+								basic_night = 15;
+								break;
+							
+
+						}
+
+						/* 숙박일수를 각 제휴사별로 제한하는 부분*/
+						var chin_id		= $(".week_day_table").find(".Check-in").attr("id");			
+						chin_id_chk = chin_id.replace("date_", "");
+						chout_id_chk = date1;
+
+						/* 날짜차이로 숙박일수 알아내기 */
+						var diff_chk = new Date(chout_id_chk) - new Date(chin_id_chk);
+						var currday_chk = 24*60*60*1000;
+						diff_chk = parseInt(diff_chk/currday_chk);
+						
+						var test = new Date(chin_id_chk);
+						test.setDate(test.getDate()+1);
+
+						
+						yy = test.getFullYear();
+						mm = test.getMonth() + 1; 
+						mm = (mm < 10) ? '0' + mm : mm;
+
+						dd = test.getDate(); 
+						dd = (dd < 10) ? '0' + dd : dd;
+						
+						var final_day = "date_"+yy+"-"+mm+"-"+dd;
+
+						if(diff_chk > basic_night) {
+							alert("해당상품은 "+basic_night+"박이상 예약불가능합니다.");
+
+							var chk_id = final_day;
+							$("#"+chk_id).addClass("Check-out");
+							$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크아웃</span>");
+							$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+							
+							/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+							/* 상단 타이틀 라인 수정*/
+							chk_id = chk_id.replace("date_", "");
+
+							var week = new Array('일', '월', '화', '수', '목', '금', '토');
+							var yoil_chin = new Date(chin_id_chk).getDay();
+							var yoil_chout = new Date(chk_id).getDay();
+							
+							chin_str = chin_id_chk.replace(/-/gi, ".");
+							chout_str = chk_id.replace(/-/gi, ".");
+
+							/* 날짜차이로 숙박일수 알아내기 */
+							var diff = new Date(chk_id) - new Date(chin_id_chk);
+							var currday = 24*60*60*1000;
+							diff = parseInt(diff/currday);
+
+							ch_str = chin_str+" ("+week[yoil_chin]+")~"+chout_str+" ("+week[yoil_chout]+") / "+diff+"박";
+							$("#title_txt").text(ch_str);
+
+
+							if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+								$("#calendar_w_btn_w").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_date('2');\">대실예약</a><a href=\"javascript:rent_date('1');\">숙박예약</a></p>");
+							} else {
+								//$("#calbtn").text(diff+"박 선택 완료");
+							}
+
+							$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+							return;
+						}
+						/* 숙박일수를 각 제휴사별로 제한하는 부분*/
+
+
+
+
+					//지금 누른 업체 체크아웃 표시
+					var chk_id = "date_"+date1;
+					$("#"+chk_id).addClass("Check-out");
+					$("#"+chk_id+" > a").prepend("<span class=\"Check-in-txt\">체크아웃</span>");
+					$("#"+chk_id+" > a").find(".today_ba").removeClass("today_ba");
+					
+					//체크인과 체크아웃 날짜 사이에 클래스 추가
+					var chin_id		= $(".week_day_table").find(".Check-in").attr("id");				
+					$("#"+chin_id).nextUntil(".Check-out").addClass("Check-ing");
+
+					var chout_id	= $(".week_day_table").find(".Check-out").attr("id");
+					$("#"+chout_id).prevUntil(".Check-in").addClass("Check-ing");
+
+					//체크인 날짜의 tr id
+					//체크인과 체크아웃 날짜 사이에 한주이상 들어가있으면 클래스 처리가 안되니 추가작업 
+					var chin_tr = $("#"+chin_id).parent().attr("id");
+					var chout_tr = $("#"+chout_id).parent().attr("id");
+					chin_tr		= parseInt(chin_tr.replace("month_", ""));
+					chout_tr	= parseInt(chout_tr.replace("month_", ""));
+					if((chout_tr - chin_tr) > 1) {
+						for(var j = chin_tr+1; j < chout_tr; j++) {
+							if(j < 10) {
+								$("#month_0"+j+" td").addClass("Check-ing");
+							} else {
+								$("#month_"+j+" td").addClass("Check-ing");
+							}
+						}
+					}
+
+					/*두개 날짜가 모두 선택됐으므로 버튼 변경 및 상단 변경*/ 
+					/* 상단 타이틀 라인 수정*/
+					chin_id = chin_id.replace("date_", "");
+					chout_id = chout_id.replace("date_", "");
+
+					var week = new Array('일', '월', '화', '수', '목', '금', '토');
+					var yoil_chin = new Date(chin_id).getDay();
+					var yoil_chout = new Date(chout_id).getDay();
+
+					chin_str = chin_id.replace(/-/gi, ".");
+					chout_str = chout_id.replace(/-/gi, ".");
+
+					/* 날짜차이로 숙박일수 알아내기 */
+					var diff = new Date(chout_id) - new Date(chin_id);
+					var currday = 24*60*60*1000;
+					diff = parseInt(diff/currday);
+
+					ch_str = chin_str+" ("+week[yoil_chin]+")~"+chout_str+" ("+week[yoil_chout]+") / "+diff+"박";
+					$("#title_txt").text(ch_str);
+					
+					if($("#night").val() == 1 && $("#rent_chk").val() == "Y") {
+						$("#calendar_w_btn_w").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_date('2');\">대실예약</a><a href=\"javascript:rent_date('1');\">숙박예약</a></p>");
+					} else {					
+						//$("#calbtn").text(diff+"박 선택 완료");
+					}
+					$("#calbtn").removeClass("calendar_product_btn_n").addClass("calendar_product_btn");
+				}
+			}
+		}
+	},
+	
+	date_apply: function() {		
+		var cla = $("#calbtn").attr("class");		
+
+		if(cla == "calendar_product_btn" || ($("#night").val() == 1 && $("#rent_chk").val() == "Y" && $("#rent_filter").val() != "")) {			
+			/* 이용권 일 때*/
+			if($("#chk_single").val() == "Y" || $("#sale_single").val() == "Y") {
+				var chin_id		= $(".week_day_table").find(".Pkg-w").attr("id");		//이용일 날짜 아이디
+				chin_id		= chin_id.replace("date_", "");
+				
+				$("input[name='hseldate']").val(chin_id);				
+				$("input[name='nseldate']").val(chin_id);
+				
+				var week = new Array('일', '월', '화', '수', '목', '금', '토');
+				var yoil_chin = new Date(chin_id).getDay();
+				var yoil_chout = new Date(chout_id).getDay();
+
+
+				chin_str = chin_id.replace(/-/gi, ".");
+				//$("#date_choide").text(chin_str);
+
+				$("#chdate_text").text(chin_str+" ("+week[yoil_chin]+")");
+
+			} else {				
+				var chin_id		= $(".week_day_table").find(".Check-in").attr("id");		//체크인 날짜 아이디
+				var chout_id	= $(".week_day_table").find(".Check-out").attr("id");		//체크아웃 날짜 아이디
+				
+				if(typeof chout_id == "undefined") {
+					alert("체크아웃 날짜를 선택하세요.");
+					return false;
+				} else {
+					chin_id		= chin_id.replace("date_", "");
+					chout_id	= chout_id.replace("date_", "");
+
+					$("input[name='hseldate']").val(chin_id);
+					$("input[name='nseldate']").val(chout_id);
+
+					var week = new Array('일', '월', '화', '수', '목', '금', '토');
+					var yoil_chin = new Date(chin_id).getDay();
+					var yoil_chout = new Date(chout_id).getDay();
+
+					chin_str = chin_id.replace(/-/gi, ".");
+					chout_str = chout_id.replace(/-/gi, ".");
+
+					/* 날짜차이로 숙박일수 알아내기 */
+					var diff = new Date(chout_id) - new Date(chin_id);
+					var currday = 24*60*60*1000;
+					diff = parseInt(diff/currday);
+					
+					$("#night").val(diff);
+
+					$("#prev_night").val(diff);
+
+					//$("#date_choide").text(chin_str+"~"+chout_str);
+
+					$("#chin_text").text(chin_str+" ("+week[yoil_chin]+")");
+					$("#chout_text").text(chout_str+" ("+week[yoil_chout]+")");
+
+					// 체크인 날짜와 체크아웃 날짜 사이의 숙박일수 변경
+					$("#night_cnt").text(diff+"박");
+
+					// 객실 리스트에 노출되는 숙박일수 날짜 설정
+					$("#night_roomc").text(diff+" 기준");	
+				}
+			}
+			
+			//booking_new.find_room_mobile();
+			booking_new.new_cal();
+
+
+			booking.find_room();
+
+							var p_top = $("#calender_number_w").offset().top;
+				p_top = p_top -90;
+				$(window).scrollTop(p_top);
+
+			//	booking_new.apply_info();
+			//$(".rlist_btn").click();
+		}
+
+	},
+	
+	ex_choice: function() {
+		booking_new.apply_info();
+	},
+	
+	person_calc: function(gubun) {
+		
+		if(gubun == "up") {
+			
+			var max_val = $("#max_choice").val();
+			//선택할 때 최대인원 제한 
+			if(parseInt($("input[name=person]").val()) < parseInt(max_val)){
+				var su2 = parseInt($("input[name=person]").val())+1;
+				$("input[name=person]").val(su2);
+			
+			} else {
+				alert("최대 "+parseInt(max_val)+"명까지 선택가능합니다.");
+				$("input[name=person]").val(max_val);
+			}
+			
+		} else if(gubun == "down") {
+			if($("input[name=person]").val() > "1"){
+				var su2 = parseInt($("input[name=person]").val())-1;
+				$("input[name=person]").val(su2);
+			} else {
+				alert("최소이용인원은 1명입니다.");
+				$("input[name=person]").val("1");
+			}
+		}
+
+		$("#person_num").text($("input[name=person]").val());
+		$("#adult").val($("input[name=person]").val());
+		booking.find_room();
+	},
+	
+	apply_info: function() {
+		$(".product_info_w").addClass("searching");
+
+		var arrPageSizes = ___getPageSize();
+
+		var img_he = $("#info_img_wrpa").height();
+		var product_he = 110;
+		var total_he = parseInt(product_he) + parseInt(img_he);
+		total_he = parseInt($(window).height()) - total_he;
+
+		$(".info_product_list").css({"height": total_he+"px"});	// 객실리스트 노출되는 div 높이 수정
+		
+		booking_new.find_room_mobile();
+
+
+		/*검정색 배경추가 -> 제거 20160919*/
+//		$("body").append("<div id=\"overlay\"></div>");
+//		$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+//		$("#top_box").css("z-index", "5");
+		
+		/* 객실리스트 부분 레이어 구분 위해 on 클래스를 addClass 를 사용하여 추가하고 show 함수로 노출 */
+		/* bottom 이 아래쪽으로 잡혀있으므로 버튼 높이 고려 60px로 css 수정 */
+		$(".rlist_choice").addClass("on");
+		
+		
+		$(".rlist_choice").show();
+		$(".rlist_choice").css({"bottom":"60px"});
+		
+		$("#rlist_btn_txt").text("예약하기");
+		$(".rlist_btn").css({"z-index":"99999"});
+		
+		/*
+		$(window).bind("touchmove", function(e) { e.preventDefault(); });
+		myScroll3 = new IScroll('#test', { mouseWheel: false, click: true, bounce:false, preventDefault : false, tap:true});
+		*/
+
+		
+	}
+}
+
+$(function() {
+
+	// 이미지까지만 보이도록 높이 조정 20160919		
+	
+	
+	
+
+	/*객실리스트 뿌려주는 함수*/
+	/*페이지 로딩과 동시에 디폴트 선택된 날짜로 객실 및 상품리스트 호출*/
+	/*all_common.js 파일에 신규로 추가*/
+	/*만약 이용가능한 상품이 하나도 없으면 버튼이 판매완료로 바뀌고 선택 못하도록 바뀜*/
+
+	//booking_new.find_room_mobile();
+	
+	/* 하단 객실선택하기 버튼을 클릭 시 */
+	$(".rlist_btn").click(function(e) {
+		var arrPageSizes = ___getPageSize();
+		e.preventDefault();
+
+		if($(".rlist_choice").hasClass("no_room") == true) {
+			
+			alert("해당 날짜에는 모든 상품이 판매완료되었습니다. 다른 날짜를 선택하세요.");
+			return;
+			
+		} else if($(".rlist_choice").hasClass("on") == true) {
+			
+			if($("input[name='sang']:checked").val() == "" || typeof $("input[name='sang']:checked").val() == "undefined") {
+				alert("예약하실 상품을 선택하세요.");
+				return;
+			} else {
+
+				var chk_id = $("input[name='sang']:checked").attr("id");
+
+				/*검정색 배경추가 20160919*/
+				$("body").append("<div id=\"overlay\"></div>");
+				$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+				$("#top_box").css("z-index", "5");
+
+				$("#choice_sang").val($("input[name='sang']:checked").val());
+				$("#choice_sanginfo").val($("#"+chk_id+"_hiddeninfo").val());
+				$.ajax({
+					url : "/home/reserve/state.php",
+					data: "mode=popup_cont&"+$("#rsch_form").serialize(),
+					type: "post",
+					success: function(e) {
+						$("#pop_cont").html(e);
+
+						utils.on('#pop_pay_ag');
+						/* 추가했던 검정색 배경 제거*/
+						$("#overlay").remove();
+
+						/* 객실리스트를 다시 아래쪽으로 이동하여 안보이게 처리 */
+						/* 객실리스트가 내려갔으므로 추가했던 on 클래스 removeClass 써서 제거 */
+						$(".rlist_choice").css({"bottom":"-"+$(".rlist_choice").height()+"px"});
+						$(".rlist_choice").removeClass("on");
+						$("#rlist_btn_txt").text($("#button_text").val());
+						$(".rlist_btn").css({"z-index":"5"});
+
+					}
+				});
+				
+			}
+
+		} else {			
+
+			booking_new.apply_info();
+		}
+
+	});
+	
+	/* 객실리스트 닫기 버튼 클릭 시 */
+	$("#rlist_close").click(function(e) {
+		$("#wrapper").unbind("touchmove");
+		e.preventDefault();
+
+		/* 추가했던 검정색 배경 제거*/
+		$("#overlay").remove();
+		$("#top_box").css("z-index", "9999");
+
+		/* 객실리스트를 다시 아래쪽으로 이동하여 안보이게 처리 */
+		/* 객실리스트가 내려갔으므로 추가했던 on 클래스 removeClass 써서 제거 */
+		$(".rlist_choice").css({"bottom":"-"+$(".rlist_choice").height()+"px"});
+		$(".rlist_choice").removeClass("on");
+
+		$("#rlist_btn_txt").text($("#button_text").val());
+
+		var rent_chk = $("#rent_filter").val();
+		if(rent_chk != "" && $("#rent_chk").val() == "Y") {
+			$("#info_product_btn_w2").html("<p class=\"btn_wrap clr\"><a href=\"javascript:rent_filter('2');\">대실예약</a><a href=\"javascript:rent_filter('1');\">숙박예약</a></p>");	
+			$("#rent_filter").val('');
+		}
+
+	});
+	
+	/*  동의하고 결제하기 */ 
+	/*****************************20161021 마감시간 이후 작업관련******************************/
+	$("#pay_bt2").click(function() {		
+		utils.out('#pop_pay_ag');
+		button_count('378', 'simple');
+
+		var chksid = $("#choice_sang").val();
+		chksid = chksid.replace("||", "_");
+
+		//var chp = $("#"+chksid+"_pkggu").val();
+		//chp = chp.split("_");
+
+		var pno = "378";
+
+
+		if($("#jehu").val() == "" || $("#jehu").val() == "all") {
+			$.ajax({
+				url : "/home/reserve/state.php",
+				type : "post",
+				data : "mode=final_chk&pno="+pno+"&seldate="+$("#hseldate2").val()+"",
+				success: function(data) {
+					var res = data.split("||");
+					if(res[0] == "no") {
+						alert(res[1]);
+						location.href=res[2];
+						return;
+					} else {
+									
+							$("#rsch_form").attr("action", "/home/reserve/preserve_nlogin.php?md=WQwlVQ==");
+						
+						booking_new.prev_login('', '');
+					}
+				}
+			});
+		} else {
+						
+			$("#rsch_form").attr("action", "/home/reserve/preserve_nlogin.php?md=WQwlVQ==");
+			
+
+			// pay_step1 페이지로 넘기는 #rsch_form 폼에 없는 rform값만 넘기기
+			var jchk = $("#jehu").val();
+			if(jchk == "expedia" || jchk == "gpension" || jchk == "pinspot" || jchk == "monstay") {
+				var etc_string = $("#rform").serialize();
+				var etc_string2 = $("#rsch_form").serialize();
+
+				var tmp_etc = etc_string.split("&");
+				var tmp_etc2 = etc_string2.split("&");
+
+				for(var s=0; s<tmp_etc.length; s++) {
+				
+					var form_hidden = tmp_etc[s].split("=");
+					var n = form_hidden[0].indexOf("%5B%5D");
+					var n2 = tmp_etc2.indexOf(form_hidden[0]);
+
+					if(form_hidden[1] != "") {
+						if(n == -1 && n2 == -1) {
+							if(jchk == "pinspot") {
+								var hidden_value = form_hidden[1].replace(/(<([^>]+)>)/gi, "");
+							} else {
+								var hidden_value = form_hidden[1];
+							}
+							$("#rsch_form").append("<input type='hidden' name='"+form_hidden[0]+"' value='"+hidden_value+"' />");
+						}
+					}
+				}
+			}
+	
+	
+			booking_new.prev_login('', '');
+		}
+	});
+	/*****************************20161021 마감시간 이후 작업관련******************************/
+
+	$("#app_gobt").click(function(e) {
+				button_count('378', 'apppay_and');
+		
+		callApp.exec(navigator.userAgent, 'http://app.go.co.kr');
+
+		/*
+				location.href='https://goo.gl/sJQXdA';
+				*/
+	});
+});
+
+
+// 대실예약, 숙박예약 필터구분 20170208
+function rent_filter(chk) {
+	var arrPageSizes = ___getPageSize();
+
+	var prev_chk = $("#rent_filter").val();
+	if(prev_chk != "" && chk != prev_chk) {
+		$("#rlist_close").trigger("click");
+	}
+
+	$("#rent_filter").val(chk);
+	if($(".rlist_choice").hasClass("no_room") == true) {
+		
+		alert("해당 날짜에는 모든 상품이 판매완료되었습니다. 다른 날짜를 선택하세요.");
+		return;
+		
+	} else if($(".rlist_choice").hasClass("on") == true) {
+		
+		if($("input[name='sang']:checked").val() == "" || typeof $("input[name='sang']:checked").val() == "undefined") {
+			alert("예약하실 상품을 선택하세요.");
+			return;
+		} else {
+			var chk_id = $("input[name='sang']:checked").attr("id");
+			/*검정색 배경추가 20160919*/
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+			$("#top_box").css("z-index", "5");
+
+			$("#choice_sang").val($("input[name='sang']:checked").val());
+			$("#choice_sanginfo").val($("#"+chk_id+"_hiddeninfo").val());
+			
+			$.ajax({
+				url : "/home/reserve/state.php",
+				data: "mode=popup_cont&"+$("#rsch_form").serialize(),
+				type: "post",
+				success: function(e) {
+					$("#pop_cont").html(e);
+
+					utils.on('#pop_pay_ag');
+					/* 추가했던 검정색 배경 제거*/
+					$("#overlay").remove();
+
+					/* 객실리스트를 다시 아래쪽으로 이동하여 안보이게 처리 */
+					/* 객실리스트가 내려갔으므로 추가했던 on 클래스 removeClass 써서 제거 */
+					$(".rlist_choice").css({"bottom":"-"+$(".rlist_choice").height()+"px"});
+					$(".rlist_choice").removeClass("on");
+					$("#rlist_btn_txt").text($("#button_text").val());
+					$(".rlist_btn2").css({"z-index":"5"});
+				}
+			});
+			
+		}
+
+	} else {			
+		booking_new.apply_info();
+	}
+}
+
+function rent_date(chk) {
+	var prev_chk = $("#rent_filter").val();
+	//if(prev_chk != "" && chk != prev_chk) {
+	//	$("#rlist_close").trigger("click");
+	//}
+
+	$("#rent_filter").val(chk);
+	booking_new.date_apply();
+}
+
+
+//jQuery를 이용한 방법
+/*
+$(window).bind("pageshow", function(event) {     
+    //back 이벤트 일 경우
+    if (event.originalEvent && event.originalEvent.persisted) {        
+		$(window).unbind("touchmove");	    
+		if($.cookie("mid") != "") {
+			location.reload();
+			
+		}
+    }     
+});
+*/
+
+
+$(function() {
+	
+		if($("#jehu").val() == "expedia_a") {
+		var chin_id = $.cookie('save_sdate_abr');
+		var chout_id = $.cookie('save_edate_abr');
+	} else {
+		//var chin_id = $.cookie('save_sdate');
+		//var chout_id = $.cookie('save_edate');
+		var chin_id = "2018-04-27";
+		var chout_id = "2018-04-28";
+	}
+
+	var todaydt = "20180427";
+	todaydt = parseInt(todaydt);
+	var cookiedt = chin_id.replace(/-/gi, "");
+	cookiedt = parseInt(cookiedt);
+
+	if(cookiedt >= todaydt) {
+		
+		/* 이용권 일 때*/
+		if($("#chk_single").val() == "Y" || $("#sale_single").val() == "Y") {
+			if(typeof chin_id != "undefined") {
+				$("input[name='hseldate']").val(chin_id);				
+				$("input[name='nseldate']").val(chin_id);
+				
+				var week = new Array('일', '월', '화', '수', '목', '금', '토');
+				var yoil_chin = new Date(chin_id).getDay();
+
+				chin_str = chin_id.replace(/-/gi, ".");
+
+				$("#chdate_text").text(chin_str+" ("+week[yoil_chin]+")");
+			}
+
+		} else {
+			if(typeof chin_id != "undefined" && typeof chout_id != "undefined") {
+				
+
+				var week = new Array('일', '월', '화', '수', '목', '금', '토');
+				var yoil_chin = new Date(chin_id).getDay();
+				var yoil_chout = new Date(chout_id).getDay();
+
+				chin_str = chin_id.replace(/-/gi, ".");
+				chout_str = chout_id.replace(/-/gi, ".");
+
+				/* 날짜차이로 숙박일수 알아내기 */
+				var diff = new Date(chout_id) - new Date(chin_id);
+				var currday = 24*60*60*1000;
+				diff = parseInt(diff/currday);
+				
+
+				var basic_night = "";	
+				switch($("#jehu").val()) {
+					case "hottel":
+					case "pinspot":
+						basic_night = 1;
+						break;
+					
+					case "woori":
+					case "gpension":
+						basic_night = 6;
+						break;
+					
+					default:
+						basic_night = 15;
+						break;
+				}
+
+				if(diff > basic_night) {
+
+					var test = new Date(chin_id);
+					test.setDate(test.getDate()+1);
+					
+					yy = test.getFullYear();
+					mm = test.getMonth() + 1; 
+					mm = (mm < 10) ? '0' + mm : mm;
+
+					dd = test.getDate(); 
+					dd = (dd < 10) ? '0' + dd : dd;
+					
+					var final_day = yy+"-"+mm+"-"+dd;
+					chout_id = final_day;
+					chout_str = chout_id.replace(/-/gi, ".");
+					var yoil_chout = new Date(chout_id).getDay();
+
+					/* 날짜차이로 숙박일수 알아내기 */
+					var diff = new Date(chout_id) - new Date(chin_id);
+					var currday = 24*60*60*1000;
+					diff = parseInt(diff/currday);
+
+
+				}
+
+
+
+				$("input[name='hseldate']").val(chin_id);
+				$("input[name='nseldate']").val(chout_id);
+
+				$("#night").val(diff);
+				
+				$("#chin_text").text(chin_str+" ("+week[yoil_chin]+")");
+				$("#chout_text").text(chout_str+" ("+week[yoil_chout]+")");
+
+				// 체크인 날짜와 체크아웃 날짜 사이의 숙박일수 변경
+				$("#night_cnt").text(diff+"박");
+
+				// 객실 리스트에 노출되는 숙박일수 날짜 설정
+				$("#night_roomc").text(diff+" 기준");	
+			}
+			
+		}
+
+	}
+	
+});
+
+var callApp = {
+    isIPHONE: false,
+    isIPAD: false,
+    isANDROID: false,
+    isCHROME: false,
+    scheme: '',
+    appStoreUrl: '',
+    init : function(who) {
+        this.isIPHONE = (navigator.userAgent.match('iPhone') != null || navigator.userAgent.match('iPod') != null);
+        this.isIPAD = (navigator.userAgent.match('iPad') != null);
+        this.isANDROID = (navigator.userAgent.match('Android') != null);
+        this.isCHROME = (navigator.userAgent.match('Chrome') != null);
+ 
+        if (this.isANDROID) {
+            this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocokr://app.go.co.kr&app_move=Y;package=kr.co.go.travel.app;end';
+        } else if (this.isIPHONE || this.isIPAD) {
+            this.scheme = 'gocokr://app.go.co.kr';
+            this.appStoreUrl = 'https://itunes.apple.com/app/id1091429916';
+        }            
+    },
+    getIframe: function(id, url) {
+        var iframe = document.getElementById(id);
+        if (iframe !== null) {
+            iframe.parentNode.removeChild(iframe);
+        }
+        iframe = document.createElement('iframe');
+        iframe.id = id;
+        iframe.style.visibility = 'hidden';
+        iframe.style.display = 'none';
+        iframe.src = url;
+        return iframe;
+    },
+    exec: function(who, url) {
+        this.init(who);
+        if (this.isANDROID) { /* 안드로이드 */
+            location = this.scheme;                
+        } else if (this.isIPHONE || this.isIPAD) { /* IOS */
+            setTimeout(function() {
+                location = callApp.appStoreUrl;
+            }, 500);
+            var iframe = this.getIframe('callAppIframe', this.scheme);
+            document.body.appendChild(iframe);
+        } else { /* 그 외 단말기 */
+            location = url;
+        }
+    }
+}
+</script>
+
+
+	
+		
+<!-- 알립니다 -->
+
+<!-- 숙소정보 -->
+<div id="room_w" style="overflow-x:hidden;overflow-y:auto">			
+	<div id="room_infogo">
+		<h3><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px">  숙소정보</h3>
+
+		<div class="room_ti_tx">
+			<div class="room_ti_tx_in">	
+				<h4>메이힐스리조트</h4>
+				<p>4계절 다양한 아름다움을 만끽할 수 있는 천혜의 자연과 관광 명소로 둘러 쌓여있으며, 내국인 출입이 가능한 국내 유일의 강원랜드 카지노와 유럽풍 계곡형 스키장이 있어 짜릿하고 여유로운 스키를 즐길 수 있고, 국내 최고 해발 1,100M의 청정 고원지대에 위치한 강원랜드 골프장은 한여름에도 25℃를 넘지 않아 언제나 쾌적한 라운딩을 즐길 수 있습니다.<br><br> 
+
+				</p>
+			</div>
+		</div>
+
+		<div class="room_tx_w">
+
+			<div class="room_tx_in">
+				<h4 class="room_title"><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px">안내 및 유의사항</h4><div class="txt_forms">
+					<br><span style="font-weight:bold"> 숙소공통사항</span><br><p>- 상기이미지와 다른 객실로 배정될 수 있습니다.</p><p>- 투숙인원에는 영, 유아도 모두 포함됩니다.</p><p>- 인원 추가: 인원추가비용 5,000원(최대인원까지 투숙가능)/미취학아동의 경우 인원추가에는 해당되지만 추가요금 없음</p><p>- 침구 추가: 15,000원/1채(현지직불,인원추가시 추가요금 포함된 금액)</p><p>- 사우나 1인 7,000원(찜질복별도/매월 마지막주 화요일 사우나 휴무)</p><p>- 투숙객 사우나 30% 할인 서비스</p><p>- 사우나패키지- 찜질방 이용 시 찜질복 추가 비용 1인당 1,000원 발생</p><p>- 모든 객실의 타입은 체크인시 랜덤으로 배정됩니다.</p><p>- 하이원 리조트 차량5분 거리 (3.3km)</p><br><span style="font-weight:bold"> 기준인원 안내</span><br><p>- 인원 추가: 인원추가비용 5,000원(최대인원까지 투숙가능)/미취학아동의 경우 인원추가에는 해당되지만 추가요금 없음</p><p>- 침구 추가: 15,000원/채(현지직불,인원추가시 추가요금 포함된 금액)</p><p>- 최대인원을 초과하여 입실하실수없습니다.</p><br><span style="font-weight:bold"> 조식시간 및 요금 </span><br><br><span style="font-weight:bold"> 2인 조식_단품 PKG</span><br><p>- 객실+2인 조식 단품 제공 패키지 입니다.</p><p>- 메뉴 : 황태해장국, 곤드레우거지해장국 중 택1</p><p>- 장소 : 이벤트홀 or 로비라운지</p><p>- 이용시간 : 07:00~10:30</p><p>- 체크인 시 조식단품 이용권 2매 수령</p><p>- 조식단품 현장 추가금액 : 10,000원 (대인,소인 공통)</p><br><span style="font-weight:bold"> 2인 조식_뷔페 PKG</span><br><p>- 객실+2인 조식 뷔페 제공 패키지 입니다.</p><p>- 메뉴 : 샐러드 3종 외 총 24종 구성</p><p>- 장소 : 이벤트홀 or 로비라운지</p><p>- 이용시간 : 07:00 ~ 10:30</p><p>- 체크인 시 조식뷔페 이용권 2매 수령</p><p>- 조식뷔페 현장 추가금액: 대인 15,000원 (1인), 소인 10,000원 (1인, 만4세~12세)</p><br><span style="font-weight:bold"> 2인 스키/보드 &amp; 부츠장비 패키지 안내</span><br><p>- 2인 스키 or 보드 &amp; 부츠장비 대여 패키지 입니다.</p><p>- 장비 패키지 예약시, "사우나 2인 무료이용권" 제공됩니다.</p><p>- 금요일 날짜 패키지옵션 구매후 토요일 이용시, 현장에서 10,000원 추가비용 발생됩니다.</p><p>- 장비렌탈은 오전권, 오후권 타임제로 4시간 대여가능 합니다. (리프트권 및 의류 미포함)</p><p>- 상세내용은 스키샵으로 문의 바랍니다. (033-590-8292)</p><br><span style="font-weight:bold"> 런치타임 12:00~14:00</span><br><p>(김치찌개,뚝배기불고기,된장찌게정식,곰취냉면,해장국)</p><br><span style="font-weight:bold"> 사우나 이용안내</span><br><p>- 장소 : 근생동 3층 사우나</p><p>- 찜질방 이용시 찜질복 (추가 1,000원), 심야찜질 (추가 3,000원)</p><p>- 매월 마지막주 월요일 22시~수요일 06시 까지 휴장</p><p>- 12/25, 1/29, 2/26 : 22시 운영종료</p><p>- 12/27, 1/31, 2/28 : 06시 운영시작</p><p>- 12/26, 1/30, 2/27 : 사우나 휴장</p><br><span style="font-weight:bold"> 셔틀버스 운영안내</span><br><p>- (2017년 겨울시즌) 12월부터 셔틀버스 무료이용 제공됩니다.</p><p>- 리조트스키장 (밸리스키하우스) 셔틀버스 무료운행 (5분거리)</p><br>
+				</div>
+			</div>
+			<!-- 객실안내 -->
+
+			<div class="room_tx_in">	
+				<h4 class="room_title" id="room_imgscroll"><img src="http://img.go.co.kr/mobile//slogan_icon.png" height="22px"> 객실안내</h4>
+				<div class="txt_forms">
+					<p>
+						<img src="http://img.mayhillsresort.kr/mobile/room_introduce_ork_m.jpg?ver=20180427093851" alt="객실소개오크모바일">
+						<img src="http://img.mayhillsresort.kr/mobile/room_introduce_wilw_m.jpg?ver=20180427093851" alt="객실소개윌로우모바일">	</p>
+					</div>
+				</div>
+
+
+
+
+				<!-- 위치정보 -->
+				<div id="location_w" style="width:99%">
+					<h3><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px">  위치정보</h3>
+					<div class="location_map">
+						<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; height:233px; color:#333; position:relative"><div style="height: 200px;"><a target="_blank" href="http://map.daum.net/?urlX=907302.0&amp;urlY=1035139.0&amp;itemId=7945995&amp;q=%EB%A9%94%EC%9D%B4%ED%9E%90%EC%8A%A4%EB%A6%AC%EC%A1%B0%ED%8A%B8&amp;srcid=7945995&amp;map_type=TYPE_MAP&amp;from=roughmap"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/74a1f5cfdd6053c1a2a1017ff946db1fa30b4b3759314ed46f840d13a8a3356e" width="100%" height="198px" style="border:1px solid #ccc;"></a></div><div><span style="border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;box-sizing:border-box;box-sizing:border-box;background-color:#f9f9f9;position:absolute;left:0px;top:200px;width:100%;height:33px"></span><span style="position:absolute;left:12px;top:207px"><img src="http://t1.daumcdn.net/localimg/localimages/07/2013/map/test/ico_road.gif"></span><a href="http://map.daum.net/?from=roughmap&amp;srcid=7945995&amp;confirmid=7945995&amp;q=%EB%A9%94%EC%9D%B4%ED%9E%90%EC%8A%A4%EB%A6%AC%EC%A1%B0%ED%8A%B8&amp;rv=on" target="_blank" style="text-decoration: none;color: #333;font:normal normal 400 12px 돋움, dotum, sans-serif;line-height:1;position:absolute;left:29px;top:211px">로드뷰</a><span style="position:absolute;left:81px;top:207px"><img src="http://t1.daumcdn.net/localimg/localimages/07/2013/map/test/ico_street.gif"></span><a href="http://map.daum.net/?from=roughmap&amp;eName=%EB%A9%94%EC%9D%B4%ED%9E%90%EC%8A%A4%EB%A6%AC%EC%A1%B0%ED%8A%B8&amp;eX=907302.0&amp;eY=1035139.0" target="_blank" style="text-decoration: none;color: #333;font:normal normal 400 12px 돋움, dotum, sans-serif;line-height:1;position:absolute;left:97px;top:211px">길찾기</a></div></div>
+					</div>
+					<div class="location_info">
+						<div class="location_info_txt">
+							<span class="info_txt_tit">[리조트] 메이힐스리조트</span><br>
+							<span class="info_txt_stit">주소: 강원 정선군 고한읍 물한리길 8  <br>(구주소: 강원 정선군 고한읍 고한리 142)<br>
+							전화번호: 1666-1243			</span>
+						</div>
+					</div>
+
+
+					</div>	<style>
+					/* 기본 테이블 스타일_170720_혜준 */
+					.table-type01 {width: 100%; border-collapse: collapse;}
+					.table-type01 th, .table-type01 td {width: 50%; border: 1px solid #c8c8c8; font-size: 14px; text-align: center; vertical-align: middle; height: 30px; color: #7b7b7b;
+						letter-spacing: -0.5px; font-weight: normal;}
+						.table-type01 th {background: #e4e3e3;}
+					</style>
+					<div class="room_tx_in">	
+						<h4 class="room_title"><img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px"> 환불안내</h4>
+						<div class="txt_forms">
+							<p>
+								※ 일부 상품에 한하여 공통규정 외의 규정이 적용되는 상품도 존재하오니, 예약전 필히 확인 부탁드립니다. <br>
+								※ 취소 및 환불 규정을 확인하지 못하여 발생하는 부분은 책임지지 않습니다.<br>
+								※ 영업일 기준 이므로, 비영업일 또는 17 시 이후 취소접수건은 익일영업일 기준으로 진행됩니다.<br>
+
+								<br>
+								<b>[공통 취소규정]</b><br>
+							</p><table class="table-type01" style="width:100%;margin-top:10px;margin-bottom:10px">
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="*">
+									<col width="25%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th style="width:25%">구분</th>
+										<th style="width:25%">취소수수료율</th>
+										<th style="width:25%">환불액</th>
+										<th style="width:25%">추가적립금</th>
+									</tr>
+
+									<tr>
+										<td style="text-align:left;font-size:12px;width:24%;padding-left:1%">이용일 기준 15일전</td>
+										<td style="text-align:center;font-size:12px;width:25%">10%</td>
+										<td style="text-align:center;font-size:12px;width:25%">90% 환불</td>
+										<td style="text-align:center;font-size:12px;width:25%">10% 적립</td>
+									</tr>
+									
+									<tr>
+										<td style="text-align:left;font-size:12px;width:24%;padding-left:1%">이용일 기준 14~10일전</td>
+										<td style="text-align:center;font-size:12px;width:25%">20%</td>
+										<td style="text-align:center;font-size:12px;width:25%">80% 환불</td>
+										<td style="text-align:center;font-size:12px;width:25%">10% 적립</td>
+									</tr>
+									
+									<tr>
+										<td style="text-align:left;font-size:12px;width:24%;padding-left:1%">이용일 기준 9~7일전</td>
+										<td style="text-align:center;font-size:12px;width:25%">40%</td>
+										<td style="text-align:center;font-size:12px;width:25%">60% 환불</td>
+										<td style="text-align:center;font-size:12px;width:25%">10% 적립</td>
+									</tr>
+									
+									<tr>
+										<td style="text-align:left;font-size:12px;width:24%;padding-left:1%">이용일 기준 6일전</td>
+										<td style="text-align:center;font-size:12px;width:25%">70%</td>
+										<td style="text-align:center;font-size:12px;width:25%">30% 환불</td>
+										<td style="text-align:center;font-size:12px;width:25%">10% 적립</td>
+									</tr>
+									
+									<tr>
+										<td style="text-align:left;font-size:12px;width:24%;padding-left:1%">이용일 기준 5일전~당일</td>
+										<td style="text-align:center;font-size:12px;width:25%">100%</td>
+										<td style="text-align:center;font-size:12px;width:25%">0% 환불</td>
+										<td style="text-align:center;font-size:12px;width:25%">10% 적립</td>
+									</tr>
+
+								</tbody>
+							</table>				<p></p>
+						</div>
+					</div>
+
+					<div class="room_tx_in">	
+						<div id="travel_etc">
+							<h4 class="room_title"><img src="http://img.go.co.kr/mobile//slogan_icon.png" height="22px"> 주변여행지</h4>
+							<div class="txt_forms">
+								<div class="attractions_trip">
+									<dl>
+										<dd>
+											<h3>정선레일바이크</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_trip01.jpg" alt="정선레일바이크">
+										</dt>
+										<div>
+											정선읍 &gt; 강릉방향42번국도 &gt; 아우라지교 진입전 415지방도 방향 좌회전 &gt; 구절리역까지.<br>이용객들이 몰려도 복선구조의 철길로 상시 출발이 가능합니다.
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 정선군 여량면 노추산로 749
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-563-8787
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : www.railbike.co.kr/
+											</li>
+										</ul>
+									</dl>
+									<dl>
+										<dd>
+											<h3>정선장터</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_trip02.jpg" alt="정선장터">
+										</dt>
+										<div>
+											여느 곳보다 질 좋고 저렴한 황기나 곤드레 나물을 푸짐하게 묶어내는 손에서 흥겨운<br>정선아리랑의 가락을 들을 수 있는 재래시장입니다. 
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 정선군 정선읍 봉양7길 39
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-563-6200
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : blog.naver.com/jungsun_mk
+											</li>
+										</ul>
+									</dl>
+									<dl>
+										<dd>
+											<h3>화암동굴</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_trip03.jpg" alt="화암동굴">
+										</dt>
+										<div>
+											금광굴진 중 발견된 천연 종유동굴과 금광갱도를 이용하여 &lt;금과 대자연의 만남&gt; 이라는<br>주제로 개발한 국내 유일의 테마형 동굴입니다.
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 정선군 화암면 화암동굴길 12
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-560-3415
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : www.ariaritour.com/hb/tour/
+											</li>
+										</ul>
+									</dl>
+									<dl>
+										<dd>
+											<h3>정선스카이워크</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_trip04.jpg" alt="정선스카이워크">
+										</dt>
+										<div>
+											해발 583m의 절벽 끝에 길이 11m의 U자형 구조물을 까마득한 벼랑 밖으로 돌출 시키고,<br>바닥은 투명한 강화 유리로 마감한 국내 최초의 3D 전망대입니다. 
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 정선군 정선읍 북실리 산105
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-563-4100
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : www.ariihills.co.kr/
+											</li>
+										</ul>
+									</dl>
+									<dl>
+										<dd>
+											<h3>추추파크</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_chpark_01.png" alt="추추파크" style="height:100%;">
+										</dt>
+										<div>
+											국내 유일의 산악철도와 영동선을 활용해 남녀노소 누구나 체험하고 즐길 수 있는<br>철도 체험형 기차 테마 리조트로 추억과 낭만을 느끼며 즐거운 기차여행을 체험하실 수 있습니다.
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 삼척시 도계읍 심포남길 99호
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-550-7788
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : www.choochoopark.com/
+											</li>
+										</ul>
+									</dl>
+									<dl>
+										<dd>
+											<h3>삼탄아트마인</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_statmine_01.jpg" alt="삼탄아트마인">
+										</dt>
+										<div>
+											2001년 10월 폐광된 삼척탄좌 시설을 창조적인 문화예술단지로 되살리고 있습니다.<br>150개국에서 수집한 10만 여점이 넘는 예술품 및 선진적인 예술가 지원 프로그램을 관람하실 수 있습니다.
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 정선군 고한읍 고한리 한백산로 1445-44
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-591-3001
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : www.samtanartmine.com/
+											</li>
+										</ul>
+									</dl>
+									<dl>
+										<dd>
+											<h3>365세이프타운</h3>
+										</dd>
+										<dt>
+											<img src="http://img.mayhillsresort.kr/attractions_365sftown.jpg" alt="365세이프타운">
+										</dt>
+										<div>
+											태백시가 국내외 최초로 ‘안전’을 테마로 하여 교육 놀이시설을 접목한 에듀테인먼트(Edutainment)시설로<br>각종 재난 및 재해를 직접 또는 가상체험이 가능하도록 조성한 공익적 안전테마파크입니다.
+										</div>
+										<ul class="content">
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_map.jpg" style="margin-right:10px;">위치 : 강원도 태백시 평화길 15
+											</li>
+											<li style="float:left;">
+												<img src="http://img.mayhillsresort.kr/icon_call.jpg" style="margin-right:10px">문의전화 : 033-550-3101~5
+											</li>
+											<li style="clear:both">
+												<img src="http://img.mayhillsresort.kr/icon_homep.jpg" style="margin-right:10px;">홈페이지 : www.365safetown.com/
+											</li>
+										</ul>
+									</dl>			</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div class="room_tx_in">	
+							<h4 class="room_title"> 
+								<img src="http://img.go.co.kr/mobile/slogan_icon.png" height="22px"> 
+							확인사항 및 기타문의</h4>
+							<div class="txt_forms">
+								<p>
+									<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">해당 금액은 세금, 봉사료가 포함된 금액입니다.</span><br>
+									<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">위의 정보는 업체 사정에 따라 변경될 수 있습니다. </span><br>
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<!-- 고객센터 문의하기 배너 -->
+				<div id="q_quest"> 
+					<p>무엇을 도와드릴까요?</p>
+					<p>전문 상담원에게 물어보세요</p>
+					<p><a href="javascript:cus_on('#q_modal', 'on');">고코투어 빠른 문의하기</a></p>
+				</div>
+
+				<style type="text/css">
+				#q_modal ul li:nth-child(3) a:before {
+					background-position: center -475px;
+				}
+			</style>
+
+			<div id="q_modal" style="display:none;height:auto;padding-bottom:5px">
+				<h2>문의 하기<a href="javascript:cus_on('#q_modal', 'out');" class="q_clsBtn"></a></h2>
+				<ul>
+				<!---<li><a href="http://m.mayhillsresort.kr/home/customer/?dd=Tx8x">자주묻는 질문</a></li>--->
+				<li><a href="http://m.mayhillsresort.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl">1:1 문의하기</a></li>
+				<!-- 평일 9시~18시에만 카카오톡 항목 노출 그 외 1:1 문의하기 
+								<li><a href="http://plus.kakao.com/home/lwaac3va" target="_blank">카카오톡 문의</a></li>
+							-->
+
+							<!-- 평일 09시~02시, 주말 공유일 09시 ~ 17시 항목 노출, 그 외 비노출 -->
+							<li><a href="javascript:cus_on('#q_notice', 'on');">전화 문의</a></li>
+							<li><a href="http://m.mayhillsresort.kr/home/customer/?dd=XgwpVzs=&amp;brd=RhAl&amp;p_no=Gkl4&amp;abr=&amp;type=group">단체문의</a></li>
+						</ul>
+					</div>
+
+					<div id="q_notice" style="display:none;">
+						<h2>알림<a href="javascript:cus_on('#q_notice', 'out');" class="q_clsBtn"></a></h2>
+						<div>
+							<p>고코투어 고객센터로 전화 연결합니다</p>
+							<p>(상담시간: 평일 오전 9시 ~ 오후 2시
+								<br>주말공휴일 오전 9시 ~ 오후 5시)
+							</p>
+						</div>
+						<p><a href="javascript:cus_on('#q_notice', 'out');">취소</a><a href="tel:1666-1243">전화연결</a></p>
+					</div>
+		<!-- 카톡상담 
+		<div id="kaka_advice">
+			<span class="txt">더 궁금한 사항은 언제든지 문의주세요.</span><br/>
+			<span class="btn"><a href="kakaoplus://plusfriend/friend/@고코투어"><img src="http://img.mayhillsresort.kr/mobile/pruduct_ka_bt.png" width="90px" /></a></span>
+		</div>
+	-->
+</div>
+
+
+
+<style>
+.img_t { font-size:0.813em; color:#fff; letter-spacing:1px; text-align:center; opacity:none; line-height:23px;vertical-align:middle; }
+.img_txt { position: absolute; bottom:30px; border-radius:80px; background-color: rgba(75,68,67,0.7); position:absolute; left:50%; transform:translate(-50%); padding: 0 20px; height:23px;text-align:center;color:#fff; text-overflow:ellipsis;white-space:nowrap;} 
+
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {background-image:none;opacity:1}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {background-image:none;text-align:right;opacity:1}
+.swiper-scrollbar-drag { background-color:#FFFFFF; }
+.swiper-container-horizontal>.swiper-scrollbar { background-color:rgba( 255, 255, 255, 0.5 ); margin-bottom:5px; height:3px} /* 흰색 바에 불투명도 */
+
+.swiper-container-horizontal>.swiper-pagination { bottom: 0.5;}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet {margin:0 4px;} 
+.swiper-pagination-bullet {background:#ffffff;width:10px;height:10px;opacity:0.5;}
+.swiper-pagination-bullet-active {background:#ff4300;opacity:1}
+
+.pop_snsShare{position:absolute; z-index:999; left:5%; top:20%; margin:auto; width:90%; border-radius:10px; background:#fff; color:#000; text-align:center; letter-spacing:-0.5px}
+.pop_snsShare .title{float:left; position:relative; width:100%; padding:10px 0; border-top-left-radius:10px; ; border-top-right-radius:10px; background:#f95c24; }
+.pop_snsShare .title p{padding-left:20px; font-size:1.125em; text-align:left; color:#fff;}
+.pop_snsShare .title .close{position:absolute; top:10px; right:15px}
+.pop_snsShare .iconBox{display:table; width:100%; padding:30px 0; border-bottom-left-radius:10px; ; border-bottom-right-radius:10px; background:#fff; letter-spacing:-1px}
+.pop_snsShare .iconBox .icon{display:table-cell; text-align:center}
+.pop_snsShare .iconBox .icon a{color:#3f3f3f; font-size:0.875em; letter-spacing:-1px}
+
+</style>
+
+
+<!--- 지도앱 레이어 --->
+<div class="pop_snsShare" style="display:none" id="map_layer">
+	<div class="title"><p>지도앱에서 길찾기 <span class="close"><a href="javascript:utils.out('#map_layer');"><img src="http://img.go.co.kr/mobile/btn_close2.png" width="25" height="25" alt="닫기"></a></span></p></div>
+	<div class="iconBox">
+		<span class="icon"><a href="http://map.daum.net/link/map/37.2116488,128.8350304" target="_blank"><img src="http://img.go.co.kr/mobile/icon_mapdaum1.png" width="45" height="45"><br>다음맵</a></span>
+		<span class="icon"><a href="http://map.naver.com/?x=128.8350304&amp;y=37.2116488&amp;enc=b64" target="_blank"><img src="http://img.go.co.kr/mobile/icon_mapnaver1.png" width="45" height="45"><br>네이버맵</a></span>
+		<span class="icon"><a href="https://www.google.co.kr/maps/@37.2116488,128.8350304,12z" target="_blank"><img src="http://img.go.co.kr/mobile/icon_mapgoole1.png" width="45" height="45"><br>구글맵</a></span>
+	</div>
+</div>
+<!--- 지도앱 레이어 --->
+
+<!-- 상단 고정 바 -->
+<div id="gnb2M_sub" style="position: static; z-index: 0; border-bottom: none; display: none;">
+	<ul>
+		<li class="menu" onclick="move_hid('room_infogo','id','gnb2M_sub');">시설안내</li>
+		<li class="menu" onclick="move_hid('location_w','id','gnb2M_sub');">오시는길</li>
+		<li class="menu" onclick="move_hid('travel_etc','id','gnb2M_sub');">주변여행지</li>
+		<!-- <li class="menu_reserv" onclick="javascript:$('.rlist_btn').trigger('click');">예약하기</li> -->
+		<li class="menu_reserv" onclick="move_hid('product_title','id','gnb2M_sub');">예약하기</li>
+	</ul>
+</div>
+<img src="http://img.go.co.kr/mobile/m_price_all_banner_fxd.jpg" onclick="javascript:all_price()" id="price_report_banner_sub" style="width: 100%; height: 50px; margin-top: 0px; position: static; z-index: 0; border-bottom: none; display: none;">
+
+
+<!--- 공유하기 레이어 --->
+<div class="pop_snsShare" style="display:none" id="sns_layer">
+	<div class="title"><p>공유하기 <span class="close"><a href="javascript:utils.out('#sns_layer');$('.rlist_btn').css({'z-index':'99999'})"><img src="http://img.go.co.kr/mobile/btn_close2.png" width="25" height="25" alt="닫기"></a></span></p></div>
+	<div class="iconBox">
+		<span class="icon"><a href="javascript:sharing.share_sns('kakao', '', 'Gkl4')" id="send_kakao"><img src="http://img.go.co.kr/mobile/icon_snsKakao1.png" width="45" height="45"><br>카카오톡</a></span>
+		<span class="icon"><a href="javascript:sharing.share_sns('facebook', '', 'Gkl4')"><img src="http://img.go.co.kr/mobile/icon_snsFacebook1.png" width="45" height="45"><br>페이스북</a></span>
+		<span class="icon"><a href="javascript:sharing.share_sns('mobile_mail', '', '')"><img src="http://img.go.co.kr/mobile/icon_snsMail1.png" width="45" height="45"><br>이메일</a></span>
+		<span class="icon" id="send_sms"><img src="http://img.go.co.kr/mobile/icon_snsSms1.png" width="45" height="45"><br>문자</span>
+	</div>
+</div>
+	
+<!--메일 공유하기 팝업-->
+<div id="email_pop" style="top:50px">
+	<form name="sns_mform" id="sns_mform" method="post">
+		<input type="hidden" name="encrypt" value="0">
+		<input type="hidden" name="mode" value="WhAzfDNHN08=">
+		<input type="hidden" name="sns_sang" value="Gkl4">
+		<input type="hidden" name="uflag" value="M">
+		<div id="email_pop_top">
+			<div id="title">메일 공유하기</div>
+			<a href="javascript:util.basic_l_on('email_pop')" class="pop_close2"><img src="http://img.mayhillsresort.kr/mobile/pop_close2.jpg" width="20" alt="닫기"></a>
+		</div>
+		<div id="emil_form">
+			<p class="email_pop_text">
+				친구 또는 지인에게 이 상품을 메일로 공유하실 수 있습니다.
+			</p>
+			<table>
+				<colgroup>
+					<col width="34%">
+					<col width="66%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>친구 이메일</th>
+						<td align="center">
+							<input type="text" name="femail" id="femail" validation="yes" title="친구이메일">
+							<p>* 입력하신 메일주소는 마케팅 용도로 사용되지 <br>않습니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td align="center">
+							<textarea name="sns_cont" id="sns_cont" validation="yes" title="내용"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>이름(보내는이)</th>
+						<td align="center">
+							<input type="text" name="sname" id="sname" validation="yes" title="이름(보내는 이)">
+						</td>
+					</tr>
+					<tr>
+						<th>이메일(보내는이)</th>
+						<td align="center">
+							<input type="text" name="semail" id="semail" validation="yes" title="이메일(보내는 이)">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br><br><br><br>
+			<div style="text-align:center;">
+				<input type="checkbox" name="send_chk" id="send_chk" style="cursor:pointer;display: inline-block; width: 14px; height: 14px; border: 2px solid #bcbcbc;">&nbsp;<label for="send_chk" style="cursor:pointer">개인정보 수집 및 이용동의에 동의합니다.</label><br>
+				<a href="javascript:location.href='http://m.mayhillsresort.kr/home/policy/?dd=WQwpVT9FJ3wzC0o=&amp;type=email'"><span class="link">[개인정보 수집 및 이용동의]</span></a><br>					
+			</div>
+
+			<div id="btn_email">
+				<a href="javascript:check_fchk2('send_chk')" class="btn_send" title="보내기">보내기</a><a href="javascript:util.basic_l_on('email_pop')" class="btn_cancel" title="취소">취소</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+
+	function check_fchk2(id_chk) {
+		if($("#"+id_chk).is(":checked") == true){	
+			utils.inst_fchk('sns_mform', 'func', sharing.email_chk);
+			return false;	
+		} else {
+			alert("개인정보 수집 및 이용동의에 동의해주세요.");
+		}
+	}
+</script>
+<style>
+/*메일,sns 공유하기*/
+#sms_pop{position:absolute; display:none; width:100%; height:100%; background-color:#ffffff; z-index:999;}
+#sms_pop_top{float:left; width:100%; height:45px; background-color:#f4f2f3;}
+#sms_pop_top #title{text-align:center; font-weight:bold; line-height:2.5; font-size:18px; color:#3f3f3f; text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
+#sms_pop_top .pop_close2{position:absolute; top:13px; right:10px}
+#sms_form{float:left; width:100%; background-color:#ffffff}
+#sms_form .sms_pop_text{float:left; font-size:13px; letter-spacing:-0.5px; margin:15px}
+#sms_form table{float:left; width:100%; border-top:1px solid #000000}
+#sms_form table th{text-align:left; font-size:13px; background-color:#f0f0f0; border-bottom:1px solid #d2d2d2; text-indent:10px}
+#sms_form table td{font-size:13px; border-bottom:1px solid #d2d2d2; padding:5px 0 5px 0}
+#sms_form table td p{font-size:11px; text-align:left; margin-left:10px;}
+#sms_form table td input{border:1px solid #d2d2d2; width:52px; height:25px;}
+#sms_pop #btn_email{width:100%; float:left;}
+#sms_pop #btn_email .btn_send{float:left; display:block; width:45%;
+	height:47px; font-size:20px; margin-left:15px; margin-bottom:5px; margin-top:20px; font-weight:bold; border-radius:10px; line-height:2.5; background-color:#f15d28; color:#ffffff; text-align:center
+}
+#sms_pop #btn_email .btn_cancel{
+	float:right; display:block; width:45%;
+	height:47px; font-size:20px; margin-right:15px; margin-bottom:5px; margin-top:20px; font-weight:bold; border-radius:10px; line-height:2.5; background-color:#979797; color:#ffffff; text-align:center
+}
+</style>
+
+
+
+<!-- 문자 공유하기 팝업 - 받는번호가 있어야하니까 -->
+<div id="sms_pop" style="top:0px">
+	<form name="sns_sform" id="sns_sform" method="post">
+		<input type="hidden" name="encrypt" value="0">
+		<input type="hidden" name="mode" value="WhsuRwFVM1A=">
+		<input type="hidden" name="sns_pno" value="Gkl4">
+		<div id="sms_pop_top">
+			<div id="title">문자 공유하기</div>
+			<a href="#" class="pop_close2" id="send_sms_close"><img src="http://img.mayhillsresort.kr/mobile/pop_close2.jpg" width="20" alt="닫기"></a>
+		</div>
+		<div id="sms_form">
+			<p class="sms_pop_text">
+				친구 또는 지인에게 이 상품을 문자로 공유하실 수 있습니다.
+			</p>
+			<table>
+				<colgroup>
+					<col width="34%">
+					<col width="66%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>받는 번호</th>
+						<td>
+							<input name="tel1" type="number" id="tel1" pattern="[0-9]*" style="margin-left:10px"> - 
+							<input name="tel2" type="number" id="tel2" pattern="[0-9]*"> - 
+							<input name="tel3" type="number" id="tel3" pattern="[0-9]*">
+
+							<p>* 입력하신 번호는 마케팅 용도로 사용되지 <br>않습니다.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="btn_email">
+				<a href="#" class="btn_send" title="보내기" id="sms_submit">보내기</a><a href="#" class="btn_cancel" title="취소" id="send_sms_close2">취소</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		Kakao.init("");
+		Kakao.Link.createTalkLinkButton({
+			container: '#send_kakao',
+			label: "[정선 메이힐스리조트]여기 어때?\r\n업체명 : 메이힐스리조트\r\n주소 : 강원 정선군 고한읍 고한리 142",
+			image: {
+				src: "http://file.go.co.kr/tour/img3/1503900908_main1.jpg",
+				width: '300',
+				height: '200'
+			},
+			webButton: {
+				text: '정선 메이힐스리조트 바로가기',
+				url: "http://www.mayhillsresort.kr/_sns.php?p_no=Gkl4"
+			}
+		});
+
+		$("#send_sms, #send_sms_close, #send_sms_close2").click(function() {
+			if($(this).hasClass("on") == true) {
+				$(this).removeClass("on");
+			//$(".rlist_btn").css({"z-index":"9999"});
+			utils.basic_l_on('sms_pop');
+		} else {
+			$(this).addClass("on");
+			//$(".rlist_btn").css({"z-index":"5"});
+			utils.basic_l_on('sms_pop');
+		}
+		/*
+		$.ajax({
+			url : "state.php",
+			type: "post",
+			data: "mode=send_sms&sns_pno=Gkl4",
+			success: function(e) {
+				alert(e);
+			}
+		});
+		*/
+	});
+
+		$("#sms_submit").click(function() {
+			if($("#tel1").val() == "") {
+				alert("휴대전화번호를 입력하세요.");
+				return;
+			}
+
+			if($("#tel2").val() == "") {
+				alert("휴대전화번호를 입력하세요.");
+				return;
+			}
+
+			if($("#tel3").val() == "") {
+				alert("휴대전화번호를 입력하세요.");
+				return;
+			}
+
+			$.ajax({
+				url : "state.php",
+				type: "post",
+				data: $("#sns_sform").serialize(),
+				success: function(e) {
+					alert(e);
+				}
+			});
+		});
+	});
+</script>
+<!--- 공유하기 레이어 --->
+
+<!--- 스크롤 내릴때 로고라인 숨기고 타이틀 고정 --->
+<script type="text/javascript">
+$(function() {
+	$('.map_address tr th').click(function() {
+		$('.map_address tr th').removeClass('on');
+		$(this).addClass('on');
+
+		$('.map_img tr td').hide();
+		$('.map_img tr td').eq($(this).index()).show();
+	});
+
+	$('.map_img tr td').not(':first').hide();
+
+	/*
+	$('.introduce tr th').click(function() {
+		$('.introduce tr th').removeClass('on');
+		$(this).addClass('on');
+
+		$('.int_img tr td').hide();
+		$('.int_img tr td').eq($(this).index()).show();
+	});
+
+	$('.int_img tr td').not(':first').hide();*/
+
+	//안드로이드, chrome 브라우저에서만 복사가능, 아이폰은 불가
+	//복사가능 여부 세팅
+	/*
+	var clipboardSupport = true; 
+	try {
+		$.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase());
+ 
+		var version = $.browser.version;
+		version = new Number(version.substring(0, version.indexOf(".")));
+ 
+		//모바일 접속인지 확인
+		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/Android/i))) {
+			//클립보드 복사기능이 될경우 (크롬 42+)
+			if ($.browser.chrome == true && version >= 42) {
+				clipboardSupport = true;
+			} else {
+				clipboardSupport = false;
+			}
+		}
+	} catch(e) {
+
+	}
+
+    var clipboard = new Clipboard('#copy_str');
+    clipboard.on('success', function(e) {
+        alert("주소가 복사되었습니다.\n\n원하는 곳에 붙여넣기 해주세요.");
+    });
+    clipboard.on('error', function(e) {
+        alert("접속중인 기기및 브라우저에서는\n클립보드 복사를 지원하지 않습니다.\n주소를 길게 누르면 복사하실 수 있습니다.");
+		$("#hidden_addr").show();
+    });
+	 */
+	/* 디자인팀 확인 후 뺄거 제거 */
+	/* 혹시 몰라 타이틀 라인와 상세메뉴 라인을 둘다 나오게함*/
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		if(scrollTop > 85) {
+			$("#head").hide();																									//로고라인
+			
+						$("#gnb2M_sub").css({"position":"fixed", "top":"50px", "z-index":"5", "border-bottom":"1px solid #ccc", "display":"block"});		//타이틀라인
+			$("#price_report_banner_sub").css({"position":"fixed", "top":"0px", "z-index":"5", "border-bottom":"1px solid #ccc", "display":"block"});		//타이틀라인
+					} else if(scrollTop < 85) {
+			$("#head").show();																			//로고라인		
+			$("#gnb2M_sub").css({"position":"static", "z-index":"0", "border-bottom":"none" , "display":"none"});		//타이틀라인
+			$("#price_report_banner_sub").css({"position":"static", "z-index":"0", "border-bottom":"none" , "display":"none"});		//타이틀라인		
+
+		}
+	});
+
+	
+	/* 상단 슬라이드 */
+	var swiper = new Swiper('.swiper-container', {
+		scrollbar: '.swiper-scrollbar',	// 스크롤
+		scrollbarHide: false,	// 스크롤 안할때도 스크롤바 숨기지 않음
+		uniqueNavElements: true,
+		loop:true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+		autoplayDisableOnInteraction: false,
+        paginationBulletRender: function (index, className) { 
+            return '<span class="' + className + '"></span>'; 
+        }
+    });
+
+});
+
+
+function tab_on(id) {
+	$("#detail_tab1 li").each(function(e) {
+		var chk_id = $("#detail_tab1 li").eq(e).attr("id");
+		var str_ex = chk_id.split("_on");
+		$("#detail_tab1 li").eq(e).attr("id", str_ex[0]);
+	});
+	$("#detail_tab1 ."+id).attr("id", id+"_on");
+}
+
+
+// 고객센터 문의하기 배너
+function cus_on(obj, st) {
+	if(st == "on") {
+		if(obj == "#q_notice") {
+			$("#q_modal").hide();
+		} else { 
+			var arrPageSizes = ___getPageSize();
+			$("body").append("<div id=\"overlay\"></div>");
+			$("#overlay").css({"background-color":"#000", "opacity":"0.7", "width":arrPageSizes[0], "height":arrPageSizes[1]});
+		}
+		$(obj).css({"z-index": 20 }).show();
+		$("#top_box").css("z-index", "5");
+	} else {
+		$("#overlay").slideUp(function(){ $("#overlay").remove(); });
+		$(obj).hide();
+		$("#top_box").css("z-index", "9999");
+		$("#topSearch").css("z-index", "9999");	
+	}
+}
+</script>
+
+
+<script type="text/javascript">
+
+
+</script>
+
+
+
+	</div>
+	<div id="loading2" style="display:none"> 
+   <p><img src="http://img.mayhillsresort.kr/mobile/loading20.gif" width="30"></p> 
+  </div>
+		
+  <div class="btmLogo" id="btmLogo"></div><!-- footer -->
+  <div id="Footer">
+  	<ul class="f-menu">
+  		<li><a href="http://m.mayhillsresort.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uE0lQFilPMlUsRjMRWl1QK1FxTjFOJVFeQBs3DGFWAU0vQ29CEnQ=">로그인</a></li>
+  		<li><a href="/home/policy/?dd=QxEpTQFWMVM=">이용약관</a></li>
+  		<li><a href="/home/policy/?dd=WQwpVT9FJw==">개인정보</a></li>
+  		<li><a href="javascript:navi.move_home();" class="move_top">TOP <span>▲</span></a></li>
+  	</ul>
+  	<div class="f-area">
+		<!----
+		<ul class="policy">
+			<li><a href="http://m.mayhillsresort.kr/home/member/?dd=SwwhTTp5N00mEQ==">회사소개</a></li>
+			<li><a href="/home/policy/?dd=QxEpTQFWMVM=">이용약관</a></li>
+			<li class="privacy"><a href="/home/policy/?dd=WQwpVT9FJw==">개인정보처리방침</a></li>
+		</ul>
+		---->
+		<ul class="customer">
+			<li><a href="tel:1666-1243" class="call">고객상담 1666-1243</a></li>
+			<li><a href="mailto:help@go.co.kr" class="mail">문의메일 : help@go.co.kr</a></li>
+		</ul>
+		<address>
+			
+			<p>
+				<strong>(주)바로네트웍스</strong><br>
+				대표이사 : 전병권<br>
+				주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
+				사업자등록번호 : 215-87-85373<br>				통신판매업 : 제2017-서울강남-00561호<br>				여행업등록번호 : 제2017-07호<br>				여행영업보증서 : 국내여행 제100-000-2015 0144 5816호			</p>
+				<p>
+					<strong>메이힐스리조트</strong><br>
+					주소 : 강원도 정선군 고한읍 물한리길 8 정선리조트 <br>
+					사업자등록번호 : 225-85-04034<br>				통신판매업 : 제 2009-4290040-30-2-0033호			</p>
+					<p class="copy">Copyright 2015 by MAYHILLSRESORT co., all right reserved.</p>
+				</address>
+			</div>
+		</div>
+		<!-- footer -->
+
+
+		<style>
+		.fixed_to_top4 {position:fixed;top:0px;z-index:50;transition:all 0.5s ease; width:100%}
+		.fixed_to_top5 {position:fixed;top:103px;z-index:50;width:100%;transition:all 0.5s ease}
+	</style>
+
+
+
+
+	<script type="text/javascript">
+
+		$(function() {
+
+			var myScroll = null;
+			var myScroll2 = null;
+
+			$("#menu_bg #category").css("height",$(window).height());
+
+			$("#menu_bg2 #mypage").css("height",$(window).height());
+			$("#menu_bg2 #mypage #box").css("min-height", $(window).height());
+
+
+			$("#menu2").click(function() {
+				utils.menu_on("#menu_bg");
+
+				$(window).bind("touchmove", function(e) { e.preventDefault(); });
+				myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+			});
+
+			$("#allmenu").click(function() {
+				utils.menu_on("#menu_bg");
+
+				$(window).bind("touchmove", function(e) { e.preventDefault(); });
+				myScroll = new IScroll('#menu_bg #category', { mouseWheel: true, click: true, bounce:false });
+
+				$("#bottomMenu2").hide();
+
+		//To. 선하
+		//20160811 신규 상세페이지
+		//왼쪽메뉴 열릴 때 아래 객실선택 버튼이 겹치기 때문에 숨기는거 
+		//			$("#info_product_btn_w").hide();
+	});
+
+			$("#rightmenu").click(function() {
+				utils.rmenu_on("#menu_bg2");
+			});
+
+			$("#menu_bg").on("swipeleft", function(e) {
+				utils.menu_out("#menu_bg");
+				$("#bottomMenu2").show();
+
+		//To. 선하
+		//20160811 신규상세페이지
+		//반대로 메뉴 넣을때는 다시 보여줌
+		//			$("#info_product_btn_w").show();
+	});
+
+			$("#menu_bg2").on("swiperight", function(e) {
+				utils.rmenu_out("#menu_bg2");		
+			});
+
+	//To. 선하
+	//20160811 신규 상세페이지
+	//view_total.php 페이지로 해당 소스 옮겼기 때문에 적용할땐 삭제 처리 
+	/*
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		if(scrollTop > 100) {
+						$("#head").hide();
+			
+			//타이틀라인
+		} else if(scrollTop < 100) {
+						$("#head").show();
+			
+			
+		}
+	});*/
+
+	/*
+	*/
+
+
+});
+
+		function move_hid(id, gubun, hid) {
+			if(gubun == "id") { var val = $("#"+id);	}
+			else { var val = $("."+id);	}
+			var num = val.offset().top;
+
+			num = parseInt(num);
+			if(id == "travel_etc") {
+				hid = 50;
+			} else {
+				hid = 40;
+			}
+			var final_hid = parseInt(num-hid);
+			$(window).scrollTop(final_hid);
+		}
+
+// 상세로 보내는 스크립트
+var callApp = {
+	isIPHONE: false,
+	isIPAD: false,
+	isANDROID: false,
+	isCHROME: false,
+	scheme: '',
+	appStoreUrl: '',
+	init : function(who) {
+		this.isIPHONE = (navigator.userAgent.match('iPhone') != null || navigator.userAgent.match('iPod') != null);
+		this.isIPAD = (navigator.userAgent.match('iPad') != null);
+		this.isANDROID = (navigator.userAgent.match('Android') != null);
+		this.isCHROME = (navigator.userAgent.match('Chrome') != null);
+
+		if (this.isANDROID) {
+			this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocokr://http://app.go.co.kr/home/view/?p_no=Gkl4&back_move=Y&;package=kr.co.go.travel.app;end';
+		} else if (this.isIPHONE || this.isIPAD) {
+			this.scheme = 'gocokr://http://app.go.co.kr/home/view/?p_no=Gkl4&back_move=Y&';
+			this.appStoreUrl = 'https://itunes.apple.com/app/id1091429916';
+		}        
+	},
+	getIframe: function(id, url) {
+		var iframe = document.getElementById(id);
+		if (iframe !== null) {
+			iframe.parentNode.removeChild(iframe);
+		}
+		iframe = document.createElement('iframe');
+		iframe.id = id;
+		iframe.style.visibility = 'hidden';
+		iframe.style.display = 'none';
+		iframe.src = url;
+		return iframe;
+	},
+	exec: function(who, url) {
+		this.init(who);
+		if (this.isANDROID) { /* 안드로이드 */
+			location = this.scheme;                
+		} else if (this.isIPHONE || this.isIPAD) { /* IOS */
+			setTimeout(function() {
+				location = callApp.appStoreUrl;
+			}, 500);
+			var iframe = this.getIframe('callAppIframe', this.scheme);
+			document.body.appendChild(iframe);
+		} else { /* 그 외 단말기 */
+			location = url;
+		}
+	}
+}
+
+// 메인으로 보내는 스크립트
+var callApp2 = {
+	isIPHONE: false,
+	isIPAD: false,
+	isANDROID: false,
+	isCHROME: false,
+	scheme: '',
+	appStoreUrl: '',
+	init : function(who) {
+		this.isIPHONE = (navigator.userAgent.match('iPhone') != null || navigator.userAgent.match('iPod') != null);
+		this.isIPAD = (navigator.userAgent.match('iPad') != null);
+		this.isANDROID = (navigator.userAgent.match('Android') != null);
+		this.isCHROME = (navigator.userAgent.match('Chrome') != null);
+
+		if (this.isANDROID) {
+			this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocomain://app.go.co.kr&app_move=Y;package=kr.co.go.travel.app;end';
+	            //this.scheme = 'intent://app.go.co.kr/?customparam2=1#Intent;scheme=gocokr://app.go.co.kr&app_move=Y;package=kr.co.go.travel.app;end';
+	        } else if (this.isIPHONE || this.isIPAD) {
+	        	this.scheme = 'gocokr://app.go.co.kr';
+	        	this.appStoreUrl = 'https://itunes.apple.com/app/id1091429916';
+	        }        
+	    },
+	    getIframe: function(id, url) {
+	    	var iframe = document.getElementById(id);
+	    	if (iframe !== null) {
+	    		iframe.parentNode.removeChild(iframe);
+	    	}
+	    	iframe = document.createElement('iframe');
+	    	iframe.id = id;
+	    	iframe.style.visibility = 'hidden';
+	    	iframe.style.display = 'none';
+	    	iframe.src = url;
+	    	return iframe;
+	    },
+	    exec: function(who, url) {
+	    	this.init(who);
+	    	if (this.isANDROID) { /* 안드로이드 */
+	    		location = this.scheme;                
+	    	} else if (this.isIPHONE || this.isIPAD) { /* IOS */
+	    		setTimeout(function() {
+	    			location = callApp2.appStoreUrl;
+	    		}, 500);
+	    		var iframe = this.getIframe('callAppIframe', this.scheme);
+	    		document.body.appendChild(iframe);
+	    	} else { /* 그 외 단말기 */
+	    		location = url;
+	    	}
+	    }
+	}
+</script>
+
+
+<!---- 버튼 카운트 ----->
+<script type="text/javascript">
+function button_count(pno, bt_type) {
+	$.ajax({
+		url : "/home/reservation2/state.php",
+		type: "post",
+		data: "mode=bt_count&pno="+pno+"&bt_type="+bt_type+"&abr=",
+		success: function(e) {
+		}
+	});
+}
+
+$(window).load(function(){ 
+	 
+});
+
+function go_scroll(id) {
+	var offset = $("#"+id).offset();
+	$('html, body').animate({scrollTop : offset.top-50}, 300);
+}
+</script>
+
+
+
+
+
+</div></body></html>

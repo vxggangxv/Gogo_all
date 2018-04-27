@@ -1,4 +1,7 @@
+@charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
 body {color:#7b7b7b; font-size:1.000em; line-height:1.5; letter-spacing:-0.5px}
 input{height:35px; color:#7b7b7b; font-size:0.875em; border:0}
 /*select{height:35px; color:#7b7b7b; font-size:0.875em; border:0}*/
@@ -1894,7 +1897,7 @@ background:url(http://img.go.co.kr/mobile/check_box_normal.png) no-repeat 0 0; b
 
 #snsLogin {margin:auto; width:100%; letter-spacing:-0.8px}
 #snsLogin h3 {width: 90%; margin: 20px auto 10px; font-weight:bold; font-size:1.000em; line-height:1; color:#414141}
-#snsLogin p {font-size:0.750em; letter-spacing:-0.9px}
+#snsLogin p {font-size:0.750em; letter-spacing:-0.9px; word-break:keep-all;}
 #snsLogin .snsLarge ul {float:left; width:90%}
 #snsLogin .snsLarge li {float:left; text-align:center; letter-spacing:-0.3px; font-weight:600; line-height:63px}
 #snsLogin .snsLarge li:first-child {margin-top: -3px;}
@@ -2529,7 +2532,7 @@ background:#12b4c1; text-align:center;  z-index:5}
 #search_list_top2 .select_room_layer .btn .cancel a{display:block; color:#ff8434; box-sizing:border-box}
 #search_list_top2 .select_room_layer .btn .search a{display:block; color:#fff}
 
-#search_titles .select_room_layer {position:absolute; right:0; top:30px; z-index:9; width:100%; padding:10px 0; background:#f4f2f3;}
+#search_titles .select_room_layer {position:absolute; right:0; top:30px; z-index:9; width:100%; padding:10px 0; border-top:1px solid #b4b4b4; background:#f4f2f3;}
 #search_titles .select_room_layer .etc_choice {clear:both; margin:auto; width:96%; background:#fff; border:1px solid #d2d2d2}
 #search_titles .select_room_layer .etc_choice td {width:33.33333%; padding-top:20px; font-size:0.875em; text-align:center; height:30px}
 #search_titles .select_room_layer .etc_choice .line {border-bottom:1px solid #d2d2d2}
@@ -2540,7 +2543,7 @@ background:#12b4c1; text-align:center;  z-index:5}
 #search_titles .select_room_layer .etc_choice .off a {color:#a7a6a6}
 #search_titles .select_room_layer .etc_choice .blank {height:100px}
 #search_titles .select_room_layer .btn{clear:both; margin:auto; padding:10px 0; width:74%; text-align:center; font-size:1.000em}
-#search_titles .select_room_layer .btn .cancel {float:left; display:block; width:48%; line-height:36px; border-radius:5px; border:2px solid #ff8434; box-sizing:border-box; background:#fff; color:#ff8434; text-align:center}
+#search_titles .select_room_layer .btn .cancel {float:left; display:block; width:48%; line-height:36px; border-radius:5px; border:2px solid #ff8434; box-sizing:border-box; background:#fff; color:#ff8434; text-align:center; padding:0;}
 #search_titles .select_room_layer .btn .search {float:right; display:block; width:48%; line-height:40px; border-radius:5px; background:#ff8434; color:#fff; text-align:center}
 #search_titles .select_room_layer .btn .cancel a{display:block; color:#ff8434; box-sizing:border-box}
 #search_titles .select_room_layer .btn .search a{display:block; color:#fff}
@@ -2891,7 +2894,7 @@ text-indent:8px;
 #searchMore .select_room_layer .etc_choice .off a {color:#a7a6a6}
 #searchMore .select_room_layer .etc_choice .blank {height:100px}
 #searchMore .select_room_layer .btn{clear:both; margin:auto; padding:10px 0; width:74%; text-align:center; font-size:1.000em}
-#searchMore .select_room_layer .btn .cancel {float:left; display:block; width:48%; line-height:36px; border-radius:5px; border:2px solid #ff8434; box-sizing:border-box; background:#fff; color:#ff8434; text-align:center}
+#searchMore .select_room_layer .btn .cancel {float:left; display:block; width:48%; line-height:36px; border-radius:5px; border:2px solid #ff8434; box-sizing:border-box; background:#fff; color:#ff8434; text-align:center; padding:0;}
 #searchMore .select_room_layer .btn .search {float:right; display:block; width:48%; line-height:40px; border-radius:5px; background:#ff8434; color:#fff; text-align:center}
 #searchMore .select_room_layer .btn .cancel a{display:block; color:#ff8434; box-sizing:border-box}
 #searchMore .select_room_layer .btn .search a{display:block; color:#fff}
@@ -2912,7 +2915,7 @@ text-indent:8px;
 #qna .view .txts .txts_o{color:#f55903}
 #qna .view .check1{margin-top:3px; float:left;  width:15px; height:15px;  color: #343434;background: url(http://img.go.co.kr/mobile/category_check.png) 10% 50% no-repeat; background-size: 13px 13px;-webkit-background-size: 13px 13px;}
 #qna .view label{font-size:11px; margin-left:3px}
-#qna .input_line1 {height: 21px; border: solid 1px #dadada;background-color: #ffffff;margin-right: 15px;margin-bottom:5px; padding:7px; font-size:11px; line-height:1.8;  cursor:pointer}
+#qna .input_line1 {overflow:hidden; height: 21px; border: solid 1px #dadada;background-color: #ffffff;margin-right: 15px;margin-bottom:5px; padding:7px; font-size:11px; line-height:23px; word-break:keep-all;  cursor:pointer}
 .product_selected_td{ position:relative}
 #product_selected{position:absolute; width:97%; top:160px; left:3%; z-index:5; text-align:center; font-size:12px; overflow-y:scroll; max-height:300px  }
 #product_selected .product_selected_t{ width:97%; background:#fff; border:1px solid #c8c8c8;  text-align:center;}
@@ -3282,6 +3285,11 @@ background:url(http://img.go.co.kr/mobile/btn_radio1.png) no-repeat 0 0; backgro
 #search_titles .bnr_recommend .img_Rarrow img {position: relative; right: 15px; height:20px;  text-align:right; float: right; padding:20px 0 20px;}
 @media (max-width: 320px){
 	#search_titles .bnr_recommend .img_Rarrow img {display: none;}
+	#local-ar-w ul li.on a{padding:4px 8px;}
+	#pop_pay_ag .txt1 > span {font-size: 1.100em !important;}
+	#my_point .poin_listlist td {font-size:13px;}
+	#sub_search .select .select06 .category {font-size:11px;}
+	#sub_search .select .select_room .calend {padding-right:3px;}
 }
 #search_titles .list_more {float:left; display:block; width:100%; text-align: center; margin: auto; }
 #search_titles .list_more_btn{width: 95%; height: 40px; border-radius: 5px ; background: #777; text-align:center; margin: auto; margin-top:10px; margin-bottom:10px}
@@ -3362,7 +3370,7 @@ color:#2a7fe8; border:1px solid #2a7fe8; letter-spacing:-1.2px; margin-top:2px; 
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-radius:10px}
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w a{color:#fff; line-height:0.7}
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w a .Pkg-txt{font-size:0.750em; display:block; margin-top:6px}
-#calendar_w .calendar_product_list .week_day_table td.Check-ing{color:#fff; background:#ffe0c5; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff;}
+#calendar_w .calendar_product_list .week_day_table td.Check-ing{color:#fff; background:#ffe0c5 !important; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff;}
 #calendar_w .calendar_product_list .week_day_table td.Check-ing a{color:#f96527; }
 /* 달력 리뉴얼 20160829 end */
 
@@ -3405,8 +3413,7 @@ color:#2a7fe8; border:1px solid #2a7fe8; letter-spacing:-1.2px; margin-top:2px; 
 
 #localList4{float:left; width:100%; letter-spacing:-0.6px; font-size:1.000em}
 #localList4 .localBig {float:left; width:100%;}
-#localList4 .localBig li{float:left; display:block; cursor:pointer; width:99.5%; line-height:40px; color:#aaaaaa; background:#fff; text-align:center; border-bottom:1px solid #e4e4e4; font-size:0.938em;
-border-right:1px solid #e4e4e4}
+#localList4 .localBig li{float:left; display:block; cursor:pointer; width:99.5%; line-height:40px; color:#aaaaaa; background:#fff; text-align:center; border-bottom:1px solid #e4e4e4; font-size:0.938em; border-right:1px solid #e4e4e4}
 #localList4 .localBig .on{color:#aaaaaa; font-weight:bold}
 #localList4 .localBig .on a{color:#000; font-weight:bold; position:relative;}
 #localList4 .localBig a {color:#aaaaaa}
@@ -3595,8 +3602,8 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:0.
 
 #my_point .poin_listlist{width:100%; font-size:0.90em;}
 #my_point .poin_listlist th{padding:8px 0; border-top:1px solid #e4e5e7; border-bottom:1px solid #e4e5e7; border-left:1px solid #e4e5e7; text-align:center; font-weight:bold}
-#my_point .poin_listlist td{padding:8px 0; border-top:1px solid #e4e5e7; border-bottom:1px solid #e4e5e7; border-left:1px solid #e4e5e7; color:#555; text-align:center;}
-.born{border-top:1px solid #e4e5e7; border-bottom:1px solid #e4e5e7; border-left:none}
+#my_point .poin_listlist td{padding:8px 0; border-top:1px solid #e4e5e7; border-bottom:1px solid #e4e5e7; border-left:1px solid #e4e5e7; font-size:14px; color:#555; text-align:center; word-break:keep-all;}
+.born{border-top:1px solid #e4e5e7; border-bottom:1px solid #e4e5e7; border-left:none; word-break:keep-all;}
 /*#my_point .poin_listlist th:first-child, .poin_listlist td:first-child{border-left:none; }
 #my_point .poin_listlist th:last-child, .poin_listlist td:last-child{border-right:none}*/
 #my_point .poin_listlist td.txtcor{color:#f15d28}

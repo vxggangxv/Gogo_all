@@ -3375,16 +3375,17 @@ color:#2a7fe8; border:1px solid #2a7fe8; letter-spacing:-1.2px; margin-top:2px; 
 #calendar_w .week_day_table th:first-child, .week_day_table td:first-child{border-left:none}
 #calendar_w .week_day_table th:last-child, .week_day_table td:last-child{border-right:none}
 
-#calendar_w .calendar_product_list .week_day_table td.Check-in{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-left-radius:10px; border-bottom-left-radius:10px}
+/* 20180219_css에 important 추가_다솜 */
+#calendar_w .calendar_product_list .week_day_table td.Check-in{color:#fff; background:#f96527 !important; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-left-radius:10px; border-bottom-left-radius:10px}
 #calendar_w .calendar_product_list .week_day_table td.Check-in a{color:#fff; line-height:0.7}
 #calendar_w .calendar_product_list .week_day_table td.Check-in a .Check-in-txt{font-size:0.750em; display:block; margin-top:6px}
-#calendar_w .calendar_product_list .week_day_table td.Check-out{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-right-radius:10px; border-bottom-right-radius:10px}
+#calendar_w .calendar_product_list .week_day_table td.Check-out{color:#fff; background:#f96527 !important; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-top-right-radius:10px; border-bottom-right-radius:10px}
 #calendar_w .calendar_product_list .week_day_table td.Check-out a{color:#fff;  line-height:0.7}
 #calendar_w .calendar_product_list .week_day_table td.Check-out a .Check-in-txt{font-size:0.750em; display:block; margin-top:6px}
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w{color:#fff; background:#f96527; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff; border-radius:10px}
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w a{color:#fff; line-height:0.7}
 #calendar_w .calendar_product_list .week_day_table td.Pkg-w a .Pkg-txt{font-size:0.750em; display:block; margin-top:6px}
-#calendar_w .calendar_product_list .week_day_table td.Check-ing{color:#fff; background:#ffe0c5; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff;}
+#calendar_w .calendar_product_list .week_day_table td.Check-ing{color:#fff; background:#ffe0c5 !important; text-align:center; font-size:0.938em; font-weight:600;  border-right:2px solid #fff; border-top:2px solid #fff;}
 #calendar_w .calendar_product_list .week_day_table td.Check-ing a{color:#f96527; }
 /* 달력 리뉴얼 20160829 end */
 

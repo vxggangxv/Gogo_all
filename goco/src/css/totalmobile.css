@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(http://static.go.co.kr/fonts/notosanskr/notosanskr.css);
+@import url(http://static.go.co.kr/css/faq_m-v1.1.css);
 
 .f-bd {font-weight: 700;}
 .thColor {color: #ff6a00}
@@ -2183,3 +2184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border: 1px solid #dadada; color: #7b7b7b;
 	width: 100%; letter-spacing: -1.5px; font-family: "Nanum Gothic", sans-serif; height: 35px;
 }
+
+/* 브검 이벤트안내 버튼 추가 */
+.thumbnail_logo .mFaq-a {position: absolute; left: 70px; top: 0px; display: block; width: 96px; box-sizing: border-box; color:#fff !important; border:1px solid #fff; padding: 6px 0px 5px;  font-size: 13px; font-weight: bold; text-align: center; text-indent: -2px; line-height:1;}
+.thumbnail_logo .mFaq-a img {width: 16px; margin-right: 2px; position: relative; top: 0px;}
