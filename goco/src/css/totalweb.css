@@ -673,7 +673,10 @@ z-index: 12;}
 .pdtSlt-sec .part-3 .ul-2 li.td:before {position: absolute; content: "-"; left: 0;}
 
 .pdtSlt-sec2 {display: table; position: relative; width: 100%; font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box;
-	background: #fff; color: #000; border-left: 1px solid #000;}
+	background: #fff; color: #000; border-left: 1px solid #000; 
+	/*적용 예정*/
+	border-bottom: 1px solid #000;
+}
 .pdtSlt-sec2:before {content: ""; display: block; height: 100%; position: absolute; background: #000; right: 29.1%; top: 0; width: 1px; z-index: 1;}
 .pdtSlt-sec2 > div {display: table-cell; border: 1px solid #000; border-bottom: 0; border-collapse: collapse; vertical-align: top; position: relative;}
 .pdtSlt-sec2 > div:first-child {border-left: 0; margin-left: 0;}
@@ -717,6 +720,7 @@ z-index: 12;}
 .pdtSlt-sec2 .part-1 .dep-1 > li .ml-10 {margin-left: 10px;}
 .pdtSlt-sec2 .part-1 .dep-1 > li .mr-10 {margin-right: 10px;}
 .pdtSlt-sec2 .part-1 .single-prc {margin: 5px 15px 15px; padding: 5px 10px; background: #f2f2f2; border: 1px solid #d7d7d7; box-sizing: border-box;}
+.pdtSlt-sec2 .part-1 .single-prc .mt-bar {display: block; width: 100%; height: 1px; margin: 7px auto 5px; background: #bcbcbc;}
 
 .pdtSlt-sec2 .c-red {font-size: 15px; color: #ff4445; font-weight: 600;}
 #rsv_s_list .td-thumb {width: 70px; height: 40px; margin: 0 5px 0 8px;}
@@ -793,6 +797,47 @@ z-index: 12;}
 
 .pdtSlt-sec2 .part-3 {background: #bf2d00;}
 .pdtSlt-sec2 .part-3 .i-close {float: right; position: relative; right: 12px; top: 5px; width: 20px; cursor: pointer;}
+
+/*180430 지식쇼핑 수정*/
+.part-23-outer {padding-bottom: 80px;}
+.part-23-outer .part-bottom {position: absolute; bottom: 0; left: 0; margin-top: -1px; width: 100%; height: 80px; border-top: 1px solid #000; background: #fff8d5; box-sizing: border-box; letter-spacing: -0.5px; padding-right: 20px; z-index: 1; padding-top: 12px; text-align: right;}
+.part-23-outer .part-bottom > * {vertical-align: middle;}
+.part-23-outer .part-bottom .s-prc {font-size: 36px; color: #ff1200; font-family: "Arial", "Malgun Gothic", "Nanum Gothic";}
+.part-23-outer .part-bottom .s-prc .fz-sm {position: relative; top: -4px; font-size: 26px; font-weight: 400; font-family: "Nanum Gothic";}
+.part-23-outer .part-bottom > a {color: #fff !important; display: inline-block; padding: 0 40px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 52px; font-family: "NanumSquare", "Nanum Gothic", sans-serif;}
+.part-23-outer .part-bottom > a.a-btn-1 {padding: 0 15px; background: #ff7a2d; margin-left: 20px; font-size: 19px;}
+.part-23-outer .part-bottom > a.a-btn-2 {margin-left: 10px;}
+.part-23-outer .part-bottom > a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -3px; margin-left: 10px; font-weight: 600;}
+#cal_wrap2 .cal_result {width: 284px;}
+#cal_wrap2 .cal_result .totalPrice {position: relative; display: block; margin: 0px auto 10px; padding:5px 15px 10px; width:252px; letter-spacing:-0.5px; font-size:13px; text-align:center; background-color:#ffffff; border:3px solid #d1d5db; font-family: 'Nanum Gothic', sans-serif; color:#222; box-sizing: border-box;}
+#cal_wrap2 .cal_result .totalPrice .p-row {padding: }
+#cal_wrap2 .cal_result .totalPrice .mt-bar {display: block; width: 100%; height: 1px; margin: 10px auto 1px; background: #bcbcbc;}
+#cal_wrap2 .cal_result .totalPrice .total {font-size: 14px; position: relative; top: 10px;}
+#cal_wrap2 .cal_result .totalPrice .num {font-weight:800; font-size:25px; color:#ff1200; letter-spacing:-1.5px;}
+#cal_wrap2 .cal_result .totalPrice .won {font-size: 16px;}
+.cal_result .d-row {position: relative; width: 252px; margin: 0 auto;}
+.cal_result .d-row > a {width: 100%; color: #fff !important; display: inline-block; padding: 0 45px; height: 50px; font-size: 18px; background: #c00600; text-align: center; line-height: 52px; font-family: "NanumSquare", "Nanum Gothic", sans-serif; box-sizing: border-box; font-weight: 700;}
+.cal_result .d-row > a.a-btn-1 {padding: 0 20px; background: #ff7a2d; font-size: 17px; letter-spacing: -1px;}
+.cal_result .d-row > a.a-btn-2 {margin-top: 10px;}
+.cal_result .d-row > a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -2px; margin-left: 10px; font-weight: 600;}
+
+
+#rsv_s_list .pay-box {position: relative; margin-top: -1px; width: 100%; height: 80px; border: 1px solid #000; background: #fff8d5; box-sizing: border-box; letter-spacing: -0.5px; text-align: right; padding-right: 20px;}
+#rsv_s_list .pay-box > p {display: inline-block; vertical-align: middle;  color: #302e2b; font-family: "Noto Sans KR", "Nanum Gothic"; text-align: left;
+	padding-top: 14px;}
+#rsv_s_list .pay-box > .nth2 {color: #000; font-size: 21px; text-align: right; padding-right: 15px;}
+#rsv_s_list .pay-box > .nth2 s, #rsv_s_list .pay-box > .nth2 .c-red {font-family: "Arial", "Malgun Gothic", "Nanum Gothic";}
+#rsv_s_list .pay-box > .nth2 s {position: relative; top: 2px; color: #323232; font-size: 25px;}
+#rsv_s_list .pay-box > .nth2 s > span {position: relative; top: -2px;font-family: "Nanum Gothic"; font-size: 20px;}
+#rsv_s_list .pay-box > .nth2 .sm {font-weight: 400;}
+#rsv_s_list .pay-box > .nth2 .f-bd.s1 {margin-right: 3px; font-weight: 400; font-size: 24px; color: #000;}
+#rsv_s_list .pay-box > .nth2 .ps {color: #313131; font-size: 12px; font-family: "Dotun", "Gulim"; margin-right: 16px;}
+#rsv_s_list .pay-box > .nth2 .c-red {font-size: 36px; font-family: "Arial", "Malgun Gothic", "Nanum Gothic"; line-height: 0em; margin-left: 7px; color: #ff1200;}
+#rsv_s_list .pay-box > .nth2 .c-red .f-bd {position: relative; top: 3px;}
+#rsv_s_list .pay-box > .nth2 .c-red .sm {font-size: 27px; font-weight: 400; font-family: "Nanum Gothic";}
+#rsv_s_list .pay-box > .nth3 a {color: #fff; display: block; width: 235px; height: 50px; font-size: 21px; background: #c00600; text-align: center; line-height: 2.4em;}
+#rsv_s_list .pay-box > .nth3 a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -4px; margin-left: 10px; font-weight: 600;}
+
 
 
 /*170705_더보기 추가*/
@@ -1941,4 +1986,17 @@ a:active {font-weight: 400; color: #000;}
 #main5 .goods_info .appPrc span:first-child {font-weight: 700; margin-bottom: -13px; display: block;}
 #main5 .goods_info .appPrc em {font-size: 34px; font-weight: 800;}
 
-
+/* 만실시 오셔투유 주변시설 유도 팝업 */
+.pop-template {}
+.pop-oc2 {}
+.pop-oc2 {position: fixed; z-index: 6; width: 430px; padding-bottom: 30px; top: 50%; margin-top: -136px; left: 50%; margin-left: -215px; background: #fff; box-sizing: border-box; border: 2px solid #44a8ff;  border-radius: 2px;}
+.pop-oc2 * {letter-spacing: -0.5px; color: #303030;}
+.pop-oc2 h2 {height: 62px; font-size: 22px; color: #fff; font-weight: 700; text-align: center; line-height: 59px; background: #44a8ff; font-family: "Nanum Gothic", sans-serif;}
+.pop-oc2 .clsBtn {position: absolute; right: 20px; top: 18px;   display: inline-block; width: 22px; height: 22px;
+	background: url("http://img.go.co.kr/x_btn.png") no-repeat;
+}
+.pop-oc2 > p {font-size: 19px; line-height: 1.6; text-align: center; margin-top: 20px; box-sizing: border-box;}
+.pop-oc2 .colr-1 {color: #ff4e00;}
+.pop-oc2 .p-area-btn {text-align: center;}
+.pop-oc2 .p-area-btn > a {display: inline-block; background: #979797; color: #fff !important; padding: 10px 0; width: 160px;}
+.pop-oc2 .p-area-btn > a:first-child {margin-right: 20px;}

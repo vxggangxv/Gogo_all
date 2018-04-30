@@ -1305,7 +1305,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .ev_bn img {width:100%;}
 
 /* 170927 모바일 객실선택 높이수정 및 텍스트 아이콘 추가 수연  */
-#info_product_w .go_price {padding:7px 3px 0px 5px; box-sizing: border-box; clear:both; margin-top:10px; margin-left:33px; border-top:1px solid #d2d2d2; width:88%;}
+/*#info_product_w .go_price {padding:7px 3px 0px 5px; box-sizing: border-box; clear:both; margin-top:10px; margin-left:33px; border-top:1px solid #d2d2d2; width:88%;}*/
 #info_product_w .go_price img {width:90px; float:left; position:relative; top:-4px;}
 #info_product_w .go_price span {float:right; font-weight: 800; color:#f95c24; font-size:17.7px;}
 #info_product_w .tit_co {font-size:14px; font-weight: 700; color:#f95c24;}
@@ -1407,7 +1407,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 #info_product_w .ap_price { padding:7px 3px 0px 5px; box-sizing: border-box; width:88%;  margin-top:10px; margin-left:33px; border-top:1px solid #d2d2d2; clear:both;}
 #info_product_w .ap_price img {width:70px; float:left; position:relative; top: 1px;}
 #info_product_w .ap_price .a_tit {float:right; font-weight: 800; color:#f95c24; font-size:17.7px;}
-.product_info_w ul li {float:none; padding:10px 0;}
+.product_info_w ul li {float:none; padding: 3px 0 0px;}
+.product_info_w ul li, .product_info_w ul li * {font-family: "Nanum Gothic", sans-serif;}
 
 /* 171025 모바일 결제페이지 수연 */
 #all_mile img {width:55px; padding-top:10px;}
@@ -1416,10 +1417,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .product_info_w ul li .product_info_room2 .txt_or2 {color: #999999;}
 
 /* 171025 모바일 객실선택수정 수연 */
-#info_product_w .go_price img {width:60px; top:-2px;}
 .product_info_w ul li .product_info_price .product_discount2 {font-size:1.05em; color: #717171; font-weight: 600;}
 .product_info_w ul li .product_info_room2 {margin:0;}
-#info_product_w .go_price {width:100%; padding:none; box-sizing: border-box; clear:both; margin-top:0px;margin-left:0; border-top:none; padding:3px 10px 3px 36px;}
+#info_product_w .go_price {width:100%; box-sizing: border-box; clear:both; margin-top: 6px;margin-left:0; border-top:none; padding:3px 10px 3px 36px;}
+#info_product_w .go_price img {width:60px; top:-2px;}
 #info_product_w .go_price .click {color:#717171; text-decoration: underline; font-size:13px; line-height: 1; display: inline-block; letter-spacing: -1px; height:20px;}
 #info_product_w .go_price .clicon {width:16px; vertical-align: middle; margin:0 3px 0 3px;}
 #info_product_w .go_price span {float:right;}
@@ -1431,6 +1432,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .product_info_w ul li .product_info_price .product_discount2 {font-weight: 500;}
 .product_info_w ul li .product_info_price .product_discount2 del {font-size:16px;}
 .info_box:after {content:""; display: block; clear:both;}
+
+.info_box .mt-bar {display: block; height: 1px; margin: 7px 10px 5px 5px; background: #bcbcbc; background: #ddd;}
+.info_box .single-prc {padding-bottom: 10px;}
+.info_box .single-prc > p {font-size: 12px; color: #999; padding: 0px 10px 2px 0;}
+.info_box .single-prc > p.prc {font-size: 14px; color: #666;}
+.info_box .single-prc > p.prc .c-red {font-size: 15px;}
+.info_box .clr {clear: both;}
+
 
 /* 171026 모바일 결제페이지 수정 수연 */
 .pay_Info_w .pay_reserInfo_table tr th {font-size:14px; color: #707070; font-weight: 400;} 
@@ -2188,3 +2197,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /* 브검 이벤트안내 버튼 추가 */
 .thumbnail_logo .mFaq-a {position: absolute; left: 70px; top: 0px; display: block; width: 96px; box-sizing: border-box; color:#fff !important; border:1px solid #fff; padding: 6px 0px 5px;  font-size: 13px; font-weight: bold; text-align: center; text-indent: -2px; line-height:1;}
 .thumbnail_logo .mFaq-a img {width: 16px; margin-right: 2px; position: relative; top: 0px;}
+
+/* 만실시 오셔투유 주변시설 유도 팝업 */
+.pop-template {}
+.pop-oc2 {}
+.pop-oc2 {position: fixed; z-index: 6; width: 300px; padding-bottom: 20px; top: 50%; margin-top: -136px; left: 50%; margin-left: -150px; background: #fff; box-sizing: border-box; border: 2px solid #44a8ff;  border-radius: 2px;}
+.pop-oc2 * {letter-spacing: -0.5px; color: #303030;}
+.pop-oc2 h2 {font-size: 16px; color: #fff; font-weight: 700; text-align: center; line-height: 46px; background: #44a8ff; font-family: "Nanum Gothic", sans-serif;}
+.pop-oc2 .clsBtn {position: absolute; right: 3px; top: 12px;  display: inline-block; width: 22px; height: 22px;
+	background: url("http://img.go.co.kr/x_btn.png") no-repeat; background-size: 16px;
+}
+.pop-oc2 > p {font-size: 14px; line-height: 1.5; text-align: center; margin-top: 15px; box-sizing: border-box;}
+.pop-oc2 .colr-1 {color: #ff4e00;}
+.pop-oc2 .p-area-btn {text-align: center;}
+.pop-oc2 .p-area-btn > a {display: inline-block; background: #979797; color: #fff !important; padding: 10px 0; width: 100px;}
+.pop-oc2 .p-area-btn > a:first-child {margin-right: 20px;}
