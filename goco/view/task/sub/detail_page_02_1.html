@@ -7,14 +7,13 @@
 	<title>상세피이지 로고 추가</title>
 
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css?ver=20170201165300" />
-	 <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" /> 
-	 <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css" /> 
-<!--
+	<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3_tmp.css"/> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../src/css/layout_new3_tmp.css" /> -->
 	<link rel="stylesheet" type="text/css" href="../../../src/css/layout_new3.css" />
 	<link rel="stylesheet" type="text/css" href="../../../src/css/totalweb.css" />
--->
 	<!--<link rel="stylesheet" type="text/css" href="../../../src/css/totalweb_bak_170718.css" />-->
-<!--	<link rel="stylesheet" type="text/css" href="../../../src/css/package_test.css" />-->
+	<link rel="stylesheet" type="text/css" href="../../../src/css/package_test.css" />
 
 	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
 	<!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
@@ -22,8 +21,8 @@
 <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css?ver=20170201165300" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	 <script src="http://static.go.co.kr/js/select_product.js"></script> 
-<!--	<script src="../../../src/js/select_product.js"></script>-->
+	<!-- <script src="http://static.go.co.kr/js/select_product.js"></script> -->
+	<script src="../../../src/js/select_product.js"></script>
 
 	<style>
 		/* #room_result tr:hover {background: #e3e3e3;}
@@ -201,23 +200,8 @@
 															</select>
 														</li>
 													</ul>
-													<!-- 180430 변경-->
-													<div class="single-prc clr">
-														<p class="p-row cf">
-															<span class="pull-left">판매가격</span><span class="pull-right">90,000원</span>
-														</p>
-														<p class="p-row cf">
-															<span class="pull-left">봉사료</span><span class="pull-right">10,000원</span>
-														</p>
-														<p class="p-row cf">
-															<span class="pull-left">세금</span><span class="pull-right">10,000원</span>
-														</p>
-														<p class="mt-bar"></p>
-														<p class="p-row cf">
-															<span class="pull-left">객실단품금액</span><span class="pull-right c-red">110,000원</span>
-														</p>
-													</div>
-													<!-- // -->
+													<!--20170718변경내용_단품가격추가-->
+													<p class="single-prc clr"><span class="pull-left">객실단품금액</span><span class="pull-right c-red">109,000원</span></p>
 												</div>
 												<div class="part-23-outer clr">
 													<div class="part-h2 clr">
@@ -253,43 +237,33 @@
 															</li>
 														</ul>
 													</div>
-													<!--180430 변경-->
-													<div class="part-bottom clr" id="pdtSlt-pb">
-														<span class="f-bd s-prc">110,000<span class="fz-sm">원</span></span>
-														
-														<a class="a-btn-1" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">쿠폰할인가 99,000원<span class="gt">&gt;</span></a>
-														<a class="a-btn-2" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
-													</div>
-													<!-- // -->
 												</div>
-												
-												
 											</div>
 
-											<!--<div class="pay-box clr" id="pdtSlt-pb">
+											<div class="pay-box clr" id="pdtSlt-pb">
 												<p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
 												</p>
 												<p class="nth3">
 													<a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
 												</p>
-											</div>-->
-											<!--<table>
-												<colgroup>
-													<col style="width: 75%;">
-													<col style="width: 25%;">
-												</colgroup>
-												<tbody>
-													<tr>
-														<td class="nth-1">
-															<p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
-															</p>
-														</td>
-														<td class="nth-2">
-															<a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
-														</td>
-													</tr>
-												</tbody>
-											</table>-->
+												<!--<table>
+													<colgroup>
+														<col style="width: 75%;">
+														<col style="width: 25%;">
+													</colgroup>
+													<tbody>
+														<tr>
+															<td class="nth-1">
+																<p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
+																</p>
+															</td>
+															<td class="nth-2">
+																<a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
+															</td>
+														</tr>
+													</tbody>
+												</table>-->
+											</div>
 
 											<!-- 변경내용170718 끝-->
 

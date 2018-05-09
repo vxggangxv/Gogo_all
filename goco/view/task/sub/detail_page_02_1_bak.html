@@ -8,11 +8,13 @@
 
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css?ver=20170201165300" />
 	 <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" /> 
-	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css" type="text/css">
+	 <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css" /> 
 <!--
 	<link rel="stylesheet" type="text/css" href="../../../src/css/layout_new3.css" />
 	<link rel="stylesheet" type="text/css" href="../../../src/css/totalweb.css" />
 -->
+	<!--<link rel="stylesheet" type="text/css" href="../../../src/css/totalweb_bak_170718.css" />-->
+<!--	<link rel="stylesheet" type="text/css" href="../../../src/css/package_test.css" />-->
 
 	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css" />
 	<!--<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css?ver=20170201165300" />
@@ -20,16 +22,13 @@
 <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/prettyPhoto.css?ver=20170201165300" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- <script src="http://static.go.co.kr/js/select_product.js"></script> -->
+	 <script src="http://static.go.co.kr/js/select_product.js"></script> 
 <!--	<script src="../../../src/js/select_product.js"></script>-->
 
 	<style>
 		/* #room_result tr:hover {background: #e3e3e3;}
 		#room_result .expand-list:hover {background: #f5f5f5;} */
-
-		#fix-nav .nb-drop-bar {
-			display: block;
-		}
+		#fix-nav .nb-drop-bar {display: block;}
 	</style>
 </head>
 
@@ -45,7 +44,7 @@
 					<h3></h3>
 					<div class="inp">
 						<span>검색어</span>
-						<input type="text" class="sch-wd" value="검색어를 입력해주세요">
+						<input type="text" class="sch-wd" value="검색어를 입력해주세요">	
 					</div>
 				</div>
 				<!--변경내용_170712 끝-->
@@ -125,23 +124,25 @@
 									<td style="text-align: center;">상품선택</td>
 									<td>기준인원/최대인원</td>
 									<td style="position:relative">
-										<!---추가할인 레이어팝업-->
-										<div id="discount_pop" style="display:none;top:270px;z-index:999">
-											<div class="tit">회원 추가할인 안내<a href="javascript:util.basic_l_on('discount_pop')" title="닫기"><img src="http://img.go.co.kr/btn_x2.jpg" alt="닫기" style="clear:both; float:right"></a></div>
-											<div class="text">
-												<p><b>1. 적립금 할인</b></p>
-												<p>
-													- 회원가입시 바로 현금처럼 사용 가능한 <span>적립금 2,000원이 지급</span>됩니다.<br> - 로그인 후 결제시 <span>결제금액의 1%</span>를 적립금으로 돌려드립니다.
-												</p>
-												<p><br><b>2. 쿠폰 할인</b></p>
-												<p>
-													- <span> 회원에게만 할인쿠폰</span>이 제공됩니다.<br> - 회원가입 후 다양한 쿠폰 혜택을 누리세요.
-												</p>
-											</div>
+									<!---추가할인 레이어팝업-->
+									<div id="discount_pop" style="display:none;top:270px;z-index:999">
+										<div class="tit">회원 추가할인 안내<a href="javascript:util.basic_l_on('discount_pop')" title="닫기"><img src="http://img.go.co.kr/btn_x2.jpg" alt="닫기" style="clear:both; float:right"></a></div>
+										<div class="text">
+											<p><b>1. 적립금 할인</b></p>
+											<p>
+												-  회원가입시 바로 현금처럼 사용 가능한 <span>적립금 2,000원이 지급</span>됩니다.<br>
+												- 로그인 후 결제시 <span>결제금액의 1%</span>를 적립금으로 돌려드립니다.
+											</p>
+											<p><br><b>2. 쿠폰 할인</b></p>
+											<p>
+												- <span> 회원에게만 할인쿠폰</span>이 제공됩니다.<br>
+												- 회원가입 후 다양한 쿠폰 혜택을 누리세요.
+											</p>
 										</div>
-										<!---추가할인 레이어팝업 끝-->
-										가격
-										<a href="javascript:util.basic_l_on('discount_pop')"><img src="http://img.go.co.kr/ico_question_mark_red.png" alt=""></a>&nbsp;<img src="http://img.go.co.kr/ico_low_price_spb.png" alt=""> </td>
+									</div>
+									<!---추가할인 레이어팝업 끝-->
+									가격
+										<a href="javascript:util.basic_l_on('discount_pop')"><img src="http://img.go.co.kr/ico_question_mark_red.png" alt=""></a>&nbsp;<img src="http://img.go.co.kr/ico_low_price_spb.png" alt="">				</td>
 								</tr>
 							</tbody>
 						</table>
@@ -158,9 +159,10 @@
 									<!--20170718변경내용_ on클래스 추가 :테두리 추가-->
 									<tr id="2299_tr" class="over_tr select on" style="cursor:pointer;" onclick="room.show_detail('2299', 'y');">
 										<td class="pl15 left ss">
-											<input type="radio" name="sang" value="2299" id="sang_2299">
+											<input type="radio" name="sang" value="2299" id="sang_2299"> 
 											<!--20170718변경내용_썸네일이미지 추가, 클릭시 갤러리 팝업 등장-->
-											<img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_5.jpg" alt="썸네일이미지" class="td-thumb"> 마운틴뷰 콘도
+											<img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_5.jpg" alt="썸네일이미지" class="td-thumb">
+											마운틴뷰 콘도  
 										</td>
 										<td class="center ss">4인/7인</td>
 										<td class="center ss" style="width:159px;position:relative">
@@ -199,146 +201,95 @@
 															</select>
 														</li>
 													</ul>
-													<!-- 180508 변경-->
+													<!-- 180430 변경-->
 													<div class="single-prc clr">
 														<p class="p-row cf">
-															<span class="pull-left">객실단품금액</span><span class="pull-right c-red">43,900원</span>
+															<span class="pull-left">판매가격</span><span class="pull-right">90,000원</span>
 														</p>
 														<p class="p-row cf">
-															<span class="pull-left">봉사료</span><span class="pull-right c-red">4,400원</span>
+															<span class="pull-left">봉사료</span><span class="pull-right">10,000원</span>
 														</p>
 														<p class="p-row cf">
-															<span class="pull-left">세금</span><span class="pull-right c-red">4,900원</span>
-														</p>
-														<p class="p-row cf">
-															<span class="pull-left">추가옵션 상품금액</span><span class="pull-right c-red">14,000원</span>
+															<span class="pull-left">세금</span><span class="pull-right">10,000원</span>
 														</p>
 														<p class="mt-bar"></p>
 														<p class="p-row cf">
-															<span class="pull-left">계</span><span class="pull-right c-red">53,200원</span>
+															<span class="pull-left">객실단품금액</span><span class="pull-right c-red">110,000원</span>
 														</p>
 													</div>
 													<!-- // -->
 												</div>
-												<div class="part-23-outer clr" id="pkg_result_wrap">
+												<div class="part-23-outer clr">
 													<div class="part-h2 clr">
-														<h2 class="part-2"><span class="f-arial">2</span><span>추가옵션 선택</span></h2>
-														<h2 class="part-3"><span class="f-arial">3</span><span>옵션 안내</span><img onclick="$('#pdtSlt-sec, #pdtSlt-pb').hide();" src="http://img.go.co.kr/i_close.png" alt="닫기" class="i-close"></h2>
+														<h2 class="part-2"><span class="f-arial">2</span><span>패키지 선택</span></h2>
+														<h2 class="part-3"><span class="f-arial">3</span><span>패키지 안내</span><img onclick="$('#pdtSlt-sec, #pdtSlt-pb').hide();" src="http://img.go.co.kr/i_close.png" alt="닫기" class="i-close"></h2>
 													</div>
 													<div class="part-con clr">
-														<ul class="dep-1" id="reload_info_wrap">
-															<li class="last on">
-																<div class="pkg-name" style="cursor:pointer"><input type="checkbox" name="pkg_opt_auto[]" value="270076" id="pkg_opt_auto_270076"><label for="pkg_opt_auto_270076"><span class="lbl">속초설악삼포비치바이크고성점[전동 바이크대여]</span></label></div>
-																<div class="pkg-con clr" id="pkg_opt_auto_270076_detail">
-																	<div class="con-1">
-																		<ul class="ul-1">
-																			<li class="clr">
-																				<span class="lbl type-1">이용날짜</span>
-																				<select name="270076_date" id="270076_date" onchange="reserve.chk_final();"><option value="2018-05-08">2018-05-08</option><option value="2018-05-09">2018-05-09</option>
-																</select>
-																			</li>
-																		</ul>
-																		<ul class="ul-1 nth-2">
-																			<li class="clr">
-																				<span class="lbl type-2">1인용 1시간</span>
-																				<div class="pdt-prc"><s>15,000원</s><span class="c-red">14,000원</span>
-																					<p class="quan clr">
-																						<span class="s-l" onclick="reserve.up_down('down', 'person_270076_d1730', '0')">-</span>
-																						<input type="text" class="inp" value="1" pattern="[0-10]*" name="person_270076_d1730" id="person_270076_d1730">
-																						<span class="s-r" onclick="reserve.up_down('up', 'person_270076_d1730', '5')">+</span>
-																						<input type="hidden" id="maxperson_270076_d1730" value="5">
-																						<input type="hidden" name="person_270076_d1730_price2" id="person_270076_d1730_price2" value="14000">
-																						<input type="hidden" name="person_270076_d1730_price2_j" id="person_270076_d1730_price2_j" value="14000">
-																					</p>
-																				</div>
-																			</li>
-																			<li class="mg"></li>
-																			<li class="clr">
-																				<span class="lbl type-2">1인용 2시간</span>
-																				<div class="pdt-prc"><s>26,000원</s><span class="c-red">24,000원</span>
-																					<p class="quan clr">
-																						<span class="s-l" onclick="reserve.up_down('down', 'person_270076_d1731', '0')">-</span>
-																						<input type="text" class="inp" value="0" pattern="[0-10]*" name="person_270076_d1731" id="person_270076_d1731">
-																						<span class="s-r" onclick="reserve.up_down('up', 'person_270076_d1731', '5')">+</span>
-																						<input type="hidden" id="maxperson_270076_d1731" value="5">
-																						<input type="hidden" name="person_270076_d1731_price2" id="person_270076_d1731_price2" value="24000">
-																						<input type="hidden" name="person_270076_d1731_price2_j" id="person_270076_d1731_price2_j" value="24000">
-																					</p>
-																				</div>
-																			</li>
-																			<li class="mg"></li>
-																			<li class="clr">
-																				<span class="lbl type-2">2인용 1시간</span>
-																				<div class="pdt-prc"><s>20,000원</s><span class="c-red">18,000원</span>
-																					<p class="quan clr">
-																						<span class="s-l" onclick="reserve.up_down('down', 'person_270076_d1732', '0')">-</span>
-																						<input type="text" class="inp" value="0" pattern="[0-10]*" name="person_270076_d1732" id="person_270076_d1732">
-																						<span class="s-r" onclick="reserve.up_down('up', 'person_270076_d1732', '5')">+</span>
-																						<input type="hidden" id="maxperson_270076_d1732" value="5">
-																						<input type="hidden" name="person_270076_d1732_price2" id="person_270076_d1732_price2" value="18000">
-																						<input type="hidden" name="person_270076_d1732_price2_j" id="person_270076_d1732_price2_j" value="18000">
-																					</p>
-																				</div>
-																			</li>
-																			<li class="mg"></li>
-																			<li class="clr">
-																				<span class="lbl type-2">2인용 2시간</span>
-																				<div class="pdt-prc"><s>35,000원</s><span class="c-red">30,000원</span>
-																					<p class="quan clr">
-																						<span class="s-l" onclick="reserve.up_down('down', 'person_270076_d1733', '0')">-</span>
-																						<input type="text" class="inp" value="0" pattern="[0-10]*" name="person_270076_d1733" id="person_270076_d1733">
-																						<span class="s-r" onclick="reserve.up_down('up', 'person_270076_d1733', '5')">+</span>
-																						<input type="hidden" id="maxperson_270076_d1733" value="5">
-																						<input type="hidden" name="person_270076_d1733_price2" id="person_270076_d1733_price2" value="30000">
-																						<input type="hidden" name="person_270076_d1733_price2_j" id="person_270076_d1733_price2_j" value="30000">
-																					</p>
-																				</div>
-																			</li>
-																		</ul>
-																	</div>
-																	<div class="con-2">
-																		<a class="gal-link" href="javascript:utils.pop_open('http://www.go.co.kr/home/reservation2/facil_pop.php?facil_no=G0d1FWcf', 'facil_pop', '')">이용안내 <span class="i-plus-btn"></span></a>
-																	</div>
+														<ul class="dep-1">
+															<li>
+																<div class="pkg-name">
+																	<input type="checkbox"><span class="lbl">바베큐 테이블 대여</span>
 																</div>
-																<div class="pkg-prc clr" id="packopt_price_div" style="">
-																	<!-- 180508 추가 -->
-																	<div class="in-prc clr">
-																		<span class="pull-left">추가옵션 상품금액</span><span class="pull-right c-red" id="packopt_price">14,000원</span>
-																	</div>
-																	<!-- // -->
+															</li>
+															<li>
+																<div class="pkg-name">
+																	<input type="checkbox"><span class="lbl">조개잡이 패키지</span>
+																</div>
+															</li>
+															<li>
+																<div class="pkg-name">
+																	<input type="checkbox"><span class="lbl">한화 설악 워터피아 종일권</span>
+																</div>
+															</li>
+															<li>
+																<div class="pkg-name">
+																	<input type="checkbox"><span class="lbl">ALIVE HEART(트릭아트 1층+미로탐험2층)</span>
 																</div>
 															</li>
 														</ul>
-
+														<ul class="next-1">
+															<li>
+																<p class="p-1">패키지를 선택해 주세요</p>
+															</li>
+														</ul>
 													</div>
+													<!--180430 변경-->
+													<div class="part-bottom clr" id="pdtSlt-pb">
+														<span class="f-bd s-prc">110,000<span class="fz-sm">원</span></span>
+														
+														<a class="a-btn-1" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">쿠폰할인가 99,000원<span class="gt">&gt;</span></a>
+														<a class="a-btn-2" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
+													</div>
+													<!-- // -->
 												</div>
+												
+												
 											</div>
 
-											<div class="pay-box clr" id="pdtSlt-pb">
-												<p class="nth2">
-													<span class="f-bd s1">최종 결제금액</span><span class="c-red"><span class="f-bd">53,300</span><span class="sm">원</span></span>
+											<!--<div class="pay-box clr" id="pdtSlt-pb">
+												<p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
 												</p>
 												<p class="nth3">
 													<a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
 												</p>
-												<!--<table>
-													<colgroup>
-														<col style="width: 75%;">
-														<col style="width: 25%;">
-													</colgroup>
-													<tbody>
-														<tr>
-															<td class="nth-1">
-																<p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
-																</p>
-															</td>
-															<td class="nth-2">
-																<a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
-															</td>
-														</tr>
-													</tbody>
-												</table>-->
-											</div>
+											</div>-->
+											<!--<table>
+												<colgroup>
+													<col style="width: 75%;">
+													<col style="width: 25%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="nth-1">
+															<p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="ps">(VAT, 봉사료, 예약수수료 포함)</span><s>86,000<span>원</span></s><span class="c-red"><span class="f-bd">143,500</span><span class="sm">원</span></span>
+															</p>
+														</td>
+														<td class="nth-2">
+															<a class="nth3" href="javascript:alert(&#39;입장권을 선택해주세요.&#39;)">예약하기<span class="gt">&gt;</span></a>
+														</td>
+													</tr>
+												</tbody>
+											</table>-->
 
 											<!-- 변경내용170718 끝-->
 
@@ -365,8 +316,9 @@
 									<!-- 객실명, 인원, 금액 나오는 라인 -->
 									<tr id="5418_tr" class="over_tr" style="cursor:pointer;" onclick="room.show_detail('5418', 'y');">
 										<td class="pl15 left ss">
-											<input type="radio" name="sang" value="5418" id="sang_5418">
-											<img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_3.jpg" alt="썸네일이미지" class="td-thumb"> 오션뷰 콘도
+											<input type="radio" name="sang" value="5418" id="sang_5418"> 
+											<img src="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_3.jpg" alt="썸네일이미지" class="td-thumb">
+											오션뷰 콘도  
 										</td>
 										<td class="center ss">4인/7인</td>
 										<td class="center ss" style="width:159px;position:relative">

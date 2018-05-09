@@ -2169,11 +2169,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 #sub_search .select .select_local .calend {position:absolute; right:2px; top:8px; padding-right:3px; padding-top:0; background:#fff;}
 
 /* 팝업 - sms 공유하기 */
-.pop-snsShare {position: absolute; top: 50%; margin-top: -150px; left: 50%; margin-left: -155px; width: 310px; height: 225px; background: #fff; z-index: 11; border-radius: 4px; color: #252525; font-family: "Noto Sans KR", sans-serif; letter-spacing: 0;}
-.pop-snsShare header {font-size: 15px; font-weight: 700; padding: 14px 0; text-align: center;}
+.pop-snsShare {position: absolute; top: 50%; margin-top: -150px; left: 50%; margin-left: -155px; width: 310px; /* height: 225px; */ background: #fff; z-index: 11; border-radius: 4px; color: #252525; font-family: "Noto Sans KR", sans-serif; letter-spacing: 0;}
+.pop-snsShare header {font-size: 15px; font-weight: 700; padding: 14px 0 4px; text-align: center;}
 .pop-snsShare header .a-x {width: 40px; height: 40px; right: 3px; top: 3px;}
 .pop-snsShare header .a-x:before, .pop-snsShare header .a-x:after {background: #b3b3b3; top: 10px;}
-.pop-snsShare .pop-main .list {padding: 0 15px; margin-top: 5px;}
+.pop-snsShare .pop-main .list {padding: 0 15px;}
 .pop-snsShare .pop-main .list .itm {padding: 10px 0; border-top: 1px solid #bebebe;}
 .pop-snsShare .pop-main .list .itm:first-child {border-top: 0;}
 .pop-snsShare .pop-main .list .itm a img {width: 35px; vertical-align: middle; margin-right: 12px;}

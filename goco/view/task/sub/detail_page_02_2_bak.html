@@ -56,7 +56,7 @@
 	<!-- // 2017-03-27 고코푸터 -->
 	<!-- 모든사이트 통합 css -->
 	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css" type="text/css">
-	<!--	<link rel="stylesheet" href="../../../src/css/totalweb.css" type="text/css">-->
+<!--	<link rel="stylesheet" href="../../../src/css/totalweb.css" type="text/css">-->
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/advisor.css">
 
 	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css">
@@ -65,9 +65,9 @@
 
 	<script async="" src="//www.google-analytics.com/analytics.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
 
-
-
+	
 
 	<!-- 리스트페이지에서 쓸 스크립트-->
 	<script type="text/javascript" src="http://static.go.co.kr/js/bjqs-1.3.min.js"></script>
@@ -76,7 +76,7 @@
 	<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 	<script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/cssjs/postcode/1522037570977/180326.js"></script>
 
-
+	
 	<!-- 검색시 달력에서 이용 -->
 	<!-- Android icon -->
 	<link rel="shortcut icon" href="http://img.go.co.kr/icon_goco128x128.png">
@@ -3629,11 +3629,11 @@ function app_bn_submit() {
 
 																			<tr>
 																				<td height="35">
-																					<p class="checkbox"><input type="checkbox" id="add_3" value="3" name="add_pack[]" class="chk" onclick="booking.pack_click('3', 'add', 'web')" checked> <label for="add_3">바베큐 2인추가(커플세트)</label></p>
+																					<p class="checkbox"><input type="checkbox" id="add_3" value="3" name="add_pack[]" class="chk" onclick="booking.pack_click('3', 'add', 'web')"> <label for="add_3">바베큐 2인추가(커플세트)</label></p>
 																				</td>
 																				<td class="pkg_title"><label for="add_3">바베큐 2인추가(커플세트)</label></td>
 																			</tr>
-																			<tr id="add_3_tr" style="" class="tron">
+																			<tr id="add_3_tr" style="display:none">
 																				<td colspan="3" class="pkg_option">
 																					<table border="0" cellspacing="0" cellpadding="0">
 																						<tbody>
@@ -3646,13 +3646,9 @@ function app_bn_submit() {
 																							<tr>
 																								<th height="32" valign="top" style="line-height:3"><img src="http://img.go.co.kr/icon_dot2.gif"> 수량</th>
 																								<td>
-																									<select style="padding: 2px; border:1px solid #c0c5c9; color:#747c84; width:60px; height: 26px; font-size: 12px;" name="add_person[]" onchange="booking.choice_check()">
+																									<select style="padding: 2px; border:1px solid #c0c5c9; color:#747c84; width:60px; height: 26px; font-size: 12px;" name="add_person[]" onchange="booking.choice_check()" disabled="">
 										<option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
 									</select>
-																								
-																								<!--180508 추가-->
-																								<span class="pull-right c-red opt-prc">50,000원</span>
-																								<!-- // -->
 																								</td>
 																							</tr>
 																						</tbody>
@@ -3663,11 +3659,11 @@ function app_bn_submit() {
 
 																			<tr>
 																				<td height="35">
-																					<p class="checkbox"><input type="checkbox" id="add_148" value="148" name="add_pack[]" class="chk" onclick="booking.pack_click('148', 'add', 'web')" checked> <label for="add_148">바베큐 4인추가(패밀리세트)</label></p>
+																					<p class="checkbox"><input type="checkbox" id="add_148" value="148" name="add_pack[]" class="chk" onclick="booking.pack_click('148', 'add', 'web')"> <label for="add_148">바베큐 4인추가(패밀리세트)</label></p>
 																				</td>
 																				<td class="pkg_title"><label for="add_148">바베큐 4인추가(패밀리세트)</label></td>
 																			</tr>
-																			<tr id="add_148_tr" style="" class="tron">
+																			<tr id="add_148_tr" style="display:none">
 																				<td colspan="3" class="pkg_option">
 																					<table border="0" cellspacing="0" cellpadding="0">
 																						<tbody>
@@ -3680,14 +3676,9 @@ function app_bn_submit() {
 																							<tr>
 																								<th height="32" valign="top" style="line-height:3"><img src="http://img.go.co.kr/icon_dot2.gif"> 수량</th>
 																								<td>
-																									<select style="padding: 2px; border:1px solid #c0c5c9; color:#747c84; width:60px; height: 26px; font-size: 12px;" name="add_person[]" onchange="booking.choice_check()">
+																									<select style="padding: 2px; border:1px solid #c0c5c9; color:#747c84; width:60px; height: 26px; font-size: 12px;" name="add_person[]" onchange="booking.choice_check()" disabled="">
 										<option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
 									</select>
-																									
-																									
-																									<!--180508 추가-->
-																									<span class="pull-right c-red opt-prc">50,000원</span>
-																									<!-- // -->
 																								</td>
 																							</tr>
 																						</tbody>
@@ -3760,13 +3751,13 @@ function app_bn_submit() {
 																	</tr>
 																</tbody>
 															</table>
-
-
-
-															<!--180508 변경-->
+															
+															
+															
+															<!--180430 변경-->
 															<div class="totalPrice">
 																<p class="p-row cf">
-																	<span class="pull-left">판매가</span><span class="pull-right">90,000원</span>
+																	<span class="pull-left">판매가격</span><span class="pull-right">90,000원</span>
 																</p>
 																<p class="p-row cf">
 																	<span class="pull-left">봉사료</span><span class="pull-right">10,000원</span>
@@ -3774,22 +3765,19 @@ function app_bn_submit() {
 																<p class="p-row cf">
 																	<span class="pull-left">세금</span><span class="pull-right">10,000원</span>
 																</p>
+																<p class="mt-bar"></p>
 																<p class="p-row cf">
-																	<span class="pull-left">추가옵션</span><span class="pull-right">10,000원</span>
-																</p>
-																<p class="p-row cf total-row">
-																	<span class="pull-left f-bd total">총 결제금액</span> <span class="pull-right num">120,000<span class="won">원</span></span>
+																	<span class="pull-left f-bd total">최종 결제금액</span> <span class="pull-right num">110,000<span class="won">원</span></span>
 																</p>
 															</div>
-
-
-															<div class="btn"><a href="#"><img alt="예약하기" src="http://img.go.co.kr/btn_cal_reser3.jpg"></a>
-															</div>
+															
+															<div class="d-row"><a href="#" class="a-btn-1">쿠폰할인가 99,000원 <span class="gt">&gt;</span></a></div>
+															<div class="d-row"><a href="#" class="a-btn-2">예약하기 <span class="gt">&gt;</span></a></div>
 															<!-- // -->
-
-
-
-
+															
+															
+															
+															
 															<input type="hidden" name="roomcnt_upper[]" value="62000"><input type="hidden" name="roomcnt_upper[]" value="62000"><input type="hidden" name="roomcnt_upper[]" value="62000"><input type="hidden" name="roomcnt_upper[]" value="0.1"><input type="hidden" name="roomcnt_upper[]" value="N"><input type="hidden" name="roomcnt_upper[]" value="16"></div>
 														<!--cal_result 끝-->
 
@@ -15034,12 +15022,12 @@ BS투어앤리조트를 찾아주셔서 감사합니다. 2005년 12월 개관한
 	</script>
 	<script type="text/javascript">
 		/*
-				if (!wcs_add) var wcs_add={};
-				wcs_add["wa"] = "s_18af9ab0e3d6";
-				if (!_nasa) var _nasa={};
-				wcs.inflow("go.co.kr");
-				wcs_do(_nasa);
-				*/
+		if (!wcs_add) var wcs_add={};
+		wcs_add["wa"] = "s_18af9ab0e3d6";
+		if (!_nasa) var _nasa={};
+		wcs.inflow("go.co.kr");
+		wcs_do(_nasa);
+		*/
 	</script>
 	<script type="text/javascript">
 		if (!wcs_add) var wcs_add = {};

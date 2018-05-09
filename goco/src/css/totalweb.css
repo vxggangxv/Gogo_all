@@ -792,7 +792,8 @@ z-index: 12;}
 .pdtSlt-sec2 .part-con .dep-1 > li.on > .pkg-con .con-2 a.gal-link {position: relative; display: inline-block; background: #f5f5f5; border: 1px solid #d7d7d7; padding: 5px 10px; text-align: center; left: 15px; top: 10px; text-align: center;}
 
 .pdtSlt-sec2 .part-con .dep-1 > li .pkg-prc, .pdtSlt-sec2 .part-1 .single-prc.on {font-size: 15px; box-sizing: border-box; border: 0; background: #e6e6e6; border-top: 1px solid #a2a2a2; height: 39px;}
-.pdtSlt-sec2 .part-con .dep-1 > li .pkg-prc {padding: 10px 15px; width: 368px; position: relative; bottom: 0; left: 0;}
+.pdtSlt-sec2 .part-con .dep-1 > li .pkg-prc {padding: 10px 15px; width: 368px; position: relative; bottom: 0; left: 0; background: none;}
+.pdtSlt-sec2 .part-con .dep-1 > li .pkg-prc .in-prc {background: #f2f2f2; padding: 5px 10px; border: 1px solid #d7d7d7;}
 .pdtSlt-sec2 .part-1 .single-prc.on {margin: 0; position: absolute; bottom: 0px; padding: 8px 15px; width: 100%;}
 
 .pdtSlt-sec2 .part-3 {background: #bf2d00;}
@@ -809,12 +810,18 @@ z-index: 12;}
 .part-23-outer .part-bottom > a.a-btn-2 {margin-left: 10px;}
 .part-23-outer .part-bottom > a .gt {font-family: "Nanum Gothic"; position: relative; font-size: 13px; top: -3px; margin-left: 10px; font-weight: 600;}
 #cal_wrap2 .cal_result {width: 284px;}
-#cal_wrap2 .cal_result .totalPrice {position: relative; display: block; margin: 0px auto 10px; padding:5px 15px 10px; width:252px; letter-spacing:-0.5px; font-size:13px; text-align:center; background-color:#ffffff; border:3px solid #d1d5db; font-family: 'Nanum Gothic', sans-serif; color:#222; box-sizing: border-box;}
-#cal_wrap2 .cal_result .totalPrice .p-row {padding: }
+#cal_wrap2 .cal_result .totalPrice {position: relative; display: block; margin: 0px auto 10px; padding: 10px 15px; width:252px; letter-spacing:-0.5px; font-size:15px; text-align:center; background-color:#ffffff; border:3px solid #d1d5db; font-family: 'Nanum Gothic', sans-serif; color:#222; box-sizing: border-box;}
+#cal_wrap2 .cal_result .totalPrice .p-row {}
 #cal_wrap2 .cal_result .totalPrice .mt-bar {display: block; width: 100%; height: 1px; margin: 10px auto 1px; background: #bcbcbc;}
-#cal_wrap2 .cal_result .totalPrice .total {font-size: 14px; position: relative; top: 10px;}
-#cal_wrap2 .cal_result .totalPrice .num {font-weight:800; font-size:25px; color:#ff1200; letter-spacing:-1.5px;}
-#cal_wrap2 .cal_result .totalPrice .won {font-size: 16px;}
+#cal_wrap2 .cal_result .totalPrice .total-row {line-height: 1.1;}
+#cal_wrap2 .cal_result .totalPrice .total {font-size: 15px; position: relative; top: 6px;}
+#cal_wrap2 .cal_result .totalPrice .num {font-weight:700; font-size:20px; color:#ff1200; letter-spacing:-1.5px;}
+/*#cal_wrap2 .cal_result .totalPrice .won {font-size: 16px;}*/
+#cal_wrap2 .cal_day2 .room_info2 .pkg_select td.pkg_option {background: #f3f3f3;}
+#cal_wrap2 .cal_day2 .room_info2 .pkg_select td.pkg_option table {margin-top: 0; margin-bottom: 0;}
+#cal_wrap2 .cal_day2 .room_info2 .pkg_select td.pkg_option table td {padding-right: 10px;}
+#cal_wrap2 .cal_day2 .room_info2 .pkg_select td.pkg_option table .opt-prc {position: relative; top: 2px; font-size: 14px; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0; font-weight: 700; color: #ff1200;}
+
 .cal_result .d-row {position: relative; width: 252px; margin: 0 auto;}
 .cal_result .d-row > a {width: 100%; color: #fff !important; display: inline-block; padding: 0 45px; height: 50px; font-size: 18px; background: #c00600; text-align: center; line-height: 52px; font-family: "NanumSquare", "Nanum Gothic", sans-serif; box-sizing: border-box; font-weight: 700;}
 .cal_result .d-row > a.a-btn-1 {padding: 0 20px; background: #ff7a2d; font-size: 17px; letter-spacing: -1px;}
