@@ -1,0 +1,21 @@
+{
+	"connectingName": "goco",
+	"method": "sftp",
+	"host": "192.168.17.47",
+	"port": "229",
+	"username": "ebizimg",
+	"rsaPath": "",
+	"password": "",
+	"serverPath": "/data/ebizimg/go.co.kr/static/",
+	"save": false,
+	"siteUrl": "",
+	"method_p": "ftp",
+	"host_p": "",
+	"port_p": "21",
+	"username_p": "",
+	"rsaPath_p": "",
+	"password_p": "",
+	"serverPath_p": "",
+	"siteUrl_p": "",
+	"prfver": "1.1"
+}

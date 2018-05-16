@@ -291,6 +291,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-area-apply {position: relative; width: 100%; padding-bottom: 80px; font-family: "NanumSquare", sans-serif;}
 .evt-area-apply.evt-name {background: #394052;}
 .evt-area-apply .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 14px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
+.evt-area-apply .evt-top br {}
 .evt-area-apply .ig-1 {width: 100%;}
 .evt-area-apply .txt-box {position: relative; padding: 18px 0;}
 .evt-area-apply .p0 {position: relative; padding: 0 10px 0 20px; color: #fff; letter-spacing: -0.5px; line-height: 1.3; word-break: keep-all; font-size: 13px; margin-top: 5px;}
@@ -405,7 +406,6 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .mayhills-evt123 .evt-main {}
 .mayhills-evt123 .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
 
-/* 메이힐스 신청하기 */
 .apply-mayhills .evt-top,
 .apply-mayhills {background: #3B2150;}
 .apply-mayhills .btn-a {background: #FF4052;}
@@ -429,7 +429,6 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .bscondo-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
 .bscondo-evt7788 .evt-bottom {background: #c4b07e;}
 
-/* BS콘도 신청하기 */
 .apply-bscondo {background: #fce39e;}
 .apply-bscondo .p0 .i-dot {background: #252525;}
 .apply-bscondo .txt-box .p0 {color: #2d2d2d;}
@@ -472,3 +471,15 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .apply-ocean {background: #172340;}
 .apply-ocean .btn-a {background: #FF4052;}
 
+/* 태백 라마다 8282이벤트 */
+.taebaek-evt8282 {}
+.taebaek-evt8282 .evt-top {background: #0257b5;}
+.taebaek-evt8282 .evt-main {}
+.taebaek-evt8282 .evt-main .evt-visual {background: #B8D7F4;}
+.taebaek-evt8282 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/taebaek/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.taebaek-evt8282 .evt-main .evt-visual .p-row-2 {background: #a6c3ef; border-top: 1px solid #94b3e4; border-bottom: 1px solid #94b3e4;}
+.taebaek-evt8282 .evt-main .evt-tit {background: #0052ad;}
+
+.apply-taebaek .evt-top,
+.apply-taebaek {background: #316ac1;}
+.apply-taebaek .btn-a {background: #FF4052;}

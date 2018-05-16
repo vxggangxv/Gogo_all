@@ -515,4 +515,10 @@
 .ocean-evt7942 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .ocean-evt7942 .evt-main .evt-tit {background: #243b71;}
 
-
+/* 태백 8282이벤트 */
+.taebaek-evt8282 {}
+.taebaek-evt8282 .colr-1 {color: #fbef2b;}
+.taebaek-evt8282 .evt-top {background: #0257b5;}
+.taebaek-evt8282 .evt-main .evt-visual {background: #B8D7F4;}
+.taebaek-evt8282 .evt-main .tb-info {border-top-color: #0257b5;}
+.taebaek-evt8282 .evt-main .evt-tit {background: #0052ad;}
