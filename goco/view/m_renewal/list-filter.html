@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20170804092500" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css?ver=20170804092500" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css?ver=20170804092500" type="text/css" />
+
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css" />
+	<!--<link rel="stylesheet" href="../static/css/totalmobile.css" type="text/css" />-->
+	
+	<!-- 20180330 css 추가 -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider_m.css" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.custom_m.css" type="text/css" />
+	<!--<link rel="stylesheet" href="../static/css/ion.rangeSlider.custom_m.css" type="text/css" />-->
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- 20180330 js 추가 -->
+	<script src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js"></script>
+	<!--<script type="text/javascript" src="http://static.go.co.kr/js/rangeslider.js"></script>-->
+
+
+</head>
+
+<body>
+
+	<div id="wrapper" data-role="page">
+		<div id="scroll_box">
+			<div id="top_box" style="position: fixed; top: 0px; z-index: 9999; width: 100%; background: rgb(255, 255, 255);">
+				<form name="sub_sform" id="sub_sform" method="post">
+					<!-- 20180305 서브 검색 영역 -->
+					<div id="sub-search-area">
+						<div class="top-sub-area">
+							<a href="#none" class="btn-back"><span>뒤로</span></a>
+							<p class="sub-sech-txt">서울 강북</p>
+							<div class="date-area">
+								<p class="input-box"><input class="input-date" name="date" value="02.20(화) - 02.21(수)"></p>
+								<a href="javascript:;" class="input-date-sech"></a>
+							</div>
+						</div>
+						
+						<div class="sech-list-area">
+							<div class="sub-sech-area reg-list">
+								<div class="sub-sech-box">
+									<ul class="sub-sech-list">
+										<li class="on"><a href="#none">강북</a></li>
+										<li><a href="#none">성북</a></li>
+										<li><a href="#none">중랑</a></li>
+										<li><a href="#none">노원</a></li>
+										<li><a href="#none">도봉</a></li>
+										<li><a href="#none">노원</a></li>
+									</ul>
+								</div>
+								<span class="deco-arrowr"></span>
+							</div>
+							<div class="sub-sech-area rooms-list">
+								<div class="sub-sech-box">
+									<ul class="sub-sech-list">
+										<li class="on"><a href="#none">호텔</a></li>
+										<li><a href="#none">리조트/콘도</a></li>
+										<li><a href="#none">모텔</a></li>
+										<li><a href="#none">펜션</a></li>
+										<li><a href="#none">호텔2</a></li>
+										<li><a href="#none">호텔3</a></li>
+										<li><a href="#none">호텔4</a></li>
+									</ul>
+								</div>
+								<span class="deco-arrowr"></span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript">
+				var regBox = $('#sub-search-area .reg-list .sub-sech-list');
+				var roomBox = $('#sub-search-area .rooms-list .sub-sech-list');
+				var boxLi, liLen, boxLiW, count, maxW, liPadding;
+				//console.log(roomBox.find('li:nth-child(2)').width());
+				
+				var longLi = function(box){
+					count = 0;
+					boxLi = box.find('li');
+					liLen = boxLi.length;
+					liPadding = boxLi.css('padding-left').charAt(0);
+					
+					for( maxW = 0 ;  count < liLen ; count++ ){
+						boxLiW = box.find('li').eq(count).outerWidth();
+						
+						maxW += boxLiW;
+						//console.log(count, boxLiW, maxW, liLen);
+					}
+					
+					box.css({width : maxW+Number(liPadding)+'px'});
+				};
+				
+				longLi(regBox);
+				longLi(roomBox);
+			</script>
+			<!-- 20180305 top_box_bottom 클래스  및 태그는 제거 -->
+			<!--<div id="top_box_bottom" style="height: 81px;"></div>-->
+			
+			<!-- 20180305 높이조절위한 sub-sech-relt 클래스 추가 -->
+			<div id="search_results" class="sub-sech-relt">
+				<div id="search_titles">
+					<div id="scroll_main" style="min-height:200px" class="hide_div">
+						<div id="search_list" style="padding-bottom:0">
+							<div id="test_slide_278401">
+								<div class="zone_recommend" onclick="javascript:location.href='/home/view/?p_no=GEtwFw==&amp;sub_sdate=2018-03-05&amp;sub_edate=2018-03-06'" id="product_1504" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1425972041_main1.jpg) no-repeat 0 0;background-size: cover;">
+									<div class="store_info">
+										<div class="category">
+											<span>호텔</span>
+										</div>
+										<div class="store_name" style="">▶호텔4월2일</div>
+										<div class="guide">
+											<ul>
+												체크인 18:00 / 체크아웃 12:00
+												<li>강북 | 북서울꿈의숲 : 3km </li>
+											</ul>
+										</div>
+									</div>
+									<div class="money" style="width:115px;">
+										<strong class="prc" style="font-size:1.300em">39,600원</strong>
+									</div>
+								</div>
+								<div class="zone_recommend" onclick="javascript:location.href='/home/view/?p_no=GEtwFw==&amp;sub_sdate=2018-03-05&amp;sub_edate=2018-03-06'" id="product_1504" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1425972041_main1.jpg) no-repeat 0 0;background-size: cover;">
+									<div class="store_info">
+										<div class="category">
+											<span>호텔</span>
+										</div>
+										<div class="store_name" style="">▶호텔4월2일</div>
+										<div class="guide">
+											<ul>
+												체크인 18:00 / 체크아웃 12:00
+												<li>강북 | 북서울꿈의숲 : 3km </li>
+											</ul>
+										</div>
+									</div>
+									<div class="money" style="width:115px;">
+										<strong class="prc" style="font-size:1.300em">39,600원</strong>
+									</div>
+								</div>
+								<div class="zone_recommend" onclick="javascript:location.href='/home/view/?p_no=GEtwFw==&amp;sub_sdate=2018-03-05&amp;sub_edate=2018-03-06'" id="product_1504" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1425972041_main1.jpg) no-repeat 0 0;background-size: cover;">
+									<div class="store_info">
+										<div class="category">
+											<span>호텔</span>
+										</div>
+										<div class="store_name" style="">▶호텔4월2일</div>
+										<div class="guide">
+											<ul>
+												체크인 18:00 / 체크아웃 12:00
+												<li>강북 | 북서울꿈의숲 : 3km </li>
+											</ul>
+										</div>
+									</div>
+									<div class="money" style="width:115px;">
+										<strong class="prc" style="font-size:1.300em">39,600원</strong>
+									</div>
+								</div>
+								<div class="zone_recommend" onclick="javascript:location.href='/home/view/?p_no=GEtwFw==&amp;sub_sdate=2018-03-05&amp;sub_edate=2018-03-06'" id="product_1504" style="background:url(http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1425972041_main1.jpg) no-repeat 0 0;background-size: cover;">
+									<div class="store_info">
+										<div class="category">
+											<span>호텔</span>
+										</div>
+										<div class="store_name" style="">▶호텔4월2일</div>
+										<div class="guide">
+											<ul>
+												체크인 18:00 / 체크아웃 12:00
+												<li>강북 | 북서울꿈의숲 : 3km </li>
+											</ul>
+										</div>
+									</div>
+									<div class="money" style="width:115px;">
+										<strong class="prc" style="font-size:1.300em">39,600원</strong>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- 20180305 필터/지도 -->
+			<div id="float-area">
+				<div class="float-box">
+					<ul>
+						<li class="ico-fil">
+							<a href="javascript:;"><span>필터</span></a>
+						</li>
+						<li class="ico-map">
+							<a href="javascript:;"><span>지도</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				
+			<!-- 필터 클릭시 -->
+			<div id="filter-area">
+				<div class="filter-type rooms-type">
+					<p class="filter-tit">시설유형</p>
+					<ul class="filter-list">
+						<li class="on">
+							<a href="#none" class="list-hotel"><span>호텔</span></a>
+						</li>
+						<li>
+							<a href="#none" class="list-condo"><span>리조트/콘도</span></a>
+						</li>
+						<li>
+							<a href="#none" class="list-motel"><span>모텔</span></a>
+						</li>
+						<li>
+							<a href="#none" class="list-krental"><span>펜션</span></a>
+						</li>
+						<li>
+							<a href="#none" class="list-gest"><span>게스트하우스</span></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="filter-type">
+					<p class="filter-tit">필터선택</p>
+					<ul class="filter-list">
+						<li class="on">
+							<a href="#none"><span>반려동물</span></a>
+						</li>
+						<li>
+							<a href="#none"><span>부띠끄</span></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="filter-type viewLine">
+					<p class="filter-tit">노출순서</p>
+					<ul class="filter-list">
+						<li class="on">
+							<a href="#none"><span>인기순</span></a>
+						</li>
+						<li>
+							<a href="#none"><span>거리순</span></a>
+						</li>
+						<li>
+							<a href="#none"><span>낮은가격순</span></a>
+						</li>
+						<li>
+							<a href="#none"><span>높은가격순</span></a>
+						</li>
+					</ul>
+				</div>
+				
+				<!-- 20180330 가격범위 추가 -->
+				<div class="filter-type">
+					<p class="filter-tit">가격범위</p>
+					<div class="filter-price">
+						<input id="priceRange" class="irs-hidden-input" tabindex="-1" readonly="">
+					</div>
+				</div>
+				
+				<div class="btn-wrap">
+					<a href="javascript:;" class="btn-filclose"><span>닫기</span></a>
+					<a href="javascript:;" class="btn-cilcom"><span>적용</span></a>
+				</div>
+			</div>
+			
+			<script type="text/javascript">
+				var filOn = $('#float-area .float-box .ico-fil');
+				var filView = $('#filter-area');
+				var roomLi = $('#filter-area .filter-list li');
+				var viewLi = $('#filter-area .viewLine .filter-list li');
+				var filClose = $('#filter-area .btn-filclose');
+				
+				filOn.on('click', function(){
+					filView.stop().delay(0).slideToggle();
+				});
+
+				roomLi.find('a').on('click', function(){
+					$(this).parent('li').toggleClass('on');
+				});
+				
+				viewLi.find('a').on('click', function(){
+					viewLi.removeClass('on');
+					$(this).parent('li').addClass('on');
+				});
+				
+				filClose.on('click', function(){
+					filView.stop().delay(0).slideToggle();
+				});
+				
+				//20180330 JS 추가
+				var filterPrice = $('#priceRange');
+				filterPrice.ionRangeSlider({
+					type : "double",
+					step : 1000,
+					min : 0,
+					max : 1000000,
+					from : 0,
+					to : 1000000,
+					prefix : "&#92; ",
+					values_separator : ' ~ ',
+					prettify_separator : ',',
+					decorate_both : 'true'
+				});
+			</script>
+			<!--//필터/지도 -->
+			
+		</div>
+	</div>
+</body>
+
+</html>

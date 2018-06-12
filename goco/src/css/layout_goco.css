@@ -5889,9 +5889,9 @@ ul.bjqs-controls.v-centered li.bjqs-prev a { left: 0; }
 
 #headerWrap .header .searchBox .select a { color: #6d6d6d; }
 
-#headerWrap .header .searchBox .select a.on { font-weight: 800; color: #f37720; }
+#headerWrap .header .searchBox .select a.on { color: #f37720; }
 
-#headerWrap .header .searchBox .searchInput { margin-left: 15px; width: 220px; height: 31px; }
+#headerWrap .header .searchBox .searchInput { margin-left: 30px; width: 220px; height: 31px; }
 
 #headerWrap .header .searchBox .searchInput .search_keyword { outline: none; display: inline-block; width: 220px; border: 0 none; letter-spacing: -0.3px; font-size: 13px; color: #656565; /* position: relative; top: 8px; */}
 

@@ -1005,8 +1005,10 @@ z-index: 12;}
 .price_all_layer_pop .price_all_layer_area .price_mid .btn_decl {text-align:center; margin-top:20px;}
 .price_all_layer_pop .price_all_layer_area .price_mid .btn_decl a {display:inline-block; width:194px; height:42px; line-height:42px; font-size:18px; color:#fff !important; background-color:#000;}
 /* 고코상세페이지 글 크기 및 색상 조절_170705_혜준 */
-.info_box, #contents .detail_goods {color: #202020; /* color: #434343; */ line-height: 28px; font-size: 16px;}
+.info_box, #contents .detail_goods {color: #202020; /* color: #434343; */ line-height: 28px; font-size: 16px; left: 0 !important; width: 930px; margin: 0 auto; padding: 0; box-sizing: border-box; word-break: keep-all;}
+.info_box {padding: 20px 15px;}
 .info_box .info_tit, .info_box .info_tit1_2, #contents .info_tit2, #detail_noticeBox2 .box h3 {/* color: red; */ font-size: 18px; font-weight: 600;}
+#contents .info_tit2 {font-weight: 400;}
 .info_box .info_tit1_2, #contents .info_tit2 {margin-bottom: -15px;}
 .info_box .info_txt, .info_box .info_none {margin-top: 10px;}
 .info_box .info_none {margin-bottom: 0; padding-bottom: 50px; box-sizing: border-box;}
@@ -1097,6 +1099,8 @@ position: absolute; bottom: 0; right: 0; top: 0;}
 /* 간격조정 170718_혜준 */
 #contents_mn2 {margin-top: 22px; margin-bottom: 22px;}
 /* 상세피이지 탭 변경 170719_혜준 */
+#rsv_s_tab td,
+#rsv_sang #rsv_s_list_box2 #rsv_s_list tr[class*="_tr"] td {vertical-align: middle;}
 #rsv_sang #rsv_s_tab .rsv_s_tabHead {border: none; background: #5e5e5e; color: #fff; height: 50px; font-size: 17px;}
 #rsv_sang #rsv_s_list_box2 #rsv_s_list .over_tr .pl15, #rsv_sang #rsv_s_list_box2 #rsv_s_list .over_tr, #rsv_wrapper .price {font-size: 15px;}
 #main5 .goods_info tr {border-bottom: 1px solid #c8c8c8; width: 100%;}
@@ -1131,7 +1135,7 @@ position: absolute; bottom: 0; right: 0; top: 0;}
 .table-type01 th {background: #e4e3e3;}
 /* 글로벌gnb "" */
 #top2 {padding-top: 4px; height: 22px;}
-#contents {margin-top: 6px;}
+/*#contents {margin-top: 6px;}*/
 #contents .contents_tit2 {padding-top: 0; padding-bottom: 0;}
 #main5 {margin-top: 0; padding-top: 22px;}
 #gnbWrap .gnb #gnb_sub_globalTotal, #gnbWrap .gnb .subMenu {top: 177px;}
