@@ -197,7 +197,7 @@ span.i-ctgr-off {background: #555a78;}
 /*.rn-gwrap a:focus {font-weight: 400;} */
 
 /* 전체 wrap */
-.rn-gwrap {position: relative; width: 100%; min-width: 1280px; /*width: 1680px;*/}
+.rn-gwrap {position: relative; width: 100%; min-width: 1360px; /*width: 1680px;*/}
 /* 공통 콘텐츠 태그 클래스 */
 .rn-contents {position: relative;}
 .rn-container, .rn-containerF {position: relative; margin: 0 auto;}

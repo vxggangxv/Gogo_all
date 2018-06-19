@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+/* 헤더 */
+.m_wrapper {width:100%; margin:0 auto; position:relative; background: #f6f6f6;}
+.m_header {width:100%; height:52px; background: #f6f6f6; border-bottom:1px solid #cccccc;}
+.m_header .logo {width:73px; height:15px; margin:0 auto; padding-top:15px;} 
+.m_header .logo img {width:100%;} 
+
+.m_header .header_left_bt {border:1px solid #ff699b;  width:70px; height:25px; float:right; margin:-20px 20px; border-radius: 20px;}
+.m_header .header_left_bt span {color: #ff699b; padding-left:15px; line-height: 25px; cursor: pointer; font-size:14px;}
+
+.m_header .all_menu {width:40px; height:30px; position:absolute; top:10px; left:10px; border:none; background: none;}
+.m_header .all_menu span {display: block; height:4px; width: 28px; color: #000; background: #000; margin:4px auto 0; cursor: pointer;}
+.m_header .all_menu span:first-child {margin-top: 0;}
+
+/* 메인bg 검색부분 */
+
+.m_main {width:100%; height:250px; background: url(http://img.borogogo.co.kr/mobile/171019_renew/main_bg.png) no-repeat; background-size: 100%;  display: inline-block;}
+.m_main .m_tit{color:#fff; font-size:20px; font-family: "Source Han Sans K"; font-weight:600; padding:15px 20px;}
+.m_main .sch_wrap { width:100%; text-align: center; display: inline-block;}
+.m_main .schtxt {width: 90%; height:40px; padding-left:10px; color: #595858; }
+/* 숙박유형 검색 인풋부분 */
+
+.m_main .select_bx   {width:100%; text-align: center; font-size:0;}
+.m_main .select_bx .date,.m_main .select_bx .r_type {width:44.5%; margin-top:10px; padding-left: 10px; vertical-align: middle; font-size:14px; color:#595858; }
+.m_main .select_bx > select {background: url(http://img.borogogo.co.kr/mobile/171019_renew/i_dArr.png) no-repeat center right 10px;;
+							  cursor: pointer; background-color: #fff; }
+.m_main .select_bx .r_type {margin-left:1%;}
+.sch_wrap .sch_bt {color: #fff; width:90%; height:40px; background: #ff6699; text-align: center; line-height: 40px; margin-top:10px; cursor: pointer; font-weight: 600; margin:15px auto; font-size:16px;}
+
+
+/* 지역별 인기숙소 */
+
+.m_sect_wrap {width:100%; background: #fff; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; margin-top:10px; padding-bottom:30px;}
+.sect_box_wrap {margin-left:10px;}
+.m_sect_wrap h2 {font-size:20px; color:#000000; font-weight: 600; width:150px; height:30px; padding:15px 0 10px 30px;}
+
+.m_sect_wrap .sect_img1 img,.m_sect_wrap .sect_img2 img{width:100%;}
+.m_sect_wrap .sect_img1 ul,.m_sect_wrap .sect_img2 ul {clear:both; width:100%;}
+.m_sect_wrap .sect_img1 ul li,.m_sect_wrap .sect_img2 ul li{float:left; width:40%; padding-left:20px; padding-top:10px;}
+
+
+/* 바로가기아이콘 */
+
+.icon_wrap {width:100%; margin:10px auto; background: #fff; border-top:1px solid #f1f1f1 border-bottom:1px solid #f1f1f1; padding-bottom: 20px; text-align: center;}
+.icon_wrap .ico_list {padding-top:10px;}
+.icon_wrap .ico_list .list_1,.icon_wrap .ico_list .list_2 {clear:both;}
+.icon_wrap .ico_list .list_1 p,.icon_wrap .ico_list .list_2 p {font-size:12px; color:#000; padding-top:10px;}
+.icon_wrap .ico_list .list_1 li,.icon_wrap .ico_list .list_2 li {float:left; width:25%; padding-left:20px; padding-top:20px;}
+.icon_wrap .ico_list .list_1 li img,.icon_wrap .ico_list .list_2 li img{width:70%;}
+ 
+
+/* 푸터 */
+
+.footer {width:100%; background: #f6f6f6;}
+.footerin {width:300px; margin:0 auto;}
+.footerin .f-top_bt ul {width:300; height:50px; text-align: center;}
+.footerin .f-top_bt ul li {background: #fff; padding:5px 10px; text-align: center; font-weight: 500; border:1px solid #f1f1f1; color: #595758; display: inline-block; font-size:13px;}
+
+.footerin .f-top { width:90%; text-align: center;}
+.footerin .f-top a {padding-left:10px; color:#595758; display: inline-block; font-size:13px;}
+
+.foot {width:100%; padding-top:10px;}
+.foot .footer_add {text-align: center; color:#595758; width:90%; margin:0 auto; font-weight: 500; border-top:1px solid #dcdcdc;
+				    padding-top:10px; font-size:13px;}
+.foot .copy {color: #b1b1b1; text-align: center; padding-top:5px; font-size:13px; padding-bottom:20px;}
+
+
+
+/* 상세페이지 */
+
+
+
+/* 캘린더 수정 */
+
+#info_product_btn_w .info_product_btn {background: #ff6699;}
+#calender_number_w { height:80px; border-top:none;}
+.calender_ch_w {border:none; width:100%;}
+.calender_ch_w .calender_ch_checkin {border-right:none;}
+.calender_ch_w .date {color: #ff6699; padding-left:20px;}
+.calender_ch_day_o {border:none; background: #f4f4f6; width:50px; height:30px; line-height: 30px; text-align: center;}
+
+/* 상단이미지 로고 삭제 */
+.thumbnail_logo img {display: none;}
+
+/* 상단상품이미지 텍스트 정렬 */
+#info_img_wrpa .img_txt {bottom:20px;}
+/*  상단 이미지 아이콘 */
+#info_img_wrpa .de_share_icon {margin-right:0; vertical-align: middle;}
+#info_img_wrpa .de_ch_icon {width:7%;}
+#info_img_wrpa .de_share_icon {width:11%;}
+#info_img_wrpa .pay_back_icon {margin-left:22px;}
+#info_img_wrpa .pay_back_icon {width}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,.swiper-button-prev, .swiper-container-rtl .swiper-button-next {display: none;}
+
+/* 상단타이틀 */
+.top_title_wrap {width:100%;position:relative; top:10px; left:20px;}
+.top_title_wrap .top_title_txt { padding-bottom:30px;}
+.top_title_wrap .top_title_txt span {font-size:20px; color:#000; font-weight: 700;}
+.top_title_wrap .top_title_txt p {font-size:16px; margin-top:5px; font-weight: normal; color:#000; letter-spacing: -2;}
+
+/* 상단 타이틀탭 */
+
+.top_main {width:100%; height:50px; position:relative;}
+.top_main .main_title {text-align: center;}
+.top_main .main_title span {font-size:18px; font-weight: 700; color: #000; line-height:50px;}
+
+.top_main .main_title .top_pr {float:left; margin-left:20px; margin-top:10px; }
+.top_main .main_title .top_lv {float:right; margin-right:20px; margin-top:10px; }
+
+/* 배너이미지 추가 */
+
+#room_w .room_tx_w .room_tx_in2 {margin-top:20px;}
+
+#room_w .room_tx_w .room_tx_in {border: none; border-top:10px solid #f6f6f6}
+#location_w {border-top: 10px solid #f6f6f6;}
+
+/* 부대시설 아이콘 */
+
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li > div { padding:0 20px 0 20px; vertical-align: middle;}
+#room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li > div img {vertical-align: middle;}
+
+/* 배너추가*/
+
+.bn_wr {width:100%; background: #f6f6f6; }
+.bn_bg span {color:#fff; line-height:40px;}
+.bn_bg .right {padding-right:10px; position:absolute; right:10px;}
+.bn_bg .cp {font-style:italic;}
+.bn_bg {width:95%; position:relative; height:40px; background: url(http://img.borogogo.co.kr/mobile/171019_renew/r_banner.png) no-repeat; margin:0 auto; text-indent: 10px; font-size:13px;}

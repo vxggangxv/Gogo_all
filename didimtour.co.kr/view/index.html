@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>바로고고</title>
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
+
+	<!--<link rel="stylesheet" type="text/css" href="../../goco/src/css/layout_goco.css">-->
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_goco.css">
+	<link href="http://static.go.co.kr/css/css_pirobox/style_2/style.css" rel="stylesheet" type="text/css">
+
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalweb.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://static.borogogo.co.kr/css/advisor.css">
+
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/event.css">
+	<link rel="stylesheet" type="text/css" href="http://static.borogogo.co.kr/css/prettyPhoto.css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
+
+	 <link rel="stylesheet" href="../src/css/layout_new3.css"> 
+	<!--바로고고 리뉴얼Css-->
+<!--	<link rel="stylesheet" href="http://static.didimtour.co.kr/css/layout_new3.css">-->
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+
+
+	</head>
+<body>
+
+	<h1 class="hidden">디딤투어</h1>
+
+	
+	<div class="bg-main"></div>
+	<script>
+			function realTimeReservation() {
+				$(".rt-btn").click(function() {
+					
+				});
+			}
+	</script>
+	<section class="fixed rtReserv ftfm-nt">
+		<div class="bg-backDrop"></div>
+		<a href="javascript:;" class="rt-btn" onclick="$('.rtReserv').toggleClass('on');">실시간 예약하기 <span class="d-arr"></span></a>	
+		
+		
+		<!--대문이미지 및 검색-->
+		<div class="clr"></div>
+		<div class="rn-mdBox">
+			<div class="rn-schBox ftfm-nt bsLs clr">
+				<h2 class="hidden">숙소검색</h2>
+
+				<div class="d1">
+					<p class="p0">검색어</p>
+					<p class="p1"><input type="text" tabindex="-1" autofocus="autofocus" placeholder="오션투유리조트"/></p>
+				</div>
+				<div class="d2 cm-s">
+					<p class="p0">이용일</p>
+					<p class="p1">2017-10-11</p>
+				</div>
+				<div class="d3 cm-s" id="rgSelect">
+					<p class="p0">지역검색</p>
+					<p class="p1">전국</p>
+
+					<div class="rgOption" id="rgOption">
+						<div class="rgScroller">
+							<ul class="ul1 ul1-rg">
+								<li><a href="#">전국</a></li>
+								<li><a href="#">서울</a></li>
+								<li><a href="#">경기</a></li>
+								<li><a href="#">인천</a></li>
+								<li><a href="#">강원</a></li>
+								<li><a href="#">부산</a></li>
+								<li><a href="#">경남</a></li>
+								<li><a href="#">대구</a></li>
+								<li><a href="#">경북</a></li>
+								<li><a href="#">대전</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="d4 cm-s" id="dtRgSelect">
+					<p class="p0">상세지역</p>
+					<p class="p1">시/구 지역</p>
+
+					<div class="rgOption" id="dtRgOption">
+						<div class="rgScroller">
+							<ul class="ul1 ul1-dtRg">
+								<li><a href="#">시군별 전체</a></li>
+								<li><a href="#">중구</a></li>
+								<li><a href="#">종로구</a></li>
+								<li><a href="#">마포구</a></li>
+								<li><a href="#">강남구</a></li>
+								<li><a href="#">용산구</a></li>
+								<li><a href="#">동대문구</a></li>
+								<li><a href="#">영등포구</a></li>
+								<li><a href="#">송파구</a></li>
+								<li><a href="#">서초구</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="d5">
+					<button type="button">속소 검색</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!--지역검색 drop박스 scrollbar UI 라이브러리 ie10이상일때 적용되도록-->
+
+		<!--[if gte IE 10]><!--> 
+		<script src="http://static.borogogo.co.kr/js/iscroll.js"></script>
+		<script>
+			var rgOption, dtRgOption;
+
+			$(function() {
+
+				/*지역검색 drop박스 scrollbar UI*/
+				rgOption = new IScroll('#rgOption', {
+					scrollbars: true,
+					mouseWheel: true,
+					interactiveScrollbars: true,
+					shrinkScrollbars: 'scale',
+					fadeScrollbars: true
+				});
+
+				dtRgOption = new IScroll('#dtRgOption', {
+					scrollbars: true,
+					mouseWheel: true,
+					interactiveScrollbars: true,
+					shrinkScrollbars: 'scale',
+					fadeScrollbars: true
+				});
+
+				$(this).find('.rgOption').hide();
+
+			});
+
+		</script>
+		<!--<![endif]-->
+		
+	</section>
+	<div class="dd-wrapper bsLs ftfm-nt">
+		
+		<header class="dd-header cf">
+			<nav class="dd-nav-l pull-left">
+				<ul class="dd-menu cf">
+					<li><a href="">광고/입점/제휴문의</a></li>
+				</ul>
+			</nav>
+			<nav class="dd-nav-r pull-right">
+				<ul class="dd-menu cf">
+					<li><a href="">이벤트</a></li>
+					<li class="mg-l"></li>
+					<li><a href="">예약내역조회</a></li>
+					<li class="mg-l"></li>
+					<li><a href="">마이페이지</a></li>
+					<li class="mg-l"></li>
+					<li><a href="">로그아웃</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+				
+		<section class="dd-main">
+			<h2>
+				<img src="http://img.didimtour.co.kr/renew/logo_didim.png" alt="디딤투어로고">
+				<strong class="blk">빠르고 쉬운 예약사이트 디딤투어</strong>
+			</h2>
+			
+			<div class="dd-search cf">
+				<span class="box-input"><input type="text" placeholder="어디로 떠나고 싶으신가요?" class="ap-reset ftfm-nt"></span>
+				<button type="submit" class="btn-search ap-reset"><img src="http://img.didimtour.co.kr/renew/i_mag.png" alt="검색"></button>
+			</div>
+		</section>
+		
+		<section class="quickChoice">
+			<h2 class="dd-tit">quick choice</h2>
+			<ul class="menu cf">
+				<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_bag.png" alt="숙박"><span class="txt">국내숙박</span></a></li>
+				<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_globe.png" alt="해외"><span class="txt">해외숙박</span></a></li>
+				<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_cycle.png" alt="레저"><span class="txt">레저/입장권</span></a></li>
+				<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_ticket.png" alt="공연"><span class="txt">공연/전시</span></a></li>
+				<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_evtCal.png" alt="이벤트"><span class="txt">이벤트</span></a></li>
+				<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_spBubble.png" alt="고객센터"><span class="txt">고객센터</span></a></li>
+			</ul>
+		</section>
+	</div>
+	
+	<script>
+		$(function() {
+			$(".quickChoice .menu li").mousedown(function() {
+				$(this).css({
+					"box-shadow": "none"
+				});
+			});
+			$(".quickChoice .menu li").mouseup(function() {
+				$(this).css({
+					"box-shadow": "0 0 10px 1px rgba(0,0,0, .2)"
+				});
+			});
+		});
+	</script>
+	
+		
+	
+	
+	
+	
+	
+	
+<!--지역별 인기 숙소-->
+<div id="mainBox02_wrapper">
+	<div id="mainBox02">
+	
+	
+	<div class="localRecommend">
+		<div class="titleLocal">
+			<h3>지역별 인기 숙소</h3>
+			<ul class="local" id="local_tab">
+				<li class=""><a href="javascript:listing.locallist_ver2('S')" class="local_S on" title="서울">서울</a>
+					<div class="sGnbArea2" style="top:40px;">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'S', '중구');">중구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A2%85%EB%A1%9C%EA%B5%AC', 'S', '종로구');">종로구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%A7%88%ED%8F%AC%EA%B5%AC', 'S', '마포구');">마포구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%82%A8%EA%B5%AC', 'S', '강남구');">강남구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9A%A9%EC%82%B0%EA%B5%AC', 'S', '용산구');">용산구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC', 'S', '동대문구');">동대문구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC', 'S', '영등포구');">영등포구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%86%A1%ED%8C%8C%EA%B5%AC', 'S', '송파구');">송파구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EC%B4%88%EA%B5%AC', 'S', '서초구');">서초구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%9C%EB%8C%80%EB%AC%B8', 'S', '서대문');">서대문</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'S', '강서구');">강서구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%8F%99%EA%B5%AC', 'S', '강동구');">강동구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B0%95%EB%B6%81%EA%B5%AC', 'S', '강북구');">강북구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%80%EC%95%85%EA%B5%AC', 'S', '관악구');">관악구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%8F%99%EA%B5%AC', 'S', '성동구');">성동구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%84%B1%EB%B6%81%EA%B5%AC', 'S', '성북구');">성북구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B4%91%EC%A7%84%EA%B5%AC', 'S', '광진구');">광진구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%A4%91%EB%9E%91%EA%B5%AC', 'S', '중랑구');">중랑구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B5%AC%EB%A1%9C%EA%B5%AC', 'S', '구로구');">구로구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%9D%80%ED%8F%89%EA%B5%AC', 'S', '은평구');">은평구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EA%B8%88%EC%B2%9C%EA%B5%AC', 'S', '금천구');">금천구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%99%EC%9E%91%EA%B5%AC', 'S', '동작구');">동작구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%85%B8%EC%9B%90%EA%B5%AC', 'S', '노원구');">노원구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EC%96%91%EC%B2%9C%EA%B5%AC', 'S', '양천구');">양천구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=S&amp;sub_loca=%EB%8F%84%EB%B4%89%EA%B5%AC', 'S', '도봉구');">도봉구</a></li>
+												</ul>
+					</div>
+				</li>		
+				<li class=""><a href="javascript:listing.locallist_ver2('K2')" class="local_K2" title="경기">경기</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B0%80%ED%8F%89%EA%B5%B0', 'K2', '가평군');">가평군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%ED%8F%89%EA%B5%B0', 'K2', '양평군');">양평군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%88%98%EC%9B%90%EC%8B%9C', 'K2', '수원시');">수원시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%AC%EC%B2%9C%EC%8B%9C', 'K2', '포천시');">포천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9A%A9%EC%9D%B8%EC%8B%9C', 'K2', '용인시');">용인시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%82%B0%EC%8B%9C', 'K2', '안산시');">안산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%B6%80%EC%B2%9C%EC%8B%9C', 'K2', '부천시');">부천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%96%91%EC%8B%9C', 'K2', '안양시');">안양시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%99%94%EC%84%B1%EC%8B%9C', 'K2', '화성시');">화성시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%82%A8%EC%96%91%EC%A3%BC', 'K2', '남양주');">남양주</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8C%8C%EC%A3%BC%EC%8B%9C', 'K2', '파주시');">파주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C', 'K2', '의정부시');">의정부시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%AC%EC%A3%BC%EC%8B%9C', 'K2', '여주시');">여주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%A0%EC%96%91%EC%8B%9C', 'K2', '고양시');">고양시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%84%B1%EB%82%A8%EC%8B%9C', 'K2', '성남시');">성남시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%8B%9C%ED%9D%A5%EC%8B%9C', 'K2', '시흥시');">시흥시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%8F%89%ED%83%9D%EC%8B%9C', 'K2', '평택시');">평택시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%B0%ED%8F%AC%EC%8B%9C', 'K2', '군포시');">군포시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%96%91%EC%A3%BC%EC%8B%9C', 'K2', '양주시');">양주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B5%AC%EB%A6%AC%EC%8B%9C', 'K2', '구리시');">구리시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%B4%EC%B2%9C%EC%8B%9C', 'K2', '이천시');">이천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EB%AA%85%EC%8B%9C', 'K2', '광명시');">광명시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%95%88%EC%84%B1%EC%8B%9C', 'K2', '안성시');">안성시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%98%A4%EC%82%B0%EC%8B%9C', 'K2', '오산시');">오산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B9%80%ED%8F%AC%EC%8B%9C', 'K2', '김포시');">김포시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%9D%98%EC%99%95%EC%8B%9C', 'K2', '의왕시');">의왕시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B3%BC%EC%B2%9C%EC%8B%9C', 'K2', '과천시');">과천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EC%97%B0%EC%B2%9C%EA%B5%B0', 'K2', '연천군');">연천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EA%B4%91%EC%A3%BC%EC%8B%9C', 'K2', '광주시');">광주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%EB%8F%99%EB%91%90%EC%B2%9C%EC%8B%9C', 'K2', '동두천시');">동두천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K2&amp;sub_loca=%ED%95%98%EB%82%A8%EC%8B%9C', 'K2', '하남시');">하남시</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('K')" class="local_K" title="강원">강원</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%8F%89%EC%B0%BD%EA%B5%B0', 'K', '평창군');">평창군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B0%95%EB%A6%89%EC%8B%9C', 'K', '강릉시');">강릉시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B6%98%EC%B2%9C%EC%8B%9C', 'K', '춘천시');">춘천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EC%96%91%EA%B5%B0', 'K', '양양군');">양양군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%8D%EC%B2%9C%EA%B5%B0', 'K', '홍천군');">홍천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%86%8D%EC%B4%88%EC%8B%9C', 'K', '속초시');">속초시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%9A%A1%EC%84%B1%EA%B5%B0', 'K', '횡성군');">횡성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'K', '고성군');">고성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9B%90%EC%A3%BC%EC%8B%9C', 'K', '원주시');">원주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%98%81%EC%9B%94%EA%B5%B0', 'K', '영월군');">영월군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%A0%95%EC%84%A0%EA%B5%B0', 'K', '정선군');">정선군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EB%8F%99%ED%95%B4%EC%8B%9C', 'K', '동해시');">동해시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%9D%B8%EC%A0%9C%EA%B5%B0', 'K', '인제군');">인제군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%82%BC%EC%B2%99%EC%8B%9C', 'K', '삼척시');">삼척시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%99%94%EC%B2%9C%EA%B5%B0', 'K', '화천군');">화천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%ED%83%9C%EB%B0%B1%EC%8B%9C', 'K', '태백시');">태백시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%B2%A0%EC%9B%90%EA%B5%B0', 'K', '철원군');">철원군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=K&amp;sub_loca=%EC%96%91%EA%B5%AC%EA%B5%B0', 'K', '양구군');">양구군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('CN')" class="local_CN" title="충남">충남</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%83%9C%EC%95%88%EA%B5%B0', 'CN', '태안군');">태안군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%9C%EC%95%88%EC%8B%9C', 'CN', '천안시');">천안시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B3%B4%EB%A0%B9%EC%8B%9C', 'CN', '보령시');">보령시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%95%84%EC%82%B0%EC%8B%9C', 'CN', '아산시');">아산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%82%B0%EC%8B%9C', 'CN', '서산시');">서산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%B5%EC%A3%BC%EC%8B%9C', 'CN', '공주시');">공주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%98%88%EC%82%B0%EA%B5%B0', 'CN', '예산군');">예산군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B3%84%EB%A3%A1%EC%8B%9C', 'CN', '계룡시');">계룡시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%B6%80%EC%97%AC%EA%B5%B0', 'CN', '부여군');">부여군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%84%9C%EC%B2%9C%EA%B5%B0', 'CN', '서천군');">서천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EA%B8%88%EC%82%B0%EA%B5%B0', 'CN', '금산군');">금산군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%85%BC%EC%82%B0%EC%8B%9C', 'CN', '논산시');">논산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%ED%99%8D%EC%84%B1%EA%B5%B0', 'CN', '홍성군');">홍성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EB%8B%B9%EC%A7%84%EA%B5%B0', 'CN', '당진군');">당진군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%97%B0%EA%B8%B0%EA%B5%B0', 'CN', '연기군');">연기군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CN&amp;sub_loca=%EC%B2%AD%EC%96%91%EA%B5%B0', 'CN', '청양군');">청양군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('CB')" class="local_CB" title="충북">충북</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%8B%A8%EC%96%91%EA%B5%B0', 'CB', '단양군');">단양군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%A3%BC%EC%8B%9C', 'CB', '청주시');">청주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B6%A9%EC%A3%BC%EC%8B%9C', 'CB', '충주시');">충주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A0%9C%EC%B2%9C%EC%8B%9C', 'CB', '제천시');">제천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EA%B4%B4%EC%82%B0%EA%B5%B0', 'CB', '괴산군');">괴산군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EB%B3%B4%EC%9D%80%EA%B5%B0', 'CB', '보은군');">보은군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%9D%8C%EC%84%B1%EA%B5%B0', 'CB', '음성군');">음성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A7%84%EC%B2%9C%EA%B5%B0', 'CB', '진천군');">진천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%A5%EC%B2%9C%EA%B5%B0', 'CB', '옥천군');">옥천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%98%81%EB%8F%99%EA%B5%B0', 'CB', '영동군');">영동군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%A6%9D%ED%8F%89%EA%B5%B0', 'CB', '증평군');">증평군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=CB&amp;sub_loca=%EC%B2%AD%EC%9B%90%EA%B5%B0', 'CB', '청원군');">청원군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('JN')" class="local_JN" title="전남">전남</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%97%AC%EC%88%98%EC%8B%9C', 'JN', '여수시');">여수시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%88%9C%EC%B2%9C%EC%8B%9C', 'JN', '순천시');">순천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AA%A9%ED%8F%AC%EC%8B%9C', 'JN', '목포시');">목포시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B4%91%EC%96%91%EC%8B%9C', 'JN', '광양시');">광양시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B5%AC%EB%A1%80%EA%B5%B0', 'JN', '구례군');">구례군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%99%84%EB%8F%84%EA%B5%B0', 'JN', '완도군');">완도군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%B4%EB%82%A8%EA%B5%B0', 'JN', '해남군');">해남군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%82%98%EC%A3%BC%EC%8B%9C', 'JN', '나주시');">나주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EA%B4%91%EA%B5%B0', 'JN', '영광군');">영광군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%98%81%EC%95%94%EA%B5%B0', 'JN', '영암군');">영암군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%EC%84%B1%EA%B5%B0', 'JN', '장성군');">장성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%8B%B4%EC%96%91%EA%B5%B0', 'JN', '담양군');">담양군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%9E%A5%ED%9D%A5%EA%B5%B0', 'JN', '장흥군');">장흥군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A0%ED%9D%A5%EA%B5%B0', 'JN', '고흥군');">고흥군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B3%A1%EC%84%B1%EA%B5%B0', 'JN', '곡성군');">곡성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%99%94%EC%88%9C%EA%B5%B0', 'JN', '화순군');">화순군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%8B%A0%EC%95%88%EA%B5%B0', 'JN', '신안군');">신안군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%B3%B4%EC%84%B1%EA%B5%B0', 'JN', '보성군');">보성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EA%B0%95%EC%A7%84%EA%B5%B0', 'JN', '강진군');">강진군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EB%AC%B4%EC%95%88%EA%B5%B0', 'JN', '무안군');">무안군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%EC%A7%84%EB%8F%84%EA%B5%B0', 'JN', '진도군');">진도군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JN&amp;sub_loca=%ED%95%A8%ED%8F%89%EA%B5%B0', 'JN', '함평군');">함평군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('JB')" class="local_JB" title="전북">전북</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%84%EC%A3%BC%EC%8B%9C', 'JB', '전주시');">전주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%B6%80%EC%95%88%EA%B5%B0', 'JB', '부안군');">부안군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B5%B0%EC%82%B0%EC%8B%9C', 'JB', '군산시');">군산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9D%B5%EC%82%B0%EC%8B%9C', 'JB', '익산시');">익산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%AC%B4%EC%A3%BC%EA%B5%B0', 'JB', '무주군');">무주군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EB%82%A8%EC%9B%90%EC%8B%9C', 'JB', '남원시');">남원시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%99%84%EC%A3%BC%EA%B5%B0', 'JB', '완주군');">완주군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%A5%EC%88%98%EA%B5%B0', 'JB', '장수군');">장수군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B3%A0%EC%B0%BD%EA%B5%B0', 'JB', '고창군');">고창군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A7%84%EC%95%88%EA%B5%B0', 'JB', '진안군');">진안군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%A0%95%EC%9D%8D%EC%8B%9C', 'JB', '정읍시');">정읍시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EA%B9%80%EC%A0%9C%EC%8B%9C', 'JB', '김제시');">김제시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%88%9C%EC%B0%BD%EA%B5%B0', 'JB', '순창군');">순창군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JB&amp;sub_loca=%EC%9E%84%EC%8B%A4%EA%B5%B0', 'JB', '임실군');">임실군</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li><a href="javascript:listing.locallist_ver2('B')" class="local_B" title="부산">부산</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC', 'B', '해운대구');">해운대구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%80%EC%82%B0%EC%A7%84', 'B', '부산진');">부산진</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%A4%91%EA%B5%AC', 'B', '중구');">중구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EA%B5%AC', 'B', '동구');">동구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%8F%99%EB%9E%98%EA%B5%AC', 'B', '동래구');">동래구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%88%98%EC%98%81%EA%B5%AC', 'B', '수영구');">수영구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%97%B0%EC%A0%9C%EA%B5%AC', 'B', '연제구');">연제구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%EC%83%81%EA%B5%AC', 'B', '사상구');">사상구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%84%9C%EA%B5%AC', 'B', '서구');">서구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%82%A8%EA%B5%AC', 'B', '남구');">남구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%B0%EC%9E%A5%EA%B5%B0', 'B', '기장군');">기장군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EB%B6%81%EA%B5%AC', 'B', '북구');">북구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%82%AC%ED%95%98%EA%B5%AC', 'B', '사하구');">사하구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EC%98%81%EB%8F%84%EA%B5%AC', 'B', '영도구');">영도구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B0%95%EC%84%9C%EA%B5%AC', 'B', '강서구');">강서구</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=B&amp;sub_loca=%EA%B8%88%EC%A0%95%EA%B5%AC', 'B', '금정구');">금정구</a></li>
+												</ul>
+					</div>
+				</li>				
+				<li class=""><a href="javascript:listing.locallist_ver2('GN')" class="local_GN" title="경남">경남</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%A0%9C%EC%8B%9C', 'GN', '거제시');">거제시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%86%B5%EC%98%81%EC%8B%9C', 'GN', '통영시');">통영시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%82%A8%ED%95%B4%EA%B5%B0', 'GN', '남해군');">남해군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EC%9B%90%EC%8B%9C', 'GN', '창원시');">창원시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B9%80%ED%95%B4%EC%8B%9C', 'GN', '김해시');">김해시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%96%91%EC%82%B0%EC%8B%9C', 'GN', '양산시');">양산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%A7%84%EC%A3%BC%EC%8B%9C', 'GN', '진주시');">진주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%98%EB%8F%99%EA%B5%B0', 'GN', '하동군');">하동군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%B0%EC%B2%AD%EA%B5%B0', 'GN', '산청군');">산청군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%B0%BD%EB%85%95%EA%B5%B0', 'GN', '창녕군');">창녕군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%82%AC%EC%B2%9C%EC%8B%9C', 'GN', '사천시');">사천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EB%B0%80%EC%96%91%EC%8B%9C', 'GN', '밀양시');">밀양시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B3%A0%EC%84%B1%EA%B5%B0', 'GN', '고성군');">고성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EA%B1%B0%EC%B0%BD%EA%B5%B0', 'GN', '거창군');">거창군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%95%88%EA%B5%B0', 'GN', '함안군');">함안군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%EC%9D%98%EB%A0%B9%EA%B5%B0', 'GN', '의령군');">의령군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A8%EC%96%91%EA%B5%B0', 'GN', '함양군');">함양군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GN&amp;sub_loca=%ED%95%A9%EC%B2%9C%EA%B5%B0', 'GN', '합천군');">합천군</a></li>
+												</ul>
+					</div>
+				</li>	
+				<li><a href="javascript:listing.locallist_ver2('GB')" class="local_GB" title="경북">경북</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%A3%BC%EC%8B%9C', 'GB', '경주시');">경주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%ED%8F%AC%ED%95%AD%EC%8B%9C', 'GB', '포항시');">포항시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%AC%EB%AF%B8%EC%8B%9C', 'GB', '구미시');">구미시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EB%8D%95%EA%B5%B0', 'GB', '영덕군');">영덕군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%95%88%EB%8F%99%EC%8B%9C', 'GB', '안동시');">안동시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EC%A7%84%EA%B5%B0', 'GB', '울진군');">울진군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%A3%BC%EC%8B%9C', 'GB', '영주시');">영주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%AC%B8%EA%B2%BD%EC%8B%9C', 'GB', '문경시');">문경시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B9%80%EC%B2%9C%EC%8B%9C', 'GB', '김천시');">김천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%83%81%EC%A3%BC%EC%8B%9C', 'GB', '상주시');">상주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B2%BD%EC%82%B0%EC%8B%9C', 'GB', '경산시');">경산시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EB%8F%84%EA%B5%B0', 'GB', '청도군');">청도군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%B2%9C%EC%8B%9C', 'GB', '영천시');">영천시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B9%A0%EA%B3%A1%EA%B5%B0', 'GB', '칠곡군');">칠곡군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%84%B1%EC%A3%BC%EA%B5%B0', 'GB', '성주군');">성주군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9D%98%EC%84%B1%EA%B5%B0', 'GB', '의성군');">의성군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B3%A0%EB%A0%B9%EA%B5%B0', 'GB', '고령군');">고령군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%B2%AD%EC%86%A1%EA%B5%B0', 'GB', '청송군');">청송군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%88%EC%B2%9C%EA%B5%B0', 'GB', '예천군');">예천군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%9A%B8%EB%A6%89%EA%B5%B0', 'GB', '울릉군');">울릉군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EA%B5%B0%EC%9C%84%EA%B5%B0', 'GB', '군위군');">군위군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EB%B4%89%ED%99%94%EA%B5%B0', 'GB', '봉화군');">봉화군</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=GB&amp;sub_loca=%EC%98%81%EC%96%91%EA%B5%B0', 'GB', '영양군');">영양군</a></li>
+												</ul>
+					</div>
+				</li>	
+				<li><a href="javascript:listing.locallist_ver2('JJ')" class="local_JJ" title="제주">제주</a>
+					<div class="sGnbArea2" style="top:40px">
+						<ul>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%A0%9C%EC%A3%BC%EC%8B%9C', 'JJ', '제주시');">제주시</a></li>
+												<li><a href="javascript:search_apply_link('http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0&amp;loca=JJ&amp;sub_loca=%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C', 'JJ', '서귀포시');">서귀포시</a></li>
+												</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="local_list" style="clear: left; height: 290px; max-width: 676px; position: relative;">
+			<ul class="bjqs" style="height: 290px; width: 100%; display: block;">
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						<!--고코추천 아이콘 삭제-->
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=GEZwGg'" style="cursor:pointer">
+							<span class="name">[특2급]▶베이튼호텔(Baition) </span>
+							<span class="localName">서울 중구 오장동</span>
+							<span class="price">57,200원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=GEZwGg"><img src="http://img.go.co.kr/S/list_main_011bn.jpg" width="676" height="285"></a>
+					</div>
+				</li><li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=Gkd4'" style="cursor:pointer">
+							<span class="name">[특2급] ★라마다서울</span>
+							<span class="localName">서울 강남구 삼성동</span>
+							<span class="price">55,200원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=Gkd4"><img src="http://img.go.co.kr/S/list_main_01bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=H05y'" style="cursor:pointer">
+							<span class="name">[1급] ▶이태원크라운호텔</span>
+							<span class="localName">용산구 이태원동 </span>
+							<span class="price">31,680원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=H05y"><img src="http://img.go.co.kr/S/list_main_06bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=GEpzEA=='" style="cursor:pointer">
+							<span class="name">[특2급] ▶베스트웨스턴프리미어구로</span>
+							<span class="localName">서울 구로구 구로3동 </span>
+							<span class="price">90,000원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=GEpzEA=="><img src="http://img.go.co.kr/S/list_main_07bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=HU5y'" style="cursor:pointer">
+							<span class="name">[특2급] 프로비스타호텔</span>
+							<span class="localName">서울 서초구 서초1동</span>
+							<span class="price">74,300원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=HU5y"><img src="http://img.go.co.kr/S/list_main_08bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: none;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=GEp4Ew=='" style="cursor:pointer">
+							<span class="name">[관광호텔] 더디자이너스호텔홍대</span>
+							<span class="localName">서울 마포구 서교동 </span>
+							<span class="price">70,000원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=GEp4Ew=="><img src="http://img.go.co.kr/S/list_main_09bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 290px; width: 100%; display: list-item;">
+					<div class="photo">
+						
+						<div class="txtBox" onclick="location.href='http://borogogo.co.kr/home/view/?p_no=HU5x'" style="cursor:pointer">
+							<span class="name">[레지던스] 역삼아르누보시티레지던스</span>
+							<span class="localName">서울 강남구 역삼동</span>
+							<span class="price">86,300원~</span>
+						</div>
+						<a href="http://borogogo.co.kr/home/view/?p_no=HU5x"><img src="http://img.go.co.kr/S/list_main_010bn.jpg" width="676" height="285"></a>
+					</div>
+				</li>
+			</ul>
+		<ul class="bjqs-controls v-centered"><li class="bjqs-prev"><a href="#" data-direction="previous" style="top: 41.2069%;"><img src="http://img.go.co.kr/btnPrevious.png" alt="이전"></a></li><li class="bjqs-next"><a href="#" data-direction="forward" style="top: 41.2069%;"><img src="http://img.go.co.kr/btnNext.png" alt="다음"></a></li></ul>
+			<ol class="bjqs-markers"><li class="active-marker"><a href="#">1</a></li><li class=""><a href="#">2</a></li><li class=""><a href="#">3</a></li><li class=""><a href="#">4</a></li><li class=""><a href="#">5</a></li><li class=""><a href="#">6</a></li><li class=""><a href="#">7</a></li></ol>
+		</div>		
+	</div>
+
+		
+	<!---추천 할인패키지 코딩변경---->
+	<div class="mainTicket" id="pack_list" style="height: 332px; max-width: 292px; position: relative;">
+		<div class="title">
+			<h3>추천 할인패키지</h3>
+			<ul class="bjqs" style="height: 332px; width: 100%; display: block;">
+				<li class="bjqs-slide" style="height: 332px; width: 100%; display: none;">
+					<div class="photo">
+						<a href="http://borogogo.co.kr/home/view/?p_no=G0dxEWYR">
+							<div class="d-fig">
+								<img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1461647622_main1.jpg" width="240" height="190">
+							</div>
+						<p class="name">곤지암리조트[林패키지-화담숲2인]</p>
+						<p><span class="price">195,700원~</span></p></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 332px; width: 100%; display: none;">
+					<div class="photo">
+						<a href="http://borogogo.co.kr/home/view/?p_no=G0Z0G2cR">
+							<div class="d-fig">
+								<img src="http://file.go.co.kr/tour/img3/BS_main.jpg" width="240" height="190">
+							</div>
+						<p class="name">켄트호텔 광안리 by 켄싱턴 + 2인라운지PKG</p>
+						<p><span class="price">85,400원~</span></p></a>
+					</div>
+				</li>
+				<li class="bjqs-slide" style="height: 332px; width: 100%; display: list-item;">
+					<div class="photo">
+						<a href="http://borogogo.co.kr/home/view/?p_no=G0hy">
+							<div class="d-fig">
+								<img src="http://file.go.co.kr/tour/img3/GB_main.jpg" width="240" height="190">
+							</div>
+						<p class="name">대구프린스호텔 + 2인조식PKG</p>
+						<p><span class="price">99,000원~</span></p></a>
+					</div>
+				</li>
+			</ul>			
+		</div>
+		<ol class="bjqs-markers"><li class=""><a href="#">1</a></li><li class="active-marker"><a href="#">2</a></li><li class=""><a href="#">3</a></li></ol>
+	</div>
+	
+	
+	</div>
+</div>	
+	
+<!--변경내용 별도 분리-->
+<div class="clr"></div>
+<div class="mainBox02_wrapper">
+	<div class="mainBox02 clr">
+	
+	
+		<!--171011 해외 지역별 인기 호텔 top: 80px 제거--->
+		<!--지역별 인기 숙소 clr 클래스 추가-->
+		<div class="localRecommend_global">
+			<div class="titleLocal clr">
+				<h3>해외 지역별 인기 호텔</h3>
+				<ul class="local" id="local_tab_abr">
+					<li><a href="javascript:listing.locallist_abr_ver2('JP')" class="local_JP on" title="일본">일본</a>
+						<div class="sGnbArea2" style="">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%8F%84%EC%BF%84">도쿄</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%EC%82%AC%EC%B9%B4">오사카</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4">후쿠오카</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%82%BF%ED%8F%AC%EB%A1%9C">삿포로</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EC%98%A4%ED%82%A4%EB%82%98%EC%99%80">오키나와</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B5%90%ED%86%A0">교토</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EA%B3%A0%EB%B2%A0">고베</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP&amp;sub_loca=%EB%82%98%EA%B3%A0%EC%95%BC">나고야</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('HK')" class="local_HK" title="홍콩/중국">홍콩/중국</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%ED%99%8D%EC%BD%A9">홍콩</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%A7%88%EC%B9%B4%EC%98%A4">마카오</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%B2%A0%EC%9D%B4%EC%A7%95">베이징</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%83%81%ED%95%98%EC%9D%B4">상하이</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%B9%AD%EB%8B%A4%EC%98%A4">칭다오</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EA%B4%91%EC%A0%80%EC%9A%B0">광저우</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%A0%EC%A0%84">선전</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EB%8B%A4%EB%A1%84">다롄</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%84%9C%EC%95%88">서안</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=CH&amp;sub_loca=%EC%98%8C%ED%83%80%EC%9D%B4">옌타이</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('AS')" class="local_AS" title="아시아">아시아</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%8B%B1%EA%B0%80%ED%8F%B4">싱가폴</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%B0%A9%EC%BD%95">방콕</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%B9%98%EC%95%99%EB%A7%88%EC%9D%B4">치앙마이</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%83%80%EC%9D%B4%ED%8E%98%EC%9D%B4">타이페이</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EB%A7%88%EB%8B%90%EB%9D%BC">마닐라</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%BF%A0%EC%95%8C%EB%9D%BC%EB%A3%B8%ED%94%84%EB%A5%B4">쿠알라룸프르</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%98%B8%EC%B9%98%EB%AF%BC">호치민</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%ED%95%98%EB%85%B8%EC%9D%B4">하노이</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%9E%90%EC%B9%B4%EB%A5%B4%ED%83%80">자카르타</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AS&amp;sub_loca=%EC%94%A8%EC%97%A0%EB%A6%BD">씨엠립</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('EU')" class="local_EU" title="유럽">유럽</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%8C%8C%EB%A6%AC">파리</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%B0%EB%8D%98">런던</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%A1%9C%EB%A7%88">로마</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9D%BC%ED%95%98">프라하</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%80%EB%9D%BC%EB%85%B8">밀라노</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98">바르셀로나</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%BC%EB%A0%8C%EC%B2%B4">피렌체</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84">베네치아</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%ED%94%84%EB%9E%91%ED%81%AC%ED%91%B8%EB%A5%B4%ED%8A%B8">프랑크푸르트</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=EU&amp;sub_loca=%EB%9F%AC%EC%8B%9C%EC%95%84">러시아</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('US')" class="local_US" title="미주">미주</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%98%B8%EB%86%80%EB%A3%B0%EB%A3%A8">호놀룰루</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%89%B4%EC%9A%95">뉴욕</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%9D%BC%EC%8A%A4%EB%B2%A0%EA%B0%80%EC%8A%A4">라스베가스</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4">로스앤젤레스</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%83%8C%ED%94%84%EB%9E%80%EC%8B%9C%EC%8A%A4%EC%BD%94">샌프란시스코</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%8B%9C%EC%B9%B4%EA%B3%A0">시카고</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EC%9B%8C%EC%8B%B1%ED%84%B4">워싱턴</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%EB%B2%A4%EC%BF%A0%EB%B2%84">벤쿠버</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=US&amp;sub_loca=%ED%86%A0%EB%A1%A0%ED%86%A0">토론토</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('AU')" class="local_PA" title="남태평양">남태평양</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EA%B4%8C">괌</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%82%AC%EC%9D%B4%ED%8C%90">사이판</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%8B%9C%EB%93%9C%EB%8B%88">시드니</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%A9%9C%EB%B2%84%EB%A5%B8">멜버른</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%98%A4%ED%81%B4%EB%9E%9C%EB%93%9C">오클랜드</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%81%AC%EB%9D%BC%EC%9D%B4%EC%8A%A4%ED%8A%B8%EC%B2%98%EC%B9%98">크라이스트처치</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%ED%80%B8%EC%A6%88%ED%83%80%EC%9A%B4">퀸즈타운</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EC%BD%94%EB%A1%A4">코롤</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AU&amp;sub_loca=%EB%82%9C%EB%94%94">난디</a></li>
+													</ul>
+						</div>
+					</li>				
+					<li><a href="javascript:listing.locallist_abr_ver2('AF')" class="local_AF" title="중동/아프리카">중동/아프리카</a>
+						<div class="sGnbArea2">
+							<ul>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EB%91%90%EB%B0%94%EC%9D%B4">두바이</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%95%84%EB%B6%80%EB%8B%A4%EB%B9%84">아부다비</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%9A%94%ED%95%98%EB%84%A4%EC%8A%A4%EB%B2%84%EA%B7%B8">요하네스버그</a></li>
+													<li><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=AF&amp;sub_loca=%EC%BC%80%EC%9D%B4%ED%94%84%ED%83%80%EC%9A%B4">케이프타운</a></li>
+													</ul>
+						</div>
+					</li>
+				</ul>
+				<!--더보기 위치 변경-->
+				<div class="btn"><a href="http://borogogo.co.kr/home/main/?dd=RB8pTQFKN1A0IUlLDA==&amp;loca=JP">+ 더보기</a></div>	
+			</div>
+			<!--리스트 지역베스트 이미지 삭제, _성급 텍스트 삭제-->
+			<div class="list" id="local_abr_list">
+				<ul class="photo">
+				<li>
+					<a href="http://borogogo.co.kr/home/view/?p_no=GE93FmwT&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/5000000/4990000/4980700/4980630/4980630_1_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]리잔 시파크 호텔 탄차 ...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">40,800원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li>
+				<li class="m_l20">
+					<a href="http://borogogo.co.kr/home/view/?p_no=GEdxFGYW&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/11000000/10410000/10409200/10409172/10409172_3_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]자탄 비치사이드 콘도미...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">34,900원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li>
+				<li class="m_l20">
+					<a href="http://borogogo.co.kr/home/view/?p_no=EUl0E2o=&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/4000000/3590000/3580400/3580323/3580323_1_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]호텔 신사이바시 라이온...</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">100,700원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li>
+				<li class="m_l20">
+					<a href="http://borogogo.co.kr/home/view/?p_no=GE93Em8f&amp;abr=XQw1Rg=="><div class="label"></div>
+					<table cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td><img src="http://cache.go.co.kr/media/220/images.travelnow.com/hotels/5000000/4970000/4960100/4960048/4960048_19_b.jpg" width="100%" height="220"></td>
+						</tr>
+						<tr>
+							<td><p>[일본]호텔 타이요</p><p><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-on.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-half.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"><img src="http://img.go.co.kr/star-off.png" width="21" style="width:21px;height:21px"></p><p class="price">11,200원~</p></td>
+						</tr>
+					</tbody></table></a>
+				</li></ul>		
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!--푸터-->
+<div class="footer bsLs ftfm-nt">
+	<div class="f-top">
+		<div class="f-policy cm-s">
+			<a href="javascript:utils.pop_open('http://borogogo.co.kr/home/policy/join_policy_pop.php', 'join_policy', '')" title="이용약관">이용약관</a>
+			<span class="mgl"></span>
+			<a href="javascript:utils.pop_open('http://borogogo.co.kr/home/policy/privacy_pop.php', 'privacy_policy', '')" title="개인정보처리방침">개인정보처리방침</a>
+			<span class="mgl"></span>
+			<a href="http://borogogo.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의">광고/입점/제휴문의</a>
+			<span class="mgl"></span>
+			<a href="http://borogogo.co.kr/home/customer/" title="고객센터">고객센터</a>
+		</div>
+	</div>
+
+	
+	<div class="f-area">
+		<address class="cm-s">
+			<strong>(주)이엔자산개발</strong>
+			<br>
+			대표이사 : 박기범<span class="mgl"></span>주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동, 모노팰리스)
+			<br>
+			사업자등록번호 : 312-86-20373<a class="busInf" href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=8848800084" target="_blank">사업자정보확인<span class="gt">&gt;</span></a>
+			<br>
+			통신판매업 : 제2011-충남아산-00010호<span class="mgl"></span>여행업등록번호 : 제2017-34호
+			<br>
+			여행영업보증서 : 국내여행 제100-000-2015 0299 0337호
+			<br>
+			고객상담 : 1666-1783
+		</address>
+		<small class="cm-s">copyright 2015 by BOROGOGO.CO.KR co., all rights reserved.</small>
+		<div class="f-certImg cm-s">
+			<a href="javascript:util.regist_pop('registration02')"><img src="http://img.borogogo.co.kr/renew/f_linkImg_02.jpg" border="0" alt="관광업등록증"></a>
+			<a href="javascript:util.regist_pop('registration01')"><img src="http://img.borogogo.co.kr/renew/f_linkImg_03.jpg" border="0" alt="서울보증보험"></a>
+			<img src="http://img.borogogo.co.kr/renew/f_linkImg_04.jpg" border="0" alt="신용카드결제">
+			<img src="http://img.borogogo.co.kr/renew/f_linkImg_05.jpg" border="0" alt="휴대폰결제">
+			<img src="http://img.borogogo.co.kr/renew/f_linkImg_06.jpg" alt="공정거래위원회" onclick="onopen();" style="cursor:pointer">
+		</div>
+	</div>
+</div>
+	
+	
+
+	
+</body>
+</html>
+
