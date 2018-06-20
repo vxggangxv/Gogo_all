@@ -19,8 +19,8 @@
 <!-- 모든사이트 통합 css -->
 <link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
 <!-- 리뉴얼 css -->
-<!--<link rel="stylesheet" href="http://static.didimtour.co.kr/css/mobile_layout3.css" type="text/css"/> -->
-<link rel="stylesheet" href="../src/css/mobile_layout3.css" type="text/css"/> 
+<link rel="stylesheet" href="http://static.didimtour.co.kr/css/mobile_layout3.css" type="text/css"/> 
+<!--<link rel="stylesheet" href="../src/css/mobile_layout3.css" type="text/css"/> -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -66,23 +66,23 @@
 			</div>
 				
 			<div id="sub_search" class="">
-				<div class="todayment">
-					오늘 바로 예약을 원하세요?
-					<div class="link"><a href="/home/map/?dd=RB8wfDNf">
-					<img src="http://img.go.co.kr/mobile/icon_location_white.png" class="icon"> 현재 내 주변 숙소검색</a></div>
-				</div>
+				<h2 class="h-logo">
+					<figure>
+						<img src="http://img.didimtour.co.kr/renew/logo_didim.png" alt="디딤투어로고">
+					</figure>
+					<strong>빠르고 쉬운 예약사이트 디딤투어</strong>
+				</h2>
+				
 
-				<div class="wrap">
+				<div class="wrap clr">
 					<div class="select">
 						<form name="test_form" id="test_form" method="get" action="/home/main/">
 						<input type="hidden" name="dd" value="RB8pTQFKN1A0IVtMHzJANg==">
 						<div class="select05" id="search_new_go">
 
-						<input name="hotel_detail" class="int" id="sub_keyword" type="text" autocomplete="off" onkeypress="if(event.keyCode == 13) { keyword_submit2(this.value, 'mobile', 'S', '', '서울 '); return false;  }" readonly="" placeholder="지역/숙소명/여행지명을 입력해주세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '지역/숙소명/여행지명을 입력해주세요'">
+							<input name="hotel_detail" class="int" id="sub_keyword" type="text" autocomplete="off" onkeypress="if(event.keyCode == 13) { keyword_submit2(this.value, 'mobile', 'S', '', '서울 '); return false;  }" readonly="" placeholder="도시명/국가 또는 호텔명을 입력해주세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '지역/숙소명/여행지명을 입력해주세요'">
+						
 						<!--<a href="javascript:keyword_submit2(this.value, 'mobile', 'S', '', '서울 '); " title="빠른검색">-->
-						<a href="#">
-							<img src="http://img.go.co.kr/mobile/main_search_icon.png" height="20" class="calendar2" style="margin-top:5px">
-						</a>
 						<!--
 						<input name="hotel_detail" class="int" id="sub_keyword" type="text" autocomplete="off" onkeypress="if(event.keyCode == 13) { keyword_submit(); return false;  }" placeholder="지역/숙소명/여행지명을 입력해주세요"  onfocus="this.placeholder = ''" onblur="this.placeholder = '지역/숙소명/여행지명을 입력해주세요'" />
 						<a href="javascript:keyword_submit(); " title="빠른검색"><img src="http://img.go.co.kr/mobile/main_search_icon.png" height="20" class="calendar2" style="margin-top:5px"></a>
@@ -137,11 +137,20 @@
 						</form>
 					</div>
 				</div>
-				<div class="btn">
+				<div class="btn clr">
 					<div class="reset"><a href="#" id="reset">초기화</a></div> 
-					<div class="search"><a href="javascript:$('#sub_sform').submit();"><img src="http://img.go.co.kr/mobile/icon_search.png" width="24"> 검색</a></div>
+					<div class="search"><a href="javascript:$('#sub_sform').submit();"><img src="http://img.didimtour.co.kr/renew/i_mag.png" alt="검색"> 검색</a></div>
 				</div>
 			</div>
+			
+			<section class="quickChoice">
+				<ul class="menu cf">
+					<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_bag.png" alt="숙박"><span class="txt">국내숙박</span></a></li>
+					<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_globe.png" alt="해외"><span class="txt">해외숙박</span></a></li>
+					<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_cycle.png" alt="레저"><span class="txt">레저/입장권</span></a></li>
+					<li><a href="javascript:;"><img src="http://img.didimtour.co.kr/renew/i_ticket.png" alt="공연"><span class="txt">공연/전시</span></a></li>
+				</ul>
+			</section>
 			
 			<div id="info_img">
 				<div class="swiper-container swiper-container-horizontal swiper-container-android">
