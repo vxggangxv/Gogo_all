@@ -39,18 +39,19 @@ button[type=button], button[type=submit] {cursor: pointer;}
 .rn-container {width: 1200px; margin: 0 auto;}
 
 /* 푸터 */
-.footer {position: relative; width: 100%; background: #eee;}
-.footer .mgl {margin: 0 10px; width: 1px; height: 15px; background: #878686; top: -1px;}
-.footer .f-top {width: 100%; border-bottom: 1px solid #dcdcdc; height: 65px; padding-top: 24px;}
-.footer .f-policy a, .footer .cm-s, .footer .busInf {color: #595858; font-size: 14px;}
-.footer .cm-s {width: 1002px; margin: 0 auto; text-align: center;}
-.footer .f-area {padding: 24px 0 15px; line-height: 1.6;}
+.footer {position: relative; width: 100%; background: #f74163; padding-bottom: 50px;}
+.footer .mgl {margin: 0 10px; width: 1px; height: 15px; background: #fff; top: -1px;}
+.footer .f-top {width: 100%; height: 65px; padding-top: 24px;}
+.footer .f-policy a, .footer .cm-s, .footer .busInf {color: #fff; font-size: 16px;}
+.footer .cm-s {width: 1002px; margin: 0 auto; text-align: center; font-size: 16px;}
+.footer .f-area {padding: 15px 0; line-height: 1.8;}
 .footer address .mgl {margin: 0 6px;}
-.footer address strong {font-size: 18px;}
+.footer address strong {font-size: 30px;}
 .footer .busInf {position: relative; display: inline-block; font-size: 13px; padding: 0px 5px; border: 1px solid #646464; margin-left: 10px;}
 .footer .busInf span {position: relative; top: -2px;font-family: "Nanum Gothic", sans-serif; font-size: 10px; font-weight: 700; margin-left: 5px;}
 .footer .f-certImg {margin-top: 10px;}
-.footer small.cm-s {display: block; margin-top: 10px; color: #a9a7a7;}
+.footer small.cm-s {display: block; margin-top: 10px; color: #fff;}
+.footer address + .p-1 {margin-top: 20px;}
 
 
 /* 달력 색상수정 */
@@ -80,9 +81,11 @@ button[type=button], button[type=submit] {cursor: pointer;}
 #top2 .link a {font-size: 13px; line-height: 1.2; color: #888787;}
 #top2 .link a:hover {color: #e95791;}
 
-#mainBox02_wrapper {padding: 40px 0 0 0; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;  margin-top: 100px;}
-#mainBox02_wrapper #mainBox02 .mainTicket .photo .d-fig {display: block; width: 187px; height: 187px; margin: 0 auto; overflow: hidden; border-radius: 50%; color: #000;}
-#mainBox02_wrapper #mainBox02 .mainTicket .photo .d-fig img {position: relative; left: -26.5px;}
+#mainBox02_wrapper {padding: 40px 0 0 0; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;  margin-top: 95px; position: relative;}
+
+#mainBox02_wrapper #mainBox02 {position: relative; width: 1200px; background: #fff; padding: 20px 15px 0; box-sizing: border-box;}
+#mainBox02_wrapper #mainBox02 .mainTicket .photo .d-fig {display: block; width: 187px; height: 187px; margin: 0 auto; overflow: hidden; color: #000;}
+#mainBox02_wrapper #mainBox02 .mainTicket .photo .d-fig img {position: relative;}
 #mainBox02_wrapper #mainBox02 .mainTicket .photo a
 , #mainBox02_wrapper #mainBox02 .mainTicket .photo .price {color: #000;}
 #mainBox02_wrapper #mainBox02 .mainTicket .photo .price
@@ -90,7 +93,7 @@ button[type=button], button[type=submit] {cursor: pointer;}
 
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal h3
 , #mainBox02_wrapper #mainBox02 .mainTicket .title h3 {font-size: 28px; color: #000; font-weight: 400;}
-#mainBox02_wrapper #mainBox02 .localRecommend, #mainBox02_wrapper #mainBox02 .mainTicket {margin-bottom: 50px;}
+#mainBox02_wrapper #mainBox02 .localRecommend, #mainBox02_wrapper #mainBox02 .mainTicket {margin-bottom: 30px;}
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local {position: relative;}
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local > li > a {color: #595858; font-weight: 400; }
 #mainBox02_wrapper #mainBox02 .localRecommend .titleLocal .local > li > a:before {position: relative; content: ""; display: inline-block; width: 1px; height: 13px; background: #d0cfce; top: 2px; margin: 0 6px 0 -6px;}
@@ -116,14 +119,14 @@ button[type=button], button[type=submit] {cursor: pointer;}
 .local_list .bjqs-next {position:absolute;top:80px;right:15px;bottom:0;height:51px; width:28px}
 
 #pack_list ol.bjqs-markers {width:50px}
-#pack_list ol.bjqs-markers li a{display:inline-block;text-indent:-9999px;color:#ffffff;font-weight:bold;width:11px; height:11px; margin-left:5px;background:url(http://img.go.co.kr/btndot.png) 0 0 no-repeat;}
+#pack_list ol.bjqs-markers li a{display:inline-block;text-indent:-9999px;color:#ffffff;font-weight:bold; width:8px; height:8px; margin-left:5px; background: #c2c2c2; border-radius: 50%;}
 ol.bjqs-markers li.active-marker a
 , ol.bjqs-markers li a:hover
 , #pack_list ol.bjqs-markers li.active-marker a
-, #pack_list ol.bjqs-markers li a:hover { width: 11px; height: 11px; border-radius: 50%; background: #e95791;}
+, #pack_list ol.bjqs-markers li a:hover { width: 8px; height: 8px; background: #e95791;}
 
 
-.mainBox02_wrapper .mainBox02 {width: 100%; margin-top: 10px;}
+.mainBox02_wrapper .mainBox02 {position: relative; width: 1200px; background: #fff; padding-bottom: 40px; margin-bottom: 100px;}
 .mainBox02_wrapper .mainBox02 .themeRoom {width: 1002px;}
 .mainBox02_wrapper .mainBox02 .themeRoom ul {width: 1264px; margin-left: -131px; margin-top: 35px;}
 .mainBox02_wrapper .mainBox02 .themeRoom h3 {font-size: 24px;}
@@ -134,7 +137,7 @@ ol.bjqs-markers li.active-marker a
 
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global {width: 100%;}
-.mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal {border-bottom: none; padding-bottom: 10px;}
+.mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal {border-bottom: none; padding-bottom: 10px; width: 100%; padding-left: 15px; padding-right: 15px; box-sizing: border-box;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal h3 {color: #000; font-size: 24px; float: left; font-weight: 500;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local {width: auto; box-sizing: border-box; float: left; margin-left: 160px;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .local > li {position: relative; width: auto; height: auto;
@@ -151,15 +154,16 @@ box-sizing: border-box; margin: 0 15px;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .btn a {position: relative; float: right; display: block; width: 72px; height: 23px; color: #888787; border: 1px solid #999; text-align: center; border-radius: 12px; line-height: 23px; top: 8px;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .titleLocal .btn a:hover {border-color: #e95791; color: #e95791;}
 
-.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo {width: 1002px;}
-.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo .m_l20 {margin-left: 27px;}
+.mainBox02_wrapper .mainBox02 .localRecommend_global .list,
+.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo {width: 1200px; padding: 0 15px; box-sizing: border-box;}
+.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo .m_l20 {margin-left: 23px;}
 /*#mainBox02_wrapper #mainBox02 .localRecommend_global .list .photo li {border: 1px solid #d3d3d3;}*/
-.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li {width: 230px; border-color: #fff;}
+.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li {width: 275px; border-color: #fff;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li:hover {border-color: #e95791;}
-.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li table {width: 228px;}
+.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo li table {width: 275px; height: 250px;}
 
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo p {font-weight: 500; font-size: 16px;}
-.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo p:first-child {margin-top: 5px;}
+.mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo p:first-child {margin-top: 5px; font-size: 18px;}
 .mainBox02_wrapper .mainBox02 .localRecommend_global .list .photo .price {color: #e563a4; font-weight: 16; font-weight: 500;}
 
 
@@ -436,14 +440,36 @@ background-position: right 10px bottom 34px;}
 .dd-main .dd-search .btn-search {margin-left: 10px; left: 10px; top: -4px;}
 
 /*퀵초이스*/
-.quickChoice {width: 1080px; margin: 0 auto; margin-top: 110px;}
-.quickChoice .dd-tit {position: relative; display: inline-block; padding: 10px 18px; background: #fff; text-transform: uppercase; font-size: 20px; height: 50px;}
-.quickChoice .dd-tit:before, .quickChoice .dd-tit:after {content: ""; display: block; position: absolute; top: 0; right: -50px; border: 25px solid transparent;}
-.quickChoice .dd-tit:before {border-left-color: #fff;}
-.quickChoice .dd-tit:after {border-bottom-color: #fff;}
+.quickChoice {position: relative; width: 1080px; margin: 0 auto; margin-top: 110px;}
+.quickChoice:before {content: ""; display: block; position: absolute; bottom: -10px; right: -10px; border: 10px solid transparent; border-left-color: #d5d5d5; }
+.quickChoice .dd-tit, #mainBox02_wrapper .dd-tit {position: relative; display: inline-block; padding: 10px 18px; background: #fff; text-transform: uppercase; font-size: 20px; height: 50px; box-sizing: border-box;}
+.quickChoice .dd-tit:before, #mainBox02_wrapper .dd-tit:before {content: ""; display: block; position: absolute; top: 0; right: -50px; border: 50px solid transparent;}
+.quickChoice .dd-tit:before {border-left-color: #fff; right: -100px;}
+#mainBox02_wrapper .dd-tit:before {border-right-color: #fff; left: -100px;}
 .quickChoice .menu {position: relative; background: #fff; height: 180px;}
 .quickChoice .menu > li {position: relative; float: left; width: 180px; text-align: center; height: 100%;}
 .quickChoice .menu > li.on, .quickChoice .menu > li:hover {-webkit-box-shadow: 0 0 10px 1px rgba(0,0,0, .15); box-shadow: 0 0 10px 1px rgba(0,0,0, .2); z-index: 1;}
-.quickChoice .menu > li > a {display: block; width: 100%; height: 100%; padding-top: 40px;}
+.quickChoice .menu > li > a {display: block; width: 100%; height: 100%; padding-top: 42px;}
 .quickChoice .menu > li .txt {position: absolute; width: 100%; bottom: 35px; left: 0; display: block; font-size: 16px;}
+.quickChoice .bg-1 {display: block; position: absolute; bottom: -135px; left: 410px; width: 325px; height: 135px; background: #fff; opacity: 0.25; filter: alpha(opacity=25); -webkit-transform: skewX(-45deg); -ms-transform: skewX(-45deg); -o-transform: skewX(-45deg); transform: skewX(-45deg);}
 
+/*베스트초이스*/
+#mainBox02_wrapper .dd-tit {background: #fff; position: absolute; right: 0; top: -50px; padding-left: 35px;}
+#mainBox02_wrapper .dd-tit:before {right: auto; }
+#mainBox02_wrapper #mainBox02 .localRecommend, 
+#mainBox02_wrapper #mainBox02 .mainTicket .photo,
+#mainBox02_wrapper #mainBox02 .localRecommend .photo {height: 350px;}
+#mainBox02_wrapper #mainBox02 .localRecommend,
+#mainBox02_wrapper #mainBox02 .localRecommend .photo,
+#mainBox02_wrapper #mainBox02 .localRecommend .photo .txtBox {width: 825px;}
+#mainBox02_wrapper #mainBox02 .mainTicket,
+#mainBox02_wrapper #mainBox02 .mainTicket .title,
+#mainBox02_wrapper #mainBox02 .mainTicket .photo,
+#mainBox02_wrapper #mainBox02 .mainTicket .photo .d-fig {width: 315px;}
+#mainBox02_wrapper #mainBox02 .mainTicket {}
+#mainBox02_wrapper #mainBox02 .mainTicket .photo {background: none; border: 1px solid #d7d7d7; box-sizing: border-box; padding: 0;}
+#mainBox02_wrapper #mainBox02 .mainTicket .photo .d-fig {height: 225px;}
+#mainBox02_wrapper #mainBox02 .localRecommend .photo {}
+#mainBox02_wrapper #mainBox02 .mainTicket .photo .name {padding-top: 35px; font-size: 18px; margin-bottom: 5px;}
+#mainBox02_wrapper #mainBox02 .mainTicket .photo .price {font-weight: 700; display: inline-block;}
+#mainBox02_wrapper #mainBox02 .localRecommend .titleLocal {width: 100%;}

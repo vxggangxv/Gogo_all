@@ -11,80 +11,36 @@
 <!--숫자인식,메일주소,지도상의 주소링크 막기-->
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
-<link rel="apple-touch-icon" href="http://img.borogogo.co.kr/mobile/icon.png"> 
-<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20171019122900" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/moblie_reset.css?ver=20171019122900" type="text/css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css?ver=20171019122900" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css" type="text/css">
 
 <!-- 모든사이트 통합 css -->
-<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css?ver=20171019122900" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
 <!-- 리뉴얼 css -->
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/mobile_layout3.css" type="text/css"/> 
-
-<meta name="robots" content="ALL">
-<meta name="author" content="BOROGOGO.CO.KR">
-<meta name="description" content=" 바로고고 BOROGOGO.CO.KR">
-<meta name="keywords" content=" 바로고고 BOROGOGO.CO.KR">
-<meta name="classification" content="바로고고 BOROGOGO.CO.KR">
+<!--<link rel="stylesheet" href="http://static.didimtour.co.kr/css/mobile_layout3.css" type="text/css"/> -->
+<link rel="stylesheet" href="../src/css/mobile_layout3.css" type="text/css"/> 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <!--- 검색시 달력에서 이용 -->
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/jquery-ui.css">
+<link rel="stylesheet" href="http://static.didimtour.co.kr/css/jquery-ui.css">
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--- 달력 한글화 -->
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/datepicker_ko.js"></script>
+<script type="text/javascript" src="http://static.didimtour.co.kr/js/datepicker_ko.js"></script>
 
 
-	<!-- Android icon -->
-	<!--<link rel="shortcut icon" href="http://img.borogogo.co.kr/icon_goco128x128.ico" type="image/x-icon" />-->
-	<link rel="shortcut icon" href="http://img.borogogo.co.kr/mobile/icon_goco72x72.png" type="image/x-icon">
-	<!-- iPhone icon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="http://img.borogogo.co.kr/mobile/icon_goco57x57.png">
-	<!-- iPad icon -->
-	<link rel="apple-touch-icon" sizes="72x72" href="http://img.borogogo.co.kr/mobile/icon_goco72x72.png">
-	<!-- iPhone icon(Retina) -->
-	<link rel="apple-touch-icon" sizes="114x114" href="http://img.borogogo.co.kr/mobile/icon_goco114x114.png">
-	<!-- iPad icon(Retina) -->
-	<link rel="apple-touch-icon" sizes="144x144" href="http://img.borogogo.co.kr/mobile/icon_goco144x144.png">
-<script type="text/javascript">
-$( document ).on( "mobileinit", function() {
-  $.extend( $.mobile , {
-	autoInitializePage: false,
-  });
-});
-
-// iOS 10 버전에서 user-scalable=0 가 안먹음
-document.documentElement.addEventListener('touchstart', function (event) {
-  if (event.touches.length > 1) {
-    event.preventDefault();
-  }
-}, false);
-
-</script>
-
-<script>
-
-var burl = "borogogo.co.kr";
-var agent = "W";
-var do2_url = "http://www.borogogo.co.kr";
-/* 쿠키 60분 */
-var date = new Date(); 
-var minutes = 120; 
-date.setTime(date.getTime() + (minutes * 60 * 1000)); 
-</script>
 <!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>-->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20171019122900"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/common_ver2.js?ver=20171019122900"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/iscroll.js?ver=20171019122900"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://static.didimtour.co.kr/js/common_ver2.js"></script>
+<script type="text/javascript" src="http://static.didimtour.co.kr/js/iscroll.js"></script>
+<script type="text/javascript" src="http://static.didimtour.co.kr/js/jquery.cookie.js"></script>
 
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.raty.js"></script>
+<script type="text/javascript" src="http://static.didimtour.co.kr/js/jquery.raty.js"></script>
 
 <!--- 리스트페이지에서 쓸 스크립트-->
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/swiper.min.js?ver=20171019122900"></script>
+<script type="text/javascript" src="http://static.didimtour.co.kr/js/swiper.min.js"></script>
 <!--- 리스트페이지에서 쓸 스크립트-->
 
 <script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
@@ -93,132 +49,169 @@ date.setTime(date.getTime() + (minutes * 60 * 1000));
 </head>
 
 <body>
-<div class="m_wrapper clr">
-<!-- 헤더 -->
-	<div class="m_header">
-	<h1 class="logo"><img src="http://img.borogogo.co.kr/mobile/171019_renew/logo.png" alt="바로고고"></h1>
-		<button type="text" class="all_menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-		<div class="header_left_bt">
-			<span class="top_bt">내주변</span>
-		</div>
-	</div>	
-  <!-- 상단검색 및 메인 -->
-	<div class="m_main">
-		<h2 class="m_tit">어디로 떠나볼까요?</h2>
-		  <div class="sch_wrap">
-			<form method="post" action="" name="frm">
-				<input type="text" value="" name="searc_txt" class="schtxt" placeholder="지역/숙소명/여행지를 입력해주세요">
-				</input>
-			</form>	
-			<div class="select_bx">
-				<input name="seach1" class="date" placeholder="2017-10-16">
-				<select name="seach2" class="r_type"><option value>숙박유형</option></select>
-				<p class="sch_bt">검색</p>
-			 </div>
-		</div>
-	</div>
-<!-- 지역별인기숙소 -->
-	<div class="m_sect_wrap">
-		<h2>지역별 인기숙소</h2>
-		<div class="sect_box_wrap">
-			<div class="sect_img1">
-				<ul class="clr">
-					<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/city1.png" alt="바로고고"></a>
-					</li>
-					<li class="i_left">
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/city2.png" alt="바로고고"></a>
-					</li>
-				</ul>
-			</div>		
-			<div class="sect_img2">
-				<ul class="clr">
-					<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/city3.png" alt="바로고고"></a>
-					</li>
-					<li class="i_left">
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/city4.png" alt="바로고고"></a></li>
-				</ul>	
+
+	<h1 class="hidden">디딤투어</h1>
+	<div id="wrapper">
+		<div id="scroll_box">
+		
+			<div class="m_header">
+				<button type="text" class="all_menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="header_left_bt">
+					<span class="top_bt">내주변 <span class="ic-rArrow rArrow"></span></span>
+				</div>
 			</div>
-		</div>
-	</div>
-<!-- 바로가기아이콘 -->	
-	<div class="icon_wrap">
-		<div class="ico_list">
-			<ul class="list_1 clr">
-				<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/i_my_01.png"></a>
-					<p>나의 예약상태</p>
-				</li>
-				<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/i_my_03.png"></a>
-					<p>예약변경/취소</p>
-				</li>
-				<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/i_my_06.png"></a>
-					<p>1:1문의/내역</p>
-				</li>
-			</ul>
-			<ul class="list_2 clr">
-				<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/i_my_04.png"></a>
-					<p>시설이용안내</p>
-				</li>
-				<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/i_my_05.png"></a>
-					<p>예약진행절차</p>
-				</li>
-				<li>
-					<a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/i_my_02.png"></a>
-					<p>자주묻는질문</p>
-				</li>
-			</ul>
-		</div>
-	</div>
-<!-- 푸터 -->
-<div class="footer">
-	<div class="footerin">
-		<div class="f-top_bt clr">
-			<ul class="clr">
-				<li><a href="#">로그인</a></li>
-				<li><a href="#">PC버전</a></li>
-				<li><a href="#">고객센터</a></li>
-			</ul>
+				
+			<div id="sub_search" class="">
+				<div class="todayment">
+					오늘 바로 예약을 원하세요?
+					<div class="link"><a href="/home/map/?dd=RB8wfDNf">
+					<img src="http://img.go.co.kr/mobile/icon_location_white.png" class="icon"> 현재 내 주변 숙소검색</a></div>
+				</div>
+
+				<div class="wrap">
+					<div class="select">
+						<form name="test_form" id="test_form" method="get" action="/home/main/">
+						<input type="hidden" name="dd" value="RB8pTQFKN1A0IVtMHzJANg==">
+						<div class="select05" id="search_new_go">
+
+						<input name="hotel_detail" class="int" id="sub_keyword" type="text" autocomplete="off" onkeypress="if(event.keyCode == 13) { keyword_submit2(this.value, 'mobile', 'S', '', '서울 '); return false;  }" readonly="" placeholder="지역/숙소명/여행지명을 입력해주세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '지역/숙소명/여행지명을 입력해주세요'">
+						<!--<a href="javascript:keyword_submit2(this.value, 'mobile', 'S', '', '서울 '); " title="빠른검색">-->
+						<a href="#">
+							<img src="http://img.go.co.kr/mobile/main_search_icon.png" height="20" class="calendar2" style="margin-top:5px">
+						</a>
+						<!--
+						<input name="hotel_detail" class="int" id="sub_keyword" type="text" autocomplete="off" onkeypress="if(event.keyCode == 13) { keyword_submit(); return false;  }" placeholder="지역/숙소명/여행지명을 입력해주세요"  onfocus="this.placeholder = ''" onblur="this.placeholder = '지역/숙소명/여행지명을 입력해주세요'" />
+						<a href="javascript:keyword_submit(); " title="빠른검색"><img src="http://img.go.co.kr/mobile/main_search_icon.png" height="20" class="calendar2" style="margin-top:5px"></a>
+						-->
+						</div>
+						</form>
+							<!--onkeyup="utils.loca_auto_sel2(this.value, 'mobile')"-->
+
+						<!--
+									<form name="sub_sform" id="sub_sform" method="post" action="/home/main/?dd=RB8pTQFKN1A0">
+									-->
+						<form name="sub_sform" id="sub_sform" method="post" action="/home/main/?dd=RB8pTQFKN1A0">
+						<input type="hidden" name="city_1" id="city_1" value="S">
+						<input type="hidden" name="sub_loca" id="city_2" value="">
+						<input type="hidden" name="sdate" id="check_in" value="2018-06-20">
+						<input type="hidden" name="edate" id="check_out" value="2018-06-21">
+						<input type="hidden" name="local_txt" id="local_txt" value="서울 ">
+
+
+						<div class="select_local" onclick="location.href='/home/search/?dd=RR85Rix5MkwjH0R2ECVU&amp;gubun=inter_div&amp;prev_city1='+$('#city_1').val()+'&amp;prev_city2='+$('#city_2').val()+''"> 
+						<!--
+						<div class="select_local" onclick="location.href='/home/search/?dd=RR85Rix5MkwjH0Q=&gubun=inter_div&prev_city1='+$('#city_1').val()+'&prev_city2='+$('#city_2').val()+'&prev_sdate='+$('#check_in').val()+'&prev_edate='+$('#check_out').val()+''">-->
+
+							<span id="city_1_choice">서울 </span> <img src="http://img.go.co.kr/mobile/select_box.jpg" height="23" class="calend">
+						</div>
+						<div class="select_day" onclick="location.href='/home/search/?dd=RR85Rix5PUIsG0ZNGzI=&amp;gubun=inter_div&amp;prev_sdate='+$('#check_in').val()+'&amp;prev_edate='+$('#check_out').val()+''">
+							<span id="sdate_choice">2018-06-20</span> <img src="http://img.go.co.kr/mobile/icon_reserInfo.jpg" height="18" class="calend">
+						</div>
+						<div class="select_room" onclick="$('#ttype_layer').toggle();">
+							<span id="ttype_choice">숙박유형</span> <img src="http://img.go.co.kr/mobile/select_box.jpg" height="23" class="calend">
+						</div>
+
+						<div class="select06" id="ttype_layer" style="display:none">
+										<table class="category">
+								<tbody><tr>
+									<td class="all_on ons" id="ttype_all">전체</td>
+									<td class="hotel" id="ttype_hotel">호텔</td>
+									<td id="ttype_residance" class="residance">레지던스</td>
+									<td class="resort" id="ttype_resort">리조트/콘도</td>
+
+								</tr>
+								<tr><td colspan="4" height="1" class="line"></td>
+								</tr>
+								<tr>
+									<td class="motel" id="ttype_motel">모텔</td>
+									<td class="pension" id="ttype_pension">펜션</td>
+									<td class="guest" id="ttype_guest">게스트하우스</td>
+									<td class="youth" id="ttype_youth">유스호스텔</td>						
+								</tr>
+							</tbody></table>
+						</div>
+						</form>
+					</div>
+				</div>
+				<div class="btn">
+					<div class="reset"><a href="#" id="reset">초기화</a></div> 
+					<div class="search"><a href="javascript:$('#sub_sform').submit();"><img src="http://img.go.co.kr/mobile/icon_search.png" width="24"> 검색</a></div>
+				</div>
+			</div>
+			
+			<div id="info_img">
+				<div class="swiper-container swiper-container-horizontal swiper-container-android">
+					<div class="swiper-wrapper" style="transform: translate3d(-1080px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" onclick="location.href='http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uGUcHHS8NNVRxSy8TTQYSIU06TzBEb0FMTUMUVClWDEkCPWR4Q30='" data-swiper-slide-index="6" style="width: 360px;">
+							<img src="http://img.go.co.kr/mobile/fr_main_bn.jpg" width="100%">
+						</div>
+
+
+										<div class="swiper-slide" onclick="location.href='http://m.go.co.kr/home/landing/push/?dd=Th8uRClJMHxxRhgdT3k='" data-swiper-slide-index="0" style="width: 360px;">
+								<img src="http://img.go.co.kr/mobile/landing/20180418_gangwon/bn.jpg?ver=20180620112758" width="100%">
+							</div>
+										<div class="swiper-slide swiper-slide-prev" onclick="location.href='http://m.go.co.kr/home/landing/push/?dd=QxsqVgEXZhNyTxs='" data-swiper-slide-index="1" style="width: 360px;">
+								<img src="http://img.go.co.kr/mobile/landing/20180212_jejutravel/bn.jpg?ver=20180620112758" width="100%">
+							</div>
+										<div class="swiper-slide swiper-slide-active" onclick="location.href='http://m.go.co.kr/home/view/?p_no=HE93'" data-swiper-slide-index="2" style="width: 360px;">
+								<img src="http://img.go.co.kr/mobile/ocean_main_bn.jpg?ver=20180620112758" width="100%">
+							</div>
+										<div class="swiper-slide swiper-slide-next" onclick="location.href='http://m.go.co.kr/home/view/?p_no=HE5w'" data-swiper-slide-index="3" style="width: 360px;">
+								<img src="http://img.go.co.kr/hyundaesu_mobile.jpg?ver=20180620112758" width="100%">
+							</div>
+										<div class="swiper-slide" onclick="location.href='http://m.go.co.kr/home/landing/?dd=SBIsfC5UN0AlIRkeTnc='" data-swiper-slide-index="4" style="width: 360px;">
+								<img src="http://img.go.co.kr/mobile/landing/20170703_price_all/price_all_main_bn.jpg?ver=20180620112758" width="100%">
+							</div>
+										<div class="swiper-slide" onclick="location.href='http://m.go.co.kr/home/landing/?dd=SxcyVzZ5PUw1DkdH'" data-swiper-slide-index="5" style="width: 360px;">
+								<img src="http://img.go.co.kr/mobile/landing/mobile_birth.jpg?ver=20180620112758" width="100%">
+							</div>
+									<div class="swiper-slide" onclick="location.href='http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uGUcHHS8NNVRxSy8TTQYSIU06TzBEb0FMTUMUVClWDEkCPWR4Q30='" data-swiper-slide-index="6" style="width: 360px;">
+							<img src="http://img.go.co.kr/mobile/fr_main_bn.jpg" width="100%">
+						</div>
+					<div class="swiper-slide swiper-slide-duplicate" onclick="location.href='http://m.go.co.kr/home/landing/push/?dd=Th8uRClJMHxxRhgdT3k='" data-swiper-slide-index="0" style="width: 360px;">
+								<img src="http://img.go.co.kr/mobile/landing/20180418_gangwon/bn.jpg?ver=20180620112758" width="100%">
+							</div></div>
+					<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+				</div>
+			</div>
+			
 		</div>
 		
-		<div class="f-top">
-			<a heft="#">회사소개</a>
-			<span class="mgl">&nbsp;|</span>
-			<a heft="#">이용약관</a>
-			<span class="mgl">&nbsp;|</span>
-			<a heft="#">개인정보처리방침</a>
+		
+		<!--푸터-->
+		<div class="clr"></div>
+		<div id="Footer" class="footer">
+			<ul class="f-menu">
+				<li><a href="http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uGUcHHS8NNVRxSy8TTQYTIUowCQ==">로그인</a></li>
+				<li><a href="http://www.go.co.kr?ver=pc">PC버전</a></li>
+				<li><a href="http://m.go.co.kr/home/customer/?dd=QBA0UTE=">고객센터</a></li>
+				<li><a href="javascript:navi.move_home();" class="move_top">TOP <span>▲</span></a></li>
+			</ul>
+			<div class="f-area">
+				<address>
+					<p>
+						<strong>(주)이비즈에셋</strong><br>
+						대표이사 : 김병종 <span class="mg-l">l</span> 주소 : 서울특별시 강남구 테헤란로82길 15, 15층(대치동, 디아이타워)<br>
+						사업자등록번호 : 865-87-00164<br>
+						통신판매업 : 제2017-서울강남-00561호 <span class="mg-l">l</span> 여행업등록번호 : 제2015-31호<br>
+						여행영업보증서 : 국내여행 제100-000-2015 0298 6652호<br>
+						대표번호 : 1666-7320
+					</p>
+				</address>
+				<P class="cm-s p-1">
+					디딤투어는 통신판매중개자로서 통신판매 당사자가 아닙니다.<br>
+					따라서 디딤투어는 상품정보 및 거래정보에 대하여 책임을 지지 않습니다.
+				</P>
+				<small class="cm-s">copyright 2015 by DIDIMTOUR.CO.KR co., all rights reserved.</small>
+			</div>
 		</div>
+
 	</div>
 
-		<div class="foot">
-			<address class="footer_add">
-				(주)이엔자산개발
-				<br>
-				대표이사 : 박기범<br>
-				주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동, 모노팰리스)
-				<br>
-				사업자등록번호 : 312-86-20373
-				<br>
-				통신판매업 : 제2011-충남아산-00010호<br>여행업등록번호 : 제2017-34호
-				<br>
-				여행영업보증서 : 국내여행 제100-000-2015 0299 0337호
-				<br>
-				고객상담 : 1234-5678<span class="">&nbsp;|&nbsp;</span>e-mail 문의 : abcd@efg.com
-			</address>
-			<p class="copy">copyright 2016 by BOROGOGO.CO.KR co., all rights reserved.</p>
-		</div>
-	
-</div>
-</div>
+
 	
 </body>
 </html>

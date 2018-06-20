@@ -1,78 +1,35 @@
 @charset "utf-8";
 
 
-/* í—¤ë” */
-.m_wrapper {width:100%; margin:0 auto; position:relative; background: #f6f6f6;}
-.m_header {width:100%; height:52px; background: #f6f6f6; border-bottom:1px solid #cccccc;}
+/* Çì´õ */
+.m_header {position: absolute; width: 100%; left: 0; top: 15px; padding: 0 3%; box-sizing: border-box;}
 .m_header .logo {width:73px; height:15px; margin:0 auto; padding-top:15px;} 
 .m_header .logo img {width:100%;} 
 
-.m_header .header_left_bt {border:1px solid #ff699b;  width:70px; height:25px; float:right; margin:-20px 20px; border-radius: 20px;}
+.m_header .header_left_bt {width:70px; height:25px; float:right; border-radius: 20px; background: #fff;}
 .m_header .header_left_bt span {color: #ff699b; padding-left:15px; line-height: 25px; cursor: pointer; font-size:14px;}
 
-.m_header .all_menu {width:40px; height:30px; position:absolute; top:10px; left:10px; border:none; background: none;}
+.m_header .all_menu {width:40px; height:30px; position:absolute; border:none; background: none;}
 .m_header .all_menu span {display: block; height:4px; width: 28px; color: #000; background: #000; margin:4px auto 0; cursor: pointer;}
 .m_header .all_menu span:first-child {margin-top: 0;}
 
-/* ë©”ì¸bg ê²€ìƒ‰ë¶€ë¶„ */
+/* ÇªÅÍ */
+.footer {position: relative; width: 100%; background: #323232;}
+#FOoter.footer .f-area {padding: 20px 0 40px;}
+.footer .mg-l {position: relative; top: -1px;color: #fff !important; vertical-align: middle;}
+.footer .cm-s {font-size: 12px; color: #fff; text-align: center; word-break: keep-all; display: block;}
+.footer address + .p-1 {margin-top: 20px;}
+#Footer.footer .f-area address p strong {color: #fff; display: inline-block; padding-bottom: 10px;}
+#Footer.footer .f-area address p {margin-top: 0; padding-top: 10px; color: #fff; text-align: center; word-break: keep-all;}
 
-.m_main {width:100%; height:250px; background: url(http://img.borogogo.co.kr/mobile/171019_renew/main_bg.png) no-repeat; background-size: 100%;  display: inline-block;}
-.m_main .m_tit{color:#fff; font-size:20px; font-family: "Source Han Sans K"; font-weight:600; padding:15px 20px;}
-.m_main .sch_wrap { width:100%; text-align: center; display: inline-block;}
-.m_main .schtxt {width: 90%; height:40px; padding-left:10px; color: #595858; }
-/* ìˆ™ë°•ìœ í˜• ê²€ìƒ‰ ì¸í’‹ë¶€ë¶„ */
+/*¸ÞÀÎ°Ë»ö*/
+#sub_search {float: none; padding: 50px 0; background: url(http://img.didimtour.co.kr/renew/m/bg_main.jpg) no-repeat top left; background-size: cover; height: 400px;}
 
-.m_main .select_bx   {width:100%; text-align: center; font-size:0;}
-.m_main .select_bx .date,.m_main .select_bx .r_type {width:44.5%; margin-top:10px; padding-left: 10px; vertical-align: middle; font-size:14px; color:#595858; }
-.m_main .select_bx > select {background: url(http://img.borogogo.co.kr/mobile/171019_renew/i_dArr.png) no-repeat center right 10px;;
-							  cursor: pointer; background-color: #fff; }
-.m_main .select_bx .r_type {margin-left:1%;}
-.sch_wrap .sch_bt {color: #fff; width:90%; height:40px; background: #ff6699; text-align: center; line-height: 40px; margin-top:10px; cursor: pointer; font-weight: 600; margin:15px auto; font-size:16px;}
-
-
-/* ì§€ì—­ë³„ ì¸ê¸°ìˆ™ì†Œ */
-
-.m_sect_wrap {width:100%; background: #fff; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; margin-top:10px; padding-bottom:30px;}
-.sect_box_wrap {margin-left:10px;}
-.m_sect_wrap h2 {font-size:20px; color:#000000; font-weight: 600; width:150px; height:30px; padding:15px 0 10px 30px;}
-
-.m_sect_wrap .sect_img1 img,.m_sect_wrap .sect_img2 img{width:100%;}
-.m_sect_wrap .sect_img1 ul,.m_sect_wrap .sect_img2 ul {clear:both; width:100%;}
-.m_sect_wrap .sect_img1 ul li,.m_sect_wrap .sect_img2 ul li{float:left; width:40%; padding-left:20px; padding-top:10px;}
-
-
-/* ë°”ë¡œê°€ê¸°ì•„ì´ì½˜ */
-
-.icon_wrap {width:100%; margin:10px auto; background: #fff; border-top:1px solid #f1f1f1 border-bottom:1px solid #f1f1f1; padding-bottom: 20px; text-align: center;}
-.icon_wrap .ico_list {padding-top:10px;}
-.icon_wrap .ico_list .list_1,.icon_wrap .ico_list .list_2 {clear:both;}
-.icon_wrap .ico_list .list_1 p,.icon_wrap .ico_list .list_2 p {font-size:12px; color:#000; padding-top:10px;}
-.icon_wrap .ico_list .list_1 li,.icon_wrap .ico_list .list_2 li {float:left; width:25%; padding-left:20px; padding-top:20px;}
-.icon_wrap .ico_list .list_1 li img,.icon_wrap .ico_list .list_2 li img{width:70%;}
- 
-
-/* í‘¸í„° */
-
-.footer {width:100%; background: #f6f6f6;}
-.footerin {width:300px; margin:0 auto;}
-.footerin .f-top_bt ul {width:300; height:50px; text-align: center;}
-.footerin .f-top_bt ul li {background: #fff; padding:5px 10px; text-align: center; font-weight: 500; border:1px solid #f1f1f1; color: #595758; display: inline-block; font-size:13px;}
-
-.footerin .f-top { width:90%; text-align: center;}
-.footerin .f-top a {padding-left:10px; color:#595758; display: inline-block; font-size:13px;}
-
-.foot {width:100%; padding-top:10px;}
-.foot .footer_add {text-align: center; color:#595758; width:90%; margin:0 auto; font-weight: 500; border-top:1px solid #dcdcdc;
-				    padding-top:10px; font-size:13px;}
-.foot .copy {color: #b1b1b1; text-align: center; padding-top:5px; font-size:13px; padding-bottom:20px;}
+/* »ó¼¼ÆäÀÌÁö */
 
 
 
-/* ìƒì„¸íŽ˜ì´ì§€ */
-
-
-
-/* ìº˜ë¦°ë” ìˆ˜ì • */
+/* Ä¶¸°´õ ¼öÁ¤ */
 
 #info_product_btn_w .info_product_btn {background: #ff6699;}
 #calender_number_w { height:80px; border-top:none;}
@@ -81,12 +38,12 @@
 .calender_ch_w .date {color: #ff6699; padding-left:20px;}
 .calender_ch_day_o {border:none; background: #f4f4f6; width:50px; height:30px; line-height: 30px; text-align: center;}
 
-/* ìƒë‹¨ì´ë¯¸ì§€ ë¡œê³  ì‚­ì œ */
+/* »ó´ÜÀÌ¹ÌÁö ·Î°í »èÁ¦ */
 .thumbnail_logo img {display: none;}
 
-/* ìƒë‹¨ìƒí’ˆì´ë¯¸ì§€ í…ìŠ¤íŠ¸ ì •ë ¬ */
+/* »ó´Ü»óÇ°ÀÌ¹ÌÁö ÅØ½ºÆ® Á¤·Ä */
 #info_img_wrpa .img_txt {bottom:20px;}
-/*  ìƒë‹¨ ì´ë¯¸ì§€ ì•„ì´ì½˜ */
+/*  »ó´Ü ÀÌ¹ÌÁö ¾ÆÀÌÄÜ */
 #info_img_wrpa .de_share_icon {margin-right:0; vertical-align: middle;}
 #info_img_wrpa .de_ch_icon {width:7%;}
 #info_img_wrpa .de_share_icon {width:11%;}
@@ -94,13 +51,13 @@
 #info_img_wrpa .pay_back_icon {width}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev,.swiper-button-prev, .swiper-container-rtl .swiper-button-next {display: none;}
 
-/* ìƒë‹¨íƒ€ì´í‹€ */
+/* »ó´ÜÅ¸ÀÌÆ² */
 .top_title_wrap {width:100%;position:relative; top:10px; left:20px;}
 .top_title_wrap .top_title_txt { padding-bottom:30px;}
 .top_title_wrap .top_title_txt span {font-size:20px; color:#000; font-weight: 700;}
 .top_title_wrap .top_title_txt p {font-size:16px; margin-top:5px; font-weight: normal; color:#000; letter-spacing: -2;}
 
-/* ìƒë‹¨ íƒ€ì´í‹€íƒ­ */
+/* »ó´Ü Å¸ÀÌÆ²ÅÇ */
 
 .top_main {width:100%; height:50px; position:relative;}
 .top_main .main_title {text-align: center;}
@@ -109,22 +66,24 @@
 .top_main .main_title .top_pr {float:left; margin-left:20px; margin-top:10px; }
 .top_main .main_title .top_lv {float:right; margin-right:20px; margin-top:10px; }
 
-/* ë°°ë„ˆì´ë¯¸ì§€ ì¶”ê°€ */
+/* ¹è³ÊÀÌ¹ÌÁö Ãß°¡ */
 
 #room_w .room_tx_w .room_tx_in2 {margin-top:20px;}
 
 #room_w .room_tx_w .room_tx_in {border: none; border-top:10px solid #f6f6f6}
 #location_w {border-top: 10px solid #f6f6f6;}
 
-/* ë¶€ëŒ€ì‹œì„¤ ì•„ì´ì½˜ */
+/* ºÎ´ë½Ã¼³ ¾ÆÀÌÄÜ */
 
 #room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li > div { padding:0 20px 0 20px; vertical-align: middle;}
 #room_w .room_tx_w .room_tx_in .establishment_wrap .establishment_list > li > div img {vertical-align: middle;}
 
-/* ë°°ë„ˆì¶”ê°€*/
-
+/* ¹è³ÊÃß°¡*/
 .bn_wr {width:100%; background: #f6f6f6; }
 .bn_bg span {color:#fff; line-height:40px;}
 .bn_bg .right {padding-right:10px; position:absolute; right:10px;}
 .bn_bg .cp {font-style:italic;}
 .bn_bg {width:95%; position:relative; height:40px; background: url(http://img.borogogo.co.kr/mobile/171019_renew/r_banner.png) no-repeat; margin:0 auto; text-indent: 10px; font-size:13px;}
+
+
+#info_img {cursor: pointer; height: 90px; overflow: hidden; float: none;}
