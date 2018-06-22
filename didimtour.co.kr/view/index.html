@@ -23,8 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="http://static.borogogo.co.kr/css/prettyPhoto.css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
 
 	<!--디딤투어 리뉴얼Css-->
-	<link rel="stylesheet" href="http://static.didimtour.co.kr/css/layout_new3.css">
-<!--	 <link rel="stylesheet" href="../src/css/layout_new3.css"> -->
+<!--	<link rel="stylesheet" href="http://static.didimtour.co.kr/css/layout_new3.css">-->
+	 <link rel="stylesheet" href="../src/css/layout_new3.css"> 
 	
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -106,6 +106,25 @@
 		</div>
 
 
+		<script>
+			$(function() {
+
+				// 검색박스, Option 박스 관련
+				$('#rgSelect, #dtRgSelect').on('click', function() {
+					$(this).find('.rgOption').toggleClass('on');
+				});
+
+				$('#rgOption a').on('click', function() {
+					var thTxt = $(this).text();
+					$('#rgSelect > .p1').text(thTxt);
+				});
+				$('#dtRgOption a').on('click', function() {
+					var thTxt = $(this).text();
+					$('#dtRgSelect > .p1').text(thTxt);
+				});
+
+			});
+		</script>
 		<!--지역검색 drop박스 scrollbar UI 라이브러리 ie10이상일때 적용되도록-->
 
 		<!--[if gte IE 10]><!--> 
@@ -132,7 +151,7 @@
 					fadeScrollbars: true
 				});
 
-				$(this).find('.rgOption').hide();
+//				$(this).find('.rgOption').hide();
 
 			});
 

@@ -2,7 +2,6 @@
 
 
 /* 헤더 */
-
 .m_wrapper {width:100%; margin:0 auto; position:relative;}
 .m_header {width:100%; height:52px; }
 .m_header .logo {width:73px; height:15px; margin:0 auto; padding-top:15px;} 
@@ -15,11 +14,9 @@
 .m_header .all_menu span {display: block; height:4px; width: 28px; background: #fff; margin:4px auto 0; cursor: pointer;}
 .m_header .all_menu span:first-child {margin-top: 0;}
 
-
 .m_main .schtxt, .m_main .select_bx {width: 90%; background: #fff; height: 38px;}
 
 /* 메인bg 검색부분 */
-
 .m_main {width:100%; height:215px; background: url(http://img.hyutour.co.kr/renew/m/main_bg.jpg) no-repeat center; background-size: cover;  display: inline-block; padding-top: 32px; box-sizing: border-box;}
 .m_main .m_tit {color:#fff; font-size:17px; font-family: "Noto Sans KR", sans-serif; font-weight:400; padding:0px 20px; letter-spacing: 0px;}
 .m_main .m_tit .f-bd {font-weight: 500;}
@@ -27,58 +24,79 @@
 .m_main .schtxt {width: 90%; padding-left:15px; color: #595858;}
 
 /* 숙박유형 검색 인풋부분 */
-
 .m_main .select_bx  {width:90%; text-align: center; font-size:0; background: #fff; margin: 0 auto; margin-top: 8px;}
 .m_main .select_bx .date {position: relative; top: 9px; width:50%; padding-left: 42px; vertical-align: middle; font-size:14px; color: #333; height: auto;}
-.m_main .select_bx .date.in {background: url(http://img.hyutour.co.kr/renew/m/i_chkDate_in.jpg) no-repeat 15px 1px; background-size: 20px;}
+.m_main .select_bx .date.in {background: url(http://img.hyutour.co.kr/renew/m/i_chkDate_in.jpg) no-repeat 15px 1px; background-size: 20px; border-right: 1px solid #d9d9d9;}
+.m_main .select_bx:after {content: "아아아"; display: inline-block;}
+/*.m_main .select_bx .date.in:after {display: block; content: ""; position: absolute; right: 0; top: 0; width: 100px; height: 100px; background: #e8e8e8;}*/
 .m_main .select_bx .date.out {background: url(http://img.hyutour.co.kr/renew/m/i_chkDate_out.jpg) no-repeat 15px 1px; background-size: 20px;}
-
-/*
-.m_main .select_bx .date,.m_main .select_bx .r_type {width:44.5%; padding-left: 30px; vertical-align: middle; font-size:14px; color:#595858; }
-.m_main .select_bx > select {background: url(http://img.borogogo.co.kr/mobile/171019_renew/i_dArr.png) no-repeat center right 10px; cursor: pointer; background-color: #fff; }
-.m_main .select_bx .r_type {margin-left:1%;}
-*/
 
 .sch_wrap .sch_bt {color: #fff; width:90%; height:40px; background: #008cd5; text-align: center; line-height: 40px; cursor: pointer; font-weight: 600; margin:8px auto 0; font-size:14px;}
 .sch_wrap .sch_bt .i-mag {position: relative; display: inline-block; width: 8px; height: 8px; border: 2px solid #fff; border-radius: 50%; left: -4px; top: 0px;}
 .sch_wrap .sch_bt .i-mag:after {position: absolute; content: ""; display: inline-block; bottom: -3px; right: -5px; width: 6px; height: 2px; background: #fff; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
 
 
+.container-sec {position: relative; width: 100%; background: #f6f6f6;}
+.container-sec a {color: inherit !important;}
+
 /* 지역별 인기숙소 */
+.sec-themeRoom {width:100%; background: #fff; border-top:1px solid #f1f1f1; border-bottom:1px solid #e8e8e8; margin-top:0px; padding: 10px 5% 10px; box-sizing: border-box;}
+.sec-themeRoom .theme-tit {font-size:14px; color:#000000; font-weight: 600;}
+.sec-themeRoom .theme-area {margin-top: 5px;}
+.sec-themeRoom .theme-area > a {display: block; float: left; position: relative; width: 49%; height: 150px; text-align: center;}
+/*
+.sec-themeRoom .theme-area > a {overflow: hidden;}
+.sec-themeRoom .theme-area > a .bg-img {width: 100%;}
+*/
+.sec-themeRoom .theme-area > a .inTxt {position: absolute; width: 100%; font-size: 13px; color: #fff; width: 185px; height: 77px; left: 50%; margin-left: -92.5px; top: 50%; margin-top: -33.5px;}
+.sec-themeRoom .theme-area > a .inTxt span {display: block; font-family: "Noto Sans KR", sans-serif; letter-spacing: -0.5px;}
+.sec-themeRoom .theme-area > a .inTxt .s-tit {font-size: 12.5px; line-height: 1.2;}
+.sec-themeRoom .theme-area > a .inTxt .s-txt {font-size: 12px; margin-top: 8px; font-weight: 300;}
+.sec-themeRoom .theme-area > a.a-2,
+.sec-themeRoom .theme-area > a.a-4 {margin-left: 2%;}
+.sec-themeRoom .theme-area > a.a-3,
+.sec-themeRoom .theme-area > a.a-4 {margin-top: 2%;}
+.sec-themeRoom .theme-area > a.a-1 {background: url(http://img.hyutour.co.kr/renew/m/themeRoom/themeRoom_01.jpg) no-repeat center;}
+.sec-themeRoom .theme-area > a.a-2 {background: url(http://img.hyutour.co.kr/renew/m/themeRoom/themeRoom_02.jpg) no-repeat center;}
+.sec-themeRoom .theme-area > a.a-3 {background: url(http://img.hyutour.co.kr/renew/m/themeRoom/themeRoom_03.jpg) no-repeat center;}
+.sec-themeRoom .theme-area > a.a-4 {background: url(http://img.hyutour.co.kr/renew/m/themeRoom/themeRoom_04.jpg) no-repeat center;}
 
-.m_sect_wrap {width:100%; background: #fff; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; margin-top:0px; padding-bottom:30px;}
-.sect_box_wrap {margin-left:10px;}
-.m_sect_wrap h2 {font-size:20px; color:#000000; font-weight: 600; width:150px; height:30px; padding:15px 0 10px 30px;}
+/*자주묻는질문*/
+.sec-quation {position: relative; width: 100%; margin: 10px auto 0; border-top: 1px solid #e8e8e8; background: #fff;}
+.sec-quation .sec-container {position: relative; width: 90%; margin: 0 auto;}
+.sec-quation .sec-container .link-q {position: relative; margin-top: 20px;}
+.sec-quation .sec-container .link-q > li {float: left; width: 33.33%; text-align: center;}
+.sec-quation .sec-container .link-q > li figure {position: relative; width: 45px; height: 45px; background: #848290; color: #fff; font-family: "Malgun Gothic", sans-serif; border-radius: 50%; text-align: center; margin: 0 auto;}
+.sec-quation .sec-container .link-q > li figure:after {content: ""; display: inline-block; height: 106%; vertical-align: middle;}
+.sec-quation .sec-container .link-q > li i {font-size: 12px; font-style: normal; font-weight: 500; margin-top: 5px; display: block; letter-spacing: -1.5px;}
+.sec-quation .sec-container .link-q > li.li-1 figure {font-size: 14px; letter-spacing: -1px;}
+.sec-quation .sec-container .link-q > li.li-2 figure img {position: relative; top:11px; left: 1px; width: 23px;}
+.sec-quation .sec-container .link-q > li.li-3 figure {font-size: 19px; font-weight: 400; letter-spacing: 0.5px; line-height: 2.5; font-family: "Noto Sans Kr", sans-serif;}
 
-.m_sect_wrap .sect_img1 img,.m_sect_wrap .sect_img2 img{width:100%;}
-.m_sect_wrap .sect_img1 ul,.m_sect_wrap .sect_img2 ul {clear:both; width:100%;}
-.m_sect_wrap .sect_img1 ul li,.m_sect_wrap .sect_img2 ul li{float:left; width:40%; padding-left:20px; padding-top:10px;}
+.sec-quation .sec-container .link-evt,
+.sec-quation .sec-container .link-evt * {font-family: "Noto Sans KR", sans-serif;}
+.sec-quation .sec-container .link-evt {padding: 9px 8px; background: #e9e9f1; margin: 20px auto;}
+.sec-quation .sec-container .link-evt > a {font-size: 12px;}
+.sec-quation .sec-container .link-evt .a-post {}
+.sec-quation .sec-container .link-evt .a-post > span {display: inline-block;}
+.sec-quation .sec-container .link-evt .a-post .s-1 {margin-right: 10px;}
+.sec-quation .sec-container .link-evt .a-post .s-2 {}
+.sec-quation .sec-container .link-evt .a-more {float: right; color: #777;}
+.sec-quation .sec-container .link-evt .a-more .rArrow:after {width: 5px; height: 5px; top: -2px; margin-left: 5px; border-color: #777;}
 
-
-/* 바로가기아이콘 */
-
-.icon_wrap {width:100%; margin:10px auto; background: #fff; border-top:1px solid #f1f1f1 border-bottom:1px solid #f1f1f1; padding-bottom: 20px; text-align: center;}
-.icon_wrap .ico_list {padding-top:10px;}
-.icon_wrap .ico_list .list_1,.icon_wrap .ico_list .list_2 {clear:both;}
-.icon_wrap .ico_list .list_1 p,.icon_wrap .ico_list .list_2 p {font-size:12px; color:#000; padding-top:10px;}
-.icon_wrap .ico_list .list_1 li,.icon_wrap .ico_list .list_2 li {float:left; width:25%; padding-left:20px; padding-top:20px;}
-.icon_wrap .ico_list .list_1 li img,.icon_wrap .ico_list .list_2 li img{width:70%;}
- 
 
 /* 푸터 */
+.footer, .footer * {font-family: "Noto Sans KR", sans-serif; font-weight: 300;}
+.footer {width:100%; background: #54585b; font-size: 12px; padding-bottom: 20px;}
+.footer .logo {position: relative; text-align: center; width: 80px; margin: 8px auto 2px;}
+.footer .logo img {width: 100%;}
+.footerin .f-top { width:94%; text-align: center; margin: 0 auto; border-bottom:1px solid #a3a3a3;}
+.footerin .f-top .mgl {position: relative; top: -1px; display: inline-block; font-family: "Nanum Gothic", sans-serif; margin: 0px 10px; color: #cdcdcd;}
+.footerin .f-top a {color:#cdcdcd; display: inline-block; line-height: 2.5;}
 
-.footer {width:100%; background: #f6f6f6;}
-.footerin {width:300px; margin:0 auto;}
-.footerin .f-top_bt ul {width:300; height:50px; text-align: center;}
-.footerin .f-top_bt ul li {background: #fff; padding:5px 10px; text-align: center; font-weight: 500; border:1px solid #f1f1f1; color: #595758; display: inline-block; font-size:13px;}
-
-.footerin .f-top { width:90%; text-align: center;}
-.footerin .f-top a {padding-left:10px; color:#595758; display: inline-block; font-size:13px;}
-
-.foot {width:100%; padding-top:10px;}
-.foot .footer_add {text-align: center; color:#595758; width:90%; margin:0 auto; font-weight: 500; border-top:1px solid #dcdcdc;
-				    padding-top:10px; font-size:13px;}
-.foot .copy {color: #b1b1b1; text-align: center; padding-top:5px; font-size:13px; padding-bottom:20px;}
+.foot {width:100%;}
+.foot .footer_add {text-align: center; color:#cdcdcd; width:90%; margin:0 auto;}
+.foot .copy {color: #cdcdcd; text-align: center; padding-top:10px; padding-bottom:20px; word-break: keep-all;}
 
 
 
