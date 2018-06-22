@@ -12,15 +12,16 @@
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
 <link rel="apple-touch-icon" href="http://img.borogogo.co.kr/mobile/icon.png"> 
-<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20171019122900" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/moblie_reset.css?ver=20171019122900" type="text/css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css?ver=20171019122900" type="text/css">
+<link rel="stylesheet" href="http://static.hyutour.co.kr/css/moblie_reset.css" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css" type="text/css">
 
 <!-- 모든사이트 통합 css -->
-<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css?ver=20171019122900" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
 <!-- 리뉴얼 css -->
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/mobile_layout3.css" type="text/css"/> 
+<!--<link rel="stylesheet" href="http://static.hyutour.co.kr/css/mobile_layout3.css" type="text/css"/> -->
+<link rel="stylesheet" href="../src/css/mobile_layout3.css" type="text/css"/> 
 
 <meta name="robots" content="ALL">
 <meta name="author" content="BOROGOGO.CO.KR">
@@ -31,10 +32,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <!--- 검색시 달력에서 이용 -->
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/jquery-ui.css">
+<link rel="stylesheet" href="http://static.hyutour.co.kr/css/jquery-ui.css">
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--- 달력 한글화 -->
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/datepicker_ko.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/datepicker_ko.js"></script>
 
 
 	<!-- Android icon -->
@@ -76,15 +77,15 @@ date.setTime(date.getTime() + (minutes * 60 * 1000));
 </script>
 <!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>-->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20171019122900"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/common_ver2.js?ver=20171019122900"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/iscroll.js?ver=20171019122900"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/common_ver2.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/iscroll.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/jquery.cookie.js"></script>
 
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.raty.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/jquery.raty.js"></script>
 
 <!--- 리스트페이지에서 쓸 스크립트-->
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/swiper.min.js?ver=20171019122900"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/swiper.min.js"></script>
 <!--- 리스트페이지에서 쓸 스크립트-->
 
 <script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
@@ -96,29 +97,27 @@ date.setTime(date.getTime() + (minutes * 60 * 1000));
 <div class="m_wrapper clr">
 <!-- 헤더 -->
 	<div class="m_header">
-	<h1 class="logo"><img src="http://img.borogogo.co.kr/mobile/171019_renew/logo.png" alt="바로고고"></h1>
+	<h1 class="logo"><img src="http://img.hyutour.co.kr/logo.png" alt="바로고고"></h1>
 		<button type="text" class="all_menu">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
-		<div class="header_left_bt">
-			<span class="top_bt">내주변</span>
-		</div>
+		<a href="" class="a-myArea"><img src="http://img.hyutour.co.kr/renew/m/i_mag.png" alt="내주변검색"></a>
 	</div>	
   <!-- 상단검색 및 메인 -->
 	<div class="m_main">
-		<h2 class="m_tit">어디로 떠나볼까요?</h2>
+		<h2 class="m_tit">휴투어와 함께 <span class="f-bd">즐거운 여행을 떠나세요!</span></h2>
 		  <div class="sch_wrap">
 			<form method="post" action="" name="frm">
-				<input type="text" value="" name="searc_txt" class="schtxt" placeholder="지역/숙소명/여행지를 입력해주세요">
+				<input type="text" value="" name="searc_txt" class="schtxt" placeholder="도시,지역 혹은 호텔명 입력">
 				</input>
 			</form>	
 			<div class="select_bx">
-				<input name="seach1" class="date" placeholder="2017-10-16">
-				<select name="seach2" class="r_type"><option value>숙박유형</option></select>
-				<p class="sch_bt">검색</p>
+				<input name="seachDate1" class="date in" placeholder="2018-06-19">
+				<input name="seachDate2" class="date out" placeholder="2018-06-20">
 			 </div>
+			<p class="sch_bt"><span class="i-mag"></span> 검색</p>
 		</div>
 	</div>
 <!-- 지역별인기숙소 -->

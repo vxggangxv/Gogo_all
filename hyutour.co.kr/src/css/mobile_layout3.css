@@ -2,37 +2,51 @@
 
 
 /* 헤더 */
-.m_wrapper {width:100%; margin:0 auto; position:relative; background: #f6f6f6;}
-.m_header {width:100%; height:52px; background: #f6f6f6; border-bottom:1px solid #cccccc;}
+
+.m_wrapper {width:100%; margin:0 auto; position:relative;}
+.m_header {width:100%; height:52px; }
 .m_header .logo {width:73px; height:15px; margin:0 auto; padding-top:15px;} 
 .m_header .logo img {width:100%;} 
 
-.m_header .header_left_bt {border:1px solid #ff699b;  width:70px; height:25px; float:right; margin:-20px 20px; border-radius: 20px;}
-.m_header .header_left_bt span {color: #ff699b; padding-left:15px; line-height: 25px; cursor: pointer; font-size:14px;}
+.m_header .a-myArea {position: absolute; top: 17px; right: 10px;}
+.m_header .a-myArea img {width: 18px;}
 
 .m_header .all_menu {width:40px; height:30px; position:absolute; top:10px; left:10px; border:none; background: none;}
-.m_header .all_menu span {display: block; height:4px; width: 28px; color: #000; background: #000; margin:4px auto 0; cursor: pointer;}
+.m_header .all_menu span {display: block; height:4px; width: 28px; background: #fff; margin:4px auto 0; cursor: pointer;}
 .m_header .all_menu span:first-child {margin-top: 0;}
+
+
+.m_main .schtxt, .m_main .select_bx {width: 90%; background: #fff; height: 38px;}
 
 /* 메인bg 검색부분 */
 
-.m_main {width:100%; height:250px; background: url(http://img.borogogo.co.kr/mobile/171019_renew/main_bg.png) no-repeat; background-size: 100%;  display: inline-block;}
-.m_main .m_tit{color:#fff; font-size:20px; font-family: "Source Han Sans K"; font-weight:600; padding:15px 20px;}
-.m_main .sch_wrap { width:100%; text-align: center; display: inline-block;}
-.m_main .schtxt {width: 90%; height:40px; padding-left:10px; color: #595858; }
+.m_main {width:100%; height:215px; background: url(http://img.hyutour.co.kr/renew/m/main_bg.jpg) no-repeat center; background-size: cover;  display: inline-block; padding-top: 32px; box-sizing: border-box;}
+.m_main .m_tit {color:#fff; font-size:17px; font-family: "Noto Sans KR", sans-serif; font-weight:400; padding:0px 20px; letter-spacing: 0px;}
+.m_main .m_tit .f-bd {font-weight: 500;}
+.m_main .sch_wrap { width:100%; text-align: center; display: inline-block; margin-top: 8px;}
+.m_main .schtxt {width: 90%; padding-left:15px; color: #595858;}
+
 /* 숙박유형 검색 인풋부분 */
 
-.m_main .select_bx   {width:100%; text-align: center; font-size:0;}
-.m_main .select_bx .date,.m_main .select_bx .r_type {width:44.5%; margin-top:10px; padding-left: 10px; vertical-align: middle; font-size:14px; color:#595858; }
-.m_main .select_bx > select {background: url(http://img.borogogo.co.kr/mobile/171019_renew/i_dArr.png) no-repeat center right 10px;;
-							  cursor: pointer; background-color: #fff; }
+.m_main .select_bx  {width:90%; text-align: center; font-size:0; background: #fff; margin: 0 auto; margin-top: 8px;}
+.m_main .select_bx .date {position: relative; top: 9px; width:50%; padding-left: 42px; vertical-align: middle; font-size:14px; color: #333; height: auto;}
+.m_main .select_bx .date.in {background: url(http://img.hyutour.co.kr/renew/m/i_chkDate_in.jpg) no-repeat 15px 1px; background-size: 20px;}
+.m_main .select_bx .date.out {background: url(http://img.hyutour.co.kr/renew/m/i_chkDate_out.jpg) no-repeat 15px 1px; background-size: 20px;}
+
+/*
+.m_main .select_bx .date,.m_main .select_bx .r_type {width:44.5%; padding-left: 30px; vertical-align: middle; font-size:14px; color:#595858; }
+.m_main .select_bx > select {background: url(http://img.borogogo.co.kr/mobile/171019_renew/i_dArr.png) no-repeat center right 10px; cursor: pointer; background-color: #fff; }
 .m_main .select_bx .r_type {margin-left:1%;}
-.sch_wrap .sch_bt {color: #fff; width:90%; height:40px; background: #ff6699; text-align: center; line-height: 40px; margin-top:10px; cursor: pointer; font-weight: 600; margin:15px auto; font-size:16px;}
+*/
+
+.sch_wrap .sch_bt {color: #fff; width:90%; height:40px; background: #008cd5; text-align: center; line-height: 40px; cursor: pointer; font-weight: 600; margin:8px auto 0; font-size:14px;}
+.sch_wrap .sch_bt .i-mag {position: relative; display: inline-block; width: 8px; height: 8px; border: 2px solid #fff; border-radius: 50%; left: -4px; top: 0px;}
+.sch_wrap .sch_bt .i-mag:after {position: absolute; content: ""; display: inline-block; bottom: -3px; right: -5px; width: 6px; height: 2px; background: #fff; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
 
 
 /* 지역별 인기숙소 */
 
-.m_sect_wrap {width:100%; background: #fff; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; margin-top:10px; padding-bottom:30px;}
+.m_sect_wrap {width:100%; background: #fff; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; margin-top:0px; padding-bottom:30px;}
 .sect_box_wrap {margin-left:10px;}
 .m_sect_wrap h2 {font-size:20px; color:#000000; font-weight: 600; width:150px; height:30px; padding:15px 0 10px 30px;}
 
