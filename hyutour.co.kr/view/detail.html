@@ -25,9 +25,9 @@
 	<!-- 리뉴얼Css, 폰트추가-->
 	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery.bxslider.css">
 	<link rel="stylesheet" href="http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
-<!--	<link rel="stylesheet" href="http://static.hyutour.co.kr/css/layout_new3.css">-->
+	<link rel="stylesheet" href="http://static.hyutour.co.kr/css/layout_new3.css">
 	
-	 <link rel="stylesheet" href="../src/css/layout_new3.css"> 
+<!--	 <link rel="stylesheet" href="../src/css/layout_new3.css"> -->
 	
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	
@@ -69,7 +69,7 @@
 
 
 	</head>
-<body>
+<body class="didimtour">
 
 	<h1 class="hidden">디딤투어</h1>
 
@@ -172,68 +172,45 @@
 
 	
 	
-	<div id="fix-nav">
+	<div class="dateBar">
 		<div class="nav-bar">
-		        <div class="nav">
-					
+			<div class="nav">
+
+				<div class="inp slt">
+					<select class="global" name="city_1" id="city_1" onchange="searching.location_city_sub('city_2', this.value, '', 'city_2')" style="height:45px;cursor:pointer">
+					<option selected="selected" value="">지역선택</option>
+					<option value="">전국</option>
+					<option value="001" selected="">서울</option><option value="008">경기</option><option value="004">인천</option><option value="009">강원</option><option value="002">부산</option><option value="010">경남</option><option value="003">대구</option><option value="011">경북</option><option value="006">대전</option><option value="012">충남</option><option value="013">충북</option><option value="007">광주</option><option value="014">전남</option><option value="005">울산</option><option value="015">전북</option><option value="016">제주</option><option value="017">세종</option>                </select>
+				</div>
+				<div class="inp slt">
+					<select name="city_2" id="city_2" class="city" style="height:45px;cursor:pointer"><option value="all">시/구 지역</option><option value="강남구">강남구</option><option value="강동구">강동구</option><option value="강북구">강북구</option><option value="강서구">강서구</option><option value="관악구">관악구</option><option value="광진구">광진구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="노원구">노원구</option><option value="도봉구">도봉구</option><option value="동대문구">동대문구</option><option value="동작구">동작구</option><option value="마포구">마포구</option><option value="서대문">서대문</option><option value="서초구">서초구</option><option value="성동구">성동구</option><option value="성북구">성북구</option><option value="송파구">송파구</option><option value="양천구">양천구</option><option value="영등포구">영등포구</option><option value="용산구">용산구</option><option value="은평구">은평구</option><option value="종로구">종로구</option><option value="중구">중구</option><option value="중랑구">중랑구</option></select>
+				</div>
+				<div class="inp">
+					<input type="text" class="chkIn" placeholder="이용일" value="2018-06-22" id="sub_sdate" name="sub_sdate" style="height:45px;cursor:pointer" readonly="">
+					<input name="sub_edate" id="sub_edate" type="hidden" value="2018-06-23">
+				</div>
+				<div class="inp slt">
+					<select name="city_2" id="city_2" class="city" style="height:45px;cursor:pointer"><option value="">유형선택</option></select>
+				</div>
 				<div class="d-h3">
-									<div class="inp">
-						<span>검색어</span>
-						<input type="text" class="sch-wd" placeholder="검색어를 입력해주세요." name="hotel_detail" id="subnew_keyword" size="30" maxlength="50" autocomplete="off" value="" style="width:254px">	
+					<div class="inp">
+						<input type="text" class="sch-wd" placeholder="호텔명 또는 목적지를 입력하세요." name="hotel_detail" id="subnew_keyword" size="30" maxlength="50" autocomplete="off" value=""	
 					</div>
 				</div>
-		            <div class="inp" style="margin-top:-8px">
-		                <span>이용일</span>
-		                <input type="text" class="chkIn" placeholder="이용일" value="2018-06-22" id="sub_sdate" name="sub_sdate" style="height:45px;cursor:pointer" readonly="">
-		                <input name="sub_edate" id="sub_edate" type="hidden" value="2018-06-23">
-		            </div>
-		            <div class="inp slt">
-		            	<span>인원</span>
-		                <select name="top_adult" id="top_adult" class="number">
-						<option value="">전체</option>
-						                    <option value="1">1</option>
-						                    <option value="2" selected="">2</option>
-						                    <option value="3">3</option>
-						                    <option value="4">4</option>
-						                    <option value="5">5</option>
-						                    <option value="6">6</option>
-						                    <option value="7">7</option>
-						                    <option value="8">8</option>
-						                    <option value="9">9</option>
-						                    <option value="10">10</option>
-						                    <option value="11">11</option>
-						                    <option value="12">12</option>
-						                    <option value="13">13</option>
-						                    <option value="14">14</option>
-						                    <option value="15">15</option>
-						                    <option value="16">16</option>
-						                    <option value="17">17</option>
-						                    <option value="18">18</option>
-						                    <option value="19">19</option>
-						                    <option value="20">20</option>
-						                </select>
-		                
-		            </div>
-		            <div class="inp slt" style="margin-top:-8px">
-		                <span>지역검색</span>
-		                <select class="global" name="city_1" id="city_1" onchange="searching.location_city_sub('city_2', this.value, '', 'city_2')" style="height:45px;cursor:pointer">
-		                <option selected="selected" value="">전국</option>
-						<option value="001" selected="">서울</option><option value="008">경기</option><option value="004">인천</option><option value="009">강원</option><option value="002">부산</option><option value="010">경남</option><option value="003">대구</option><option value="011">경북</option><option value="006">대전</option><option value="012">충남</option><option value="013">충북</option><option value="007">광주</option><option value="014">전남</option><option value="005">울산</option><option value="015">전북</option><option value="016">제주</option><option value="017">세종</option>                </select>
-		            </div>
-		            <div class="inp slt" style="margin-top:-8px">
-		                <span>상세지역</span>
-		                <select name="city_2" id="city_2" class="city" style="height:45px;cursor:pointer"><option value="all">시군별 전체</option><option value="강남구">강남구</option><option value="강동구">강동구</option><option value="강북구">강북구</option><option value="강서구">강서구</option><option value="관악구">관악구</option><option value="광진구">광진구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="노원구">노원구</option><option value="도봉구">도봉구</option><option value="동대문구">동대문구</option><option value="동작구">동작구</option><option value="마포구">마포구</option><option value="서대문">서대문</option><option value="서초구">서초구</option><option value="성동구">성동구</option><option value="성북구">성북구</option><option value="송파구">송파구</option><option value="양천구">양천구</option><option value="영등포구">영등포구</option><option value="용산구">용산구</option><option value="은평구">은평구</option><option value="종로구">종로구</option><option value="중구">중구</option><option value="중랑구">중랑구</option></select>
-		            </div>
-		
-		            <!--- <a class="more-a on" href="#" id="sch_bt"><span class="i-plus"></span>상세조건</a>-->
-		            <a class="search-a" href="javascript:search_apply();"><span class="i-search"></span>검색하기</a>
-		        </div>
-		    </div>
+
+				<a class="search-a" href="javascript:search_apply();"><span class="i-search"></span></a>
+			</div>
+		</div>
 	</div>
 	
 	<!--171019 상세페이지 시작-->
 	<div class="content-sec">
 
+		<h2 class="prodName">
+			[특1급] 베스트웨스턴프리미어구로[자체]
+			<span class="star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-off.png"></span>
+		</h2>
+		
 		<div id="contents">
 		<!--171019 클래스 추가 clr-->
 			<div id="main5" class="clr">
@@ -321,15 +298,8 @@
 						<input type="hidden" name="wish_id" id="wish_id" value="">
 						
 						
-						
-						<!--171019 border값 제거, 내용 수정, 별표 제거-->
 						<tbody>
 							
-						<tr class="pdtName"> 
-							<td class="contents" colspan="4">
-								[특1급] 베스트웨스턴프리미어구로[자체]
-							</td>
-						</tr>
 						<tr>
 							<td class="tit2">분류</td>
 							<td class="contents" colspan="3">특2급 <span class="add-txt">(총 객실 수: 56개)</span> </td>
@@ -361,7 +331,7 @@
 							<td style="border-bottom:none;" colspan="4" class="contents">
 								
 								<span style="float:left; margin-top: 7px;">
-									<a href="http://www.go.co.kr/home/member/?dd=TBopVwFUO1AlDF5M&amp;brd=RhAl&amp;p_no=HE93&amp;abr=&amp;type=group" style="display: inline-block;width: 55px;height: 25px;line-height: 25px;font-size: 13px;color: #fff !important;background-color: #000;text-align:center">단체문의</a>
+									<a href="http://www.go.co.kr/home/member/?dd=TBopVwFUO1AlDF5M&amp;brd=RhAl&amp;p_no=HE93&amp;abr=&amp;type=group" ><img src="http://img.hyutour.co.kr/renew/btn_group.jpg" alt="단체문의"></a>
 									<a href="javascript:sharing.share_sns('mail', '', '')" title="메일공유"><img src="http://img.go.co.kr/sns_mail_s.gif" alt="메일공유"></a>
 									<a href="javascript:sharing.share_sns('facebook', '', 'HE93')" title="페이스북공유"><img src="http://img.go.co.kr/sns_fb_s.gif" alt="페이스북공유"></a>
 									<a href="javascript:sharing.share_sns('twitter', '오션투유리조트속초설악비치호텔앤콘도', 'HE93')" title="트위터공유"><img src="http://img.go.co.kr/sns_twt_s.gif" alt="트위터공유"></a>
@@ -589,11 +559,9 @@
 					<tbody>
 						<tr class="rsv_s_tabHead">
 
-							
-							<!--171019 달력 아이콘 변경 및 스타일제거 클래스 추가-->
 							<td style="position:relative">
-								상품선택 <span>[2017.10.19 (목)] <span class="chkWon"><img src="http://img.didimtour.co.kr/renew/i_chkWon.png" alt="날짜체크"> 변경하기</span></span>
-							</td>	
+								<span style="position:absolute;left:10px">[2018.06.25 (월)]<img src="http://img.hyutour.co.kr/i-cal.jpg" onclick="picker.set_pic_2month();" style="cursor:pointer;width:30px;margin-left:5px"></span><span class="s_tit">상품선택</span>
+							</td>
 
 							<td>기준인원/최대인원</td>
 							<td style="position:relative">
@@ -1102,7 +1070,6 @@ function packlist_show() {
 				</ul>
 				
 				<div id="info_box1" style="clear:left;margin-bottom:50px">
-					<h2 class="renew-tit"><img src="http://img.didimtour.co.kr/renew/i_titChk.png" alt="제목"> <span>상품소개</span></h2>
 					<div class="detail_goods">
 						<p class="info_tit2">&nbsp;숙소공통사항</p>
 						<div class="info_txt2">
@@ -1722,43 +1689,142 @@ function packlist_show() {
 		
 	
 	
-<!--171012 푸터-->
-<div class="footer bsLs ftfm-nt">
-	<div class="f-top">
-		<div class="f-policy cm-s">
-			<a href="javascript:utils.pop_open('http://borogogo.co.kr/home/policy/join_policy_pop.php', 'join_policy', '')" title="이용약관">이용약관</a>
-			<span class="mgl"></span>
-			<a href="javascript:utils.pop_open('http://borogogo.co.kr/home/policy/privacy_pop.php', 'privacy_policy', '')" title="개인정보처리방침">개인정보처리방침</a>
-			<span class="mgl"></span>
-			<a href="http://borogogo.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의">광고/입점/제휴문의</a>
-			<span class="mgl"></span>
-			<a href="http://borogogo.co.kr/home/customer/" title="고객센터">고객센터</a>
+	<div id="Footer" class="footer" style="clear:both">
+		<div class="f-area">
+			<div class="f-top">
+				<div class="policy">
+					<a href="javascript:utils.pop_open('http://www.go.co.kr/home/policy/join_policy_pop.php', 'join_policy', '')" title="이용약관">이용약관</a>
+					&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+					<a href="javascript:utils.pop_open('http://www.go.co.kr/home/policy/privacy_pop.php', 'privacy_policy', '')" title="개인정보처리방침"><b>개인정보처리방침</b></a>
+					&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+					<a href="http://www.go.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의">광고/입점/제휴문의</a>
+					&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+					<a href="http://www.go.co.kr/home/customer/" title="고객센터">고객센터</a>
+									&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+
+								</div>
+							<div class="family-site">
+					<span>패밀리사이트&nbsp;▲</span>
+					<ul class="site">
+									<li>
+						<div class="fam_btn"><a href="http://www.go.co.kr" target="_blank">고코투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.tournspa.co.kr" target="_blank">투어앤스파</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.tourgosu.co.kr" target="_blank">투어고수</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.todaygo.co.kr" target="_blank">투데이고</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.allgotour.co.kr" target="_blank">올고투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.todotour.co.kr" target="_blank">투두투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.toursoon.co.kr" target="_blank">투어순</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.hyutour.co.kr" target="_blank">휴투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.didimtour.co.kr" target="_blank">디딤투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.trip25.co.kr" target="_blank">트립25</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.oudigo.co.kr" target="_blank">어디고</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.borogogo.co.kr" target="_blank">바로고고</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.watour.co.kr" target="_blank">와투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.tourgirl.co.kr" target="_blank">투어걸</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.sinnatour.co.kr" target="_blank">신나투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.mitour.co.kr" target="_blank">미투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.dagaja.co.kr" target="_blank">다가자</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.tripgogo.co.kr" target="_blank">고고트립</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.hotplan.co.kr" target="_blank">핫플랜</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.gleetour.co.kr" target="_blank">글리투어</a></div>
+					</li>
+									<li>
+						<div class="fam_btn"><a href="http://www.shinetour.co.kr" target="_blank">샤인투어</a></div>
+					</li>
+									<!-- 사장님 요청으로 이비즈네트웍스 추가 170504 -->
+					<li>
+						<div class="fam_btn"><a href="http://www.ebiznetworks.co.kr" target="_blank">이비즈네트웍스</a></div>
+					</li>
+					</ul>
+				</div>
+				<!-- 2017-03-30 -->
+				<script type="text/javascript">
+				$('.family-site > span').click(function(){
+					$(this).next().toggle();
+				});
+				</script>
+				<!-- // 2017-03-30 -->
+						</div>	
+
+			<div class="f-bottom">
+							<div class="f_logo"><img src="http://img.hyutour.co.kr/logo_footer2_g.png" alt="푸터로고"></div>
+							<div class="address">
+					<p>
+						<strong>(주)이엔플러스</strong><br>
+						<span>
+							대표이사 : 엄태학<span class="mgl"></span>주소 : 서울특별시 강남구 테헤란로82길 15, 15층(대치동, 디아이타워)<br>
+							사업자등록번호 : 514-86-00070 <span class="mgl"></span>
+							통신판매업 : 제2017-서울강남-00561호<br>
+							여행업등록번호 : 제2017-07호 <span class="mgl"></span> 여행영업보증서 : 국내여행 제100-000-2015 0144 5816호													
+							<br>국외여행업등록번호 : 제2017호-26호										
+						</span>
+						<a class="busInf" href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3128620373" target="_blank">사업자정보확인<span class="gt">&gt;</span></a>
+					</p>
+					<p class="copy">
+						<span>휴투어는 통신판매중개자로서 통신판매 당사자가 아닙니다.<br> 따라서 휴투어는 상품정보 및 거래정보에 대하여 책임을 지지 않습니다.<br><br></span>
+						copyright 2015 by HYUTOUR.CO.KR co., all rights reserved.
+					</p>
+				</div>
+
+
+
+				<div class="four-list">
+									<img src="http://img.hyutour.co.kr/f_icon01.gif" border="0" alt="랭키닷컴1위">
+									<a href="javascript:util.regist_pop('registration02')"><img src="http://img.hyutour.co.kr/f_icon02.gif" border="0" alt="관광업등록증"></a>
+					<a href="javascript:util.regist_pop('registration01')"><img src="http://img.hyutour.co.kr/f_icon03.gif" border="0" alt="서울보증보험"></a>
+					<img src="http://img.hyutour.co.kr/f_icon04.gif" border="0" alt="신용카드결제">
+					<img src="http://img.hyutour.co.kr/f_icon05.gif" border="0" alt="휴대폰결제">
+					<script language="JavaScript">
+					function onopen() {
+						var site_com = "2158785373";
+						var url = "http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no="+site_com;
+						window.open(url, "communicationViewPopup", "width=750, height=700;");
+					}
+					</script>
+					<img src="http://img.hyutour.co.kr/f_icon06.gif?ver=20150511122719" alt="공정거래위원회" onclick="onopen();" style="cursor:pointer">
+				</div>	
+
+			</div>
 		</div>
 	</div>
-
-	
-	<div class="f-area">
-		<address class="cm-s">
-			<strong>(주)이비즈에셋</strong>
-			<br>
-			대표이사 : 강수형<span class="mgl"></span>주소 : 서울특별시 강남구 테헤란로82길 15, 15층(대치동, 디아이타워)
-			<br>
-			사업자등록번호 : 865-87-00164
-			<br>
-			통신판매업 : 제 2015-서울강남-02194호<span class="mgl"></span>여행업등록번호 : 제2015-31호
-			<br>
-			여행영업보증서 : 국내여행 제100-000-2015 0298 6652호
-			<br>
-			대푭번호 : 1666-7320
-		</address>
-		<P class="cm-s p-1">
-			디딤투어는 통신판매중개자로서 통신판매 당사자가 아닙니다.<br>
-			따라서 디딤투어는 상품정보 및 거래정보에 대하여 책임을 지지 않습니다.
-		</P>
-		<small class="cm-s">copyright 2015 by DIDIMTOUR.CO.KR co., all rights reserved.</small>
-		
-	</div>
-</div>
 
 	
 </body>

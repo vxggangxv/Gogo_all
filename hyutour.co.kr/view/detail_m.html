@@ -13,16 +13,17 @@
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <!--북마크 추가시 바탕화면에서 볼수있는 아이콘 이미지(png저장)-->
 <link rel="apple-touch-icon" href="http://img.borogogo.co.kr/mobile/icon.png"> 
-<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css?ver=20171019180053" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/moblie_reset.css?ver=20171019180053" type="text/css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css?ver=20171019180053" type="text/css">
+<link rel="stylesheet" href="http://static.hyutour.co.kr/css/moblie_reset.css" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css" type="text/css">
 
 <!-- 모든사이트 통합 css -->
-<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css?ver=20171019180053" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
 <!-- 리뉴얼 css -->
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/mobile_layout3.css" type="text/css"/> 
+<link rel="stylesheet" href="http://static.hyutour.co.kr/css/mobile_layout3.css" type="text/css"/> 
+<!--<link rel="stylesheet" href="../src/css/mobile_layout3.css" type="text/css"/> -->
 
 <meta name="robots" content="ALL">
 <meta name="author" content="BOROGOGO.CO.KR">
@@ -33,10 +34,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <!--- 검색시 달력에서 이용 -->
-<link rel="stylesheet" href="http://static.borogogo.co.kr/css/jquery-ui.css">
+<link rel="stylesheet" href="http://static.hyutour.co.kr/css/jquery-ui.css">
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--- 달력 한글화 -->
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/datepicker_ko.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/datepicker_ko.js"></script>
 
 
 	<!-- Android icon -->
@@ -78,15 +79,15 @@ date.setTime(date.getTime() + (minutes * 60 * 1000));
 </script>
 <!---<script type="text/javascript" src="http://static.go.co.kr/js/jquery.history.js"></script>-->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js?ver=20171019180053"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/common_ver2.js?ver=20171019180053"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/iscroll.js?ver=20171019180053"></script>
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://static.go.co.kr/js/all_common.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/common_ver2.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/iscroll.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/jquery.cookie.js"></script>
 
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/jquery.raty.js"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/jquery.raty.js"></script>
 
 <!--- 리스트페이지에서 쓸 스크립트-->
-<script type="text/javascript" src="http://static.borogogo.co.kr/js/swiper.min.js?ver=20171019180053"></script>
+<script type="text/javascript" src="http://static.hyutour.co.kr/js/swiper.min.js"></script>
 <!--- 리스트페이지에서 쓸 스크립트-->
 
 <script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
@@ -102,9 +103,11 @@ date.setTime(date.getTime() + (minutes * 60 * 1000));
 		<!-- 171019 리뉴얼 상단추가 -->
 <div class="top_main">
 	<div class="main_title clr">
-		<p class="top_pr"><a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/preve_icon2.png" alt="이전"></a></p>
+		<p class="top_pr"><a href="#"><img src="http://img.hyutour.co.kr/renew/m/btn_prev.png" width=28 alt="이전"></a></p>
 		<span>베스트웨스턴 프리미어구로</span>
-		<p class="top_lv"><a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/top_ic_ht.png" alt="찜하기"></a></p>
+		<p class="top_lv"><a href="#"><img src="http://img.didimtour.co.kr/renew/m/i_heart.png" alt="찜하기"></a></p>
+		<!--찜 클릭시 _on.png-->
+		<!--<p class="top_lv"><a href="#"><img src="http://img.didimtour.co.kr/renew/m/i_heart_on.png" alt="찜하기"></a></p>-->
 	</div>
 </div>
 				<div id="menu_bg2" style="display:none;position:absolute;z-index:99999;top:0px;right:-270px">
@@ -460,7 +463,7 @@ $("#top_box_bottom").css("height", $("#top_box").height()+"px");
 			<!--- 이미지 슬라이드 -->
 			<div class="swiper-container swiper-container-horizontal">
 				<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-448px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="11" style="width: 448px;">
-						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg?ver=20171019180053') 100% 100%; background-size:cover">
+						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg') 100% 100%; background-size:cover">
 							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
 																				</div>
 					</div>					
@@ -576,7 +579,7 @@ $("#top_box_bottom").css("height", $("#top_box").height()+"px");
 						</div>
 					</div>
 															<div class="swiper-slide" data-swiper-slide-index="11" style="width: 448px;">
-						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg?ver=20171019180053') 100% 100%; background-size:cover">
+						<div style="background:url('http://img.go.co.kr/mobile/thum_logo.jpg') 100% 100%; background-size:cover">
 							<img src="http://img.go.co.kr/mobile/dummy_img.png" width="100%">
 																				</div>
 					</div>
@@ -628,7 +631,7 @@ $("#top_box_bottom").css("height", $("#top_box").height()+"px");
 			<!--- 이전, 공유, 찜하기 상단라인 -->
 					<!--171019 리뉴얼-->
 						<div class="top_icon" style="z-index:10">
-								<p class="pay_back_icon" onclick="history.back();"><a href="#"><img src="http://img.borogogo.co.kr/mobile/171019_renew/preve_icon.png" style="width:18px" alt="이전"></a></p>
+								<p class="pay_back_icon" onclick="history.back();"><a href="#"><img src="http://img.hyutour.co.kr/renew/m/btn_prevW.png" style="width:28px" alt="이전"></a></p>
 				
 				
 					<form name="keep_f" id="keep_f" method="post">
@@ -639,8 +642,10 @@ $("#top_box_bottom").css("height", $("#top_box").height()+"px");
 					<input type="hidden" name="r_no" id="r_no">
 					<input type="hidden" name="wish_id" id="wish_id" value="1">
 										</form>
-								<span class="de_ch_icon"><a href="javascript:alert('로그인 후 이용가능합니다');location.href='http://m.borogogo.co.kr/home/member/?dd=RREnSjA=&amp;rurl2=aHR0cDovL20uYm9yb2dvZ28uY28ua3IvaG9tZS92aWV3Lz9wX25vPUdFcHpFQT09'" class="wishlink"><img class="wishicon" src="http://img.borogogo.co.kr/mobile/171019_renew/top_ic_ht.png" style="width:30px" alt="찜하기"><!--클릭후<img src="http://img.go.co.kr/mobile/de_wish_icon.png" style="width:100%">--></a></span>
 								<span class="de_share_icon"><a href="javascript:utils.on('#sns_layer');$('.rlist_btn').css({'z-index':'5'})"><img src="http://img.borogogo.co.kr/mobile/171019_renew/top_icon2.png" style="width:30px" alt="공유하기"></a></span>
+								<span class="de_ch_icon"><a href="javascript:alert('로그인 후 이용가능합니다');location.href='http://m.borogogo.co.kr/home/member/?dd=RREnSjA=&amp;rurl2=aHR0cDovL20uYm9yb2dvZ28uY28ua3IvaG9tZS92aWV3Lz9wX25vPUdFcHpFQT09'" class="wishlink"><img class="wishicon" src="http://img.didimtour.co.kr/renew/m/i_heart.png" style="width:30px" alt="찜하기"></a></span>
+							
+								
 			</div>
 
 
@@ -689,580 +694,7 @@ $("#top_box_bottom").css("height", $("#top_box").height()+"px");
 				
 		
 
-<div id="summer_box" class="layer-pop-bg" style="z-index: 99999; display: none;">
-	<div id="date_pop_w" style="width:95%;top: 40%; margin-top: -193px;height:470px">
-		<div class="title_w">
-			<div class="center">체크인 날짜를 선택해주세요!</div><!---<div class="right"><a href="javascript:utils.out('#summer_box');"><img src="http://img.go.co.kr/mobile/title_w_closebtn.jpg" width="40%"></a></div>--->
-			<div id="daySelect_calendar1">
-				<div id="single_checkin_ad_cal" style="overflow-y:hidden;height:420px"><div style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-	<div class="month">
-		체크인 선택<div class="text">2017년 10월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17<span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩104,500</span></a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18<span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩121,000</span></a></td><td class="red_bg" id="sdate_2017-10-19" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.19', '10-19 (목)', '2017.10.20', '10-20 (금)')" class="font_white">19<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩102,800</span></a></td><td id="sdate_2017-10-20" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.20', '10-20 (금)', '2017.10.21', '10-21 (토)')">20<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩121,000</span></a></td><td id="sdate_2017-10-21" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.10.21', '10-21 (토)', '2017.10.22', '10-22 (일)')">21<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩121,000</span></a></td></tr>
-<tr>
-<td id="sdate_2017-10-22" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.10.22', '10-22 (일)', '2017.10.23', '10-23 (월)')">22<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩82,500</span></a></td><td id="sdate_2017-10-23" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.23', '10-23 (월)', '2017.10.24', '10-24 (화)')">23<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩82,500</span></a></td><td id="sdate_2017-10-24" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.24', '10-24 (화)', '2017.10.25', '10-25 (수)')">24<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩110,000</span></a></td><td id="sdate_2017-10-25" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.25', '10-25 (수)', '2017.10.26', '10-26 (목)')">25<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩90,700</span></a></td><td id="sdate_2017-10-26" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.26', '10-26 (목)', '2017.10.27', '10-27 (금)')">26<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩90,700</span></a></td><td id="sdate_2017-10-27" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.27', '10-27 (금)', '2017.10.28', '10-28 (토)')">27<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩93,500</span></a></td><td id="sdate_2017-10-28" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.10.28', '10-28 (토)', '2017.10.29', '10-29 (일)')">28<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩93,500</span></a></td></tr>
-<tr>
-<td id="sdate_2017-10-29" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.10.29', '10-29 (일)', '2017.10.30', '10-30 (월)')">29<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩82,500</span></a></td><td id="sdate_2017-10-30" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.30', '10-30 (월)', '2017.10.31', '10-31 (화)')">30<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩82,500</span></a></td><td id="sdate_2017-10-31" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.10.31', '10-31 (화)', '2017.11.01', '11-01 (수)')">31<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩99,000</span></a></td></tr>
 
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2017년 11월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td id="sdate_2017-11-01" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.01', '11-01 (수)', '2017.11.02', '11-02 (목)')">1<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩99,000</span></a></td><td id="sdate_2017-11-02" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.02', '11-02 (목)', '2017.11.03', '11-03 (금)')">2<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩99,000</span></a></td><td id="sdate_2017-11-03" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.03', '11-03 (금)', '2017.11.04', '11-04 (토)')">3<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-04" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.04', '11-04 (토)', '2017.11.05', '11-05 (일)')">4<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-11-05" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.05', '11-05 (일)', '2017.11.06', '11-06 (월)')">5<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-06" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.06', '11-06 (월)', '2017.11.07', '11-07 (화)')">6<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-07" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.07', '11-07 (화)', '2017.11.08', '11-08 (수)')">7<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-08" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.08', '11-08 (수)', '2017.11.09', '11-09 (목)')">8<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-09" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.09', '11-09 (목)', '2017.11.10', '11-10 (금)')">9<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-10" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.10', '11-10 (금)', '2017.11.11', '11-11 (토)')">10<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-11" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.11', '11-11 (토)', '2017.11.12', '11-12 (일)')">11<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-11-12" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.12', '11-12 (일)', '2017.11.13', '11-13 (월)')">12<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-13" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.13', '11-13 (월)', '2017.11.14', '11-14 (화)')">13<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-14" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.14', '11-14 (화)', '2017.11.15', '11-15 (수)')">14<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-15" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.15', '11-15 (수)', '2017.11.16', '11-16 (목)')">15<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-16" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.16', '11-16 (목)', '2017.11.17', '11-17 (금)')">16<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-17" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.17', '11-17 (금)', '2017.11.18', '11-18 (토)')">17<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-18" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.18', '11-18 (토)', '2017.11.19', '11-19 (일)')">18<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-11-19" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.19', '11-19 (일)', '2017.11.20', '11-20 (월)')">19<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-20" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.20', '11-20 (월)', '2017.11.21', '11-21 (화)')">20<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-21" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.21', '11-21 (화)', '2017.11.22', '11-22 (수)')">21<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-22" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.22', '11-22 (수)', '2017.11.23', '11-23 (목)')">22<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-23" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.23', '11-23 (목)', '2017.11.24', '11-24 (금)')">23<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-24" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.24', '11-24 (금)', '2017.11.25', '11-25 (토)')">24<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-25" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.25', '11-25 (토)', '2017.11.26', '11-26 (일)')">25<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-11-26" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.11.26', '11-26 (일)', '2017.11.27', '11-27 (월)')">26<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-27" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.27', '11-27 (월)', '2017.11.28', '11-28 (화)')">27<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-28" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.28', '11-28 (화)', '2017.11.29', '11-29 (수)')">28<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-11-29" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.29', '11-29 (수)', '2017.11.30', '11-30 (목)')">29<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩33,400</span></a></td><td id="sdate_2017-11-30" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.11.30', '11-30 (목)', '2017.12.01', '12-01 (금)')">30<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2017년 12월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td></td><td></td><td id="sdate_2017-12-01" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.01', '12-01 (금)', '2017.12.02', '12-02 (토)')">1<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-02" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.02', '12-02 (토)', '2017.12.03', '12-03 (일)')">2<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-12-03" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.03', '12-03 (일)', '2017.12.04', '12-04 (월)')">3<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-04" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.04', '12-04 (월)', '2017.12.05', '12-05 (화)')">4<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-05" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.05', '12-05 (화)', '2017.12.06', '12-06 (수)')">5<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-06" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.06', '12-06 (수)', '2017.12.07', '12-07 (목)')">6<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-07" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.07', '12-07 (목)', '2017.12.08', '12-08 (금)')">7<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-08" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.08', '12-08 (금)', '2017.12.09', '12-09 (토)')">8<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-09" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.09', '12-09 (토)', '2017.12.10', '12-10 (일)')">9<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-12-10" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.10', '12-10 (일)', '2017.12.11', '12-11 (월)')">10<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-11" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.11', '12-11 (월)', '2017.12.12', '12-12 (화)')">11<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-12" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.12', '12-12 (화)', '2017.12.13', '12-13 (수)')">12<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-13" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.13', '12-13 (수)', '2017.12.14', '12-14 (목)')">13<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-14" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.14', '12-14 (목)', '2017.12.15', '12-15 (금)')">14<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-15" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.15', '12-15 (금)', '2017.12.16', '12-16 (토)')">15<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-16" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.16', '12-16 (토)', '2017.12.17', '12-17 (일)')">16<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-12-17" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.17', '12-17 (일)', '2017.12.18', '12-18 (월)')">17<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-18" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.18', '12-18 (월)', '2017.12.19', '12-19 (화)')">18<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-19" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.19', '12-19 (화)', '2017.12.20', '12-20 (수)')">19<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-20" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.20', '12-20 (수)', '2017.12.21', '12-21 (목)')">20<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-21" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.21', '12-21 (목)', '2017.12.22', '12-22 (금)')">21<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-22" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.22', '12-22 (금)', '2017.12.23', '12-23 (토)')">22<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-23" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.23', '12-23 (토)', '2017.12.24', '12-24 (일)')">23<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-12-24" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.24', '12-24 (일)', '2017.12.25', '12-25 (월)')">24<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-25" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.25', '12-25 (월)', '2017.12.26', '12-26 (화)')">25<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-26" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.26', '12-26 (화)', '2017.12.27', '12-27 (수)')">26<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-27" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.27', '12-27 (수)', '2017.12.28', '12-28 (목)')">27<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-28" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.28', '12-28 (목)', '2017.12.29', '12-29 (금)')">28<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-29" style="height:40px;line-height:40px"><a style="line-height: 1.3" href="javascript:new_choice2('single_checkin_ad', '2017.12.29', '12-29 (금)', '2017.12.30', '12-30 (토)')">29<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td><td id="sdate_2017-12-30" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:blue;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.30', '12-30 (토)', '2017.12.31', '12-31 (일)')">30<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-<tr>
-<td id="sdate_2017-12-31" style="height:40px;line-height:40px"><a style="line-height: 1.3;color:red;font-weight:400" href="javascript:new_choice2('single_checkin_ad', '2017.12.31', '12-31 (일)', '2018.01.01', '01-01 (월)')">31<br><span style="font-size: 11px; line-height: 1; display: block; font-weight: 400;">₩85,800</span></a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 01월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">31</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 02월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 03월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">31</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 04월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 05월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">31</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 06월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td></td><td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 07월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">31</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 08월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">31</a></td></tr>
-
-		</tbody>
-	</table>
-	<div class="month">
-		체크인 선택<div class="text">2018년 09월</div>
-	</div>
-		<table align="center" class="sdate_cal_table" border="0">
-			<colgroup>
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-				<col width="13.4%">
-			</colgroup>
-			<thead>
-				<tr class="gray_bg2">
-					<th>일</th>
-					<th>월</th>
-					<th>화</th>
-					<th>수</th>
-					<th>목</th>
-					<th>금</th>
-					<th>토</th>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-<td></td><td></td><td></td><td></td><td></td><td></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">1</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">2</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">3</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">4</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">5</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">6</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">7</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">8</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">9</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">10</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">11</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">12</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">13</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">14</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">15</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">16</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">17</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">18</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">19</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">20</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">21</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">22</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">23</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">24</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">25</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">26</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">27</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">28</a></td><td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">29</a></td></tr>
-<tr>
-<td style="height:40px;line-height:40px"><a class="font_gray3" style="line-height: 1.3">30</a></td></tr>
-
-		</tbody>
-	</table><p style="font-weight:bold;font-size:11px;letter-spacing:-1px;margin-bottom:10px">고코투어는 <span style="color:#ff0000">"특정일 프로모션"</span>을 진행중이며, 해당일의 모든 객실은 할인특가로 판매합니다.</p></div>
-<script type="text/javascript">
-
-$(function() {
-	$("#wrapper").bind("touchmove", function(e) { e.preventDefault(); });
-	myScroll4 = new IScroll('#single_checkin_ad_cal', { mouseWheel: false, click: false, bounce:false, preventDefault : false, tap:true});
-});
-
-function new_choice2(cal_mode, choice, choice_type1, ndate, ndate_type1) {
-		var layer_mode = $("#cal_layer_mode").val();
-		if(cal_mode == "checkin") {
-			$("#checkin_cals td").removeClass("red_bg");
-			$("#checkin_cals td a").removeClass("font_white");
-			$("#checkin_cals #date_"+choice).addClass("red_bg");
-			$("#checkin_cals #date_"+choice).children("a").addClass("font_white");
-
-			$("#chin_date").val(choice);
-			$("#chin_choice").text(choice_type1);
-			
-			searching.new_cal('checkin', choice, choice, '');
-			searching.new_cal('checkout', ndate, choice, ndate_type1);
-
-			navigate.move_slow("checkout_cal", "id");
-
-		} else if(cal_mode == "checkout" || cal_mode == "auto_checkout"){
-			$("#checkout_cals td").removeClass("red_bg");
-			$("#checkout_cals td a").removeClass("font_white");
-			$("#checkout_cals #date_"+choice).addClass("red_bg");
-			$("#checkout_cals #date_"+choice).children("a").addClass("font_white");
-
-			$("#chout_date").val(choice);
-			$("#chout_choice").text(choice_type1);
-			
-			searching.new_cal('checkout', choice, choice, '');			
-			
-
-		} else if(cal_mode == "single_checkin") {
-
-			$("#"+cal_mode+"_cals td").removeClass("red_bg");
-			$("#"+cal_mode+"_cals td a").removeClass("font_white");
-			$("#"+cal_mode+"_cals #date_"+choice).addClass("red_bg");
-			$("#"+cal_mode+"_cals #date_"+choice).children("a").addClass("font_white");
-
-			$("#check_in").val(choice);
-			$("#check_out").val(ndate);
-			
-			searching.new_cal(cal_mode, choice, choice, '');
-			$("#sub_keyword").val("키워드를 입력해주세요.");
-			$("#city_1").val("");
-			$("#city_2").val("");
-			$("#sub_sform").submit();
-		} else if(cal_mode == "single_checkin_ad") {
-			
-			$("#"+cal_mode+"_cals td").removeClass("red_bg");
-			$("#"+cal_mode+"_cals td a").removeClass("font_white");
-			$("#"+cal_mode+"_cals #date_"+choice).addClass("red_bg");
-			$("#"+cal_mode+"_cals #date_"+choice).children("a").addClass("font_white");
-
-			$("input[name='hseldate']").val(choice);
-			$("input[name='nseldate']").val(ndate);
-
-			var dt1 = $("input[name='hseldate']").val();
-			var dt1_str = dt1;
-
-			var dt2 = $("input[name='nseldate']").val().split(".");
-			var dt2_str = dt2[1]+"."+dt2[2];
-
-			$("#date_choide").text(dt1_str+"~"+dt2_str);
-		
-			if($("#matching_state").val() == "on" && $("#matching_date").val() == dt1) {
-				utils.out("#summer_box");					
-				location.href="/home/view/?p_no="+$("#matching_code").val()+"&sub_sdate="+$("input[name='hseldate']").val()+"&sub_edate="+$("input[name='nseldate']").val()+"&matching=RhA=";				
-			} else {
-				utils.out("#summer_box");
-				//booking.find_room();
-				//$("#hseldate_bt").attr("href", "javascript:navigate.move2('pro_list_title2', 'id');booking.sch_calender('"+$("input[name='hseldate']").val()+"', 'hseldate', 'open');booking.sch_calender('"+ $("input[name='nseldate']").val()+"', 'nseldate', 'open')");
-
-				var week = new Array('일', '월', '화', '수', '목', '금', '토');
-
-				var chin_tmp = choice.split(".");
-				var chout_tmp = ndate.split(".");
-
-				var chin_tmp2 = chin_tmp[0]+"-"+chin_tmp[1]+"-"+chin_tmp[2];
-				var chout_tmp2 = chout_tmp[0]+"-"+chout_tmp[1]+"-"+chout_tmp[2];
-
-				var yoil_chin = new Date(chin_tmp2).getDay();
-				var yoil_chout = new Date(chout_tmp2).getDay();
-
-				$("input[name='hseldate']").val(chin_tmp2);
-				$("input[name='nseldate']").val(chout_tmp2);
-
-				$("#chin_text").text(choice+" ("+week[yoil_chin]+")");
-				$("#chout_text").text(ndate+" ("+week[yoil_chout]+")");
-
-				//booking_new.apply_info();
-				$("#summer_box").html();	// 자꾸 id값 겹쳐서 없앰
-
-				$("#wrapper").unbind("touchmove");
-			}
-		
-		}
-	}
-</script>
-
-</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <script type="text/javascript">
 $(function() {
@@ -1309,13 +741,21 @@ $(function() {
 </div>
 --->
 
-<!--171019 리뉴얼 텍스트추가-->
+<!--180625 수정-->
+		
+		<div class="clr"></div>
 <div class="top_title_wrap">
-		<div class="top_title_txt">
-			<span class="title_txt">베스트웨스턴 프리미어 구로</span>
-			<p>서울 구로구 구로3동1128-1</p>
+	<span class="star"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-off.png"></span>
+	<div class="top_title_txt">
+		<span class="title_txt">베스트웨스턴 프리미어 구로</span>
+		<div class="row-prc">
+			<span class="per">84%</span>
+			<span class="price">54,000원</span>
+			<s>330,000원</s>
 		</div>
+	</div>
 </div>
+<div class="clr"></div>
 
 <!-- 달력 인원수 수정 -->
 <div id="calender_number_w">
@@ -2698,20 +2138,25 @@ $(function() {
 		</div>
 		---->
 		
+		<!--180625 수정-->
+		<div class="clr"></div>
+		<ul class="info-tab clr">
+			<li class="tab-1 on"><a href="#숙소정보아이디값">숙소정보</a></li>
+			<li class="tab-2"><a href="#부대시설아이디값">부대시설</a></li>
+			<li class="tab-3"><a href="#위치정보아이디값">위치정보</a></li>
+			<li class="tab-4"><a href="#환불안내아이디값">환불안내</a></li>
+		</ul>
+		
+		
 <!-- 숙소정보 -->
 <div id="room_w">			
 <div class="room_tx_w">
-<style>
-.demongp {word-break: break-all}
-</style>
-<!--171019 배너추가-->
-<div class="bn_wr">
-	<p class="bn_bg"><span>친구초대하고 5,000원 할인쿠폰받기<span class="cp">!</span></span><span class="right">></span></p>
-</div>
 
+
+	
 
 <div class="room_tx_in">	
-	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20171019180053" class="goco_tit_logo" style="margin-left:4%"> -->부대시설</h4>
+	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png" class="goco_tit_logo" style="margin-left:4%"> -->부대시설</h4>
 	<div class="establishment_wrap" style="padding-right:15px;padding-left:15px;">
 	<ul class="establishment_list">
 		<li class="conveniencestore">
@@ -2733,7 +2178,7 @@ $(function() {
 </div>
 
 <div class="room_tx_in re_txin">	
-	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20171019180053" class="goco_tit_logo" style="margin-left:4%">-->기본사항</h4>
+	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png" class="goco_tit_logo" style="margin-left:4%">-->기본사항</h4>
 	<div class="txt_forms">
 	<p>
 		<!--- 체크인/체크아웃 --->
@@ -2742,13 +2187,9 @@ $(function() {
 	</div>
 </div>
 
-<!--<div class="room_tx_in">
-	<div class="txt_forms">
-	<br><span style="font-size:1.0em;font-weight:600;color:#000000;font-family:'Nanum Gothic'"> 상품안내</span><br>- 스탠다드트윈/더블 연휴특가 상품은 2인조식이 포함된 상품입니다.<br>- 룸온리 상품에는 조식이 포함되어 있지 않습니다.<br><br>	</div>
-</div>-->
 
 <div class="room_tx_in re_txin2">	
-	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20171019180053" class="goco_tit_logo" style="margin-left:4%">-->투숙객 혜택</h4>
+	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png" class="goco_tit_logo" style="margin-left:4%">-->투숙객 혜택</h4>
 	<div class="txt_forms">
 	<p>
 		<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx"> 스탠다드 트윈/더블 연휴특가 상품은 2인조식이 포함된 상품입니다.</span><br>
@@ -2765,10 +2206,10 @@ $(function() {
 
 <!-- 위치정보 -->
 <div id="location_w" style="width:99%;">
-	<h3><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20171019180053" class="goco_tit_logo">--> 위치정보</h3>
+	<h3><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png" class="goco_tit_logo">--> 위치정보</h3>
 	<div class="location_map">
 		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=ZX4xi51rFvvVZ_TSv0Ke"></script>
-<div id="map" style="width: 100%; height: 200px; position: relative; overflow: hidden; background: url(&quot;http://static.naver.net/maps/mantle/1x/pattern_1.png&quot;) 0px 0px repeat transparent;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0; cursor: url(&quot;http://static.naver.net/maps/mantle/1x/openhand.cur&quot;), default;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; zoom: 1;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; user-select: none; zoom: 1;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div data-ntranid="NTran-13" style="position: absolute; top: -333px; left: 187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/9/418/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-16" style="position: absolute; top: 179px; left: -69px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/9/417/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-22" style="position: absolute; top: -77px; left: 187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/9/418/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-19" style="position: absolute; top: -77px; left: -69px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/9/417/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-20" style="position: absolute; top: 179px; left: 187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/9/418/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-21" style="position: absolute; top: -333px; left: -69px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/9/417/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-17" style="position: absolute; top: -333px; left: 443px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/9/419/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-14" style="position: absolute; top: 179px; left: -325px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/9/416/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-15" style="position: absolute; top: -77px; left: 443px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/9/419/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-18" style="position: absolute; top: -77px; left: -325px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/9/416/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-23" style="position: absolute; top: 179px; left: 443px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/9/419/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-24" style="position: absolute; top: -333px; left: -325px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/9/416/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 0; user-select: none; zoom: 1; display: none;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div style="position: absolute; top: -320px; left: 307px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-1"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/837/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: 51px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-2"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/836/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: 307px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-3"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/837/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: 51px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-4"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/836/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: 307px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-5"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/837/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -320px; left: 51px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-6"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/836/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -320px; left: 563px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-7"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/838/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: -205px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-8"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/835/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: 563px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-9"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/838/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: -205px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-10"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/835/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: 563px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-11"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/838/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -320px; left: -205px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-12"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/835/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 100;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 101;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 103;"><div title="" style="position: absolute; overflow: hidden; box-sizing: content-box !important; cursor: inherit; left: 261px; top: 100px; width: 22px; height: 33px;"><map name="nmarker-77B8EF03-3294-4054-B23B-86283832B1AE"><area href="#" shape="poly" coords="11,0,9,0,6,1,4,2,2,4,0,8,0,12,1,14,2,16,5,19,5,20,6,23,8,26,9,30,9,34,13,34,13,30,14,26,16,23,17,20,17,19,20,16,21,14,22,12,22,12,22,8,20,4,18,2,16,1,13,0" style="display: block; cursor: pointer;"></map><img src="http://static.naver.net/maps/mantle/1x/marker-default.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; position: absolute; cursor: inherit; width: 22px; height: 33px; left: 0px; top: 0px;"><img src="http://static.naver.net/maps/mantle/1x/dot.gif" alt="" usemap="#nmarker-77B8EF03-3294-4054-B23B-86283832B1AE" style="position: absolute; border: 0px; left: 0px; top: 0px; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; width: 22px; height: 33px;"></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 106;"></div></div></div><div style="position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background-color: rgb(255, 255, 255); z-index: 10000; opacity: 0.5;"></div></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; right: 0px;"><div style="border: 0px none; margin: -4px 0px 0px; padding: 0px; pointer-events: none; float: right; height: 21px;"><div style="position: relative; width: 52px; height: 14px; margin: 0px 12px 7px 2px; overflow: hidden; pointer-events: auto;"><span style="display:block;margin:0;padding:0 4px;text-align:center;font-size:10px;line-height:11px;font-family:Helvetica,AppleSDGothicNeo-Light,nanumgothic,NanumGothic,&quot;나눔고딕&quot;,Dotum,&quot;돋움&quot;,sans-serif;font-weight:bold;color:#000;text-shadow:-1px 0 rgba(255, 255, 255, 0.3), 0 1px rgba(255, 255, 255, 0.3), 1px 0 rgba(255, 255, 255, 0.3), 0 -1px rgba(255, 255, 255, 0.3);">400m</span><img src="http://static.naver.net/maps/mantle/1x/scale-normal-b.png" width="44" height="4" alt="" style="position:absolute;left:4px;;bottom:0;z-index:2;display:block;width:44px;height:4px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="http://static.naver.net/maps/mantle/1x/scale-normal-l.png" width="4" height="10" alt="" style="position:absolute;left:0;bottom:0;z-index:2;display:block;width:4px;height:10px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="http://static.naver.net/maps/mantle/1x/scale-normal-r.png" width="4" height="10" alt="" style="position:absolute;right:0;bottom:0;z-index:2;display:block;width:4px;height:10px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></div></div><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: right;"><a href="http://map.naver.com" target="_blank" style="display: block; width: 43px; height: 10px; overflow: hidden; margin: 0px 5px 7px 0px; pointer-events: auto;"><img src="http://static.naver.net/maps/mantle/1x/naver-normal.png" width="43" height="10" alt="NAVER" style="display:block;width:43px;height:10px;overflow:hidden;border:0 none;margin:0;padding:0;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></a></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; left: 0px;"><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: left; height: 21px;"><div class="map_copyright" style="margin: 0px; padding: 0px 0px 2px 10px; height: 19px; line-height: 19px; color: rgb(68, 68, 68); font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; clear: both; white-space: nowrap; pointer-events: none;"><div style="float: left;"><span style="white-space: pre; color: rgb(68, 68, 68);">© NAVER Corp.</span></div><a href="#" style="font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; line-height: 19px; margin: 0px 0px 0px 5px; padding: 0px; color: rgb(68, 68, 68); float: left; pointer-events: auto; text-decoration: underline; display: none;">더보기</a><div style="float: left;"><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; display: none; color: rgb(68, 68, 68);"> /OpenStreetMap</a></div></div></div></div><div style="border: 1px solid rgb(41, 41, 48); background: rgb(255, 255, 255); padding: 15px; color: rgb(51, 51, 51); position: absolute; font-size: 11px; line-height: 1.5; clear: both; display: none; max-width: 350px !important; max-height: 300px !important;"><h5 style="font-size: 12px; margin-top: 0px; margin-bottom: 10px;">지도 데이터</h5><a href="#" style="position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; font-size: 14px; line-height: 14px; display: block; overflow: hidden; color: rgb(68, 68, 68); text-decoration: none; font-weight: bold; text-align: center;">╳</a><div><span style="white-space: pre; color: rgb(68, 68, 68); float: left;">© NAVER Corp.</span><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; color: rgb(68, 68, 68); float: left; display: none;"> /OpenStreetMap</a></div></div></div>
+ <div id="map" style="width: 100%; height: 200px; position: relative; overflow: hidden; background: url(&quot;http://static.naver.net/maps/mantle/1x/pattern_1.png&quot;) 0px 0px repeat transparent;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0; cursor: url(&quot;http://static.naver.net/maps/mantle/1x/openhand.cur&quot;), default;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; zoom: 1;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; user-select: none; zoom: 1;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div data-ntranid="NTran-13" style="position: absolute; top: -333px; left: 187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/9/418/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-16" style="position: absolute; top: 179px; left: -69px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/9/417/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-22" style="position: absolute; top: -77px; left: 187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/9/418/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-19" style="position: absolute; top: -77px; left: -69px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/9/417/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-20" style="position: absolute; top: 179px; left: 187px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/9/418/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-21" style="position: absolute; top: -333px; left: -69px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/9/417/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-17" style="position: absolute; top: -333px; left: 443px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/9/419/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-14" style="position: absolute; top: 179px; left: -325px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/9/416/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-15" style="position: absolute; top: -77px; left: 443px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/9/419/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-18" style="position: absolute; top: -77px; left: -325px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/9/416/366/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-23" style="position: absolute; top: 179px; left: 443px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/9/419/365/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div data-ntranid="NTran-24" style="position: absolute; top: -333px; left: -325px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/9/416/367/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 0; user-select: none; zoom: 1; display: none;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div style="position: absolute; top: -320px; left: 307px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-1"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/837/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: 51px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-2"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/836/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: 307px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-3"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/837/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: 51px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-4"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/836/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: 307px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-5"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/837/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -320px; left: 51px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-6"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/836/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -320px; left: 563px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-7"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/838/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: -205px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-8"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/835/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: 563px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-9"><img alt="" width="256" height="256" src="http://onetile3.map.naver.net/get/174/0/0/10/838/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -64px; left: -205px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-10"><img alt="" width="256" height="256" src="http://onetile4.map.naver.net/get/174/0/0/10/835/732/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: 192px; left: 563px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-11"><img alt="" width="256" height="256" src="http://onetile2.map.naver.net/get/174/0/0/10/838/731/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div style="position: absolute; top: -320px; left: -205px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;" data-ntranid="NTran-12"><img alt="" width="256" height="256" src="http://onetile1.map.naver.net/get/174/0/0/10/835/733/bl_vc_bg/ol_vc_an" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 100;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 101;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 103;"><div title="" style="position: absolute; overflow: hidden; box-sizing: content-box !important; cursor: inherit; left: 261px; top: 100px; width: 22px; height: 33px;"><map name="nmarker-77B8EF03-3294-4054-B23B-86283832B1AE"><area href="#" shape="poly" coords="11,0,9,0,6,1,4,2,2,4,0,8,0,12,1,14,2,16,5,19,5,20,6,23,8,26,9,30,9,34,13,34,13,30,14,26,16,23,17,20,17,19,20,16,21,14,22,12,22,12,22,8,20,4,18,2,16,1,13,0" style="display: block; cursor: pointer;"></map><img src="http://static.naver.net/maps/mantle/1x/marker-default.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; position: absolute; cursor: inherit; width: 22px; height: 33px; left: 0px; top: 0px;"><img src="http://static.naver.net/maps/mantle/1x/dot.gif" alt="" usemap="#nmarker-77B8EF03-3294-4054-B23B-86283832B1AE" style="position: absolute; border: 0px; left: 0px; top: 0px; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; width: 22px; height: 33px;"></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 106;"></div></div></div><div style="position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background-color: rgb(255, 255, 255); z-index: 10000; opacity: 0.5;"></div></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; right: 0px;"><div style="border: 0px none; margin: -4px 0px 0px; padding: 0px; pointer-events: none; float: right; height: 21px;"><div style="position: relative; width: 52px; height: 14px; margin: 0px 12px 7px 2px; overflow: hidden; pointer-events: auto;"><span style="display:block;margin:0;padding:0 4px;text-align:center;font-size:10px;line-height:11px;font-family:Helvetica,AppleSDGothicNeo-Light,nanumgothic,NanumGothic,&quot;나눔고딕&quot;,Dotum,&quot;돋움&quot;,sans-serif;font-weight:bold;color:#000;text-shadow:-1px 0 rgba(255, 255, 255, 0.3), 0 1px rgba(255, 255, 255, 0.3), 1px 0 rgba(255, 255, 255, 0.3), 0 -1px rgba(255, 255, 255, 0.3);">400m</span><img src="http://static.naver.net/maps/mantle/1x/scale-normal-b.png" width="44" height="4" alt="" style="position:absolute;left:4px;;bottom:0;z-index:2;display:block;width:44px;height:4px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="http://static.naver.net/maps/mantle/1x/scale-normal-l.png" width="4" height="10" alt="" style="position:absolute;left:0;bottom:0;z-index:2;display:block;width:4px;height:10px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="http://static.naver.net/maps/mantle/1x/scale-normal-r.png" width="4" height="10" alt="" style="position:absolute;right:0;bottom:0;z-index:2;display:block;width:4px;height:10px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></div></div><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: right;"><a href="http://map.naver.com" target="_blank" style="display: block; width: 43px; height: 10px; overflow: hidden; margin: 0px 5px 7px 0px; pointer-events: auto;"><img src="http://static.naver.net/maps/mantle/1x/naver-normal.png" width="43" height="10" alt="NAVER" style="display:block;width:43px;height:10px;overflow:hidden;border:0 none;margin:0;padding:0;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></a></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; left: 0px;"><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: left; height: 21px;"><div class="map_copyright" style="margin: 0px; padding: 0px 0px 2px 10px; height: 19px; line-height: 19px; color: rgb(68, 68, 68); font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; clear: both; white-space: nowrap; pointer-events: none;"><div style="float: left;"><span style="white-space: pre; color: rgb(68, 68, 68);">© NAVER Corp.</span></div><a href="#" style="font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; line-height: 19px; margin: 0px 0px 0px 5px; padding: 0px; color: rgb(68, 68, 68); float: left; pointer-events: auto; text-decoration: underline; display: none;">더보기</a><div style="float: left;"><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; display: none; color: rgb(68, 68, 68);"> /OpenStreetMap</a></div></div></div></div><div style="border: 1px solid rgb(41, 41, 48); background: rgb(255, 255, 255); padding: 15px; color: rgb(51, 51, 51); position: absolute; font-size: 11px; line-height: 1.5; clear: both; display: none; max-width: 350px !important; max-height: 300px !important;"><h5 style="font-size: 12px; margin-top: 0px; margin-bottom: 10px;">지도 데이터</h5><a href="#" style="position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; font-size: 14px; line-height: 14px; display: block; overflow: hidden; color: rgb(68, 68, 68); text-decoration: none; font-weight: bold; text-align: center;">╳</a><div><span style="white-space: pre; color: rgb(68, 68, 68); float: left;">© NAVER Corp.</span><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; color: rgb(68, 68, 68); float: left; display: none;"> /OpenStreetMap</a></div></div></div>
 
 <script>
 var mapOptions = {
@@ -2821,7 +2262,7 @@ var marker = new naver.maps.Marker({
 </style>
 
 <div class="room_tx_in">	
-	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20171019180053" class="goco_tit_logo" style="margin-left:4%">--> 환불안내</h4>
+	<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png" class="goco_tit_logo" style="margin-left:4%">--> 환불안내</h4>
 	<div style="width:100%">
 	<div class="txt_forms">
 	<p>
@@ -2887,7 +2328,7 @@ var marker = new naver.maps.Marker({
 	</div>
 </div>
 								<div class="room_tx_in">	
-					<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png?ver=20171019180053" class="goco_tit_logo" style="margin-left:4%"> -->확인사항 및 기타문의</h4>
+					<h4 class="room_title"><!--<img src="http://img.go.co.kr/mobile/logo_dtl.png" class="goco_tit_logo" style="margin-left:4%"> -->확인사항 및 기타문의</h4>
 					<div class="txt_forms">
 					<p>
 						<span class="room_tx_icon">ㆍ</span> <span class="room_tx_tx">해당 금액은 세금, 봉사료가 포함된 금액입니다.</span><br>
@@ -3418,77 +2859,43 @@ function app_coupon_set() {
    <p><img src="http://img.go.co.kr/mobile/loading20.gif" width="30"></p> 
   </div>
 		
-	<!--<div class="btmLogo" id="btmLogo"></div>-->
-	<!-- footer -->
-<div class="clr"></div>
-<!--<div id="Footer" class="hide_div">
-	<ul class="f-menu">
-		<li><a href="http://m.borogogo.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uHEdbESdMOUlwQC9QQ1tRKEwzQ3FVKRtfBkEwfDBJY2QFDlJsP30eeFUrQR8NTEgKJR5sFm8UbU8YBE95BS1TPHwlGkldG30RbhdpDnFOBRtO">로그인</a></li>
-		<li><a href="http://www.borogogo.co.kr?ver=pc">PC버전</a></li>
-		<li><a href="http://m.borogogo.co.kr/home/customer/?dd=QBA0UTE=">고객센터</a></li>
-		<li><a href="javascript:navi.move_home();" class="move_top">TOP <span>▲</span></a></li>
-	</ul>
-	<div class="f-area">
-		<ul class="policy">
-			<li><a href="http://m.borogogo.co.kr/home/member/?dd=SwwhTTp5N00mEQ==">회사소개</a></li>
-			<li><a href="/home/policy/?dd=QxEpTQFWMVM=">이용약관</a></li>
-			<li class="privacy"><a href="/home/policy/?dd=WQwpVT9FJw==">개인정보처리방침</a></li>
-		</ul>
-		<ul class="customer">
-			<li><a href="tel:1666-1783" class="call">고객상담 1666-1783</a></li>
-			<li><a href="mailto:help@borogogo.co.kr" class="mail">문의메일 : help@borogogo.co.kr</a></li>
-		</ul>
-		<address>
-							<p>
-					<strong>(주)이엔자산개발</strong><br>
-					대표이사 : 박기범<br>
-					주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동, 모노팰리스) <br>
-					사업자등록번호 : 312-86-20373<br>					통신판매업 : 제2011-충남아산-00010호<br>					여행업등록번호 : 제2017-34호<br>					여행영업보증서 : 국내여행 제100-000-2015 0299 0337호<br>									</p>
-						<p class="copy">Copyright 2015 by BOROGOGO.CO.KR co., all right reserved.</p>
-		</address>
-	</div>
-</div>-->
-<!-- footer -->
-<!-- 171019 리뉴얼 footer -->
-<div class="footer">
-	<div class="footerin">
-		<div class="f-top_bt clr">
-			<ul class="clr">
-				<li><a href="#">로그인</a></li>
-				<li><a href="#">PC버전</a></li>
-				<li><a href="#">고객센터</a></li>
-			</ul>
+
+	<div class="clr"></div>
+	<div class="footer">
+		<div class="footerin">
+			<div class="f-top">
+				<a heft="#">회사소개</a>
+				<span class="mgl">|</span>
+				<a heft="#">이용약관</a>
+				<span class="mgl">|</span>
+				<a heft="#">개인정보처리방침</a>
+			</div>
 		</div>
 		
-		<div class="f-top">
-			<a heft="#">회사소개</a>
-			<span class="mgl">&nbsp;|</span>
-			<a heft="#">이용약관</a>
-			<span class="mgl">&nbsp;|</span>
-			<a heft="#">개인정보처리방침</a>
-		</div>
-	</div>
-
+		<figure class="logo"><img src="http://img.hyutour.co.kr/logo_footer2_g.png" alt="푸터로고"></figure>
+		
 		<div class="foot">
 			<address class="footer_add">
-				(주)이엔자산개발
+				(주)이엔플러스 <span class="mgl">ㅣ</span>
+				대표이사 : 엄태학
 				<br>
-				대표이사 : 박기범<br>
-				주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동, 모노팰리스)
+				주소 : 서울특별시 강남구 테헤란로82길 15, 15층(대치동, 디아이타워)
 				<br>
-				사업자등록번호 : 312-86-20373
+				사업자등록번호 : 514-86-00070
 				<br>
-				통신판매업 : 제2011-충남아산-00010호<br>여행업등록번호 : 제2017-34호
+				통신판매업 : 제2017-서울강남-00561호 <span class="mgl">ㅣ</span> 여행업등록번호 : 제2017-07호
 				<br>
-				여행영업보증서 : 국내여행 제100-000-2015 0299 0337호
+				여행영업보증서 : 국내여행 제100-000-2015 0144 5816호													
 				<br>
-				고객상담 : 1234-5678<span class="">&nbsp;|&nbsp;</span>e-mail 문의 : abcd@efg.com
+				국외여행업등록번호 : 제2017호-26호										
 			</address>
-			<p class="copy">copyright 2016 by BOROGOGO.CO.KR co., all rights reserved.</p>
+			<p class="copy">
+				<span>휴투어는 통신판매중개자로서 통신판매 당사자가 아닙니다.<br> 따라서 휴투어는 상품정보 및 거래정보에 대하여 책임을 지지 않습니다.<br></span>
+				copyright 2016 by HYUTOUR.CO.KR co., all rights reserved.
+			</p>
 		</div>
-	
-</div>
 
+	</div>
 
 <!--하단 고정메뉴-->
 
@@ -3855,4 +3262,9 @@ $(document).ready(function() {
 
 
 
-</div></div></body></html>
+</div></div>
+
+
+	
+	
+</body></html>

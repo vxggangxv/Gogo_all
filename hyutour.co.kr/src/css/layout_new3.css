@@ -82,7 +82,7 @@
 .pdtSlt-sec2:before {background: #ebebeb;}
 
 
-#top2, #headerWrap, #gnbWrap, #fix-nav, .mainBox02_wrapper, #Footer {min-width: 1200px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+#top2, #headerWrap, #gnbWrap, .dateBar, .mainBox02_wrapper, #Footer {min-width: 1200px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
 
 #top2 {padding: 5px 0;}
 #top2 .link {width: 1200px;}
@@ -229,11 +229,11 @@
 /* 콘텐츠 리뉴얼 */
 .content-sec {margin-bottom: 50px;}
 .content-sec #contents {float: none; border: 1px solid #d8d8d8; margin-top: 10px; /*border: none; margin-top: 0px;*/}
-.content-sec #main5 { padding-bottom: 40px; border-bottom: 1px solid #dcdcdc;}
+.content-sec #main5 {border-bottom: 1px solid #dcdcdc; padding-bottom: 40px;}
 .content-sec #main5 .right {position: relative; top: -5px;}
 .content-sec #main5 .goods_info tr {border: none;}
-.content-sec #main5 .goods_info .tit2, .content-sec #main5 .goods_info .contents {border-bottom: none;}
-.content-sec #main5 .goods_info .tit2 {font-weight: 700; color: #000;}
+.content-sec #main5 .goods_info .tit2, .content-sec #main5 .goods_info .contents {font-size: 16px;}
+.content-sec #main5 .goods_info .tit2 {color: #000; height: 50px;}
 .content-sec #main5 .goods_info .contents {color: #3a3a3a;}
 .content-sec #main5 .goods_info
 , .content-sec #reserveTitle 
@@ -267,7 +267,7 @@
 .content-sec #main5 .goods_info tr td .snsBtn-box a:first-child {margin-left: 0;}
  
 .content-sec #reserveTitle {color: #000; margin-bottom: 40px;}
-.content-sec #rsv_sang #rsv_s_tab .rsv_s_tabHead {background: #fff; color: #000; font-size: 16px;}
+.content-sec #rsv_sang #rsv_s_tab .rsv_s_tabHead {/*background: #fff; color: #000;*/ font-size: 16px;}
 
 .content-sec #main5 .goods_info tr td .snsBtn-box a.a3
 , .content-sec #main5 .goods_info .contents a:hover
@@ -325,11 +325,12 @@
 .content-sec .info_box .establishment_wrap2 .establishment_list2 li {padding-top: 0;}
 
 
-.content-sec .infom-tab {border: 1px solid #dcdcdc; margin: 30px auto; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
-.content-sec .infom-tab > li {float: left; width: 20%; height: 50px; border-left: 1px solid #dcdcdc;}
-.content-sec .infom-tab > li:first-child {border-left: 0;}
+.content-sec .infom-tab {margin: 30px auto; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; display: table; border-collapse: collapse;}
+.content-sec .infom-tab > li {width: 20%; height: 50px; border: 1px solid #dcdcdc; display: table-cell; border-bottom: 1px solid #b3b3b3;}
 .content-sec .infom-tab > li a {font-size: 16px; color: #3a3a3a; display: block; line-height: 50px; background: #f5f5f5;}
-.content-sec .infom-tab > li.on a {background: #fff; font-weight: 500; border-bottom: 1px solid #fff;}
+.content-sec .infom-tab > li.on {border-color: #b3b3b3; z-index: 1;}
+.content-sec .infom-tab > li.on a {background: #fff; font-weight: 500; border-left: 1px solid #b3b3b3;}
+.content-sec .infom-tab > li:first-child.on a {border-left: 0;}
 
 
 .content-sec .review_write2 {float: none; margin: 0 auto; width: 954px; box-sizing: border-box; height: auto;}
@@ -349,3 +350,68 @@
 
 .content-sec #faq .faq_t .reply {color: #3a3a3a; padding: 20px 0;}
 
+
+
+/*패키지 UI변경 20170613_혜준*/
+.dateBar {position: relative; clear: both; top: 0; z-index: 9; width: 100%;}
+.dateBar * {box-sizing: border-box;}
+.dateBar .nav-bar {padding: 10px 0; /* height: 96px; padding-top: 20px; */ background: #1fa0d5; border-bottom: 1px solid #c1c1c1;}
+.dateBar .nav {position: relative; margin: 0 auto; width: 1002px; font-size: 0;}
+.dateBar .nav > * {display: inline-block; vertical-align: middle;}
+.dateBar .nav .inp {margin-left: 5px;}
+.dateBar .nav > .inp:first-child {margin-left: 0;}
+.dateBar .nav .inp > span {position: relative; top: -1px;display: block; color: #787878; font-size: 13px;}
+.dateBar .nav .inp > .sch-wd, .dateBar .nav .inp > .chkIn, .dateBar .nav .inp > select {border: none; padding-left: 10px; font-size: 15px; /* height: 38px; */ height: 45px;}
+.dateBar .nav .inp > select option {font-size: 15px;}
+.dateBar .nav .inp > .sch-wd, .dateBar .nav .inp > .chkIn {
+	appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
+}
+.dateBar .nav .inp > .chkIn{width: 174px;/* width: 144px; */ background: #fff url(http://img.hyutour.co.kr/renew/m/i_chkDate_in.jpg) no-repeat 8px center; background-size: 30px; padding-left: 50px;}
+
+.dateBar .nav .d-h3 {}
+.dateBar .nav .d-h3 > .inp .sch-wd {width: 295px;}
+.dateBar .nav .inp > select::-ms-expand {display: none;}
+.dateBar .nav .inp > select.global, .dateBar .nav .inp > select.city {width: 150px; background-position: 105px;}
+.dateBar .nav .inp > select.number {width: 80px; background-position: 55px;}
+.dateBar .nav .more-a, .dateBar .nav .search-a {position: absolute; height: 58px; font-size: 18px; color: #fff; text-align: center; line-height: 3.1em;}
+.dateBar .nav .more-a:active, .dateBar .nav .search-a:active {font-weight: 400;}
+.dateBar .nav .more-a {right: 170px; width: 128px; background: #9c9c9c; /* margin-left: 20px; */}
+.dateBar .nav .more-a:before {position: absolute; content: ""; bottom: -14px; left: 57px; width: 1px; border: 8px solid transparent; border-top-color: #9c9c9c;}
+.dateBar .nav .more-a .i-plus {display: inline-block; position: relative; top: 4px; margin-right: 4px; width: 20px; height: 20px; background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -440px 0;}
+.dateBar .nav .more-a.on .i-plus {background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -480px 0;}
+.dateBar .nav .search-a {right: 0; top: 0; width: 60px; background: #0060a2; height: 45px;}
+.dateBar .nav .search-a .i-search {display: inline-block; position: relative; top: -2px; width: 21px; height: 22px; background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -520px 0;}
+
+
+/* 상세페이지 수정 */
+.content-sec #rsv_sang #rsv_s_tab,
+#rsv_s_list {table-layout: fixed;}
+
+.pdtSlt-sec2 .part-1 h2 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8f4e3+0,c1dedf+100 */
+	background: rgb(232,244,227); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(232,244,227,1) 0%, rgba(193,222,223,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(232,244,227,1) 0%,rgba(193,222,223,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(232,244,227,1) 0%,rgba(193,222,223,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f4e3', endColorstr='#c1dedf',GradientType=1 ); /* IE6-9 */
+}
+.pdtSlt-sec2 .part-2 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1dddf+0,80b9d7+100 */
+	background: rgb(193,221,223); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(193,221,223,1) 0%, rgba(128,185,215,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(193,221,223,1) 0%,rgba(128,185,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(193,221,223,1) 0%,rgba(128,185,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1dddf', endColorstr='#80b9d7',GradientType=1 ); /* IE6-9 */
+}
+.pdtSlt-sec2 .part-3 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7fb8d7+0,59a3d3+100 */
+	background: rgb(127,184,215); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(127,184,215,1) 0%, rgba(89,163,211,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(127,184,215,1) 0%,rgba(89,163,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(127,184,215,1) 0%,rgba(89,163,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fb8d7', endColorstr='#59a3d3',GradientType=1 ); /* IE6-9 */
+}
+#rsv_s_list .pay-box > .nth3 a {background: #008ae1;}
+
+.content-sec .prodName {width: 1002px; margin: 0 auto; font-size: 18px;	font-weight: 400; border: 1px solid #b3b3b3; padding: 15px; margin-top: 15px;}
+.content-sec .prodName .star {position: relative; top: -6px; display: inline-block; vertical-align: middle; margin-left: 8px;}

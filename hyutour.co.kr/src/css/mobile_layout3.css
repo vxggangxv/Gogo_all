@@ -87,7 +87,7 @@
 
 /* 푸터 */
 .footer, .footer * {font-family: "Noto Sans KR", sans-serif; font-weight: 300;}
-.footer {width:100%; background: #54585b; font-size: 12px; padding-bottom: 20px;}
+.footer {width:100%; background: #54585b; font-size: 12px; padding-bottom: 50px;}
 .footer .logo {position: relative; text-align: center; width: 80px; margin: 8px auto 2px;}
 .footer .logo img {width: 100%;}
 .footerin .f-top { width:94%; text-align: center; margin: 0 auto; border-bottom:1px solid #a3a3a3;}
@@ -105,13 +105,16 @@
 
 
 /* 캘린더 수정 */
+#calender_number_w {padding: 10px 0 1px;}
 
-#info_product_btn_w .info_product_btn {background: #ff6699;}
+/*
+#info_product_btn_w .info_product_btn {background: #008cd5;}
 #calender_number_w { height:80px; border-top:none;}
 .calender_ch_w {border:none; width:100%;}
 .calender_ch_w .calender_ch_checkin {border-right:none;}
-.calender_ch_w .date {color: #ff6699; padding-left:20px;}
+.calender_ch_w .date {color: #008cd5; padding-left:20px;}
 .calender_ch_day_o {border:none; background: #f4f4f6; width:50px; height:30px; line-height: 30px; text-align: center;}
+*/
 
 /* 상단이미지 로고 삭제 */
 .thumbnail_logo img {display: none;}
@@ -120,7 +123,7 @@
 #info_img_wrpa .img_txt {bottom:20px;}
 /*  상단 이미지 아이콘 */
 #info_img_wrpa .de_share_icon {margin-right:0; vertical-align: middle;}
-#info_img_wrpa .de_ch_icon {width:7%;}
+#info_img_wrpa .de_ch_icon {width:6%;}
 #info_img_wrpa .de_share_icon {width:11%;}
 #info_img_wrpa .pay_back_icon {margin-left:22px;}
 #info_img_wrpa .pay_back_icon {width}
@@ -128,18 +131,30 @@
 
 /* 상단타이틀 */
 .top_title_wrap {width:100%;position:relative; top:10px; left:20px;}
-.top_title_wrap .top_title_txt { padding-bottom:30px;}
-.top_title_wrap .top_title_txt span {font-size:20px; color:#000; font-weight: 700;}
+.top_title_wrap .star {display: block; line-height: 1;}
+.top_title_wrap .top_title_txt {padding-bottom:15px;}
+.top_title_wrap .top_title_txt span {font-size:15px; color:#000; font-weight: 700;}
 .top_title_wrap .top_title_txt p {font-size:16px; margin-top:5px; font-weight: normal; color:#000; letter-spacing: -2;}
+.top_title_wrap .top_title_txt .row-prc {}
+.top_title_wrap .top_title_txt .row-prc > * {display: inline-block;}
+.top_title_wrap .top_title_txt .row-prc .per {color: #fff; background: #f23838; padding: 2px 4px; font-weight: 400; line-height: 1;}
+.top_title_wrap .top_title_txt .row-prc .price {font-size: 16px; color: #f23838;}
+.top_title_wrap .top_title_txt .row-prc s {font-size: 12px;}
+
+/*정보탭*/
+.info-tab {position: relative; width: 100%; display: table; border-bottom: 1px solid #e8e8e8;}
+.info-tab > li {display: table-cell; width: 25%;}
+.info-tab > li > a {padding: 8px 0; display: block; font-size: 13px; text-align: center;}
+.info-tab > li.on > a {border-bottom: 2px solid #008cd5; color: #008cd5;}
 
 /* 상단 타이틀탭 */
-
 .top_main {width:100%; height:50px; position:relative;}
 .top_main .main_title {text-align: center;}
 .top_main .main_title span {font-size:18px; font-weight: 700; color: #000; line-height:50px;}
 
 .top_main .main_title .top_pr {float:left; margin-left:20px; margin-top:10px; }
-.top_main .main_title .top_lv {float:right; margin-right:20px; margin-top:10px; }
+.top_main .main_title .top_lv {float:right; margin-right:20px; margin-top:15px; }
+.top_main .main_title .top_lv img {width: 25px;}
 
 /* 배너이미지 추가 */
 
@@ -160,3 +175,6 @@
 .bn_bg .right {padding-right:10px; position:absolute; right:10px;}
 .bn_bg .cp {font-style:italic;}
 .bn_bg {width:95%; position:relative; height:40px; background: url(http://img.borogogo.co.kr/mobile/171019_renew/r_banner.png) no-repeat; margin:0 auto; text-indent: 10px; font-size:13px;}
+
+
+#info_product_btn_w .info_product_btn {background: #008cd5;}
