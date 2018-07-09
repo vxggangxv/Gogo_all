@@ -12,6 +12,7 @@ ul,li {list-style: none;}
 .hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
 .clr:before, .clr:after {content: ""; display: block;}
 .clr:after {clear: both;}
+.wrapper img {max-width: 100%;}
 
 /* 랜딩페이지 */
 .wrap_information{width:100%; text-align:center;}
@@ -323,7 +324,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
 .evt-outer .evt-main .evt-visual img.txtResult {width: 310px;}
 .evt-outer .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 303px; margin: 0 auto; background: url(http://img.go.co.kr/event/mayhills/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
-.evt-outer .evt-main .evt-visual div.txtResult span.name {display: inline-block; font-size: 18px; font-weight: 700; position: absolute; top: 27px; width: 172px; height: 26px; left: 50px; text-align: center;}
+.evt-outer .evt-main .evt-visual div.txtResult span.name {display: inline-block; font-size: 18px; font-weight: 700; position: absolute; top: 25px; width: 172px; height: 26px; left: 50px; text-align: center;}
 .evt-outer .evt-main .evt-visual > p {width: 100%; max-width: 320px; margin: 10px auto 0; font-size: 13px; word-break: keep-all;}
 .evt-outer .evt-main .evt-visual .p-row-1 {}
 .evt-outer .evt-main .evt-visual .p-row-2 {background: #C0C3F2; padding: 6px 0; font-size: 12px; letter-spacing: -1px;}
@@ -424,7 +425,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .apply-bscondo .btn-a,
 .bscondo-evt7788 .evt-main .evt-tit {background: #252525;}
 .bscondo-evt7788 .box-faq .faq-q.on {color: #01a29d;}
-.bscondo-evt7788 .box-faq .faq-q.on .i-x:before, .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
+.bscondo-evt7788 .box-faq .faq-q.on .i-x:before, .bscondo-evt7788 .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
 .bscondo-evt7788 .box-faq .area-btn a,
 .bscondo-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
 .bscondo-evt7788 .evt-bottom {background: #c4b07e;}
@@ -447,7 +448,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .apply-yeonho .btn-a,
 .apply-yeonho .evt-top {background: #13548a;}
 .yeonho-evt7788 .box-faq .faq-q.on {color: #01a29d;}
-.yeonho-evt7788 .box-faq .faq-q.on .i-x:before, .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
+.yeonho-evt7788 .box-faq .faq-q.on .i-x:before, .yeonho-evt7788 .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
 .yeonho-evt7788 .box-faq .area-btn a,
 .yeonho-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
 .yeonho-evt7788 .evt-bottom {background: #c4b07e;}
@@ -483,3 +484,25 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .apply-taebaek .evt-top,
 .apply-taebaek {background: #316ac1;}
 .apply-taebaek .btn-a {background: #FF4052;}
+
+/* 남원하이츠 7179이벤트 */
+.namwonHts-evt7179 {}
+.namwonHts-evt7179 .evt-top {background: #336534;}
+.namwonHts-evt7179 .evt-main {}
+.namwonHts-evt7179 .evt-main .evt-visual {background: #C6EDCE;}
+.namwonHts-evt7179 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/namwonHts/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.namwonHts-evt7179 .evt-main .evt-visual .p-row-2 {background: #B1D7CA; border-top: 1px solid #94b3e4; border-bottom: 1px solid #94b3e4;}
+.namwonHts-evt7179 .evt-main .evt-tit {background: #56A264;}
+
+.apply-namwonHts .evt-top,
+.apply-namwonHts {background: #2F8C08;}
+.apply-namwonHts .btn-a {background: #FF4052;}
+
+/*---------------
+미드나잇 페스티벌
+-----------------*/
+.midnight-wrapper {position: relative;}
+.midnight-wrapper .section {position: relative;}
+.midnight-wrapper .section .btn-buy {display: block; width: 90%; margin: 0 auto; position: absolute; left: 50%; margin-left: -45%; bottom: 0; z-index: 1;}
+.midnight-wrapper .area1 .btn-buy {bottom: -4.7%;}
+.midnight-wrapper .area4 .btn-buy {bottom: 3.6%;}

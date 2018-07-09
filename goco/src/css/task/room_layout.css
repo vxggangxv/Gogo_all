@@ -20,8 +20,8 @@
 .layout-info {position: relative; width: 100%; margin-top: 20px;}
 
 .layout-info .u1 {width: 350px; float: right; border-collapse: collapse; display: table;}
-.layout-info .u2 {width: 1092px; margin: 0 auto; border-collapse: collapse; display: table; margin-top: 10px;}
-.layout-info .u1 li, .layout-info .u2 li {display: table-row; font-size: 14px; line-height: 1.7em; /*height: 24px;*/ border-top: none;}
+.layout-info .u2 {width: 1192px; margin: 0 auto; border-collapse: collapse; display: table; margin-top: 10px;}
+.layout-info .u1 li, .layout-info .u2 li {display: table-row; font-size: 13px; line-height: 1.7em; /*height: 24px;*/ border-top: none;}
 .layout-info .u1 li > div, .layout-info .u2 li > div {display: table-cell; border: 1px solid #ccc; text-align: right; padding-right: 5px;}
 .layout-info .u1 li > div.th, .layout-info .u2 li > div.th, .layout-info .u2 li:first-child > div {background: #efefef;}
 .layout-info .u1 li > div.nth-1 {text-align: left; padding-left: 5px; padding-right: 0; width: 45%;}
@@ -44,7 +44,7 @@ div.floor-5 > div:first-child {margin-left: 62px;}
 div.floor-6 > div:first-child {margin-left: 125px;}
 div.floor-7 > div:first-child {margin-left: 187px;}
 div[class*="floor"] ul {position: relative; font-size: 0px;}
-div[class*="floor"] ul li {width: 60px; height: 93px; font-size: 14px; display: inline-block;  vertical-align: middle; line-height: 1.2em;  text-align: center; border: 1px solid #333; margin-left: 2.2px;}
+div[class*="floor"] ul li {width: 60px; height: 93px; font-size: 13px; display: inline-block;  vertical-align: middle; line-height: 1.2em;  text-align: center; border: 1px solid #333; margin-left: 2.2px;}
 div[class*="floor"] ul li.y {background: #00c73c;}
 #room-layout-wrap div[class*="floor"] ul li.y > div {color: #fff;}
 div[class*="floor"] ul li.n {background: #bcbcbc;}
